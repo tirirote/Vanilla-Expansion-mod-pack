@@ -1,0 +1,521 @@
+{
+    "format_version": "1.21.11",
+    "credit": "Made with Blockbench",
+    "textures": {
+        "0": "minecraft:block/cactus_top",
+        "1": "minecraft:block/cactus_side",
+        "2": "minecraft:block/cactus_bottom",
+        "particle": "minecraft:block/cactus_top"
+    },
+    "elements": [
+        {
+            "name": "body",
+            "from": [
+                1,
+                0,
+                1
+            ],
+            "to": [
+                15,
+                16,
+                15
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        1,
+                        0,
+                        15,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "east": {
+                    "uv": [
+                        1,
+                        0,
+                        15,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        1,
+                        0,
+                        15,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        1,
+                        0,
+                        15,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "up": {
+                    "uv": [
+                        1,
+                        1,
+                        15,
+                        15
+                    ],
+                    "texture": "#0"
+                },
+                "down": {
+                    "uv": [
+                        1,
+                        1,
+                        15,
+                        15
+                    ],
+                    "texture": "#2"
+                }
+            }
+        },
+        {
+            "name": "spine_ne",
+            "from": [
+                15,
+                0,
+                1
+            ],
+            "to": [
+                16,
+                16,
+                1
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    15,
+                    0,
+                    -1
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_se",
+            "from": [
+                15,
+                0,
+                15
+            ],
+            "to": [
+                16,
+                16,
+                15
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    15,
+                    0,
+                    13
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_sw",
+            "from": [
+                0,
+                0,
+                15
+            ],
+            "to": [
+                1,
+                16,
+                15
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    0,
+                    0,
+                    13
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_nw",
+            "from": [
+                0,
+                0,
+                1
+            ],
+            "to": [
+                1,
+                16,
+                1
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    0,
+                    0,
+                    -1
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_wn",
+            "from": [
+                1,
+                0,
+                0
+            ],
+            "to": [
+                1,
+                16,
+                1
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    -1,
+                    0,
+                    -1
+                ]
+            },
+            "faces": {
+                "east": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_en",
+            "from": [
+                15,
+                0,
+                0
+            ],
+            "to": [
+                15,
+                16,
+                1
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    13,
+                    0,
+                    -1
+                ]
+            },
+            "faces": {
+                "east": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_es",
+            "from": [
+                15,
+                0,
+                15
+            ],
+            "to": [
+                15,
+                16,
+                16
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    13,
+                    0,
+                    14
+                ]
+            },
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        },
+        {
+            "name": "spine_ws",
+            "from": [
+                1,
+                0,
+                15
+            ],
+            "to": [
+                1,
+                16,
+                16
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    -1,
+                    0,
+                    14
+                ]
+            },
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        16
+                    ],
+                    "texture": "#1"
+                },
+                "west": {
+                    "uv": [
+                        15,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#1"
+                }
+            }
+        }
+    ],
+    "display": {
+        "gui": {
+            "rotation": [
+                30,
+                225,
+                0
+            ],
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.625,
+                0.625,
+                0.625
+            ]
+        },
+        "ground": {
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "translation": [
+                0,
+                3,
+                0
+            ],
+            "scale": [
+                0.25,
+                0.25,
+                0.25
+            ]
+        },
+        "fixed": {
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.5,
+                0.5,
+                0.5
+            ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [
+                75,
+                45,
+                0
+            ],
+            "translation": [
+                0,
+                2.5,
+                0
+            ],
+            "scale": [
+                0.375,
+                0.375,
+                0.375
+            ]
+        },
+        "firstperson_righthand": {
+            "rotation": [
+                0,
+                45,
+                0
+            ],
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.4,
+                0.4,
+                0.4
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                0,
+                225,
+                0
+            ],
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.4,
+                0.4,
+                0.4
+            ]
+        }
+    }
+}

@@ -1,0 +1,1 @@
+say Vanilla Expansion Datapack Loaded!
