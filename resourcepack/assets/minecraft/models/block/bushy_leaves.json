@@ -1,6 +1,7 @@
 {
     "format_version": "1.21.11",
     "credit": "Made with Blockbench",
+    "ambientocclusion": false,
     "textures": {
         "particle": "#all"
     },
@@ -85,22 +86,13 @@
             "from": [
                 -1,
                 0,
-                0.1
+                0.25
             ],
             "to": [
                 0,
                 16,
-                0.1
+                0.25
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    -2,
-                    0,
-                    0
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -129,22 +121,13 @@
             "from": [
                 -1,
                 0,
-                15.9
+                15.75
             ],
             "to": [
                 0,
                 16,
-                15.9
+                15.75
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    -2,
-                    0,
-                    16
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -171,40 +154,21 @@
         {
             "name": "leaves",
             "from": [
-                0.1,
+                -2,
                 0,
-                -1
+                8.25
             ],
             "to": [
-                0.1,
+                0,
                 16,
-                0
+                8.25
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    0,
-                    -2
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
-                        2,
+                        6,
                         0,
-                        2,
-                        16
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
-                },
-                "east": {
-                    "uv": [
-                        0,
-                        0,
-                        1,
+                        8,
                         16
                     ],
                     "texture": "#all",
@@ -212,9 +176,69 @@
                 },
                 "south": {
                     "uv": [
+                        12,
+                        0,
+                        14,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                16,
+                0,
+                7.75
+            ],
+            "to": [
+                18,
+                16,
+                7.75
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        4,
+                        0,
+                        6,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [
+                        7,
+                        0,
+                        9,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                0.25,
+                0,
+                -1
+            ],
+            "to": [
+                0.25,
+                16,
+                0
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
                         0,
                         0,
-                        0,
+                        1,
                         16
                     ],
                     "texture": "#all",
@@ -229,23 +253,38 @@
                     ],
                     "texture": "#all",
                     "tintindex": 0
-                },
-                "up": {
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                8.25,
+                0,
+                -2
+            ],
+            "to": [
+                8.25,
+                16,
+                0
+            ],
+            "faces": {
+                "east": {
                     "uv": [
+                        11,
                         0,
-                        0,
-                        0,
-                        1
+                        13,
+                        16
                     ],
                     "texture": "#all",
                     "tintindex": 0
                 },
-                "down": {
+                "west": {
                     "uv": [
+                        4,
                         0,
-                        0,
-                        0,
-                        1
+                        6,
+                        16
                     ],
                     "texture": "#all",
                     "tintindex": 0
@@ -255,24 +294,50 @@
         {
             "name": "leaves",
             "from": [
-                0.1,
+                7.75,
                 0,
                 16
             ],
             "to": [
-                0.1,
+                7.75,
+                16,
+                18
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        13,
+                        0,
+                        15,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [
+                        1,
+                        0,
+                        3,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                0.25,
+                0,
+                16
+            ],
+            "to": [
+                0.25,
                 16,
                 17
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    0,
-                    16
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -301,38 +366,19 @@
             "from": [
                 16,
                 0,
-                0.1
+                0.25
             ],
             "to": [
                 17,
                 16,
-                0.1
+                0.25
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    0,
-                    0
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
                         9,
                         0,
                         10,
-                        16
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
-                },
-                "east": {
-                    "uv": [
-                        2,
-                        0,
-                        2,
                         16
                     ],
                     "texture": "#all",
@@ -347,60 +393,21 @@
                     ],
                     "texture": "#all",
                     "tintindex": 0
-                },
-                "west": {
-                    "uv": [
-                        0,
-                        0,
-                        0,
-                        16
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
-                },
-                "up": {
-                    "uv": [
-                        0,
-                        0,
-                        1,
-                        0
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
-                },
-                "down": {
-                    "uv": [
-                        0,
-                        2,
-                        1,
-                        2
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
                 }
             }
         },
         {
             "name": "leaves",
             "from": [
-                15.9,
+                15.75,
                 0,
                 -1
             ],
             "to": [
-                15.9,
+                15.75,
                 16,
                 0
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    14,
-                    0,
-                    -2
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -429,22 +436,13 @@
             "from": [
                 16,
                 0,
-                15.9
+                15.75
             ],
             "to": [
                 17,
                 16,
-                15.9
+                15.75
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    0,
-                    14
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -471,24 +469,15 @@
         {
             "name": "leaves",
             "from": [
-                15.9,
+                15.75,
                 0,
                 16
             ],
             "to": [
-                15.9,
+                15.75,
                 16,
                 17
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    0,
-                    16
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -516,23 +505,14 @@
             "name": "leaves",
             "from": [
                 -1,
-                0.1,
+                0.5,
                 0
             ],
             "to": [
                 0,
-                0.1,
+                0.5,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    -2,
-                    0,
-                    0
-                ]
-            },
             "faces": {
                 "up": {
                     "uv": [
@@ -560,23 +540,119 @@
             "name": "leaves",
             "from": [
                 -1,
-                15.9,
+                15.75,
                 0
             ],
             "to": [
                 0,
-                15.9,
+                15.75,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    -2,
-                    16,
-                    0
-                ]
-            },
+            "faces": {
+                "up": {
+                    "uv": [
+                        1,
+                        0,
+                        2,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [
+                        10,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                -2,
+                7.75,
+                0
+            ],
+            "to": [
+                0,
+                7.75,
+                16
+            ],
+            "faces": {
+                "up": {
+                    "uv": [
+                        10,
+                        0,
+                        12,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [
+                        11,
+                        0,
+                        13,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                16,
+                8.25,
+                0
+            ],
+            "to": [
+                18,
+                8.25,
+                16
+            ],
+            "faces": {
+                "up": {
+                    "uv": [
+                        8,
+                        0,
+                        10,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [
+                        2,
+                        0,
+                        4,
+                        16
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                16,
+                15.75,
+                0
+            ],
+            "to": [
+                17,
+                15.75,
+                16
+            ],
             "faces": {
                 "up": {
                     "uv": [
@@ -604,23 +680,14 @@
             "name": "leaves",
             "from": [
                 16,
-                15.9,
+                0.5,
                 0
             ],
             "to": [
                 17,
-                15.9,
+                0.5,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    16,
-                    0
-                ]
-            },
             "faces": {
                 "up": {
                     "uv": [
@@ -647,68 +714,15 @@
         {
             "name": "leaves",
             "from": [
-                16,
-                0.1,
-                0
-            ],
-            "to": [
-                17,
-                0.1,
-                16
-            ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    0,
-                    0
-                ]
-            },
-            "faces": {
-                "up": {
-                    "uv": [
-                        1,
-                        0,
-                        2,
-                        16
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
-                },
-                "down": {
-                    "uv": [
-                        10,
-                        0,
-                        11,
-                        16
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
-                }
-            }
-        },
-        {
-            "name": "leaves",
-            "from": [
-                -0.1,
+                0.25,
                 -1,
                 0
             ],
             "to": [
-                -0.1,
+                0.25,
                 0,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    -2,
-                    0
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -735,24 +749,15 @@
         {
             "name": "leaves",
             "from": [
-                16.1,
+                15.75,
                 -1,
                 0
             ],
             "to": [
-                16.1,
+                15.75,
                 0,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    -2,
-                    0
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -773,40 +778,21 @@
                     ],
                     "texture": "#all",
                     "tintindex": 0
-                },
-                "down": {
-                    "uv": [
-                        0,
-                        0,
-                        0,
-                        16
-                    ],
-                    "texture": "#all",
-                    "tintindex": 0
                 }
             }
         },
         {
             "name": "leaves",
             "from": [
-                15.9,
+                15.75,
                 16,
                 0
             ],
             "to": [
-                15.9,
+                15.75,
                 17,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    16,
-                    16,
-                    0
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -833,24 +819,15 @@
         {
             "name": "leaves",
             "from": [
-                0.1,
+                0.25,
                 16,
                 0
             ],
             "to": [
-                0.1,
+                0.25,
                 17,
                 16
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    16,
-                    0
-                ]
-            },
             "faces": {
                 "east": {
                     "uv": [
@@ -877,24 +854,85 @@
         {
             "name": "leaves",
             "from": [
+                7.75,
+                16,
+                0
+            ],
+            "to": [
+                7.75,
+                18,
+                16
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        12,
+                        16,
+                        14
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        2,
+                        16,
+                        4
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                8.25,
+                -2,
+                0
+            ],
+            "to": [
+                8.25,
+                0,
+                16
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        1,
+                        16,
+                        4
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        10,
+                        16,
+                        12
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
                 0,
                 -1,
-                -0.1
+                0.25
             ],
             "to": [
                 16,
                 0,
-                -0.1
+                0.25
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    -2,
-                    0
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -923,22 +961,13 @@
             "from": [
                 0,
                 -1,
-                16.1
+                15.75
             ],
             "to": [
                 16,
                 0,
-                16.1
+                15.75
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    -2,
-                    16
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -967,22 +996,13 @@
             "from": [
                 0,
                 16,
-                0.1
+                0.25
             ],
             "to": [
                 16,
                 17,
-                0.1
+                0.25
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    16,
-                    0
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -1011,22 +1031,83 @@
             "from": [
                 0,
                 16,
-                16.1
+                7.75
+            ],
+            "to": [
+                16,
+                18,
+                7.75
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        3,
+                        16,
+                        5
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        11,
+                        16,
+                        13
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                0,
+                -2,
+                8.25
+            ],
+            "to": [
+                16,
+                0,
+                8.25
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        1,
+                        16,
+                        3
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        9,
+                        16,
+                        11
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                0,
+                16,
+                15.75
             ],
             "to": [
                 16,
                 17,
-                16.1
+                15.75
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    16,
-                    16
-                ]
-            },
             "faces": {
                 "north": {
                     "uv": [
@@ -1054,23 +1135,14 @@
             "name": "leaves",
             "from": [
                 0,
-                15.9,
+                15.75,
                 -1
             ],
             "to": [
                 16,
-                15.9,
+                15.75,
                 0
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    16,
-                    -2
-                ]
-            },
             "faces": {
                 "up": {
                     "uv": [
@@ -1098,23 +1170,14 @@
             "name": "leaves",
             "from": [
                 0,
-                0.1,
+                0.25,
                 -1
             ],
             "to": [
                 16,
-                0.1,
+                0.25,
                 0
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    0,
-                    -2
-                ]
-            },
             "faces": {
                 "up": {
                     "uv": [
@@ -1142,23 +1205,14 @@
             "name": "leaves",
             "from": [
                 0,
-                0.1,
+                0.5,
                 16
             ],
             "to": [
                 16,
-                0.1,
+                0.5,
                 17
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    0,
-                    16
-                ]
-            },
             "faces": {
                 "up": {
                     "uv": [
@@ -1186,23 +1240,14 @@
             "name": "leaves",
             "from": [
                 0,
-                15.9,
+                15.75,
                 16
             ],
             "to": [
                 16,
-                15.9,
+                15.75,
                 17
             ],
-            "rotation": {
-                "angle": 0,
-                "axis": "y",
-                "origin": [
-                    0,
-                    16,
-                    16
-                ]
-            },
             "faces": {
                 "up": {
                     "uv": [
@@ -1220,6 +1265,76 @@
                         10,
                         16,
                         11
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                0,
+                8.25,
+                16
+            ],
+            "to": [
+                16,
+                8.25,
+                18
+            ],
+            "faces": {
+                "up": {
+                    "uv": [
+                        0,
+                        8,
+                        16,
+                        10
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [
+                        0,
+                        4,
+                        16,
+                        6
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "leaves",
+            "from": [
+                0,
+                7.75,
+                -2
+            ],
+            "to": [
+                16,
+                7.75,
+                0
+            ],
+            "faces": {
+                "up": {
+                    "uv": [
+                        0,
+                        1,
+                        16,
+                        3
+                    ],
+                    "texture": "#all",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [
+                        0,
+                        8,
+                        16,
+                        10
                     ],
                     "texture": "#all",
                     "tintindex": 0

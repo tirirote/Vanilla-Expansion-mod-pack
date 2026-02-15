@@ -100,7 +100,7 @@
             ],
             "to": [
                 4,
-                8,
+                12,
                 16
             ],
             "rotation": {
@@ -118,7 +118,7 @@
                         16,
                         0,
                         0,
-                        8
+                        12
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -128,7 +128,50 @@
                         0,
                         0,
                         16,
-                        8
+                        12
+                    ],
+                    "texture": "#texture",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "from": [
+                1,
+                0,
+                0
+            ],
+            "to": [
+                1,
+                6,
+                16
+            ],
+            "rotation": {
+                "angle": 22.5,
+                "axis": "z",
+                "origin": [
+                    1,
+                    0,
+                    8
+                ]
+            },
+            "faces": {
+                "east": {
+                    "uv": [
+                        16,
+                        0,
+                        0,
+                        6
+                    ],
+                    "texture": "#texture",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        6
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -143,7 +186,7 @@
             ],
             "to": [
                 12,
-                8,
+                12,
                 16
             ],
             "rotation": {
@@ -161,7 +204,7 @@
                         0,
                         0,
                         16,
-                        8
+                        12
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -171,7 +214,7 @@
                         16,
                         0,
                         0,
-                        8
+                        12
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -180,41 +223,41 @@
         },
         {
             "from": [
-                6,
+                15,
                 0,
-                4
+                0
             ],
             "to": [
+                15,
                 6,
-                10,
-                12
+                16
             ],
             "rotation": {
-                "angle": 0,
+                "angle": -22.5,
                 "axis": "z",
                 "origin": [
-                    6,
+                    15,
                     0,
-                    12
+                    8
                 ]
             },
             "faces": {
                 "east": {
                     "uv": [
-                        4,
                         0,
-                        12,
-                        10
+                        0,
+                        16,
+                        6
                     ],
                     "texture": "#texture",
                     "tintindex": 0
                 },
                 "west": {
                     "uv": [
-                        12,
+                        16,
                         0,
-                        4,
-                        10
+                        0,
+                        6
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -229,7 +272,7 @@
             ],
             "to": [
                 16,
-                8,
+                12,
                 4
             ],
             "rotation": {
@@ -247,7 +290,7 @@
                         0,
                         0,
                         16,
-                        8
+                        12
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -257,7 +300,50 @@
                         16,
                         0,
                         0,
-                        8
+                        12
+                    ],
+                    "texture": "#texture",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "from": [
+                0,
+                0,
+                1
+            ],
+            "to": [
+                16,
+                6,
+                1
+            ],
+            "rotation": {
+                "angle": -22.5,
+                "axis": "x",
+                "origin": [
+                    7.5,
+                    0,
+                    1
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        6
+                    ],
+                    "texture": "#texture",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [
+                        16,
+                        0,
+                        0,
+                        6
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -272,7 +358,7 @@
             ],
             "to": [
                 16,
-                8,
+                12,
                 12
             ],
             "rotation": {
@@ -290,7 +376,7 @@
                         16,
                         0,
                         0,
-                        8
+                        12
                     ],
                     "texture": "#texture",
                     "tintindex": 0
@@ -300,7 +386,50 @@
                         0,
                         0,
                         16,
-                        8
+                        12
+                    ],
+                    "texture": "#texture",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "from": [
+                0,
+                0,
+                15
+            ],
+            "to": [
+                16,
+                6,
+                15
+            ],
+            "rotation": {
+                "angle": 22.5,
+                "axis": "x",
+                "origin": [
+                    8,
+                    0,
+                    15
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        16,
+                        0,
+                        0,
+                        6
+                    ],
+                    "texture": "#texture",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        6
                     ],
                     "texture": "#texture",
                     "tintindex": 0
