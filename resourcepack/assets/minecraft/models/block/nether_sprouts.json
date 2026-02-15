@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/detailed_plant",
+    "textures": {
+        "texture": "minecraft:block/nether_sprouts"
+    }
+}

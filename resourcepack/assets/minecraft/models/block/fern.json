@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/detailed_grass",
+    "textures": {
+        "texture": "minecraft:block/fern"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/detailed_plant",
+    "textures": {
+        "texture": "minecraft:block/short_dry_grass"
+    }
+}

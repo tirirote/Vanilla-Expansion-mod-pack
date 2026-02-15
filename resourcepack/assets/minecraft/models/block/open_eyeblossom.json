@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/detailed_flower",
+    "textures": {
+        "texture": "minecraft:block/open_eyeblossom"
+    }
+}

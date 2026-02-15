@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/detailed_tall_grass",
+    "textures": {
+        "main": "minecraft:block/tall_grass_bottom",
+        "top": "minecraft:block/tall_grass_top"
+    }
+}

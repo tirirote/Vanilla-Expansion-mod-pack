@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/detailed_plant",
+    "textures": {
+        "texture": "minecraft:block/sweet_berry_bush_stage2"
+    }
+}

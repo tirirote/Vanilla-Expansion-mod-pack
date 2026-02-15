@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/detailed_tall_grass",
+    "textures": {
+        "main": "minecraft:block/large_fern_bottom",
+        "top": "minecraft:block/large_fern_top"
+    }
+}
