@@ -4,10 +4,11 @@
     "pattern": [
         "P  ",
         "PPP",
-        "P P"
+        "S S"
     ],
     "key": {
-        "P": "minecraft:oak_planks"
+        "P": "minecraft:oak_planks",
+        "S": "minecraft:stick"
     },
     "result": {
         "id": "minecraft:item_frame",

@@ -1,4 +1,6 @@
 # Setup común para todas las sillas
+
+playsound minecraft:block.wood.place block @a ~ ~ ~ 1 1
 # Ejecutado AS y AT el item_display (modelo visual)
 
 # Alinear posición
@@ -13,7 +15,7 @@ scoreboard players add #global vexp.id 1
 scoreboard players operation @s vexp.id = #global vexp.id
 
 # 2. Crear la interacción (Hitbox)
-summon interaction ~ ~ ~ {Tags:["vexp.chair_interact","vexp.temp_interact"],width:0.5f,height:0.6f}
+summon interaction ~ ~ ~ {Tags:["vexp.chair_interact","vexp.temp_interact"],width:0.8f,height:1.6f}
 
 # 3. Asignar EL MISMO ID a la interacción recién creada
 # Usamos el tag temporal para identificarla sin ambigüedad
