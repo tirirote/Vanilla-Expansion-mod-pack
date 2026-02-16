@@ -8,7 +8,9 @@ execute as @a[tag=vexp.is_sitting] unless data entity @s RootVehicle run functio
 
 # LÓGICA DE COLOCACIÓN (NUEVO MÉTODO: ITEM FRAMES)
 # Detectar item frames invisibles colocados en el SUELO (Facing:1b) con el tag de silla
-execute as @e[type=item_frame,tag=vexp.place_chair.oak,nbt={Facing:1b}] at @s run function vexp:chair/convert_frame_oak
+execute as @e[type=item_frame,tag=vexp.place_chair.oak,nbt={Facing:1b}] at @s if block ~ ~1.5 ~ #minecraft:replaceable run function vexp:chair/convert_frame_oak
+
+execute as @e[type=item_frame,tag=vexp.place_chair.oak,nbt={Facing:1b}] at @s unless block ~ ~1.5 ~ #minecraft:replaceable run function vexp:chair/pickup
 
 # Limpiar colocaciones inválidas (Pared/Techo) para recuperar el item
 execute as @e[type=item_frame,tag=vexp.place_chair.oak,nbt=!{Facing:1b}] run function vexp:chair/pickup

@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "P  ",
+        "PPP",
+        "P P"
+    ],
+    "key": {
+        "P": "minecraft:oak_planks"
+    },
+    "result": {
+        "id": "minecraft:item_frame",
+        "count": 1,
+        "components": {
+            "minecraft:entity_data": {
+                "id": "minecraft:item_frame",
+                "Tags": [
+                    "vexp.place_chair.oak"
+                ],
+                "Invisible": true,
+                "Fixed": true,
+                "Silent": true,
+                "NoGravity": true
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "vexp:oak_chair"
+                ]
+            },
+            "minecraft:item_name": {
+                "text": "Silla de Roble",
+                "italic": false
+            }
+        }
+    }
+}
