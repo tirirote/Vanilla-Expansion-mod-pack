@@ -1,1 +1,0 @@
-# Main tick loop

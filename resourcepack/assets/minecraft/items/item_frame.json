@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "vexp:oak_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/oak_chair"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/item_frame"
+        }
+    }
+}
