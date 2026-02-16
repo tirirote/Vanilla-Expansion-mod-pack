@@ -8,5 +8,3 @@ execute at @s run kill @e[type=armor_stand,tag=vexp.chair_mount,distance=..2,lim
 
 # 3. Quitar el tag de sentado al jugador
 tag @s remove vexp.is_sitting
-
-say Silla liberada
