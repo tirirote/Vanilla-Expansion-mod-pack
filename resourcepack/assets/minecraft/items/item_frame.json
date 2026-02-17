@@ -79,6 +79,13 @@
                     "type": "minecraft:model",
                     "model": "vexp:block/warped_chair"
                 }
+            },
+            {
+                "when": "vexp:crimson_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/crimson_chair"
+                }
             }
         ],
         "fallback": {
