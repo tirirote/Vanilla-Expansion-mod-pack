@@ -10,4 +10,4 @@ execute as @a[tag=vexp.is_sitting] unless data entity @s RootVehicle run functio
 execute as @e[type=armor_stand,tag=vexp.chair_mount] run function vexp:chair/tick_mount
 
 # 4. Procesar Item Frames de colocación (Solo 1 búsqueda)
-execute as @e[type=item_frame,tag=vexp.place_chair.oak] at @s run function vexp:chair/tick_frame
+execute as @e[type=item_frame,tag=vexp.place_chair] at @s run function vexp:chair/tick_frame
