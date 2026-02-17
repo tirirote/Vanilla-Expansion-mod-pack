@@ -7,7 +7,7 @@
         "S S"
     ],
     "key": {
-        "P": "minecraft:oak_planks",
+        "P": "minecraft:dark_oak_planks",
         "S": "minecraft:stick"
     },
     "result": {
@@ -18,7 +18,7 @@
                 "id": "minecraft:item_frame",
                 "Tags": [
                     "vexp.place_chair",
-                    "vexp.place_chair.oak"
+                    "vexp.place_chair.dark_oak"
                 ],
                 "Invisible": true,
                 "Fixed": true,
@@ -27,11 +27,11 @@
             },
             "minecraft:custom_model_data": {
                 "strings": [
-                    "vexp:oak_chair"
+                    "vexp:dark_oak_chair"
                 ]
             },
             "minecraft:item_name": {
-                "text": "Silla de Roble",
+                "text": "Silla de Roble Oscuro",
                 "italic": false
             }
         }

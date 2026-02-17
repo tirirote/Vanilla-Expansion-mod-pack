@@ -1,0 +1,6 @@
+{
+    "parent": "vexp:block/chair_template",
+    "textures": {
+        "wood": "vexp:block/cherry_chair"
+    }
+}

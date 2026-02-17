@@ -9,6 +9,76 @@
                     "type": "minecraft:model",
                     "model": "vexp:block/oak_chair"
                 }
+            },
+            {
+                "when": "vexp:birch_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/birch_chair"
+                }
+            },
+            {
+                "when": "vexp:acacia_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/acacia_chair"
+                }
+            },
+            {
+                "when": "vexp:bamboo_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/bamboo_chair"
+                }
+            },
+            {
+                "when": "vexp:cherry_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/cherry_chair"
+                }
+            },
+            {
+                "when": "vexp:dark_oak_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/dark_oak_chair"
+                }
+            },
+            {
+                "when": "vexp:jungle_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/jungle_chair"
+                }
+            },
+            {
+                "when": "vexp:mangrove_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/mangrove_chair"
+                }
+            },
+            {
+                "when": "vexp:pale_oak_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/pale_oak_chair"
+                }
+            },
+            {
+                "when": "vexp:spruce_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/spruce_chair"
+                }
+            },
+            {
+                "when": "vexp:warped_chair",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:block/warped_chair"
+                }
             }
         ],
         "fallback": {

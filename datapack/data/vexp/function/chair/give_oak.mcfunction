@@ -1,1 +1,0 @@
-give @p item_frame[minecraft:entity_data={id:"minecraft:item_frame",Tags:["vexp.place_chair.oak"],Invisible:1b,Fixed:1b,Silent:1b,NoGravity:1b},minecraft:custom_model_data={strings:["vexp:oak_chair"]},minecraft:item_name='{"text":"Silla de Roble","italic":false}'] 1
