@@ -12,3 +12,4 @@ execute if entity @s[tag=vexp.place_chair.cherry] run function vexp:chair/conver
 execute if entity @s[tag=vexp.place_chair.bamboo] run function vexp:chair/convert_frame_chair {wood:"bamboo"}
 execute if entity @s[tag=vexp.place_chair.crimson] run function vexp:chair/convert_frame_chair {wood:"crimson"}
 execute if entity @s[tag=vexp.place_chair.warped] run function vexp:chair/convert_frame_chair {wood:"warped"}
+execute if entity @s[tag=vexp.place_chair.pale_oak] run function vexp:chair/convert_frame_chair {wood:"pale_oak"}

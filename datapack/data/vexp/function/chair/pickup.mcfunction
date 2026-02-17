@@ -13,6 +13,9 @@ execute at @s run kill @e[type=armor_stand,tag=vexp.chair_mount,distance=..1,lim
 # Usamos tag común vexp.place_chair para el futuro tick global
 # Oak
 execute if entity @s[tag=vexp.chair.oak] run summon item ~ ~ ~ {Item:{id:"minecraft:item_frame",count:1,components:{"minecraft:entity_data":{id:"minecraft:item_frame",Tags:["vexp.place_chair","vexp.place_chair.oak"],Invisible:1b,Fixed:1b,Silent:1b,NoGravity:1b},"minecraft:custom_model_data":{strings:["vexp:oak_chair"]},"minecraft:item_name":{"text":"Silla de Roble","italic":false}}}}
+#Pale Oak
+execute if entity @s[tag=vexp.chair.pale_oak] run summon item ~ ~ ~ {Item:{id:"minecraft:item_frame",count:1,components:{"minecraft:entity_data":{id:"minecraft:item_frame",Tags:["vexp.place_chair","vexp.place_chair.pale_oak"],Invisible:1b,Fixed:1b,Silent:1b,NoGravity:1b},"minecraft:custom_model_data":{strings:["vexp:pale_oak_chair"]},"minecraft:item_name":{"text":"Silla de Roble Pálido","italic":false}}}}
+
 # Spruce
 execute if entity @s[tag=vexp.chair.spruce] run summon item ~ ~ ~ {Item:{id:"minecraft:item_frame",count:1,components:{"minecraft:entity_data":{id:"minecraft:item_frame",Tags:["vexp.place_chair","vexp.place_chair.spruce"],Invisible:1b,Fixed:1b,Silent:1b,NoGravity:1b},"minecraft:custom_model_data":{strings:["vexp:spruce_chair"]},"minecraft:item_name":{"text":"Silla de Abeto","italic":false}}}}
 # Birch
@@ -38,6 +41,7 @@ execute if entity @s[tag=vexp.chair.warped] run summon item ~ ~ ~ {Item:{id:"min
 execute at @s run playsound minecraft:block.wood.break block @a ~ ~ ~ 1 1
 
 execute if entity @s[tag=vexp.chair.oak] run particle block{block_state:{Name:"oak_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50
+execute if entity @s[tag=vexp.chair.pale_oak] run particle block{block_state:{Name:"pale_oak_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50
 execute if entity @s[tag=vexp.chair.spruce] run particle block{block_state:{Name:"spruce_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50
 execute if entity @s[tag=vexp.chair.birch] run particle block{block_state:{Name:"birch_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50
 execute if entity @s[tag=vexp.chair.jungle] run particle block{block_state:{Name:"jungle_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50
