@@ -2,7 +2,7 @@
 # Ejecutado AS @s (marker) AT @s
 
 # Sonido y Partículas de impacto (Dinámico)
-execute positioned ^ ^ ^0.85 run function vexp:dagger/projectile/impact_effects
+execute positioned ^ ^ ^1 run function vexp:dagger/projectile/impact_effects
 
 # Spawnear estado "Clavado en Bloque" (Stuck in Block)
 summon marker ~ ~ ~ {Tags:["vexp.dagger_stuck","vexp.temp_stuck","vexp.stuck_in_block"]}

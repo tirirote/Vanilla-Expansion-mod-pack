@@ -15,15 +15,11 @@ execute if entity @s[tag=vexp.diamond] run summon item_display ~ ~ ~ {Tags:["vex
 execute if entity @s[tag=vexp.copper] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:copper_sword",components:{"minecraft:custom_model_data":{strings:["vexp:copper_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 execute if entity @s[tag=vexp.netherite] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":{strings:["vexp:netherite_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 
-
-
 # Montar el visual sobre el marker (@s es el marker)
 tag @e[tag=vexp.temp_display] remove vexp.temp_display
 
 # Vida del proyectil (para que no vuele infinito)
 scoreboard players set @s vexp.id 10
-
-# Inicializar gravedad (opcional si usamos rotación progresiva)
 
 # Quitar tag temporal al lanzador
 tag @s remove vexp.temp_projectile
