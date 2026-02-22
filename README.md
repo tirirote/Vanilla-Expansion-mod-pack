@@ -8,6 +8,7 @@ Proyecto de datapacks y paquetes de recursos para minecraft.
 Lista de ideas y de modificaciones para el juego. Modificaciones de tipo vanilla, es decir, que no añadan nuevos objetos o mecánicas que rompan el equilibrio del juego.
 
 - [x] Mejores modelos 3D para folliage.
+- [x] Mejora de Partículas Vanilla.
 
 ## Assets para diseño de interiores
 Items y bloques nuevos para mejorar los interiores de los hogares.(Equilibrio de detalle, rendimiento y nada fuera del estilo vanilla)

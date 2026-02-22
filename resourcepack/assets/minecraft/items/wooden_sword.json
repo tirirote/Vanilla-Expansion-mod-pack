@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "vexp:wooden_dagger",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:item/wooden_dagger"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/wooden_sword"
+        }
+    }
+}

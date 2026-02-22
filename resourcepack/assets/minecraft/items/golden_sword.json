@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "vexp:golden_dagger",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:item/golden_dagger"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/golden_sword"
+        }
+    }
+}

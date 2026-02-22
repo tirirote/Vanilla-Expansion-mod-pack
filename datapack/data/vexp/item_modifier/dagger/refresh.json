@@ -1,0 +1,6 @@
+[
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": "{vexp:{refreshed:1b}}"
+    }
+]

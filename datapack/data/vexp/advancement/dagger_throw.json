@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "using_dagger": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": "#minecraft:swords",
+                    "predicates": {
+                        "minecraft:custom_data": "{vexp:{type:\"dagger\"}}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "vexp:dagger/on_use"
+    }
+}

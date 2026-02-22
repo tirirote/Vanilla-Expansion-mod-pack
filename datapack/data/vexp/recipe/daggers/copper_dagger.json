@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " C ",
+        "S  "
+    ],
+    "key": {
+        "C": "minecraft:copper_ingot",
+        "S": "minecraft:stick"
+    },
+    "result": {
+        "id": "minecraft:copper_sword",
+        "components": {
+            "minecraft:item_name": "Daga de Cobre",
+            "minecraft:custom_data": {
+                "vexp": {
+                    "type": "dagger"
+                }
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "vexp:copper_dagger"
+                ]
+            },
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:attack_damage",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "id": "vexp:dagger_damage",
+                    "slot": "mainhand"
+                },
+                {
+                    "type": "minecraft:attack_speed",
+                    "amount": 3.0,
+                    "operation": "add_value",
+                    "id": "vexp:dagger_speed",
+                    "slot": "mainhand"
+                }
+            ],
+            "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0.0,
+                "can_always_eat": true
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 0.1,
+                "animation": "eat"
+            }
+        },
+        "count": 1
+    }
+}
