@@ -6,14 +6,10 @@
 # Si el mob muere, @e[...] fallará.
 execute as @e[type=!player,type=!item_display,type=!interaction,type=!marker,distance=..1,limit=1,sort=nearest] at @s run tag @s add vexp.current_host
 
-# 2. Si no hay host y no está en un bloque, la daga cae (opcional, o se queda ahí)
-# Si quieres que se quede clavada en el aire donde murió el host, comenta la siguiente línea:
-execute unless entity @e[tag=vexp.current_host,distance=..1] unless entity @s[tag=vexp.stuck_in_block] run function vexp:dagger/stuck/drop
-
-# 3. Moverse con el host (@s es el marcador)
+# 2. Moverse con el host (@s es el marcador)
 execute at @e[tag=vexp.current_host,limit=1] run teleport @s ~ ~1 ~
 
-# 4. Daño por sangrado (Cada 20 ticks / 1 seg)
+# 3. Daño por sangrado (Cada 20 ticks / 1 seg)
 # Solo si hay un host y NO está en un bloque
 execute if entity @e[tag=vexp.current_host,distance=..0.1] unless entity @s[tag=vexp.stuck_in_block] run scoreboard players remove @s vexp.dagger_cooldown 1
 

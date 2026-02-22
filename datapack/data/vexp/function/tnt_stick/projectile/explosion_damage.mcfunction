@@ -1,0 +1,2 @@
+effect give @e[distance=..3,limit=1,type=!#minecraft:inverted_healing_and_harm] instant_damage 1 5 true
+effect give @e[distance=..3,limit=1,type=#minecraft:inverted_healing_and_harm] instant_health 1 5 true
