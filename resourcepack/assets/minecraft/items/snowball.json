@@ -1,19 +1,6 @@
 {
     "model": {
-        "type": "minecraft:select",
-        "property": "minecraft:custom_model_data",
-        "cases": [
-            {
-                "when": "vexp:tnt_stick",
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "vexp:item/tnt_stick"
-                }
-            }
-        ],
-        "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/snowball"
-        }
+        "type": "minecraft:model",
+        "model": "minecraft:item/snowball"
     }
 }

@@ -7,7 +7,7 @@ scoreboard players reset @s vexp.tnt_stick_used
 # 2. Lanzar el cartucho personalizado
 execute at @s run function vexp:tnt_stick/throw
 
-# 3. Eliminar la bola de nieve de vainilla generada
-# Buscamos la entidad snowball más cercana lanzada por el jugador
-kill @e[type=minecraft:snowball,distance=..3,limit=1]
+# 3. Eliminar la botella de experiencia generada
+# Buscamos la entidad experience_bottle más cercana lanzada por el jugador
+kill @e[type=minecraft:experience_bottle,distance=..3,limit=1]
 

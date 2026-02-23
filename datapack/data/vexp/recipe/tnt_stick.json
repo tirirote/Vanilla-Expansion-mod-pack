@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "   ",
+        " GP",
+        " PG"
+    ],
+    "key": {
+        "P": "minecraft:paper",
+        "G": "minecraft:gunpowder"
+    },
+    "result": {
+        "id": "minecraft:experience_bottle",
+        "count": 1,
+        "components": {
+            "minecraft:custom_data": {
+                "vexp": {
+                    "type": "tnt_stick"
+                }
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "vexp:tnt_stick"
+                ]
+            },
+            "minecraft:item_name": {
+                "text": "Cartucho de TNT",
+                "italic": false,
+                "color": "white"
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 1.0,
+                "cooldown_group": "vexp:tnt_stick"
+            },
+            "enchantment_glint_override": false
+        }
+    }
+}
