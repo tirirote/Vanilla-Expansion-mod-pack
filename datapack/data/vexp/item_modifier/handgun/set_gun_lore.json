@@ -1,0 +1,23 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Munición: ",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "$(bullets)",
+                        "color": "green"
+                    },
+                    {
+                        "text": " / 20"
+                    }
+                ]
+            }
+        ]
+    }
+]

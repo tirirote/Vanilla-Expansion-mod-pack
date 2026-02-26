@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "vexp:ammo",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "vexp:item/pirotecnics/ammo"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/poisonous_potato"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "III",
+        " FR",
+        "  S"
+    ],
+    "key": {
+        "I": "minecraft:iron_ingot",
+        "R": "minecraft:redstone",
+        "F": "minecraft:flint",
+        "S": "minecraft:stick"
+    },
+    "result": {
+        "id": "minecraft:carrot_on_a_stick",
+        "count": 1,
+        "components": {
+            "minecraft:max_damage": 6,
+            "minecraft:damage": 6,
+            "minecraft:custom_data": {
+                "vexp": {
+                    "type": "handgun"
+                }
+            },
+            "minecraft:custom_model_data": {
+                "strings": [
+                    "vexp:handgun"
+                ]
+            },
+            "minecraft:item_name": {
+                "text": "Cañón de Mano",
+                "color": "gold",
+                "italic": false
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Munición: 6 / 6",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        }
+    }
+    
+}

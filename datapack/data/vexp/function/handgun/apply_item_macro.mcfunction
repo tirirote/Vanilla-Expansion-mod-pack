@@ -1,0 +1,1 @@
+$item replace entity @s weapon.mainhand with carrot_on_a_stick[max_damage=6, damage=$(new_damage), custom_data={vexp:{type:"handgun"}}, custom_model_data={strings:["vexp:handgun"]}, item_name={"text":"Cañón de Mano","color":"gold","italic":false}, lore=[{"text":"Munición: $(ammo) / 6","color":"gray","italic":false}]]

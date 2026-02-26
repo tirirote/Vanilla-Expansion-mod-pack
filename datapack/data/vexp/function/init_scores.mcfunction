@@ -9,7 +9,11 @@ scoreboard objectives add vexp.hp dummy
 scoreboard objectives add vexp.max_hp dummy
 scoreboard objectives add vexp.math dummy
 scoreboard objectives add vexp.old_hp dummy
-scoreboard objectives add vexp.timer dummy
+scoreboard objectives add vexp.bullet_life dummy
+scoreboard objectives add vexp.handgun_cooldown dummy
+scoreboard objectives add vexp.dummy dummy
 
+#States
+scoreboard objectives add vexp.state dummy
 #Resetear ID
 scoreboard players set #global vexp.id 0
