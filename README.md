@@ -18,15 +18,14 @@ Items y bloques nuevos para mejorar los interiores de los hogares.(Equilibrio de
 - [ ] Items decorativos (Pila de libros, cuencos, stands para armas, etc).
 
 ## Actualización de Armas
-- [ ] Dagas.
+- [x] Dagas.
 - [ ] Guantes.
 - [ ] Lanzas.
 
 ## Actualización de Pirotecnia
-- [ ] Artefactos de pirotecnia avanzados. (Fuegos artificiales, bengalas, tnt lanzables, etc.)
 - [x] TNT lanzable.
 - [ ] Bengalas.
-- [ ] Pistola de mano.
+- [x] Pistola de mano.
 
 ## Actualización de Magia
 - [ ] Magia avanzada, libros de hechizos, hechizos lanzables, etc. (Equilibrio de poder y utilidad).
