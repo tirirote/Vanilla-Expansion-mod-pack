@@ -21,7 +21,6 @@ summon minecraft:marker ~ ~ ~ {Tags:["vexp.temp_projectile"]}
 
 # Capturar durabilidad (Damage) y añadir 1 por el lanzamiento
 execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage run data get entity @s SelectedItem.components."minecraft:damage"
-scoreboard players add @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage 1
 
 # Identificar material en mano y etiquetar proyectil
 execute if items entity @s weapon.mainhand iron_sword[custom_data={vexp:{type:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.iron

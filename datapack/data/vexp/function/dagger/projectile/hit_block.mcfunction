@@ -24,6 +24,5 @@ scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,limit=1] vexp.d
 
 execute as @e[tag=vexp.temp_stuck,sort=nearest,limit=1] at @s positioned ~ ~ ~ run function vexp:dagger/stuck/setup
 
-
 # Matar proyectil
 function vexp:dagger/projectile/despawn

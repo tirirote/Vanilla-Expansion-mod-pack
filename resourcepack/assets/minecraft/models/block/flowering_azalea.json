@@ -4,6 +4,6 @@
         "plant": "minecraft:block/azalea_plant",
         "top": "minecraft:block/flowering_azalea_top",
         "side": "minecraft:block/flowering_azalea_side",
-        "detail": "minecraft:block/flowering_azalea_detail"
+        "detail": "minecraft:block/flowering_azalea_leaves_detail"
     }
 }

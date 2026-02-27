@@ -1,37 +1,32 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "minecraft:crafting_shapeless",
     "category": "misc",
-    "pattern": [
-        "  P",
-        "  G",
-        "  P"
+    "ingredients": [
+        "#minecraft:coals",
+        "minecraft:gunpowder"
     ],
-    "key": {
-        "P": "minecraft:paper",
-        "G": "minecraft:gunpowder"
-    },
     "result": {
-        "id": "minecraft:experience_bottle",
+        "id": "minecraft:poisonous_potato",
         "count": 1,
         "components": {
             "minecraft:custom_data": {
                 "vexp": {
-                    "type": "tnt_stick"
+                    "type": "handgun_ammo"
                 }
             },
             "minecraft:custom_model_data": {
                 "strings": [
-                    "vexp:tnt_stick"
+                    "vexp:handgun_ammo"
                 ]
             },
             "minecraft:item_name": {
-                "text": "Cartucho de TNT",
+                "text": "Munición de Cañón de Mano",
                 "italic": false,
                 "color": "white"
             },
             "minecraft:use_cooldown": {
                 "seconds": 1.0,
-                "cooldown_group": "vexp:tnt_stick"
+                "cooldown_group": "vexp:handgun_ammo"
             },
             "enchantment_glint_override": false
         }

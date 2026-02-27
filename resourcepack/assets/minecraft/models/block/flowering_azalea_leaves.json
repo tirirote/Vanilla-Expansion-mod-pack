@@ -1,6 +1,7 @@
 {
     "parent": "minecraft:block/bushy_leaves",
     "textures": {
-        "all": "minecraft:block/flowering_azalea_leaves"
+        "all": "minecraft:block/flowering_azalea_leaves",
+        "detail": "minecraft:block/flowering_azalea_leaves_detail"
     }
 }

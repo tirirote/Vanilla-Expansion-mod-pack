@@ -30,7 +30,7 @@
             },
             "minecraft:item_name": {
                 "text": "Cañón de Mano",
-                "color": "gold",
+                "color": "white",
                 "italic": false
             },
             "minecraft:lore": [
