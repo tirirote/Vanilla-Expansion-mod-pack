@@ -20,7 +20,8 @@
             "minecraft:damage": 6,
             "minecraft:custom_data": {
                 "vexp": {
-                    "type": "handgun"
+                    "type": "handgun",
+                    "ammo": 0
                 }
             },
             "minecraft:custom_model_data": {
@@ -38,6 +39,18 @@
                     "text": "Munición: 6 / 6",
                     "color": "gray",
                     "italic": false
+                }
+            ],
+            "repairable": {
+                "items": "minecraft:iron_ingot"
+            },
+            "attribute_modifiers": [
+                {
+                    "id": "minecraft:attack_speed",
+                    "amount": -3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "type": "attack_speed"
                 }
             ]
         }

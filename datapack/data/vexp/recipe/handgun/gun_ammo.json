@@ -7,7 +7,7 @@
     ],
     "result": {
         "id": "minecraft:poisonous_potato",
-        "count": 1,
+        "count": 6,
         "components": {
             "minecraft:custom_data": {
                 "vexp": {
@@ -16,7 +16,7 @@
             },
             "minecraft:custom_model_data": {
                 "strings": [
-                    "vexp:handgun_ammo"
+                    "vexp:ammo"
                 ]
             },
             "minecraft:item_name": {

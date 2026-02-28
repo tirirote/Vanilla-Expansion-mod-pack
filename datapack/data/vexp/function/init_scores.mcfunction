@@ -11,6 +11,7 @@ scoreboard objectives add vexp.math dummy
 scoreboard objectives add vexp.old_hp dummy
 scoreboard objectives add vexp.bullet_life dummy
 scoreboard objectives add vexp.handgun_cooldown dummy
+scoreboard objectives add vexp.ammo dummy
 scoreboard objectives add vexp.dummy dummy
 
 #States
