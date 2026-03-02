@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["G G", "G G", "GGG"],
+  "key": {
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 3,
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "jar",
+            "model": "vexp:jar_block",
+            "item_model": "vexp:jar",
+            "width": 0.6,
+            "height": 0.7,
+            "type": "jar",
+            "name": "Jarrón Decorativo",
+            "s_place": "minecraft:block.glass.place",
+            "s_break": "minecraft:block.glass.break",
+            "p_break": "minecraft:block{block_state:Name:'minecraft:glass'}}"
+          }
+        },
+        "Invisible": true,
+        "Fixed": true,
+        "Silent": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:jar"]
+      },
+      "minecraft:item_name": {
+        "text": "Jarrón Decorativo",
+        "italic": false
+      }
+    }
+  }
+}

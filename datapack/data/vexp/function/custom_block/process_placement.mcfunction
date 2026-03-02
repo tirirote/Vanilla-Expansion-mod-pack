@@ -7,6 +7,7 @@
 data remove storage vexp:custom_block placement
 data merge storage vexp:custom_block {placement:{id:0,model:"",width:0f,height:0f,type:"",name:"",s_place:"",s_break:"",p_break:""}}
 data modify storage vexp:custom_block placement set from entity @s data.vexp
+execute unless data storage vexp:custom_block placement.item_model run data modify storage vexp:custom_block placement.item_model set from storage vexp:custom_block placement.model
 
 # 3. Llamar a la macro de spawn con los datos extraídos
 # Solo si hay datos válidos (id)
