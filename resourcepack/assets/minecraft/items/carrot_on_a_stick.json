@@ -13,8 +13,21 @@
       {
         "when": "vexp:gauntlets",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/fighting-gloves"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/gauntlets"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/gauntlets-hand"
+          }
         }
       }
     ],

@@ -9,5 +9,5 @@ tag @s add vexp.gauntlets.parry
 scoreboard players set @s vexp.dummy 5
 
 # 3. Visuals
-particle minecraft:spark ~ ~1.2 ~ 0.5 0.5 0.5 0.1 20
+particle minecraft:electric_spark ~ ~1.2 ~ 0.5 0.5 0.5 0.1 20
 playsound minecraft:item.shield.block player @a ~ ~ ~ 1 1.5

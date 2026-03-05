@@ -33,9 +33,9 @@ scoreboard players set #global vexp.id 0
 
 # Teams for Feedback Glowing
 team add vexp.white
-team modify vexp.white color white
+team modify vexp.white color gray
 team add vexp.yellow
-team modify vexp.yellow color yellow
+team modify vexp.yellow color gold
 team add vexp.red
-team modify vexp.red color red
+team modify vexp.red color dark_red
 

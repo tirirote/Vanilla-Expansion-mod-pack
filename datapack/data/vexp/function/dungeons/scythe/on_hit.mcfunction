@@ -2,8 +2,8 @@
 # @s is the target entity
 
 # Pull towards the player
-function vexp:utils/motion/apply_knockback {strength:-0.8, y:0}
+function vexp:utils/motion/apply_knockback {strength:2, y:0.05}
 
 # Visuals
-particle minecraft:small_gust ~ ~1.2 ~ 0 0 0 0.05 1
-playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 0.5
+particle minecraft:crit ~ ~1.2 ~ .1 .1 .1 0.1 5
+playsound minecraft:entity.player.attack.strong player @a ~ ~ ~ 1 0.5

@@ -1,19 +1,39 @@
 {
-    "model": {
-        "type": "minecraft:select",
-        "property": "minecraft:custom_model_data",
-        "cases": [
-            {
-                "when": "vexp:iron_dagger",
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "vexp:item/iron_dagger"
-                }
-            }
-        ],
-        "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/iron_sword"
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:iron_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/iron_dagger"
         }
+      },
+      {
+        "when": "vexp:iron-scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/iron-scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/iron-scythe-hand"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/iron_sword"
     }
+  }
 }
