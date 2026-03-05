@@ -12,8 +12,20 @@ execute store result storage vexp:temp Bar.max int 1 run scoreboard players get 
 # 3. Damage Indicator Detection
 scoreboard players operation #damage vexp.math = @s vexp.old_hp
 scoreboard players operation #damage vexp.math -= @s vexp.hp
+
+# Default style: yellow (normal)
+data modify storage vexp:temp Damage.color set value "yellow"
+data modify storage vexp:temp Damage.bold set value false
+
+# Combo Style: red + bold
+execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.color set value "red"
+execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.bold set value true
+
 execute if score #damage vexp.math matches 1.. run function vexp:mob_health/spawn_damage
 scoreboard players operation @s vexp.old_hp = @s vexp.hp
+
+# Cleanup
+tag @s remove vexp.hitted.combo_end
 
 # 4. Color Calculation (Dynamic Green to Red)
 scoreboard players set #100 vexp.math 100

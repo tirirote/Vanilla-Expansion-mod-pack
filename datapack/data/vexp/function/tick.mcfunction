@@ -1,10 +1,15 @@
 # Main tick loop
 function vexp:custom_block/tick
 function vexp:chair/tick
-function vexp:dagger/tick
 
-function vexp:handgun/tick
+#Dungeons
+function vexp:dungeons/tick
+
+#Pirotecnics
 function vexp:tnt_stick/tick
+function vexp:handgun/tick
+
+#Misc
 function vexp:mob_health/tick
 
 #States

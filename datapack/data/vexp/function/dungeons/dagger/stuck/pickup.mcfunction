@@ -16,7 +16,7 @@ execute as @e[tag=vexp.dagger_stuck,tag=vexp.netherite,distance=..2,limit=1] if 
 execute as @e[tag=vexp.dagger_stuck,distance=..2,limit=1] if score @s vexp.id = #temp vexp.id run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage
 
 # Dar el item (Usará los tags que acabamos de ponerle al picker)
-execute as @p[tag=vexp.picker,limit=1] run function vexp:dagger/give
+execute as @p[tag=vexp.picker,limit=1] run function vexp:dungeons/dagger/give
 
 # 3. Sonido
 playsound minecraft:entity.item.pickup player @a ~ ~ ~ 1 1

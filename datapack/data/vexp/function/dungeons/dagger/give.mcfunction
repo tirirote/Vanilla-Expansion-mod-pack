@@ -14,7 +14,7 @@ execute if entity @s[tag=vexp.netherite] run data modify storage vexp:main param
 execute store result storage vexp:main params.damage int 1 run scoreboard players get @s vexp.damage
 
 # 3. Llamar a la macro usando el objeto completo de storage
-function vexp:dagger/give_macro with storage vexp:main params
+function vexp:dungeons/dagger/give_macro with storage vexp:main params
 
 # 4. Limpieza
 tag @s remove vexp.iron

@@ -33,7 +33,7 @@ execute if items entity @s weapon.mainhand netherite_sword[custom_data={vexp:{ty
 
 
 # Ejecutar setup sobre el proyectil
-execute as @e[tag=vexp.temp_projectile,limit=1,distance=..1] at @s run function vexp:dagger/projectile/setup
+execute as @e[tag=vexp.temp_projectile,limit=1,distance=..1] at @s run function vexp:dungeons/dagger/projectile/setup
 
 # Poner cooldown (ejemplo 10 ticks = 0.5s)
 scoreboard players set @s vexp.dagger_cooldown 10

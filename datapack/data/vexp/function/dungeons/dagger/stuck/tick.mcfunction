@@ -22,6 +22,6 @@ execute at @s as @e[tag=vexp.dagger_stuck_visual,distance=..1.5] if score @s vex
 execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run tp @s ~ ~ ~
 
 # 6. Detección de Recogida (Pickup)
-execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run function vexp:dagger/stuck/check_pickup
+execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run function vexp:dungeons/dagger/stuck/check_pickup
 # Limpiar tags temporales
 tag @e[tag=vexp.current_host] remove vexp.current_host

@@ -8,7 +8,7 @@ advancement revoke @s only vexp:dagger_throw
 execute if score @s vexp.dagger_cooldown matches 1.. run return 0
 
 # 3. Lanzar la daga
-execute at @s positioned ~ ~1.2 ~ run function vexp:dagger/throw
+execute at @s positioned ~ ~1.2 ~ run function vexp:dungeons/dagger/throw
 
 # 4. Limpiar slot (La daga se consume al lanzarse)
 # Limpiamos tanto mainhand como offhand si tienen una daga (para soportar ambas manos)
