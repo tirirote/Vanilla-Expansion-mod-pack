@@ -1,11 +1,10 @@
 # Projectile Hit Mob
 # Ejecutado AS el proyectil (marker) AT el proyectil
-# El mob es @e[distance=..1.5,limit=1] etc. Pero vamos a identificarlo mejor en la llamada.
 
 # Quitar durabilidad
 scoreboard players add @s vexp.damage 1
 
-execute positioned ~ ~1 ~ run function vexp:dagger/projectile/hit_mob_effects
+execute positioned ~ ~1 ~ run function vexp:dungeons/dagger/projectile/hit_mob_effects
 
 # Identificar mob impactado
 tag @e[type=!player,type=!item_display,type=!interaction,type=!marker,distance=..0.75,limit=1,sort=nearest] add vexp.dagger_target
@@ -31,7 +30,7 @@ execute if entity @s[tag=vexp.netherite] run tag @p[tag=vexp.dagger_owner,limit=
 # Transferir daño al dueño para la devolución
 scoreboard players operation @p[tag=vexp.dagger_owner,limit=1] vexp.damage = @s vexp.damage
 
-execute as @p[tag=vexp.dagger_owner,limit=1] at @s run function vexp:dagger/give
+execute as @p[tag=vexp.dagger_owner,limit=1] at @s run function vexp:dungeons/dagger/give
 
 # Matar proyectil
-function vexp:dagger/projectile/despawn
+function vexp:dungeons/dagger/projectile/despawn

@@ -25,11 +25,40 @@ Implementación de items decorativos y funcionales para el gameplay.
 - [ ] Soportes para armas.
 - [ ] Soporte para velas.
 
-## Actualización de Armas
+## Actualización de Aventura (Mecánicas nuevas)
 
-- [x] Dagas.
-- [ ] Guantes.
-- [ ] Lanzas.
+Implementar mecánicas para complementar el sistema de movimiento y exploración (complementando el sistema de combate). Implementar movimientos nuevos como:
+
+- [ ] Dash o Esquive.
+- [ ] Escalado de paredes.
+- [ ] 
+
+## Actualización de Armas (Estilo Minecraft Dungeons / Vanilla+)
+
+Implementación importante de un nuevo sistema de combate (con soporte de combos, ataques especiales, etc.)
+Implementaremos un sistema de armas nuevas, inspirado en las armas de minecraft dungeons. Cada una tendrá mecánicas de combate diferentes:
+
+Armas nuevas a implementar:
+
+- [x] Dagas:
+
+Velocidad de ataque rápida.
+Daño reducido.
+Arrojable con click derecho.
+On Hit: Pushback ligero.
+On Combo: Pushback fuerte y Retroceso.
+
+- [x] Guantes.
+- [x] Guadañas.
+
+## Actualización de Armaduras (Estilo Minecraft Dungeons / Vanilla+)
+
+Para complementar el sistema de armas, implementaremos un sistema de armaduras nuevas, inspirado en las armaduras de minecraft dungeons. Cada una tendrá mecánicas de combate diferentes:
+
+Armaduras nuevas a implementar:
+
+- [ ] Armadura de Hueso (Esqueleto)
+- [ ] Armadura de Wither (Wither Skeleton)
 
 ## Actualización de Pirotecnia
 
@@ -45,3 +74,4 @@ Implementación de items decorativos y funcionales para el gameplay.
 
 - [x] Barras de vida para mobs. (Visualización de la vida de los mobs).
 - [x] Indicadores de daño para mobs. (Visualización del daño recibido por los mobs).
+- [ ] Mejor feedback visual para el combate o movimiento del jugador.

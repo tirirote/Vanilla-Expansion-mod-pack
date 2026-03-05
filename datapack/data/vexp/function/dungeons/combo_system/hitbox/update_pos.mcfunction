@@ -4,7 +4,7 @@
 
 # Move the hitbox using the reach parameter from the item
 # We use anchored eyes to ensure the 'reach' distance starts from the player's eyes
-$execute anchored eyes run tp @s ^ ^-.5 ^$(reach)
+$execute positioned ~ ~1.2 ~ run tp @s ^ ^ ^$(reach)
 
 # FeedBack: Hit Candidate (White Glowing)
 # Proxemic feedback for targets inside the hitbox zone

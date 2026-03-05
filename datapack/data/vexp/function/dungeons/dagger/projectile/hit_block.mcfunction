@@ -22,7 +22,7 @@ data modify entity @e[tag=vexp.temp_stuck,sort=nearest,limit=1] Rotation set fro
 # Transferir daño al marcador stuck
 scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,limit=1] vexp.damage = @s vexp.damage
 
-execute as @e[tag=vexp.temp_stuck,sort=nearest,limit=1] at @s positioned ~ ~ ~ run function vexp:dagger/stuck/setup
+execute as @e[tag=vexp.temp_stuck,sort=nearest,limit=1] at @s positioned ~ ~ ~ run function vexp:dungeons/dagger/stuck/setup
 
 # Matar proyectil
-function vexp:dagger/projectile/despawn
+function vexp:dungeons/dagger/projectile/despawn

@@ -12,5 +12,5 @@ execute at @s positioned ~ ~1.2 ~ run function vexp:dungeons/dagger/throw
 
 # 4. Limpiar slot (La daga se consume al lanzarse)
 # Limpiamos tanto mainhand como offhand si tienen una daga (para soportar ambas manos)
-execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"dagger"}}] run item replace entity @s weapon.mainhand with air
-execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"dagger"}}] run item replace entity @s weapon.offhand with air
+execute if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger"}}] run item replace entity @s weapon.mainhand with air
+execute if items entity @s weapon.offhand *[custom_data~{vexp:{item:"dagger"}}] run item replace entity @s weapon.offhand with air

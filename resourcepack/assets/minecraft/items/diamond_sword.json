@@ -1,19 +1,46 @@
 {
-    "model": {
-        "type": "minecraft:select",
-        "property": "minecraft:custom_model_data",
-        "cases": [
-            {
-                "when": "vexp:diamond_dagger",
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "vexp:item/diamond_dagger"
-                }
-            }
-        ],
-        "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/diamond_sword"
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:diamond_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/diamond_dagger"
         }
+      },
+      {
+        "when": "vexp:diamond-scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/diamond-scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/diamond-scythe-hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:diamond-rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/diamond-rapier"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/diamond_sword"
     }
+  }
 }

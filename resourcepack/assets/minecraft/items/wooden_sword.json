@@ -1,19 +1,46 @@
 {
-    "model": {
-        "type": "minecraft:select",
-        "property": "minecraft:custom_model_data",
-        "cases": [
-            {
-                "when": "vexp:wooden_dagger",
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "vexp:item/wooden_dagger"
-                }
-            }
-        ],
-        "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/wooden_sword"
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:wooden_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/wooden_dagger"
         }
+      },
+      {
+        "when": "vexp:wooden-scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/wooden-scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/wooden-scythe-hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:wooden-rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/wooden-rapier"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/wooden_sword"
     }
+  }
 }

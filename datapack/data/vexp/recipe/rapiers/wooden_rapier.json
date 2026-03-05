@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  W", " W ", "S  "],
+  "key": {
+    "W": "#minecraft:planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:wooden_sword",
+    "components": {
+      "minecraft:item_name": "Estoque de Madera",
+      "minecraft:lore": [
+        { "text": "Estocadas rápidas", "italic": false, "color": "gray" },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 1", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 2.8", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 4 ticks", "italic": false, "color": "dark_gray" }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "long_combo",
+          "item": "rapier",
+          "combo": { "damage": 1, "cooldown": 4, "range": 1.5, "reach": 2.8 }
+        }
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:rapier_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:rapier_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:custom_model_data": { "strings": ["vexp:wooden-rapier"] }
+    },
+    "count": 1
+  }
+}

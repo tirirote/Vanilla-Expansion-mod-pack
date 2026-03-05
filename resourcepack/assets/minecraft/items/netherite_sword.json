@@ -1,19 +1,46 @@
 {
-    "model": {
-        "type": "minecraft:select",
-        "property": "minecraft:custom_model_data",
-        "cases": [
-            {
-                "when": "vexp:netherite_dagger",
-                "model": {
-                    "type": "minecraft:model",
-                    "model": "vexp:item/netherite_dagger"
-                }
-            }
-        ],
-        "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/netherite_sword"
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:netherite_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/netherite_dagger"
         }
+      },
+      {
+        "when": "vexp:netherite-scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/netherite-scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/netherite-scythe-hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:netherite-rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/netherite-rapier"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_sword"
     }
+  }
 }

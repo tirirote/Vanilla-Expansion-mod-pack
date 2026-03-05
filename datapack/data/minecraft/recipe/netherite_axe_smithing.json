@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:diamond_axe",
+  "addition": "minecraft:netherite_ingot",
+  "result": {
+    "id": "minecraft:netherite_axe",
+    "components": {
+      "minecraft:item_name": "Hacha de Netherite",
+      "minecraft:lore": [
+        { "text": "Fuerza bruta", "italic": false, "color": "gray" },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 14", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 1.8", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
+        {
+          "text": "- Cooldown: 18 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "short_combo",
+          "item": "axe",
+          "combo": { "damage": 14, "cooldown": 18, "range": 3.5, "reach": 1.8 }
+        }
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:axe_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:axe_block_reach",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "vexp:scythes/diamond_scythe",
+  "addition": "minecraft:netherite_ingot",
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "components": {
+      "minecraft:item_name": "Guadaña de Netherite",
+      "minecraft:lore": [
+        { "text": "Gran barrido", "italic": false, "color": "gray" },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 10", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 3.2", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 6.0", "italic": false, "color": "dark_gray" },
+        {
+          "text": "- Cooldown: 18 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "short_combo",
+          "item": "scythe",
+          "combo": { "damage": 10, "cooldown": 18, "range": 6.0, "reach": 3.2 }
+        }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:netherite-scythe"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": 0.4,
+          "operation": "add_value",
+          "id": "vexp:scythe_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": 0.4,
+          "operation": "add_value",
+          "id": "vexp:scythe_block_reach",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  }
+}

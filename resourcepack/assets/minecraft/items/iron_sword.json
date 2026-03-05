@@ -7,7 +7,7 @@
         "when": "vexp:iron_dagger",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/iron_dagger"
+          "model": "vexp:item/dungeons/iron_dagger"
         }
       },
       {
@@ -28,6 +28,13 @@
             "type": "minecraft:model",
             "model": "vexp:item/dungeons/iron-scythe-hand"
           }
+        }
+      },
+      {
+        "when": "vexp:iron-rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/iron-rapier"
         }
       }
     ],
