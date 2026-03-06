@@ -1,0 +1,6 @@
+# Give Sword Macro
+# Recibe $(item_id), $(name), $(dmg), $(spd), $(combo_dmg), $(combo_cooldown), $(combo_range), $(combo_reach)
+
+execute if score @s vexp.dummy matches 1 run return 0
+
+$give @s $(item_id)[custom_data={vexp:{type:"mid_combo", item:"sword", combo:{damage:$(combo_dmg), cooldown:$(combo_cooldown), range:$(combo_range), reach:$(combo_reach)}}}, item_name={"text":"$(name)","italic":false}, lore=[{"text":"Equilibrio y rango","italic":false,"color":"gray"}, {"text":""}, {"text":"Stats de Combo:","italic":false,"color":"blue"}, {"text":"- Daño: $(combo_dmg)","italic":false,"color":"dark_gray"}, {"text":"- Alcance: $(combo_reach)","italic":false,"color":"dark_gray"}, {"text":"- Área (AoE): $(combo_range)","italic":false,"color":"dark_gray"}, {"text":"- Cooldown: $(combo_cooldown) ticks","italic":false,"color":"dark_gray"}], attribute_modifiers=[{type:attack_damage, amount:$(dmg), operation:add_value, id:"vexp:sword_damage", slot:mainhand}, {type:attack_speed, amount:$(spd), operation:add_value, id:"vexp:sword_speed", slot:mainhand}, {type:entity_interaction_range, amount:$(reach_mod), operation:add_value, id:"vexp:sword_reach", slot:mainhand}, {type:block_interaction_range, amount:$(reach_mod), operation:add_value, id:"vexp:sword_block_reach", slot:mainhand}]] 1

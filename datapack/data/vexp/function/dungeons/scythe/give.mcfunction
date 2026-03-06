@@ -1,2 +1,22 @@
-# Give Scythe
-give @s iron_sword[custom_data={vexp:{type:"short_combo",item:"scythe",combo:{cooldown:60,damage:8,range:5.5,reach:3.0}}},custom_model_data={strings:["vexp:iron-scythe"]}, item_name={"text":"Guadaña de Hierro","italic":false}, lore=[{"text":"Gran barrido","italic":false,"color":"gray"}, {"text":""}, {"text":"Stats de Combo:","italic":false,"color":"blue"}, {"text":"- Daño: 8","italic":false,"color":"dark_gray"}, {"text":"- Alcance: 3.0","italic":false,"color":"dark_gray"}, {"text":"- Área (AoE): 5.5","italic":false,"color":"dark_gray"}, {"text":"- Cooldown: 60 ticks","italic":false,"color":"dark_gray"}], attribute_modifiers=[{type:entity_interaction_range, amount:0.2, operation:add_value, id:"vexp:scythe_reach", slot:mainhand}, {type:block_interaction_range, amount:0.2, operation:add_value, id:"vexp:scythe_block_reach", slot:mainhand}]] 1
+# Give Scythe (Common)
+# Ejecutado AS @s (jugador)
+
+execute if entity @s[tag=vexp.wood] run data modify storage vexp:main params merge value {item_id:"wooden_sword", name:"Guadaña de Madera", model:"vexp:wooden-scythe", dmg:3.0, spd:-3.0, combo_dmg:4, combo_cooldown:20, combo_range:5.5, combo_reach:3.0, reach_mod:0.2}
+execute if entity @s[tag=vexp.stone] run data modify storage vexp:main params merge value {item_id:"stone_sword", name:"Guadaña de Piedra", model:"vexp:stone-scythe", dmg:4.0, spd:-3.1, combo_dmg:6, combo_cooldown:22, combo_range:5.5, combo_reach:3.0, reach_mod:0.2}
+execute if entity @s[tag=vexp.copper] run data modify storage vexp:main params merge value {item_id:"copper_sword", name:"Guadaña de Cobre", model:"vexp:copper-scythe", dmg:4.0, spd:-3.2, combo_dmg:7, combo_cooldown:24, combo_range:5.5, combo_reach:3.0, reach_mod:0.2}
+execute if entity @s[tag=vexp.iron] run data modify storage vexp:main params merge value {item_id:"iron_sword", name:"Guadaña de Hierro", model:"vexp:iron-scythe", dmg:5.0, spd:-3.3, combo_dmg:8, combo_cooldown:26, combo_range:5.5, combo_reach:3.0, reach_mod:0.2}
+execute if entity @s[tag=vexp.gold] run data modify storage vexp:main params merge value {item_id:"golden_sword", name:"Guadaña de Oro", model:"vexp:golden-scythe", dmg:3.0, spd:-3.4, combo_dmg:5, combo_cooldown:28, combo_range:5.5, combo_reach:3.0, reach_mod:0.2}
+execute if entity @s[tag=vexp.diamond] run data modify storage vexp:main params merge value {item_id:"diamond_sword", name:"Guadaña de Diamante", model:"vexp:diamond-scythe", dmg:6.0, spd:-3.5, combo_dmg:9, combo_cooldown:30, combo_range:5.5, combo_reach:3.0, reach_mod:0.2}
+execute if entity @s[tag=vexp.netherite] run data modify storage vexp:main params merge value {item_id:"netherite_sword", name:"Guadaña de Netherite", model:"vexp:netherite-scythe", dmg:7.0, spd:-3.6, combo_dmg:10, combo_cooldown:32, combo_range:6.0, combo_reach:3.2, reach_mod:0.4}
+
+function vexp:dungeons/scythe/give_macro with storage vexp:main params
+
+tag @s remove vexp.iron
+tag @s remove vexp.wood
+tag @s remove vexp.stone
+tag @s remove vexp.gold
+tag @s remove vexp.diamond
+tag @s remove vexp.copper
+tag @s remove vexp.netherite
+scoreboard players set @s vexp.damage 0
+data remove storage vexp:main params

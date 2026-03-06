@@ -10,5 +10,5 @@
 tp @s ^ ^ ^-2.5
 
 # Visuals
-particle minecraft:cloud ~ ~1.2 ~ 0.5 0.5 1 0.1 20
-playsound minecraft:entity.phantom.flap player @a ~ ~ ~ 1 1.5
+particle minecraft:poof ~ ~ ~ 0.25 0.5 0.25 0.1 25
+playsound minecraft:entity.phantom.flap player @a[distance=..10] ~ ~ ~ 1 1

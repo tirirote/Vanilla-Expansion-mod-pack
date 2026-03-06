@@ -2,8 +2,8 @@
 # @s is the target entity
 
 # Slight pushback
-function vexp:utils/motion/apply_knockback {strength:1, y:0.25}
+function vexp:utils/motion/apply_knockback {strength:0.5, y:0.2}
 
 # Visuals
-particle minecraft:sweep_attack ~ ~1.2 ~ 0 0 0 0 1
-playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 0.6
+particle minecraft:crit ~ ~ ~ .2 .2 .2 .2 15
+playsound minecraft:entity.player.attack.strong player @a ~ ~ ~ 1 0.6

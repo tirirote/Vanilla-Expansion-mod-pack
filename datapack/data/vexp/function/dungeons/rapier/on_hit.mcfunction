@@ -1,12 +1,8 @@
 # dungeons/rapier/on_hit.mcfunction
 # @s is the target entity
 
-# Freeze the mob (rapier thrust)
-tp @s ~ ~ ~
-
-# Blindness
-effect give @s minecraft:blindness 1 0 true
+function vexp:utils/motion/apply_knockback {strength:0.25, y:0.2}
 
 # Visuals
-particle minecraft:spark ~ ~1.2 ~ 0.1 0.1 0.1 0.05 3
-playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 1.8
+particle minecraft:enchanted_hit ~ ~ ~ 0.1 0.1 0.1 0.25 15
+playsound minecraft:item.trident.hit_ground player @a[distance=..10] ~ ~ ~ 1 1

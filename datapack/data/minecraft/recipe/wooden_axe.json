@@ -17,7 +17,7 @@
         { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 3.0", "italic": false, "color": "dark_gray" },
         {
-          "text": "- Cooldown: 18 ticks",
+          "text": "- Cooldown: 14 ticks",
           "italic": false,
           "color": "dark_gray"
         }
@@ -26,10 +26,17 @@
         "vexp": {
           "type": "short_combo",
           "item": "axe",
-          "combo": { "damage": 5, "cooldown": 18, "range": 3.0, "reach": 1.5 }
+          "combo": { "damage": 5, "cooldown": 14, "range": 3.0, "reach": 1.5 }
         }
       },
       "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -2.0,
+          "operation": "add_value",
+          "id": "vexp:axe_speed",
+          "slot": "mainhand"
+        },
         {
           "type": "minecraft:entity_interaction_range",
           "amount": -1.3,

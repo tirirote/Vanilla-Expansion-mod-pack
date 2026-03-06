@@ -5,9 +5,10 @@
 execute if entity @s[tag=vexp.hitted] run return 0
 execute if entity @s[tag=vexp.hitted.combo_end] run return 0
 
-# Join white team and apply glowing
-team join vexp.white @s
+# Apply glowing with Dark Gray color (via team)
 effect give @s minecraft:glowing 1 1 true
+team join vexp.white @s
 
 # Mark for cleanup
 tag @s add vexp.hit_candidate
+tag @s add vexp.feedback_glowing

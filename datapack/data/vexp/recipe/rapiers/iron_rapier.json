@@ -16,16 +16,23 @@
         { "text": "- Daño: 3", "italic": false, "color": "dark_gray" },
         { "text": "- Alcance: 2.8", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 4 ticks", "italic": false, "color": "dark_gray" }
+        { "text": "- Cooldown: 6 ticks", "italic": false, "color": "dark_gray" }
       ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "long_combo",
           "item": "rapier",
-          "combo": { "damage": 3, "cooldown": 4, "range": 1.5, "reach": 2.8 }
+          "combo": { "damage": 3, "cooldown": 6, "range": 1.5, "reach": 2.8 }
         }
       },
       "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:rapier_speed",
+          "slot": "mainhand"
+        },
         {
           "type": "minecraft:entity_interaction_range",
           "amount": 0.0,

@@ -16,16 +16,27 @@
         { "text": "- Daño: 4", "italic": false, "color": "dark_gray" },
         { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 4.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 8 ticks", "italic": false, "color": "dark_gray" }
+        {
+          "text": "- Cooldown: 20 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
       ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
           "item": "sword",
-          "combo": { "damage": 4, "cooldown": 8, "range": 4.5, "reach": 2.5 }
+          "combo": { "damage": 4, "cooldown": 20, "range": 4.5, "reach": 2.5 }
         }
       },
       "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -2.7,
+          "operation": "add_value",
+          "id": "vexp:sword_speed",
+          "slot": "mainhand"
+        },
         {
           "type": "minecraft:entity_interaction_range",
           "amount": -0.3,

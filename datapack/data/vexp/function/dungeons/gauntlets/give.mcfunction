@@ -1,2 +1,22 @@
-# Give Combat Gloves
-give @s carrot_on_a_stick[custom_data={vexp:{type:"mid_combo",item:"gauntlets",combo:{cooldown:2,damage:3,range:2.5,reach:2.5}}}, custom_model_data={strings:["vexp:gauntlets"]}, item_name={"text":"Guantes de Combate","italic":false,"color":"gold"}, lore=[{"text":"Golpes rápidos","italic":false,"color":"gray"}, {"text":""}, {"text":"Stats de Combo:","italic":false,"color":"blue"}, {"text":"- Daño: 3","italic":false,"color":"dark_gray"}, {"text":"- Alcance: 2.5","italic":false,"color":"dark_gray"}, {"text":"- Área (AoE): 2.5","italic":false,"color":"dark_gray"}, {"text":"- Cooldown: 2 ticks","italic":false,"color":"dark_gray"}], attribute_modifiers=[{type:attack_damage, amount:2, operation:add_value, id:"vexp:gloves_damage", slot:mainhand}, {type:attack_speed, amount:6, operation:add_value, id:"vexp:gloves_speed", slot:mainhand}, {type:entity_interaction_range, amount:-0.3, operation:add_value, id:"vexp:gloves_reach", slot:mainhand}, {type:block_interaction_range, amount:-0.3, operation:add_value, id:"vexp:gloves_block_reach", slot:mainhand}], repairable={items:["minecraft:leather"]}] 1
+# Give Combat Gloves (Common)
+# Ejecutado AS @s (jugador)
+
+execute if entity @s[tag=vexp.wood] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Madera", dmg:1.0, spd:2.6, combo_dmg:1, combo_cooldown:3, combo_range:2.5, combo_reach:2.5, reach_mod:-0.3}
+execute if entity @s[tag=vexp.stone] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Piedra", dmg:2.0, spd:2.4, combo_dmg:2, combo_cooldown:4, combo_range:2.5, combo_reach:2.5, reach_mod:-0.3}
+execute if entity @s[tag=vexp.copper] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Cobre", dmg:2.0, spd:2.2, combo_dmg:2, combo_cooldown:5, combo_range:2.5, combo_reach:2.5, reach_mod:-0.3}
+execute if entity @s[tag=vexp.iron] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Hierro", dmg:3.0, spd:2.0, combo_dmg:3, combo_cooldown:6, combo_range:2.5, combo_reach:2.5, reach_mod:-0.3}
+execute if entity @s[tag=vexp.gold] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Oro", dmg:2.0, spd:1.8, combo_dmg:2, combo_cooldown:7, combo_range:2.5, combo_reach:2.5, reach_mod:-0.3}
+execute if entity @s[tag=vexp.diamond] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Diamante", dmg:4.0, spd:1.6, combo_dmg:4, combo_cooldown:8, combo_range:2.5, combo_reach:2.5, reach_mod:-0.3}
+execute if entity @s[tag=vexp.netherite] run data modify storage vexp:main params merge value {item_id:"carrot_on_a_stick", name:"Guantes de Netherite", dmg:5.0, spd:1.4, combo_dmg:5, combo_cooldown:9, combo_range:3.0, combo_reach:2.5, reach_mod:-0.3}
+
+function vexp:dungeons/gauntlets/give_macro with storage vexp:main params
+
+tag @s remove vexp.iron
+tag @s remove vexp.wood
+tag @s remove vexp.stone
+tag @s remove vexp.gold
+tag @s remove vexp.diamond
+tag @s remove vexp.copper
+tag @s remove vexp.netherite
+scoreboard players set @s vexp.damage 0
+data remove storage vexp:main params

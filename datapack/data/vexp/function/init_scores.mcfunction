@@ -39,7 +39,6 @@ scoreboard players set #global vexp.id 0
 team add vexp.white
 team modify vexp.white color gray
 team add vexp.yellow
-team modify vexp.yellow color gold
+team modify vexp.yellow color yellow
 team add vexp.red
-team modify vexp.red color dark_red
-
+team modify vexp.red color red

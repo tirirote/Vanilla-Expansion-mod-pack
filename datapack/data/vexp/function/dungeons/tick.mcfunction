@@ -2,10 +2,9 @@
 # Main Tick Loop
 
 # 1. PERSISTENCE CLEANUP (Start of tick)
-# Reset teams ONLY if the entity no longer has the interaction tags
-execute as @e[team=vexp.white] unless entity @s[tag=vexp.hit_candidate] run team leave @s
-execute as @e[team=vexp.yellow] unless entity @s[tag=vexp.hitted] run team leave @s
-execute as @e[team=vexp.red] unless entity @s[tag=vexp.hitted.combo_end] run team leave @s
+execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run effect clear @s minecraft:glowing
+execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run team leave @s
+execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run tag @s remove vexp.feedback_glowing
 
 # 2. CORE SYSTEMS
 function vexp:dungeons/combo_system/tick
