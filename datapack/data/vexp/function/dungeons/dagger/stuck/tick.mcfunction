@@ -17,11 +17,14 @@ execute if entity @e[tag=vexp.current_host,distance=..0.1] unless entity @s[tag=
 execute if score @s vexp.dagger_cooldown matches ..0 as @e[tag=vexp.current_host,limit=1] run damage @s 2 minecraft:player_attack
 execute if score @s vexp.dagger_cooldown matches ..0 run scoreboard players set @s vexp.dagger_cooldown 20
 
-# 5. Sincronizar visual e interacción (@s es el marcador)
+# 5. Animación de balanceo
+function vexp:dungeons/dagger/stuck/animate
+
+# 6. Sincronizar visual e interacción (@s es el marcador)
 execute at @s as @e[tag=vexp.dagger_stuck_visual,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run tp @s ~ ~ ~
 execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run tp @s ~ ~ ~
 
-# 6. Detección de Recogida (Pickup)
+# 7. Detección de Recogida (Pickup)
 execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run function vexp:dungeons/dagger/stuck/check_pickup
 # Limpiar tags temporales
 tag @e[tag=vexp.current_host] remove vexp.current_host

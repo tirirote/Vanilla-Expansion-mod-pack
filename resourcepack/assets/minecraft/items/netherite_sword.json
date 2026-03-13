@@ -11,6 +11,20 @@
         }
       },
       {
+        "when": "vexp:resonance_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/resonance_dagger"
+        }
+      },
+      {
+        "when": "vexp:amethyst_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/amethyst_dagger"
+        }
+      },
+      {
         "when": "vexp:netherite-scythe",
         "model": {
           "type": "minecraft:select",
@@ -31,10 +45,78 @@
         }
       },
       {
+        "when": "vexp:resonance-scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/resonance-scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/resonance-scythe-hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:amethyst-scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/amethyst-scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/amethyst-scythe-hand"
+          }
+        }
+      },
+      {
         "when": "vexp:netherite-rapier",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/netherite-rapier"
+        }
+      },
+      {
+        "when": "vexp:resonance_sword",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/resonance_sword"
+        }
+      },
+      {
+        "when": "vexp:amethyst_sword",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/amethyst_sword"
+        }
+      },
+      {
+        "when": "vexp:resonance-rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/resonance-rapier"
+        }
+      },
+      {
+        "when": "vexp:amethyst-rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/amethyst-rapier"
         }
       }
     ],

@@ -5,5 +5,5 @@
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
 # Visuals
-particle minecraft:small_gust ~ ~1.2 ~ 0 0 0 0.05 1
-playsound minecraft:entity.player.attack.strong player @a ~ ~ ~ 1 1.5
+particle minecraft:small_gust ~ ~ ~ 0 0 0 0.05 1
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.strong", type: "player"}

@@ -20,7 +20,7 @@ execute as @e[tag=vexp.handgun.new_bullet,sort=nearest,limit=1,distance=..2] at 
 # 5. Consumo de bala
 function vexp:handgun/consume
 
-# 6. Feedback visual/sonoro extra (opcional si init_bullet ya lo hace)
+# 6. Feedback visual/sonoro extra
 execute positioned ~ ~1.25 ~ positioned ^ ^ ^1.25 run function vexp:handgun/shoot_effects
 
 # 6.5. Aplicar retroceso al jugador que dispara

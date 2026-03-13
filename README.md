@@ -29,27 +29,64 @@ Implementación de items decorativos y funcionales para el gameplay.
 
 Implementar mecánicas para complementar el sistema de movimiento y exploración (complementando el sistema de combate). Implementar movimientos nuevos como:
 
-- [ ] Dash o Esquive.
-- [ ] Escalado de paredes.
-- [ ] 
+- [x] Dash o Esquive.
+- [x] Escalado de paredes.
+- [x] Base técnica movement/ (tick, cooldowns y eventos).
 
 ## Actualización de Armas (Estilo Minecraft Dungeons / Vanilla+)
 
 Implementación importante de un nuevo sistema de combate (con soporte de combos, ataques especiales, etc.)
 Implementaremos un sistema de armas nuevas, inspirado en las armas de minecraft dungeons. Cada una tendrá mecánicas de combate diferentes:
 
+Nuevas variantes de Calidad de armas:
+
+3 Ramas a elegir:
+
+1. Netherite (Standar) -> Fuerza bruta del nether.
+2. Resonante. -> Inspirado por el warden.
+3. Amatista. -> Enfocado a magia y encantamientos
+
+Nota: Estas variante de calidad serán las únicas que tengan habilidad de click derecho.
+
 Armas nuevas a implementar:
 
 - [x] Dagas:
-
-Velocidad de ataque rápida.
-Daño reducido.
-Arrojable con click derecho.
-On Hit: Pushback ligero.
-On Combo: Pushback fuerte y Retroceso.
+  - Velocidad de ataque rápida.
+  - Daño reducido.
+  - Área de daño mínimo
+  - Arrojable con click derecho.
+  - On Hit: Pushback ligero.
+  - On Combo: Pushback fuerte y Retroceso.
 
 - [x] Guantes.
+  - Velocidad de ataque muy rápida.
+  - Daño mínimo.
+  - Área de daño mínimo.
+  - Click derecho: Parry, el jugador en un breve instante pierde velocidad, pero si recibe daño, aplicará pushback a los mobs cercanos, y luego ganará velocidad adicional por un breve instante.
+  - On Hit: Pushback ligero.
+  - On Combo: Retroceso.
+
 - [x] Guadañas.
+  - Velocidad de ataque lenta.
+  - Daño alto.
+  - Área de daño amplio.
+  - Click derecho: Lanza un proyectil que inflige daño y aplica lentitud.
+  - On Hit: Pushback ligero.
+  - On Combo: Retroceso.
+
+-[ ] Rapiers.
+  - Velocidad de ataque rápida.
+  - Daño bajo.
+  - Área de daño mínimo
+  - Click derecho: Lunge, el jugador avanza hacia adelante y atraviesa al mob, le aplica efecto de sangrado (wither por 3s), y gana un instante de invisibilidad breve.
+
+- [ ] Espadas.
+  - Velocidad de ataque media.
+  - Daño medio.
+  - Área de daño bajo.
+  - Click derecho: Ataque circular, el jugador gira progresivamente durante un 1 segundo, aplicando daño de área a los mobs cercanos.
+
+  
 
 ## Actualización de Armaduras (Estilo Minecraft Dungeons / Vanilla+)
 

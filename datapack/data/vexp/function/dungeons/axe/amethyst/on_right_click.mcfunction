@@ -1,0 +1,1 @@
+function vexp:dungeons/axe/on_right_click

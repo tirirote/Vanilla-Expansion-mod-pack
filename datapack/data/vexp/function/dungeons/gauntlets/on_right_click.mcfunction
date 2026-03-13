@@ -1,13 +1,15 @@
 # dungeons/gauntlets/on_right_click.mcfunction
 # @s is the player
 
-# 1. Give resistance 5 to cancel immediate damage
+# Brief self-penalty while entering parry stance
+effect give @s minecraft:slowness 1 2 true
 effect give @s minecraft:resistance 1 4 true
 
-# 2. Add parry tag for 5 ticks (listener in tick loop)
+# Parry stance window and damage snapshot
 tag @s add vexp.gauntlets.parry
-scoreboard players set @s vexp.dummy 5
+scoreboard players set @s vexp.gauntlets_parry_timer 8
+scoreboard players operation @s vexp.gauntlets_damage_snapshot = @s vexp.damage_taken
 
-# 3. Visuals
+# Visual feedback
 particle minecraft:electric_spark ~ ~1.2 ~ 0.5 0.5 0.5 0.1 20
-playsound minecraft:item.shield.block player @a ~ ~ ~ 1 1.5
+function vexp:utils/sound {sound: "minecraft:item.shield.block", type: "player"}

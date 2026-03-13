@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:echo_ingot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/echo_ingot"
+        }
+      },
+      {
+        "when": "vexp:amethyst_ingot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/amethyst_ingot"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_ingot"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:scored_match",
+  "score": {
+    "target": "@s",
+    "objective": "minecraft.used:minecraft.wooden_axe",
+    "matchesScores": ["1.."]
+  }
+}

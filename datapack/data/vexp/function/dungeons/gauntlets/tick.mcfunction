@@ -1,13 +1,15 @@
 # dungeons/gauntlets/tick.mcfunction
-# Parry Logic
-# If HurtTime is 10s and player is parrying -> Trigger Parry feedback
-# (Resistance 5 might prevent HurtTime from triggering, but we can't easily cancel damage otherwise)
-# If HurtTime doesn't trigger, we'll just check distance to mobs and knock them back?
-# Let's use distance for "Parry".
+# Trigger parry only after the player has actually taken damage since entering parry stance
+execute as @a[tag=vexp.gauntlets.parry,scores={vexp.gauntlets_parry_timer=1..}] run scoreboard players operation #parry_delta vexp.math = @s vexp.damage_taken
+execute as @a[tag=vexp.gauntlets.parry,scores={vexp.gauntlets_parry_timer=1..}] run scoreboard players operation #parry_delta vexp.math -= @s vexp.gauntlets_damage_snapshot
+execute as @a[tag=vexp.gauntlets.parry,scores={vexp.gauntlets_parry_timer=1..}] at @s if score #parry_delta vexp.math matches 1.. run function vexp:dungeons/gauntlets/parry_success
 
-# If parrying, knockback any mob that's extremely close (as if they were attacking)
-execute as @a[tag=vexp.gauntlets.parry] at @s as @e[type=!player,distance=..2.5,sort=nearest,limit=1] at @s run function vexp:dungeons/gauntlets/parry_trigger
+# Parry timers
+execute as @a[scores={vexp.gauntlets_parry_timer=1..}] run scoreboard players remove @s vexp.gauntlets_parry_timer 1
+execute as @a[scores={vexp.gauntlets_boost_timer=1..}] run scoreboard players remove @s vexp.gauntlets_boost_timer 1
 
-# Timer for parry state
-execute as @a[scores={vexp.dummy=1..}] run scoreboard players remove @s vexp.dummy 1
-execute as @a[scores={vexp.dummy=0},tag=vexp.gauntlets.parry] run tag @s remove vexp.gauntlets.parry
+# Timeout parry if no hit was received
+execute as @a[tag=vexp.gauntlets.parry,scores={vexp.gauntlets_parry_timer=..0}] at @s run function vexp:dungeons/gauntlets/parry_cancel
+
+# Post-parry speed boost window
+execute as @a[scores={vexp.gauntlets_boost_timer=1..}] run effect give @s minecraft:speed 1 1 true

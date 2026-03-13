@@ -1,8 +1,10 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "vexp:rapiers/diamond_rapier",
-  "addition": "minecraft:netherite_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  W", " W ", "S  "],
+  "key": {
+    "W": "minecraft:netherite_ingot",
+    "S": "minecraft:stick"
+  },
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
@@ -24,7 +26,13 @@
         "vexp": {
           "type": "long_combo",
           "item": "rapier",
-          "combo": { "damage": 6, "cooldown": 10, "range": 2.0, "reach": 3.2 }
+          "combo": {
+            "damage": 6,
+            "cooldown": 10,
+            "range": 2.0,
+            "reach": 3.2,
+            "quality": "netherite"
+          }
         }
       },
       "minecraft:attribute_modifiers": [
@@ -50,7 +58,13 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:custom_model_data": { "strings": ["vexp:netherite-rapier"] }
+      "minecraft:custom_model_data": { "strings": ["vexp:netherite-rapier"] },
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     }
   }
 }

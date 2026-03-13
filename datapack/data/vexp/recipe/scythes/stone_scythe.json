@@ -14,7 +14,7 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.0", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 7.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 5.5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 22 ticks",
@@ -26,7 +26,13 @@
         "vexp": {
           "type": "short_combo",
           "item": "scythe",
-          "combo": { "damage": 6, "cooldown": 22, "range": 5.5, "reach": 3.0 }
+          "combo": {
+            "damage": 6,
+            "cooldown": 22,
+            "range": 5.5,
+            "reach": 7.5,
+            "quality": "normal"
+          }
         }
       },
       "minecraft:custom_model_data": {
@@ -54,7 +60,13 @@
           "id": "vexp:scythe_block_reach",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

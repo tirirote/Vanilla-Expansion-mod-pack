@@ -22,7 +22,13 @@
         "vexp": {
           "type": "long_combo",
           "item": "rapier",
-          "combo": { "damage": 2, "cooldown": 5, "range": 1.5, "reach": 2.8 }
+          "combo": {
+            "damage": 2,
+            "cooldown": 5,
+            "range": 1.5,
+            "reach": 2.8,
+            "quality": "normal"
+          }
         }
       },
       "minecraft:attribute_modifiers": [
@@ -48,7 +54,13 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:custom_model_data": { "strings": ["vexp:stone-rapier"] }
+      "minecraft:custom_model_data": { "strings": ["vexp:stone-rapier"] },
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }
