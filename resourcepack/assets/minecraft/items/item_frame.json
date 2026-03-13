@@ -105,14 +105,14 @@
         "when": "vexp:training_dummy",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/decorative/training_dummy"
+          "model": "vexp:item/dungeons/training-dummy"
         }
       },
       {
         "when": "vexp:training_dummy_block",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/decorative/training_dummy"
+          "model": "vexp:block/dungeons/training-dummy"
         }
       }
     ],

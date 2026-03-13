@@ -23,4 +23,4 @@ execute as @e[type=interaction,tag=vexp.temp_interact,sort=nearest,distance=..0.
 
 # NO BORRAR TAGS TEMPORALES AQUI
 # Se borrarán en convert_frame_oak tras la rotación final.
-playsound minecraft:block.wood.place block @a ~ ~ ~ 1 1
+function vexp:utils/sound {sound: "minecraft:block.wood.place", type: "block"}

@@ -6,5 +6,9 @@ data modify storage vexp:main combo_params set from entity @s SelectedItem.compo
 # Also copy the 'item' identifier for our hooks
 data modify storage vexp:main combo_params.item set from entity @s SelectedItem.components."minecraft:custom_data".vexp.item
 
+# Copy quality routing key (normal|netherite|echo|amethyst)
+data modify storage vexp:main combo_params.quality set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.quality
+
+
 # Offload logic to conditional evaluator Macro
 function vexp:dungeons/combo_system/hitbox/evaluate_summon with storage vexp:main combo_params

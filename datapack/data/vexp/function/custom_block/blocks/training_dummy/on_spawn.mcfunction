@@ -1,0 +1,11 @@
+# on_spawn.mcfunction
+# Se ejecuta AS el bloque colocado
+# Input: $(name) y demas attrs
+
+execute at @s run summon slime ~ ~1 ~ {Tags:["vexp.custom_block.dummy","vexp.temp_dummy"], Silent:1b, NoAI:1b, PersistenceRequired:1b, CustomNameVisible:0b, CustomName:"Muñeco de Entrenamiento", attributes:[{id:"minecraft:max_health",base:1000f}, {id:"minecraft:knockback_resistance",base:1.0f}], Health:1000f, active_effects:[{id:"minecraft:regeneration",amplifier:100b,duration:-1,show_particles:0b},{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}], DeathLootTable:"vexp:empty",Size:0}
+
+# Sync ID
+execute as @e[tag=vexp.temp_dummy,limit=1,sort=nearest] run scoreboard players operation @s vexp.id = #global vexp.id
+
+# Cleanup temp
+tag @e[tag=vexp.temp_dummy] remove vexp.temp_dummy

@@ -30,7 +30,8 @@
             "damage": 2,
             "cooldown": 3,
             "range": 0.8,
-            "reach": 2
+            "reach": 2,
+            "quality": "normal"
           }
         }
       },
@@ -66,7 +67,13 @@
           "id": "vexp:dagger_block_reach",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

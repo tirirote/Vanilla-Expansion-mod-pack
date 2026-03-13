@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["W W", "W W"],
+  "pattern": ["   ", "W W", "L L"],
   "key": {
-    "W": "#minecraft:planks"
+    "W": "#minecraft:planks",
+    "L": "minecraft:leather"
   },
   "result": {
     "id": "minecraft:carrot_on_a_stick",
@@ -21,7 +22,13 @@
         "vexp": {
           "type": "mid_combo",
           "item": "gauntlets",
-          "combo": { "damage": 1, "cooldown": 3, "range": 2.5, "reach": 2.5 }
+          "combo": {
+            "damage": 1,
+            "cooldown": 3,
+            "range": 2.5,
+            "reach": 2.5,
+            "quality": "normal"
+          }
         }
       },
       "minecraft:attribute_modifiers": [
@@ -47,7 +54,13 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:custom_model_data": { "strings": ["vexp:gauntlets"] }
+      "minecraft:custom_model_data": { "strings": ["vexp:wooden-gauntlet"] },
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

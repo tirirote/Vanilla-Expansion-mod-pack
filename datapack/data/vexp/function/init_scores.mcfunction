@@ -2,6 +2,7 @@
 scoreboard objectives add vexp.id dummy
 scoreboard objectives add vexp.dagger_used minecraft.used:minecraft.iron_sword
 scoreboard objectives add vexp.dagger_cooldown dummy
+scoreboard objectives add vexp.anim_frame dummy
 scoreboard objectives add vexp.fuse dummy
 scoreboard objectives add vexp.damage dummy
 scoreboard objectives add vexp.tnt_stick_used minecraft.used:minecraft.experience_bottle
@@ -31,6 +32,38 @@ scoreboard objectives add vexp.gauntlets_used minecraft.used:minecraft.carrot_on
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add vexp.wave_step dummy
+
+# Movement
+scoreboard objectives add vexp.move_dash_cd dummy
+scoreboard objectives add vexp.move_climb_cd dummy
+scoreboard objectives add vexp.move_tap_w dummy
+scoreboard objectives add vexp.move_tap_a dummy
+scoreboard objectives add vexp.move_tap_s dummy
+scoreboard objectives add vexp.move_tap_d dummy
+scoreboard objectives add vexp.move_prev_w dummy
+scoreboard objectives add vexp.move_prev_a dummy
+scoreboard objectives add vexp.move_prev_s dummy
+scoreboard objectives add vexp.move_prev_d dummy
+scoreboard objectives add vexp.move_prev_sneak dummy
+scoreboard objectives add vexp.move_slide_ticks dummy
+scoreboard objectives add vexp.move_slide_dir dummy
+scoreboard objectives add vexp.move_climb_ready dummy
+
+# Weapon skills
+scoreboard objectives add vexp.gauntlets_parry_timer dummy
+scoreboard objectives add vexp.gauntlets_boost_timer dummy
+scoreboard objectives add vexp.gauntlets_damage_snapshot dummy
+scoreboard objectives add vexp.sword_spin_timer dummy
+# Dungeons System
+scoreboard objectives add vexp.dstate dummy
+scoreboard objectives add vexp.scythe_proj_life dummy
+
+# Global Projectile System
+scoreboard objectives add vexp.proj_lifetime dummy
+scoreboard objectives add vexp.proj_speed dummy
+scoreboard objectives add vexp.proj_gravity dummy
+scoreboard objectives add vexp.proj_damage dummy
 
 # Resetear ID
 scoreboard players set #global vexp.id 0

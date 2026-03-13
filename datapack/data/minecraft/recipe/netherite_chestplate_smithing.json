@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["W W", "WWW", "WWW"],
+  "key": {
+    "W": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "minecraft:netherite_chestplate",
+    "count": 1
+  }
+}

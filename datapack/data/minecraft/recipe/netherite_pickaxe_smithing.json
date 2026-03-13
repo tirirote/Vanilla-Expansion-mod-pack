@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:netherite_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:netherite_pickaxe",
+    "count": 1
+  }
+}

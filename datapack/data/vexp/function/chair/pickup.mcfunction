@@ -38,7 +38,7 @@ execute if entity @s[tag=vexp.chair.crimson] run summon item ~ ~ ~ {Item:{id:"mi
 execute if entity @s[tag=vexp.chair.warped] run summon item ~ ~ ~ {Item:{id:"minecraft:item_frame",count:1,components:{"minecraft:entity_data":{id:"minecraft:item_frame",Tags:["vexp.place_chair","vexp.place_chair.warped"],Invisible:1b,Fixed:1b,Silent:1b,NoGravity:1b},"minecraft:custom_model_data":{strings:["vexp:warped_chair"]},"minecraft:item_name":{"text":"Silla Distorsionada","italic":false}}}}
 
 # 5. Efectos (Sonido + Partículas)
-execute at @s run playsound minecraft:block.wood.break block @a ~ ~ ~ 1 1
+execute at @s run function vexp:utils/sound {sound: "minecraft:block.wood.break", type: "block"}
 
 execute if entity @s[tag=vexp.chair.oak] run particle block{block_state:{Name:"oak_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50
 execute if entity @s[tag=vexp.chair.pale_oak] run particle block{block_state:{Name:"pale_oak_planks"}} ~ ~0.5 ~ 0.15 0.35 0.15 1 50

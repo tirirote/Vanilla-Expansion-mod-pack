@@ -1,8 +1,10 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "minecraft:diamond_sword",
-  "addition": "minecraft:netherite_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " W ", " S "],
+  "key": {
+    "W": "minecraft:netherite_ingot",
+    "S": "minecraft:stick"
+  },
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
@@ -24,7 +26,13 @@
         "vexp": {
           "type": "mid_combo",
           "item": "sword",
-          "combo": { "damage": 10, "cooldown": 24, "range": 5.0, "reach": 2.8 }
+          "combo": {
+            "damage": 10,
+            "cooldown": 24,
+            "range": 5.0,
+            "reach": 2.8,
+            "quality": "netherite"
+          }
         }
       },
       "minecraft:attribute_modifiers": [
@@ -49,7 +57,13 @@
           "id": "vexp:sword_block_reach",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     }
   }
 }

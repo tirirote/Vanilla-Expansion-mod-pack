@@ -14,8 +14,8 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 12", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 3.0", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 24 ticks",
           "italic": false,
@@ -26,7 +26,13 @@
         "vexp": {
           "type": "short_combo",
           "item": "axe",
-          "combo": { "damage": 12, "cooldown": 24, "range": 3.0, "reach": 1.5 }
+          "combo": {
+            "damage": 12,
+            "cooldown": 24,
+            "range": 1.5,
+            "reach": 3.5,
+            "quality": "normal"
+          }
         }
       },
       "minecraft:attribute_modifiers": [
@@ -51,7 +57,13 @@
           "id": "vexp:axe_block_reach",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

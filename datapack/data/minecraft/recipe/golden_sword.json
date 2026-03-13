@@ -26,7 +26,13 @@
         "vexp": {
           "type": "mid_combo",
           "item": "sword",
-          "combo": { "damage": 4, "cooldown": 20, "range": 4.5, "reach": 2.5 }
+          "combo": {
+            "damage": 4,
+            "cooldown": 20,
+            "range": 4.5,
+            "reach": 2.5,
+            "quality": "normal"
+          }
         }
       },
       "minecraft:attribute_modifiers": [

@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["   ", " W ", "S  "],
+  "key": {
+    "W": "minecraft:echo_shard",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "components": {
+      "minecraft:item_name": "Daga Resonante",
+      "minecraft:lore": [
+        {
+          "text": "Arma arrojadiza resonante",
+          "italic": false,
+          "color": "gray"
+        },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.0", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 8 ticks", "italic": false, "color": "dark_gray" }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "mid_combo",
+          "item": "dagger",
+          "combo": {
+            "damage": 6,
+            "cooldown": 8,
+            "range": 1.0,
+            "reach": 2.5,
+            "quality": "echo"
+          }
+        }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_dagger"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": 6.0,
+          "operation": "add_value",
+          "id": "vexp:dagger_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": 1.4,
+          "operation": "add_value",
+          "id": "vexp:dagger_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": -0.5,
+          "operation": "add_value",
+          "id": "vexp:dagger_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": -0.5,
+          "operation": "add_value",
+          "id": "vexp:dagger_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    }
+  }
+}

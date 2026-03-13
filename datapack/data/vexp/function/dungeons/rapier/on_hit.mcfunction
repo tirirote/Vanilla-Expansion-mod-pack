@@ -5,4 +5,4 @@ function vexp:utils/motion/apply_knockback {strength:0.25, y:0.2}
 
 # Visuals
 particle minecraft:enchanted_hit ~ ~ ~ 0.1 0.1 0.1 0.25 15
-playsound minecraft:item.trident.hit_ground player @a[distance=..10] ~ ~ ~ 1 1
+function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}

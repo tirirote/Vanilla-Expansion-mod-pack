@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vexp:item/dungeons/netherite-scythe"
+    "layer0": "vexp:item/dungeons/netherite_scythe"
   }
 }

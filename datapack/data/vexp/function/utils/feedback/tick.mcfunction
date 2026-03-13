@@ -1,0 +1,2 @@
+#Feedback tick function, called from main tick function. Used to run feedback-related functions that need to be ran every tick, such as the dust wave animation.
+execute as @e[type=marker,tag=vexp.dust_wave] at @s run function vexp:utils/feedback/dust_wave_tick

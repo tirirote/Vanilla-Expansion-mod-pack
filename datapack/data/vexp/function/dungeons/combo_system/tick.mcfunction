@@ -1,3 +1,7 @@
+# dungeons/combo_system/tick.mcfunction
+# Main Combo System Tick
+# Right-click detection now handled by advancements (sword_attack, axe_attack, dagger_attack, etc)
+
 # 0. Hitbox Management
 # Mark all hitboxes for potential removal
 tag @e[type=interaction,tag=vexp.combo_hitbox] add vexp.hitbox.to_remove

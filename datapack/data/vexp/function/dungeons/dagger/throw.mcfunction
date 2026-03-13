@@ -4,18 +4,18 @@
 # Verificamos cooldown
 execute if score @s vexp.dagger_cooldown matches 1.. run return 0
 
+tag @s add vexp.projectile_owner
 tag @s add vexp.dagger_owner
 
 # Sonido de lanzamiento
-playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.5 1.5
-
+function vexp:utils/sound {sound: "minecraft:item.trident.throw", type: "player"}
 particle minecraft:sweep_attack ^ ^ ^.85 0 0 0 1 1
 
 # Guardar datos del item para el display (opcional, pero mejor pasarlo al proyectil)
 tag @s add vexp.throwing
 
-# Crear el proyectil (Marker)
-summon minecraft:marker ~ ~ ~ {Tags:["vexp.temp_projectile"]}
+# Crear el proyectil (Marker) con el nuevo sistema
+summon minecraft:marker ~ ~ ~ {Tags:["vexp.projectile","vexp.dagger_projectile","vexp.temp_projectile"],data:{proj_type:"dagger"}}
 
 # Capturar durabilidad (Damage) y añadir 1 por el lanzamiento
 execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage run data get entity @s SelectedItem.components."minecraft:damage"
@@ -31,11 +31,13 @@ execute if items entity @s weapon.mainhand copper_sword[custom_data~{vexp:{item:
 execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.netherite
 
 
-# Ejecutar setup sobre el proyectil
-execute as @e[tag=vexp.temp_projectile,limit=1,distance=..1] at @s run function vexp:dungeons/dagger/projectile/setup
+# Ejecutar spawn del nuevo sistema sobre el proyectil
+execute as @e[tag=vexp.temp_projectile,limit=1,distance=..1] at @s run function vexp:projectile/spawn
 
 # Poner cooldown (ejemplo 10 ticks = 0.5s)
 scoreboard players set @s vexp.dagger_cooldown 10
+scoreboard players set @s vexp.combo_cooldown 10
+
 
 # Quitar tag temporal al lanzador
 tag @s remove vexp.throwing

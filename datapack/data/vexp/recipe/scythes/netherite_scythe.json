@@ -1,8 +1,10 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "vexp:scythes/diamond_scythe",
-  "addition": "minecraft:netherite_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", "  S", "  S"],
+  "key": {
+    "W": "minecraft:netherite_ingot",
+    "S": "minecraft:stick"
+  },
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
@@ -11,8 +13,8 @@
         { "text": "Gran barrido", "italic": false, "color": "gray" },
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 10", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.2", "italic": false, "color": "dark_gray" },
+        { "text": "- Daño: 12", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 7.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 6.0", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 32 ticks",
@@ -24,7 +26,13 @@
         "vexp": {
           "type": "short_combo",
           "item": "scythe",
-          "combo": { "damage": 10, "cooldown": 32, "range": 6.0, "reach": 3.2 }
+          "combo": {
+            "damage": 12,
+            "cooldown": 32,
+            "range": 6.0,
+            "reach": 7.5,
+            "quality": "netherite"
+          }
         }
       },
       "minecraft:custom_model_data": {
@@ -52,7 +60,13 @@
           "id": "vexp:scythe_block_reach",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     }
   }
 }

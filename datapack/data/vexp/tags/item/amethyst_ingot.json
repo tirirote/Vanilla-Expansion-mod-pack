@@ -1,0 +1,15 @@
+{
+  "values": [
+    {
+      "id": "minecraft:netherite_ingot",
+      "required": false,
+      "components": {
+        "minecraft:custom_data": {
+          "vexp": {
+            "material": "amethyst_ingot"
+          }
+        }
+      }
+    }
+  ]
+}

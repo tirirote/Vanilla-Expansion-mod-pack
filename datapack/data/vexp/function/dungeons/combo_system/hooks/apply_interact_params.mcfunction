@@ -4,6 +4,4 @@
 $scoreboard players set @s vexp.combo_cooldown $(cooldown)
 
 # Item-specific interaction hook (Player side)
-$execute positioned ~ ~1 ~ run function vexp:dungeons/$(item)/on_right_click
-
-playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 1
+execute positioned ~ ~1.5 ~ run function vexp:dungeons/combo_system/hooks/route_on_right_click with storage vexp:main combo_params

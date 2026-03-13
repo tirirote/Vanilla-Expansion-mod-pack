@@ -4,13 +4,12 @@
 
 tag @s remove vexp.target_found
 
-# Evaluamos si hay un objetivo válido en el rango de visión
-# Usamos el anclaje visual (ojos), avanzamos $(reach) en la dirección a la que mira y buscamos en $(range)
-$execute anchored eyes positioned ^ ^ ^$(reach) if entity @e[type=!#minecraft:arrows,type=!text_display,type=!armor_stand,type=!item_display,type=!block_display,type=!interaction,type=!item_frame,type=!glow_item_frame,type=!experience_orb,type=!marker,type=!area_effect_cloud,type=!item,type=!player,distance=..$(range)] run tag @s add vexp.target_found
+# Evaluamos si hay un objetivo válido para marcar 'target_found'
+$execute anchored eyes positioned ^ ^ ^1.2 if entity @e[type=!#minecraft:arrows,type=!text_display,type=!armor_stand,type=!item_display,type=!block_display,type=!interaction,type=!item_frame,type=!glow_item_frame,type=!experience_orb,type=!marker,type=!area_effect_cloud,type=!item,type=!player,distance=..$(reach)] run tag @s add vexp.target_found
 
-# Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick al no quitarle vexp.hitbox.to_remove
+# Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
+# Esto libera la interacción con bloques (cofres, botones) y con el aire.
 execute unless entity @s[tag=vexp.target_found] run return 0
-
 
 # -------------- CORE LOGIC (Solo si estamos mirando a un Mobj) -------------- #
 

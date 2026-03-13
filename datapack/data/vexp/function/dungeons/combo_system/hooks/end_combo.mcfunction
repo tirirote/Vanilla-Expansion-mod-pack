@@ -3,7 +3,7 @@
 
 # 1. Trigger combo hook for all hitted entities
 execute as @e[tag=vexp.hitted,distance=..8] at @s run tag @s add vexp.hitted.combo_end
-$execute as @e[tag=vexp.hitted,distance=..8] at @s positioned ~ ~1 ~ run function vexp:dungeons/$(item)/on_combo
+function vexp:dungeons/combo_system/hooks/route_on_combo with storage vexp:main combo_params
 
 # 2. Reset combo score
 scoreboard players set @s vexp.combo 0

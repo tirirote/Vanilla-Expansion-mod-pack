@@ -1,8 +1,10 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": "minecraft:netherite_upgrade_smithing_template",
-  "base": "minecraft:diamond_axe",
-  "addition": "minecraft:netherite_ingot",
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", "WS ", " S "],
+  "key": {
+    "W": "minecraft:netherite_ingot",
+    "S": "minecraft:stick"
+  },
   "result": {
     "id": "minecraft:netherite_axe",
     "components": {
@@ -12,8 +14,8 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 14", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 1.8", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 26 ticks",
           "italic": false,
@@ -24,7 +26,13 @@
         "vexp": {
           "type": "short_combo",
           "item": "axe",
-          "combo": { "damage": 14, "cooldown": 26, "range": 3.5, "reach": 1.8 }
+          "combo": {
+            "damage": 14,
+            "cooldown": 26,
+            "range": 1.5,
+            "reach": 3.5,
+            "quality": "netherite"
+          }
         }
       },
       "minecraft:attribute_modifiers": [
@@ -49,7 +57,13 @@
           "id": "vexp:axe_block_reach",
           "slot": "mainhand"
         }
-      ]
+      ],
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "none",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     }
   }
 }

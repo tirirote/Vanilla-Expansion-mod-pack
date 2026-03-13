@@ -4,7 +4,7 @@
 
 # 1. Spawn Visual (item_display)
 # Lo colocamos alineado en el centro del bloque
-$execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display","vexp.temp"],item:{id:"minecraft:item_frame",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.5f,0f],scale:[1f,1f,1f]},teleport_duration:1,interpolation_duration:1}
+$execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display","vexp.temp"],item:{id:"minecraft:item_frame",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[0f,.5f,0f],scale:[1f,1f,1f]},teleport_duration:1,interpolation_duration:1}
 
 # 2. Rotación: Copiar del Jugador y girar 180 (para que mire al jugador)
 execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] run data modify entity @s Rotation[0] set from entity @p[limit=1] Rotation[0]
@@ -28,6 +28,9 @@ execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run data
 # 7. Limpieza y Sonido
 tag @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] remove vexp.temp
 tag @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] remove vexp.temp_interact
+
+# Hook para lógica específica de spawn (opcional)
+$function vexp:custom_block/blocks/$(type)/on_spawn
 
 # Sonido de colocación genérico
 $function vexp:custom_block/macro/sound {sound:"$(s_place)"}
