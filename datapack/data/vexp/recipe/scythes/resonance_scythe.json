@@ -14,9 +14,13 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 10", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.2", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 6.0", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 32 ticks", "italic": false, "color": "dark_gray" }
+        { "text": "- Alcance: 3", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
+        {
+          "text": "- Cooldown: 32 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
       ],
       "minecraft:custom_data": {
         "vexp": {
@@ -25,8 +29,8 @@
           "combo": {
             "damage": 10,
             "cooldown": 32,
-            "range": 6.0,
-            "reach": 3.2,
+            "range": 4.5,
+            "reach": 3,
             "quality": "echo"
           }
         }

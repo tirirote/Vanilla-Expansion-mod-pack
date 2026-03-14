@@ -1,12 +1,7 @@
-#Projectile
-summon marker ~ ~1 ~ {Tags:["vexp.projectile","vexp.temp_projectile","vexp.nether_projectile"],data:{proj_type:"nether_sword"}}
-execute as @e[tag=vexp.temp_projectile,sort=nearest,limit=1] run data modify entity @s data.proj set value {speed:1.5, lifetime:20, gravity:0, damage:2}
+# AoE wave
+execute positioned ~ ~-1.5 ~ run function vexp:dungeons/dagger/projectile/netherite/aoe_wave
 
-tag @p[tag=vexp.attacker,limit=1] add vexp.projectile_owner
+execute as @e[type=!player,type=!item,type=!marker,distance=..5] at @s run function vexp:utils/motion/apply_knockback {strength:-1, y:0.1}
 
-execute as @e[tag=vexp.temp_projectile,sort=nearest,limit=1] at @s run function vexp:projectile/spawn
-
-#Knockback {-2.5, 0.1}
-function vexp:utils/motion/apply_knockback {strength:-2.5,y:0.1}
-particle minecraft:explosion ~ ~1 ~ 0 0 0 0 1
-particle minecraft:large_smoke ~ ~1 ~ 0.25 0.25 0.25 0.1 3
+# Player buff
+effect give @s minecraft:resistance 2 1 true

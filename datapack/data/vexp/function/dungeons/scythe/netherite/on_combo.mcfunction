@@ -2,10 +2,11 @@
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
 # Mark mob
-execute as @e[tag=vexp.hitted] run function vexp:dungeons/states/nether_marked
-execute as @e[tag=vexp.hitted] run effect give @s minecraft:slowness 2 2 true
+function vexp:dungeons/states/nether_marked
+
+summon marker ~ ~ ~ {Tags:["vexp.projectile","vexp.temp_projectile","vexp.nether_projectile"],data:{proj_type:"nether_scythe"}}
+
+execute as @e[tag=vexp.temp_projectile,limit=1] at @s run function vexp:projectile/spawn
 
 # Knockback {strength:-4.0, y:0.1}
-data modify storage vexp:temp motion set value {strength:-4.0, y:0.1}
-execute as @e[tag=vexp.hitted] at @s run function vexp:utils/motion/apply_knockback with storage vexp:temp motion
-
+function vexp:utils/motion/apply_knockback with storage vexp:temp {strength:-3.5, y:0.1}

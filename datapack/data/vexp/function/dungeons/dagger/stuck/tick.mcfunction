@@ -21,10 +21,11 @@ execute if score @s vexp.dagger_cooldown matches ..0 run scoreboard players set 
 function vexp:dungeons/dagger/stuck/animate
 
 # 6. Sincronizar visual e interacción (@s es el marcador)
-execute at @s as @e[tag=vexp.dagger_stuck_visual,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run tp @s ~ ~ ~
-execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run tp @s ~ ~ ~
+scoreboard players operation #temp vexp.id = @s vexp.id
+execute at @s as @e[tag=vexp.dagger_stuck_visual,distance=..1.5] if score @s vexp.id = #temp vexp.id run tp @s ~ ~ ~
+execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = #temp vexp.id run tp @s ~ ~ ~
 
 # 7. Detección de Recogida (Pickup)
-execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = @n[tag=vexp.dagger_stuck,distance=..1] vexp.id run function vexp:dungeons/dagger/stuck/check_pickup
+execute at @s as @e[tag=vexp.dagger_stuck_interact,distance=..1.5] if score @s vexp.id = #temp vexp.id run function vexp:dungeons/dagger/stuck/check_pickup
 # Limpiar tags temporales
 tag @e[tag=vexp.current_host] remove vexp.current_host

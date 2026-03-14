@@ -1,12 +1,16 @@
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
-# Projectile
-summon marker ~ ~1.6 ~ {Tags:["vexp.projectile","vexp.temp_projectile","vexp.nether_projectile"],data:{proj_type:"nether"}}
-execute as @e[tag=vexp.temp_projectile,limit=1] run data modify entity @s data.proj set value {speed:1.5, lifetime:30, gravity:0, damage:4}
-execute as @e[tag=vexp.temp_projectile,limit=1] at @s run function vexp:projectile/spawn
+# Launch 3 short-range nether slashes from the attacker.
+execute as @p[tag=vexp.attacker,limit=1] at @s run summon marker ~ ~1.5 ~ {Tags:["vexp.projectile","vexp.temp_projectile","vexp.sword_nether_projectile"],data:{proj_type:"nether_sword"}}
+
+tag @p[tag=vexp.attacker,limit=1] add vexp.projectile_owner
+
+# Initialize the newly spawned volley.
+execute as @p[tag=vexp.attacker,limit=1] at @s run execute as @e[type=marker,tag=vexp.temp_projectile,tag=vexp.sword_nether_projectile,distance=..4] at @s run function vexp:projectile/spawn
 
 # Knockback {strength:-2.5, y:0.1}
-data modify storage vexp:temp motion set value {player:"@p", distance:1.2, scale:-0.25}
-execute as @e[tag=vexp.hitted] at @s run function vexp:utils/motion/apply_motion_by_player with storage vexp:temp motion
-execute as @e[tag=vexp.hitted] run data modify entity @s Motion[1] set value 0.1d
-
+function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
+# Cast feedback.
+particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0.1 3
+particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.03 3
+function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}

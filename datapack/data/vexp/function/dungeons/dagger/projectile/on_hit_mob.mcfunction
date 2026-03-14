@@ -6,9 +6,6 @@
 # Quitar durabilidad
 scoreboard players add @s vexp.damage 1
 
-# Efectos visuales
-execute positioned ~ ~1 ~ run function vexp:dungeons/dagger/projectile/hit_mob_effects
-
 # Aplicar daño dinámico desde el NBT
 execute store result score #temp vexp.math run data get entity @s data.proj.damage
 execute as @e[tag=vexp.proj_target,limit=1] store result storage vexp:temp damage int 1 run scoreboard players get #temp vexp.math
@@ -26,20 +23,13 @@ execute if entity @s[tag=vexp.netherite] run tag @p[tag=vexp.dagger_owner,limit=
 execute if entity @s[tag=vexp.echo] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.echo
 execute if entity @s[tag=vexp.amethyst] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.amethyst
 
-# 1. APPLY MARKS BY QUALITY
-# NETHERITE: Mark mob
-execute if entity @s[tag=vexp.netherite] as @e[tag=vexp.proj_target,limit=1] run function vexp:dungeons/states/nether_marked
+# Quality-specific projectile hooks
+execute if entity @s[tag=vexp.netherite] run function vexp:dungeons/dagger/projectile/netherite/on_hit_mob
+execute if entity @s[tag=vexp.echo] run function vexp:dungeons/dagger/projectile/echo/on_hit_mob
+execute if entity @s[tag=vexp.amethyst] run function vexp:dungeons/dagger/projectile/amethyst/on_hit_mob
 
-# ECHO: Mark mob
-execute if entity @s[tag=vexp.echo] as @e[tag=vexp.proj_target,limit=1] run function vexp:dungeons/states/echo_marked
-
-# AMETHYST: Levitation + Fragmentation
-execute if entity @s[tag=vexp.amethyst] as @e[tag=vexp.proj_target,limit=1] run effect give @s minecraft:levitation 2 1 true
-execute if entity @s[tag=vexp.amethyst] as @e[tag=vexp.proj_target,limit=1] run effect give @s minecraft:slowness 2 1 true
-
-# Fragmentation check: if target already levitating
-execute if entity @s[tag=vexp.amethyst] as @e[tag=vexp.proj_target,limit=1,nbt={active_effects:[{id:"minecraft:levitation"}]}] run function vexp:dungeons/states/amethyst_fragmentation
-
+# Efectos visuales
+execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.amethyst] positioned ~ ~1 ~ run function vexp:dungeons/dagger/projectile/hit_mob_effects
 
 # Transferir daño al dueño para la devolución con durabilidad correcta
 scoreboard players operation @p[tag=vexp.dagger_owner,limit=1] vexp.damage = @s vexp.damage

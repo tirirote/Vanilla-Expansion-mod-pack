@@ -1,0 +1,1 @@
+# Netherite projectile spawn hook

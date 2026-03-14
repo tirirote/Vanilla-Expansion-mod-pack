@@ -3,7 +3,7 @@
   "pattern": ["   ", "W W", "L L"],
   "key": {
     "W": "minecraft:gold_ingot",
-    "L": "minecraft:leather"  
+    "L": "minecraft:leather"
   },
   "result": {
     "id": "minecraft:carrot_on_a_stick",
@@ -14,15 +14,20 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 2", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 2.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 2", "italic": false, "color": "dark_gray" },
         { "text": "- Cooldown: 7 ticks", "italic": false, "color": "dark_gray" }
       ],
       "minecraft:custom_data": {
         "vexp": {
-          "type": "mid_combo",
+          "type": "long_combo",
           "item": "gauntlets",
-          "combo": { "damage": 2, "cooldown": 7, "range": 2.5, "reach": 2.5 },
+          "combo": {
+            "damage": 2,
+            "cooldown": 7,
+            "range": 2,
+            "reach": 1.5
+          },
           "quality": "normal"
         }
       },
@@ -52,7 +57,7 @@
       "minecraft:custom_model_data": { "strings": ["vexp:golden-gauntlet"] },
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
-        "animation": "none",
+        "animation": "bow",
         "consume_seconds": 999999,
         "has_consume_particles": false
       }

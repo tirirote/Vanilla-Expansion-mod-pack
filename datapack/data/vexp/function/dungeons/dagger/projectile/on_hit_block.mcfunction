@@ -6,8 +6,15 @@
 function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}
 execute positioned ^ ^ ^1 run function vexp:utils/feedback/block_hit
 
+# Remove only the display linked to this projectile
+scoreboard players operation #temp vexp.id = @s vexp.id
+execute as @e[type=item_display,tag=vexp.dagger_display,distance=..3] if score @s vexp.id = #temp vexp.id run kill @s
+
 # Spawnear estado "Clavado en Bloque" (Stuck in Block)
 summon marker ~ ~ ~ {Tags:["vexp.dagger_stuck","vexp.temp_stuck","vexp.stuck_in_block"]}
+
+# Link stuck marker to projectile by ID
+scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] vexp.id = #temp vexp.id
 
 # Configurar (Copiamos rotación y TRANSFERIMOS MATERIAL)
 execute as @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] run tp @s ~ ~ ~ ~ ~25
@@ -18,10 +25,17 @@ execute if entity @s[tag=vexp.gold] run tag @e[tag=vexp.temp_stuck,sort=nearest,
 execute if entity @s[tag=vexp.diamond] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.diamond
 execute if entity @s[tag=vexp.copper] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.copper
 execute if entity @s[tag=vexp.netherite] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.netherite
+execute if entity @s[tag=vexp.echo] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.echo
+execute if entity @s[tag=vexp.amethyst] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.amethyst
 
 data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] Rotation set from entity @s Rotation
 
 # Transferir daño al marcador stuck
 scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] vexp.damage = @s vexp.damage
+
+# Quality-specific projectile hooks
+execute if entity @s[tag=vexp.netherite] run function vexp:dungeons/dagger/projectile/netherite/on_hit_block
+execute if entity @s[tag=vexp.echo] run function vexp:dungeons/dagger/projectile/echo/on_hit_block
+execute if entity @s[tag=vexp.amethyst] run function vexp:dungeons/dagger/projectile/amethyst/on_hit_block
 
 execute as @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] at @s run function vexp:dungeons/dagger/stuck/setup

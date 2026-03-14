@@ -54,6 +54,7 @@ scoreboard objectives add vexp.move_climb_ready dummy
 scoreboard objectives add vexp.gauntlets_parry_timer dummy
 scoreboard objectives add vexp.gauntlets_boost_timer dummy
 scoreboard objectives add vexp.gauntlets_damage_snapshot dummy
+scoreboard objectives add vexp.gauntlets_guard dummy
 scoreboard objectives add vexp.sword_spin_timer dummy
 # Dungeons System
 scoreboard objectives add vexp.dstate dummy

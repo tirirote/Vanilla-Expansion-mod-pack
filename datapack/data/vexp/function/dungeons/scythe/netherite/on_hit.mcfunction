@@ -1,15 +1,17 @@
 # dungeons/scythe/netherite/on_hit.mcfunction
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
-# Player effects
-effect give @s minecraft:resistance 1 0 true
-effect give @s minecraft:slowness 1 0 true
-
-# Mob effects
-execute as @e[tag=vexp.hitted] run effect give @s minecraft:slowness 2 1 true
+#Tag Mob
+function vexp:dungeons/states/nether_marked
 
 # Knockback {strength:1.0, y:0.2}
-data modify storage vexp:temp motion set value {strength:1.0, y:0.2}
-execute as @e[tag=vexp.hitted] at @s run function vexp:utils/motion/apply_knockback with storage vexp:temp motion
+function vexp:utils/motion/apply_knockback {strength:1.0, y:0.2}
 
+# Player effects
+effect give @p[tag=vexp.attacker] minecraft:resistance 1 0 true
+effect give @p[tag=vexp.attacker] minecraft:slowness 1 0 true
 
+particle lava ~ ~1 ~ 1 0.2 1 0 2
+particle large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.1 3
+function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}

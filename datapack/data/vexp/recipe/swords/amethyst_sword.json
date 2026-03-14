@@ -59,7 +59,7 @@
       ],
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
-        "animation": "none",
+        "animation": "crossbow",
         "consume_seconds": 999999,
         "has_consume_particles": false
       }

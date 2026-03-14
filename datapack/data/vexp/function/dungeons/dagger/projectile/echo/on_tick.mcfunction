@@ -1,0 +1,1 @@
+# Echo projectile tick hook

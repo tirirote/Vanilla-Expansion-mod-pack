@@ -1,5 +1,8 @@
 # dungeons/sword/tick.mcfunction
 
+# Netherite tornado markers
+execute as @e[type=marker,tag=vexp.sword_tornado] at @s run function vexp:dungeons/sword/netherite/tornado_tick
+
 # Spin attack active for 20 ticks.
 execute as @a[scores={vexp.sword_spin_timer=1..}] at @s run tp @s ~ ~ ~ ~5 ~
 
