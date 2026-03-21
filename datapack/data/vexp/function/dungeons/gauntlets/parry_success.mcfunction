@@ -22,6 +22,4 @@ scoreboard players set @s vexp.gauntlets_parry_timer 0
 scoreboard players set @s vexp.gauntlets_boost_timer 20
 
 # Feedback
-particle minecraft:explosion ~ ~1.2 ~ 0.2 0.2 0.2 0.05 1
 function vexp:utils/sound {sound: "minecraft:item.shield.block", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}

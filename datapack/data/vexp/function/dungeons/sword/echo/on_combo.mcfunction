@@ -1,11 +1,13 @@
 # dungeons/sword/echo/on_combo.mcfunction
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
-# Double damage (applying it again basically)
-data modify storage vexp:temp damage set value 6.0
-execute as @e[tag=vexp.hitted] run function vexp:utils/apply_player_attack_damage with storage vexp:temp
+#
+function vexp:dungeons/states/echo_marked
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
 
-# Knockback {strength:-3.5, y:0.25} -> Pull
-data modify storage vexp:temp motion set value {strength:-3.5, y:0.25}
-execute as @e[tag=vexp.hitted] at @s run function vexp:utils/motion/apply_knockback with storage vexp:temp motion
+function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.25}
 
+particle minecraft:sculk_charge_pop ~ ~1 ~ 0.2 0.2 0.2 0.02 5
+particle minecraft:large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.02 5
+function vexp:utils/sound {sound: "minecraft:item.trident.throw", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

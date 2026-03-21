@@ -15,8 +15,8 @@
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 1", "italic": false, "color": "dark_gray" },
         { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 2", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 3 ticks", "italic": false, "color": "dark_gray" }
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 4 ticks", "italic": false, "color": "dark_gray" }
       ],
       "minecraft:custom_data": {
         "vexp": {
@@ -24,8 +24,8 @@
           "item": "gauntlets",
           "combo": {
             "damage": 1,
-            "cooldown": 3,
-            "range": 2,
+            "cooldown": 4,
+            "range": 1.5,
             "reach": 1.5,
             "quality": "normal"
           }

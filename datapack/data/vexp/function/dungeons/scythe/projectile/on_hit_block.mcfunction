@@ -3,5 +3,6 @@
 # @s es el proyectil
 
 # Efectos visuales y sonoros
-particle minecraft:squid_ink ~ ~ ~ 0.2 0.2 0.2 0.05 3
-function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
+particle minecraft:small_gust ~ ~ ~ 0.2 0.2 0.2 0.2 15
+function vexp:utils/sound {sound: "minecraft:entity.evoker.prepare_summon", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.strong", type: "player"}

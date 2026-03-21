@@ -1,9 +1,8 @@
 # dungeons/sword/on_hit.mcfunction
 # @s is the target entity
 
-# Slowness
-effect give @s minecraft:slowness 2 1 true
+function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
 # Visuals
-particle minecraft:small_gust ~ ~1.2 ~ 0 0 0 0.05 1
-playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 1.0
+particle minecraft:crit ~ ~1 ~ .2 .2 .2 0.05 5
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}

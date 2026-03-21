@@ -1,9 +1,6 @@
 # dungeons/sword/on_right_click.mcfunction
 # @s is the player
-
-# Start circular spin attack for 1 second (20 ticks).
-scoreboard players set @s vexp.sword_spin_timer 20
-
+particle minecraft:poof ~ ~-1.25 ~ .5 .1 .5 0.05 25
+execute as @e[type=!player,type=!item,type=!marker,distance=..3.5] at @s run function vexp:utils/motion/apply_knockback {strength:-2.5, y:0.25}
 # Startup feedback
-particle minecraft:sweep_attack ~ ~1 ~ 0.2 0.2 0.2 0 1
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}

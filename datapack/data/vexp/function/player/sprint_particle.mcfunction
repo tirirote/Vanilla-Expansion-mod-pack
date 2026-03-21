@@ -2,5 +2,4 @@
 # Transition from a dark tone (block color) to white
 
 #Single Particle
-#execute positioned ~ ~.1 ~ run function vexp:utils/feedback/dust_particle {initialColor:[0.65,0.65,0.35],finalColor:[1.0,1.0,1.0],scale:1.7,dX:0.1,dY:0.0,dZ:0.1,speed:0.2,count:1}
-particle minecraft:white_smoke ~ ~.1 ~ 0.1 0 0.1 0.025 1
+execute positioned ~ ~.1 ~ run function vexp:utils/feedback/dust_particle {initialColor:[0.5,0.5,0.35],finalColor:[1.0,1.0,1.0],scale:1.7,dX:0.1,dY:0.0,dZ:0.1,speed:0.2,count:1}

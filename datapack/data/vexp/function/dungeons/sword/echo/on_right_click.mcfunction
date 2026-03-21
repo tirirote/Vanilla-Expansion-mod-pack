@@ -1,13 +1,15 @@
 # dungeons/sword/echo/on_right_click.mcfunction
 # @s is the player
 
-# AoE attack
-particle minecraft:sculk_soul ~ ~1 ~ 1 0.5 1 0.1 30
-playsound minecraft:entity.warden.sonic_boom ambient @a ~ ~ ~ 1 1.5
+# Optional startup wave
+execute positioned ~ ~-1.5 ~ run function vexp:dungeons/sword/echo/wave
 
-# Damage and effects in area
-data modify storage vexp:temp damage set value {damage:2, type:"minecraft:player_attack", owner:"@s"}
-execute as @e[type=!player,type=!item,type=!marker,distance=..4] at @s run function vexp:utils/deal_damage with storage vexp:temp damage
+tag @s add vexp.projectile_owner
 
-execute as @e[type=!player,type=!item,type=!marker,distance=..4] run effect give @s minecraft:slowness 3 1 true
-execute as @e[type=!player,type=!item,type=!marker,distance=..4] run effect give @s minecraft:blindness 3 0 true
+# Orient spawned projectiles outward from the player-centered circle
+execute as @e[type=marker,tag=vexp.temp_projectile,tag=vexp.echo_sword_projectile,distance=..4] at @s run tag @s add vexp.keep_rotation
+execute as @e[type=marker,tag=vexp.temp_projectile,tag=vexp.echo_sword_projectile,distance=..4] at @s facing entity @p[tag=vexp.projectile_owner,distance=..5,limit=1,sort=nearest] eyes run tp @s ~ ~ ~ ~180 ~10
+
+# Initialize the newly spawned volley.
+execute as @e[type=marker,tag=vexp.temp_projectile,tag=vexp.echo_sword_projectile,distance=..4] at @s run function vexp:projectile/spawn
+

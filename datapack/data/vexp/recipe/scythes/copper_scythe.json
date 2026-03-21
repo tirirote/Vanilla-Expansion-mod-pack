@@ -14,7 +14,7 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 26 ticks",
@@ -30,7 +30,7 @@
             "damage": 6,
             "cooldown": 26,
             "range": 4.5,
-            "reach": 3,
+            "reach": 3.5,
             "quality": "normal"
           }
         }

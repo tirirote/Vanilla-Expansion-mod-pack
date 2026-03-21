@@ -9,10 +9,10 @@ execute store result score #temp vexp.math run data get entity @s data.proj.dama
 # Aplicar daño desde el NBT del proyectil
 execute as @e[tag=vexp.proj_target,limit=1] store result storage vexp:temp damage int 1 run scoreboard players get #temp vexp.math
 execute as @e[tag=vexp.proj_target,limit=1] run function vexp:utils/apply_magic_damage with storage vexp:temp
-
-# Aplicar slowness
-execute as @e[tag=vexp.proj_target,limit=1] run effect give @s minecraft:slowness 3 1 true
+execute as @e[tag=vexp.proj_target,limit=1] run function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.2}
 
 # Efectos visuales y sonoros
-particle minecraft:squid_ink ~ ~ ~ 0.15 0.15 0.15 0.05 5
+particle minecraft:small_gust ~ ~ ~ 0.2 0.2 0.2 0.2 15
+particle minecraft:gust ~ ~ ~ 0 0 0 1 1
 function vexp:utils/sound {sound: " minecraft:block.trial_spawner.ominous_activate", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.strong", type: "player"}

@@ -1,6 +1,7 @@
 # AoE wave
-particle minecraft:lava ~ ~ ~ 1 0.2 1 0 1
-particle flame ~ ~ ~ 1 0.2 1 0.05 3
+particle minecraft:lava ~ ~ ~ 1 0.2 1 0 3
+particle flame ~ ~ ~ 1 0.2 1 0.05 5
+function vexp:utils/feedback/dust_particle {initialColor: [0.2, 0.2, 0.2], finalColor: [0.5, 0.45, 0.35], scale: 1.7, dX: 1, dY: 0.2, dZ: 1, speed: 0.05, count: 15}
 function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
 # Damage and tag mobs in area (5 blocks)

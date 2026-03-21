@@ -3,7 +3,7 @@
 scoreboard players operation #temp vexp.id = @s vexp.id
 
 # 1. Mantenemos el slime sincroizado firmemente
-execute as @e[type=slime,tag=vexp.custom_block.dummy] if score @s vexp.id = #temp vexp.id run tp @s ~ ~1 ~
+execute as @e[type=slime,tag=vexp.custom_block.dummy] if score @s vexp.id = #temp vexp.id run tp @s ~ ~.5 ~
 
 # 2. Obtenemos el HurtTime del slime
 execute as @e[type=slime,tag=vexp.custom_block.dummy] if score @s vexp.id = #temp vexp.id store result score #hurt vexp.math run data get entity @s HurtTime

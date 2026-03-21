@@ -18,13 +18,9 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 1.0", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 8 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
+        { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 8 ticks", "italic": false, "color": "dark_gray" }
       ],
       "minecraft:custom_data": {
         "vexp": {
@@ -33,8 +29,8 @@
           "combo": {
             "damage": 6,
             "cooldown": 8,
-            "range": 1.0,
-            "reach": 1.5,
+            "range": 1.5,
+            "reach": 2.5,
             "quality": "netherite"
           }
         }

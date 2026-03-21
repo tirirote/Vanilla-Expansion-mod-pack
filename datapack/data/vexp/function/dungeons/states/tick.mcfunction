@@ -6,12 +6,12 @@ execute as @e[tag=vexp.nether_marked] at @s run function vexp:dungeons/states/ti
 
 
 # 2. ECHO MARKED EFFECTS
-execute as @e[tag=vexp.echo_marked] run effect give @s minecraft:slowness 1 1 true
-execute as @e[tag=vexp.echo_marked] run effect give @s minecraft:weakness 1 1 true
-execute as @e[tag=vexp.echo_marked] run effect give @s minecraft:blindness 1 1 true
+execute as @e[tag=vexp.echo_marked] at @s run function vexp:dungeons/states/tick/echo_marked
+execute as @e[tag=vexp.echo_stunned] at @s run function vexp:dungeons/states/tick/echo_stunned
 
+execute as @a[tag=vexp.echo_buffed] at @s run function vexp:dungeons/states/tick/echo_buffed
 # 3. AMETHYST MARKED EFFECTS
-execute as @e[tag=vexp.amethyst_marked] run function vexp:dungeons/states/amethyst_physics
+execute as @e[tag=vexp.amethyst_marked] at @s run function vexp:dungeons/states/amethyst_physics
 
 # Countdown
 execute as @e[scores={vexp.dstate=1..}] run scoreboard players remove @s vexp.dstate 1
@@ -19,4 +19,6 @@ execute as @e[scores={vexp.dstate=1..}] run scoreboard players remove @s vexp.ds
 # Cleanup
 execute as @e[tag=vexp.nether_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_marked
 execute as @e[tag=vexp.echo_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_marked
+execute as @e[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
+
 execute as @e[tag=vexp.amethyst_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.amethyst_marked

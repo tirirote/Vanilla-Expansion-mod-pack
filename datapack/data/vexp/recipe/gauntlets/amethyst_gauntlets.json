@@ -24,8 +24,8 @@
           "item": "gauntlets",
           "combo": {
             "damage": 5,
-            "cooldown": 9,
-            "range": 2,
+            "cooldown": 4,
+            "range": 1.5,
             "reach": 1.5
           },
           "quality": "amethyst"

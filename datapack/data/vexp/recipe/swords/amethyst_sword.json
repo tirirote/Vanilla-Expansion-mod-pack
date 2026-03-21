@@ -16,7 +16,11 @@
         { "text": "- Daño: 10", "italic": false, "color": "dark_gray" },
         { "text": "- Alcance: 2.8", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 5.0", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 24 ticks", "italic": false, "color": "dark_gray" }
+        {
+          "text": "- Cooldown: 24 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
       ],
       "minecraft:custom_data": {
         "vexp": {

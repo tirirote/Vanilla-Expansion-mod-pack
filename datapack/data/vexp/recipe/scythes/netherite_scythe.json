@@ -14,7 +14,7 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 12", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 32 ticks",
@@ -30,7 +30,7 @@
             "damage": 12,
             "cooldown": 32,
             "range": 4.5,
-            "reach": 3,
+            "reach": 3.5,
             "quality": "netherite"
           }
         }

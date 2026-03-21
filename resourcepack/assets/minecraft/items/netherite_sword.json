@@ -92,14 +92,14 @@
         }
       },
       {
-        "when": "vexp:resonance_sword",
+        "when": "vexp:resonance-sword",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/resonance_sword"
         }
       },
       {
-        "when": "vexp:amethyst_sword",
+        "when": "vexp:amethyst-sword",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/amethyst_sword"

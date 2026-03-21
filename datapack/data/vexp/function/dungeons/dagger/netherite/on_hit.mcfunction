@@ -2,7 +2,6 @@
 function vexp:dungeons/states/nether_marked
 
 # Apply knockback to mob
-# Knockback {strength:-1, y:0.1}
 function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
 
 particle lava ~ ~1 ~ .1 .1 .1 0 1

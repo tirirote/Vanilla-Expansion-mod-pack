@@ -158,3 +158,52 @@ $tp @s ^ ^ ^$(proj.speed) ~ ~$(proj.gravity)
   }
 }
 ```
+
+## Tipos de Movimiento Especial: Tornado (Órbita)
+
+Si el proyectil incluye un objeto `tornado` dentro de `data.proj`, el sistema utilizará movimiento orbital alrededor del dueño en lugar de movimiento lineal. El proyectil se vinculará automáticamente al `vexp.id` del jugador que lo invocó.
+
+### Estructura NBT para Tornados
+
+```json
+{
+  "data": {
+    "proj_type": "ejemplo_tornado",
+    "proj": {
+      "lifetime": 50,
+      "damage": 2,
+      "tornado": {
+        "radius": 1.2,
+        "speed": 7.5,
+        "height": 1.1,
+        "cw": 1b
+      }
+    }
+  }
+}
+```
+
+### Parámetros del Tornado
+
+| Parámetro | Tipo | Descripción |
+|-----------|------|-------------|
+| `radius` | Decimal | Radio de la órbita. Un valor negativo lo posiciona en el lado opuesto. |
+| `speed` | Decimal | Velocidad de rotación en grados por tick. |
+| `height` | Decimal | Altura relativa a los pies del dueño. |
+| `cw` | Booleano | Sentido de giro. `1b`: Horario (Clockwise), `0b`: Antihorario (Counter-Clockwise). |
+
+### Dinámicas en Tiempo Real
+
+Puedes modificar los parámetros del tornado (como el radio para que crezca) en el hook `on_tick` de tu proyectil. El sistema de movimiento leerá los valores actualizados en cada tick.
+
+### Ejemplo de Spawn de Tornado Doble
+
+```mcfunction
+# En on_right_click.mcfunction
+tag @s add vexp.projectile_owner
+# Tornado A (Derecha)
+summon marker ^ ^ ^ {Tags:["vexp.projectile","vexp.temp_projectile"],data:{proj_type:"mi_tornado",proj:{tornado:{radius:1.2,speed:7.5,height:1.1,cw:1b}}}}
+# Tornado B (Izquierda)
+summon marker ^ ^ ^ {Tags:["vexp.projectile","vexp.temp_projectile"],data:{proj_type:"mi_tornado",proj:{tornado:{radius:-1.2,speed:7.5,height:1.1,cw:1b}}}}
+execute as @e[tag=vexp.temp_projectile] at @s run function vexp:projectile/spawn
+```

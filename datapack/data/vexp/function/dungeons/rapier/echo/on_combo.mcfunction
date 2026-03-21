@@ -1,14 +1,20 @@
 # dungeons/rapier/echo/on_combo.mcfunction
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
-# Double damage
-data modify storage vexp:temp damage set value 4.0
-execute as @e[tag=vexp.hitted] run function vexp:utils/apply_player_attack_damage with storage vexp:temp
+# Effects
+function vexp:dungeons/states/echo_marked
 
-# Mob effects
-execute as @e[tag=vexp.hitted] run effect give @s minecraft:slowness 2 2 true
-execute as @e[tag=vexp.hitted] run effect give @s minecraft:blindness 2 0 true
+# Launch 3 short-range nether slashes from the attacker.
+execute as @p[tag=vexp.attacker,limit=1] at @s run summon marker ~ ~1.5 ~ {Tags:["vexp.projectile","vexp.temp_projectile","vexp.rapier_echo_projectile"],data:{proj_type:"echo_rapier"}}
 
-# Recoil and Speed for player
-execute at @s run function vexp:utils/motion/apply_motion_by_player {player:"@p", distance:1.2, scale:-0.2}
-effect give @s minecraft:speed 2 1 true
+tag @p[tag=vexp.attacker,limit=1] add vexp.projectile_owner
+
+# Initialize the newly spawned volley.
+execute as @p[tag=vexp.attacker,limit=1] at @s as @e[type=marker,tag=vexp.temp_projectile,tag=vexp.rapier_echo_projectile,distance=..4] at @s run function vexp:projectile/spawn
+
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
+
+particle minecraft:sculk_soul ~ ~1 ~ 0.2 0.2 0.2 0.02 3
+particle minecraft:large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.02 5
+function vexp:utils/sound {sound: "minecraft:item.trident.throw", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}
