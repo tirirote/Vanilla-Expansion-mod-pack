@@ -14,8 +14,9 @@ particle minecraft:sweep_attack ^ ^ ^.85 0 0 0 1 1
 # Guardar datos del item para el display (opcional, pero mejor pasarlo al proyectil)
 tag @s add vexp.throwing
 
-# Crear el proyectil (Marker) con el nuevo sistema
-summon minecraft:marker ~ ~ ~ {Tags:["vexp.projectile","vexp.dagger_projectile","vexp.temp_projectile"],data:{proj_type:"dagger"}}
+# Crear el proyectil (Armor Stand) con el helper unificado
+data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.dagger_projectile",proj_type:"dagger",proj_data:{}}
+function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 
 # Capturar durabilidad (Damage) y añadir 1 por el lanzamiento
 execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage run data get entity @s SelectedItem.components."minecraft:damage"

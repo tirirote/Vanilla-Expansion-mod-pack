@@ -1,5 +1,11 @@
 {
   "textures": [
-    "minecraft:electric_spark"
+    "minecraft:electric_spark0",
+    "minecraft:electric_spark1",
+    "minecraft:electric_spark2",
+    "minecraft:electric_spark3",
+    "minecraft:electric_spark4",
+    "minecraft:electric_spark5",
+    "minecraft:electric_spark6"
   ]
 }

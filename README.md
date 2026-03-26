@@ -58,7 +58,7 @@ Armas nuevas a implementar:
   - On Hit: Pushback ligero.
   - On Combo: Pushback fuerte y Retroceso.
 
-- [x] Guantes.
+- [x] Guanteletes.
   - Velocidad de ataque muy rápida.
   - Daño mínimo.
   - Área de daño mínimo.
@@ -74,28 +74,30 @@ Armas nuevas a implementar:
   - On Hit: Pushback ligero.
   - On Combo: Retroceso.
 
--[ ] Rapiers.
-  - Velocidad de ataque rápida.
-  - Daño bajo.
-  - Área de daño mínimo
-  - Click derecho: Lunge, el jugador avanza hacia adelante y atraviesa al mob, le aplica efecto de sangrado (wither por 3s), y gana un instante de invisibilidad breve.
+-[x] Rapiers.
+- Velocidad de ataque rápida.
+- Daño bajo.
+- Área de daño mínimo
+- Click derecho: Lunge, el jugador avanza hacia adelante y atraviesa al mob, le aplica efecto de sangrado (wither por 3s), y gana un instante de invisibilidad breve.
 
-- [ ] Espadas.
+- [x] Espadas.
   - Velocidad de ataque media.
   - Daño medio.
   - Área de daño bajo.
   - Click derecho: Ataque circular, el jugador gira progresivamente durante un 1 segundo, aplicando daño de área a los mobs cercanos.
 
-  
-
 ## Actualización de Armaduras (Estilo Minecraft Dungeons / Vanilla+)
 
 Para complementar el sistema de armas, implementaremos un sistema de armaduras nuevas, inspirado en las armaduras de minecraft dungeons. Cada una tendrá mecánicas de combate diferentes:
 
+- [ ] Armaduras mejoradas.
+  - Armaduras con habilidades pasivas especiales.
+
 Armaduras nuevas a implementar:
 
-- [ ] Armadura de Hueso (Esqueleto)
-- [ ] Armadura de Wither (Wither Skeleton)
+- [ ] Armadura de netherita.
+- [ ] Armadura resonante.
+- [ ] Armadura de amatista.
 
 ## Actualización de Pirotecnia
 

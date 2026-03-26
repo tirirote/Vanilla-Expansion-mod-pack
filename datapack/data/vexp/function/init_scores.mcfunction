@@ -28,7 +28,6 @@ scoreboard objectives add vexp.combo_cooldown dummy
 scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
-scoreboard objectives add vexp.gauntlets_used minecraft.used:minecraft.carrot_on_a_stick
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm

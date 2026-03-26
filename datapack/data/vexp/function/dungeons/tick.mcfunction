@@ -10,12 +10,13 @@ execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate
 function vexp:dungeons/combo_system/tick
 function vexp:dungeons/dagger/tick
 function vexp:dungeons/gauntlets/tick
+function vexp:dungeons/handgun/tick
 function vexp:dungeons/scythe/tick
 function vexp:dungeons/sword/tick
-function vexp:dungeons/states/tick
 
 # 2.1. PROJECTILE SYSTEM (Global)
 execute as @e[type=marker,tag=vexp.projectile] at @s run function vexp:projectile/tick
+execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
 
 # 3. TAG CLEANUP (End of tick)
 # These tags are marked during the tick and cleared here to allow feedback logic to see them

@@ -4,4 +4,4 @@
 # Usado para efectos finales, drop de items, etc.
 # $(proj_type) - Tipo de proyectil pasado como parámetro
 
-$function vexp:dungeons/$(proj_type)/projectile/on_despawn
+$function vexp:projectile/projectiles/$(proj_type)/on_despawn

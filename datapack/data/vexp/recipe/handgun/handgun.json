@@ -9,15 +9,20 @@
     "S": "minecraft:stick"
   },
   "result": {
-    "id": "minecraft:carrot_on_a_stick",
+    "id": "minecraft:stick",
     "count": 1,
     "components": {
-      "minecraft:max_damage": 6,
-      "minecraft:damage": 6,
       "minecraft:custom_data": {
         "vexp": {
-          "type": "handgun",
-          "ammo": 0
+          "item": "handgun",
+          "type": "short_combo",
+          "combo": {
+            "damage": 4,
+            "cooldown": 18,
+            "range": 2.5,
+            "reach": 3.5,
+            "quality": "normal"
+          }
         }
       },
       "minecraft:custom_model_data": {
@@ -30,8 +35,37 @@
       },
       "minecraft:lore": [
         {
-          "text": "Munición: 6 / 6",
+          "text": "Dispara consumiendo munición del inventario",
           "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "italic": false
+        },
+        {
+          "text": "Stats de Combo:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "- Daño: 4",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "- Alcance: 2.5",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "- Reach: 3.5",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "- Cooldown: 18 ticks",
+          "color": "dark_gray",
           "italic": false
         }
       ],
@@ -46,7 +80,17 @@
           "slot": "mainhand",
           "type": "attack_speed"
         }
-      ]
+      ],
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "consumable": {
+        "animation": "bow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     }
   }
 }

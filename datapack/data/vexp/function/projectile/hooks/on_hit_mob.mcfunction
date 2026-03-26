@@ -4,4 +4,4 @@
 # @e[tag=vexp.proj_target] es el mob objetivo
 # $(proj_type) - Tipo de proyectil pasado como parámetro
 
-$function vexp:dungeons/$(proj_type)/projectile/on_hit_mob
+$function vexp:projectile/projectiles/$(proj_type)/on_hit_mob

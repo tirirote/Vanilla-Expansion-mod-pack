@@ -12,8 +12,3 @@ function vexp:dungeons/combo_system/hitbox/damage_aoe with storage vexp:main com
 
 # Process combos and hooks for the hitted entity
 function vexp:dungeons/combo_system/hooks/handle_hit with storage vexp:main combo_params
-
-# Feedback
-playsound minecraft:entity.player.attack.sweep player @s ~ ~ ~ 1 1
-
-# TAGS are now removed globally in dungeons/tick.mcfunction to allow feedback systems to process them

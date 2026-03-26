@@ -5,4 +5,4 @@ execute as @a if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagg
 # Ahora manejado por el sistema global de proyectiles: vexp:projectile/tick
 
 # 3. Lógica para Dagas Clavadas (Stuck)
-execute as @e[tag=vexp.dagger_stuck] at @s run function vexp:dungeons/dagger/stuck/tick
+execute as @e[tag=vexp.dagger_stuck] at @s run function vexp:projectile/projectiles/dagger/stuck/tick

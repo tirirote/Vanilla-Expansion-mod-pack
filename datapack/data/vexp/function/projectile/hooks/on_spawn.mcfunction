@@ -3,4 +3,4 @@
 # @s es el proyectil recién creado
 # $(proj_type) - Tipo de proyectil pasado como parámetro
 
-$function vexp:dungeons/$(proj_type)/projectile/on_spawn
+$function vexp:projectile/projectiles/$(proj_type)/on_spawn

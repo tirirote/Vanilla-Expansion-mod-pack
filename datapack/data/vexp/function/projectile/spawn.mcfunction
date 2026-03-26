@@ -23,6 +23,9 @@ execute unless entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] if scor
 tag @s remove vexp.temp_projectile
 tag @s remove vexp.keep_rotation
 
+# Fuego visual en la entidad base del proyectil (armor stand)
+execute if entity @s[type=minecraft:armor_stand] run data merge entity @s {Fire:32767s,HasVisualFire:1b}
+
 # Hook: on_spawn (configuración específica del tipo de proyectil)
 function vexp:projectile/hooks/on_spawn with entity @s data
 
@@ -32,3 +35,4 @@ execute unless data entity @s data.proj.homing_distance run data modify entity @
 execute unless data entity @s data.proj.spin run data modify entity @s data.proj.spin set value 0.0
 execute unless data entity @s data.proj.face_player run data modify entity @s data.proj.face_player set value 0
 execute unless data entity @s data.proj.radius run data modify entity @s data.proj.radius set value 0.0
+

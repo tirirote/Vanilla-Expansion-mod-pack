@@ -6,7 +6,7 @@
     "L": "minecraft:leather"
   },
   "result": {
-    "id": "minecraft:carrot_on_a_stick",
+    "id": "minecraft:stick",
     "components": {
       "minecraft:item_name": "Guantes de Hierro",
       "minecraft:lore": [

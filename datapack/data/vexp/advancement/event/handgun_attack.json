@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "used_handgun": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{vexp:{item:\"handgun\"}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vexp:dungeons/combo_system/hooks/apply_interact_params_wrapper"
+  }
+}

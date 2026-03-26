@@ -27,8 +27,8 @@ execute store result entity @s data.proj.lifetime int 1 run scoreboard players g
 # 6. Hook: on_tick (efectos visuales, partículas, comportamiento específico)
 execute if entity @s[tag=vexp.projectile] run function vexp:projectile/hooks/on_tick with entity @s data
 
-# 7. Movimiento — dispatcher sin macro (sub-ficheros leen data.proj internamente)
-execute if score @s vexp.proj_lifetime matches 1.. run function vexp:projectile/move
+# 7. Movimiento Unificado (ahora gestiona internamente spin, face_player y órbita)
+execute if score @s vexp.proj_lifetime matches 1.. run function vexp:projectile/move with entity @s data.proj
 
 # Cleanup de tags
 tag @a[tag=vexp.projectile_owner] remove vexp.projectile_owner

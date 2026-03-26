@@ -4,7 +4,8 @@
 # Mark mob
 function vexp:dungeons/states/nether_marked
 
-summon marker ~ ~ ~ {Tags:["vexp.projectile","vexp.temp_projectile","vexp.nether_projectile"],data:{proj_type:"nether_scythe"}}
+data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.nether_projectile",proj_type:"nether_scythe",proj_data:{}}
+function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 
 execute as @e[tag=vexp.temp_projectile,limit=1] at @s run function vexp:projectile/spawn
 
