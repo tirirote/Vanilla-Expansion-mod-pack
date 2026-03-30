@@ -11,7 +11,7 @@ function vexp:utils/motion/apply_knockback {strength:1.0, y:0.2}
 effect give @p[tag=vexp.attacker] minecraft:resistance 1 0 true
 effect give @p[tag=vexp.attacker] minecraft:slowness 1 0 true
 
-particle lava ~ ~1 ~ 1 0.2 1 0 2
-particle large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.1 3
+execute positioned ~ ~1 ~ run function vexp:utils/hits/fire_hit
+
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
 function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}

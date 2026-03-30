@@ -4,5 +4,5 @@
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
 # Visuals
-particle minecraft:crit ~ ~1 ~ .2 .2 .2 0.05 5
+execute positioned ~ ~1 ~ run function vexp:utils/hits/common_hit
 function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}

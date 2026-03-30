@@ -19,9 +19,7 @@ execute if entity @s[tag=vexp.amethyst] run data modify entity @s data.proj.dama
 # Copiar posición y rotación exacta del jugador (ojos)
 data modify entity @s Rotation set from entity @p[tag=vexp.throwing,limit=1] Rotation
 
-# Assign unique ID to this projectile for precise display cleanup
-scoreboard players add #global vexp.id 1
-scoreboard players operation @s vexp.id = #global vexp.id
+# Conservar vexp.id heredado en projectile/spawn para mantener la atribución de daño al dueño
 
 # Crear el visual basado en el tag de material
 execute if entity @s[tag=vexp.iron] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:iron_sword",components:{"minecraft:custom_model_data":{strings:["vexp:iron_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}

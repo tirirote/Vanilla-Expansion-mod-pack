@@ -5,7 +5,7 @@
 tag @s remove vexp.target_found
 
 # Evaluamos si hay un objetivo válido para marcar 'target_found'
-$execute at @s positioned ^ ^ ^1 if entity @e[type=!#minecraft:arrows,type=!text_display,type=!armor_stand,type=!item_display,type=!block_display,type=!interaction,type=!item_frame,type=!glow_item_frame,type=!experience_orb,type=!marker,type=!area_effect_cloud,type=!item,type=!player,distance=..$(range)] run tag @s add vexp.target_found
+$execute at @s positioned ^ ^ ^1 if entity @e[predicate=vexp:is_target,distance=..$(range)] run tag @s add vexp.target_found
 
 # Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
 # Esto libera la interacción con bloques (cofres, botones) y con el aire.

@@ -11,5 +11,4 @@ execute unless entity @s[tag=vexp.hitted.combo_end] run team join vexp.yellow @s
 # Re-apply glowing for feedback
 tag @s add vexp.feedback_glowing
 
-particle minecraft:damage_indicator ~ ~ ~ .1 .1 .1 0.35 5
-
+particle minecraft:damage_indicator ~ ~1 ~ .1 .1 .1 0.35 5

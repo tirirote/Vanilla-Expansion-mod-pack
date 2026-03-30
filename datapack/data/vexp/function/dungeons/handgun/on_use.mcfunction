@@ -13,7 +13,7 @@ function vexp:dungeons/handgun/consume
 
 # 6. Feedback visual/sonoro extra
 # Efectos de disparo
-particle campfire_cosy_smoke ~ ~ ~ .2 .2 .2 0.02 3
+particle campfire_cosy_smoke ~ ~ ~ .2 .2 .2 0.005 1
 particle lava ~ ~ ~ .1 .1 .1 0.1 1
 
 function vexp:utils/sound {sound: "entity.firework_rocket.launch", type: "player"}

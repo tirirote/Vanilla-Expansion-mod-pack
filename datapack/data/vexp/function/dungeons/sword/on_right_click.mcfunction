@@ -1,6 +1,9 @@
 # dungeons/sword/on_right_click.mcfunction
 # @s is the player
-particle minecraft:poof ~ ~-1.25 ~ .5 .1 .5 0.05 25
-execute as @e[type=!player,type=!item,type=!marker,distance=..3.5] at @s run function vexp:utils/motion/apply_knockback {strength:-2.5, y:0.25}
-# Startup feedback
+tag @s add vexp.projectile_owner
+
+# 3 Projectile summon (common_sword)
+execute positioned ^ ^ ^1 run function vexp:projectile/utils/create_armor_stand {projectile_tag:"vexp.common_sword",proj_type:"common_sword",proj_data:{}}
+execute as @e[type=minecraft:armor_stand,tag=vexp.temp_projectile,tag=vexp.common_sword,distance=..3] at @s rotated as @p[tag=vexp.projectile_owner,limit=1] run function vexp:projectile/spawn
+
 function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}

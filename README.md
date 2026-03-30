@@ -4,10 +4,9 @@ Proyecto de datapacks y paquetes de recursos para minecraft.
 
 ## Todo List and ideas.
 
-Lista de ideas y de modificaciones para el juego. Modificaciones de tipo vanilla, es decir, que no añadan nuevos objetos o mecánicas que rompan el equilibrio del juego.
+## Unificar sistema de feedback, efectos de partículas y sonidos.
 
-- [x] Mejores modelos 3D para folliage.
-- [x] Mejora de Partículas Vanilla.
+- [ ] Implementar un sistema en /utils donde tener preconfigurados efectos de partículas y sonidos para que sea mas facil usarlos en los diferentes sistemas de armas, armaduras, etc.
 
 ## Assets para diseño de interiores
 
@@ -104,10 +103,6 @@ Armaduras nuevas a implementar:
 - [x] TNT lanzable.
 - [ ] Bengalas.
 - [x] Pistola de mano.
-
-## Actualización de Magia
-
-- [ ] Magia avanzada, libros de hechizos, hechizos lanzables, etc. (Equilibrio de poder y utilidad).
 
 ## Actualizaciones varias (misceláneas)
 

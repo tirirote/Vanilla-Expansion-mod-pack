@@ -14,8 +14,12 @@ execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] unless scor
 execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scoreboard players operation @s vexp.id = @p[tag=vexp.projectile_owner,distance=..5,limit=1] vexp.id
 # Guardar ID del volley antes de eliminar el tag (para spawns subsiguientes del mismo volley)
 execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] as @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scoreboard players operation #volley_owner_id vexp.id = @s vexp.id
+
+data modify entity @s Rotation set from entity @p[tag=vexp.projectile_owner,limit=1] Rotation
+
 # Remover tag temporal del dueño
 tag @p[tag=vexp.projectile_owner] remove vexp.projectile_owner
+
 # Para spawns subsiguientes del mismo volley (tag ya eliminado): heredar ID si este proyectil aún no tiene uno
 execute unless entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] if score #volley_owner_id vexp.id matches 1.. run scoreboard players operation @s vexp.id = #volley_owner_id vexp.id
 

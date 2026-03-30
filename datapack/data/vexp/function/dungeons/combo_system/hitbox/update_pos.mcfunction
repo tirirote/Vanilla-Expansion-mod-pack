@@ -8,4 +8,4 @@ tp @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp
 # FeedBack: Hit Candidate (White Glowing)
 # Proxemic feedback for targets inside the mathematically correct hitbox zone
 # Using the SAME filters and $(range) as damage_aoe.mcfunction to avoid discrepancies
-$execute as @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,limit=1,sort=nearest] at @s unless entity @s[tag=vexp.hitbox.cooldown] as @e[type=!#minecraft:arrows,type=!text_display,type=!armor_stand,type=!item_display,type=!block_display,type=!interaction,type=!item_frame,type=!glow_item_frame,type=!experience_orb,type=!marker,type=!area_effect_cloud,type=!item,type=!player,distance=..$(range)] at @s run function vexp:dungeons/combo_system/hit_candidate
+$execute as @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,limit=1,sort=nearest] at @s unless entity @s[tag=vexp.hitbox.cooldown] as @e[predicate=vexp:is_target,distance=..$(range)] at @s run function vexp:dungeons/combo_system/hit_candidate

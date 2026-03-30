@@ -15,7 +15,7 @@
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
         { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 1.0", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 10 ticks",
           "italic": false,
@@ -29,7 +29,7 @@
           "combo": {
             "damage": 5,
             "cooldown": 10,
-            "range": 1.0,
+            "range": 1.5,
             "reach": 3.5,
             "quality": "echo"
           }

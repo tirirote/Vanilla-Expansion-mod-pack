@@ -4,7 +4,7 @@
 # 1. Buscar al mob al que estamos pegados
 # Asumimos que el mob está muy cerca del marker.
 # Si el mob muere, @e[...] fallará.
-execute as @e[type=!player,type=!item_display,type=!interaction,type=!marker,distance=..1,limit=1,sort=nearest] at @s run tag @s add vexp.current_host
+execute as @e[predicate=vexp:is_target,distance=..1,limit=1,sort=nearest] at @s run tag @s add vexp.current_host
 
 # 2. Moverse con el host (@s es el marcador)
 execute at @e[tag=vexp.current_host,limit=1] run teleport @s ~ ~1 ~

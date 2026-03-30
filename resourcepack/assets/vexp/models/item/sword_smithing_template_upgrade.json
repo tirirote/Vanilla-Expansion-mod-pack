@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "vexp:item/sword_smithing_template_upgrade"
-  }
-}

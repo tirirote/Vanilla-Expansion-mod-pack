@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vexp:item/dungeons/amethyst-scythe"
+    "layer0": "vexp:item/dungeons/amethyst_scythe"
   }
 }
