@@ -3,5 +3,5 @@
 # Nos posicionamos a 1.2 bloques y evaluamos con un rango dinámico que abarque al enemigo más cercano dentro del $(reach).
 $execute anchored eyes positioned ^ ^ ^1.2 as @e[predicate=vexp:is_target,tag=!vexp.attacker,distance=..$(reach),sort=nearest] at @s run tag @s add vexp.hitted
 
-# Apply damage to the hitted entity
-$execute as @e[tag=vexp.hitted] run damage @s $(damage) minecraft:player_attack by @p
+# Apply damage to the hitted entity (effect-adjusted)
+$execute as @e[tag=vexp.hitted] run damage @s $(eff_damage) minecraft:player_attack by @p

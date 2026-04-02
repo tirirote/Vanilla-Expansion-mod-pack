@@ -2,7 +2,7 @@
 # @s is the player who parried successfully
 
 # Default configurable parry damage
-data modify storage vexp:main parry_params set value {damage:1}
+data modify storage vexp:dungeons.weapon parry_params set value {damage:1}
 
 # Push nearby mobs away from the player
 # Reuse existing knockback utility that expects a tagged attacker.
@@ -13,7 +13,7 @@ execute as @e[type=!player,type=!item,type=!marker,type=!interaction,type=!item_
 function vexp:dungeons/gauntlets/route_on_parry
 
 tag @s remove vexp.attacker
-data remove storage vexp:main parry_params
+data remove storage vexp:dungeons.weapon parry_params
 
 
 # End parry state and grant brief speed boost

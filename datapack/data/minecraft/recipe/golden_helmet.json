@@ -1,0 +1,26 @@
+{
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "MMM",
+                    "M M"
+                ],
+    "key":  {
+                "M":  "minecraft:gold_ingot"
+            },
+    "result":  {
+                   "id":  "minecraft:golden_helmet",
+                   "count":  1,
+                   "components":  {
+                                      "minecraft:custom_data":  {
+                                                                    "vexp":  {
+                                                                                 "item":  "armor",
+                                                                                 "quality":  "gold",
+                                                                                 "armor":  {
+                                                                                               "type":  "gold",
+                                                                                               "slot":  "helmet"
+                                                                                           }
+                                                                             }
+                                                                }
+                                  }
+               }
+}

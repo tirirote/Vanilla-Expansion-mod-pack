@@ -74,6 +74,13 @@
       },
       "attribute_modifiers": [
         {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:scythe_damage",
+          "slot": "mainhand"
+        },
+        {
           "id": "minecraft:attack_speed",
           "amount": -3.0,
           "operation": "add_value",

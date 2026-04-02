@@ -6,7 +6,8 @@
 execute as @e[tag=vexp.hitted] at @s anchored eyes run function vexp:dungeons/combo_system/hitted_entity
 
 # On hit function hook
-function vexp:dungeons/combo_system/hooks/route_on_hit with storage vexp:main combo_params
+function vexp:dungeons/combo_system/hooks/route_on_hit with storage vexp:dungeons.weapon combo_params
+function vexp:dungeons/armor/on_hit
 
 # Route to combo logic based on item type (adds vexp.combo_end if reached limit)
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"short_combo"}}] run function vexp:dungeons/combo_system/combos/process_short
@@ -14,4 +15,4 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"mid_combo"
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"long_combo"}}] run function vexp:dungeons/combo_system/combos/process_long
 
 # Trigger end combo immediately if tagged (Combo finisher)
-execute if entity @s[tag=vexp.combo_end] run function vexp:dungeons/combo_system/hooks/end_combo with storage vexp:main combo_params
+execute if entity @s[tag=vexp.combo_end] run function vexp:dungeons/combo_system/hooks/end_combo with storage vexp:dungeons.weapon combo_params

@@ -1,34 +1,29 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "category": "misc",
-    "ingredients": [
-        "#minecraft:coals",
-        "minecraft:gunpowder"
-    ],
-    "result": {
-        "id": "minecraft:poisonous_potato",
-        "count": 6,
-        "components": {
-            "minecraft:custom_data": {
-                "vexp": {
-                    "type": "handgun_ammo"
-                }
-            },
-            "minecraft:custom_model_data": {
-                "strings": [
-                    "vexp:ammo"
-                ]
-            },
-            "minecraft:item_name": {
-                "text": "Munición de Cañón de Mano",
-                "italic": false,
-                "color": "white"
-            },
-            "minecraft:use_cooldown": {
-                "seconds": 1.0,
-                "cooldown_group": "vexp:handgun_ammo"
-            },
-            "enchantment_glint_override": false
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["#minecraft:coals", "minecraft:gunpowder"],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 6,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "handgun_ammo"
         }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:ammo"]
+      },
+      "minecraft:item_name": {
+        "text": "Munición de Cañón de Mano",
+        "italic": false,
+        "color": "white"
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 1.0,
+        "cooldown_group": "vexp:handgun_ammo"
+      },
+      "enchantment_glint_override": false
     }
+  }
 }

@@ -1,0 +1,2 @@
+# Detect armor set using quality/type extracted from the player's equipped helmet
+$execute if items entity @s armor.head *[custom_data~{vexp:{item:"armor",quality:"$(quality)"}}] if items entity @s armor.chest *[custom_data~{vexp:{item:"armor",quality:"$(quality)"}}] if items entity @s armor.legs *[custom_data~{vexp:{item:"armor",quality:"$(quality)"}}] if items entity @s armor.feet *[custom_data~{vexp:{item:"armor",quality:"$(quality)"}}] run data modify storage vexp:dungeons.armor armor_params.type set value "$(quality)"

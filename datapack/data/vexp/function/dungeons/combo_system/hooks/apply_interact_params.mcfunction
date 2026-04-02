@@ -4,4 +4,4 @@
 $scoreboard players set @s vexp.combo_cooldown $(cooldown)
 
 # Item-specific interaction hook (Player side)
-execute positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function vexp:dungeons/combo_system/hooks/route_on_right_click with storage vexp:main combo_params
+execute positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function vexp:dungeons/combo_system/hooks/route_on_right_click with storage vexp:dungeons.weapon combo_params

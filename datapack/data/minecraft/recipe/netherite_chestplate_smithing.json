@@ -1,11 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["W W", "WWW", "WWW"],
-  "key": {
-    "W": "minecraft:netherite_ingot"
-  },
-  "result": {
-    "id": "minecraft:netherite_chestplate",
-    "count": 1
-  }
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "M M",
+                    "MMM",
+                    "MMM"
+                ],
+    "key":  {
+                "M":  "minecraft:netherite_ingot"
+            },
+    "result":  {
+                   "id":  "minecraft:netherite_chestplate",
+                   "count":  1,
+                   "components":  {
+                                      "minecraft:custom_data":  {
+                                                                    "vexp":  {
+                                                                                 "item":  "armor",
+                                                                                 "quality":  "netherite",
+                                                                                 "armor":  {
+                                                                                               "type":  "netherite",
+                                                                                               "slot":  "chestplate"
+                                                                                           }
+                                                                             }
+                                                                }
+                                  }
+               }
 }

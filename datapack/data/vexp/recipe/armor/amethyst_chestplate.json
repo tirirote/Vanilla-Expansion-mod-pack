@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "minecraft:netherite_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "amethyst",
+          "armor": {
+            "type": "amethyst",
+            "slot": "chestplate"
+          }
+        }
+      }
+    }
+  }
+}

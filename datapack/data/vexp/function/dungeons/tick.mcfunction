@@ -8,6 +8,7 @@ execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate
 
 # 2. CORE SYSTEMS
 function vexp:dungeons/combo_system/tick
+function vexp:dungeons/armor/tick
 function vexp:dungeons/dagger/tick
 function vexp:dungeons/gauntlets/tick
 function vexp:dungeons/handgun/tick

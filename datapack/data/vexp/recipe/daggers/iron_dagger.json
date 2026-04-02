@@ -41,7 +41,7 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
-          "amount": 4.0,
+          "amount": -1.0,
           "operation": "add_value",
           "id": "vexp:dagger_damage",
           "slot": "mainhand"

@@ -1,0 +1,26 @@
+{
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "M M",
+                    "M M"
+                ],
+    "key":  {
+                "M":  "minecraft:gold_ingot"
+            },
+    "result":  {
+                   "id":  "minecraft:golden_boots",
+                   "count":  1,
+                   "components":  {
+                                      "minecraft:custom_data":  {
+                                                                    "vexp":  {
+                                                                                 "item":  "armor",
+                                                                                 "quality":  "gold",
+                                                                                 "armor":  {
+                                                                                               "type":  "gold",
+                                                                                               "slot":  "boots"
+                                                                                           }
+                                                                             }
+                                                                }
+                                  }
+               }
+}

@@ -14,7 +14,9 @@ function vexp:dungeons/handgun/consume
 # 6. Feedback visual/sonoro extra
 # Efectos de disparo
 particle campfire_cosy_smoke ~ ~ ~ .2 .2 .2 0.005 1
-particle lava ~ ~ ~ .1 .1 .1 0.1 1
+particle minecraft:crit ~ ~ ~ 0 0 0 0.1 3
+function vexp:utils/feedback/dust_particle {initialColor: [0.4, 0.4, 0.4], finalColor: [0.8, 0.75, 0.6], scale: 0.8, dX: 0.2, dY: 0.2, dZ: 0.2, speed: 0.05, count: 3}
+particle minecraft:flame ~ ~ ~ 0.0 0.0 0.0 0.05 1
 
 function vexp:utils/sound {sound: "entity.firework_rocket.launch", type: "player"}
 function vexp:utils/sound {sound: "entity.firework_rocket.twinkle_far", type: "player"}
