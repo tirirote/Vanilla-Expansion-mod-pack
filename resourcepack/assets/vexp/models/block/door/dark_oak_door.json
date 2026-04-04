@@ -1,0 +1,7 @@
+{
+  "parent": "vexp:block/door/door_template",
+  "textures": {
+    "door_up": "minecraft:block/dark_oak_door_top",
+    "door_bottom": "minecraft:block/dark_oak_door_bottom"
+  }
+}

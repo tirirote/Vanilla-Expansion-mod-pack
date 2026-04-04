@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["##", "##", "##"],
+  "key": {
+    "#": "minecraft:acacia_planks"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:item_frame",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "door",
+            "type": "door",
+            "model": "vexp:door_block_acacia",
+            "item_model": "vexp:door_acacia",
+            "width": 1,
+            "height": 2,
+            "name": "Puerta de Acacia",
+            "s_place": "minecraft:block.wood.place",
+            "s_break": "minecraft:block.wood.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:acacia_planks'}}"
+          }
+        },
+        "Invisible": true,
+        "Silent": true,
+        "Fixed": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:door_acacia"]
+      },
+      "minecraft:item_name": {
+        "text": "Puerta de Acacia",
+        "italic": false
+      }
+    }
+  }
+}

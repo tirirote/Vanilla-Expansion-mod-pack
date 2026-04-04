@@ -1,0 +1,7 @@
+{
+  "parent": "vexp:block/door/door_template",
+  "textures": {
+    "door_up": "minecraft:block/acacia_door_top",
+    "door_bottom": "minecraft:block/acacia_door_bottom"
+  }
+}

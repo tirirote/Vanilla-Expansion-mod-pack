@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["##", "##", "##"],
+  "key": {
+    "#": "minecraft:birch_planks"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:item_frame",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "door",
+            "type": "door",
+            "model": "vexp:door_block_birch",
+            "item_model": "vexp:door_birch",
+            "width": 1,
+            "height": 2,
+            "name": "Puerta de Abedul",
+            "s_place": "minecraft:block.wood.place",
+            "s_break": "minecraft:block.wood.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:birch_planks'}}"
+          }
+        },
+        "Invisible": true,
+        "Silent": true,
+        "Fixed": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:door_birch"]
+      },
+      "minecraft:item_name": {
+        "text": "Puerta de Abedul",
+        "italic": false
+      }
+    }
+  }
+}

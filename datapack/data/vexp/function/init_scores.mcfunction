@@ -3,6 +3,7 @@ scoreboard objectives add vexp.id dummy
 scoreboard objectives add vexp.dagger_used minecraft.used:minecraft.iron_sword
 scoreboard objectives add vexp.dagger_cooldown dummy
 scoreboard objectives add vexp.anim_frame dummy
+scoreboard objectives add vexp.anim_delay dummy
 scoreboard objectives add vexp.fuse dummy
 scoreboard objectives add vexp.damage dummy
 scoreboard objectives add vexp.tnt_stick_used minecraft.used:minecraft.experience_bottle
@@ -14,6 +15,9 @@ scoreboard objectives add vexp.old_hp dummy
 #Math
 scoreboard objectives add vexp.math dummy
 scoreboard players set #force_scale vexp.math 100
+scoreboard players set #neg_one vexp.math -1
+scoreboard players set #smooth_keep vexp.math 4
+scoreboard players set #smooth_div vexp.math 5
 
 scoreboard objectives add vexp.bullet_life dummy
 scoreboard objectives add vexp.handgun_cooldown dummy
@@ -25,6 +29,7 @@ scoreboard objectives add vexp.state dummy
 # Combo System
 scoreboard objectives add vexp.combo dummy
 scoreboard objectives add vexp.combo_cooldown dummy
+scoreboard objectives add vexp.swoosh_ticks dummy
 scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
@@ -32,6 +37,13 @@ scoreboard objectives add vexp.right_click dummy
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add vexp.wave_step dummy
+scoreboard objectives add vexp.look_yaw dummy
+scoreboard objectives add vexp.look_pitch dummy
+scoreboard objectives add vexp.look_yaw_prev dummy
+scoreboard objectives add vexp.look_pitch_prev dummy
+scoreboard objectives add vexp.look_speed dummy
+scoreboard objectives add vexp.look_dyaw dummy
+scoreboard objectives add vexp.look_dpitch dummy
 
 # Movement
 scoreboard objectives add vexp.move_dash_cd dummy

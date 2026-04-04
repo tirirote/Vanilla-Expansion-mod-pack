@@ -19,7 +19,7 @@ execute as @a unless score @s vexp.move_climb_ready = @s vexp.move_climb_ready r
 function vexp:movement/tick_dash
 
 # 2. Climb logic
-function vexp:movement/tick_climb
+#function vexp:movement/tick_climb
 
 # 3. Persist key states for edge detection
 scoreboard players set @a vexp.move_prev_w 0

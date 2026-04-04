@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:swoosh",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/swoosh"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/firework_rocket"
+    }
+  }
+}

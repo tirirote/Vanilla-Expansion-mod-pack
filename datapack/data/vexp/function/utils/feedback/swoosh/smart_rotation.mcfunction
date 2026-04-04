@@ -1,0 +1,16 @@
+# left_rotation follows look displacement (dyaw/dpitch), independent from entity Rotation.
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.7071f,0f,0f,0.7071f]
+
+# Single-axis presets
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dyaw matches 60.. run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.6964f,0.1228f,-0.1228f,0.6964f]
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dyaw matches ..-60 run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.6964f,-0.1228f,0.1228f,0.6964f]
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dpitch matches 40.. run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.7009f,0.0923f,0.0923f,0.7009f]
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dpitch matches ..-40 run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.7009f,-0.0923f,-0.0923f,0.7009f]
+
+# Combined presets (override single-axis when both are strong)
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dyaw matches 60.. if score @s vexp.look_dpitch matches 40.. run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.6744f,0.2126f,-0.0308f,0.7064f]
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dyaw matches 60.. if score @s vexp.look_dpitch matches ..-40 run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.7064f,0.0308f,-0.2126f,0.6744f]
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dyaw matches ..-60 if score @s vexp.look_dpitch matches 40.. run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.7064f,-0.0308f,0.2126f,0.6744f]
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,limit=1] vexp.id if score @s vexp.look_dyaw matches ..-60 if score @s vexp.look_dpitch matches ..-40 run data modify entity @e[tag=vexp.swoosh.current,limit=1] transformation.left_rotation set value [0.6744f,-0.2126f,0.0308f,0.7064f]
+
+tag @s remove vexp.swoosh.current

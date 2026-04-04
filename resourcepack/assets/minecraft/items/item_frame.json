@@ -114,6 +114,188 @@
           "type": "minecraft:model",
           "model": "vexp:block/dungeons/training-dummy"
         }
+      },
+      {
+        "when": "vexp:door_block_oak",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_oak",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_birch",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/birch_door"
+        }
+      },
+      {
+        "when": "vexp:door_birch",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/birch_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_spruce",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/spruce_door"
+        }
+      },
+      {
+        "when": "vexp:door_spruce",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/spruce_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_dark_oak",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/dark_oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_dark_oak",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/dark_oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_acacia",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/acacia_door"
+        }
+      },
+      {
+        "when": "vexp:door_acacia",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/acacia_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_jungle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/jungle_door"
+        }
+      },
+      {
+        "when": "vexp:door_jungle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/jungle_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_mangrove",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/mangrove_door"
+        }
+      },
+      {
+        "when": "vexp:door_mangrove",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/mangrove_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_cherry",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/cherry_door"
+        }
+      },
+      {
+        "when": "vexp:door_cherry",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/cherry_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_pale_oak",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/pale_oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_pale_oak",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/pale_oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_warped",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/warped_door"
+        }
+      },
+      {
+        "when": "vexp:door_warped",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/warped_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_crimson",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/crimson_door"
+        }
+      },
+      {
+        "when": "vexp:door_crimson",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crimson_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_bamboo",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/bamboo_door"
+        }
+      },
+      {
+        "when": "vexp:door_bamboo",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/bamboo_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/iron_door"
+        }
+      },
+      {
+        "when": "vexp:door_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/iron_door"
+        }
       }
     ],
     "fallback": {

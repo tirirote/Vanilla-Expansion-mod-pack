@@ -4,6 +4,10 @@ Proyecto de datapacks y paquetes de recursos para minecraft.
 
 ## Todo List and ideas.
 
+## Unificar modelos de Items y bloques.
+
+- [ ] Crear sprites 2d para todos los modelos del juego (?)
+
 ## Unificar sistema de feedback, efectos de partículas y sonidos.
 
 - [ ] Implementar un sistema en /utils donde tener preconfigurados efectos de partículas y sonidos para que sea mas facil usarlos en los diferentes sistemas de armas, armaduras, etc.
@@ -74,6 +78,7 @@ Armas nuevas a implementar:
   - On Combo: Retroceso.
 
 -[x] Rapiers.
+
 - Velocidad de ataque rápida.
 - Daño bajo.
 - Área de daño mínimo

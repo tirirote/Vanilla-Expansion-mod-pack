@@ -1,26 +1,23 @@
 {
-    "type":  "minecraft:crafting_shaped",
-    "pattern":  [
-                    "M M",
-                    "M M"
-                ],
-    "key":  {
-                "M":  "minecraft:leather"
-            },
-    "result":  {
-                   "id":  "minecraft:leather_boots",
-                   "count":  1,
-                   "components":  {
-                                      "minecraft:custom_data":  {
-                                                                    "vexp":  {
-                                                                                 "item":  "armor",
-                                                                                 "quality":  "leather",
-                                                                                 "armor":  {
-                                                                                               "type":  "leather",
-                                                                                               "slot":  "boots"
-                                                                                           }
-                                                                             }
-                                                                }
-                                  }
-               }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "M M"],
+  "key": {
+    "M": "minecraft:leather"
+  },
+  "result": {
+    "id": "minecraft:leather_boots",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "leather",
+          "armor": {
+            "type": "leather",
+            "slot": "boots"
+          }
+        }
+      }
+    }
+  }
 }

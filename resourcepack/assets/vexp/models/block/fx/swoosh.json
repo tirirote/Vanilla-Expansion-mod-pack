@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.11",
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "vexp:block/fx/swoosh",
+    "particle": "vexp:block/fx/swoosh"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 0, 17],
+      "faces": {
+        "up": { "uv": [0, 0, 16, 16], "texture": "#0" },
+        "down": { "uv": [0, 0, 16, 16], "texture": "#0" }
+      },
+      "shade": false
+    }
+  ]
+}

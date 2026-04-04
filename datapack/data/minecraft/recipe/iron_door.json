@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["##", "##", "##"],
+  "key": {
+    "#": "minecraft:iron_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:item_frame",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "door",
+            "type": "door",
+            "model": "vexp:door_block_iron",
+            "item_model": "vexp:door_iron",
+            "width": 1,
+            "height": 2,
+            "name": "Puerta de Hierro",
+            "s_place": "minecraft:block.metal.place",
+            "s_break": "minecraft:block.metal.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_block'}}"
+          }
+        },
+        "Invisible": true,
+        "Silent": true,
+        "Fixed": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:door_iron"]
+      },
+      "minecraft:item_name": {
+        "text": "Puerta de Hierro",
+        "italic": false
+      }
+    }
+  }
+}

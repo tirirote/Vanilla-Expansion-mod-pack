@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["##", "##", "##"],
+  "key": {
+    "#": "minecraft:crimson_planks"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:item_frame",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "door",
+            "type": "door",
+            "model": "vexp:door_block_crimson",
+            "item_model": "vexp:door_crimson",
+            "width": 1,
+            "height": 2,
+            "name": "Puerta Carmesí",
+            "s_place": "minecraft:block.wood.place",
+            "s_break": "minecraft:block.wood.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:crimson_planks'}}"
+          }
+        },
+        "Invisible": true,
+        "Silent": true,
+        "Fixed": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:door_crimson"]
+      },
+      "minecraft:item_name": {
+        "text": "Puerta Carmesí",
+        "italic": false
+      }
+    }
+  }
+}
