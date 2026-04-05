@@ -9,6 +9,10 @@ data merge storage vexp:custom_block {placement:{id:0,model:"",width:0.0d,height
 data modify storage vexp:custom_block placement set from entity @s data.vexp
 execute unless data storage vexp:custom_block placement.item_model run data modify storage vexp:custom_block placement.item_model set from storage vexp:custom_block placement.model
 
+# Normalizar dimensiones a float conservando hasta 2 decimales
+execute if data storage vexp:custom_block placement.width store result storage vexp:custom_block placement.width float 0.01 run data get storage vexp:custom_block placement.width 100
+execute if data storage vexp:custom_block placement.height store result storage vexp:custom_block placement.height float 0.01 run data get storage vexp:custom_block placement.height 100
+
 # 3. Llamar a la macro de spawn con los datos extraídos
 # Solo si hay datos válidos (id)
 execute if data storage vexp:custom_block placement.id run function vexp:custom_block/macro/spawn with storage vexp:custom_block placement

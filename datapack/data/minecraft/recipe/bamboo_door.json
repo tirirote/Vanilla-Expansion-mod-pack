@@ -6,7 +6,7 @@
     "#": "minecraft:bamboo_planks"
   },
   "result": {
-    "count": 1,
+    "count": 2,
     "id": "minecraft:item_frame",
     "components": {
       "minecraft:entity_data": {
@@ -18,8 +18,8 @@
             "type": "door",
             "model": "vexp:door_block_bamboo",
             "item_model": "vexp:door_bamboo",
-            "width": 1,
-            "height": 2,
+            "width": 1.5,
+            "height": 2.25,
             "name": "Puerta de Bambú",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",

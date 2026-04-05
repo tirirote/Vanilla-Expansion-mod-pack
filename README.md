@@ -17,8 +17,7 @@ Proyecto de datapacks y paquetes de recursos para minecraft.
 Items y bloques nuevos para mejorar los interiores de los hogares.(Equilibrio de detalle, rendimiento y nada fuera del estilo vanilla)
 
 - [x] Sillas funcionales.
-- [ ] Mesas.
-- [ ] Sillones.
+- [x] Puertas Suaves.
 
 ## Items Decorativos funcionales
 
@@ -27,6 +26,7 @@ Implementación de items decorativos y funcionales para el gameplay.
 - [ ] Jarra (almacena items dentro).
 - [ ] Soportes para armas.
 - [ ] Soporte para velas.
+- [ ] Cestas (Puedes colocar dentro un bloque o varios items) (?) 
 
 ## Actualización de Aventura (Mecánicas nuevas)
 

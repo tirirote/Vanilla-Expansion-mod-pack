@@ -2,6 +2,10 @@
 data modify storage vexp:custom_block item_drop set from entity @s data.vexp
 execute unless data storage vexp:custom_block item_drop.item_model run data modify storage vexp:custom_block item_drop.item_model set from storage vexp:custom_block item_drop.model
 
+# Normalizar dimensiones a float conservando hasta 2 decimales
+execute if data storage vexp:custom_block item_drop.width store result storage vexp:custom_block item_drop.width float 0.01 run data get storage vexp:custom_block item_drop.width 100
+execute if data storage vexp:custom_block item_drop.height store result storage vexp:custom_block item_drop.height float 0.01 run data get storage vexp:custom_block item_drop.height 100
+
 # Soltar el ítem usando la macro genérica
 function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop
 

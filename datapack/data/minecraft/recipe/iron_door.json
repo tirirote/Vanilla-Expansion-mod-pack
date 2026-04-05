@@ -5,7 +5,7 @@
     "#": "minecraft:iron_ingot"
   },
   "result": {
-    "count": 1,
+    "count": 2,
     "id": "minecraft:item_frame",
     "components": {
       "minecraft:entity_data": {
@@ -17,8 +17,8 @@
             "type": "door",
             "model": "vexp:door_block_iron",
             "item_model": "vexp:door_iron",
-            "width": 1,
-            "height": 2,
+            "width": 1.5,
+            "height": 2.25,
             "name": "Puerta de Hierro",
             "s_place": "minecraft:block.metal.place",
             "s_break": "minecraft:block.metal.break",

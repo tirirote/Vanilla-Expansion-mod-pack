@@ -1,6 +1,9 @@
 # close.mcfunction
 # Ejecutar AS la interaction de la puerta
 
+stopsound @a[distance=..10] * block.iron_door.open
+stopsound @a[distance=..10] * block.iron_door.close
+
 # Marcar estado cerrado
 data merge entity @s {data:{vexp:{door_open:0b}}}
 tag @s remove vexp.door_closed
@@ -15,5 +18,8 @@ execute as @e[type=item_display,tag=vexp.custom_block.display] if score @s vexp.
 # Agendar colocación de trapdoor cuando termine la animación (6 ticks)
 schedule function vexp:custom_block/blocks/door/on_closed_animation_finish 4t append
 
-# Sonido de cierre (leer desde NBT con macro)
+stopsound @a[distance=..10] * block.iron_door.open
+stopsound @a[distance=..10] * block.iron_door.close
+
+# Sonido de cierre
 function vexp:custom_block/macro/sound {sound:"minecraft:block.wooden_door.close"}
