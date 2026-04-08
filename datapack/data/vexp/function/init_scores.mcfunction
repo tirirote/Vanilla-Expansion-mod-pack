@@ -11,6 +11,8 @@ scoreboard objectives add vexp.tnt_stick_used minecraft.used:minecraft.experienc
 scoreboard objectives add vexp.hp dummy
 scoreboard objectives add vexp.max_hp dummy
 scoreboard objectives add vexp.old_hp dummy
+scoreboard objectives add vexp.timer dummy
+scoreboard objectives add vexp.hit_success dummy
 
 #Math
 scoreboard objectives add vexp.math dummy

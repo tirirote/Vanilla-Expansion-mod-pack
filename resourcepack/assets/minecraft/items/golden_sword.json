@@ -36,6 +36,26 @@
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/golden-rapier"
         }
+      },
+      {
+        "when": "vexp:golden-gauntlet",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/golden-gauntlet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/golden-gauntlet-hand"
+          }
+        }
       }
     ],
     "fallback": {

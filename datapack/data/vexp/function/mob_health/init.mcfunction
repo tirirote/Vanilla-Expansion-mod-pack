@@ -1,6 +1,6 @@
 # 1. Assign ID if missing
 execute unless score @s vexp.id = @s vexp.id run function vexp:utils/assign_id
-execute store result score @s vexp.old_hp run data get entity @s Health
+execute store result score @s vexp.old_hp run data get entity @s Health 100
 
 # 2. Summon Text Display linked to the mob and make it a passenger
 tag @s add vexp.current_mob

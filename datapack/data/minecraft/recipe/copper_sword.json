@@ -70,7 +70,11 @@
         "animation": "crossbow",
         "consume_seconds": 999999,
         "has_consume_particles": false
-      }
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:copper_ingot"]
+      },
+      "repair_cost": 1
     },
     "count": 1
   }

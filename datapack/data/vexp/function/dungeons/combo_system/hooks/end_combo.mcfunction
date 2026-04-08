@@ -6,6 +6,9 @@ execute as @e[tag=vexp.hitted,distance=..8] at @s run tag @s add vexp.hitted.com
 function vexp:dungeons/combo_system/hooks/route_on_combo with storage vexp:dungeons.weapon combo_params
 function vexp:dungeons/armor/on_combo
 
+#Particle Feedback
+execute as @e[tag=vexp.hitted,distance=..8] at @s run particle minecraft:damage_indicator ~ ~1 ~ .5 .5 .5 0.2 3
+
 # 2. Reset combo score
 scoreboard players set @s vexp.combo 0
 

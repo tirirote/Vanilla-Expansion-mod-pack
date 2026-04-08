@@ -71,10 +71,11 @@
           "italic": false
         }
       ],
-      "repairable": {
-        "items": "minecraft:iron_ingot"
+      \"minecraft:repairable\": {
+        \"items\": [\"minecraft:iron_ingot\"]
       },
-      "attribute_modifiers": [
+      \"repair_cost\": 1,
+      \"minecraft:attribute_modifiers\": [
         {
           "type": "minecraft:attack_damage",
           "amount": -1.0,

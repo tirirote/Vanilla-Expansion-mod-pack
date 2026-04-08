@@ -36,6 +36,26 @@
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/wooden-rapier"
         }
+      },
+      {
+        "when": "vexp:wooden-gauntlet",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/wooden-gauntlet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/wooden-gauntlet-hand"
+          }
+        }
       }
     ],
     "fallback": {

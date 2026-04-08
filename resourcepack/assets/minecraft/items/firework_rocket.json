@@ -4,6 +4,13 @@
     "property": "minecraft:custom_model_data",
     "cases": [
       {
+        "when": "vexp:weak_punch_swoosh",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_punch_swoosh"
+        }
+      },
+      {
         "when": "vexp:punch_swoosh",
         "model": {
           "type": "minecraft:model",

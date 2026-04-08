@@ -1,7 +1,6 @@
-# Assign 'vexp.hitted' to the nearest valid entity in range
-# Para no dejar puntos ciegos si el enemigo está muy pegado (Ej: daga de reach=2 pero range=0.8 dejaría ciego el punto 0.5):
-# Nos posicionamos a 1.2 bloques y evaluamos con un rango dinámico que abarque al enemigo más cercano dentro del $(reach).
-$execute anchored eyes positioned ^ ^ ^1.2 as @e[predicate=vexp:is_target,tag=!vexp.attacker,distance=..$(reach),sort=nearest] at @s run tag @s add vexp.hitted
+# Tag all valid entities in AoE range, centered on the player's hitbox entity
+$execute as @e[type=interaction,tag=vexp.combo_hitbox] if score @s vexp.id = @p[tag=vexp.attacker,limit=1] vexp.id at @s as @e[predicate=vexp:is_target,tag=!vexp.attacker,distance=..$(range)] run tag @s add vexp.hitted
 
 # Apply damage to the hitted entity (effect-adjusted)
-$execute as @e[tag=vexp.hitted] run damage @s $(eff_damage) minecraft:player_attack by @p
+execute as @e[tag=vexp.hitted] run scoreboard players set @s vexp.hit_success 0
+$execute as @e[tag=vexp.hitted] store success score @s vexp.hit_success run damage @s $(eff_damage) vexp:combo_hit by @p

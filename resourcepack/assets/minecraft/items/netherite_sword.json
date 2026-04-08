@@ -118,6 +118,66 @@
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/amethyst-rapier"
         }
+      },
+      {
+        "when": "vexp:netherite-gauntlet",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/netherite-gauntlet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/netherite-gauntlet-hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:resonance-gauntlet",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/resonance-gauntlet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/resonance-gauntlet-hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:amethyst-gauntlet",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/amethyst-gauntlet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/amethyst-gauntlet-hand"
+          }
+        }
       }
     ],
     "fallback": {
