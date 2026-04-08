@@ -14,10 +14,10 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 5.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 2", "italic": false, "color": "dark_gray" },
         {
-          "text": "- Cooldown: 10 ticks",
+          "text": "- Cooldown: 3 ticks",
           "italic": false,
           "color": "dark_gray"
         }
@@ -28,9 +28,9 @@
           "item": "rapier",
           "combo": {
             "damage": 5,
-            "cooldown": 10,
-            "range": 1.5,
-            "reach": 3.5,
+            "cooldown": 3,
+            "range": 2,
+            "reach": 5.5,
             "quality": "amethyst"
           }
         }
@@ -38,6 +38,8 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:amethyst-rapier"]
       },
+      "minecraft:max_damage": 1351,
+      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -77,3 +79,4 @@
     }
   }
 }
+

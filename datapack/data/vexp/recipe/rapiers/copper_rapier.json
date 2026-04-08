@@ -14,9 +14,9 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 3", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 7 ticks", "italic": false, "color": "dark_gray" }
+        { "text": "- Alcance: 5.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 2", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 3 ticks", "italic": false, "color": "dark_gray" }
       ],
       "minecraft:custom_data": {
         "vexp": {
@@ -24,9 +24,9 @@
           "item": "rapier",
           "combo": {
             "damage": 3,
-            "cooldown": 7,
-            "range": 1.5,
-            "reach": 3.5,
+            "cooldown": 3,
+            "range": 2,
+            "reach": 5.5,
             "quality": "normal"
           }
         }
@@ -36,7 +36,7 @@
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
-          "id": "vexp:scythe_damage",
+          "id": "vexp:rapier_damage",
           "slot": "mainhand"
         },
         {
@@ -62,6 +62,8 @@
         }
       ],
       "minecraft:custom_model_data": { "strings": ["vexp:copper-rapier"] },
+      "minecraft:max_damage": 250,
+      "minecraft:damage": 0,
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
         "animation": "spear",
@@ -72,3 +74,4 @@
     "count": 1
   }
 }
+

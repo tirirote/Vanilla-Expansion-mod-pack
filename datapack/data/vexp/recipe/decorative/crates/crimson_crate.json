@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["# #", "# #", "###"],
+  "key": {
+    "#": "minecraft:crimson_planks"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:item_frame",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "crate",
+            "type": "crate",
+            "model": "vexp:crimson_crate_block",
+            "item_model": "vexp:crimson_crate_block",
+            "width": 1.25,
+            "height": 0.75,
+            "name": "Caja Carmesi",
+            "s_place": "minecraft:block.wood.place",
+            "s_break": "minecraft:block.wood.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:crimson_planks'}}"
+          }
+        },
+        "Invisible": true,
+        "Silent": true,
+        "Fixed": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:crimson_crate_block"]
+      },
+      "minecraft:item_name": {
+        "text": "Caja Carmesi",
+        "italic": false
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@ execute as @a[scores={vexp.combo_cooldown=1..}] run scoreboard players remove @s
 execute as @e[type=interaction,tag=vexp.combo_hitbox] at @s run function vexp:dungeons/combo_system/hitbox/process
 
 # 3. Generate trails only during the 10-tick hit window
-execute as @a[tag=vexp.combo_user,scores={vexp.swoosh_ticks=1..}] at @s positioned ^ ^ ^2.5 run function vexp:dungeons/combo_system/hooks/on_swoosh
+#execute as @a[tag=vexp.combo_user,scores={vexp.swoosh_ticks=1..}] at @s positioned ^ ^ ^2.5 run function vexp:dungeons/combo_system/hooks/on_swoosh
 
 # 4. Decrease swoosh window
-execute as @a[scores={vexp.swoosh_ticks=1..}] run scoreboard players remove @s vexp.swoosh_ticks 1
+#execute as @a[scores={vexp.swoosh_ticks=1..}] run scoreboard players remove @s vexp.swoosh_ticks 1

@@ -1,0 +1,7 @@
+{
+  "parent": "vexp:block/crate/crate_template",
+  "textures": {
+    "wood": "vexp:block/crate/acacia_crate",
+    "log": "minecraft:block/stripped_acacia_log_top"
+  }
+}

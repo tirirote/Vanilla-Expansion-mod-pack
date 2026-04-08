@@ -18,7 +18,7 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
         { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
         { "text": "- Cooldown: 7 ticks", "italic": false, "color": "dark_gray" }
       ],
@@ -30,7 +30,7 @@
             "damage": 5,
             "cooldown": 7,
             "range": 1.5,
-            "reach": 2.5,
+            "reach": 1.5,
             "quality": "normal"
           }
         }
@@ -38,6 +38,8 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:diamond_dagger"]
       },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -78,3 +80,4 @@
     "count": 1
   }
 }
+

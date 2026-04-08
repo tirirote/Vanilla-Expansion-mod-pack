@@ -19,6 +19,7 @@ execute if entity @e[tag=vexp.current_pickup,tag=vexp.amethyst,limit=1] run tag 
 
 # Pasar el daño acumulado al picker
 execute as @e[tag=vexp.current_pickup,limit=1] run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage
+tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_damage
 
 # Dar el item (usará los tags que acabamos de ponerle al picker)
 execute as @p[tag=vexp.picker,limit=1] run function vexp:dungeons/dagger/give

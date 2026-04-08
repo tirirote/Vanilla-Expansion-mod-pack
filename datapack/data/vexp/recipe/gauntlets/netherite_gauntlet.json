@@ -6,7 +6,7 @@
     "L": "minecraft:leather"
   },
   "result": {
-    "id": "minecraft:stick",
+    "id": "minecraft:carrot_on_a_stick",
     "components": {
       "minecraft:item_name": "Guantes de Netherite",
       "minecraft:lore": [
@@ -14,9 +14,9 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 2", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 4 ticks", "italic": false, "color": "dark_gray" }
+        { "text": "- Alcance: 2", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 2.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 2 ticks", "italic": false, "color": "dark_gray" }
       ],
       "minecraft:custom_data": {
         "vexp": {
@@ -24,9 +24,9 @@
           "item": "gauntlets",
           "combo": {
             "damage": 5,
-            "cooldown": 4,
-            "range": 1.5,
-            "reach": 1.5,
+            "cooldown": 2,
+            "range": 2.5,
+            "reach": 2,
             "quality": "netherite"
           }
         }
@@ -55,6 +55,9 @@
         }
       ],
       "minecraft:custom_model_data": { "strings": ["vexp:netherite-gauntlet"] },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
+      "minecraft:repairable": { "items": ["minecraft:leather"] },
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
         "animation": "bow",
@@ -64,3 +67,4 @@
     }
   }
 }
+

@@ -13,10 +13,10 @@ tag @s add vexp.door_pending_close
 scoreboard players operation #temp vexp.id = @s vexp.id
 
 # Animacion suave: giro local cerrado (pivot ajustado)
-execute as @e[type=item_display,tag=vexp.custom_block.display] if score @s vexp.id = #temp vexp.id run data merge entity @s {start_interpolation:0,interpolation_duration:2,transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-0.44f,0.475f,0.375f],scale:[1.005f,1.001f,1.001f]}}
+execute as @e[type=item_display,tag=vexp.custom_block.display] if score @s vexp.id = #temp vexp.id run data merge entity @s {start_interpolation:0,interpolation_duration:4,transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-0.44f,0.475f,0.375f],scale:[1.005f,1.001f,1.001f]}}
 
 # Agendar colocación de trapdoor cuando termine la animación (6 ticks)
-schedule function vexp:custom_block/blocks/door/on_closed_animation_finish 4t append
+schedule function vexp:custom_block/blocks/door/on_closed_animation_finish 5t append
 
 stopsound @a[distance=..10] * block.iron_door.open
 stopsound @a[distance=..10] * block.iron_door.close

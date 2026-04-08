@@ -5,7 +5,7 @@
 tag @s remove vexp.target_found
 
 # Evaluamos si hay un objetivo válido para marcar 'target_found'
-$execute at @s positioned ^ ^ ^1 if entity @e[predicate=vexp:is_target,distance=..$(range)] run tag @s add vexp.target_found
+$execute if entity @e[predicate=vexp:is_target,distance=..$(range)] run tag @s add vexp.target_found
 
 # Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
 # Esto libera la interacción con bloques (cofres, botones) y con el aire.

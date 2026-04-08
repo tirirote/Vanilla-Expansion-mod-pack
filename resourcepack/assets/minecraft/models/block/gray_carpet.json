@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/detailed_carpet",
+  "textures": {
+    "wool": "minecraft:block/gray_wool",
+    "detail": "minecraft:block/gray_wool_detail"
+  }
+}

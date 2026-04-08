@@ -18,9 +18,8 @@ tag @s add vexp.throwing
 data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.dagger_projectile",proj_type:"dagger",proj_data:{}}
 function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 
-# Capturar durabilidad (Damage) y añadir 1 por el lanzamiento
+# Capturar durabilidad actual para persistirla en el proyectil
 execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage run data get entity @s SelectedItem.components."minecraft:damage"
-execute store result entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.proj.damage byte 1 run data get entity @s SelectedItem.components."minecraft:damage"
 
 # Identificar material en mano y etiquetar proyectil
 # Utilizando la nueva estructura NBT vexp:{item:"dagger"}

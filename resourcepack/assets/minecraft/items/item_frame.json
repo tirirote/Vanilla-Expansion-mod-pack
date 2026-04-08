@@ -296,6 +296,90 @@
           "type": "minecraft:model",
           "model": "minecraft:item/iron_door"
         }
+      },
+      {
+        "when": "vexp:spruce_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/spruce_crate"
+        }
+      },
+      {
+        "when": "vexp:birch_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/birch_crate"
+        }
+      },
+      {
+        "when": "vexp:jungle_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/jungle_crate"
+        }
+      },
+      {
+        "when": "vexp:acacia_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/acacia_crate"
+        }
+      },
+      {
+        "when": "vexp:dark_oak_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/dark_oak_crate"
+        }
+      },
+      {
+        "when": "vexp:mangrove_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/mangrove_crate"
+        }
+      },
+      {
+        "when": "vexp:cherry_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/cherry_crate"
+        }
+      },
+      {
+        "when": "vexp:bamboo_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/bamboo_crate"
+        }
+      },
+      {
+        "when": "vexp:crimson_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/crimson_crate"
+        }
+      },
+      {
+        "when": "vexp:warped_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/warped_crate"
+        }
+      },
+      {
+        "when": "vexp:pale_oak_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/pale_oak_crate"
+        }
+      },
+      {
+        "when": "vexp:oak_crate_block",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/crate/oak_crate"
+        }
       }
     ],
     "fallback": {

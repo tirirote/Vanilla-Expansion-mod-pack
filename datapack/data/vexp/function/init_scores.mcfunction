@@ -77,8 +77,7 @@ scoreboard objectives add vexp.proj_speed dummy
 scoreboard objectives add vexp.proj_gravity dummy
 scoreboard objectives add vexp.proj_damage dummy
 
-# Resetear ID
-scoreboard players set #global vexp.id 0
+# Inicializar contador global de IDs solo en el debug
 
 # Teams for Feedback Glowing
 team add vexp.white

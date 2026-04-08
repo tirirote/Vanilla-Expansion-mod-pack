@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/fx/swoosh_template",
+  "textures": {
+    "swoosh": "vexp:block/fx/punch_swoosh"
+  }
+}

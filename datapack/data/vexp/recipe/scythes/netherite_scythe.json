@@ -14,10 +14,10 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 12", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 4.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 5", "italic": false, "color": "dark_gray" },
         {
-          "text": "- Cooldown: 32 ticks",
+          "text": "- Cooldown: 42 ticks",
           "italic": false,
           "color": "dark_gray"
         }
@@ -28,9 +28,9 @@
           "item": "scythe",
           "combo": {
             "damage": 12,
-            "cooldown": 32,
-            "range": 4.5,
-            "reach": 3.5,
+            "cooldown": 42,
+            "range": 5,
+            "reach": 4.5,
             "quality": "netherite"
           }
         }
@@ -38,6 +38,8 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:netherite-scythe"]
       },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -77,3 +79,4 @@
     }
   }
 }
+

@@ -13,7 +13,7 @@ tag @s remove vexp.door_pending_close
 scoreboard players operation #temp vexp.id = @s vexp.id
 
 # Animacion suave: giro local abierto (pivot ajustado)
-execute as @e[type=item_display,tag=vexp.custom_block.display] if score @s vexp.id = #temp vexp.id run data merge entity @s {start_interpolation:0,interpolation_duration:2,transformation:{left_rotation:[0f,-0.7071f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[-0.44f,0.475f,0.375f],scale:[1.005f,1.001f,1.001f]}}
+execute as @e[type=item_display,tag=vexp.custom_block.display] if score @s vexp.id = #temp vexp.id run data merge entity @s {start_interpolation:0,interpolation_duration:4,transformation:{left_rotation:[0f,-0.7071f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[-0.44f,0.475f,0.375f],scale:[1.005f,1.001f,1.001f]}}
 
 # Mantener hitbox como puerta de hierro abierta para detectar redstone
 execute if entity @s[y_rotation=-45..45] run setblock ~ ~ ~ iron_door[facing=north,half=lower,open=true]

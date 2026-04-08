@@ -25,6 +25,8 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:amethyst-axe"]
       },
+      "minecraft:max_damage": 1351,
+      "minecraft:damage": 0,
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -70,10 +72,11 @@
       ],
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
-          "animation": "bow",
+        "animation": "bow",
         "consume_seconds": 999999,
         "has_consume_particles": false
       }
     }
   }
 }
+

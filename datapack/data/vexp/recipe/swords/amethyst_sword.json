@@ -38,6 +38,8 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:amethyst-sword"]
       },
+      "minecraft:max_damage": 1351,
+      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_speed",
@@ -70,3 +72,4 @@
     }
   }
 }
+

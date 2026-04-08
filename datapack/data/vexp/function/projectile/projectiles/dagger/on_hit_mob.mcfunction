@@ -3,9 +3,6 @@
 # @s es el proyectil
 # @e[tag=vexp.proj_target] es el mob objetivo (ya marcado por el sistema base)
 
-# Quitar durabilidad
-scoreboard players add @s vexp.damage 1
-
 # Pasar tag de material y daño al lanzador para devolver el item
 execute if entity @s[tag=vexp.iron] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.iron
 execute if entity @s[tag=vexp.wood] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.wood
@@ -27,6 +24,7 @@ execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unl
 
 # Transferir daño al dueño para la devolución con durabilidad correcta
 scoreboard players operation @p[tag=vexp.dagger_owner,limit=1] vexp.damage = @s vexp.damage
+tag @p[tag=vexp.dagger_owner,limit=1] add vexp.restore_dagger_damage
 
 # Devolver la daga al jugador
 execute as @p[tag=vexp.dagger_owner,limit=1] at @s run function vexp:dungeons/dagger/give

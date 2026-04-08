@@ -14,8 +14,8 @@
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
         { "text": "- Daño: 9", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 3.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 4.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 5", "italic": false, "color": "dark_gray" },
         {
           "text": "- Cooldown: 30 ticks",
           "italic": false,
@@ -28,9 +28,9 @@
           "item": "scythe",
           "combo": {
             "damage": 9,
-            "cooldown": 30,
-            "range": 4.5,
-            "reach": 3.5,
+            "cooldown": 42,
+            "range": 5,
+            "reach": 4.5,
             "quality": "normal"
           }
         }
@@ -38,6 +38,8 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:diamond-scythe"]
       },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -78,3 +80,4 @@
     "count": 1
   }
 }
+

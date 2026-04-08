@@ -1,9 +1,7 @@
 {
-  "format_version": "1.21.11",
-  "credit": "Made with Blockbench",
   "textures": {
-    "0": "vexp:block/fx/swoosh",
-    "particle": "vexp:block/fx/swoosh"
+    "0": "#swoosh",
+    "particle": "#swoosh"
   },
   "elements": [
     {

@@ -4,7 +4,7 @@
 $scoreboard players set @s vexp.combo_cooldown $(eff_cooldown)
 
 # Start swoosh spawn window (10 ticks from hit trigger)
-scoreboard players set @s vexp.swoosh_ticks 5
+scoreboard players set @s vexp.swoosh_ticks 1
 
 # 2. Assign vexp.attacker to current player
 tag @s add vexp.attacker

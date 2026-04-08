@@ -10,4 +10,4 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"mid_combo"
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"long_combo"}}] run tag @s add vexp.combo_user
 
 # If holding, summon/update hitbox (ensure 'at @s' for proper summoning)
-execute if entity @s[tag=vexp.combo_user] at @s positioned ~ ~.85 ~ run function vexp:dungeons/combo_system/hitbox/update
+execute if entity @s[tag=vexp.combo_user] at @s positioned ~ ~1 ~ positioned ^ ^ ^1 run function vexp:dungeons/combo_system/hitbox/update

@@ -1,6 +1,6 @@
 {
   "textures": {
-    "wood": "vexp:block/oak_chair",
+    "wood": "#wood",
     "particle": "#wood"
   },
   "elements": [
