@@ -17,7 +17,7 @@ scoreboard players operation #owner_id vexp.math = @s vexp.id
 execute as @a if score @s vexp.id = #owner_id vexp.math run tag @s add vexp.projectile_owner
 data modify storage vexp:temp owner set value "@p[tag=vexp.projectile_owner,limit=1]"
 
-execute as @e[tag=vexp.proj_target] run function vexp:utils/apply_player_attack_damage with storage vexp:temp
+execute as @e[tag=vexp.proj_target] if score #temp vexp.math matches 1.. run function vexp:utils/apply_player_attack_damage with storage vexp:temp
 
 # Hook: Lógica específica del tipo de proyectil
 function vexp:projectile/hooks/on_hit_mob with entity @s data

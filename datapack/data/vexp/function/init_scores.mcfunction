@@ -1,7 +1,13 @@
 # Inicialización de Scoreboards
 scoreboard objectives add vexp.id dummy
 scoreboard objectives add vexp.dagger_used minecraft.used:minecraft.iron_sword
+scoreboard objectives add vexp.bow_used minecraft.used:minecraft.bow
 scoreboard objectives add vexp.dagger_cooldown dummy
+scoreboard objectives add vexp.bow_used_prev dummy
+scoreboard objectives add vexp.bow_shot_delta dummy
+scoreboard objectives add vexp.bow_draw_ticks dummy
+scoreboard objectives add vexp.arrow_draw_ticks dummy
+scoreboard objectives add vexp.arrow_draw_tier dummy
 scoreboard objectives add vexp.anim_frame dummy
 scoreboard objectives add vexp.anim_delay dummy
 scoreboard objectives add vexp.fuse dummy
@@ -20,6 +26,9 @@ scoreboard players set #force_scale vexp.math 100
 scoreboard players set #neg_one vexp.math -1
 scoreboard players set #smooth_keep vexp.math 4
 scoreboard players set #smooth_div vexp.math 5
+scoreboard players set #scale1000 vexp.math 1000
+scoreboard players set #bow_gravity_unit vexp.math 50
+scoreboard players set #bow_gravity_mult vexp.math 500
 
 scoreboard objectives add vexp.bullet_life dummy
 scoreboard objectives add vexp.handgun_cooldown dummy
@@ -35,6 +44,7 @@ scoreboard objectives add vexp.swoosh_ticks dummy
 scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
+scoreboard objectives add vexp.hitbox_hide_timer dummy
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm
@@ -69,6 +79,8 @@ scoreboard objectives add vexp.gauntlets_boost_timer dummy
 scoreboard objectives add vexp.gauntlets_damage_snapshot dummy
 scoreboard objectives add vexp.gauntlets_guard dummy
 scoreboard objectives add vexp.sword_spin_timer dummy
+scoreboard objectives add vexp.parry_timer dummy
+scoreboard objectives add vexp.parry_damage_snapshot dummy
 # Dungeons System
 scoreboard objectives add vexp.dstate dummy
 scoreboard objectives add vexp.scythe_proj_life dummy

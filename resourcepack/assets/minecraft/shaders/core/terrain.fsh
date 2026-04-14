@@ -13,9 +13,7 @@ in vec2 texCoord0;
 
 out vec4 fragColor;
 
-const float VEXP_DEFAULT_ALPHA_CUTOUT = 0.2;
-
-vec4 sampleNearest(sampler2D sampler, vec2 uv, vec2 pixelSize, vec2 du, vec2 dv, vec2 texelScreenSize) {
+vec4 sampleNearest(sampler2D source, vec2 uv, vec2 pixelSize, vec2 du, vec2 dv, vec2 texelScreenSize) {
     // Convert our UV back up to texel coordinates and find out how far over we are from the center of each pixel
     vec2 uvTexelCoords = uv / pixelSize;
     vec2 texelCenter = round(uvTexelCoords) - 0.5f;
@@ -26,7 +24,7 @@ vec4 sampleNearest(sampler2D sampler, vec2 uv, vec2 pixelSize, vec2 du, vec2 dv,
     texelOffset = clamp(texelOffset, 0.0f, 1.0f);
 
     uv = (texelCenter + texelOffset) * pixelSize;
-    return textureGrad(sampler, uv, du, dv);
+    return textureGrad(source, uv, du, dv);
 }
 
 vec4 sampleNearest(sampler2D source, vec2 uv, vec2 pixelSize) {
@@ -90,12 +88,10 @@ vec4 sampleRGSS(sampler2D source, vec2 uv, vec2 pixelSize) {
 void main() {
     vec4 color = (UseRgss == 1 ? sampleRGSS(Sampler0, texCoord0, 1.0f / TextureSize) : sampleNearest(Sampler0, texCoord0, 1.0f / TextureSize)) * vertexColor;
     color = mix(FogColor * vec4(1, 1, 1, color.a), color, ChunkVisibility);
-    float alphaCutout = VEXP_DEFAULT_ALPHA_CUTOUT;
 #ifdef ALPHA_CUTOUT
-    alphaCutout = max(alphaCutout, ALPHA_CUTOUT);
-#endif
-    if (color.a < alphaCutout) {
+    if (color.a < ALPHA_CUTOUT) {
         discard;
     }
+#endif
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

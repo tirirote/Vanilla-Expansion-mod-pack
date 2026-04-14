@@ -23,6 +23,13 @@
           "type": "minecraft:model",
           "model": "vexp:block/fx/sword_swoosh"
         }
+      },
+      {
+        "when": "vexp:weak_sword_swoosh",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_sword_swoosh"
+        }
       }
     ],
     "fallback": {

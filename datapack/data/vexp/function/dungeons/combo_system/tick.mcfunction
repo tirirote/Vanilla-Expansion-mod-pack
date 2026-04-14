@@ -15,6 +15,10 @@ kill @e[type=interaction,tag=vexp.hitbox.to_remove]
 
 # 1. Cooldown logic
 execute as @a[scores={vexp.combo_cooldown=1..}] run scoreboard players remove @s vexp.combo_cooldown 1
+execute as @a[scores={vexp.hitbox_hide_timer=1..}] run scoreboard players remove @s vexp.hitbox_hide_timer 1
 
 # 2. Process Hitbox Clicks (only if cooldown is 0)
 execute as @e[type=interaction,tag=vexp.combo_hitbox] at @s run function vexp:dungeons/combo_system/hitbox/process
+
+#3. Parry Logic
+execute as @a[scores={vexp.parry_timer=1..}] at @s run function vexp:dungeons/combo_system/parry

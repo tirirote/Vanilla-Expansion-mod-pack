@@ -35,7 +35,8 @@
           }
         }
       },
-      "minecraft:attribute_modifiers": [{
+      "minecraft:attribute_modifiers": [
+        {
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
@@ -66,7 +67,7 @@
       ],
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
-        "animation": "crossbow",
+        "animation": "block",
         "consume_seconds": 999999,
         "has_consume_particles": false
       }

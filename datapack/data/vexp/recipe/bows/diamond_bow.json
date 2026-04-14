@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" ST", "M T", " ST"],
+  "key": {
+    "M": "minecraft:diamond",
+    "T": "minecraft:string",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:item_name": "Arco de Diamante",
+      "minecraft:lore": [
+        {
+          "text": "Arco con combo a distancia",
+          "italic": false,
+          "color": "gray"
+        },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 8", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 4.2", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 5.2", "italic": false, "color": "dark_gray" },
+        {
+          "text": "- Cooldown: 22 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "short_combo",
+          "item": "bow",
+          "combo": {
+            "damage": 8,
+            "cooldown": 22,
+            "range": 5.2,
+            "reach": 4.2,
+            "quality": "normal"
+          }
+        }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:diamond_bow"]
+      },
+      "minecraft:max_damage": 1024,
+      "minecraft:damage": 0,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:bow_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -3.0,
+          "operation": "add_value",
+          "id": "vexp:bow_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:bow_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:bow_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": ["minecraft:diamond"]
+      },
+      "repair_cost": 1
+    },
+    "count": 1
+  }
+}

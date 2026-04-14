@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "vexp:item/dungeons/diamond_bow",
+    "layer1": "minecraft:item/bow_pulling1_overlay"
+  }
+}

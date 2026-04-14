@@ -14,9 +14,9 @@ tag @s remove vexp.swoosh.current
 
 # Keyframes
 # Frame 2: Stretch
-execute if score @s vexp.anim_frame matches 3 run data merge entity @s {start_interpolation:0,interpolation_duration:2,transformation:{scale:[2.5f,1.0f,2.5f]}}
+execute if score @s vexp.anim_frame matches 3 run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{scale:[1.7f,1.0f,1.7f]}}
 
 # Frame 4: Fade out (always ease to zero before kill)
-execute if score @s vexp.anim_frame matches 5 run data merge entity @s {start_interpolation:0,interpolation_duration:2,transformation:{scale:[0f,0f,0f]}}
+execute if score @s vexp.anim_frame matches 7 run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{scale:[0f,0f,0f]}}
 
-kill @s[scores={vexp.anim_frame=8..}]
+kill @s[scores={vexp.anim_frame=9..}]

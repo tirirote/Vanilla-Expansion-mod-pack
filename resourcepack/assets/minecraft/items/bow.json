@@ -1,0 +1,300 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:wooden_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/wooden_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/wooden_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/wooden_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/wooden_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:stone_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/stone_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/stone_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/stone_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/stone_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:copper_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/copper_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/copper_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/copper_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/copper_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:iron_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/iron_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/iron_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/iron_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/iron_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:golden_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/golden_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/golden_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/golden_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/golden_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:diamond_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/diamond_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/diamond_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/diamond_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/diamond_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:netherite_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/netherite_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/netherite_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/netherite_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/netherite_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      },
+      {
+        "when": "vexp:resonance_bow",
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/resonance_bow"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "entries": [
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/resonance_bow_pulling_1"
+                },
+                "threshold": 0.65
+              },
+              {
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "vexp:item/dungeons/resonance_bow_pulling_2"
+                },
+                "threshold": 0.9
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "vexp:item/dungeons/resonance_bow_pulling_0"
+            },
+            "property": "minecraft:use_duration",
+            "scale": 0.05
+          },
+          "property": "minecraft:using_item"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/bow"
+    }
+  }
+}

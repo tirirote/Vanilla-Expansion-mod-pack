@@ -9,8 +9,9 @@ execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate
 # 2. CORE SYSTEMS
 function vexp:dungeons/combo_system/tick
 function vexp:dungeons/armor/tick
+function vexp:dungeons/bow/tick
+function vexp:dungeons/bow/arrows/tick
 function vexp:dungeons/dagger/tick
-function vexp:dungeons/gauntlets/tick
 function vexp:dungeons/handgun/tick
 function vexp:dungeons/scythe/tick
 function vexp:dungeons/sword/tick
@@ -25,3 +26,6 @@ tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
 tag @a[tag=vexp.attacker] remove vexp.attacker
 tag @e[tag=vexp.hitted] remove vexp.hitted
 # Note: vexp.hitted.combo_end is removed in mob_health/update.mcfunction for sync reasons
+
+#Custom Combat States
+function vexp:dungeons/states/tick

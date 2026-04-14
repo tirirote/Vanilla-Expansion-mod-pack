@@ -2,9 +2,7 @@
 # @s is the target entity (one of them)
 
 # 2. Strong knockback for the primary target
-function vexp:utils/motion/apply_knockback {strength:0.5, y:-1}
+function vexp:utils/motion/apply_knockback {strength:-2.5, y:0.1}
 
-# Visuals
-particle enchanted_hit ~ ~ ~ .2 .2 .2 .2 15
-execute positioned ~ ~-1.25 ~ run function vexp:utils/feedback/block_hit
-function vexp:utils/sound {sound: "minecraft:item.trident.throw", type: "player"}
+# Visual feedback
+execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit

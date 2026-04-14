@@ -1,9 +1,11 @@
 # dungeons/axe/on_right_click.mcfunction
 # @s is the player
 
-# 1. Find nearest mob for shield stripping
-execute as @e[type=!player,type=!item,distance=..4,limit=1,sort=nearest] at @s run function vexp:dungeons/axe/strip_shield
+#Aoe damage to near mobs
+execute as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/axe/bury
 
-# 2. Visuals for player
-particle minecraft:cloud ~ ~1.2 ~ 0.5 0.5 0.5 0.05 30
-playsound minecraft:entity.iron_golem.damage player @a ~ ~ ~ 1 0.5
+#Visuals
+function vexp:utils/sound {sound: "minecraft:item.shield.block", type: "player"}
+particle cloud ~ ~ ~ 0.0 0.0 0.0 0.1 5
+execute positioned ~ ~-1.5 ~ run function vexp:utils/feedback/block_hit
+

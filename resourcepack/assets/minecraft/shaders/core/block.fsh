@@ -12,16 +12,12 @@ in vec2 texCoord0;
 
 out vec4 fragColor;
 
-const float VEXP_DEFAULT_ALPHA_CUTOUT = 0.2;
-
 void main() {
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
-    float alphaCutout = VEXP_DEFAULT_ALPHA_CUTOUT;
 #ifdef ALPHA_CUTOUT
-    alphaCutout = max(alphaCutout, ALPHA_CUTOUT);
-#endif
-    if (color.a < alphaCutout) {
+    if (color.a < ALPHA_CUTOUT) {
         discard;
     }
+#endif
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

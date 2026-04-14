@@ -3,7 +3,7 @@
 # @s es el proyectil
 
 # Partículas de rastro
-particle minecraft:dust_plume ~ ~ ~ 0 0 0 0 1
+particle crit ~ ~ ~ 0.0 0.0 0.0 0 0
 
 # Sincronizar el display vinculado por ID con el marker
 scoreboard players operation #temp vexp.id = @s vexp.id
