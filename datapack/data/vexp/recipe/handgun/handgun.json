@@ -9,7 +9,7 @@
     "S": "minecraft:stick"
   },
   "result": {
-    "id": "minecraft:stick",
+    "id": "minecraft:iron_sword",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -71,11 +71,11 @@
           "italic": false
         }
       ],
-      \"minecraft:repairable\": {
-        \"items\": [\"minecraft:iron_ingot\"]
+      "minecraft:repairable": {
+        "items": ["minecraft:iron_ingot"]
       },
-      \"repair_cost\": 1,
-      \"minecraft:attribute_modifiers\": [
+      "repair_cost": 1,
+      "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
           "amount": -1.0,

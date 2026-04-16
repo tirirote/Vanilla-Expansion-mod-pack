@@ -4,10 +4,10 @@
 
 # Colisión con mobs (excluir player, item, marker, interaction, item_display, area_effect_cloud)
 # Dagas usan detección desplazada hacia abajo para mejor precisión
-execute if entity @s[tag=vexp.dagger_projectile] positioned ~ ~-1 ~ if entity @e[predicate=vexp:is_target,distance=..2.25,sort=nearest] run function vexp:projectile/on_hit_mob
+execute if entity @s[tag=vexp.dagger_projectile] positioned ~ ~-1 ~ if entity @e[predicate=vexp:is_target,distance=..2,sort=nearest] run function vexp:projectile/on_hit_mob
 
 # Otros proyectiles usan detección estándar
-execute if entity @s[tag=!vexp.dagger_projectile] positioned ~ ~-0.5 ~ if entity @e[predicate=vexp:is_target,distance=..2.25,sort=nearest] run function vexp:projectile/on_hit_mob
+execute if entity @s[tag=!vexp.dagger_projectile] positioned ~ ~ ~ if entity @e[predicate=vexp:is_target,distance=..2,sort=nearest] run function vexp:projectile/on_hit_mob
 
 # Si ya fue destruido por colisión con mob, no continuar
 execute unless entity @s run return 0

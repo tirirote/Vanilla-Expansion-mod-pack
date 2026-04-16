@@ -1,39 +1,44 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "misc",
-    "pattern": [
-        "P  ",
-        "PPP",
-        "S S"
-    ],
-    "key": {
-        "P": "minecraft:dark_oak_planks",
-        "S": "minecraft:stick"
-    },
-    "result": {
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["P  ", "PPP", "S S"],
+  "key": {
+    "P": "minecraft:dark_oak_planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:entity_data": {
         "id": "minecraft:item_frame",
-        "count": 1,
-        "components": {
-            "minecraft:entity_data": {
-                "id": "minecraft:item_frame",
-                "Tags": [
-                    "vexp.place_chair",
-                    "vexp.place_chair.dark_oak"
-                ],
-                "Invisible": true,
-                "Fixed": true,
-                "Silent": true,
-                "NoGravity": true
-            },
-            "minecraft:custom_model_data": {
-                "strings": [
-                    "vexp:dark_oak_chair"
-                ]
-            },
-            "minecraft:item_name": {
-                "text": "Silla de Roble Oscuro",
-                "italic": false
-            }
-        }
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "chair_dark_oak",
+            "model": "vexp:dark_oak_chair",
+            "item_model": "vexp:dark_oak_chair",
+            "width": 0.8,
+            "height": 1.6,
+            "type": "chair",
+            "variant": "dark_oak",
+            "name": "Silla de Roble Oscuro",
+            "s_place": "minecraft:block.wood.place",
+            "s_break": "minecraft:block.wood.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:dark_oak_planks'}}"
+          }
+        },
+        "Invisible": true,
+        "Fixed": true,
+        "Silent": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:dark_oak_chair"]
+      },
+      "minecraft:item_name": {
+        "text": "Silla de Roble Oscuro",
+        "italic": false
+      }
     }
+  }
 }

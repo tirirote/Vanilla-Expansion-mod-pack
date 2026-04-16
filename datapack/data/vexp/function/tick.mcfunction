@@ -1,6 +1,5 @@
 # Main tick loop
 function vexp:custom_block/tick
-function vexp:chair/tick
 
 #Dungeons
 function vexp:dungeons/tick

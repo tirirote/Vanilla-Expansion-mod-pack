@@ -33,4 +33,3 @@ tag @s remove vexp.amethyst
 tag @s remove vexp.restore_dagger_damage
 scoreboard players set @s vexp.damage 0
 data remove storage vexp:dungeons.weapon params
-

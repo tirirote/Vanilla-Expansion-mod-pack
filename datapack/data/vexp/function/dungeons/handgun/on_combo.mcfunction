@@ -4,6 +4,7 @@
 # Finisher: explosión ligera de impacto al completar combo.
 function vexp:utils/motion/apply_knockback {strength:-2.5, y:0.1}
 
-execute positioned ~ ~1 ~ run function vexp:dungeons/handgun/wave
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function vexp:dungeons/handgun/wave
+
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
 function vexp:utils/sound {sound: "minecraft:entity.player.attack.crit", type: "player"}

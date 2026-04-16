@@ -18,24 +18,24 @@
         },
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 4.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Daño: 3", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 4.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 2.0", "italic": false, "color": "dark_gray" },
         {
-          "text": "- Cooldown: 14 ticks",
+          "text": "- Cooldown: 15 ticks",
           "italic": false,
           "color": "dark_gray"
         }
       ],
       "minecraft:custom_data": {
         "vexp": {
-          "type": "lshort_combo",
+          "type": "short_combo",
           "item": "bow",
           "combo": {
-            "damage": 5,
-            "cooldown": 14,
-            "range": 4.5,
-            "reach": 3.5,
+            "damage": 3,
+            "cooldown": 15,
+            "range": 2.0,
+            "reach": 4.5,
             "quality": "normal"
           }
         }

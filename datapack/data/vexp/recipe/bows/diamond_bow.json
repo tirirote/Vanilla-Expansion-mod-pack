@@ -18,11 +18,11 @@
         },
         { "text": "" },
         { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 8", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 4.2", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 5.2", "italic": false, "color": "dark_gray" },
+        { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 4.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 2.0", "italic": false, "color": "dark_gray" },
         {
-          "text": "- Cooldown: 22 ticks",
+          "text": "- Cooldown: 15 ticks",
           "italic": false,
           "color": "dark_gray"
         }
@@ -32,10 +32,10 @@
           "type": "short_combo",
           "item": "bow",
           "combo": {
-            "damage": 8,
-            "cooldown": 22,
-            "range": 5.2,
-            "reach": 4.2,
+            "damage": 6,
+            "cooldown": 15,
+            "range": 2.0,
+            "reach": 4.5,
             "quality": "normal"
           }
         }

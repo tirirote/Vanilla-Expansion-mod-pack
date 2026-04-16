@@ -6,7 +6,7 @@
 tag @e[tag=vexp.proj_target] remove vexp.proj_target
 
 # Marcar el objetivo
-execute at @s run tag @e[predicate=vexp:is_target,distance=..1.5,sort=nearest] add vexp.proj_target
+execute at @s run tag @e[predicate=vexp:is_target,distance=..2,sort=nearest] add vexp.proj_target
 
 # Aplicar daño dinámico desde el NBT
 execute store result score #temp vexp.math run data get entity @s data.proj.damage
