@@ -9,19 +9,6 @@
     "id": "minecraft:iron_sword",
     "components": {
       "minecraft:item_name": "Guadaña de Hueso",
-      "minecraft:lore": [
-        { "text": "Gran barrido", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 7", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.0", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 5.5", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 24 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

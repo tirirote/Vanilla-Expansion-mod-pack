@@ -7,6 +7,7 @@ execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate
 execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run tag @s remove vexp.feedback_glowing
 
 # 2. CORE SYSTEMS
+function vexp:dungeons/lore/tick
 function vexp:dungeons/combo_system/tick
 function vexp:dungeons/armor/tick
 function vexp:dungeons/bow/tick
@@ -20,12 +21,12 @@ function vexp:dungeons/sword/tick
 execute as @e[type=marker,tag=vexp.projectile] at @s run function vexp:projectile/tick
 execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
 
+# 2.2. Custom Combat States (needs transient tags from this tick, e.g. vexp.attacker)
+function vexp:dungeons/states/tick
+
 # 3. TAG CLEANUP (End of tick)
 # These tags are marked during the tick and cleared here to allow feedback logic to see them
 tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
 tag @a[tag=vexp.attacker] remove vexp.attacker
 tag @e[tag=vexp.hitted] remove vexp.hitted
 # Note: vexp.hitted.combo_end is removed in mob_health/update.mcfunction for sync reasons
-
-#Custom Combat States
-function vexp:dungeons/states/tick

@@ -1,26 +1,23 @@
 {
-    "type":  "minecraft:crafting_shaped",
-    "pattern":  [
-                    "MMM",
-                    "M M"
-                ],
-    "key":  {
-                "M":  "minecraft:netherite_ingot"
-            },
-    "result":  {
-                   "id":  "minecraft:netherite_helmet",
-                   "count":  1,
-                   "components":  {
-                                      "minecraft:custom_data":  {
-                                                                    "vexp":  {
-                                                                                 "item":  "armor",
-                                                                                 "quality":  "netherite",
-                                                                                 "armor":  {
-                                                                                               "type":  "netherite",
-                                                                                               "slot":  "helmet"
-                                                                                           }
-                                                                             }
-                                                                }
-                                  }
-               }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M"],
+  "key": {
+    "M": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "minecraft:netherite_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "netherite",
+          "armor": {
+            "type": "netherite",
+            "slot": "helmet"
+          }
+        }
+      }
+    }
+  }
 }

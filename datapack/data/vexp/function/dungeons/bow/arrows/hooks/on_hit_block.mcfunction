@@ -13,3 +13,7 @@ execute if entity @s[tag=vexp.netherite_arrow,tag=vexp.combo_arrow_charged] run 
 # Resonance arrow
 execute if entity @s[tag=vexp.resonance_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/resonance/on_hit_block
 execute if entity @s[tag=vexp.resonance_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/resonance/on_hit_block_charged
+
+#Common feedback
+execute positioned ^ ^-0.2 ^0.2 run function vexp:utils/feedback/block_hit
+

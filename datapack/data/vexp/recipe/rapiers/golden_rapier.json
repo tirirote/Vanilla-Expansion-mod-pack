@@ -9,15 +9,6 @@
     "id": "minecraft:golden_sword",
     "components": {
       "minecraft:item_name": "Estoque de Oro",
-      "minecraft:lore": [
-        { "text": "Estocadas rápidas", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 2", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 5.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 2", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 3 ticks", "italic": false, "color": "dark_gray" }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "long_combo",

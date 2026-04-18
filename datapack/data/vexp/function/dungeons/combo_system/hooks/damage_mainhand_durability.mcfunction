@@ -11,17 +11,9 @@ execute unless data entity @s SelectedItem.components."minecraft:damage" run ite
 scoreboard players set #weapon_damage vexp.math 0
 execute if data entity @s SelectedItem.components."minecraft:damage" store result score #weapon_damage vexp.math run data get entity @s SelectedItem.components."minecraft:damage"
 
-# Resolve max damage from item components (stable across runtime contexts)
+# Resolve max damage dynamically from the current item in main hand.
 scoreboard players set #weapon_max_damage vexp.math 0
-execute if items entity @s weapon.mainhand *[max_damage=32] run scoreboard players set #weapon_max_damage vexp.math 32
-execute if items entity @s weapon.mainhand *[max_damage=59] run scoreboard players set #weapon_max_damage vexp.math 59
-execute if items entity @s weapon.mainhand *[max_damage=96] run scoreboard players set #weapon_max_damage vexp.math 96
-execute if items entity @s weapon.mainhand *[max_damage=131] run scoreboard players set #weapon_max_damage vexp.math 131
-execute if items entity @s weapon.mainhand *[max_damage=250] run scoreboard players set #weapon_max_damage vexp.math 250
-execute if items entity @s weapon.mainhand *[max_damage=1351] run scoreboard players set #weapon_max_damage vexp.math 1351
-execute if items entity @s weapon.mainhand *[max_damage=1561] run scoreboard players set #weapon_max_damage vexp.math 1561
-execute if items entity @s weapon.mainhand *[max_damage=1891] run scoreboard players set #weapon_max_damage vexp.math 1891
-execute if items entity @s weapon.mainhand *[max_damage=2031] run scoreboard players set #weapon_max_damage vexp.math 2031
+execute if data entity @s SelectedItem.components."minecraft:max_damage" store result score #weapon_max_damage vexp.math run data get entity @s SelectedItem.components."minecraft:max_damage"
 
 # Debug (enable with tag vexp.debug_durability)
 execute if entity @s[tag=vexp.debug_durability] run tellraw @s [{"text":"[DUR PRE] ","color":"yellow"},{"text":"damage=","color":"gray"},{"score":{"name":"#weapon_damage","objective":"vexp.math"},"color":"white"},{"text":" max=","color":"gray"},{"score":{"name":"#weapon_max_damage","objective":"vexp.math"},"color":"white"}]

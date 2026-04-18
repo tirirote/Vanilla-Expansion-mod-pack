@@ -1,27 +1,23 @@
 {
-    "type":  "minecraft:crafting_shaped",
-    "pattern":  [
-                    "M M",
-                    "MMM",
-                    "MMM"
-                ],
-    "key":  {
-                "M":  "minecraft:iron_ingot"
-            },
-    "result":  {
-                   "id":  "minecraft:iron_chestplate",
-                   "count":  1,
-                   "components":  {
-                                      "minecraft:custom_data":  {
-                                                                    "vexp":  {
-                                                                                 "item":  "armor",
-                                                                                 "quality":  "iron",
-                                                                                 "armor":  {
-                                                                                               "type":  "iron",
-                                                                                               "slot":  "chestplate"
-                                                                                           }
-                                                                             }
-                                                                }
-                                  }
-               }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:iron_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "iron",
+          "armor": {
+            "type": "iron",
+            "slot": "chestplate"
+          }
+        }
+      }
+    }
+  }
 }

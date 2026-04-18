@@ -10,7 +10,7 @@ execute if score @s vexp.timer matches ..0 run kill @s
 scoreboard players set #bow_hurt_time vexp.math 0
 
 # Read HurtTime from nearest valid target around probe position.
-execute store result score #bow_hurt_time vexp.math run data get entity @e[predicate=vexp:is_target,distance=..1.5,sort=nearest,limit=1] HurtTime
+execute store result score #bow_hurt_time vexp.math run data get entity @e[predicate=vexp:is_target,distance=..2.5,sort=nearest,limit=1] HurtTime
 
 # If a target was recently hurt, process mob-hit hook once for this probe.
 execute if score #bow_hurt_time vexp.math matches 1.. run function vexp:dungeons/bow/arrows/hooks/on_hit_mob

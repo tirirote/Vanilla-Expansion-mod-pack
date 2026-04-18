@@ -1,26 +1,23 @@
 {
-    "type":  "minecraft:crafting_shaped",
-    "pattern":  [
-                    "MMM",
-                    "M M"
-                ],
-    "key":  {
-                "M":  "minecraft:iron_ingot"
-            },
-    "result":  {
-                   "id":  "minecraft:iron_helmet",
-                   "count":  1,
-                   "components":  {
-                                      "minecraft:custom_data":  {
-                                                                    "vexp":  {
-                                                                                 "item":  "armor",
-                                                                                 "quality":  "iron",
-                                                                                 "armor":  {
-                                                                                               "type":  "iron",
-                                                                                               "slot":  "helmet"
-                                                                                           }
-                                                                             }
-                                                                }
-                                  }
-               }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M"],
+  "key": {
+    "M": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:iron_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "iron",
+          "armor": {
+            "type": "iron",
+            "slot": "helmet"
+          }
+        }
+      }
+    }
+  }
 }

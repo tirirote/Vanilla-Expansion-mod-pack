@@ -9,15 +9,6 @@
     "id": "minecraft:netherite_sword",
     "components": {
       "minecraft:item_name": "Guantes de Amatista",
-      "minecraft:lore": [
-        { "text": "Golpes cristalinos", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 2", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 2.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 2 ticks", "italic": false, "color": "dark_gray" }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "long_combo",
@@ -31,11 +22,6 @@
           "quality": "amethyst"
         }
       },
-      "minecraft:custom_model_data": {
-        "strings": ["vexp:amethyst-gauntlet"]
-      },
-      "minecraft:max_damage": 1351,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

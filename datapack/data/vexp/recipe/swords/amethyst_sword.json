@@ -9,19 +9,6 @@
     "id": "minecraft:netherite_sword",
     "components": {
       "minecraft:item_name": "Espada de Amatista",
-      "minecraft:lore": [
-        { "text": "Equilibrio y rango", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 10", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 2.8", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 5.0", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 24 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",

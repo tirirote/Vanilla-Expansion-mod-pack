@@ -9,19 +9,6 @@
     "id": "minecraft:netherite_sword",
     "components": {
       "minecraft:item_name": "Daga Resonante",
-      "minecraft:lore": [
-        {
-          "text": "Arma arrojadiza resonante",
-          "italic": false,
-          "color": "gray"
-        },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Cooldown: 8 ticks", "italic": false, "color": "dark_gray" }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",

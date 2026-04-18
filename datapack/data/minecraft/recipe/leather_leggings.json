@@ -1,27 +1,23 @@
 {
-    "type":  "minecraft:crafting_shaped",
-    "pattern":  [
-                    "MMM",
-                    "M M",
-                    "M M"
-                ],
-    "key":  {
-                "M":  "minecraft:leather"
-            },
-    "result":  {
-                   "id":  "minecraft:leather_leggings",
-                   "count":  1,
-                   "components":  {
-                                      "minecraft:custom_data":  {
-                                                                    "vexp":  {
-                                                                                 "item":  "armor",
-                                                                                 "quality":  "leather",
-                                                                                 "armor":  {
-                                                                                               "type":  "leather",
-                                                                                               "slot":  "leggings"
-                                                                                           }
-                                                                             }
-                                                                }
-                                  }
-               }
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M", "M M"],
+  "key": {
+    "M": "minecraft:leather"
+  },
+  "result": {
+    "id": "minecraft:leather_leggings",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "leather",
+          "armor": {
+            "type": "leather",
+            "slot": "leggings"
+          }
+        }
+      }
+    }
+  }
 }

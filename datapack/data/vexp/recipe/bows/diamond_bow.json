@@ -10,23 +10,6 @@
     "id": "minecraft:bow",
     "components": {
       "minecraft:item_name": "Arco de Diamante",
-      "minecraft:lore": [
-        {
-          "text": "Arco con combo a distancia",
-          "italic": false,
-          "color": "gray"
-        },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 6", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 4.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 2.0", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 15 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

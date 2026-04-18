@@ -9,19 +9,6 @@
     "id": "minecraft:wooden_sword",
     "components": {
       "minecraft:item_name": "Guadaña de Madera",
-      "minecraft:lore": [
-        { "text": "Gran barrido", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 4", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 6.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 5", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 42 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

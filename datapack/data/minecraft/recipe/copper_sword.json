@@ -9,19 +9,6 @@
     "id": "minecraft:iron_sword",
     "components": {
       "minecraft:item_name": "Espada de Cobre",
-      "minecraft:lore": [
-        { "text": "Equilibrio y rango", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 4.5", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 16 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",

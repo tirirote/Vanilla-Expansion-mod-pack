@@ -9,19 +9,6 @@
     "id": "minecraft:netherite_axe",
     "components": {
       "minecraft:item_name": "Hacha de Netherite",
-      "minecraft:lore": [
-        { "text": "Fuerza bruta", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 14", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 3.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 26 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

@@ -9,19 +9,6 @@
     "id": "minecraft:iron_axe",
     "components": {
       "minecraft:item_name": "Hacha de Hueso",
-      "minecraft:lore": [
-        { "text": "Fuerza bruta", "italic": false, "color": "gray" },
-        { "text": "" },
-        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
-        { "text": "- Daño: 9", "italic": false, "color": "dark_gray" },
-        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
-        { "text": "- Área (AoE): 3.0", "italic": false, "color": "dark_gray" },
-        {
-          "text": "- Cooldown: 18 ticks",
-          "italic": false,
-          "color": "dark_gray"
-        }
-      ],
       "minecraft:max_damage": 96,
       "minecraft:damage": 0,
       "minecraft:custom_data": {

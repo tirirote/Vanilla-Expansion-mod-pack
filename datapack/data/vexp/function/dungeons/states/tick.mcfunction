@@ -12,6 +12,8 @@ execute as @a[tag=vexp.echo_buffed] at @s run function vexp:dungeons/states/tick
 # 3. AMETHYST MARKED EFFECTS
 execute as @e[tag=vexp.amethyst_marked] at @s run function vexp:dungeons/states/amethyst_physics
 
+execute as @a[tag=vexp.state.common_berserk] at @s run function vexp:dungeons/states/tick/common_berserk
+
 #Catched
 execute as @e[tag=vexp.state.catched] at @s run function vexp:dungeons/states/tick/catched
 # Release caught mob if player switches away from gauntlets or timer expired
@@ -23,5 +25,6 @@ execute as @e[scores={vexp.dstate=1..}] run scoreboard players remove @s vexp.ds
 # Cleanup
 execute as @e[tag=vexp.nether_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_marked
 execute as @e[tag=vexp.echo_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_marked
-execute as @e[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
+execute as @a[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
 execute as @e[tag=vexp.amethyst_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.amethyst_marked
+execute as @a[tag=vexp.state.common_berserk,scores={vexp.dstate=..0}] run tag @s remove vexp.state.common_berserk

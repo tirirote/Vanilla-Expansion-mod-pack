@@ -2,10 +2,13 @@
 # @s is the player
 
 #Aoe damage to near mobs
-execute as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/axe/bury
+tag @s add vexp.state.common_berserk
+scoreboard players set @s vexp.dstate 40
 
 #Visuals
-function vexp:utils/sound {sound: "minecraft:item.shield.block", type: "player"}
-particle cloud ~ ~ ~ 0.0 0.0 0.0 0.1 5
-execute positioned ~ ~-1.5 ~ run function vexp:utils/feedback/block_hit
+particle minecraft:large_smoke ~ ~-0.5 ~ 0.2 0.2 0.2 0.1 5
+particle trial_spawner_detection ~ ~-1.25 ~ 0.5 0.0 0.5 0.05 25
+particle lava ~ ~-0.5 ~ 0.0 0.0 0.0 1 1
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
 
