@@ -40,6 +40,7 @@ scoreboard objectives add vexp.state dummy
 # Combo System
 scoreboard objectives add vexp.combo dummy
 scoreboard objectives add vexp.combo_cooldown dummy
+scoreboard objectives add vexp.skill_cooldown dummy
 scoreboard objectives add vexp.swoosh_ticks dummy
 scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add vexp.stun_timer dummy

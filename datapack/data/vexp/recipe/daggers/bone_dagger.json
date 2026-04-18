@@ -17,6 +17,7 @@
           "combo": {
             "damage": 3,
             "cooldown": 4,
+            "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,
             "quality": "normal"
@@ -58,6 +59,9 @@
           "slot": "mainhand"
         }
       ],
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:repairable": {
         "items": ["minecraft:bone"]
       },

@@ -16,11 +16,15 @@
           "combo": {
             "damage": 6,
             "cooldown": 8,
+            "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,
             "quality": "echo"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:resonance_dagger"]

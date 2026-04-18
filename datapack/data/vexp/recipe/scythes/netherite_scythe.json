@@ -16,11 +16,15 @@
           "combo": {
             "damage": 12,
             "cooldown": 42,
+            "right_click_cooldown": 36,
             "range": 5,
             "reach": 6.5,
             "quality": "netherite"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:netherite-scythe"]

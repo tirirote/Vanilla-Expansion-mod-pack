@@ -19,6 +19,7 @@
           "combo": {
             "damage": 4,
             "cooldown": 18,
+            "right_click_cooldown": 30,
             "range": 2.5,
             "reach": 3.5,
             "quality": "normal"

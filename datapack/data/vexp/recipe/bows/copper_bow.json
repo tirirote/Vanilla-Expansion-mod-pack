@@ -17,11 +17,15 @@
           "combo": {
             "damage": 4,
             "cooldown": 15,
+            "right_click_cooldown": 20,
             "range": 2.0,
             "reach": 4.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:copper_bow"]

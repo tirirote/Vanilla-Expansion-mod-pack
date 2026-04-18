@@ -16,11 +16,15 @@
           "combo": {
             "damage": 5,
             "cooldown": 7,
+            "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:diamond_dagger"]

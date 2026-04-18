@@ -18,11 +18,15 @@
           "combo": {
             "damage": 9,
             "cooldown": 18,
+            "right_click_cooldown": 30,
             "range": 3.0,
             "reach": 1.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone-axe"]

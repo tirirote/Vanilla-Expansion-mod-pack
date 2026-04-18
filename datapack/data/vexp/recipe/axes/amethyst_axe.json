@@ -21,11 +21,15 @@
           "combo": {
             "damage": 14,
             "cooldown": 26,
+            "right_click_cooldown": 30,
             "range": 1.5,
             "reach": 3.5,
             "quality": "amethyst"
           }
         }
+      },
+      "tooltip_display":{
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:attribute_modifiers": [
         {

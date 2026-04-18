@@ -15,6 +15,7 @@ kill @e[type=interaction,tag=vexp.hitbox.to_remove]
 
 # 1. Cooldown logic
 execute as @a[scores={vexp.combo_cooldown=1..}] run scoreboard players remove @s vexp.combo_cooldown 1
+execute as @a[scores={vexp.skill_cooldown=1..}] run scoreboard players remove @s vexp.skill_cooldown 1
 execute as @a[scores={vexp.hitbox_hide_timer=1..}] run scoreboard players remove @s vexp.hitbox_hide_timer 1
 
 # 2. Process Hitbox Clicks (only if cooldown is 0)

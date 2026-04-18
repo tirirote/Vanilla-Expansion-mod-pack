@@ -16,11 +16,15 @@
           "combo": {
             "damage": 10,
             "cooldown": 24,
+            "right_click_cooldown": 24,
             "range": 5.0,
             "reach": 2.8,
             "quality": "echo"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:resonance-sword"]

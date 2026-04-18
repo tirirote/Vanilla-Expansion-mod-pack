@@ -16,11 +16,15 @@
           "combo": {
             "damage": 2,
             "cooldown": 2,
+            "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2
-          },
-          "quality": "normal"
+            "reach": 2,
+            "quality": "normal"
+          }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:attribute_modifiers": [
         {

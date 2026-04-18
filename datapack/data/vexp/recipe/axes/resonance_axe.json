@@ -9,9 +9,6 @@
     "id": "minecraft:netherite_axe",
     "components": {
       "minecraft:item_name": "Hacha Resonante",
-      "minecraft:custom_model_data": {
-        "strings": ["vexp:resonance-axe"]
-      },
       "minecraft:max_damage": 1891,
       "minecraft:damage": 0,
       "minecraft:custom_data": {
@@ -21,11 +18,18 @@
           "combo": {
             "damage": 14,
             "cooldown": 26,
+            "right_click_cooldown": 30,
             "range": 1.5,
             "reach": 3.5,
             "quality": "echo"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance-axe"]
       },
       "minecraft:attribute_modifiers": [
         {

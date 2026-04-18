@@ -16,11 +16,15 @@
           "combo": {
             "damage": 6,
             "cooldown": 42,
+            "right_click_cooldown": 36,
             "range": 5,
             "reach": 6.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:stone-scythe"]
