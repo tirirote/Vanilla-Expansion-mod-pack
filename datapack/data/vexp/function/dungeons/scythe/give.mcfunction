@@ -3,6 +3,7 @@
 
 execute if entity @s[tag=vexp.wood] run data modify storage vexp:dungeons.weapon params merge value {item_id:"wooden_sword", name:"Guadaña de Madera", model:"vexp:wooden-scythe", quality:"normal", dmg:3.0, spd:-3.0, combo_dmg:4, combo_cooldown:20, combo_range:5.5, combo_reach:3.0, reach_mod:0.2, max_damage:59}
 execute if entity @s[tag=vexp.stone] run data modify storage vexp:dungeons.weapon params merge value {item_id:"stone_sword", name:"Guadaña de Piedra", model:"vexp:stone-scythe", quality:"normal", dmg:4.0, spd:-3.1, combo_dmg:6, combo_cooldown:22, combo_range:5.5, combo_reach:3.0, reach_mod:0.2, max_damage:131}
+execute if entity @s[tag=vexp.bone] run data modify storage vexp:dungeons.weapon params merge value {item_id:"iron_sword", name:"Guadaña de Hueso", model:"vexp:bone-scythe", quality:"normal", dmg:4.0, spd:-3.2, combo_dmg:7, combo_cooldown:24, combo_range:5.5, combo_reach:3.0, reach_mod:0.2, max_damage:96}
 execute if entity @s[tag=vexp.copper] run data modify storage vexp:dungeons.weapon params merge value {item_id:"copper_sword", name:"Guadaña de Cobre", model:"vexp:copper-scythe", quality:"normal", dmg:4.0, spd:-3.2, combo_dmg:7, combo_cooldown:24, combo_range:5.5, combo_reach:3.0, reach_mod:0.2, max_damage:250}
 execute if entity @s[tag=vexp.iron] run data modify storage vexp:dungeons.weapon params merge value {item_id:"iron_sword", name:"Guadaña de Hierro", model:"vexp:iron-scythe", quality:"normal", dmg:5.0, spd:-3.3, combo_dmg:8, combo_cooldown:26, combo_range:5.5, combo_reach:3.0, reach_mod:0.2, max_damage:250}
 execute if entity @s[tag=vexp.gold] run data modify storage vexp:dungeons.weapon params merge value {item_id:"golden_sword", name:"Guadaña de Oro", model:"vexp:golden-scythe", quality:"normal", dmg:3.0, spd:-3.4, combo_dmg:5, combo_cooldown:28, combo_range:5.5, combo_reach:3.0, reach_mod:0.2, max_damage:32}
@@ -16,6 +17,7 @@ function vexp:dungeons/scythe/give_macro with storage vexp:dungeons.weapon param
 tag @s remove vexp.iron
 tag @s remove vexp.wood
 tag @s remove vexp.stone
+tag @s remove vexp.bone
 tag @s remove vexp.gold
 tag @s remove vexp.diamond
 tag @s remove vexp.copper

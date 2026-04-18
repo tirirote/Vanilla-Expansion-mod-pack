@@ -16,6 +16,15 @@ execute if entity @s[nbt={active_effects:[{id:"minecraft:strength"}]}] run funct
 # Weakness I/II: -(amplifier+1)*4 per level
 execute if entity @s[nbt={active_effects:[{id:"minecraft:weakness"}]}] run function vexp:dungeons/combo_system/effects/apply_weakness
 
+# Jump critical: +15% damage based on current pre-critical damage.
+scoreboard players set #crit_bonus vexp.math 0
+scoreboard players set #const_15 vexp.math 15
+scoreboard players set #const_100 vexp.math 100
+execute if entity @s[tag=vexp.hit_critical] run scoreboard players operation #crit_bonus vexp.math = #eff_dmg vexp.math
+execute if entity @s[tag=vexp.hit_critical] run scoreboard players operation #crit_bonus vexp.math *= #const_15 vexp.math
+execute if entity @s[tag=vexp.hit_critical] run scoreboard players operation #crit_bonus vexp.math /= #const_100 vexp.math
+execute if entity @s[tag=vexp.hit_critical] run scoreboard players operation #eff_dmg vexp.math += #crit_bonus vexp.math
+
 # Floor damage at 1 (= 0.1 final damage)
 execute if score #eff_dmg vexp.math matches ..0 run scoreboard players set #eff_dmg vexp.math 1
 

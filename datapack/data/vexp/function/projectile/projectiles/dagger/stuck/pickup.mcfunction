@@ -10,6 +10,7 @@ execute as @e[tag=vexp.dagger_stuck] if score @s vexp.id = #temp vexp.id run tag
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.iron,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.iron
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.wood,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.wood
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.stone,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.stone
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.bone,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.bone
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.gold,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.gold
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.diamond,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.diamond
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.copper,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.copper

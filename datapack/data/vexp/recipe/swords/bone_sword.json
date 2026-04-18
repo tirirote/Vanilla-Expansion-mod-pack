@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" B ", " B ", " S "],
+  "key": {
+    "B": "minecraft:bone",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:iron_sword",
+    "components": {
+      "minecraft:item_name": "Espada de Hueso",
+      "minecraft:lore": [
+        { "text": "Equilibrio y rango", "italic": false, "color": "gray" },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 5", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 2.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 4.5", "italic": false, "color": "dark_gray" },
+        {
+          "text": "- Cooldown: 16 ticks",
+          "italic": false,
+          "color": "dark_gray"
+        }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "short_combo",
+          "item": "sword",
+          "combo": {
+            "damage": 5,
+            "cooldown": 16,
+            "range": 4.5,
+            "reach": 2.5,
+            "quality": "normal"
+          }
+        }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone-sword"]
+      },
+      "minecraft:max_damage": 96,
+      "minecraft:damage": 0,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -2.4,
+          "operation": "add_value",
+          "id": "vexp:sword_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": -0.3,
+          "operation": "add_value",
+          "id": "vexp:sword_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": -0.3,
+          "operation": "add_value",
+          "id": "vexp:sword_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": ["minecraft:bone"]
+      },
+      "repair_cost": 1,
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "crossbow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    },
+    "count": 1
+  }
+}

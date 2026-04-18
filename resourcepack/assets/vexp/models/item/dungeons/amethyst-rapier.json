@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "vexp:item/dungeons/amethyst-reaper"
+        "layer0": "vexp:item/dungeons/amethyst-rapier"
     }
 }

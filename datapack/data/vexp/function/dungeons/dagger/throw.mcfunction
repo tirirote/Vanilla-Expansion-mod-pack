@@ -23,7 +23,8 @@ execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vex
 
 # Identificar material en mano y etiquetar proyectil
 # Utilizando la nueva estructura NBT vexp:{item:"dagger"}
-execute if items entity @s weapon.mainhand iron_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.iron
+execute if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger",material:"bone"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.bone
+execute if items entity @s weapon.mainhand iron_sword[custom_data~{vexp:{item:"dagger"}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger",material:"bone"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.iron
 execute if items entity @s weapon.mainhand wooden_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.wood
 execute if items entity @s weapon.mainhand stone_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.stone
 execute if items entity @s weapon.mainhand golden_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.gold

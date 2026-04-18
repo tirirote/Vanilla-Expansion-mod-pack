@@ -7,6 +7,7 @@
 execute if entity @s[tag=vexp.iron] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.iron
 execute if entity @s[tag=vexp.wood] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.wood
 execute if entity @s[tag=vexp.stone] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.stone
+execute if entity @s[tag=vexp.bone] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.bone
 execute if entity @s[tag=vexp.gold] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.gold
 execute if entity @s[tag=vexp.diamond] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.diamond
 execute if entity @s[tag=vexp.copper] run tag @p[tag=vexp.dagger_owner,limit=1] add vexp.copper

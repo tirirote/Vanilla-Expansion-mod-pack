@@ -31,11 +31,6 @@
           }
         }
       },
-      "minecraft:custom_model_data": {
-        "strings": ["vexp:resonance-gauntlet"]
-      },
-      "minecraft:max_damage": 1891,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -67,7 +62,7 @@
         }
       ],
       "minecraft:custom_model_data": {
-        "strings": ["vexp:resonance-gauntlets"]
+        "strings": ["vexp:resonance-gauntlet"]
       },
       "minecraft:max_damage": 1891,
       "minecraft:damage": 0,

@@ -13,6 +13,8 @@ tag @s add vexp.hitted
 data modify storage vexp:temp Damage.color set value "yellow"
 execute if score #bow_indicator_charged vexp.math matches 1.. run data modify storage vexp:temp Damage.color set value "red"
 data modify storage vexp:temp Damage.bold set value false
+data modify storage vexp:temp Damage.prefix set value "-"
+data modify storage vexp:temp Damage.critical set value 0b
 
 # Spawn the floating text at target position.
 execute if score #damage vexp.math matches 1.. run function vexp:mob_health/spawn_damage

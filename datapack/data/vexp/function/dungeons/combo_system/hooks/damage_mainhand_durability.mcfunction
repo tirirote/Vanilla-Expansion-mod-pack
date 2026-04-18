@@ -15,6 +15,7 @@ execute if data entity @s SelectedItem.components."minecraft:damage" store resul
 scoreboard players set #weapon_max_damage vexp.math 0
 execute if items entity @s weapon.mainhand *[max_damage=32] run scoreboard players set #weapon_max_damage vexp.math 32
 execute if items entity @s weapon.mainhand *[max_damage=59] run scoreboard players set #weapon_max_damage vexp.math 59
+execute if items entity @s weapon.mainhand *[max_damage=96] run scoreboard players set #weapon_max_damage vexp.math 96
 execute if items entity @s weapon.mainhand *[max_damage=131] run scoreboard players set #weapon_max_damage vexp.math 131
 execute if items entity @s weapon.mainhand *[max_damage=250] run scoreboard players set #weapon_max_damage vexp.math 250
 execute if items entity @s weapon.mainhand *[max_damage=1351] run scoreboard players set #weapon_max_damage vexp.math 1351

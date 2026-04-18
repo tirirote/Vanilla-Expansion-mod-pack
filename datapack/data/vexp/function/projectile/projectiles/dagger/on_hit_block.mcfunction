@@ -21,6 +21,7 @@ execute as @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] run tp @s ~
 execute if entity @s[tag=vexp.iron] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.iron
 execute if entity @s[tag=vexp.wood] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.wood
 execute if entity @s[tag=vexp.stone] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.stone
+execute if entity @s[tag=vexp.bone] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.bone
 execute if entity @s[tag=vexp.gold] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.gold
 execute if entity @s[tag=vexp.diamond] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.diamond
 execute if entity @s[tag=vexp.copper] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.copper

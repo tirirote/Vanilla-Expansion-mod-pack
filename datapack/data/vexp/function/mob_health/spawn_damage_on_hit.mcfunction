@@ -10,8 +10,16 @@ execute if score #damage_raw vexp.math matches ..0 store result score #damage_ra
 
 data modify storage vexp:temp Damage.color set value "yellow"
 data modify storage vexp:temp Damage.bold set value false
+data modify storage vexp:temp Damage.prefix set value "-"
+data modify storage vexp:temp Damage.suffix set value ""
+data modify storage vexp:temp Damage.critical set value 0b
 execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.color set value "red"
-execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.bold set value true
+execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.bold set value false
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.color set value "gold"
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.bold set value true
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.prefix set value "※ -"
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.suffix set value " ※"
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.critical set value 1b
 
 execute if score #damage_raw vexp.math matches 1.. run scoreboard players operation #damage vexp.math = #damage_raw vexp.math
 execute if score #damage_raw vexp.math matches 1.. run scoreboard players add #damage vexp.math 99
@@ -19,3 +27,6 @@ execute if score #damage_raw vexp.math matches 1.. run scoreboard players operat
 execute if score #damage_raw vexp.math matches 1.. run function vexp:mob_health/spawn_damage
 scoreboard players operation @s vexp.old_hp -= #damage_raw vexp.math
 execute if score @s vexp.old_hp matches ..0 run scoreboard players set @s vexp.old_hp 0
+
+# Per-hit temporary flag cleanup
+tag @s remove vexp.hitted.critical

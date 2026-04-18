@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["   ", " B ", "S  "],
+  "key": {
+    "B": "minecraft:bone",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:iron_sword",
+    "components": {
+      "minecraft:item_name": "Daga de Hueso",
+      "minecraft:lore": [
+        {
+          "text": "Arma arrojadiza y rápida",
+          "italic": false,
+          "color": "gray"
+        },
+        { "text": "" },
+        { "text": "Stats de Combo:", "italic": false, "color": "blue" },
+        { "text": "- Daño: 3", "italic": false, "color": "dark_gray" },
+        { "text": "- Alcance: 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Área (AoE): 1.5", "italic": false, "color": "dark_gray" },
+        { "text": "- Cooldown: 4 ticks", "italic": false, "color": "dark_gray" }
+      ],
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "mid_combo",
+          "item": "dagger",
+          "material": "bone",
+          "combo": {
+            "damage": 3,
+            "cooldown": 4,
+            "range": 1.5,
+            "reach": 1.5,
+            "quality": "normal"
+          }
+        }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone_dagger"]
+      },
+      "minecraft:max_damage": 96,
+      "minecraft:damage": 0,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:dagger_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": 2.2,
+          "operation": "add_value",
+          "id": "vexp:dagger_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": -2.0,
+          "operation": "add_value",
+          "id": "vexp:dagger_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": -2.0,
+          "operation": "add_value",
+          "id": "vexp:dagger_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": ["minecraft:bone"]
+      },
+      "repair_cost": 1,
+      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "consumable": {
+        "animation": "bow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    },
+    "count": 1
+  }
+}
