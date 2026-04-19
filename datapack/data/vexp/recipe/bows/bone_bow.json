@@ -25,6 +25,9 @@
           }
         }
       },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone_bow"]
+      },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

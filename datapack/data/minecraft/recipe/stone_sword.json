@@ -22,6 +22,9 @@
           }
         }
       },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

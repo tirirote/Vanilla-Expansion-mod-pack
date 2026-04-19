@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["III", "IAI", " I "],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "A": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "minecraft:netherite_upgrade_smithing_template",
+    "count": 1,
+    "components": {
+      "custom_model_data": {
+        "strings": ["vexp:reforge_template"]
+      },
+      "minecraft:item_name": {
+        "text": "Molde de Reforja",
+        "italic": false,
+        "color": "blue"
+      }
+    }
+  }
+}

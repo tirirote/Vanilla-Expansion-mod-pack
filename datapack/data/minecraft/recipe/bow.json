@@ -22,6 +22,9 @@
           }
         }
       },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:custom_model_data": {
         "strings": ["vexp:wooden_bow"]
       },

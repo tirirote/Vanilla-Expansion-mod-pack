@@ -63,6 +63,16 @@ execute store result storage vexp:temp reforge_apply.custom_data.vexp.combo.rang
 data remove storage vexp:temp reforge_apply.custom_data.vexp.lore_applied
 data modify storage vexp:temp reforge_apply.base_name set from storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name
 execute unless data storage vexp:temp reforge_apply.base_name run data modify storage vexp:temp reforge_apply.base_name set value "Arma"
+
+# Name color by reforge result quality.
+data modify storage vexp:temp reforge_apply.color set value "gray"
+execute if data storage vexp:temp reforge_apply{variant_key:"damage"} run data modify storage vexp:temp reforge_apply.color set value "aqua"
+execute if data storage vexp:temp reforge_apply{variant_key:"speed"} run data modify storage vexp:temp reforge_apply.color set value "aqua"
+execute if data storage vexp:temp reforge_apply{variant_key:"balanced"} run data modify storage vexp:temp reforge_apply.color set value "yellow"
+execute if data storage vexp:temp reforge_apply{variant_key:"bad"} run data modify storage vexp:temp reforge_apply.color set value "red"
+execute if data storage vexp:temp reforge_apply{variant_key:"epic"} run data modify storage vexp:temp reforge_apply.color set value "light_purple"
+data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.variant_color set from storage vexp:temp reforge_apply.color
+
 function vexp:dungeons/reforge/update_name_and_data_macro with storage vexp:temp reforge_apply
 
 function vexp:utils/sound {sound:"minecraft:block.amethyst_block.chime", type:"player"}
