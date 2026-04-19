@@ -27,8 +27,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone_dagger"]
       },
-      "minecraft:max_damage": 96,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

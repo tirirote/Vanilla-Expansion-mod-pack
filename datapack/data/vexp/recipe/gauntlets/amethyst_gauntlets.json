@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "W W", "L L"],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "long_combo",
           "item": "gauntlets",
+          "material": "amethyst",
           "combo": {
             "damage": 5,
             "cooldown": 2,
@@ -57,8 +58,6 @@
         }
       ],
       "minecraft:custom_model_data": { "strings": ["vexp:amethyst-gauntlets"] },
-      "minecraft:max_damage": 1351,
-      "minecraft:damage": 0,
       "minecraft:repairable": {
         "items": ["minecraft:amethyst_shard"]
       },

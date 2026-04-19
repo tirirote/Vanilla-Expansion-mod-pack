@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "W W", "L L"],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "long_combo",
           "item": "gauntlets",
+          "material": "iron",
           "combo": {
             "damage": 3,
             "cooldown": 2,
@@ -52,8 +53,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:iron-gauntlet"]
       },
-      "minecraft:max_damage": 250,
-      "minecraft:damage": 0,
       "minecraft:repairable": {
         "items": ["minecraft:iron_ingot"]
       },

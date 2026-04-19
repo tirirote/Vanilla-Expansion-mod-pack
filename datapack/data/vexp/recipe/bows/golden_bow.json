@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": [" ST", "M T", " ST"],
   "key": {
@@ -14,6 +14,7 @@
         "vexp": {
           "type": "short_combo",
           "item": "bow",
+          "material": "gold",
           "combo": {
             "damage": 3,
             "cooldown": 15,
@@ -30,8 +31,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:golden_bow"]
       },
-      "minecraft:max_damage": 256,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

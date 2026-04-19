@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["WWW", "  S", "  S"],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "short_combo",
           "item": "scythe",
+          "material": "iron",
           "combo": {
             "damage": 8,
             "cooldown": 42,

@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["WW ", "WS ", " S "],
   "key": {
@@ -12,12 +12,11 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:amethyst-axe"]
       },
-      "minecraft:max_damage": 1351,
-      "minecraft:damage": 0,
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "amethyst",
           "combo": {
             "damage": 14,
             "cooldown": 26,

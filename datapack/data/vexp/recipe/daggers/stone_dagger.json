@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", " C ", "S  "],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "mid_combo",
           "item": "dagger",
+          "material": "stone",
           "combo": {
             "damage": 2,
             "cooldown": 3,
@@ -29,8 +30,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:stone_dagger"]
       },
-      "minecraft:max_damage": 131,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

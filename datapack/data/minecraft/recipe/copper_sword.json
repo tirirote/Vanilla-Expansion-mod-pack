@@ -6,28 +6,33 @@
     "S": "minecraft:stick"
   },
   "result": {
-    "id": "minecraft:iron_sword",
+    "id": "minecraft:copper_sword",
     "components": {
       "minecraft:item_name": "Espada de Cobre",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
           "item": "sword",
+          "material": "copper",
           "combo": {
             "damage": 5,
             "cooldown": 16,
+            "right_click_cooldown": 24,
             "range": 4.5,
             "reach": 2.5,
             "quality": "normal"
           }
         }
       },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
-          "id": "vexp:scythe_damage",
+          "id": "vexp:sword_damage",
           "slot": "mainhand"
         },
         {

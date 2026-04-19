@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["WW ", "WS ", " S "],
   "key": {
@@ -9,12 +9,11 @@
     "id": "minecraft:netherite_axe",
     "components": {
       "minecraft:item_name": "Hacha Resonante",
-      "minecraft:max_damage": 1891,
-      "minecraft:damage": 0,
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "echo",
           "combo": {
             "damage": 14,
             "cooldown": 26,

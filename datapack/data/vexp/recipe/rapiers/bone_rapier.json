@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["  B", " B ", "S  "],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "long_combo",
           "item": "rapier",
+          "material": "bone",
           "combo": {
             "damage": 2,
             "cooldown": 6,
@@ -59,8 +60,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone-rapier"]
       },
-      "minecraft:max_damage": 96,
-      "minecraft:damage": 0,
       "minecraft:repairable": {
         "items": ["minecraft:bone"]
       },

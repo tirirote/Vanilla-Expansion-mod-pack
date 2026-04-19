@@ -13,16 +13,23 @@
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "gold",
           "combo": {
             "damage": 7,
             "cooldown": 22,
+            "right_click_cooldown": 30,
             "range": 1.5,
             "reach": 3.5,
             "quality": "normal"
           }
         }
       },
-      "minecraft:attribute_modifiers": [{
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+
+      "minecraft:attribute_modifiers": [
+        {
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",

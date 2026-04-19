@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": [" B ", " B ", " S "],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "short_combo",
           "item": "sword",
+          "material": "bone",
           "combo": {
             "damage": 5,
             "cooldown": 16,

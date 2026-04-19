@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", " I ", "S  "],
   "key": {
@@ -13,9 +13,10 @@
         "vexp": {
           "type": "mid_combo",
           "item": "dagger",
+          "material": "iron",
           "combo": {
             "damage": 4,
-            "cooldown": 4,
+            "cooldown": 6,
             "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,
@@ -29,8 +30,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:iron_dagger"]
       },
-      "minecraft:max_damage": 250,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

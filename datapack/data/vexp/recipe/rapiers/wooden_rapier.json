@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["  W", " W ", "S  "],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "long_combo",
           "item": "rapier",
+          "material": "wood",
           "combo": {
             "damage": 1,
             "cooldown": 3,
@@ -57,8 +58,6 @@
         }
       ],
       "minecraft:custom_model_data": { "strings": ["vexp:wooden-rapier"] },
-      "minecraft:max_damage": 59,
-      "minecraft:damage": 0,
       "minecraft:repairable": {
         "items": "#minecraft:planks"
       },

@@ -13,21 +13,26 @@
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "wood",
           "combo": {
             "damage": 5,
             "cooldown": 14,
+            "right_click_cooldown": 30,
             "range": 1.5,
             "reach": 3.5,
             "quality": "normal"
           }
         }
       },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
-          "id": "vexp:scythe_damage",
+          "id": "vexp:axe_damage",
           "slot": "mainhand"
         },
         {

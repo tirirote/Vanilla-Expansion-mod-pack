@@ -13,16 +13,22 @@
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "netherite",
           "combo": {
             "damage": 14,
             "cooldown": 26,
+            "right_click_cooldown": 30,
             "range": 1.5,
             "reach": 3.5,
             "quality": "netherite"
           }
         }
       },
-      "minecraft:attribute_modifiers": [{
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
@@ -51,6 +57,7 @@
           "slot": "mainhand"
         }
       ],
+      "minecraft:max_damage": 2031,
       "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
       "consumable": {
         "animation": "bow",

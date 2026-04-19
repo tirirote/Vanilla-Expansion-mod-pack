@@ -7,6 +7,7 @@ execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate
 execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run tag @s remove vexp.feedback_glowing
 
 # 2. CORE SYSTEMS
+function vexp:dungeons/reforge/tick
 function vexp:dungeons/lore/tick
 function vexp:dungeons/combo_system/tick
 function vexp:dungeons/armor/tick

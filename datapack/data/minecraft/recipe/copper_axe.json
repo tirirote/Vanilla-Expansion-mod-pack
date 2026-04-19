@@ -6,21 +6,26 @@
     "S": "minecraft:stick"
   },
   "result": {
-    "id": "minecraft:iron_axe",
+    "id": "minecraft:copper_axe",
     "components": {
       "minecraft:item_name": "Hacha de Cobre",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "copper",
           "combo": {
             "damage": 9,
             "cooldown": 18,
+            "right_click_cooldown": 30,
             "range": 1.5,
             "reach": 3.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:attribute_modifiers": [
         {

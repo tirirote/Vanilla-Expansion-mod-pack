@@ -60,6 +60,17 @@ scoreboard players operation #rc_sec_dec vexp.math %= #const_ten vexp.math
 execute store result storage vexp:temp lore_apply.right_click_cooldown_sec_int int 1 run scoreboard players get #rc_sec_int vexp.math
 execute store result storage vexp:temp lore_apply.right_click_cooldown_sec_dec int 1 run scoreboard players get #rc_sec_dec vexp.math
 
+# Reforge display counters: remaining uses / max uses.
+scoreboard players set #rf_uses vexp.math 0
+scoreboard players set #rf_max vexp.math 3
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.reforge.uses store result score #rf_uses vexp.math run data get entity @s SelectedItem.components."minecraft:custom_data".vexp.reforge.uses 1
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.reforge.max_uses store result score #rf_max vexp.math run data get entity @s SelectedItem.components."minecraft:custom_data".vexp.reforge.max_uses 1
+scoreboard players operation #rf_left vexp.math = #rf_max vexp.math
+scoreboard players operation #rf_left vexp.math -= #rf_uses vexp.math
+execute if score #rf_left vexp.math matches ..-1 run scoreboard players set #rf_left vexp.math 0
+execute store result storage vexp:temp lore_apply.reforge_left int 1 run scoreboard players get #rf_left vexp.math
+execute store result storage vexp:temp lore_apply.reforge_max int 1 run scoreboard players get #rf_max vexp.math
+
 # Mark as initialized so lore is applied only once.
 data modify storage vexp:temp lore_apply.custom_data set from entity @s SelectedItem.components."minecraft:custom_data"
 data modify storage vexp:temp lore_apply.custom_data.vexp.lore_applied set value 1b

@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["  W", " W ", "S  "],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "long_combo",
           "item": "rapier",
+          "material": "iron",
           "combo": {
             "damage": 3,
             "cooldown": 3,
@@ -59,8 +60,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:iron-rapier"]
       },
-      "minecraft:max_damage": 250,
-      "minecraft:damage": 0,
       "minecraft:repairable": {
         "items": ["minecraft:iron_ingot"]
       },

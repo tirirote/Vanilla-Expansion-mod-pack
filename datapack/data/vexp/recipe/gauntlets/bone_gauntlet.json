@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "B B", "L L"],
   "key": {
@@ -13,6 +13,7 @@
         "vexp": {
           "type": "long_combo",
           "item": "gauntlets",
+          "material": "bone",
           "combo": {
             "damage": 2,
             "cooldown": 5,
@@ -52,8 +53,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone-gauntlet"]
       },
-      "minecraft:max_damage": 96,
-      "minecraft:damage": 0,
       "minecraft:repairable": {
         "items": ["minecraft:bone"]
       },

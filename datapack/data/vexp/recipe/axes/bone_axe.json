@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["BB ", "BS ", " S "],
   "key": {
@@ -9,12 +9,11 @@
     "id": "minecraft:iron_axe",
     "components": {
       "minecraft:item_name": "Hacha de Hueso",
-      "minecraft:max_damage": 96,
-      "minecraft:damage": 0,
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "axe",
+          "material": "bone",
           "combo": {
             "damage": 9,
             "cooldown": 18,

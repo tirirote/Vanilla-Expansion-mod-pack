@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", " W ", "S  "],
   "key": {
@@ -13,9 +13,10 @@
         "vexp": {
           "type": "mid_combo",
           "item": "dagger",
+          "material": "echo",
           "combo": {
             "damage": 6,
-            "cooldown": 8,
+            "cooldown": 7,
             "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,
@@ -29,8 +30,6 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:resonance_dagger"]
       },
-      "minecraft:max_damage": 1891,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

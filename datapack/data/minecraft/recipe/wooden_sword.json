@@ -13,14 +13,19 @@
         "vexp": {
           "type": "mid_combo",
           "item": "sword",
+          "material": "wood",
           "combo": {
             "damage": 2,
             "cooldown": 12,
+            "right_click_cooldown": 24,
             "range": 4.5,
             "reach": 2.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:attribute_modifiers": [
         {
