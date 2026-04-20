@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "W W", "L L"],
   "key": {
@@ -16,7 +16,7 @@
           "material": "amethyst",
           "combo": {
             "damage": 5,
-            "cooldown": 2,
+            "cooldown": 8,
             "right_click_cooldown": 30,
             "range": 2.5,
             "reach": 2,

@@ -75,11 +75,6 @@ scoreboard objectives add vexp.move_slide_dir dummy
 scoreboard objectives add vexp.move_climb_ready dummy
 
 # Weapon skills
-scoreboard objectives add vexp.gauntlets_parry_timer dummy
-scoreboard objectives add vexp.gauntlets_boost_timer dummy
-scoreboard objectives add vexp.gauntlets_damage_snapshot dummy
-scoreboard objectives add vexp.gauntlets_guard dummy
-scoreboard objectives add vexp.sword_spin_timer dummy
 scoreboard objectives add vexp.parry_timer dummy
 scoreboard objectives add vexp.parry_damage_snapshot dummy
 # Dungeons System

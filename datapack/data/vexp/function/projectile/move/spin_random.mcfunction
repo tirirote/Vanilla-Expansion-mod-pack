@@ -6,7 +6,7 @@
 function vexp:utils/get_random_128
 
 # Algunos ticks no giran, otros giran una vez y otros giran dos veces.
-$execute if score #random vexp.id matches ..-65 run tp @s ~ ~ ~ ~$(spin) ~
-$execute if score #random vexp.id matches 48..95 run tp @s ~ ~ ~ ~$(spin) ~
-$execute if score #random vexp.id matches 96.. run tp @s ~ ~ ~ ~$(spin) ~
-$execute if score #random vexp.id matches 96.. run tp @s ~ ~ ~ ~$(spin) ~
+$execute if score #random vexp.id matches ..-65 run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
+$execute if score #random vexp.id matches 48..95 run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
+$execute if score #random vexp.id matches 96.. run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
+$execute if score #random vexp.id matches 96.. run tp @s ~ ~ ~ ~$(spin) ~$(gravity)

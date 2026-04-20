@@ -3,4 +3,4 @@
 # Llamado con 'with entity @s data.proj' → $(spin) disponible.
 # Spin positivo = giro horario; negativo = giro antihorario.
 
-$tp @s ~ ~ ~ ~$(spin) ~
+$tp @s ~ ~ ~ ~$(spin) ~$(gravity)

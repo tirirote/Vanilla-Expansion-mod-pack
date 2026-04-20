@@ -1,5 +1,5 @@
 # Netherite projectile hook on entity hit
-execute as @e[tag=vexp.proj_target,limit=1] run function vexp:dungeons/states/nether_marked
+execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] run function vexp:dungeons/states/nether_marked
 particle minecraft:lava ~ ~1 ~ 1 0.2 1 0 1
 particle explosion ~ ~1 ~ 0 0 0 1 1
 particle large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.1 3

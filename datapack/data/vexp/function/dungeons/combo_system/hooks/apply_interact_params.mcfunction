@@ -1,7 +1,6 @@
 # dungeons/combo_system/hitbox/apply_interact_params.mcfunction
 
 # Assign cooldown from item params
-$scoreboard players set @s vexp.combo_cooldown $(cooldown)
 $scoreboard players set @s vexp.skill_cooldown $(right_click_cooldown)
 
 function vexp:dungeons/combo_system/hooks/damage_mainhand_durability

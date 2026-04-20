@@ -11,4 +11,4 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"long_combo
 
 # If holding, summon/update hitbox (ensure 'at @s' for proper summoning)
 # During hide timer, skip hitbox so right-click can show vanilla item use animation.
-execute if entity @s[tag=vexp.combo_user] unless score @s vexp.hitbox_hide_timer matches 1.. at @s positioned ~ ~1 ~ positioned ^ ^ ^1 run function vexp:dungeons/combo_system/hitbox/update
+execute if entity @s[tag=vexp.combo_user] unless score @s vexp.hitbox_hide_timer matches 1.. at @s positioned ~ ~1 ~ run function vexp:dungeons/combo_system/hitbox/update

@@ -6,7 +6,6 @@
 tag @s add vexp.projectile
 # Heredar la rotación del contexto de ejecución actual
 # El caller ya debe venir con la orientación deseada mediante facing/rotated.
-execute if entity @s[tag=!vexp.keep_rotation] run tp @s ~ ~ ~ ~ ~
 
 # Vincular con id del dueño si existe
 # assign_id solo si el jugador no tiene ID todavía → todos los proyectiles del mismo volley comparten el mismo ID
@@ -15,7 +14,7 @@ execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scorebo
 # Guardar ID del volley antes de eliminar el tag (para spawns subsiguientes del mismo volley)
 execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] as @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scoreboard players operation #volley_owner_id vexp.id = @s vexp.id
 
-data modify entity @s Rotation set from entity @p[tag=vexp.projectile_owner,limit=1] Rotation
+data modify entity @s[tag=!vexp.keep_rotation] Rotation set from entity @p[tag=vexp.projectile_owner,limit=1] Rotation
 
 # Remover tag temporal del dueño
 tag @p[tag=vexp.projectile_owner] remove vexp.projectile_owner
@@ -39,4 +38,5 @@ execute unless data entity @s data.proj.homing_distance run data modify entity @
 execute unless data entity @s data.proj.spin run data modify entity @s data.proj.spin set value 0.0
 execute unless data entity @s data.proj.face_player run data modify entity @s data.proj.face_player set value 0
 execute unless data entity @s data.proj.radius run data modify entity @s data.proj.radius set value 0.0
+execute unless data entity @s data.proj.orbit_height run data modify entity @s data.proj.orbit_height set value 0.0
 

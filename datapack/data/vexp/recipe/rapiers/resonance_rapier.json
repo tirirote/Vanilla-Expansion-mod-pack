@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "minecraft:crafting_shaped",
   "pattern": ["  W", " W ", "S  "],
   "key": {
@@ -16,10 +16,10 @@
           "material": "echo",
           "combo": {
             "damage": 5,
-            "cooldown": 3,
+            "cooldown": 12,
             "right_click_cooldown": 16,
-            "range": 2,
-            "reach": 5.5,
+            "range": 1.5,
+            "reach": 6,
             "quality": "echo"
           }
         }

@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "W W", "L L"],
   "key": {
@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "netherite",
           "combo": {
-            "damage": 5,
-            "cooldown": 2,
+            "damage": 6,
+            "cooldown": 10,
             "right_click_cooldown": 30,
             "range": 2.5,
             "reach": 2,

@@ -5,5 +5,5 @@ execute as @e[predicate=vexp:is_target,sort=nearest,limit=1] if data entity @s H
 #Visuals
 particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.5 10
 particle minecraft:instant_effect ~ ~ ~ .2 .2 .2 0 3
-particle minecraft:flash{color:-1} ~ ~ ~ 0 0 0 0 1
+particle minecraft:flash{color:-7547} ~ ~ ~ 0 0 0 0 1
 function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}

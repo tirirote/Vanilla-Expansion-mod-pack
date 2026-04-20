@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "B B", "L L"],
   "key": {
@@ -19,7 +19,7 @@
             "cooldown": 5,
             "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2.5,
+            "reach": 2,
             "quality": "normal"
           }
         }

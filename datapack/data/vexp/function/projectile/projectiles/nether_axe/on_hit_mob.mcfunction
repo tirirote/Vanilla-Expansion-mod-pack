@@ -3,7 +3,7 @@
 
 tag @s add vexp.prevent_despawn
 
-execute as @e[tag=vexp.proj_target] at @s run function vexp:utils/motion/apply_knockback {strength:0.01, y:0.01}
+execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s run function vexp:utils/motion/apply_knockback {strength:0.01, y:0.01}
 
 # Small explosion feedback
 particle large_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 1

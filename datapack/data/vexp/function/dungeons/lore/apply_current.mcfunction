@@ -16,7 +16,7 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{i
 
 # Ability by weapon type.
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"sword"} run data modify storage vexp:temp lore_apply.rc_desc set value "Realiza parry al próximo ataque"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"axe"} run data modify storage vexp:temp lore_apply.rc_desc set value "Inflige más daño durante el frenesí"
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"axe"} run data modify storage vexp:temp lore_apply.rc_desc set value "Realiza un tajo circular en área"
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"bow"} run data modify storage vexp:temp lore_apply.rc_desc set value "Disparos rápidos y cargados"
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"dagger"} run data modify storage vexp:temp lore_apply.rc_desc set value "Arroja la daga infligiendo daño"
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"gauntlets"} run data modify storage vexp:temp lore_apply.rc_desc set value "Atrapa al enemigo"

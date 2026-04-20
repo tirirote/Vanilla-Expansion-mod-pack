@@ -9,7 +9,7 @@ execute as @a run function vexp:dungeons/combo_system/look/update
 # Mark all hitboxes for potential removal
 tag @e[type=interaction,tag=vexp.combo_hitbox] add vexp.hitbox.to_remove
 # Update/Summon hitboxes for players
-execute as @a run function vexp:dungeons/combo_system/hitbox/manage
+execute as @a at @s run function vexp:dungeons/combo_system/hitbox/manage
 # Remove hitboxes that were not updated (no active owner)
 kill @e[type=interaction,tag=vexp.hitbox.to_remove]
 
