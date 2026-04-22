@@ -15,11 +15,11 @@
           "item": "scythe",
           "material": "stone",
           "combo": {
-            "damage": 6,
-            "cooldown": 42,
+            "damage": 4,
+            "cooldown": 24,
             "right_click_cooldown": 36,
-            "range": 5,
-            "reach": 6.5,
+            "range": 3.5,
+            "reach": 5.5,
             "quality": "normal"
           }
         }
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.5,
+          "amount": -3.2,
           "operation": "add_value",
           "id": "vexp:scythe_speed",
           "slot": "mainhand"

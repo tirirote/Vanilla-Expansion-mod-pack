@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["   ", "B B", "L L"],
+  "pattern": ["   ", "WW ", "LL "],
   "key": {
-    "B": "minecraft:bone",
+    "W": "minecraft:bone",
     "L": "minecraft:leather"
   },
   "result": {
@@ -19,7 +19,7 @@
             "cooldown": 5,
             "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2,
+            "reach": 1.5,
             "quality": "normal"
           }
         }
@@ -30,7 +30,7 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_speed",
-          "amount": 2.2,
+          "amount": 0.0,
           "operation": "add_value",
           "id": "vexp:gauntlet_speed",
           "slot": "mainhand"

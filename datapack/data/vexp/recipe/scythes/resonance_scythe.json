@@ -16,7 +16,7 @@
           "material": "echo",
           "combo": {
             "damage": 10,
-            "cooldown": 42,
+            "cooldown": 54,
             "right_click_cooldown": 36,
             "range": 5,
             "reach": 6.5,
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.5,
+          "amount": -3.6,
           "operation": "add_value",
           "id": "vexp:scythe_speed",
           "slot": "mainhand"

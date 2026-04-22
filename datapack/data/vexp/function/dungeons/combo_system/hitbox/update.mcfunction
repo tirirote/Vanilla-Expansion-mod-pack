@@ -6,7 +6,7 @@ data modify storage vexp:dungeons.weapon combo_params set from entity @s Selecte
 # Also copy the 'item' identifier for our hooks
 data modify storage vexp:dungeons.weapon combo_params.item set from entity @s SelectedItem.components."minecraft:custom_data".vexp.item
 
-# Copy quality routing key (normal|netherite|echo|amethyst)
+# Copy quality routing key (normal|gold|diamond|netherite|echo)
 data modify storage vexp:dungeons.weapon combo_params.quality set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.quality
 
 # Offload logic to conditional evaluator Macro

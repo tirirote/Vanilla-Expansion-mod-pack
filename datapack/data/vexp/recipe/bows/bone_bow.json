@@ -16,11 +16,11 @@
           "item": "bow",
           "material": "bone",
           "combo": {
-            "damage": 6,
-            "cooldown": 19,
+            "damage": 4,
+            "cooldown": 12,
             "right_click_cooldown": 20,
-            "range": 4.7,
-            "reach": 3.9,
+            "range": 1.5,
+            "reach": 3.5,
             "quality": "normal"
           }
         }
@@ -41,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.0,
+          "amount": -2.3,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

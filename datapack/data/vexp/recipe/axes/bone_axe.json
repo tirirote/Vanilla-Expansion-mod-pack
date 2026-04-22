@@ -15,11 +15,11 @@
           "item": "axe",
           "material": "bone",
           "combo": {
-            "damage": 9,
-            "cooldown": 18,
-            "right_click_cooldown": 30,
-            "range": 3.0,
-            "reach": 1.5,
+            "damage": 6,
+            "cooldown": 20,
+            "right_click_cooldown": 12,
+            "range": 1.5,
+            "reach": 2.5,
             "quality": "normal"
           }
         }
@@ -40,7 +40,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.4,
+          "amount": -3.0,
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"

@@ -15,9 +15,10 @@
           "item": "sword",
           "combo": {
             "damage": 4,
-            "cooldown": 14,
-            "range": 4.5,
-            "reach": 2.5,
+            "cooldown": 16,
+            "right_click_cooldown": 24,
+            "range": 2.5,
+            "reach": 3.5,
             "quality": "normal"
           }
         }
@@ -30,7 +31,7 @@
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
-          "id": "vexp:scythe_damage",
+          "id": "vexp:sword_damage",
           "slot": "mainhand"
         },
         {

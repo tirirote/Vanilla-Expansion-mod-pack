@@ -17,11 +17,11 @@
           "material": "diamond",
           "combo": {
             "damage": 6,
-            "cooldown": 15,
+            "cooldown": 22,
             "right_click_cooldown": 20,
-            "range": 2.0,
-            "reach": 4.5,
-            "quality": "normal"
+            "range": 1.5,
+            "reach": 3.5,
+            "quality": "diamond"
           }
         }
       },
@@ -41,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.0,
+          "amount": -3.1,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

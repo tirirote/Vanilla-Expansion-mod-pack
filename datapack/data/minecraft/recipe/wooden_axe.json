@@ -15,11 +15,11 @@
           "item": "axe",
           "material": "wood",
           "combo": {
-            "damage": 5,
-            "cooldown": 14,
-            "right_click_cooldown": 30,
+            "damage": 4,
+            "cooldown": 10,
+            "right_click_cooldown": 12,
             "range": 1.5,
-            "reach": 3.5,
+            "reach": 2.5,
             "quality": "normal"
           }
         }
@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.0,
+          "amount": -2.2,
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"

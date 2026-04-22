@@ -16,10 +16,10 @@
           "material": "netherite",
           "combo": {
             "damage": 10,
-            "cooldown": 24,
+            "cooldown": 42,
             "right_click_cooldown": 24,
-            "range": 5.0,
-            "reach": 2.8,
+            "range": 2.5,
+            "reach": 3.5,
             "quality": "netherite"
           }
         }

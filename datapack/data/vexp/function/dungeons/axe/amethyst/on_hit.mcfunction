@@ -1,1 +1,0 @@
-function vexp:dungeons/axe/on_hit

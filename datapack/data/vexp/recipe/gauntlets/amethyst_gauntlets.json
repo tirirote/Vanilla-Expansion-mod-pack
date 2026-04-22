@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["   ", "W W", "L L"],
+  "pattern": ["   ", "WW ", "LL "],
   "key": {
     "W": "minecraft:amethyst_shard",
     "L": "minecraft:leather"
@@ -19,8 +19,8 @@
             "cooldown": 8,
             "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2,
-            "quality": "amethyst"
+            "reach": 1.5,
+            "quality": "diamond"
           }
         }
       },
@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": 1.4,
+          "amount": -1.5,
           "operation": "add_value",
           "id": "vexp:gauntlet_speed",
           "slot": "mainhand"

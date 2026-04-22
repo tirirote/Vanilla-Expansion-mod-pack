@@ -19,9 +19,9 @@
             "damage": 3,
             "cooldown": 15,
             "right_click_cooldown": 20,
-            "range": 2.0,
-            "reach": 4.5,
-            "quality": "normal"
+            "range": 1.5,
+            "reach": 3.5,
+            "quality": "gold"
           }
         }
       },
@@ -41,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.6,
+          "amount": -2.7,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

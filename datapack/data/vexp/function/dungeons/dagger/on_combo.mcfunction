@@ -2,7 +2,7 @@
 # @s is the target entity
 
 # Strong pushback to target
-function vexp:utils/motion/apply_knockback {strength:0.05, y:0.1}
+function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
 
 # Dash
 #execute if block ^ ^.5 ^-2.5 #replaceable run tp @p[tag=vexp.attacker,limit=1] ^ ^.5 ^-2.5 facing entity @s

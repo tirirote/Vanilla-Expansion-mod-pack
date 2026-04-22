@@ -4,6 +4,8 @@
 tag @s add vexp.prevent_despawn
 
 execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s run function vexp:dungeons/states/nether_marked
+execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s run function vexp:utils/motion/apply_knockback {strength:-2.0, y:0.2}
 
-particle flame ~ ~ ~ .1 .1 .1 0.1 1
-function vexp:utils/feedback/dust_particle {initialColor: [0.2, 0.2, 0.2], finalColor: [0.4, 0.35, 0.3], scale: 1.7, dX: 0.2, dY: 0.2, dZ: 0.2, speed: 0.05, count: 1}
+particle flame ~ ~ ~ .1 .1 .1 0 1
+particle ash ~ ~ ~ 0.1 0.1 0.1 0.1 1
+function vexp:utils/sound {sound: "minecraft:block.campfire.crackle", type: "player"}

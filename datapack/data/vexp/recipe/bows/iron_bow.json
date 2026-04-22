@@ -17,10 +17,10 @@
           "material": "iron",
           "combo": {
             "damage": 5,
-            "cooldown": 15,
+            "cooldown": 18,
             "right_click_cooldown": 20,
-            "range": 2.0,
-            "reach": 4.5,
+            "range": 1.5,
+            "reach": 3.5,
             "quality": "normal"
           }
         }
@@ -41,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.0,
+          "amount": -2.9,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

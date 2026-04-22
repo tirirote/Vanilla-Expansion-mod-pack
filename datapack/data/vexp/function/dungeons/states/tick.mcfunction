@@ -3,16 +3,15 @@
 
 # 1. NETHER MARKED EFFECTS
 execute as @e[tag=vexp.nether_marked] at @s run function vexp:dungeons/states/tick/nether_marked
+execute as @a[tag=vexp.nether_buffed] at @s run function vexp:dungeons/states/tick/nether_buffed
 
 # 2. ECHO MARKED EFFECTS
 execute as @e[tag=vexp.echo_marked] at @s run function vexp:dungeons/states/tick/echo_marked
-execute as @e[tag=vexp.echo_stunned] at @s run function vexp:dungeons/states/tick/echo_stunned
-
 execute as @a[tag=vexp.echo_buffed] at @s run function vexp:dungeons/states/tick/echo_buffed
-# 3. AMETHYST MARKED EFFECTS
-execute as @e[tag=vexp.amethyst_marked] at @s run function vexp:dungeons/states/amethyst_physics
 
-execute as @a[tag=vexp.state.common_berserk] at @s run function vexp:dungeons/states/tick/common_berserk
+#Subtle Buffs
+execute as @a[tag=vexp.gold_buffed] at @s run function vexp:dungeons/states/tick/gold_buffed
+execute as @a[tag=vexp.diamond_buffed] at @s run function vexp:dungeons/states/tick/diamond_buffed
 
 #Catched
 execute as @e[tag=vexp.state.catched] at @s run function vexp:dungeons/states/tick/catched
@@ -23,8 +22,12 @@ execute as @e[tag=vexp.state.catched,scores={vexp.dstate=..0}] at @s run functio
 execute as @e[scores={vexp.dstate=1..}] run scoreboard players remove @s vexp.dstate 1
 
 # Cleanup
+#Player tags
+execute as @e[tag=vexp.nether_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_buffed
+execute as @a[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
+execute as @a[tag=vexp.gold_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.gold_buffed
+execute as @a[tag=vexp.diamond_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.diamond_buffed
+
+#Entity tags
 execute as @e[tag=vexp.nether_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_marked
 execute as @e[tag=vexp.echo_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_marked
-execute as @a[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
-execute as @e[tag=vexp.amethyst_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.amethyst_marked
-execute as @a[tag=vexp.state.common_berserk,scores={vexp.dstate=..0}] run tag @s remove vexp.state.common_berserk

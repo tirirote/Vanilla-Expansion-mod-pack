@@ -2,13 +2,13 @@
 # @s is the player
 
 # Lunge forward in short steps to pierce through nearby mobs.
-execute positioned ~ ~-1.45 ~ if block ^ ^ ^0.5 #minecraft:replaceable run tp @s ^ ^ ^0.5
-execute positioned ~ ~-1.45 ~ if block ^ ^ ^0.5 #minecraft:replaceable run tp @s ^ ^ ^0.5
-execute positioned ~ ~-1.45 ~ if block ^ ^ ^0.5 #minecraft:replaceable run tp @s ^ ^ ^0.5
+execute positioned ~ ~-.5 ~ if block ^ ^ ^1 #minecraft:replaceable run tp @s ^ ^ ^1
+execute positioned ~ ~-.5 ~ if block ^ ^ ^1 #minecraft:replaceable run tp @s ^ ^ ^1
+execute positioned ~ ~-.5 ~ if block ^ ^ ^1 #minecraft:replaceable run tp @s ^ ^ ^1
 
-# Brief invisibility after the lunge.
-effect give @s speed 1 0 true
-effect give @s slow_falling 1 0 true
+# Brief buff
+effect give @s speed 2 2 true
+effect give @s slow_falling 2 0 true
 
 # Visuals
 particle minecraft:cloud ~ ~-1.45 ~ 0.2 0.2 0.2 0.05 5

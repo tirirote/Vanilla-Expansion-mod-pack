@@ -7,8 +7,8 @@
 scoreboard players operation #swoosh_owner_id vexp.math = @p[tag=vexp.attacker,limit=1] vexp.id
 
 # Spawn item_display (visual) and armor_stand (dynamic light) at mob position, facing attacker.
-$execute facing entity @p[tag=vexp.attacker,limit=1] eyes run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.7071f,0f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:3,view_range:1.0f}
-execute facing entity @p[tag=vexp.attacker,limit=1] eyes run summon minecraft:armor_stand ~ ~ ~ {Tags:["vexp.swoosh_light","vexp.swoosh_light.new"],Marker:1b,Small:1b,Invisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Fire:32767s,HasVisualFire:1b}
+$execute facing entity @p[tag=vexp.attacker,limit=1] eyes run summon item_display ~ ~1 ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.7071f,0f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:3,view_range:1.0f}
+execute facing entity @p[tag=vexp.attacker,limit=1] eyes run summon minecraft:armor_stand ~ ~1 ~ {Tags:["vexp.swoosh_light","vexp.swoosh_light.new"],Marker:1b,Small:1b,Invisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Fire:32767s,HasVisualFire:1b}
 
 # Randomize initial scale for visual variety.
 # distance=..1: both entities were just summoned at ~ ~ ~ (mob's exact position).

@@ -15,11 +15,11 @@
           "item": "sword",
           "material": "iron",
           "combo": {
-            "damage": 6,
-            "cooldown": 18,
+            "damage": 7,
+            "cooldown": 32,
             "right_click_cooldown": 24,
-            "range": 4.5,
-            "reach": 2.5,
+            "range": 2.5,
+            "reach": 3.5,
             "quality": "normal"
           }
         }

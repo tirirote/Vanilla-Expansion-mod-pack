@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -0.2,
+          "amount": -0.7,
           "operation": "add_value",
           "id": "vexp:rapier_speed",
           "slot": "mainhand"

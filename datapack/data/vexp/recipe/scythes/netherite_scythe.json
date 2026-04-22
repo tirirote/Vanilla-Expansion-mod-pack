@@ -16,7 +16,7 @@
           "material": "netherite",
           "combo": {
             "damage": 12,
-            "cooldown": 42,
+            "cooldown": 58,
             "right_click_cooldown": 36,
             "range": 5,
             "reach": 6.5,
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.5,
+          "amount": -3.7,
           "operation": "add_value",
           "id": "vexp:scythe_speed",
           "slot": "mainhand"

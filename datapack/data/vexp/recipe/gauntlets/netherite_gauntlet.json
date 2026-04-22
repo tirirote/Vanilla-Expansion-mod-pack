@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["   ", "W W", "L L"],
+  "pattern": ["   ", "WW ", "LL "],
   "key": {
     "W": "minecraft:netherite_ingot",
     "L": "minecraft:leather"
@@ -19,7 +19,7 @@
             "cooldown": 10,
             "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2,
+            "reach": 1.5,
             "quality": "netherite"
           }
         }
@@ -30,21 +30,21 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_speed",
-          "amount": 1.4,
+          "amount": -2.0,
           "operation": "add_value",
           "id": "vexp:gauntlet_speed",
           "slot": "mainhand"
         },
         {
           "type": "minecraft:entity_interaction_range",
-          "amount": 0.0,
+          "amount": -0.3,
           "operation": "add_value",
           "id": "vexp:gloves_reach",
           "slot": "mainhand"
         },
         {
           "type": "minecraft:block_interaction_range",
-          "amount": 0.0,
+          "amount": -0.3,
           "operation": "add_value",
           "id": "vexp:gloves_block_reach",
           "slot": "mainhand"

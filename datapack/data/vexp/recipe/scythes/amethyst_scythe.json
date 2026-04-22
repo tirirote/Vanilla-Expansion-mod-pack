@@ -18,9 +18,9 @@
             "damage": 10,
             "cooldown": 42,
             "right_click_cooldown": 36,
-            "range": 5,
-            "reach": 6.5,
-            "quality": "amethyst"
+            "range": 3.5,
+            "reach": 5.5,
+            "quality": "diamond"
           }
         }
       },

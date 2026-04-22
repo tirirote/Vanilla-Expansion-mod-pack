@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["   ", "W W", "L L"],
+  "pattern": ["   ", "WW ", "LL "],
   "key": {
     "W": "minecraft:gold_ingot",
     "L": "minecraft:leather"
@@ -19,8 +19,8 @@
             "cooldown": 2,
             "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2,
-            "quality": "normal"
+            "reach": 1.5,
+            "quality": "gold"
           }
         }
       },
@@ -30,7 +30,7 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_speed",
-          "amount": 1.8,
+          "amount": 6.0,
           "operation": "add_value",
           "id": "vexp:gauntlet_speed",
           "slot": "mainhand"

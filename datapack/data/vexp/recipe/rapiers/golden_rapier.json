@@ -20,7 +20,7 @@
             "right_click_cooldown": 16,
             "range": 1.5,
             "reach": 6,
-            "quality": "normal"
+            "quality": "gold"
           }
         }
       },
@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -0.4,
+          "amount": 2.7,
           "operation": "add_value",
           "id": "vexp:rapier_speed",
           "slot": "mainhand"

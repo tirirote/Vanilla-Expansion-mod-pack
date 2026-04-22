@@ -9,26 +9,26 @@
     "id": "minecraft:netherite_axe",
     "components": {
       "minecraft:item_name": "Hacha de Amatista",
-      "minecraft:custom_model_data": {
-        "strings": ["vexp:amethyst-axe"]
-      },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "axe",
           "material": "amethyst",
           "combo": {
-            "damage": 14,
-            "cooldown": 26,
-            "right_click_cooldown": 30,
+            "damage": 8,
+            "cooldown": 32,
+            "right_click_cooldown": 12,
             "range": 1.5,
-            "reach": 3.5,
-            "quality": "amethyst"
+            "reach": 2.5,
+            "quality": "diamond"
           }
         }
       },
-      "tooltip_display":{
+      "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:amethyst-axe"]
       },
       "minecraft:attribute_modifiers": [
         {
@@ -40,7 +40,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.2,
+          "amount": -3.4,
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"

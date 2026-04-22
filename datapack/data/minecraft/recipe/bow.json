@@ -14,9 +14,10 @@
           "type": "short_combo",
           "item": "bow",
           "combo": {
-            "damage": 4,
-            "cooldown": 16,
-            "range": 4.5,
+            "damage": 2,
+            "cooldown": 8,
+            "right_click_cooldown": 20,
+            "range": 1.5,
             "reach": 3.5,
             "quality": "normal"
           }
@@ -40,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.8,
+          "amount": 1.4,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

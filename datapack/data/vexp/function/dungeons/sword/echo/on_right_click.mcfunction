@@ -1,15 +1,13 @@
-# dungeons/sword/echo/on_right_click.mcfunction
+# dungeons/sword/on_right_click.mcfunction
 # @s is the player
+scoreboard players set @s vexp.parry_timer 40
+scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_taken
 
-# Optional startup wave
-execute positioned ~ ~-1.5 ~ run function vexp:dungeons/sword/echo/wave
+#Echo Buffed
+function vexp:dungeons/states/echo_buffed
 
-tag @s add vexp.projectile_owner
-
-# Orient spawned projectiles outward from the player-centered circle
-execute as @e[tag=vexp.temp_projectile,tag=vexp.echo_sword_projectile,distance=..4] at @s run tag @s add vexp.keep_rotation
-execute as @e[tag=vexp.temp_projectile,tag=vexp.echo_sword_projectile,distance=..4] at @s facing entity @p[tag=vexp.projectile_owner,distance=..5,limit=1,sort=nearest] eyes run tp @s ~ ~ ~ ~180 ~10
-
-# Initialize the newly spawned volley.
-execute as @e[tag=vexp.temp_projectile,tag=vexp.echo_sword_projectile,distance=..4] at @s run function vexp:projectile/spawn
-
+particle flash{color:-8454162} ~ ~-.5 ~ 0 0 0 0 0
+particle trial_spawner_detection_ominous ~ ~-.5 ~ .2 .2 .2 0.05 5
+particle instant_effect{color:9497087} ~ ~-.5 ~ 0.2 0.2 0.2 0 5
+particle minecraft:squid_ink ~ ~-.5 ~ 0.2 0.2 0.2 0.1 5
+function vexp:utils/sound {sound: "minecraft:entity.warden.tendril_clicks", type: "player"}

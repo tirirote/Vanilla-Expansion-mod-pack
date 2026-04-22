@@ -16,10 +16,10 @@
           "material": "copper",
           "combo": {
             "damage": 6,
-            "cooldown": 42,
+            "cooldown": 40,
             "right_click_cooldown": 36,
-            "range": 5,
-            "reach": 6.5,
+            "range": 3.5,
+            "reach": 5.5,
             "quality": "normal"
           }
         }

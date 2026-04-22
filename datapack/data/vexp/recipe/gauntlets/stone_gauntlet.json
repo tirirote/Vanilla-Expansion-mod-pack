@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["   ", "W W", "L L"],
+  "pattern": ["   ", "WW ", "LL "],
   "key": {
     "W": "minecraft:cobblestone",
     "L": "minecraft:leather"
@@ -19,7 +19,7 @@
             "cooldown": 4,
             "right_click_cooldown": 30,
             "range": 2.5,
-            "reach": 2,
+            "reach": 1.5,
             "quality": "normal"
           }
         }
@@ -30,7 +30,7 @@
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_speed",
-          "amount": 2.4,
+          "amount": 1.0,
           "operation": "add_value",
           "id": "vexp:gauntlet_speed",
           "slot": "mainhand"

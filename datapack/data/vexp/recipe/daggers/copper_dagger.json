@@ -40,7 +40,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": 2.0,
+          "amount": 0.0,
           "operation": "add_value",
           "id": "vexp:dagger_speed",
           "slot": "mainhand"

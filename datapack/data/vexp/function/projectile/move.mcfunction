@@ -44,4 +44,5 @@ execute unless score #proj_radius vexp.math matches 1.. unless score #proj_radiu
 execute unless score #proj_radius vexp.math matches 1.. unless score #proj_radius vexp.math matches ..-1 if score #proj_randomness vexp.math matches 1.. run function vexp:projectile/move/erratic with entity @s data.proj
 
 # Paso 4 — homing: orientar hacia el objetivo válido más cercano (post-movimiento)
-execute if score #proj_homing vexp.math matches 1.. run function vexp:projectile/move/homing with entity @s data.proj
+# Dispatcher automático que usa exclusión si está configurada
+execute if score #proj_homing vexp.math matches 1.. run function vexp:projectile/move/homing_dispatch

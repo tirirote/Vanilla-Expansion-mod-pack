@@ -1,3 +1,3 @@
 # dungeons/nether/projectile/on_spawn.mcfunction
 # @s is the nether proj
-data modify entity @s data.proj set value {speed:0.2, lifetime:40, gravity:1, damage:1, randomness:0.15, homing_distance:3.0}
+data modify entity @s data.proj set value {speed:0.6, lifetime:80, gravity:0, damage:5, randomness:0.1, homing_distance:6,exclude_tag:"nether_marked"}

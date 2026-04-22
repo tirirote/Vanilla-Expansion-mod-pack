@@ -20,7 +20,7 @@
             "right_click_cooldown": 16,
             "range": 1.5,
             "reach": 6,
-            "quality": "amethyst"
+            "quality": "diamond"
           }
         }
       },
@@ -40,7 +40,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -0.8,
+          "amount": -2.3,
           "operation": "add_value",
           "id": "vexp:rapier_speed",
           "slot": "mainhand"

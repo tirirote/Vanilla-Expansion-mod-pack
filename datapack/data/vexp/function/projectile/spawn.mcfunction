@@ -14,13 +14,19 @@ execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scorebo
 # Guardar ID del volley antes de eliminar el tag (para spawns subsiguientes del mismo volley)
 execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] as @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scoreboard players operation #volley_owner_id vexp.id = @s vexp.id
 
-data modify entity @s[tag=!vexp.keep_rotation] Rotation set from entity @p[tag=vexp.projectile_owner,limit=1] Rotation
-
 # Remover tag temporal del dueño
-tag @p[tag=vexp.projectile_owner] remove vexp.projectile_owner
+tag @p[tag=vexp.projectile_owner,distance=..5,limit=1] remove vexp.projectile_owner
 
-# Para spawns subsiguientes del mismo volley (tag ya eliminado): heredar ID si este proyectil aún no tiene uno
-execute unless entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] if score #volley_owner_id vexp.id matches 1.. run scoreboard players operation @s vexp.id = #volley_owner_id vexp.id
+# Para spawns subsiguientes del mismo volley (tag ya eliminado): heredar ID solo si
+# este proyectil aun no tiene ID asignado.
+execute unless entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] if score @s vexp.id matches ..0 if score #volley_owner_id vexp.id matches 1.. run scoreboard players operation @s vexp.id = #volley_owner_id vexp.id
+
+# Resolver rotacion del duenyo por ID para que todos los proyectiles del mismo volley
+# reciban orientacion correcta incluso si el tag vexp.projectile_owner ya fue removido.
+scoreboard players operation #proj_owner_id vexp.id = @s vexp.id
+tag @s add vexp.proj_self_temp
+execute as @a if score @s vexp.id = #proj_owner_id vexp.id run data modify entity @e[tag=vexp.proj_self_temp,limit=1] Rotation set from entity @s Rotation
+tag @s remove vexp.proj_self_temp
 
 # Remover tag temporal del proyectil
 tag @s remove vexp.temp_projectile
@@ -39,4 +45,5 @@ execute unless data entity @s data.proj.spin run data modify entity @s data.proj
 execute unless data entity @s data.proj.face_player run data modify entity @s data.proj.face_player set value 0
 execute unless data entity @s data.proj.radius run data modify entity @s data.proj.radius set value 0.0
 execute unless data entity @s data.proj.orbit_height run data modify entity @s data.proj.orbit_height set value 0.0
+# exclude_tag is optional and only set if discriminative homing is needed
 

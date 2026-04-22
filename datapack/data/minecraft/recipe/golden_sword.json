@@ -16,11 +16,11 @@
           "material": "gold",
           "combo": {
             "damage": 4,
-            "cooldown": 20,
+            "cooldown": 12,
             "right_click_cooldown": 24,
-            "range": 4.5,
-            "reach": 2.5,
-            "quality": "normal"
+            "range": 2.5,
+            "reach": 3.5,
+            "quality": "gold"
           }
         }
       },
@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.7,
+          "amount": -2.6,
           "operation": "add_value",
           "id": "vexp:sword_speed",
           "slot": "mainhand"

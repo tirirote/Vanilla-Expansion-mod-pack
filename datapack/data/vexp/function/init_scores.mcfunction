@@ -96,3 +96,9 @@ team add vexp.yellow
 team modify vexp.yellow color yellow
 team add vexp.red
 team modify vexp.red color red
+team add vexp.gold
+team modify vexp.gold color gold
+team add vexp.aqua
+team modify vexp.aqua color aqua
+team add vexp.blue
+team modify vexp.blue color blue
