@@ -1,116 +1,126 @@
-## Proyecto de mods vanilla para minecraft
+# 🍦 Vanilla Expansion Pack
 
-Proyecto de datapacks y paquetes de recursos para minecraft.
+Pack Vanilla+ para Minecraft basado en datapack + resourcepack.
 
-## Todo List and ideas.
+El objetivo del proyecto es ampliar combate, proyectiles, bloques funcionales y utilidades visuales manteniendo estética vanilla.
 
-## Unificar modelos de Items y bloques.
+## ℹ️ ¿Qué incluye el proyecto?
 
-- [ ] Crear sprites 2d para todos los modelos del juego (?)
+El repositorio se divide en dos partes principales:
 
-## Unificar sistema de feedback, efectos de partículas y sonidos.
+- datapack: lógica de juego (funciones, recetas, loot, predicados, tags).
+- resourcepack: modelos, texturas, overrides de items, partículas y assets visuales.
 
-- [ ] Implementar un sistema en /utils donde tener preconfigurados efectos de partículas y sonidos para que sea mas facil usarlos en los diferentes sistemas de armas, armaduras, etc.
+Estructura base:
 
-## Assets para diseño de interiores
+- datapack/data/vexp/function: sistemas principales del proyecto.
+- datapack/data/vexp/recipe: recetas custom de armas y objetos.
+- datapack/data/vexp/predicate: condiciones reutilizables para lógica de combate.
+- resourcepack/assets/vexp: assets visuales propios del pack.
 
-Items y bloques nuevos para mejorar los interiores de los hogares.(Equilibrio de detalle, rendimiento y nada fuera del estilo vanilla)
+## 🧩 Sistemas principales
 
-- [x] Sillas funcionales.
-- [x] Puertas Suaves.
+### Custom Block System
 
-## Items Decorativos funcionales
+Sistema para bloques funcionales que se comportan como entidades/lógica custom sin romper el flujo vanilla.
 
-Implementación de items decorativos y funcionales para el gameplay.
+Qué hace:
 
-- [ ] Jarra (almacena items dentro).
-- [ ] Soportes para armas.
-- [ ] Soporte para velas.
-- [ ] Cestas (Puedes colocar dentro un bloque o varios items) (?) 
+- Detecta colocación e interacción.
+- Gestiona comportamiento por tick cuando aplica.
+- Controla rotura, drops y limpieza de estado.
 
-## Actualización de Aventura (Mecánicas nuevas)
+Dónde vive:
 
-Implementar mecánicas para complementar el sistema de movimiento y exploración (complementando el sistema de combate). Implementar movimientos nuevos como:
+- datapack/data/vexp/function/custom_block
 
-- [x] Dash o Esquive.
-- [x] Escalado de paredes.
-- [x] Base técnica movement/ (tick, cooldowns y eventos).
+Flujo típico:
 
-## Actualización de Armas (Estilo Minecraft Dungeons / Vanilla+)
+1. Colocación del bloque custom.
+2. Registro de estado y metadatos.
+3. Tick/interacción para aplicar comportamiento.
+4. Rotura y drop controlado.
 
-Implementación importante de un nuevo sistema de combate (con soporte de combos, ataques especiales, etc.)
-Implementaremos un sistema de armas nuevas, inspirado en las armas de minecraft dungeons. Cada una tendrá mecánicas de combate diferentes:
+### Custom Weapon + Combo System
 
-Nuevas variantes de Calidad de armas:
+Sistema de combate modular inspirado en Minecraft Dungeons: cada familia de arma tiene su comportamiento base y variantes por calidad.
 
-3 Ramas a elegir:
+Qué hace:
 
-1. Netherite (Standar) -> Fuerza bruta del nether.
-2. Resonante. -> Inspirado por el warden.
-3. Amatista. -> Enfocado a magia y encantamientos
+- Maneja click izquierdo, click derecho, on hit, combo y parry según arma.
+- Aplica cooldown, attack speed y daño por configuración NBT.
+- Enruta eventos por calidad (por ejemplo netherite, echo, gold, diamond) para comportamiento especial.
 
-Nota: Estas variante de calidad serán las únicas que tengan habilidad de click derecho.
+Dónde vive:
 
-Armas nuevas a implementar:
+- datapack/data/vexp/function/dungeons
+- datapack/data/vexp/function/dungeons/combo_system
 
-- [x] Dagas:
-  - Velocidad de ataque rápida.
-  - Daño reducido.
-  - Área de daño mínimo
-  - Arrojable con click derecho.
-  - On Hit: Pushback ligero.
-  - On Combo: Pushback fuerte y Retroceso.
+Flujo típico:
 
-- [x] Guanteletes.
-  - Velocidad de ataque muy rápida.
-  - Daño mínimo.
-  - Área de daño mínimo.
-  - Click derecho: Parry, el jugador en un breve instante pierde velocidad, pero si recibe daño, aplicará pushback a los mobs cercanos, y luego ganará velocidad adicional por un breve instante.
-  - On Hit: Pushback ligero.
-  - On Combo: Retroceso.
+1. El jugador usa un arma con custom_data.combo.
+2. El router de combo detecta evento (on_hit, on_combo, on_right_click, on_parry).
+3. Se llama al handler de la familia de arma y/o calidad.
+4. Se aplican efectos, daño, movilidad y feedback.
 
-- [x] Guadañas.
-  - Velocidad de ataque lenta.
-  - Daño alto.
-  - Área de daño amplio.
-  - Click derecho: Lanza un proyectil que inflige daño y aplica lentitud.
-  - On Hit: Pushback ligero.
-  - On Combo: Retroceso.
+### Custom Projectile System
 
--[x] Rapiers.
+Sistema unificado para crear, inicializar y mover proyectiles usando entidades base con data.proj.
 
-- Velocidad de ataque rápida.
-- Daño bajo.
-- Área de daño mínimo
-- Click derecho: Lunge, el jugador avanza hacia adelante y atraviesa al mob, le aplica efecto de sangrado (wither por 3s), y gana un instante de invisibilidad breve.
+Qué hace:
 
-- [x] Espadas.
-  - Velocidad de ataque media.
-  - Daño medio.
-  - Área de daño bajo.
-  - Click derecho: Ataque circular, el jugador gira progresivamente durante un 1 segundo, aplicando daño de área a los mobs cercanos.
+- Spawn unificado con asignación de owner e inicialización.
+- Movimiento por módulos: standard, erratic, orbit, spin, homing.
+- Hooks por tipo de proyectil: on_spawn, on_tick, on_hit_mob, on_hit_block, on_despawn.
+- Soporta homing discriminatorio por tag de exclusión en data.proj.
 
-## Actualización de Armaduras (Estilo Minecraft Dungeons / Vanilla+)
+Dónde vive:
 
-Para complementar el sistema de armas, implementaremos un sistema de armaduras nuevas, inspirado en las armaduras de minecraft dungeons. Cada una tendrá mecánicas de combate diferentes:
+- datapack/data/vexp/function/projectile
+- datapack/data/vexp/function/projectile/projectiles
 
-- [ ] Armaduras mejoradas.
-  - Armaduras con habilidades pasivas especiales.
+Flujo típico:
 
-Armaduras nuevas a implementar:
+1. Un sistema de arma crea proyectil base (armor stand marker).
+2. projectile/spawn inicializa tags, owner, parámetros y hook on_spawn.
+3. projectile/tick ejecuta movimiento y colisiones.
+4. Hooks de impacto/despawn resuelven efectos finales.
 
-- [ ] Armadura de netherita.
-- [ ] Armadura resonante.
-- [ ] Armadura de amatista.
+Ejemplo de homing discriminatorio:
 
-## Actualización de Pirotecnia
+- Si un proyectil tiene data.proj.exclude_tag:"nether_marked", hará homing solo a objetivos válidos que no tengan esa tag.
 
-- [x] TNT lanzable.
-- [ ] Bengalas.
-- [x] Pistola de mano.
+## 🚀 Cómo extender el proyecto
 
-## Actualizaciones varias (misceláneas)
+Ruta recomendada para añadir contenido nuevo:
 
-- [x] Barras de vida para mobs. (Visualización de la vida de los mobs).
-- [x] Indicadores de daño para mobs. (Visualización del daño recibido por los mobs).
-- [ ] Mejor feedback visual para el combate o movimiento del jugador.
+1. Crear receta y custom_data del arma/item en datapack/data/vexp/recipe.
+2. Añadir handler en datapack/data/vexp/function/dungeons/<familia>.
+3. Si usa proyectiles, definir tipo en projectile/projectiles/<tipo> con hooks.
+4. Añadir modelos/texturas en resourcepack.
+5. Validar coherencia entre receta, give, cooldown y quality.
+
+## 📌 Estado general
+
+Implementado actualmente (alto nivel):
+
+- Sistema de armas con varias familias (daggers, gauntlets, scythes, rapiers, swords).
+- Sistema de proyectiles modular.
+- Bloques/objetos funcionales y utilidades de combate.
+
+Pendiente o en evolución:
+
+- Más armaduras con pasivas.
+- Más objetos decorativos funcionales.
+- Mejoras de feedback visual y sonoro centralizado.
+
+## 📚 Documentación técnica
+
+Guía de mantenimiento y expansión en:
+
+- docs/README.md
+- docs/custom-blocks.md
+- docs/projectiles.md
+- docs/combo-system.md
+- docs/custom-weapons.md
+- docs/visual-health-damage.md
