@@ -6,3 +6,4 @@ execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s 
 
 particle minecraft:crit ~ ~ ~ .2 .2 .2 0.5 3
 particle minecraft:flash{color:-2833519} ~ ~ ~ 0 0 0 0 0
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.nodamage", type: "player"}

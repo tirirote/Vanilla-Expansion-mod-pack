@@ -4,11 +4,10 @@
 # Mark mob
 function vexp:dungeons/states/nether_marked
 
-# Player buffs
-effect give @p[tag=vexp.attacker,limit=1] minecraft:resistance 1 0 true
-effect give @p[tag=vexp.attacker,limit=1] minecraft:slowness 1 0 true
+# Atraer ligeramente (fuerza negativa, y:0.15 para evitar que la fricción lo pegue al suelo)
+function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
 
-# Knockback {strength:0.25, y:0.2}
-function vexp:utils/motion/apply_knockback {strength:0.25, y:0.1}
-
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
+# Visuals
+execute positioned ~ ~1 ~ run function vexp:utils/hits/weak_punch_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/netherite_hit
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

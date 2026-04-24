@@ -1,17 +1,23 @@
-# @s is the player, @e[tag=vexp.hitted] is the mob
+# dungeons/rapier/netherite/on_combo.mcfunction
+# @s is the target entity
 
-# Launch 3 short-range nether slashes from the attacker.
-data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.sword_nether_projectile",proj_type:"nether_sword",proj_data:{}}
-execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
+#Mark the mob
+function vexp:dungeons/states/nether_marked
+
+# Strong push away for the mob
+function vexp:utils/motion/apply_knockback {strength:-2.5, y:0.35}
+
+#Special Rapier proj
+data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.nether_projectile",proj_type:"nether_rapier",proj_data:{}}
 
 tag @p[tag=vexp.attacker,limit=1] add vexp.projectile_owner
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ as @e[type=minecraft:armor_stand,tag=vexp.temp_projectile,tag=vexp.nether_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
-# Initialize the newly spawned volley.
-execute as @p[tag=vexp.attacker,limit=1] at @s run execute as @e[type=minecraft:armor_stand,tag=vexp.temp_projectile,tag=vexp.sword_nether_projectile,distance=..4] at @s run function vexp:projectile/spawn
+#Player pushback
+execute as @p[tag=vexp.attacker,limit=1] at @s run function vexp:dungeons/rapier/player_pushback
 
-# Knockback {strength:-2.5, y:0.1}
-function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
-# Cast feedback.
-particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0.1 3
-particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.03 3
-function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
+# Visuals
+execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/netherite_hit
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

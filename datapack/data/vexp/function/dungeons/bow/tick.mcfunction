@@ -13,4 +13,8 @@ execute as @a unless items entity @s weapon.mainhand *[custom_data~{vexp:{item:"
 
 # Keep previous value for shot classification, then reset after the shot has been processed.
 execute as @a[scores={vexp.bow_shot_delta=1..}] if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"bow"}}] run scoreboard players set @s vexp.bow_draw_ticks 0
+
+# Keep previous draw value for next tick release detection.
+execute as @a run scoreboard players operation @s vexp.arrow_draw_ticks = @s vexp.bow_draw_ticks
+
 execute as @a run scoreboard players operation @s vexp.bow_used_prev = @s vexp.bow_used

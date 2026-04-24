@@ -5,4 +5,4 @@
 
 $function vexp:projectile/projectiles/$(proj_type)/on_hit_block
 
-execute positioned ^ ^ ^0.5 run function vexp:utils/feedback/block_hit
+execute unless entity @s[tag=vexp.prevent_despawn] positioned ^ ^ ^0.5 run function vexp:utils/feedback/block_hit

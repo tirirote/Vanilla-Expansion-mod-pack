@@ -2,6 +2,9 @@
 # @s is a tagged bow arrow that has hit a mob
 # Routes to type-specific handlers with tier variants, with special charged behavior for tier 3
 
+# Resolve owning player for custom logic.
+function vexp:dungeons/bow/arrows/hooks/tag_owner
+
 # Capture final arrow damage for indicator text (rounded up to integer like melee indicators).
 # Probe markers store cached value in data.vexp.arrow_damage.
 scoreboard players set #bow_hit_damage_raw vexp.math 0
@@ -24,6 +27,14 @@ execute if entity @s[tag=vexp.netherite_arrow,tag=vexp.combo_arrow_charged] run 
 # Resonance arrow
 execute if entity @s[tag=vexp.resonance_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/resonance/on_hit_mob
 execute if entity @s[tag=vexp.resonance_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/resonance/on_hit_mob_charged
+
+# Gold arrow
+execute if entity @s[tag=vexp.gold_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/gold/on_hit_mob
+execute if entity @s[tag=vexp.gold_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/gold/on_hit_mob_charged
+
+# Diamond arrow
+execute if entity @s[tag=vexp.diamond_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/diamond/on_hit_mob
+execute if entity @s[tag=vexp.diamond_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/diamond/on_hit_mob_charged
 
 # Mark impacted mob (vexp.hitted) and spawn damage indicator near arrow collision point.
 execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s run function vexp:dungeons/bow/arrows/hooks/spawn_damage_indicator

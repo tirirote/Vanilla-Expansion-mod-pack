@@ -1,14 +1,14 @@
-# dungeons/gauntlets/echo/on_hit.mcfunction
+# dungeons/gauntlets/netherite/on_hit.mcfunction
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
+# Mark mob
+function vexp:dungeons/states/echo_marked
 
-# Effects
-execute as @p[tag=vexp.attacker,limit=1] run effect give @s minecraft:slowness 2 2 true
-
-# Knockback {strength:0.25, y:0.2}
+# Atraer ligeramente (fuerza negativa, y:0.15 para evitar que la fricción lo pegue al suelo)
 function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
 
-particle minecraft:sculk_charge_pop ~ ~1 ~ 0.2 0.2 0.2 0.02 3
-particle minecraft:large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.02 3
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.strong", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}
+# Visuals
+execute positioned ~ ~1 ~ run function vexp:utils/hits/weak_punch_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/echo_hit
+function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.sculk.break", type: "player"}

@@ -4,8 +4,8 @@
 # Strong pushback to target
 function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
 
-# Dash
-effect give @s minecraft:speed 3 1 true
+# Subtle buff
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/gold_buffed
 
 # Visual/Sound
 execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit

@@ -11,7 +11,7 @@
       "minecraft:item_name": "Guantes de Netherite",
       "minecraft:custom_data": {
         "vexp": {
-          "type": "long_combo",
+          "type": "mid_combo",
           "item": "gauntlets",
           "material": "netherite",
           "combo": {

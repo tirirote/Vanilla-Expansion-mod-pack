@@ -1,7 +1,8 @@
 # @s is the player, @e[tag=vexp.hitted] is the mob
 # Mark mob
-function vexp:dungeons/states/nether_marked
 
-# Knockback {strength:-2.5, y:0.1}
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
+
+execute positioned ~ ~1 ~ run function vexp:utils/hits/weak_sword_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/netherite_hit
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

@@ -1,5 +1,5 @@
 # AoE wave
-particle minecraft:trial_spawner_detection_ominous ~ ~ ~ .25 .25 .25 0.1 3
+particle instant_effect{color:7733213} ~ ~ ~ 0.5 0.5 0.5 0.1 3
 particle minecraft:glow ~ ~ ~ .5 .5 .5 0.5 3
 particle flash{color:-7798795} ~ ~ ~ 0 0 0 0 0
 particle squid_ink ~ ~ ~ 0.5 0.5 0.5 0.05 5

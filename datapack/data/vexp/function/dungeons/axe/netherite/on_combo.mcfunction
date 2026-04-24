@@ -1,14 +1,17 @@
-# @s is the primary hit mob
+# dungeons/axe/on_combo.mcfunction
+# @s is the target entity (one of them)
+
+#Mark mob
+function vexp:dungeons/states/nether_marked
 
 # 2. Strong knockback for the primary target
-function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.5}
+function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.2}
 
-# Hit feedback for primary target
-particle large_smoke ~ ~ ~ 0.1 0.1 0.1 0.1 5
-particle minecraft:lava ~ ~ ~ 0.1 0.1 0.1 0.1 1
-particle angry_villager ~ ~ ~ .1 .1 .1 .1 3
-function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
+#Player buff
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/nether_buffed
 
-# AoE damage and burn in ..2 around target
-execute as @e[type=!player,type=!item,type=!marker,type=!interaction,type=!item_display,type=!area_effect_cloud,distance=..2] run damage @s 2 minecraft:player_attack by @p[tag=vexp.attacker,limit=1]
-execute as @e[type=!player,type=!item,type=!marker,type=!interaction,type=!item_display,type=!area_effect_cloud,distance=..2] run data modify entity @s Fire set value 60
+# Visual feedback
+execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/netherite_hit
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
+

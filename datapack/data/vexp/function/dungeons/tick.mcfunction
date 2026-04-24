@@ -30,4 +30,5 @@ function vexp:dungeons/states/tick
 tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
 tag @a[tag=vexp.attacker] remove vexp.attacker
 tag @e[tag=vexp.hitted] remove vexp.hitted
+tag @e[tag=vexp.parried] remove vexp.parried
 # Note: vexp.hitted.combo_end is removed in mob_health/update.mcfunction for sync reasons

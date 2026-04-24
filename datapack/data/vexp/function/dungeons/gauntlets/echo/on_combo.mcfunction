@@ -1,16 +1,17 @@
-# dungeons/gauntlets/echo/on_combo.mcfunction
-# @s is the player, @e[tag=vexp.hitted] is the mob
+# dungeons/gauntlets/netherite/on_combo.mcfunction
+# @s is the target entity
 
-# Mark corruption
+#Mark target
 function vexp:dungeons/states/echo_marked
 
+# Strong push away
+function vexp:utils/motion/apply_knockback {strength:-3.5, y:1.5}
 
-# AoE push and effects
-particle minecraft:sculk_soul ~ ~1 ~ 0.2 0.2 0.2 0.05 3
-particle minecraft:sonic_boom ~ ~1 ~ 0.0 0.0 0.0 1 1
-particle minecraft:large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.02 3
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.crit", type: "player"}
+#Buff
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
+
+# Visuals
+execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_punch_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/echo_hit
+function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
 function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}
-
-# Knockback {strength:1.0, y:0.25}
-function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.25}

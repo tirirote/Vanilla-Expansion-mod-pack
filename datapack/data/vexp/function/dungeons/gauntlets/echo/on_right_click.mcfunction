@@ -1,17 +1,14 @@
-# dungeons/gauntlets/echo/on_right_click.mcfunction
+# dungeons/gauntlets/on_right_click.mcfunction
 # @s is the player
+# Attempt to catch a mob if none are currently caught
 
-# Standard parry window but longer for netherite (5s = 100 ticks)
-tag @s add vexp.gauntlets.parry
-scoreboard players set @s vexp.gauntlets_parry_timer 100
-scoreboard players operation @s vexp.gauntlets_damage_snapshot = @s vexp.damage_taken
+execute positioned ^ ^ ^5 as @e[predicate=vexp:is_target,distance=..3.5,limit=1,sort=nearest] at @s run function vexp:dungeons/states/catched
 
-# Effects
-effect give @s minecraft:slowness 5 1 true
-effect give @s minecraft:resistance 5 0 true
+execute as @e[predicate=vexp:is_target,distance=..6,limit=1,sort=nearest,tag=vexp.state.catched] run function vexp:dungeons/states/echo_marked
 
-# Visual
-particle minecraft:sculk_soul ~ ~-.5 ~ 0.25 0.25 0.25 0.05 3
-particle minecraft:sculk_charge_pop ~ ~-.5 ~ 0.25 0.25 0.25 0.05 3
-function vexp:utils/sound {sound: "minecraft:entity.warden.tendril_clicks", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.warden.heartbeat", type: "player"}
+#Feedback
+#Netherite weapons hit particles
+particle instant_effect{color:7733240} ~ ~ ~ 0.2 0.2 0.2 0.1 1
+particle glow ~ ~ ~ 0.2 0.2 0.2 0.1 3
+function vexp:utils/feedback/dust_particle {initialColor: [0.0, 0.0, 0.0], finalColor: [0.4, 0.7, 0.7], scale: 1.7, dX: .5, dY: .5, dZ: .5, speed: 0.05, count: 5}
+function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

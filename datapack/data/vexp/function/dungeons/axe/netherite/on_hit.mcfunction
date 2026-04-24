@@ -1,8 +1,13 @@
-# @s is the hit mob
+# @s is the target entity
 
+#Mark mob
 function vexp:dungeons/states/nether_marked
 
-# Knockback {strength:0.6, y:0.2}
-function vexp:utils/motion/apply_knockback {strength:1, y:0.1}
-effect give @p[tag=vexp.attacker,limit=1] minecraft:resistance 2 0 true
-effect give @p[tag=vexp.attacker,limit=1] minecraft:slowness 2 0 true
+# Slight pushback
+function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
+
+# Visual feedback
+execute positioned ~ ~1 ~ run function vexp:utils/hits/weak_sword_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/netherite_hit
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
+

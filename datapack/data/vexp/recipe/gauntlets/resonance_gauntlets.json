@@ -11,7 +11,7 @@
       "minecraft:item_name": "Guantes Resonantes",
       "minecraft:custom_data": {
         "vexp": {
-          "type": "long_combo",
+          "type": "mid_combo",
           "item": "gauntlets",
           "material": "echo",
           "combo": {

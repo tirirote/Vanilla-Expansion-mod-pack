@@ -11,10 +11,7 @@ execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_
 function vexp:utils/motion/apply_knockback with storage vexp:temp {strength:-3.5, y:0.25}
 
 execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
-
-particle flash{color:-8454162} ~ ~ ~ 0 0 0 0 0
-particle instant_effect{color:9497087} ~ ~1 ~ 0.2 0.2 0.2 0 1
-particle sculk_charge_pop ~ ~ ~ 0.25 0.25 0.25 0.1 3
+execute positioned ~ ~1 ~ run function vexp:utils/hits/echo_hit
 
 function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.sculk.break", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

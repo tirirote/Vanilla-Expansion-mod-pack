@@ -1,22 +1,19 @@
 # dungeons/rapier/netherite/on_right_click.mcfunction
 # @s is the player
 
-# AoE light damage and visuals
-particle minecraft:flame ~ ~ ~ 0.2 0.5 0.2 0.06 3
-function vexp:utils/feedback/dust_particle {initialColor: [0.2, 0.2, 0.2], finalColor: [0.4, 0.35, 0.3], scale: 1.7, dX: 0.2, dY: 0.5, dZ: 0.2, speed: 0.05, count: 5}
-particle minecraft:lava ~ ~ ~ 0.2 0.5 0.2 0.06 3
-particle large_smoke ~ ~ ~ 0.2 0.5 0.2 0.05 5
+# Lunge forward in short steps to pierce through nearby mobs.
+execute positioned ~ ~-.5 ~ if block ^ ^ ^1 #minecraft:replaceable if block ^ ^ ^2 #minecraft:replaceable if block ^ ^ ^3 #minecraft:replaceable if block ^ ^ ^4 #minecraft:replaceable if block ^ ^ ^5 #minecraft:replaceable if block ^ ^ ^6 #minecraft:replaceable run tp @s ^ ^ ^6
+
+# Brief buff
+effect give @s speed 2 2 true
+effect give @s slow_falling 1 0 true
+effect give @s blindness 1 0 true
+
+# Visuals
+#Netherite weapons hit particles
+particle trial_spawner_detection ~ ~-.5 ~ 0.25 0.25 0.25 .1 5
+particle flash{color:-28360} ~ ~-.5 ~ 0.0 0.0 0.0 1 0
+particle flame ~ ~-.5 ~ .25 .25 .25 0.01 3
+particle minecraft:large_smoke ~ ~-.5 ~ .2 .2 .2 0 1
+
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
-
-execute as @e[type=!player,type=!item,type=!marker,distance=..3] at @s run function vexp:utils/deal_damage {damage:2, type:"minecraft:player_attack", owner:"@s"}
-
-# Knockback {strength:1.0, y:0.2}
-execute as @e[type=!player,type=!item,type=!marker,distance=..4] at @s run function vexp:utils/motion/apply_knockback {strength:2.5, y:0.2}
-
-# Dash forward
-execute if block ^ ^ ^1 #minecraft:replaceable run tp @s ^ ^-1.25 ^1
-execute if block ^ ^ ^1 #minecraft:replaceable run tp @s ^ ^-1.25 ^1
-execute if block ^ ^ ^1 #minecraft:replaceable run tp @s ^ ^-1.25 ^1
-
-# Player buff
-effect give @s minecraft:speed 2 1 true

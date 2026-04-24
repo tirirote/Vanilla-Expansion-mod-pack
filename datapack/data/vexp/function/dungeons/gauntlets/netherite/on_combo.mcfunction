@@ -1,7 +1,16 @@
-# AoE wave
-execute positioned ~ ~-1.5 ~ run function vexp:dungeons/dagger/projectile/netherite/aoe_wave
+# dungeons/gauntlets/netherite/on_combo.mcfunction
+# @s is the target entity
 
-execute as @e[type=!player,type=!item,type=!marker,distance=..5] at @s run function vexp:utils/motion/apply_knockback {strength:-1, y:0.1}
+#Mark target
+function vexp:dungeons/states/nether_marked
 
-# Player buff
-effect give @s minecraft:resistance 2 1 true
+# Strong push away
+function vexp:utils/motion/apply_knockback {strength:-3.5, y:1.5}
+
+#Buff
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/nether_buffed
+
+# Visuals
+execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_punch_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/gold_hit
+function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

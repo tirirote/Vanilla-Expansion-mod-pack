@@ -4,10 +4,13 @@
 function vexp:dungeons/states/echo_marked
 
 #teleport player behind mob
-execute positioned ~ ~.25 ~ run tp @p[tag=vexp.attacker,limit=1] ^ ^ ^-1.5 facing entity @s feet
+execute positioned ~ ~.05 ~ if block ^ ^ ^-5 #replaceable run tp @p[tag=vexp.attacker,limit=1] ^ ^ ^-5 facing entity @s
 
-# Effects
+#Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
-particle minecraft:sculk_soul ~ ~1 ~ 0.2 0.2 0.2 0.05 3
-execute positioned ~ ~1 ~ run function vexp:utils/feedback/dust_particle {initialColor: [0.2, 0.2, 0.2], finalColor: [0.3, 0.5, 0.55], scale: 0.8, dX: 0.2, dY: 0.2, dZ: 0.2, speed: 0.05, count: 1}
+
+execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
+execute positioned ~ ~1 ~ run function vexp:utils/hits/echo_hit
+
+function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
 function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

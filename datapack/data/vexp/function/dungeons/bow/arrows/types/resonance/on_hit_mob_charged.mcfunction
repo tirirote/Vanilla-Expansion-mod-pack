@@ -1,9 +1,16 @@
 # dungeons/bow/arrows/types/resonance/on_hit_mob_charged.mcfunction
 # @s is a resonance-quality bow arrow, fully charged, hitting a mob
 
-particle minecraft:sculk_soul ~ ~1 ~ 0.2 0.2 0.2 0.02 8
-particle minecraft:sculk_charge_pop ~ ~1 ~ 0.15 0.15 0.15 0.01 5
-particle minecraft:explosion ~ ~1 ~ 0.35 0.35 0.35 0.05 5
-particle minecraft:sculk_charge_pop ~ ~1 ~ 0.25 0.25 0.25 0.02 8
-particle minecraft:large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.05 6
-function vexp:utils/sound {sound: "minecraft:entity.warden.sonic_charge", type: "player"}
+#Tp Behind mob
+execute as @e[predicate=vexp:is_target,tag=vexp.echo_marked,sort=nearest,limit=1,distance=..16] at @s positioned ~ ~.05 ~ if block ^ ^ ^-5 #replaceable run tp @p[tag=vexp.arrow.owner,limit=1] ^ ^ ^-5
+
+#Buff Player
+execute as @p[tag=vexp.arrow.owner,limit=1] run function vexp:dungeons/states/echo_buffed
+
+#Mark the target
+execute as @e[predicate=vexp:is_target,sort=nearest,limit=1,distance=..2] run function vexp:dungeons/states/echo_marked
+
+function vexp:utils/hits/echo_hit
+
+function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

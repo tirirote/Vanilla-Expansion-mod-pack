@@ -4,6 +4,9 @@
 # Strong push away
 function vexp:utils/motion/apply_knockback {strength:-2.5, y:1}
 
+#Buff
+execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/gold_buffed
+
 # Visuals
 execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_punch_hit
 execute positioned ~ ~1 ~ run function vexp:utils/hits/gold_hit

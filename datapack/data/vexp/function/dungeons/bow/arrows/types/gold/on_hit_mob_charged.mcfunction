@@ -1,0 +1,6 @@
+# dungeons/bow/arrows/types/gold/on_hit_mob_charged.mcfunction
+# @s is a gold-quality bow arrow, fully charged, hitting a mob
+
+execute as @p[tag=vexp.arrow.owner,limit=1] run function vexp:dungeons/states/gold_buffed
+function vexp:utils/hits/gold_hit
+function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}

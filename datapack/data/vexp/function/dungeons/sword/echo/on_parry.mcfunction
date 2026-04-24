@@ -6,8 +6,9 @@ tag @s add vexp.attacker
 
 execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/states/echo_marked
 
-# AoE wave against nearby valid targets
-execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/sword/echo/wave
+#TP Player behind mob
+execute as @e[tag=vexp.parried,predicate=vexp:is_target,distance=..6,limit=1] facing entity @p[tag=vexp.attacker,limit=1] feet positioned ~ ~.5 ~ if block ^ ^ ^-5 #replaceable run tp @p[tag=vexp.attacker,limit=1] ^ ^ ^-5 facing entity @s
+
 
 # Cleanup and close parry window
 tag @s remove vexp.attacker

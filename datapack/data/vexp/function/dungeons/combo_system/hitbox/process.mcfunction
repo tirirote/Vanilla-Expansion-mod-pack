@@ -8,7 +8,7 @@ execute as @s[tag=vexp.hitbox.ready] if data entity @s attack at @s run function
 
 # If INTERACTION (Right Click) and NO COOLDOWN.
 # Attack has priority when both flags are present in the same tick.
-execute as @s[tag=vexp.hitbox.ready] unless data entity @s attack if data entity @s interaction at @s run function vexp:dungeons/combo_system/hitbox/on_interact
+execute as @s[tag=vexp.hitbox.ready] if data entity @s interaction at @s run function vexp:dungeons/combo_system/hitbox/on_interact
 
 # Reset interaction data (always)
 data remove entity @s attack
