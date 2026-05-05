@@ -4,6 +4,12 @@ Pack Vanilla+ para Minecraft basado en datapack + resourcepack.
 
 El objetivo del proyecto es ampliar combate, proyectiles, bloques funcionales y utilidades visuales manteniendo estética vanilla.
 
+## 📋 Lista de cambios e ideas futuras a implementar
+
+Aquí tendrás una lista de de cambios futuros o ideas nuevas para expandir la experiencia vanilla del juego:
+
+- [docs/todo-list.md](/docs/todo)
+
 ## ℹ️ ¿Qué incluye el proyecto?
 
 El repositorio se divide en dos partes principales:
