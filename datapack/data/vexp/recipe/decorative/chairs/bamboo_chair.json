@@ -17,7 +17,6 @@
           "vexp": {
             "id": "chair_bamboo",
             "model": "vexp:bamboo_chair",
-            "item_model": "vexp:bamboo_chair",
             "width": 0.8,
             "height": 1.6,
             "type": "chair",
@@ -42,3 +41,4 @@
     }
   }
 }
+

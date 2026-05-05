@@ -15,8 +15,7 @@
         "data": {
           "vexp": {
             "id": "jar",
-            "model": "vexp:jar_block",
-            "item_model": "vexp:jar",
+            "model": "vexp:jar",
             "width": 0.6,
             "height": 0.7,
             "type": "jar",

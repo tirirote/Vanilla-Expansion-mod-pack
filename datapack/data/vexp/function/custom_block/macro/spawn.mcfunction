@@ -1,6 +1,6 @@
 # spawn.mcfunction
 # Macro para spawnear un bloque personalizado basado en datos
-# Input: $(id), $(model), $(item_model), $(width), $(height), $(type), $(name), $(s_place), $(s_break), $(p_break)
+# Input: $(id), $(model), $(width), $(height), $(type), $(name), $(s_place), $(s_break), $(p_break)
 
 # 1. Spawn Visual (item_display)
 # Lo colocamos alineado en el centro del bloque

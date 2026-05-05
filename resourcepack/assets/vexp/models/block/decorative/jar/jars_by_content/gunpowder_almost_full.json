@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/decorative/jar/jar_almost_full",
+  "textures": {
+    "dust": "vexp:block/decorative/jar/gunpowder_in_jar"
+  }
+}

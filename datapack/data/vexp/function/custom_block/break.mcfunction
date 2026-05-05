@@ -1,6 +1,5 @@
-# 1. Preparar datos para soltar el ítem (handle fallback para item_model)
+# 1. Preparar datos para soltar el ítem
 data modify storage vexp:custom_block item_drop set from entity @s data.vexp
-execute unless data storage vexp:custom_block item_drop.item_model run data modify storage vexp:custom_block item_drop.item_model set from storage vexp:custom_block item_drop.model
 
 # Normalizar dimensiones a float conservando hasta 2 decimales
 execute if data storage vexp:custom_block item_drop.width store result storage vexp:custom_block item_drop.width float 0.01 run data get storage vexp:custom_block item_drop.width 100

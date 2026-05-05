@@ -1,27 +1,23 @@
 # perform_add.mcfunction
 # Se ejecuta AS la interaction
 
-# 1. Incrementar el contador
-execute store result score #temp vexp.id run data get entity @s data.vexp.item_count
-scoreboard players add #temp vexp.id 1
-execute store result entity @s data.vexp.item_count int 1 run scoreboard players get #temp vexp.id
+# 1. Incrementar el contador persistente
+execute store result score #prev vexp.math run data get entity @s data.vexp.item_count
+scoreboard players operation #temp vexp.math = #prev vexp.math
+scoreboard players add #temp vexp.math 1
+execute store result entity @s data.vexp.item_count int 1 run scoreboard players get #temp vexp.math
 
-# 2. Descontar del jugador
+# 2. Si estaba vacío, registrar el tipo base del contenido
+execute if score #prev vexp.math matches 0 run function vexp:custom_block/blocks/jar/set_content_from_held
+
+# 3. Actualizar estado de llenado + modelo del bloque
+function vexp:custom_block/blocks/jar/update_fill_state
+function vexp:custom_block/blocks/jar/update_display_model
+
+# 4. Descontar del jugador
 item modify entity @p[tag=vexp.jar_user,limit=1] weapon.mainhand { "function": "minecraft:set_count", "count": -1, "add": true }
 
-# 3. Preparar macro para visual
-# Y = (count-1) * 0.01 + 0.05
-# Usamos #temp que tiene el nuevo count
-scoreboard players remove #temp vexp.id 1
-execute store result storage vexp:custom_block jar.y double 0.0125 run scoreboard players add #temp vexp.id 1
-
-# Pasamos datos completos (para soportar cualquier item con su NBT/Componentes)
-data modify storage vexp:custom_block jar.item set from storage vexp:custom_block item_held
-# Nos aseguramos de que el visual tenga count 1
-data modify storage vexp:custom_block jar.item.count set value 1
-execute store result storage vexp:custom_block jar.id int 1 run scoreboard players get @s vexp.id
-
-function vexp:custom_block/blocks/jar/spawn_visual with storage vexp:custom_block jar
-
-# 4. Sonido
-function vexp:custom_block/macro/sound {sound:"minecraft:entity.item.pickup"}
+# 5. Feedback
+function vexp:custom_block/macro/sound {sound:"minecraft:block.sand.place"}
+function vexp:custom_block/macro/sound {sound:"minecraft:entity.armadillo.scute_drop"}
+particle composter ~ ~0.5 ~ 0.2 0.2 0.2 .1 1

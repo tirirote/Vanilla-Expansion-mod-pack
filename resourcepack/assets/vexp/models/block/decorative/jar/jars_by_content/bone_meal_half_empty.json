@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/decorative/jar/jar_half_empty",
+  "textures": {
+    "dust": "vexp:block/decorative/jar/bone_meal_in_jar"
+  }
+}

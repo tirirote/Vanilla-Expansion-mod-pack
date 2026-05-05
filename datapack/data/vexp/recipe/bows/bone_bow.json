@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [" ST", "B T", " ST"],
+  "pattern": [" MT", "M T", " MT"],
   "key": {
-    "B": "minecraft:bone",
-    "T": "minecraft:string",
-    "S": "minecraft:stick"
+    "M": "minecraft:bone",
+    "T": "minecraft:string"
   },
   "result": {
     "id": "minecraft:bow",

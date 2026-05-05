@@ -17,7 +17,6 @@
             "id": "crate",
             "type": "crate",
             "model": "vexp:oak_crate_block",
-            "item_model": "vexp:oak_crate_block",
             "width": 1.25,
             "height": 0.75,
             "name": "Caja de Roble",
@@ -40,3 +39,4 @@
     }
   }
 }
+

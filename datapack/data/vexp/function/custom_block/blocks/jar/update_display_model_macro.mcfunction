@@ -1,0 +1,1 @@
+$execute as @e[type=item_display,tag=vexp.custom_block.display,sort=nearest,distance=..1.5] if score @s vexp.id = #jar_id vexp.id run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:jar_$(content)_$(state)"]

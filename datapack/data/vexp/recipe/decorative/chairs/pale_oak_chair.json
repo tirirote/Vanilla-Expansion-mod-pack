@@ -17,7 +17,6 @@
           "vexp": {
             "id": "chair_pale_oak",
             "model": "vexp:pale_oak_chair",
-            "item_model": "vexp:pale_oak_chair",
             "width": 0.8,
             "height": 1.6,
             "type": "chair",
@@ -42,3 +41,4 @@
     }
   }
 }
+

@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [" ST", "M T", " ST"],
+  "pattern": [" MT", "M T", " MT"],
   "key": {
     "M": "minecraft:diamond",
-    "T": "minecraft:string",
-    "S": "minecraft:stick"
+    "T": "minecraft:string"
   },
   "result": {
     "id": "minecraft:bow",

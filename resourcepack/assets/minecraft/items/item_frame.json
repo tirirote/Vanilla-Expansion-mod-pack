@@ -90,22 +90,48 @@
       {
         "when": "vexp:jar",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/decorative/jar"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/jar"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/decorative/jar/jar_empty"
+          }
         }
       },
       {
         "when": "vexp:jar_block",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/decorative/jar"
+          "model": "vexp:block/decorative/jar/jar_empty"
         }
       },
       {
         "when": "vexp:training_dummy",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/training-dummy"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/dungeons/training-dummy"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/training-dummy"
+          }
         }
       },
       {
@@ -118,8 +144,21 @@
       {
         "when": "vexp:door_block_oak",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/oak_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/oak_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/oak_door"
+          }
         }
       },
       {
@@ -132,8 +171,21 @@
       {
         "when": "vexp:door_block_birch",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/birch_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/birch_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/birch_door"
+          }
         }
       },
       {
@@ -146,8 +198,21 @@
       {
         "when": "vexp:door_block_spruce",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/spruce_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/spruce_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/spruce_door"
+          }
         }
       },
       {
@@ -160,8 +225,21 @@
       {
         "when": "vexp:door_block_dark_oak",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/dark_oak_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/dark_oak_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/dark_oak_door"
+          }
         }
       },
       {
@@ -174,8 +252,21 @@
       {
         "when": "vexp:door_block_acacia",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/acacia_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/acacia_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/acacia_door"
+          }
         }
       },
       {
@@ -188,8 +279,21 @@
       {
         "when": "vexp:door_block_jungle",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/jungle_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/jungle_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/jungle_door"
+          }
         }
       },
       {
@@ -202,8 +306,21 @@
       {
         "when": "vexp:door_block_mangrove",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/mangrove_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/mangrove_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mangrove_door"
+          }
         }
       },
       {
@@ -216,8 +333,21 @@
       {
         "when": "vexp:door_block_cherry",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/cherry_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/cherry_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/cherry_door"
+          }
         }
       },
       {
@@ -230,8 +360,21 @@
       {
         "when": "vexp:door_block_pale_oak",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/pale_oak_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/pale_oak_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/pale_oak_door"
+          }
         }
       },
       {
@@ -244,8 +387,21 @@
       {
         "when": "vexp:door_block_warped",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/warped_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/warped_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/warped_door"
+          }
         }
       },
       {
@@ -258,8 +414,21 @@
       {
         "when": "vexp:door_block_crimson",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/crimson_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/crimson_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/crimson_door"
+          }
         }
       },
       {
@@ -272,8 +441,21 @@
       {
         "when": "vexp:door_block_bamboo",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/bamboo_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/bamboo_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/bamboo_door"
+          }
         }
       },
       {
@@ -286,8 +468,21 @@
       {
         "when": "vexp:door_block_iron",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/door/iron_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:block/door/iron_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/iron_door"
+          }
         }
       },
       {
@@ -379,6 +574,741 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/crate/oak_crate"
+        }
+      },
+      {
+        "when": "vexp:jar_white_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/white_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_white_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/white_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_white_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/white_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_white_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/white_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_white_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/white_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_orange_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/orange_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_orange_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/orange_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_orange_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/orange_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_orange_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/orange_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_orange_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/orange_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_magenta_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/magenta_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_magenta_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/magenta_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_magenta_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/magenta_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_magenta_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/magenta_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_magenta_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/magenta_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_light_blue_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_blue_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_light_blue_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_blue_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_light_blue_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_blue_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_light_blue_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_blue_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_light_blue_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_blue_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_yellow_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/yellow_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_yellow_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/yellow_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_yellow_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/yellow_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_yellow_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/yellow_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_yellow_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/yellow_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_lime_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/lime_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_lime_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/lime_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_lime_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/lime_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_lime_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/lime_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_lime_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/lime_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_pink_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/pink_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_pink_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/pink_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_pink_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/pink_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_pink_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/pink_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_pink_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/pink_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_gray_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gray_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_gray_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gray_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_gray_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gray_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_gray_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gray_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_gray_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gray_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_light_gray_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_gray_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_light_gray_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_gray_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_light_gray_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_gray_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_light_gray_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_gray_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_light_gray_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/light_gray_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_cyan_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/cyan_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_cyan_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/cyan_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_cyan_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/cyan_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_cyan_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/cyan_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_cyan_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/cyan_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_purple_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/purple_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_purple_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/purple_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_purple_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/purple_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_purple_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/purple_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_purple_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/purple_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_blue_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/blue_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_blue_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/blue_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_blue_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/blue_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_blue_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/blue_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_blue_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/blue_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_brown_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/brown_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_brown_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/brown_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_brown_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/brown_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_brown_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/brown_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_brown_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/brown_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_green_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/green_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_green_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/green_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_green_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/green_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_green_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/green_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_green_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/green_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_red_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/red_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_red_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/red_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_red_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/red_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_red_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/red_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_red_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/red_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_black_dye_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/black_dye_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_black_dye_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/black_dye_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_black_dye_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/black_dye_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_black_dye_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/black_dye_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_black_dye_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/black_dye_full"
+        }
+      },
+      {
+        "when": "vexp:jar_redstone_dust_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/redstone_dust_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_redstone_dust_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/redstone_dust_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_redstone_dust_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/redstone_dust_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_redstone_dust_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/redstone_dust_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_redstone_dust_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/redstone_dust_full"
+        }
+      },
+      {
+        "when": "vexp:jar_glowstone_dust_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/glowstone_dust_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_glowstone_dust_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/glowstone_dust_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_glowstone_dust_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/glowstone_dust_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_glowstone_dust_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/glowstone_dust_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_glowstone_dust_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/glowstone_dust_full"
+        }
+      },
+      {
+        "when": "vexp:jar_gunpowder_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gunpowder_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_gunpowder_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gunpowder_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_gunpowder_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gunpowder_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_gunpowder_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gunpowder_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_gunpowder_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/gunpowder_full"
+        }
+      },
+      {
+        "when": "vexp:jar_sugar_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/sugar_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_sugar_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/sugar_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_sugar_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/sugar_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_sugar_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/sugar_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_sugar_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/sugar_full"
+        }
+      },
+      {
+        "when": "vexp:jar_bone_meal_almost_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/bone_meal_almost_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_bone_meal_half_empty",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/bone_meal_half_empty"
+        }
+      },
+      {
+        "when": "vexp:jar_bone_meal_half_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/bone_meal_half_full"
+        }
+      },
+      {
+        "when": "vexp:jar_bone_meal_almost_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/bone_meal_almost_full"
+        }
+      },
+      {
+        "when": "vexp:jar_bone_meal_full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/jar/jars_by_content/bone_meal_full"
         }
       }
     ],

@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/decorative/jar/jar_half_empty",
+  "textures": {
+    "dust": "vexp:block/decorative/jar/yellow_dye_in_jar"
+  }
+}
