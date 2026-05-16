@@ -15,6 +15,8 @@
           "item": "gauntlets",
           "material": "iron",
           "combo": {
+            "desc": "Contundentes y resistentes.",
+            "rc_desc": "Atrapa al enemigo.",
             "damage": 3,
             "cooldown": 6,
             "right_click_cooldown": 30,
@@ -51,7 +53,7 @@
         }
       ],
       "minecraft:custom_model_data": {
-        "strings": ["vexp:iron-gauntlet"]
+        "strings": ["vexp:iron_gauntlet"]
       },
       "minecraft:repairable": {
         "items": ["minecraft:iron_ingot"]

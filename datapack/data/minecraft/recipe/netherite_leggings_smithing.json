@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "netherite",
           "armor": {
+            "desc": "Forjadas en las profundidades del Nether.",
             "type": "netherite",
-            "slot": "leggings"
+            "slot": "leggings",
+            "stats": {
+              "defense": 6,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

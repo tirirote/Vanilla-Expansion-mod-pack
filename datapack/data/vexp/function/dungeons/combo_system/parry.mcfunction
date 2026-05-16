@@ -1,4 +1,10 @@
 # General parry window: trigger if player took damage during active parry timer
+# Proactive damage reduction
+effect give @s minecraft:resistance 2 2 true
+
+# Attempt projectile deflect while parry window is active
+function vexp:dungeons/combo_system/hooks/parry_deflect
+
 scoreboard players operation #parry_delta vexp.math = @s vexp.damage_taken
 scoreboard players operation #parry_delta vexp.math -= @s vexp.parry_damage_snapshot
 

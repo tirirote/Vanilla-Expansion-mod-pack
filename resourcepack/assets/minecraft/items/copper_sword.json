@@ -11,7 +11,7 @@
         }
       },
       {
-        "when": "vexp:copper-scythe",
+        "when": "vexp:copper_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -20,25 +20,25 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/copper-scythe"
+                "model": "vexp:item/dungeons/copper_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/copper-scythe-hand"
+            "model": "vexp:item/dungeons/copper_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:copper-rapier",
+        "when": "vexp:copper_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/copper-rapier"
+          "model": "vexp:item/dungeons/copper_rapier"
         }
       },
       {
-        "when": "vexp:copper-gauntlet",
+        "when": "vexp:copper_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -47,13 +47,13 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/copper-gauntlet"
+                "model": "vexp:item/dungeons/copper_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/copper-gauntlet-hand"
+            "model": "vexp:item/dungeons/copper_gauntlet_hand"
           }
         }
       }

@@ -14,6 +14,8 @@
           "type": "short_combo",
           "item": "bow",
           "combo": {
+            "desc": "Sencillo y hecho a mano.",
+            "rc_desc": "Combo a distancia.",
             "damage": 2,
             "cooldown": 8,
             "right_click_cooldown": 20,

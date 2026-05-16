@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M"],
+  "key": {
+    "M": "minecraft:bone_block"
+  },
+  "result": {
+    "id": "minecraft:iron_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Casco de Hueso",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone_helmet"]
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.skeleton.step",
+        "asset_id": "vexp:bone",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "bone",
+          "armor": {
+            "desc": "Ligero y macabro.",
+            "type": "bone",
+            "slot": "helmet",
+            "stats": {
+              "defense": 2,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

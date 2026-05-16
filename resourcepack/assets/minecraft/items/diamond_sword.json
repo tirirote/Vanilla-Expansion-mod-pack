@@ -11,7 +11,7 @@
         }
       },
       {
-        "when": "vexp:diamond-scythe",
+        "when": "vexp:diamond_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -20,25 +20,25 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/diamond-scythe"
+                "model": "vexp:item/dungeons/diamond_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/diamond-scythe-hand"
+            "model": "vexp:item/dungeons/diamond_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:diamond-rapier",
+        "when": "vexp:diamond_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/diamond-rapier"
+          "model": "vexp:item/dungeons/diamond_rapier"
         }
       },
       {
-        "when": "vexp:diamond-gauntlet",
+        "when": "vexp:diamond_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -47,13 +47,74 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/diamond-gauntlet"
+                "model": "vexp:item/dungeons/diamond_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/diamond-gauntlet-hand"
+            "model": "vexp:item/dungeons/diamond_gauntlet_hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:glowing_sword",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/glowing_sword"
+        }
+      },
+      {
+        "when": "vexp:glowing_dagger",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/glowing_dagger"
+        }
+      },
+      {
+        "when": "vexp:glowing_rapier",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/glowing_rapier"
+        }
+      },
+      {
+        "when": "vexp:glowing_gauntlet",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/glowing_gauntlet"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/glowing_gauntlet_hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:glowing_scythe",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/glowing_scythe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/glowing_scythe_hand"
           }
         }
       }

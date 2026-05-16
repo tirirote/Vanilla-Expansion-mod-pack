@@ -15,6 +15,9 @@
           "item": "dagger",
           "material": "gold",
           "combo": {
+            "desc": "Elegante y rápida.",
+            "rc_desc": "Arrojadiza.",
+            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
             "damage": 4,
             "cooldown": 2,
             "right_click_cooldown": 12,

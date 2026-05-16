@@ -15,6 +15,10 @@
           "item": "scythe",
           "material": "netherite",
           "combo": {
+            "desc": "Abismalmente poderosa.",
+            "rc_desc": "Ataque ígneo a distancia.",
+            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
+            "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 12,
             "cooldown": 58,
             "right_click_cooldown": 36,
@@ -28,7 +32,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:netherite-scythe"]
+        "strings": ["vexp:netherite_scythe"]
       },
       "minecraft:max_damage": 2031,
       "minecraft:damage": 0,

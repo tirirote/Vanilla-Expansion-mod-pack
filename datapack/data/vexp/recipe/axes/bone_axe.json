@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["BB ", "BS ", " S "],
   "key": {
-    "B": "minecraft:bone",
+    "B": "minecraft:bone_block",
     "S": "minecraft:stick"
   },
   "result": {
@@ -15,6 +15,8 @@
           "item": "axe",
           "material": "bone",
           "combo": {
+            "desc": "Afilada y macabra.",
+            "rc_desc": "Golpe giratorio en área.",
             "damage": 6,
             "cooldown": 20,
             "right_click_cooldown": 12,
@@ -28,7 +30,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:bone-axe"]
+        "strings": ["vexp:bone_axe"]
       },
       "minecraft:attribute_modifiers": [
         {

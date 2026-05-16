@@ -25,7 +25,7 @@
         }
       },
       {
-        "when": "vexp:netherite-scythe",
+        "when": "vexp:netherite_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -34,18 +34,18 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/netherite-scythe"
+                "model": "vexp:item/dungeons/netherite_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/netherite-scythe-hand"
+            "model": "vexp:item/dungeons/netherite_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:resonance-scythe",
+        "when": "vexp:resonance_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -54,73 +54,46 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/resonance-scythe"
+                "model": "vexp:item/dungeons/resonance_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/resonance-scythe-hand"
+            "model": "vexp:item/dungeons/resonance_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:amethyst-scythe",
-        "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["gui", "ground", "fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:item/dungeons/amethyst-scythe"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "vexp:item/dungeons/amethyst-scythe-hand"
-          }
-        }
-      },
-      {
-        "when": "vexp:netherite-rapier",
+        "when": "vexp:netherite_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/netherite-rapier"
+          "model": "vexp:item/dungeons/netherite_rapier"
         }
       },
       {
-        "when": "vexp:resonance-sword",
+        "when": "vexp:resonance_sword",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/resonance_sword"
         }
       },
       {
-        "when": "vexp:amethyst-sword",
+        "when": "vexp:resonance_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/amethyst_sword"
+          "model": "vexp:item/dungeons/resonance_rapier"
         }
       },
       {
-        "when": "vexp:resonance-rapier",
+        "when": "vexp:amethyst_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/resonance-rapier"
+          "model": "vexp:item/dungeons/amethyst_rapier"
         }
       },
       {
-        "when": "vexp:amethyst-rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/amethyst-rapier"
-        }
-      },
-      {
-        "when": "vexp:netherite-gauntlet",
+        "when": "vexp:netherite_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -129,18 +102,18 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/netherite-gauntlet"
+                "model": "vexp:item/dungeons/netherite_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/netherite-gauntlet-hand"
+            "model": "vexp:item/dungeons/netherite_gauntlet_hand"
           }
         }
       },
       {
-        "when": "vexp:resonance-gauntlet",
+        "when": "vexp:resonance_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -149,33 +122,13 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/resonance-gauntlet"
+                "model": "vexp:item/dungeons/resonance_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/resonance-gauntlet-hand"
-          }
-        }
-      },
-      {
-        "when": "vexp:amethyst-gauntlet",
-        "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["gui", "ground", "fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:item/dungeons/amethyst-gauntlet"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "vexp:item/dungeons/amethyst-gauntlet-hand"
+            "model": "vexp:item/dungeons/resonance_gauntlet_hand"
           }
         }
       }

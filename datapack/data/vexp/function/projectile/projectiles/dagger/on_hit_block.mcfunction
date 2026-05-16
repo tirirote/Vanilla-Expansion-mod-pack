@@ -24,10 +24,11 @@ execute if entity @s[tag=vexp.stone] run tag @e[tag=vexp.temp_stuck,sort=nearest
 execute if entity @s[tag=vexp.bone] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.bone
 execute if entity @s[tag=vexp.gold] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.gold
 execute if entity @s[tag=vexp.diamond] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.diamond
+execute if entity @s[tag=vexp.glowing] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.glowing
 execute if entity @s[tag=vexp.copper] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.copper
 execute if entity @s[tag=vexp.netherite] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.netherite
 execute if entity @s[tag=vexp.echo] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.echo
-execute if entity @s[tag=vexp.amethyst] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.amethyst
+
 
 data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] Rotation set from entity @s Rotation
 
@@ -37,6 +38,6 @@ scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,li
 # Quality-specific projectile hooks
 execute if entity @s[tag=vexp.netherite] run function vexp:projectile/projectiles/dagger/netherite/on_hit_block
 execute if entity @s[tag=vexp.echo] run function vexp:projectile/projectiles/dagger/echo/on_hit_block
-execute if entity @s[tag=vexp.amethyst] run function vexp:projectile/projectiles/dagger/amethyst/on_hit_block
+execute if entity @s[tag=vexp.glowing] run function vexp:projectile/projectiles/dagger/glowing/on_hit_block
 
 execute as @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] at @s run function vexp:projectile/projectiles/dagger/stuck/setup

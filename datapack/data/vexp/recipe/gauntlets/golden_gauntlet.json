@@ -15,6 +15,9 @@
           "item": "gauntlets",
           "material": "gold",
           "combo": {
+            "desc": "Rápidos y elegantes.",
+            "rc_desc": "Atrapa al enemigo.",
+            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
             "damage": 2,
             "cooldown": 2,
             "right_click_cooldown": 30,
@@ -50,7 +53,9 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:custom_model_data": { "strings": ["vexp:golden-gauntlet"] },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:golden_gauntlet"]
+      },
       "minecraft:repairable": {
         "items": ["minecraft:gold_ingot"]
       },

@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:glowing_leggings",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/armor/glowing_leggings"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/diamond_leggings"
+    }
+  }
+}

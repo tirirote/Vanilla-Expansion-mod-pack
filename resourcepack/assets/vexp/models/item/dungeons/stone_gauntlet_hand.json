@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:item/dungeons/base_gauntlet_hand",
+  "textures": {
+    "overlay": "vexp:item/dungeons/gauntlet_overlay_stone"
+  }
+}

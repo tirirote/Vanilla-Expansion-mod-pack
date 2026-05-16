@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "leather",
           "armor": {
+            "desc": "Ideal para empezar a explorar.",
             "type": "leather",
-            "slot": "chestplate"
+            "slot": "chestplate",
+            "stats": {
+              "defense": 3,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

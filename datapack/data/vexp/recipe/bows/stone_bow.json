@@ -15,6 +15,8 @@
           "item": "bow",
           "material": "stone",
           "combo": {
+            "desc": "Tosco y confiable.",
+            "rc_desc": "Combo a distancia.",
             "damage": 3,
             "cooldown": 10,
             "right_click_cooldown": 20,

@@ -15,6 +15,9 @@
           "item": "sword",
           "material": "gold",
           "combo": {
+            "desc": "Rápida y elegante.",
+            "rc_desc": "Bloqueo elegante.",
+            "bonus_desc": "Brillo Dorado por 2s.",
             "damage": 4,
             "cooldown": 12,
             "right_click_cooldown": 24,

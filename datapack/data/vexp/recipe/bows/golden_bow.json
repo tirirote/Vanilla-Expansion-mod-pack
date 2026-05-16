@@ -15,6 +15,9 @@
           "item": "bow",
           "material": "gold",
           "combo": {
+            "desc": "Elegante y rápido.",
+            "rc_desc": "Combo elegante a distancia.",
+            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
             "damage": 3,
             "cooldown": 15,
             "right_click_cooldown": 20,

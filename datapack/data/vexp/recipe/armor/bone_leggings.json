@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M", "M M"],
+  "key": {
+    "M": "minecraft:bone_block"
+  },
+  "result": {
+    "id": "minecraft:iron_leggings",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Grebas de Hueso",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone_leggings"]
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "equip_sound": "minecraft:entity.skeleton.step",
+        "asset_id": "vexp:bone",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "bone",
+          "armor": {
+            "desc": "Resistentes y macabras.",
+            "type": "bone",
+            "slot": "leggings",
+            "stats": {
+              "defense": 4,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

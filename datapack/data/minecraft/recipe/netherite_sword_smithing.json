@@ -15,6 +15,10 @@
           "item": "sword",
           "material": "netherite",
           "combo": {
+            "desc": "Abismalmente poderosa.",
+            "rc_desc": "Bloquea y quema a los enemigos cercanos.",
+            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
+            "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 10,
             "cooldown": 42,
             "right_click_cooldown": 24,

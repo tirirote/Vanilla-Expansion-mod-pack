@@ -1,6 +1,6 @@
 {
-    "parent": "vexp:item/dungeons/dagger_handheld",
-    "textures": {
-        "layer0": "vexp:item/dungeons/stone-dagger"
-    }
+  "parent": "vexp:item/dungeons/dagger_handheld",
+  "textures": {
+    "layer0": "vexp:item/dungeons/stone_dagger"
+  }
 }

@@ -6,9 +6,10 @@ execute positioned ^ ^ ^5 as @e[predicate=vexp:is_target,distance=..3.5,limit=1,
 
 execute as @e[predicate=vexp:is_target,distance=..6,limit=1,sort=nearest,tag=vexp.state.catched] run function vexp:dungeons/states/echo_marked
 
+#Buff
+function vexp:dungeons/states/echo_buffed
+
 #Feedback
-#Netherite weapons hit particles
-particle instant_effect{color:7733240} ~ ~ ~ 0.2 0.2 0.2 0.1 1
-particle glow ~ ~ ~ 0.2 0.2 0.2 0.1 3
+particle sculk_soul ~ ~ ~ 0.2 0.2 0.2 0.1 3
 function vexp:utils/feedback/dust_particle {initialColor: [0.0, 0.0, 0.0], finalColor: [0.4, 0.7, 0.7], scale: 1.7, dX: .5, dY: .5, dZ: .5, speed: 0.05, count: 5}
 function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

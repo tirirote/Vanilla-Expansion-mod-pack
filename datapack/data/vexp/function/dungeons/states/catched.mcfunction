@@ -3,7 +3,7 @@
 # Sets up the catch with a 20-tick timer
 
 tag @s add vexp.state.catched
-scoreboard players set @s vexp.dstate 20
+scoreboard players set @s vexp.dstate 10
 tag @p[tag=!vexp.catch.owner,distance=..10,limit=1] add vexp.catch.owner
 
 #Feedback

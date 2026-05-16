@@ -1,5 +1,4 @@
 #Netherite weapons hit particles
-particle trial_spawner_detection ~ ~ ~ 0.25 0.25 0.25 .05 1
 particle flash{color:-28360} ~ ~ ~ 0.0 0.0 0.0 1 0
 particle flame ~ ~ ~ .25 .25 .25 0.01 3
 particle lava ~ ~ ~ .2 .2 .2 0 1

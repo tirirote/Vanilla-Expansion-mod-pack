@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "diamond",
           "armor": {
+            "desc": "La mejor protección por excelencia.",
             "type": "diamond",
-            "slot": "boots"
+            "slot": "boots",
+            "stats": {
+              "defense": 3,
+              "toughness": 2,
+              "knockback_resistance": 0.0
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

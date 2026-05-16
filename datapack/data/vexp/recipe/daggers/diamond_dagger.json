@@ -15,8 +15,11 @@
           "item": "dagger",
           "material": "diamond",
           "combo": {
+            "desc": "Rápida y equilibrada.",
+            "rc_desc": "Arrojadiza y precisa.",
+            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
             "damage": 5,
-            "cooldown": 7,
+            "cooldown": 6,
             "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,

@@ -15,6 +15,9 @@
           "item": "axe",
           "material": "gold",
           "combo": {
+            "desc": "Rápida y elegante.",
+            "rc_desc": "Golpe elegante en área.",
+            "bonus_desc": "Brillo Dorado por 2s.",
             "damage": 4,
             "cooldown": 10,
             "right_click_cooldown": 12,

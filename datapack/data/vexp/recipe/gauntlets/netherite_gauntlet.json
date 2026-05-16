@@ -15,6 +15,10 @@
           "item": "gauntlets",
           "material": "netherite",
           "combo": {
+            "desc": "Abismalmente poderosos.",
+            "rc_desc": "Atrapa y abrasa al enemigo.",
+            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
+            "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 6,
             "cooldown": 10,
             "right_click_cooldown": 30,
@@ -50,7 +54,9 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:custom_model_data": { "strings": ["vexp:netherite-gauntlet"] },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:netherite_gauntlet"]
+      },
       "minecraft:repairable": {
         "items": ["minecraft:netherite_ingot"]
       },

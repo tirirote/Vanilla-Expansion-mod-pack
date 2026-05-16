@@ -14,6 +14,8 @@
           "type": "short_combo",
           "item": "axe",
           "combo": {
+            "desc": "Tosca y confiable.",
+            "rc_desc": "Golpe giratorio en área.",
             "damage": 5,
             "cooldown": 16,
             "right_click_cooldown": 12,

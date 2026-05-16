@@ -15,6 +15,8 @@
           "item": "scythe",
           "material": "iron",
           "combo": {
+            "desc": "Imponente y confiable.",
+            "rc_desc": "Ataque ligero a distancia.",
             "damage": 7,
             "cooldown": 48,
             "right_click_cooldown": 36,
@@ -28,7 +30,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:iron-scythe"]
+        "strings": ["vexp:iron_scythe"]
       },
       "minecraft:max_damage": 250,
       "minecraft:damage": 0,

@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "iron",
           "armor": {
+            "desc": "Resistentes y confiables.",
             "type": "iron",
-            "slot": "boots"
+            "slot": "boots",
+            "stats": {
+              "defense": 2,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

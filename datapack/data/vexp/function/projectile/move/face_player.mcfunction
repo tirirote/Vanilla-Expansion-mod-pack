@@ -1,7 +1,7 @@
 # projectile/move/face_player.mcfunction
 # Copiar la rotación del dueño al proyectil cada tick.
 # Búsqueda por vexp.id — tag vexp.projectile_owner se elimina en spawn.
-# @s = proyectil. Sin macro.
+# @s = proyectil. Con macro (usa $(height) y $(radius)).
 
 scoreboard players operation #face_owner_id vexp.math = @s vexp.id
 tag @s add vexp.face_projectile_temp

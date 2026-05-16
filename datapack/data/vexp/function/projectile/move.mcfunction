@@ -13,7 +13,7 @@ execute store result score #proj_face vexp.math run data get entity @s data.proj
 execute store result score #proj_radius vexp.math run data get entity @s data.proj.radius 100
 
 # Paso 1 — face_player: orientar al proyectil como el dueño (antes de mover)
-execute if score #proj_face vexp.math matches 1.. run function vexp:projectile/move/face_player
+execute if score #proj_face vexp.math matches 1.. unless score #proj_radius vexp.math matches 1.. unless score #proj_radius vexp.math matches ..-1 run function vexp:projectile/move/face_player with entity @s data.proj
 
 # Paso 2 — spin condicional
 #   - sin face_player + órbita: spin progresivo estable

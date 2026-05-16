@@ -11,7 +11,7 @@
         }
       },
       {
-        "when": "vexp:wooden-scythe",
+        "when": "vexp:wooden_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -20,25 +20,25 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/wooden-scythe"
+                "model": "vexp:item/dungeons/wooden_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/wooden-scythe-hand"
+            "model": "vexp:item/dungeons/wooden_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:wooden-rapier",
+        "when": "vexp:wooden_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/wooden-rapier"
+          "model": "vexp:item/dungeons/wooden_rapier"
         }
       },
       {
-        "when": "vexp:wooden-gauntlet",
+        "when": "vexp:wooden_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -47,13 +47,13 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/wooden-gauntlet"
+                "model": "vexp:item/dungeons/wooden_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/wooden-gauntlet-hand"
+            "model": "vexp:item/dungeons/wooden_gauntlet_hand"
           }
         }
       }

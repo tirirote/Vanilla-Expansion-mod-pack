@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M"],
+  "key": {
+    "M": "minecraft:glow_ink_sac"
+  },
+  "result": {
+    "id": "minecraft:diamond_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Casco Luminiscente",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:glowing_helmet"]
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:item.armor.equip_diamond",
+        "asset_id": "vexp:glowing",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:max_damage": 800,
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "glowing",
+          "armor": {
+            "desc": "Sigiloso y ligero.",
+            "type": "glowing",
+            "slot": "helmet",
+            "stats": {
+              "defense": 3,
+              "toughness": 1,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

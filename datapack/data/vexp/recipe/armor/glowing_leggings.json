@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M", "M M"],
+  "key": {
+    "M": "minecraft:glow_ink_sac"
+  },
+  "result": {
+    "id": "minecraft:diamond_leggings",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Grebas Luminiscentes",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:glowing_leggings"]
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "equip_sound": "minecraft:item.armor.equip_diamond",
+        "asset_id": "vexp:glowing",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:max_damage": 800,
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "glowing",
+          "armor": {
+            "desc": "Sigilosas y ligeras.",
+            "type": "glowing",
+            "slot": "leggings",
+            "stats": {
+              "defense": 5,
+              "toughness": 1,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

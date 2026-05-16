@@ -6,6 +6,9 @@ execute positioned ^ ^ ^5 as @e[predicate=vexp:is_target,distance=..3.5,limit=1,
 
 execute as @e[predicate=vexp:is_target,distance=..6,limit=1,sort=nearest,tag=vexp.state.catched] run function vexp:dungeons/states/nether_marked
 
+#Buff
+function vexp:dungeons/states/nether_buffed
+
 #Feedback
 #Netherite weapons hit particles
 particle trial_spawner_detection ~ ~ ~ 0.25 0.25 0.25 .05 5

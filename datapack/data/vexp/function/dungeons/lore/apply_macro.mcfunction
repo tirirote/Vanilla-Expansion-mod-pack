@@ -1,7 +1,7 @@
 # dungeons/lore/apply_macro.mcfunction
 # Called with storage vexp:temp lore_apply
 # {
-#   desc, rc_desc
+#   desc, rc_desc, bonus_desc
 #   combo_dmg, combo_reach, combo_range, combo_cooldown right_click_cooldown,
 #   custom_data: <compound>
 # }

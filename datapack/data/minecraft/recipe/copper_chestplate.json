@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "minecraft:copper_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "copper",
+          "armor": {
+            "desc": "Ligeramente resistentes.",
+            "type": "copper",
+            "slot": "chestplate",
+            "stats": {
+              "defense": 6,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    }
+  }
+}

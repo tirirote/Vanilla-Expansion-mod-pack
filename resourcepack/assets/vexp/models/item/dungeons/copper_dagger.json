@@ -1,6 +1,6 @@
 {
   "parent": "vexp:item/dungeons/dagger_handheld",
   "textures": {
-    "layer0": "vexp:item/dungeons/copper-dagger"
+    "layer0": "vexp:item/dungeons/copper_dagger"
   }
 }

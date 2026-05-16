@@ -4,6 +4,9 @@
 
 execute positioned ^ ^ ^5 as @e[predicate=vexp:is_target,tag=!vexp.state.catched,distance=..3.5,limit=1,sort=nearest] at @s run function vexp:dungeons/states/catched
 
+#Buff
+function vexp:dungeons/states/diamond_buffed
+
 #Feedback
 particle instant_effect{color:9437155} ~ ~ ~ 0.5 0.5 0.5 0 1
 particle instant_effect{color:49358} ~ ~ ~ 0.5 0.5 0.5 0 2

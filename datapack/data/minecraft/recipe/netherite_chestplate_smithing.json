@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "netherite",
           "armor": {
+            "desc": "Forjada en las profundidades del Nether.",
             "type": "netherite",
-            "slot": "chestplate"
+            "slot": "chestplate",
+            "stats": {
+              "defense": 8,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

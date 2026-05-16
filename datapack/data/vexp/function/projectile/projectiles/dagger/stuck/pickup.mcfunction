@@ -1,6 +1,8 @@
 # 1. Identificar al jugador y guardar ID
 execute on target run tag @s add vexp.picker
 execute on attacker run tag @s add vexp.picker
+execute at @s as @p[distance=..1,limit=1] run tag @s add vexp.picker
+
 scoreboard players operation #temp vexp.id = @s vexp.id
 
 # 2. Seleccionar el marker stuck exacto por ID
@@ -16,7 +18,7 @@ execute if entity @e[tag=vexp.current_pickup,tag=vexp.diamond,limit=1] run tag @
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.copper,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.copper
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.netherite,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.netherite
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.echo,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.echo
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.amethyst,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.amethyst
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.glowing,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.glowing
 
 # Pasar el daño acumulado al picker
 execute as @e[tag=vexp.current_pickup,limit=1] run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage

@@ -15,6 +15,10 @@
           "item": "sword",
           "material": "echo",
           "combo": {
+            "desc": "Poderosa y aterradora.",
+            "rc_desc": "Bloqueo oscuro.",
+            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "status_desc": "Aplica [Pánico].",
             "damage": 9,
             "cooldown": 36,
             "right_click_cooldown": 24,
@@ -28,7 +32,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:resonance-sword"]
+        "strings": ["vexp:resonance_sword"]
       },
       "minecraft:max_damage": 1891,
       "minecraft:damage": 0,

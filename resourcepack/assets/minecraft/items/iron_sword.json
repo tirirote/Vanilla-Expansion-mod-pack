@@ -25,21 +25,21 @@
         }
       },
       {
-        "when": "vexp:bone-sword",
+        "when": "vexp:bone_sword",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/bone_sword"
         }
       },
       {
-        "when": "vexp:bone-rapier",
+        "when": "vexp:bone_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/bone-rapier"
+          "model": "vexp:item/dungeons/bone_rapier"
         }
       },
       {
-        "when": "vexp:bone-gauntlet",
+        "when": "vexp:bone_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -48,18 +48,18 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/bone-gauntlet"
+                "model": "vexp:item/dungeons/bone_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/bone-gauntlet-hand"
+            "model": "vexp:item/dungeons/bone_gauntlet_hand"
           }
         }
       },
       {
-        "when": "vexp:bone-scythe",
+        "when": "vexp:bone_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -68,18 +68,18 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/bone-scythe"
+                "model": "vexp:item/dungeons/bone_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/bone-scythe-hand"
+            "model": "vexp:item/dungeons/bone_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:iron-scythe",
+        "when": "vexp:iron_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -88,25 +88,25 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/iron-scythe"
+                "model": "vexp:item/dungeons/iron_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/iron-scythe-hand"
+            "model": "vexp:item/dungeons/iron_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:iron-rapier",
+        "when": "vexp:iron_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/iron-rapier"
+          "model": "vexp:item/dungeons/iron_rapier"
         }
       },
       {
-        "when": "vexp:iron-gauntlet",
+        "when": "vexp:iron_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -115,13 +115,13 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/iron-gauntlet"
+                "model": "vexp:item/dungeons/iron_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/iron-gauntlet-hand"
+            "model": "vexp:item/dungeons/iron_gauntlet_hand"
           }
         }
       }

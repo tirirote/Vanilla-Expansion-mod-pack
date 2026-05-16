@@ -10,6 +10,7 @@ execute if entity @s[tag=vexp.gold] run data modify storage vexp:dungeons.weapon
 execute if entity @s[tag=vexp.diamond] run data modify storage vexp:dungeons.weapon params merge value {item_id:"bow", name:"Arco de Diamante", model:"vexp:diamond_bow", quality:"diamond", combo_type:"short_combo", dmg:5.0, spd:-3.1, combo_dmg:8, combo_cooldown:22, right_click_cooldown:20, combo_range:5.2, combo_reach:4.2, reach_mod:0.0, max_damage:1024}
 execute if entity @s[tag=vexp.netherite] run data modify storage vexp:dungeons.weapon params merge value {item_id:"bow", name:"Arco de Netherita", model:"vexp:netherite_bow", quality:"netherite", combo_type:"short_combo", dmg:6.0, spd:-2.7, combo_dmg:10, combo_cooldown:15, right_click_cooldown:20, combo_range:5.5, combo_reach:4.5, reach_mod:0.0, max_damage:1280}
 execute if entity @s[tag=vexp.echo] run data modify storage vexp:dungeons.weapon params merge value {item_id:"bow", name:"Arco Resonante", model:"vexp:resonance_bow", quality:"echo", combo_type:"short_combo", dmg:6.0, spd:-2.7, combo_dmg:11, combo_cooldown:15, right_click_cooldown:20, combo_range:5.5, combo_reach:4.5, reach_mod:0.0, max_damage:1280}
+execute if entity @s[tag=vexp.glowing] run data modify storage vexp:dungeons.weapon params merge value {item_id:"bow", name:"Arco Luminiscente", model:"vexp:glowing_bow", quality:"glowing", combo_type:"short_combo", dmg:5.0, spd:-3.0, combo_dmg:6, combo_cooldown:22, right_click_cooldown:20, combo_range:5.2, combo_reach:4.2, reach_mod:0.0, max_damage:800}
 
 function vexp:dungeons/bow/give_macro with storage vexp:dungeons.weapon params
 
@@ -22,5 +23,6 @@ tag @s remove vexp.diamond
 tag @s remove vexp.copper
 tag @s remove vexp.netherite
 tag @s remove vexp.echo
+tag @s remove vexp.glowing
 scoreboard players set @s vexp.damage 0
 data remove storage vexp:dungeons.weapon params

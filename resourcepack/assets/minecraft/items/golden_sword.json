@@ -11,7 +11,7 @@
         }
       },
       {
-        "when": "vexp:golden-scythe",
+        "when": "vexp:golden_scythe",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -20,25 +20,25 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/golden-scythe"
+                "model": "vexp:item/dungeons/golden_scythe"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/golden-scythe-hand"
+            "model": "vexp:item/dungeons/golden_scythe_hand"
           }
         }
       },
       {
-        "when": "vexp:golden-rapier",
+        "when": "vexp:golden_rapier",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/golden-rapier"
+          "model": "vexp:item/dungeons/golden_rapier"
         }
       },
       {
-        "when": "vexp:golden-gauntlet",
+        "when": "vexp:golden_gauntlet",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
@@ -47,13 +47,13 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/dungeons/golden-gauntlet"
+                "model": "vexp:item/dungeons/golden_gauntlet"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/golden-gauntlet-hand"
+            "model": "vexp:item/dungeons/golden_gauntlet_hand"
           }
         }
       }

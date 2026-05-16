@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "WW ", "LL "],
   "key": {
-    "W": "minecraft:bone",
+    "W": "minecraft:bone_block",
     "L": "minecraft:leather"
   },
   "result": {
@@ -15,6 +15,8 @@
           "item": "gauntlets",
           "material": "bone",
           "combo": {
+            "desc": "Rápidos y macabros.",
+            "rc_desc": "Atrapa al enemigo.",
             "damage": 2,
             "cooldown": 5,
             "right_click_cooldown": 30,
@@ -51,7 +53,7 @@
         }
       ],
       "minecraft:custom_model_data": {
-        "strings": ["vexp:bone-gauntlet"]
+        "strings": ["vexp:bone_gauntlet"]
       },
       "minecraft:repairable": {
         "items": ["minecraft:bone"]

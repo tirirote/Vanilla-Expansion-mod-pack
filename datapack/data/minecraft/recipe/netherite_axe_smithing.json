@@ -15,6 +15,10 @@
           "item": "axe",
           "material": "netherite",
           "combo": {
+            "desc": "Poderosa y abrasadora.",
+            "rc_desc": "Gran golpe ardiente en área.",
+            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
+            "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 11,
             "cooldown": 36,
             "right_click_cooldown": 12,

@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "gold",
           "armor": {
+            "desc": "Elegante y ligero.",
             "type": "gold",
-            "slot": "helmet"
+            "slot": "helmet",
+            "stats": {
+              "defense": 2,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

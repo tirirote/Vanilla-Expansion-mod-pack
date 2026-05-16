@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["BBB", "  S", "  S"],
   "key": {
-    "B": "minecraft:bone",
+    "B": "minecraft:bone_block",
     "S": "minecraft:stick"
   },
   "result": {
@@ -15,6 +15,8 @@
           "item": "scythe",
           "material": "bone",
           "combo": {
+            "desc": "Sencillamente macabra.",
+            "rc_desc": "Ataque ligero a distancia.",
             "damage": 5,
             "cooldown": 36,
             "right_click_cooldown": 36,
@@ -28,7 +30,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:bone-scythe"]
+        "strings": ["vexp:bone_scythe"]
       },
       "minecraft:max_damage": 96,
       "minecraft:damage": 0,

@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:resonance_leggings",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/armor/resonance_leggings"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_leggings"
+    }
+  }
+}

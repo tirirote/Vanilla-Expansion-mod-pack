@@ -15,8 +15,10 @@
           "item": "dagger",
           "material": "copper",
           "combo": {
+            "desc": "Rápida y brillante.",
+            "rc_desc": "Arrojadiza.",
             "damage": 3,
-            "cooldown": 5,
+            "cooldown": 4,
             "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,

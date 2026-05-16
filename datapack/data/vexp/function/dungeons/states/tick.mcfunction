@@ -6,9 +6,16 @@ execute as @e[tag=vexp.nether_marked] at @s run function vexp:dungeons/states/ti
 execute as @a[tag=vexp.nether_buffed] at @s run function vexp:dungeons/states/tick/nether_buffed
 
 # 2. ECHO MARKED EFFECTS
+execute as @e[tag=vexp.echo_scared] at @s run function vexp:dungeons/states/tick/echo_scared
 execute as @e[tag=vexp.echo_marked] at @s run function vexp:dungeons/states/tick/echo_marked
+
 execute as @a[tag=vexp.echo_buffed] at @s run function vexp:dungeons/states/tick/echo_buffed
 
+# 3. Glowing effects
+execute as @e[tag=vexp.glow_marked] at @s run function vexp:dungeons/states/tick/glow_marked
+execute as @e[tag=vexp.glow_confused] at @s run function vexp:dungeons/states/tick/glow_confused
+
+execute as @a[tag=vexp.glow_buffed] at @s run function vexp:dungeons/states/tick/glow_buffed
 #Subtle Buffs
 execute as @a[tag=vexp.gold_buffed] at @s run function vexp:dungeons/states/tick/gold_buffed
 execute as @a[tag=vexp.diamond_buffed] at @s run function vexp:dungeons/states/tick/diamond_buffed
@@ -27,7 +34,12 @@ execute as @e[tag=vexp.nether_buffed,scores={vexp.dstate=..0}] run tag @s remove
 execute as @a[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
 execute as @a[tag=vexp.gold_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.gold_buffed
 execute as @a[tag=vexp.diamond_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.diamond_buffed
+execute as @a[tag=vexp.glow_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_buffed
 
 #Entity tags
 execute as @e[tag=vexp.nether_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_marked
 execute as @e[tag=vexp.echo_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_marked
+execute as @e[tag=vexp.echo_scared,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_scared
+
+execute as @e[tag=vexp.glow_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_marked
+execute as @e[tag=vexp.glow_confused,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_confused

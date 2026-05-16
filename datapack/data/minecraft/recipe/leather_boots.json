@@ -13,10 +13,19 @@
           "item": "armor",
           "quality": "leather",
           "armor": {
+            "desc": "Ideales para empezar a explorar.",
             "type": "leather",
-            "slot": "boots"
+            "slot": "boots",
+            "stats": {
+              "defense": 1,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       }
     }
   }

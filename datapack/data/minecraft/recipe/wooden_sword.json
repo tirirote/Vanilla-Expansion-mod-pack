@@ -15,6 +15,8 @@
           "item": "sword",
           "material": "wood",
           "combo": {
+            "desc": "Sencilla y hecha a mano.",
+            "rc_desc": "Bloquea y desvía ataques.",
             "damage": 3,
             "cooldown": 12,
             "right_click_cooldown": 24,

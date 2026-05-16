@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "M M"],
+  "key": {
+    "M": "minecraft:bone_block"
+  },
+  "result": {
+    "id": "minecraft:iron_boots",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Botas de Hueso",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone_boots"]
+      },
+      "minecraft:equippable": {
+        "slot": "feet",
+        "equip_sound": "minecraft:entity.skeleton.step",
+        "asset_id": "vexp:bone",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "bone",
+          "armor": {
+            "desc": "Ligeras y macabras.",
+            "type": "bone",
+            "slot": "boots",
+            "stats": {
+              "defense": 1,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,9 @@
           "item": "sword",
           "material": "diamond",
           "combo": {
+            "desc": "Clásica y resistente.",
+            "rc_desc": "Bloquea y desvía ataques.",
+            "bonus_desc": "Dureza de Diamante por 2s.",
             "damage": 8,
             "cooldown": 36,
             "right_click_cooldown": 24,

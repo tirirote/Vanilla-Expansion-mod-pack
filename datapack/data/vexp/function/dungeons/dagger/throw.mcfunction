@@ -24,15 +24,16 @@ execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vex
 # Identificar material en mano y etiquetar proyectil
 # Utilizando la nueva estructura NBT vexp:{item:"dagger"}
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger",material:"bone"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.bone
-execute if items entity @s weapon.mainhand iron_sword[custom_data~{vexp:{item:"dagger"}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger",material:"bone"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.iron
-execute if items entity @s weapon.mainhand wooden_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.wood
-execute if items entity @s weapon.mainhand stone_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.stone
-execute if items entity @s weapon.mainhand golden_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.gold
-execute if items entity @s weapon.mainhand diamond_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.diamond
-execute if items entity @s weapon.mainhand copper_sword[custom_data~{vexp:{item:"dagger"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.copper
-execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger",combo:{quality:"netherite"}}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.netherite
-execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger",combo:{quality:"echo"}}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.echo
-execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger",combo:{quality:"amethyst"}}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.amethyst
+execute if items entity @s weapon.mainhand iron_sword[custom_data~{vexp:{item:"dagger",material:"iron"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.iron
+execute if items entity @s weapon.mainhand wooden_sword[custom_data~{vexp:{item:"dagger",material:"wood"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.wood
+execute if items entity @s weapon.mainhand stone_sword[custom_data~{vexp:{item:"dagger",material:"stone"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.stone
+execute if items entity @s weapon.mainhand golden_sword[custom_data~{vexp:{item:"dagger",material:"gold"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.gold
+execute if items entity @s weapon.mainhand copper_sword[custom_data~{vexp:{item:"dagger",material:"copper"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.copper
+execute if items entity @s weapon.mainhand diamond_sword[custom_data~{vexp:{item:"dagger",material:"diamond"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.diamond
+execute if items entity @s weapon.mainhand diamond_sword[custom_data~{vexp:{item:"dagger",material:"glowing"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.glowing
+execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger",material:"netherite"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.netherite
+execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger",material:"echo"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.echo
+execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{item:"dagger",material:"amethyst"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.amethyst
 
 
 # Ejecutar spawn del nuevo sistema sobre el proyectil

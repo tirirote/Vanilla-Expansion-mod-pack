@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" MT", "M T", " MT"],
   "key": {
-    "M": "minecraft:bone",
+    "M": "minecraft:bone_block",
     "T": "minecraft:string"
   },
   "result": {
@@ -15,6 +15,8 @@
           "item": "bow",
           "material": "bone",
           "combo": {
+            "desc": "Versátil y macabro.",
+            "rc_desc": "Combo a distancia.",
             "damage": 4,
             "cooldown": 12,
             "right_click_cooldown": 20,

@@ -8,14 +8,7 @@ tag @s add vexp.projectile_owner
 execute positioned ^ ^ ^1 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 execute as @e[type=minecraft:armor_stand,tag=vexp.scythe_projectile,tag=vexp.temp_projectile,sort=nearest,limit=1,distance=..4] at @s run function vexp:projectile/spawn
 
-#tag @s add vexp.projectile_owner
-#execute positioned ^-1 ^ ^.6 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
-#execute as @e[type=minecraft:armor_stand,tag=vexp.scythe_projectile,tag=vexp.temp_projectile,sort=nearest,limit=1,distance=..4] at @s run function vexp:projectile/spawn
-
-#tag @s add vexp.projectile_owner
-#execute positioned ^1 ^ ^.6 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
-#execute as @e[type=minecraft:armor_stand,tag=vexp.scythe_projectile,tag=vexp.temp_projectile,sort=nearest,limit=1,distance=..4] at @s run function vexp:projectile/spawn
-
 # Feedback
+particle sweep_attack ^ ^ ^2.5 0 0 0 0 0
 function vexp:utils/sound {sound: "minecraft:entity.evoker.cast_spell", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.breeze.shoot", type: "player"}

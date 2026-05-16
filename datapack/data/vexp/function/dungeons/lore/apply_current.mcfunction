@@ -2,27 +2,19 @@
 # @s is the player holding the item in main hand.
 
 # Default descriptor line.
-data modify storage vexp:temp lore_apply set value {desc:"Arma de combate",rc_desc:"Habilidad de click derecho"}
+data modify storage vexp:temp lore_apply set value {desc:"Arma de combate",rc_desc:"Habilidad de click derecho", bonus_desc:"Bonus de arma",status_desc:"Estado personalizado"}
 
-# Descriptor by weapon type.
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"sword"} run data modify storage vexp:temp lore_apply.desc set value "Clásica y equilibrada"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"axe"} run data modify storage vexp:temp lore_apply.desc set value "Frenesí de golpes"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"bow"} run data modify storage vexp:temp lore_apply.desc set value "Combo a distancia"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"dagger"} run data modify storage vexp:temp lore_apply.desc set value "Cortes rápidos"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"gauntlets"} run data modify storage vexp:temp lore_apply.desc set value "Golpes rápidos"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"rapier"} run data modify storage vexp:temp lore_apply.desc set value "Estocadas rápidas y precisas"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"scythe"} run data modify storage vexp:temp lore_apply.desc set value "Gran alcance y área"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"handgun"} run data modify storage vexp:temp lore_apply.desc set value "Gran distancia a base de pirotecnia"
+# Apply desc by weapon.
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.desc run data modify storage vexp:temp lore_apply.desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.desc
 
-# Ability by weapon type.
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"sword"} run data modify storage vexp:temp lore_apply.rc_desc set value "Realiza parry al próximo ataque"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"axe"} run data modify storage vexp:temp lore_apply.rc_desc set value "Realiza un tajo circular en área"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"bow"} run data modify storage vexp:temp lore_apply.rc_desc set value "Disparos rápidos y cargados"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"dagger"} run data modify storage vexp:temp lore_apply.rc_desc set value "Arroja la daga infligiendo daño"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"gauntlets"} run data modify storage vexp:temp lore_apply.rc_desc set value "Atrapa al enemigo"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"rapier"} run data modify storage vexp:temp lore_apply.rc_desc set value "Realiza un impulso hacia adelante"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"scythe"} run data modify storage vexp:temp lore_apply.rc_desc set value "Lanza un proyectil ligero"
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"handgun"} run data modify storage vexp:temp lore_apply.rc_desc set value "Dispara consumiendo munición del inventario"
+# Apply Ability desc by weapon.
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc run data modify storage vexp:temp lore_apply.rc_desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc
+
+# Apply Bonus desc by weapon.
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.bonus_desc run data modify storage vexp:temp lore_apply.bonus_desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.bonus_desc
+
+# Apply Status desc by weapon.
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.status_desc run data modify storage vexp:temp lore_apply.status_desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.status_desc
 
 # Read combo stats from current item custom_data.
 data modify storage vexp:temp lore_apply.combo_dmg set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.damage
@@ -76,4 +68,8 @@ data modify storage vexp:temp lore_apply.custom_data set from entity @s Selected
 data modify storage vexp:temp lore_apply.custom_data.vexp.lore_applied set value 1b
 
 # Apply lore + updated custom_data in one macro replacement.
-function vexp:dungeons/lore/apply_macro with storage vexp:temp lore_apply
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.bonus_desc if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.status_desc run function vexp:dungeons/lore/apply_macro_bonus_status with storage vexp:temp lore_apply
+
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.bonus_desc unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.status_desc run function vexp:dungeons/lore/apply_macro_bonus with storage vexp:temp lore_apply
+
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.bonus_desc run function vexp:dungeons/lore/apply_macro with storage vexp:temp lore_apply

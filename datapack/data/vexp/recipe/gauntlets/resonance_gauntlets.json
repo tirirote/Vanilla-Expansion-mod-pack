@@ -15,6 +15,10 @@
           "item": "gauntlets",
           "material": "echo",
           "combo": {
+            "desc": "Rápidos y aterradores.",
+            "rc_desc": "Atrapa y aterroriza al enemigo.",
+            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "status_desc": "Aplica [Pánico].",
             "damage": 5,
             "cooldown": 10,
             "right_click_cooldown": 30,
@@ -58,7 +62,7 @@
         }
       ],
       "minecraft:custom_model_data": {
-        "strings": ["vexp:resonance-gauntlet"]
+        "strings": ["vexp:resonance_gauntlet"]
       },
       "minecraft:repairable": {
         "items": ["minecraft:echo_shard"]

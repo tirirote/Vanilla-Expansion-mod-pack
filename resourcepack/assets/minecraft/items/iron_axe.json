@@ -4,10 +4,10 @@
     "property": "minecraft:custom_model_data",
     "cases": [
       {
-        "when": "vexp:bone-axe",
+        "when": "vexp:bone_axe",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/bone-axe"
+          "model": "vexp:item/dungeons/bone_axe"
         }
       }
     ],

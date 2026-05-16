@@ -14,6 +14,8 @@
           "type": "mid_combo",
           "item": "sword",
           "combo": {
+            "desc": "Tosca y confiable.",
+            "rc_desc": "Bloquea y desvía ataques.",
             "damage": 4,
             "cooldown": 16,
             "right_click_cooldown": 24,

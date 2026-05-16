@@ -12,9 +12,9 @@ execute if entity @s[tag=vexp.iron] run data modify entity @s data.proj.damage s
 execute if entity @s[tag=vexp.gold] run data modify entity @s data.proj.damage set value 3
 execute if entity @s[tag=vexp.diamond] run data modify entity @s data.proj.damage set value 5
 execute if entity @s[tag=vexp.copper] run data modify entity @s data.proj.damage set value 3
+execute if entity @s[tag=vexp.glowing] run data modify entity @s data.proj.damage set value 5
 execute if entity @s[tag=vexp.netherite] run data modify entity @s data.proj.damage set value 6
 execute if entity @s[tag=vexp.echo] run data modify entity @s data.proj.damage set value 6
-execute if entity @s[tag=vexp.amethyst] run data modify entity @s data.proj.damage set value 6
 
 
 # Copiar posición y rotación exacta del jugador (ojos)
@@ -30,9 +30,9 @@ execute if entity @s[tag=vexp.bone] run summon item_display ~ ~ ~ {Tags:["vexp.d
 execute if entity @s[tag=vexp.gold] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:golden_sword",components:{"minecraft:custom_model_data":{strings:["vexp:golden_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 execute if entity @s[tag=vexp.diamond] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:diamond_sword",components:{"minecraft:custom_model_data":{strings:["vexp:diamond_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 execute if entity @s[tag=vexp.copper] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:copper_sword",components:{"minecraft:custom_model_data":{strings:["vexp:copper_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
+execute if entity @s[tag=vexp.glowing] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:diamond_sword",components:{"minecraft:custom_model_data":{strings:["vexp:glowing_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 execute if entity @s[tag=vexp.netherite] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":{strings:["vexp:netherite_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 execute if entity @s[tag=vexp.echo] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":{strings:["vexp:resonance_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
-execute if entity @s[tag=vexp.amethyst] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_display","vexp.temp_display"],item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":{strings:["vexp:amethyst_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[.7f,.50f,-.30f,1f],right_rotation:[0f,0f,0f,1f]},item_display:"none",teleport_duration:1}
 
 # Link display to projectile by ID
 scoreboard players operation #temp vexp.id = @s vexp.id
@@ -45,4 +45,4 @@ tag @e[tag=vexp.temp_display] remove vexp.temp_display
 # Quality-specific projectile hooks
 execute if entity @s[tag=vexp.netherite] run function vexp:projectile/projectiles/dagger/netherite/on_spawn
 execute if entity @s[tag=vexp.echo] run function vexp:projectile/projectiles/dagger/echo/on_spawn
-execute if entity @s[tag=vexp.amethyst] run function vexp:projectile/projectiles/dagger/amethyst/on_spawn
+execute if entity @s[tag=vexp.glowing] run function vexp:projectile/projectiles/dagger/glowing/on_spawn

@@ -10,5 +10,5 @@ execute rotated as @s positioned ^ ^ ^0.8 run function vexp:projectile/utils/cre
 execute as @e[type=minecraft:armor_stand,tag=vexp.scythe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
 # Feedback
-particle sweep_attack ^ ^ ^1 0 0 0 0 0
+particle sweep_attack ^ ^ ^2.5 0 0 0 0 0
 function vexp:utils/sound {sound: "minecraft:entity.breeze.shoot", type: "player"}

@@ -15,6 +15,10 @@
           "item": "scythe",
           "material": "echo",
           "combo": {
+            "desc": "Abrumadora y aterradora.",
+            "rc_desc": "Ataque oscuro a distancia.",
+            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "status_desc": "Aplica [Pánico].",
             "damage": 10,
             "cooldown": 54,
             "right_click_cooldown": 36,
@@ -28,7 +32,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:resonance-scythe"]
+        "strings": ["vexp:resonance_scythe"]
       },
       "minecraft:max_damage": 1891,
       "minecraft:damage": 0,

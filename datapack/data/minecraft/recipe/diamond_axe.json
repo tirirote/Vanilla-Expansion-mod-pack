@@ -15,6 +15,9 @@
           "item": "axe",
           "material": "diamond",
           "combo": {
+            "desc": "Clásica y resistente.",
+            "rc_desc": "Gran golpe giratorio en área.",
+            "bonus_desc": "Dureza de Diamante por 2s.",
             "damage": 9,
             "cooldown": 32,
             "right_click_cooldown": 12,

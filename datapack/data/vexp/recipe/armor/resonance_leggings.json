@@ -8,13 +8,34 @@
     "id": "minecraft:netherite_leggings",
     "count": 1,
     "components": {
+      "minecraft:item_name": "Grebas Resonantes",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_leggings"]
+      },
+      "minecraft:equippable": {
+        "slot": "legs",
+        "equip_sound": "minecraft:entity.warden.tendril_clicks",
+        "asset_id": "vexp:resonance",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:custom_data": {
         "vexp": {
           "item": "armor",
           "quality": "echo",
           "armor": {
+            "desc": "Poderosas y ligeras.",
             "type": "resonance",
-            "slot": "leggings"
+            "slot": "leggings",
+            "stats": {
+              "defense": 6,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
           }
         }
       }

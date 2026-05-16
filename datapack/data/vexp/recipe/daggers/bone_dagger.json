@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", " B ", "S  "],
   "key": {
-    "B": "minecraft:bone",
+    "B": "minecraft:bone_block",
     "S": "minecraft:stick"
   },
   "result": {
@@ -15,8 +15,10 @@
           "item": "dagger",
           "material": "bone",
           "combo": {
+            "desc": "Rápida y macabra.",
+            "rc_desc": "Arrojadiza.",
             "damage": 3,
-            "cooldown": 4,
+            "cooldown": 3,
             "right_click_cooldown": 12,
             "range": 1.5,
             "reach": 1.5,

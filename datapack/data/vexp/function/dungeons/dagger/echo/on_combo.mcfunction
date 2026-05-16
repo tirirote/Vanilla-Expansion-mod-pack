@@ -3,8 +3,8 @@
 # Mark mob
 function vexp:dungeons/states/echo_marked
 
-#teleport player behind mob
-execute positioned ~ ~.05 ~ if block ^ ^ ^-5 #replaceable run tp @p[tag=vexp.attacker,limit=1] ^ ^ ^-5 facing entity @s
+#Teleport player behind mob
+execute if data entity @s HurtTime positioned ~ ~.05 ~ if block ^ ^ ^-1 #replaceable run tp @p[tag=vexp.attacker,limit=1] ^ ^ ^-1 facing entity @s feet
 
 #Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed

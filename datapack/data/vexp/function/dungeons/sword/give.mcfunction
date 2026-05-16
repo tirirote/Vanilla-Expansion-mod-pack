@@ -10,7 +10,7 @@ execute if entity @s[tag=vexp.gold] run data modify storage vexp:dungeons.weapon
 execute if entity @s[tag=vexp.diamond] run data modify storage vexp:dungeons.weapon params merge value {item_id:"diamond_sword", name:"Espada de Diamante", model:"vexp:none", quality:"diamond", combo_type:"short_combo", dmg:7.0, spd:-2.9, combo_dmg:8, combo_cooldown:36, right_click_cooldown:24, combo_range:4.5, combo_reach:2.5, reach_mod:-0.3, max_damage:1561}
 execute if entity @s[tag=vexp.netherite] run data modify storage vexp:dungeons.weapon params merge value {item_id:"netherite_sword", name:"Espada de Netherite", model:"vexp:none", quality:"netherite", combo_type:"mid_combo", dmg:8.0, spd:-3.1, combo_dmg:10, combo_cooldown:42, right_click_cooldown:24, combo_range:5.0, combo_reach:2.8, reach_mod:0.0, max_damage:2031}
 execute if entity @s[tag=vexp.echo] run data modify storage vexp:dungeons.weapon params merge value {item_id:"netherite_sword", name:"Espada Resonante", model:"vexp:resonance-sword", quality:"echo", combo_type:"mid_combo", dmg:8.0, spd:-3.4, combo_dmg:10, combo_cooldown:36, right_click_cooldown:24, combo_range:5.0, combo_reach:2.8, reach_mod:0.0, max_damage:1891}
-execute if entity @s[tag=vexp.amethyst] run data modify storage vexp:dungeons.weapon params merge value {item_id:"netherite_sword", name:"Espada de Amatista", model:"vexp:amethyst-sword", quality:"diamond", combo_type:"mid_combo", dmg:8.0, spd:-3.4, combo_dmg:10, combo_cooldown:32, right_click_cooldown:24, combo_range:5.0, combo_reach:2.8, reach_mod:0.0, max_damage:1351}
+execute if entity @s[tag=vexp.glowing] run data modify storage vexp:dungeons.weapon params merge value {item_id:"diamond_sword", name:"Espada Luminiscente", model:"vexp:glowing_sword", quality:"glowing", combo_type:"mid_combo", dmg:7.0, spd:-3.2, combo_dmg:8, combo_cooldown:30, right_click_cooldown:24, combo_range:4.5, combo_reach:2.5, reach_mod:0.0, max_damage:800}
 
 function vexp:dungeons/sword/give_macro with storage vexp:dungeons.weapon params
 
@@ -23,7 +23,7 @@ tag @s remove vexp.diamond
 tag @s remove vexp.copper
 tag @s remove vexp.netherite
 tag @s remove vexp.echo
-tag @s remove vexp.amethyst
+tag @s remove vexp.glowing
 scoreboard players set @s vexp.damage 0
 data remove storage vexp:dungeons.weapon params
 

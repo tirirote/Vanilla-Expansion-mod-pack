@@ -13,7 +13,8 @@ execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.ma
 execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"echo"}}}] run function vexp:dungeons/bow/echo/on_right_click
 execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] run function vexp:dungeons/bow/gold/on_right_click
 execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] run function vexp:dungeons/bow/diamond/on_right_click
-execute if score @s vexp.bow_draw_ticks matches 3.. unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"netherite"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"echo"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] run function vexp:dungeons/bow/on_right_click
+execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] run function vexp:dungeons/bow/glowing/on_right_click
+execute if score @s vexp.bow_draw_ticks matches 3.. unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"netherite"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"echo"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] run function vexp:dungeons/bow/on_right_click
 
 # Allow re-trigger every tick while using item.
 advancement revoke @s only vexp:event/bow_attack

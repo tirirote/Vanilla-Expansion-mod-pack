@@ -12,7 +12,7 @@ execute if entity @s[tag=vexp.gold] run data modify storage vexp:dungeons.weapon
 execute if entity @s[tag=vexp.diamond] run data modify storage vexp:dungeons.weapon params merge value {item_id:"diamond_sword", name:"Daga de Diamante", model:"vexp:diamond_dagger", material:"diamond", quality:"diamond", dmg:5.0, spd:-1.1, combo_dmg:5, combo_cooldown:7, right_click_cooldown:12, combo_range:1.5, combo_reach:1.5, reach_mod:-0.5, max_damage:1561}
 execute if entity @s[tag=vexp.netherite] run data modify storage vexp:dungeons.weapon params merge value {item_id:"netherite_sword", name:"Daga de Netherite", model:"vexp:netherite_dagger", material:"netherite", quality:"netherite", dmg:6.0, spd:-2.0, combo_dmg:6, combo_cooldown:10, right_click_cooldown:12, combo_range:1.5, combo_reach:1.5, reach_mod:-0.5, max_damage:2031}
 execute if entity @s[tag=vexp.echo] run data modify storage vexp:dungeons.weapon params merge value {item_id:"netherite_sword", name:"Daga Resonante", model:"vexp:resonance_dagger", material:"echo", quality:"echo", dmg:6.0, spd:-1.1, combo_dmg:6, combo_cooldown:7, right_click_cooldown:12, combo_range:1.5, combo_reach:1.5, reach_mod:-0.5, max_damage:1891}
-execute if entity @s[tag=vexp.amethyst] run data modify storage vexp:dungeons.weapon params merge value {item_id:"netherite_sword", name:"Daga de Amatista", model:"vexp:amethyst_dagger", material:"amethyst", quality:"diamond", dmg:6.0, spd:-1.1, combo_dmg:6, combo_cooldown:7, right_click_cooldown:12, combo_range:1.0, combo_reach:2.5, reach_mod:-0.5, max_damage:1351}
+execute if entity @s[tag=vexp.glowing] run data modify storage vexp:dungeons.weapon params merge value {item_id:"diamond_sword", name:"Daga Luminiscente", model:"vexp:glowing_dagger", material:"glowing", quality:"glowing", dmg:5.0, spd:-1.1, combo_dmg:6, combo_cooldown:7, right_click_cooldown:12, combo_range:1.5, combo_reach:1.5, reach_mod:-0.5, max_damage:800}
 
 # Restaurar damage desde scoreboard solo cuando la daga viene de un proyectil recogido
 execute if entity @s[tag=vexp.restore_dagger_damage] store result storage vexp:dungeons.weapon params.item_damage int 1 run scoreboard players get @s vexp.damage
@@ -31,6 +31,7 @@ tag @s remove vexp.diamond
 tag @s remove vexp.copper
 tag @s remove vexp.netherite
 tag @s remove vexp.echo
+tag @s remove vexp.glowing
 tag @s remove vexp.amethyst
 tag @s remove vexp.restore_dagger_damage
 scoreboard players set @s vexp.damage 0

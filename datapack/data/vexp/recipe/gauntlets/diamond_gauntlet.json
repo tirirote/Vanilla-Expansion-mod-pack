@@ -15,6 +15,9 @@
           "item": "gauntlets",
           "material": "diamond",
           "combo": {
+            "desc": "Rápidos y equilibrados.",
+            "rc_desc": "Atrapa al enemigo.",
+            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
             "damage": 4,
             "cooldown": 8,
             "right_click_cooldown": 30,
@@ -50,7 +53,9 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:custom_model_data": { "strings": ["vexp:diamond-gauntlet"] },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:diamond_gauntlet"]
+      },
       "minecraft:repairable": {
         "items": ["minecraft:diamond"]
       },

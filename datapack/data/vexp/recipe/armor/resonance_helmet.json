@@ -8,13 +8,34 @@
     "id": "minecraft:netherite_helmet",
     "count": 1,
     "components": {
+      "minecraft:item_name": "Casco Resonante",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_helmet"]
+      },
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:entity.warden.tendril_clicks",
+        "asset_id": "vexp:resonance",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:custom_data": {
         "vexp": {
           "item": "armor",
           "quality": "echo",
           "armor": {
+            "desc": "Poderoso y ligero.",
             "type": "resonance",
-            "slot": "helmet"
+            "slot": "helmet",
+            "stats": {
+              "defense": 3,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
           }
         }
       }

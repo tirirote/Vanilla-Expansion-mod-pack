@@ -5,6 +5,6 @@
 
 execute store result score #haste_amp vexp.math run data get entity @s active_effects[{id:"minecraft:haste"}].amplifier
 scoreboard players add #haste_amp vexp.math 1
-scoreboard players set #haste_mul vexp.math 2
+scoreboard players set #haste_mul vexp.math 3
 scoreboard players operation #haste_mul vexp.math *= #haste_amp vexp.math
 scoreboard players operation #eff_cd vexp.math -= #haste_mul vexp.math

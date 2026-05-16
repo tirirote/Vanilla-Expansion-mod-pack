@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:bone_block"
+  },
+  "result": {
+    "id": "minecraft:iron_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Pechera de Hueso",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:bone_chestplate"]
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:entity.skeleton.step",
+        "asset_id": "vexp:bone",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "bone",
+          "armor": {
+            "desc": "Resistente y macabra.",
+            "type": "bone",
+            "slot": "chestplate",
+            "stats": {
+              "defense": 5,
+              "toughness": 0,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

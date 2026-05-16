@@ -25,6 +25,10 @@ execute if entity @s[tag=vexp.gold_arrow,tag=vexp.combo_arrow_charged] run funct
 execute if entity @s[tag=vexp.diamond_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/diamond/on_hit_block
 execute if entity @s[tag=vexp.diamond_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/diamond/on_hit_block_charged
 
+# Diamond arrow
+execute if entity @s[tag=vexp.glowing_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/glowing/on_hit_block
+execute if entity @s[tag=vexp.glowing_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/bow/arrows/types/glowing/on_hit_block_charged
+
 #Common feedback
 execute positioned ^ ^-0.2 ^0.2 run function vexp:utils/feedback/block_hit
 

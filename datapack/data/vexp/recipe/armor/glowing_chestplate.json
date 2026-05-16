@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:glow_ink_sac"
+  },
+  "result": {
+    "id": "minecraft:diamond_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": "Peto Luminiscente",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:glowing_chestplate"]
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:item.armor.equip_diamond",
+        "asset_id": "vexp:glowing",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:max_damage": 800,
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "glowing",
+          "armor": {
+            "desc": "Sigiloso y ligero.",
+            "type": "glowing",
+            "slot": "chestplate",
+            "stats": {
+              "defense": 7,
+              "toughness": 1,
+              "knockback_resistance": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

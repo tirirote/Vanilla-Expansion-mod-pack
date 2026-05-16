@@ -15,6 +15,10 @@
           "item": "bow",
           "material": "netherite",
           "combo": {
+            "desc": "Poderoso y abrasador.",
+            "rc_desc": "Combo ígneo a distancia.",
+            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
+            "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 7,
             "cooldown": 15,
             "right_click_cooldown": 20,

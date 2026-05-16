@@ -8,13 +8,34 @@
     "id": "minecraft:netherite_boots",
     "count": 1,
     "components": {
+      "minecraft:item_name": "Botas Resonantes",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_boots"]
+      },
+      "minecraft:equippable": {
+        "slot": "feet",
+        "equip_sound": "minecraft:entity.warden.tendril_clicks",
+        "asset_id": "vexp:resonance",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:custom_data": {
         "vexp": {
           "item": "armor",
           "quality": "echo",
           "armor": {
+            "desc": "Poderosas y ligeras.",
             "type": "resonance",
-            "slot": "boots"
+            "slot": "boots",
+            "stats": {
+              "defense": 3,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
           }
         }
       }

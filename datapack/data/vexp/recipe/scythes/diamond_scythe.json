@@ -15,6 +15,9 @@
           "item": "scythe",
           "material": "diamond",
           "combo": {
+            "desc": "Imponente y precisa.",
+            "rc_desc": "Ataque preciso a distancia.",
+            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
             "damage": 9,
             "cooldown": 54,
             "right_click_cooldown": 36,
@@ -28,7 +31,7 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:diamond-scythe"]
+        "strings": ["vexp:diamond_scythe"]
       },
       "minecraft:max_damage": 1561,
       "minecraft:damage": 0,

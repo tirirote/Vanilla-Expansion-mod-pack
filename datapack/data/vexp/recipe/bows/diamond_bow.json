@@ -15,6 +15,9 @@
           "item": "bow",
           "material": "diamond",
           "combo": {
+            "desc": "Equilibrado y poderoso.",
+            "rc_desc": "Combo brillante a distancia.",
+            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
             "damage": 6,
             "cooldown": 22,
             "right_click_cooldown": 20,

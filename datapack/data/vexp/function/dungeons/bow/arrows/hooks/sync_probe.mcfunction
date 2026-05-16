@@ -22,6 +22,8 @@ execute if entity @s[tag=vexp.netherite_arrow] as @e[type=minecraft:marker,tag=v
 execute if entity @s[tag=vexp.resonance_arrow] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.resonance_arrow
 execute if entity @s[tag=vexp.gold_arrow] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.gold_arrow
 execute if entity @s[tag=vexp.diamond_arrow] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.diamond_arrow
+execute if entity @s[tag=vexp.glowing_arrow] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.glowing_arrow
+
 execute if entity @s[tag=vexp.arrow_t1] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.arrow_t1
 execute if entity @s[tag=vexp.arrow_t2] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.arrow_t2
 execute if entity @s[tag=vexp.arrow_t3] as @e[type=minecraft:marker,tag=vexp.bow_probe,distance=..6] if score @s vexp.id = #temp vexp.id run tag @s add vexp.arrow_t3

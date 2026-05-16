@@ -1,1 +1,0 @@
-# Amethyst projectile spawn hook

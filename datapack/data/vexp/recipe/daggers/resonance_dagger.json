@@ -15,6 +15,10 @@
           "item": "dagger",
           "material": "echo",
           "combo": {
+            "desc": "Rápida y aterradora.",
+            "rc_desc": "Arrojadiza.",
+            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "status_desc": "Aplica [Pánico].",
             "damage": 6,
             "cooldown": 7,
             "right_click_cooldown": 12,

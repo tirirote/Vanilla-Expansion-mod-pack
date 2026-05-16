@@ -8,13 +8,34 @@
     "id": "minecraft:netherite_chestplate",
     "count": 1,
     "components": {
+      "minecraft:item_name": "Pechera Resonante",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_chestplate"]
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:entity.warden.tendril_clicks",
+        "asset_id": "vexp:resonance",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
       "minecraft:custom_data": {
         "vexp": {
           "item": "armor",
           "quality": "echo",
           "armor": {
+            "desc": "Poderosa y ligera.",
             "type": "resonance",
-            "slot": "chestplate"
+            "slot": "chestplate",
+            "stats": {
+              "defense": 8,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
           }
         }
       }

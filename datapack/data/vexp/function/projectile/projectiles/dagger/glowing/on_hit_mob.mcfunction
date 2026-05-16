@@ -1,0 +1,9 @@
+# Glow projectile hook on entity hit
+execute as @p[tag=vexp.projectile_owner,limit=1] at @s if entity @e[predicate=vexp:is_target,tag=vexp.glow_marked,distance=..16,sort=nearest,limit=1] run function vexp:dungeons/states/glow_buffed
+
+execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] run function vexp:dungeons/states/glow_marked
+execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] run function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
+
+function vexp:utils/hits/glowing_hit
+function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.glow_squid.squirt", type: "player"}

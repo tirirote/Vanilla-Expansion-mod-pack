@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:bone_boots",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/armor/bone_boots"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/iron_boots"
+    }
+  }
+}

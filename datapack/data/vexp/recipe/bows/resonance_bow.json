@@ -15,6 +15,10 @@
           "item": "bow",
           "material": "echo",
           "combo": {
+            "desc": "Poderoso y aterrador.",
+            "rc_desc": "Combo oscuro a distancia.",
+            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "status_desc": "Aplica [Pánico].",
             "damage": 9,
             "cooldown": 15,
             "right_click_cooldown": 20,
