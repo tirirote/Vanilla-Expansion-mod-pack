@@ -20,8 +20,23 @@ scoreboard objectives add vexp.old_hp dummy
 scoreboard objectives add vexp.timer dummy
 scoreboard objectives add vexp.hit_success dummy
 
+#Waypoint tracking
+scoreboard objectives add vexp.player_x dummy
+scoreboard objectives add vexp.player_y dummy
+scoreboard objectives add vexp.player_z dummy
+scoreboard objectives add vexp.waypoint_x dummy
+scoreboard objectives add vexp.waypoint_y dummy
+scoreboard objectives add vexp.waypoint_z dummy
+scoreboard objectives add vexp.diff_x dummy
+scoreboard objectives add vexp.diff_y dummy
+scoreboard objectives add vexp.diff_z dummy
+scoreboard objectives add vexp.waypoint_dist dummy
+scoreboard objectives add vexp.focus_wp dummy
+scoreboard objectives add vexp.wpid dummy
+
 #Math
 scoreboard objectives add vexp.math dummy
+scoreboard objectives add vexp.cook_time dummy
 scoreboard players set #force_scale vexp.math 100
 scoreboard players set #neg_one vexp.math -1
 scoreboard players set #smooth_keep vexp.math 4
@@ -49,6 +64,11 @@ scoreboard objectives add vexp.hitbox_hide_timer dummy
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add vexp.warn_cd dummy
+scoreboard objectives add vexp.enemy_atk_time dummy
+scoreboard objectives add vexp.debug_tick dummy
+scoreboard objectives add vexp.player_hp dummy
+scoreboard objectives add vexp.player_hp_prev dummy
 scoreboard objectives add vexp.wave_step dummy
 scoreboard objectives add vexp.look_yaw dummy
 scoreboard objectives add vexp.look_pitch dummy
@@ -102,3 +122,5 @@ team add vexp.aqua
 team modify vexp.aqua color aqua
 team add vexp.blue
 team modify vexp.blue color blue
+team add vexp.dark_aqua
+team modify vexp.dark_aqua color dark_aqua

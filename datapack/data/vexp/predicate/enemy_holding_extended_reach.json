@@ -1,0 +1,40 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{HandItems:[{id:\"minecraft:trident\"}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{HandItems:[{components:{\"minecraft:custom_data\":{vexp:{item:\"scythe\"}}}}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{HandItems:[{id:\"minecraft:wooden_spear\"}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{HandItems:[{id:\"minecraft:golden_spear\"}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{HandItems:[{id:\"minecraft:iron_spear\"}]}"
+      }
+    }
+  ]
+}

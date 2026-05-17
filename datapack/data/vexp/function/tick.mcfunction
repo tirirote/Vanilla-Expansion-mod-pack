@@ -17,6 +17,7 @@ function vexp:utils/states/tick
 
 #Player
 function vexp:player/feedback
+function vexp:feedback/tick
 
 #Movement
 function vexp:movement/tick

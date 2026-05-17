@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:beef_strip",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/beef_strip"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/rabbit_foot"
+    }
+  }
+}

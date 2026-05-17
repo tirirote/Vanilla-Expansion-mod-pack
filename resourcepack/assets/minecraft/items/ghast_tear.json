@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:chicken_breast",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/chicken_breast"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/ghast_tear"
+    }
+  }
+}

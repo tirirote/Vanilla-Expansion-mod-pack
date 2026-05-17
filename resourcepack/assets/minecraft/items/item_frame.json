@@ -6,85 +6,241 @@
       {
         "when": "vexp:oak_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/oak_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/oak_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/oak_chair"
+          }
         }
       },
       {
         "when": "vexp:birch_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/birch_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/birch_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/birch_chair"
+          }
         }
       },
       {
         "when": "vexp:acacia_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/acacia_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/acacia_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/acacia_chair"
+          }
         }
       },
       {
         "when": "vexp:bamboo_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/bamboo_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/bamboo_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/bamboo_chair"
+          }
         }
       },
       {
         "when": "vexp:cherry_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/cherry_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/cherry_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cherry_chair"
+          }
         }
       },
       {
         "when": "vexp:dark_oak_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/dark_oak_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/dark_oak_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/dark_oak_chair"
+          }
         }
       },
       {
         "when": "vexp:jungle_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/jungle_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/jungle_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/jungle_chair"
+          }
         }
       },
       {
         "when": "vexp:mangrove_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/mangrove_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/mangrove_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/mangrove_chair"
+          }
         }
       },
       {
         "when": "vexp:pale_oak_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/pale_oak_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/pale_oak_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/pale_oak_chair"
+          }
         }
       },
       {
         "when": "vexp:spruce_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/spruce_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/spruce_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/spruce_chair"
+          }
         }
       },
       {
         "when": "vexp:warped_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/warped_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/warped_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/warped_chair"
+          }
         }
       },
       {
         "when": "vexp:crimson_chair",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crimson_chair"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/chair/crimson_chair"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crimson_chair"
+          }
         }
       },
       {
@@ -108,472 +264,648 @@
         }
       },
       {
-        "when": "vexp:jar_block",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/decorative/jar/jar_empty"
-        }
-      },
-      {
-        "when": "vexp:training_dummy",
+        "when": "vexp:frying_pan",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
           "cases": [
             {
-              "when": ["fixed"],
+              "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:block/dungeons/training-dummy"
+                "model": "vexp:item/cooking/frying_pan"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:item/dungeons/training-dummy"
+            "model": "vexp:block/cooking/frying_pan"
           }
+        }
+      },
+      {
+        "when": "vexp:waypoint",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/waypoint"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/decorative/waypoint"
+          }
+        }
+      },
+      {
+        "when": "vexp:training_dummy",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/dungeons/training_dummy"
         }
       },
       {
         "when": "vexp:training_dummy_block",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/dungeons/training-dummy"
+          "model": "vexp:block/dungeons/training_dummy"
         }
       },
       {
         "when": "vexp:door_block_oak",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/oak_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/oak_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/oak_door"
         }
       },
       {
         "when": "vexp:door_oak",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/oak_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/oak_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/oak_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_birch",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/birch_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/birch_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/birch_door"
         }
       },
       {
         "when": "vexp:door_birch",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/birch_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/birch_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/birch_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_spruce",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/spruce_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/spruce_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/spruce_door"
         }
       },
       {
         "when": "vexp:door_spruce",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/spruce_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/spruce_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/spruce_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_dark_oak",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/dark_oak_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/dark_oak_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/dark_oak_door"
         }
       },
       {
         "when": "vexp:door_dark_oak",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/dark_oak_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/dark_oak_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/dark_oak_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_acacia",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/acacia_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/acacia_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/acacia_door"
         }
       },
       {
         "when": "vexp:door_acacia",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/acacia_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/acacia_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/acacia_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_jungle",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/jungle_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/jungle_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/jungle_door"
         }
       },
       {
         "when": "vexp:door_jungle",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/jungle_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/jungle_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/jungle_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_mangrove",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/mangrove_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/mangrove_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/mangrove_door"
         }
       },
       {
         "when": "vexp:door_mangrove",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/mangrove_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/mangrove_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/mangrove_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_cherry",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/cherry_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/cherry_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/cherry_door"
         }
       },
       {
         "when": "vexp:door_cherry",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/cherry_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/cherry_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/cherry_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_pale_oak",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/pale_oak_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/pale_oak_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/pale_oak_door"
         }
       },
       {
         "when": "vexp:door_pale_oak",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/pale_oak_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/pale_oak_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/pale_oak_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_warped",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/warped_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/warped_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/warped_door"
         }
       },
       {
         "when": "vexp:door_warped",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/warped_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/warped_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/warped_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_crimson",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/crimson_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/crimson_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/crimson_door"
         }
       },
       {
         "when": "vexp:door_crimson",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/crimson_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/crimson_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/crimson_door"
+          }
         }
       },
       {
         "when": "vexp:door_block_bamboo",
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:display_context",
-          "cases": [
-            {
-              "when": ["fixed"],
-              "model": {
-                "type": "minecraft:model",
-                "model": "vexp:block/door/bamboo_door"
-              }
-            }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/bamboo_door"
-          }
+          "type": "minecraft:model",
+          "model": "vexp:block/door/bamboo_door"
         }
       },
       {
         "when": "vexp:door_bamboo",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/bamboo_door"
-        }
-      },
-      {
-        "when": "vexp:door_block_iron",
-        "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
           "cases": [
             {
-              "when": ["fixed"],
+              "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:block/door/iron_door"
+                "model": "minecraft:item/bamboo_door"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "minecraft:item/iron_door"
+            "model": "vexp:block/door/bamboo_door"
           }
+        }
+      },
+      {
+        "when": "vexp:door_block_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/iron_door"
         }
       },
       {
         "when": "vexp:door_iron",
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/iron_door"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/iron_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/iron_door"
+          }
         }
       },
       {
-        "when": "vexp:spruce_crate_block",
+        "when": "vexp:spruce_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/spruce_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/spruce_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/spruce_crate"
+          }
         }
       },
       {
-        "when": "vexp:birch_crate_block",
+        "when": "vexp:birch_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/birch_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/birch_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/birch_crate"
+          }
         }
       },
       {
-        "when": "vexp:jungle_crate_block",
+        "when": "vexp:jungle_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/jungle_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/jungle_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/jungle_crate"
+          }
         }
       },
       {
-        "when": "vexp:acacia_crate_block",
+        "when": "vexp:acacia_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/acacia_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/acacia_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/acacia_crate"
+          }
         }
       },
       {
-        "when": "vexp:dark_oak_crate_block",
+        "when": "vexp:dark_oak_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/dark_oak_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/dark_oak_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/dark_oak_crate"
+          }
         }
       },
       {
-        "when": "vexp:mangrove_crate_block",
+        "when": "vexp:mangrove_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/mangrove_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/mangrove_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/mangrove_crate"
+          }
         }
       },
       {
-        "when": "vexp:cherry_crate_block",
+        "when": "vexp:cherry_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/cherry_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/cherry_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/cherry_crate"
+          }
         }
       },
       {
-        "when": "vexp:bamboo_crate_block",
+        "when": "vexp:bamboo_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/bamboo_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/bamboo_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/bamboo_crate"
+          }
         }
       },
       {
-        "when": "vexp:crimson_crate_block",
+        "when": "vexp:crimson_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/crimson_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/crimson_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/crimson_crate"
+          }
         }
       },
       {
-        "when": "vexp:warped_crate_block",
+        "when": "vexp:warped_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/warped_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/warped_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/warped_crate"
+          }
         }
       },
       {
-        "when": "vexp:pale_oak_crate_block",
+        "when": "vexp:pale_oak_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/pale_oak_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/pale_oak_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/pale_oak_crate"
+          }
         }
       },
       {
-        "when": "vexp:oak_crate_block",
+        "when": "vexp:oak_crate",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:block/crate/oak_crate"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/crate/oak_crate"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/crate/oak_crate"
+          }
         }
       },
       {

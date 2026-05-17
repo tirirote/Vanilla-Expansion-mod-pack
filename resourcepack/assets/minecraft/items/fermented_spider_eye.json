@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:chicken_strip",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/chicken_strip"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/fermented_spider_eye"
+    }
+  }
+}

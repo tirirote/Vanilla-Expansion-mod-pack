@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:porkchop_strip",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/porkchop_strip"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/armadillo_scute"
+    }
+  }
+}
