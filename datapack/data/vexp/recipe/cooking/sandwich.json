@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bread",
+    [
+      "minecraft:beef",
+      "minecraft:cooked_beef",
+      "minecraft:porkchop",
+      "minecraft:cooked_porkchop",
+      "minecraft:chicken",
+      "minecraft:cooked_chicken",
+      "minecraft:mutton",
+      "minecraft:cooked_mutton",
+      "minecraft:rabbit",
+      "minecraft:cooked_rabbit",
+      "minecraft:salmon",
+      "minecraft:cooked_salmon"
+    ],
+    "minecraft:carrot"
+  ],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count":2,
+    "components": {
+      "minecraft:custom_data": { "vexp": { "type": "food", "id": "sandwich" } },
+      "minecraft:custom_model_data": { "strings": ["vexp:sandwich"] },
+      "minecraft:item_name": { "text": "Bocadillo", "italic": false },
+      "food": { "nutrition": 8, "saturation": 0.8 }
+    }
+  }
+}

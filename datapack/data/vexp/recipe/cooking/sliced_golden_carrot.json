@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:golden_carrot"],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 2,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "sliced_golden_carrot" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:sliced_golden_carrot"]
+      },
+      "minecraft:item_name": {
+        "text": "Zanahoria Dorada en Rodajas",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.6 }
+    }
+  }
+}

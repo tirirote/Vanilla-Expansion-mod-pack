@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "minecraft:pumpkin_seeds",
+  "cookingtime": 200,
+  "experience": 0.05,
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "roasted_pumpkin_seeds" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:roasted_pumpkin_seeds"]
+      },
+      "minecraft:item_name": {
+        "text": "Semillas de calabaza tostadas",
+        "italic": false
+      },
+      "food": { "nutrition": 2, "saturation": 0.2 }
+    }
+  }
+}

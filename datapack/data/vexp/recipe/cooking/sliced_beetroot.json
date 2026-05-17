@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:beetroot"],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 2,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "sliced_beetroot" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:sliced_beetroot"] },
+      "minecraft:item_name": {
+        "text": "Remolacha en Rodajas",
+        "italic": false
+      },
+      "food": { "nutrition": 2, "saturation": 0.2 }
+    }
+  }
+}

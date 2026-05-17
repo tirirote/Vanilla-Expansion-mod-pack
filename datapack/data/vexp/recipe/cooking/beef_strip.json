@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:beef"],
+  "result": {
+    "id": "minecraft:rabbit_foot",
+    "count": 2,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "beef_strip" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:beef_strip"] },
+      "minecraft:item_name": { "text": "Tira de Ternera", "italic": false },
+      "food": { "nutrition": 2, "saturation": 0.25 }
+    }
+  }
+}

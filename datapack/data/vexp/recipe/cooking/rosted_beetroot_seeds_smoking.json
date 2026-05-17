@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "ingredient": "minecraft:beetroot_seeds",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "rosted_beetroot_seeds" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:rosted_beetroot_seeds"]
+      },
+      "minecraft:item_name": {
+        "text": "Semillas de remolacha tostadas",
+        "italic": false
+      },
+      "food": { "nutrition": 2, "saturation": 0.2 }
+    }
+  }
+}

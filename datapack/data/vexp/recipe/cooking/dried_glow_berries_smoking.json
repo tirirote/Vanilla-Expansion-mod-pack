@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "ingredient": "minecraft:glow_berries",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "dried_glow_berries" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:dried_glow_berries"] },
+      "minecraft:item_name": {
+        "text": "Bayas luminosas secas",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.3 }
+    }
+  }
+}

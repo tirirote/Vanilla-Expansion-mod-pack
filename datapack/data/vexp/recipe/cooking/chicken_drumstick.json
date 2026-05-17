@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:chicken"],
+  "result": {
+    "id": "minecraft:phantom_membrane",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "chicken_drumstick" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:chicken_drumstick"] },
+      "minecraft:item_name": { "text": "Muslo de Pollo", "italic": false },
+      "food": { "nutrition": 2, "saturation": 0.2 }
+    }
+  }
+}

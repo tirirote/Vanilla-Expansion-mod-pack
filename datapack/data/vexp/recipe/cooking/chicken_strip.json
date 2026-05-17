@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:chicken"],
+  "result": {
+    "id": "minecraft:fermented_spider_eye",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "chicken_strip" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:chicken_strip"] },
+      "minecraft:item_name": { "text": "Tira de Pollo", "italic": false },
+      "food": { "nutrition": 1, "saturation": 0.15 }
+    }
+  }
+}

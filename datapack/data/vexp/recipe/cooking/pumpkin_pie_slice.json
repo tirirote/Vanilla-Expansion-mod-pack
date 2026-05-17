@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:pumpkin_pie"],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 4,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "pumpkin_pie_slice" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:pumpkin_pie_slice"] },
+      "minecraft:item_name": {
+        "text": "Porción de Tarta de Calabaza",
+        "italic": false
+      },
+      "food": { "nutrition": 2, "saturation": 0.2 }
+    }
+  }
+}

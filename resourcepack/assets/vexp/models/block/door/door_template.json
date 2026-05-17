@@ -111,5 +111,27 @@
         "west": { "uv": [13, 2, 16, 16], "texture": "#0" }
       }
     }
-  ]
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, 90, 0],
+      "translation": [0, -1, 2.25],
+      "scale": [0.6, 0.6, 0.6]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, 0],
+      "translation": [0, -1, 2.25],
+      "scale": [0.6, 0.6, 0.6]
+    },
+    "firstperson_righthand": {
+      "rotation": [-15, -70, 0],
+      "translation": [1.25, -8, -8.25],
+      "scale": [0.6, 0.6, 0.6]
+    },
+    "firstperson_lefthand": {
+      "rotation": [-15, -70, 0],
+      "translation": [1.25, -8, -8.25],
+      "scale": [0.6, 0.6, 0.6]
+    }
+  }
 }

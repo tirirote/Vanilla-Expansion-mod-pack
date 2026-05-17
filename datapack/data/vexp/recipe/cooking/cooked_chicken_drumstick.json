@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:cooked_chicken"],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "cooked_chicken_drumstick" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:cooked_chicken_drumstick"]
+      },
+      "minecraft:item_name": {
+        "text": "Muslo de Pollo Cocido",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.4 }
+    }
+  }
+}

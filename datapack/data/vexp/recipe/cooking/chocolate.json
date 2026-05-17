@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:cocoa_beans", "minecraft:sugar"],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 2,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "chocolate" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:chocolate"] },
+      "minecraft:item_name": { "text": "Chocolate", "italic": false },
+      "food": { "nutrition": 2, "saturation": 0.2 }
+    }
+  }
+}
