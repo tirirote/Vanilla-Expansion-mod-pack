@@ -7,10 +7,7 @@
 data remove storage vexp:custom_block placement
 data merge storage vexp:custom_block {placement:{id:0,model:"",width:0.0d,height:0.0d,type:"",name:"",s_place:"",s_break:"",p_break:""}}
 data modify storage vexp:custom_block placement set from entity @s data.vexp
-
-# Normalizar dimensiones a float conservando hasta 2 decimales
-execute if data storage vexp:custom_block placement.width store result storage vexp:custom_block placement.width float 0.01 run data get storage vexp:custom_block placement.width 100
-execute if data storage vexp:custom_block placement.height store result storage vexp:custom_block placement.height float 0.01 run data get storage vexp:custom_block placement.height 100
+execute unless data storage vexp:custom_block placement.wp_id run data modify storage vexp:custom_block placement.wp_id set value 0
 
 # Restringir placement: solo item_frame en el suelo (encima de bloque)
 execute unless data entity @s {Facing:1b} if data storage vexp:custom_block placement.id run function vexp:custom_block/macro/drop with storage vexp:custom_block placement

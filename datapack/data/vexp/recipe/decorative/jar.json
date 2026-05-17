@@ -22,7 +22,7 @@
             "name": "Jarra",
             "s_place": "minecraft:block.glass.place",
             "s_break": "minecraft:block.glass.break",
-            "p_break": "minecraft:block{block_state:Name:'minecraft:glass'}}"
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:glass'}}"
           }
         },
         "Invisible": true,

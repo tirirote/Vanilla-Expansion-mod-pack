@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["L", "S"],
+  "key": {
+    "L": "minecraft:leather",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 2,
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "waypoint",
+            "model": "vexp:waypoint",
+            "width": 0.8,
+            "height": 1.8,
+            "type": "waypoint",
+            "name": "Marcador",
+            "s_place": "minecraft:block.wood.place",
+            "s_break": "minecraft:block.wood.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:oak_planks'}}"
+          }
+        },
+        "Invisible": true,
+        "Fixed": true,
+        "Silent": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:waypoint"]
+      },
+      "minecraft:item_name": {
+        "text": "Marcador",
+        "italic": false
+      }
+    }
+  }
+}

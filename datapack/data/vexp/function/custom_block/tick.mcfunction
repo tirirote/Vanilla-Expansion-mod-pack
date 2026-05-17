@@ -13,5 +13,8 @@ execute as @e[type=interaction,tag=vexp.custom_block.interact] at @s if data ent
 # 4. Hook genérico de tick por tipo de custom block
 execute as @e[type=interaction,tag=vexp.custom_block.interact] at @s run function vexp:custom_block/on_tick
 
+# 4.1 Waypoint dinámico por item seleccionado (por jugador)
+execute as @a at @s run function vexp:custom_block/blocks/waypoint/update_from_selected_item
+
 # 5. Mantenimiento global para bloques que lo requieren (chair).
 function vexp:custom_block/blocks/chair/tick_global

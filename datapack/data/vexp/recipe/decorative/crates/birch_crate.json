@@ -16,7 +16,7 @@
           "vexp": {
             "id": "crate",
             "type": "crate",
-            "model": "vexp:birch_crate_block",
+            "model": "vexp:birch_crate",
             "width": 1.25,
             "height": 0.75,
             "name": "Caja de Abedul",
@@ -30,7 +30,7 @@
         "Fixed": true
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:birch_crate_block"]
+        "strings": ["vexp:birch_crate"]
       },
       "minecraft:item_name": {
         "text": "Caja de Abedul",
@@ -39,4 +39,3 @@
     }
   }
 }
-

@@ -1,9 +1,9 @@
 # 1. Preparar datos para soltar el ítem
 data modify storage vexp:custom_block item_drop set from entity @s data.vexp
+execute unless data storage vexp:custom_block item_drop.wp_id run data modify storage vexp:custom_block item_drop.wp_id set value 0
 
-# Normalizar dimensiones a float conservando hasta 2 decimales
-execute if data storage vexp:custom_block item_drop.width store result storage vexp:custom_block item_drop.width float 0.01 run data get storage vexp:custom_block item_drop.width 100
-execute if data storage vexp:custom_block item_drop.height store result storage vexp:custom_block item_drop.height float 0.01 run data get storage vexp:custom_block item_drop.height 100
+# Puertas y otros bloques con modelo dual: al soltar, usar el item_model si existe.
+execute if data storage vexp:custom_block item_drop.item_model run data modify storage vexp:custom_block item_drop.model set from storage vexp:custom_block item_drop.item_model
 
 # Soltar el ítem usando la macro genérica
 function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop

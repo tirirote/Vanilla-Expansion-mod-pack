@@ -16,7 +16,7 @@
           "vexp": {
             "id": "crate",
             "type": "crate",
-            "model": "vexp:dark_oak_crate_block",
+            "model": "vexp:dark_oak_crate",
             "width": 1.25,
             "height": 0.75,
             "name": "Caja de Roble Oscuro",
@@ -30,7 +30,7 @@
         "Fixed": true
       },
       "minecraft:custom_model_data": {
-        "strings": ["vexp:dark_oak_crate_block"]
+        "strings": ["vexp:dark_oak_crate"]
       },
       "minecraft:item_name": {
         "text": "Caja de Roble Oscuro",
@@ -39,4 +39,3 @@
     }
   }
 }
-
