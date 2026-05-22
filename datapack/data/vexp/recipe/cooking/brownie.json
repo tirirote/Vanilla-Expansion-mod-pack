@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["CCC", "WSW", "WWW"],
+  "key": {
+    "C": "minecraft:cocoa_beans",
+    "W": "minecraft:wheat",
+    "S": "minecraft:sugar"
+  },
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "count": 2,
+    "components": {
+      "minecraft:custom_data": { "vexp": { "type": "food", "id": "brownie" } },
+      "minecraft:custom_model_data": { "strings": ["vexp:brownie"] },
+      "minecraft:item_name": { "text": "Brownie", "italic": false },
+      "food": { "nutrition": 6, "saturation": 0.7 }
+    }
+  }
+}

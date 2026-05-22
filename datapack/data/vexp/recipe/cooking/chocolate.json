@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": ["minecraft:cocoa_beans", "minecraft:sugar"],
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "count": 2,
     "components": {
       "minecraft:custom_data": {
@@ -15,3 +15,4 @@
     }
   }
 }
+

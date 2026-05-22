@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["MMM", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:milk_bucket"
+  },
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "count": 3,
+    "components": {
+      "minecraft:custom_data": { "vexp": { "type": "food", "id": "cheese" } },
+      "minecraft:custom_model_data": { "strings": ["vexp:cheese"] },
+      "minecraft:item_name": { "text": "Queso", "italic": false },
+      "food": { "nutrition": 5, "saturation": 0.6 }
+    }
+  }
+}

@@ -67,6 +67,20 @@
         }
       },
       {
+        "when": "vexp:roasted_brown_mushroom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_brown_mushroom"
+        }
+      },
+      {
+        "when": "vexp:roasted_red_mushroom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_red_mushroom"
+        }
+      },
+      {
         "when": "vexp:pumpkin_pie_slice",
         "model": {
           "type": "minecraft:model",

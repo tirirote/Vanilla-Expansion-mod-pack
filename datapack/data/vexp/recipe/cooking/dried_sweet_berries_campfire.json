@@ -5,7 +5,7 @@
   "cookingtime": 600,
   "experience": 0.1,
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "components": {
       "minecraft:custom_data": {
         "vexp": { "type": "food", "id": "dried_sweet_berries" }
@@ -18,3 +18,4 @@
     }
   }
 }
+

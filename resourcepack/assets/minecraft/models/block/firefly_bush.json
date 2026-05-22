@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/detailed_plant",
-    "textures": {
-        "texture": "minecraft:block/firefly_bush"
-    }
+  "parent": "minecraft:block/detailed_plant",
+  "textures": {
+    "texture": "minecraft:block/firefly_bush"
+  }
 }

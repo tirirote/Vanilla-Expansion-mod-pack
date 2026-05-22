@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": ["minecraft:cooked_beef"],
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "count": 2,
     "components": {
       "minecraft:custom_data": {
@@ -11,7 +11,7 @@
       },
       "minecraft:custom_model_data": { "strings": ["vexp:cooked_beef_strip"] },
       "minecraft:item_name": {
-        "text": "Tira de Ternera Cocida",
+        "text": "Tira de ternera asada",
         "italic": false
       },
       "food": { "nutrition": 4, "saturation": 0.5 }

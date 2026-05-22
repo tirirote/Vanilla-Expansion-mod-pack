@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": ["minecraft:cooked_chicken"],
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -13,10 +13,11 @@
         "strings": ["vexp:cooked_chicken_drumstick"]
       },
       "minecraft:item_name": {
-        "text": "Muslo de Pollo Cocido",
+        "text": "Muslo de pollo asado",
         "italic": false
       },
       "food": { "nutrition": 3, "saturation": 0.4 }
     }
   }
 }
+

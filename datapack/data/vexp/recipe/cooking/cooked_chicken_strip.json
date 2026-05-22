@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": ["minecraft:cooked_chicken"],
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
@@ -13,7 +13,7 @@
         "strings": ["vexp:cooked_chicken_strip"]
       },
       "minecraft:item_name": {
-        "text": "Tira de Pollo Cocida",
+        "text": "Tira de pollo asada",
         "italic": false
       },
       "food": { "nutrition": 3, "saturation": 0.4 }

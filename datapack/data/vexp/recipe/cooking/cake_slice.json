@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": ["minecraft:cake"],
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "count": 7,
     "components": {
       "minecraft:custom_data": {
         "vexp": { "type": "food", "id": "cake_slice" }
       },
       "minecraft:custom_model_data": { "strings": ["vexp:cake_slice"] },
-      "minecraft:item_name": { "text": "Porción de Tarta", "italic": false },
+      "minecraft:item_name": { "text": "Porción de tarta", "italic": false },
       "food": { "nutrition": 2, "saturation": 0.2 }
     }
   }

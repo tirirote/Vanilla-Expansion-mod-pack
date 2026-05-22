@@ -1,6 +1,5 @@
 {
-  "format_version": "1.21.11",
-  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
   "textures": {
     "0": "block/fern",
     "particle": "block/fern"
@@ -163,7 +162,8 @@
       "faces": {
         "north": { "uv": [5, 7, 10, 11], "texture": "#0", "tintindex": 0 },
         "south": { "uv": [6, 7, 11, 11], "texture": "#0", "tintindex": 0 }
-      }
+      },
+      "shade": false
     },
     {
       "from": [5, 8.69552, 6.46927],

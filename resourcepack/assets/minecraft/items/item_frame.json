@@ -284,6 +284,246 @@
         }
       },
       {
+        "when": "vexp:oak_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/oak_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/oak_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:acacia_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/acacia_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/acacia_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:bamboo_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/bamboo_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/bamboo_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:birch_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/birch_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/birch_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:cherry_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/cherry_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/cherry_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:crimson_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/crimson_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/crimson_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:dark_oak_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/dark_oak_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/dark_oak_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:jungle_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/jungle_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/jungle_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:mangrove_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/mangrove_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/mangrove_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:pale_oak_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/pale_oak_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/pale_oak_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:spruce_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/spruce_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/spruce_cutting_board"
+          }
+        }
+      },
+      {
+        "when": "vexp:warped_cutting_board",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/cutting_board/warped_cutting_board"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/cooking/cutting_board/warped_cutting_board"
+          }
+        }
+      },
+      {
         "when": "vexp:waypoint",
         "model": {
           "type": "minecraft:select",

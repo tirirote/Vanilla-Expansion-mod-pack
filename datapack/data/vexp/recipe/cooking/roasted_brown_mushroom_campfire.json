@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": "minecraft:brown_mushroom",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "roasted_brown_mushroom" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:roasted_brown_mushroom"]
+      },
+      "minecraft:item_name": {
+        "text": "Champiñón marrón asado",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.4 }
+    }
+  }
+}
+

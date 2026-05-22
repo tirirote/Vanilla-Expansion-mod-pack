@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": "minecraft:beetroot",
+  "cookingtime": 600,
+  "experience": 0.05,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "dried_beetroot" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:dried_beetroot"]
+      },
+      "minecraft:item_name": {
+        "text": "Remolacha seca",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.3 }
+    }
+  }
+}

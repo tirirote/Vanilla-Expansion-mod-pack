@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "minecraft:red_mushroom",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "roasted_red_mushroom" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:roasted_red_mushroom"]
+      },
+      "minecraft:item_name": {
+        "text": "Champiñón rojo asado",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.4 }
+    }
+  }
+}
+

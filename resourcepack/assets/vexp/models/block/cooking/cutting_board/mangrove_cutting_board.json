@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/cooking/cutting_board_template",
+  "textures": {
+    "board": "vexp:block/cooking/mangrove_cutting_board"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "minecraft:bread",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "fried_bread" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:fried_bread"]
+      },
+      "minecraft:item_name": {
+        "text": "Pan frito",
+        "italic": false
+      },
+      "food": { "nutrition": 6, "saturation": 0.7 }
+    }
+  }
+}

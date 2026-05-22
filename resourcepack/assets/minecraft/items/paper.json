@@ -1,0 +1,173 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:cake_slice",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cake_slice"
+        }
+      },
+      {
+        "when": "vexp:chocolate",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/chocolate"
+        }
+      },
+      {
+        "when": "vexp:cooked_beef_strip",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_beef_strip"
+        }
+      },
+      {
+        "when": "vexp:cooked_chicken_breast",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_chicken_breast"
+        }
+      },
+      {
+        "when": "vexp:cooked_chicken_drumstick",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_chicken_drumstick"
+        }
+      },
+      {
+        "when": "vexp:cooked_chicken_strip",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_chicken_strip"
+        }
+      },
+      {
+        "when": "vexp:cooked_porkchop_strip",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_porkchop_strip"
+        }
+      },
+      {
+        "when": "vexp:dried_glow_berries",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/dried_glow_berries"
+        }
+      },
+      {
+        "when": "vexp:dried_sweet_berries",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/dried_sweet_berries"
+        }
+      },
+      {
+        "when": "vexp:roasted_brown_mushroom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_brown_mushroom"
+        }
+      },
+      {
+        "when": "vexp:roasted_red_mushroom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_red_mushroom"
+        }
+      },
+      {
+        "when": "vexp:pumpkin_pie_slice",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/pumpkin_pie_slice"
+        }
+      },
+      {
+        "when": "vexp:roasted_melon_seeds",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_melon_seeds"
+        }
+      },
+      {
+        "when": "vexp:roasted_pumpkin_seeds",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_pumpkin_seeds"
+        }
+      },
+      {
+        "when": "vexp:roasted_wheat_seeds",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/roasted_wheat_seeds"
+        }
+      },
+      {
+        "when": "vexp:rosted_beetroot_seeds",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/rosted_beetroot_seeds"
+        }
+      },
+      {
+        "when": "vexp:sandwich",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/sandwich"
+        }
+      },
+      {
+        "when": "vexp:sliced_beetroot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/sliced_beetroot"
+        }
+      },
+      {
+        "when": "vexp:sliced_bread",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/sliced_bread"
+        }
+      },
+      {
+        "when": "vexp:sliced_carrot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/sliced_carrot"
+        }
+      },
+      {
+        "when": "vexp:sliced_golden_carrot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/sliced_golden_carrot"
+        }
+      },
+      {
+        "when": "vexp:sliced_potato",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/sliced_potato"
+        }
+      },
+      {
+        "when": "vexp:ammo",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/pirotecnics/ammo"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/paper"
+    }
+  }
+}

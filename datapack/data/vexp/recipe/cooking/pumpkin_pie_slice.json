@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": ["minecraft:pumpkin_pie"],
   "result": {
-    "id": "minecraft:poisonous_potato",
+    "id": "minecraft:golden_carrot",
     "count": 4,
     "components": {
       "minecraft:custom_data": {
@@ -11,10 +11,11 @@
       },
       "minecraft:custom_model_data": { "strings": ["vexp:pumpkin_pie_slice"] },
       "minecraft:item_name": {
-        "text": "Porción de Tarta de Calabaza",
+        "text": "Porción de tarta de calabaza",
         "italic": false
       },
       "food": { "nutrition": 2, "saturation": 0.2 }
     }
   }
 }
+

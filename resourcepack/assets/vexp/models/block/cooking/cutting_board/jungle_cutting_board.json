@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/cooking/cutting_board_template",
+  "textures": {
+    "board": "vexp:block/cooking/jungle_cutting_board"
+  }
+}
