@@ -6,7 +6,7 @@ execute unless data storage vexp:custom_block item_drop.wp_id run data modify st
 execute if data storage vexp:custom_block item_drop.item_model run data modify storage vexp:custom_block item_drop.model set from storage vexp:custom_block item_drop.item_model
 
 # Soltar el ítem usando la macro genérica
-function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop
+execute unless data entity @s data.vexp{type:"pile_of_books"} run function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop
 
 # 2. Matar el modelo visual vinculado por ID
 scoreboard players operation #temp vexp.id = @s vexp.id

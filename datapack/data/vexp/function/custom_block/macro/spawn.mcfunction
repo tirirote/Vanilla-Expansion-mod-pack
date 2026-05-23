@@ -8,11 +8,11 @@ $execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display",
 
 # 2. Rotación: Alinear a 4 direcciones cardinales según el yaw del jugador (mirada)
 # Base cerrada de modelos: se aplica offset de 180 para mantener frente consistente
-execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-45..45] run data merge entity @s {Rotation:[180f,0f]}
-execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=45..135] run data merge entity @s {Rotation:[-90f,0f]}
-execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-135..-45] run data merge entity @s {Rotation:[90f,0f]}
-execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=136..180] run data merge entity @s {Rotation:[0f,0f]}
-execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-180..-136] run data merge entity @s {Rotation:[0f,0f]}
+execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-45..45] run data merge entity @s {Rotation:[0f,0f]}
+execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=45..135] run data merge entity @s {Rotation:[90f,0f]}
+execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-135..-45] run data merge entity @s {Rotation:[-90f,0f]}
+execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=136..180] run data merge entity @s {Rotation:[180f,0f]}
+execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-180..-136] run data merge entity @s {Rotation:[180f,0f]}
 # 3. Vincular ID global
 execute unless score #global vexp.id matches 1.. run scoreboard players set #global vexp.id 1
 scoreboard players add #global vexp.id 1

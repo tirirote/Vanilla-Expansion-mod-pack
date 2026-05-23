@@ -264,6 +264,82 @@
         }
       },
       {
+        "when": "vexp:pile_of_books",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/pile_of_books"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/decorative/pile_of_books/pile_of_books_0"
+          }
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_0",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_0"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_1",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_1"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_2",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_2"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_3",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_3"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_4",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_4"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_5",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_5"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_6",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_6"
+        }
+      },
+      {
+        "when": "vexp:pile_of_books_7",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/pile_of_books/pile_of_books_7"
+        }
+      },
+      {
         "when": "vexp:frying_pan",
         "model": {
           "type": "minecraft:select",

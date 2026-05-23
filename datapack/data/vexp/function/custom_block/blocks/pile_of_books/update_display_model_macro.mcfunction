@@ -1,0 +1,4 @@
+# update_display_model_macro.mcfunction
+# Input storage: {state:<0..7>}
+
+$execute as @e[type=item_display,tag=vexp.custom_block.display,sort=nearest,distance=..1.5] if score @s vexp.id = #pile_books_id vexp.id run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:pile_of_books_$(state)"]
