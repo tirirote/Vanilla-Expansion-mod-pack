@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": ["minecraft:prismarine_shard", "minecraft:glow_ink_sac"],
+  "result": {
+    "id": "minecraft:command_block",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Fragmento luminoso",
+        "italic": false,
+        "color": "yellow"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:glowing_fragment"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "material",
+          "id": "glowing_fragment",
+          "source": "glowsquid"
+        }
+      }
+    }
+  }
+}

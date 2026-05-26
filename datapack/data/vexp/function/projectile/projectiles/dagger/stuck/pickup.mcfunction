@@ -25,7 +25,7 @@ execute as @e[tag=vexp.current_pickup,limit=1] run scoreboard players operation 
 tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_damage
 
 # Dar el item (usará los tags que acabamos de ponerle al picker)
-execute as @p[tag=vexp.picker,limit=1] run function vexp:dungeons/dagger/give
+execute as @p[tag=vexp.picker,limit=1] run function vexp:dungeons/weapons/dagger/give
 
 # 3. Sonido
 playsound minecraft:entity.item.pickup player @a ~ ~ ~ 1 1

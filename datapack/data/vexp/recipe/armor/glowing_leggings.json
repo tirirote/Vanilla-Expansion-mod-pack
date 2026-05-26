@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["MMM", "M M", "M M"],
   "key": {
-    "M": "minecraft:glow_ink_sac"
+    "M": "minecraft:command_block"
   },
   "result": {
     "id": "minecraft:diamond_leggings",

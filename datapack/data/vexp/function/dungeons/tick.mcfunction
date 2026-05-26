@@ -11,12 +11,11 @@ function vexp:dungeons/reforge/tick
 function vexp:dungeons/lore/tick
 function vexp:dungeons/combo_system/tick
 function vexp:dungeons/armor/tick
-function vexp:dungeons/bow/tick
-function vexp:dungeons/bow/arrows/tick
-function vexp:dungeons/dagger/tick
-function vexp:dungeons/handgun/tick
-function vexp:dungeons/scythe/tick
-function vexp:dungeons/sword/tick
+function vexp:dungeons/weapons/bow/tick
+function vexp:dungeons/weapons/bow/arrows/tick
+function vexp:dungeons/weapons/dagger/tick
+function vexp:dungeons/weapons/scythe/tick
+function vexp:dungeons/weapons/sword/tick
 
 # 2.1. PROJECTILE SYSTEM (Global)
 execute as @e[type=marker,tag=vexp.projectile] at @s run function vexp:projectile/tick

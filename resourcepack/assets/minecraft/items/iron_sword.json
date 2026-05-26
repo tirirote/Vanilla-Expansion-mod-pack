@@ -6,8 +6,21 @@
       {
         "when": "vexp:handgun",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/pirotecnics/hand_gun"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/pirotecnics/handgun"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/pirotecnics/hand_gun_hand"
+          }
         }
       },
       {

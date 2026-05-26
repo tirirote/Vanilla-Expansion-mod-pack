@@ -5,4 +5,4 @@ $execute positioned ~ ~1 ~ positioned ^ ^ ^$(reach) as @e[predicate=vexp:is_targ
 
 # Apply damage to the hitted entity (effect-adjusted)
 execute as @e[tag=vexp.hitted] run scoreboard players set @s vexp.hit_success 0
-$execute as @e[tag=vexp.hitted] store success score @s vexp.hit_success run damage @s $(eff_damage) vexp:combo_hit by @p
+$execute as @e[tag=vexp.hitted] store success score @s vexp.hit_success run damage @s $(eff_damage) vexp:combo_hit by @p[tag=vexp.attacker,limit=1]

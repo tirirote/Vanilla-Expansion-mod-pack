@@ -20,13 +20,16 @@ execute if entity @s[tag=vexp.echo] run tag @p[tag=vexp.dagger_owner,limit=1] ad
 execute if entity @s[tag=vexp.netherite] run function vexp:projectile/projectiles/dagger/netherite/on_hit_mob
 execute if entity @s[tag=vexp.echo] run function vexp:projectile/projectiles/dagger/echo/on_hit_mob
 execute if entity @s[tag=vexp.glowing] run function vexp:projectile/projectiles/dagger/glowing/on_hit_mob
-
+execute if entity @s[tag=vexp.diamond] run function vexp:projectile/projectiles/dagger/diamond/on_hit_mob
+execute if entity @s[tag=vexp.gold] run function vexp:projectile/projectiles/dagger/gold/on_hit_mob
 # Efectos visuales
-execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.amethyst] positioned ~ ~1 ~ run function vexp:projectile/projectiles/dagger/common_dagger_hit
+execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.glowing] unless entity @s[tag=vexp.gold] unless entity @s[tag=vexp.diamond] positioned ~ ~1 ~ run function vexp:projectile/projectiles/dagger/common_dagger_hit
+
+function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}
 
 # Transferir daño al dueño para la devolución con durabilidad correcta
 scoreboard players operation @p[tag=vexp.dagger_owner,limit=1] vexp.damage = @s vexp.damage
 tag @p[tag=vexp.dagger_owner,limit=1] add vexp.restore_dagger_damage
 
 # Devolver la daga al jugador
-execute as @p[tag=vexp.dagger_owner,limit=1] at @s run function vexp:dungeons/dagger/give
+execute as @p[tag=vexp.dagger_owner,limit=1] at @s run function vexp:dungeons/weapons/dagger/give

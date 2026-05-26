@@ -39,5 +39,7 @@ scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,li
 execute if entity @s[tag=vexp.netherite] run function vexp:projectile/projectiles/dagger/netherite/on_hit_block
 execute if entity @s[tag=vexp.echo] run function vexp:projectile/projectiles/dagger/echo/on_hit_block
 execute if entity @s[tag=vexp.glowing] run function vexp:projectile/projectiles/dagger/glowing/on_hit_block
+execute if entity @s[tag=vexp.diamond] run function vexp:projectile/projectiles/dagger/diamond/on_hit_block
+execute if entity @s[tag=vexp.gold] run function vexp:projectile/projectiles/dagger/gold/on_hit_block
 
 execute as @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] at @s run function vexp:projectile/projectiles/dagger/stuck/setup

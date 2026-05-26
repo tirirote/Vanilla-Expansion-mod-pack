@@ -4,7 +4,7 @@
   "ingredients": ["#minecraft:coals", "minecraft:gunpowder"],
   "result": {
     "id": "minecraft:poisonous_potato",
-    "count": 6,
+    "count": 9,
     "components": {
       "minecraft:custom_data": {
         "vexp": {
@@ -15,7 +15,7 @@
         "strings": ["vexp:ammo"]
       },
       "minecraft:item_name": {
-        "text": "Munición de Cañón de Mano",
+        "text": "Munición de cañón de mano",
         "italic": false,
         "color": "white"
       },

@@ -3,7 +3,7 @@
 effect give @s minecraft:resistance 2 2 true
 
 # Attempt projectile deflect while parry window is active
-function vexp:dungeons/combo_system/hooks/parry_deflect
+execute as @e[type=#vexp:deflectable_projectiles,distance=..2.5,tag=!vexp.parry_deflected] at @s run function vexp:projectile/deflect_reverse_motion
 
 scoreboard players operation #parry_delta vexp.math = @s vexp.damage_taken
 scoreboard players operation #parry_delta vexp.math -= @s vexp.parry_damage_snapshot

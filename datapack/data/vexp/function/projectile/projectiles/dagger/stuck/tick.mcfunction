@@ -11,11 +11,11 @@ execute at @e[tag=vexp.current_host,limit=1] run teleport @s ~ ~1 ~
 
 # 3. Daño por sangrado (Cada 20 ticks / 1 seg)
 # Solo si hay un host y NO está en un bloque
-execute if entity @e[tag=vexp.current_host,distance=..0.1] unless entity @s[tag=vexp.stuck_in_block] run scoreboard players remove @s vexp.dagger_cooldown 1
+execute if entity @e[tag=vexp.current_host,distance=..0.1] unless entity @s[tag=vexp.stuck_in_block] run scoreboard players remove @s vexp.timer 1
 
 # Al llegar a 0, hacemos daño y reseteamos el reloj
-execute if score @s vexp.dagger_cooldown matches ..0 as @e[tag=vexp.current_host,limit=1] run damage @s 2 minecraft:player_attack
-execute if score @s vexp.dagger_cooldown matches ..0 run scoreboard players set @s vexp.dagger_cooldown 20
+execute if score @s vexp.timer matches ..0 as @e[tag=vexp.current_host,limit=1] run damage @s 2 minecraft:player_attack
+execute if score @s vexp.timer matches ..0 run scoreboard players set @s vexp.timer 20
 
 # 5. Animación de balanceo
 function vexp:projectile/projectiles/dagger/stuck/animate

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "WW ", "LL "],
   "key": {
-    "W": "minecraft:glow_ink_sac",
+    "W": "minecraft:command_block",
     "L": "minecraft:leather"
   },
   "result": {

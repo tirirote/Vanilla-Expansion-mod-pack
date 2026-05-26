@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": ["III", " FR", "  S"],
+  "pattern": ["   ", "IIF", "  S"],
   "key": {
     "I": "minecraft:iron_ingot",
-    "R": "minecraft:redstone",
     "F": "minecraft:flint",
     "S": "minecraft:stick"
   },
@@ -16,15 +15,21 @@
         "vexp": {
           "item": "handgun",
           "type": "short_combo",
+          "material": "iron",
           "combo": {
-            "damage": 4,
-            "cooldown": 18,
-            "right_click_cooldown": 30,
-            "range": 2.5,
+            "desc": "Fiable y fácil de usar.",
+            "rc_desc": "Dispara un proyectil a corta distancia.",
+            "damage": 3,
+            "cooldown": 24,
+            "right_click_cooldown": 12,
+            "range": 1.5,
             "reach": 3.5,
             "quality": "normal"
           }
         }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:handgun"]
@@ -32,46 +37,10 @@
       "minecraft:max_damage": 250,
       "minecraft:damage": 0,
       "minecraft:item_name": {
-        "text": "Cañón de Mano",
+        "text": "Cañón de mano",
         "color": "white",
         "italic": false
       },
-      "minecraft:lore": [
-        {
-          "text": "Dispara consumiendo munición del inventario",
-          "color": "gray",
-          "italic": false
-        },
-        {
-          "text": "",
-          "italic": false
-        },
-        {
-          "text": "Stats de Combo:",
-          "color": "blue",
-          "italic": false
-        },
-        {
-          "text": "- Daño: 4",
-          "color": "dark_gray",
-          "italic": false
-        },
-        {
-          "text": "- Alcance: 2.5",
-          "color": "dark_gray",
-          "italic": false
-        },
-        {
-          "text": "- Reach: 3.5",
-          "color": "dark_gray",
-          "italic": false
-        },
-        {
-          "text": "- Cooldown: 18 ticks",
-          "color": "dark_gray",
-          "italic": false
-        }
-      ],
       "minecraft:repairable": {
         "items": ["minecraft:iron_ingot"]
       },
@@ -81,15 +50,15 @@
           "type": "minecraft:attack_damage",
           "amount": -1.0,
           "operation": "add_value",
-          "id": "vexp:scythe_damage",
+          "id": "vexp:handgun_damage",
           "slot": "mainhand"
         },
         {
-          "id": "minecraft:attack_speed",
+          "type": "attack_speed",
           "amount": -3.0,
           "operation": "add_value",
-          "slot": "mainhand",
-          "type": "attack_speed"
+          "id": "minecraft:attack_speed",
+          "slot": "mainhand"
         }
       ],
       "food": {

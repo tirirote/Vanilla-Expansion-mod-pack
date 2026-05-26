@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "ground",
+          "fixed",
+          "firstperson_righthand",
+          "firstperson_lefthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/cherry_leaves"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/cherry_leaves"
+    }
+  }
+}

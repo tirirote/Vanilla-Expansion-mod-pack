@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" W ", " W ", " S "],
   "key": {
-    "W": "minecraft:glow_ink_sac",
+    "W": "minecraft:command_block",
     "S": "minecraft:stick"
   },
   "result": {

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" H ", "WWW", " S "],
+  "key": {
+    "H": "minecraft:hay_block",
+    "W": "minecraft:wheat",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "training_dummy",
+            "model": "vexp:training_dummy",
+            "width": 0.5,
+            "height": 0.5,
+            "type": "training_dummy",
+            "name": "Muñeco de entrenamiento",
+            "s_place": "minecraft:block.grass.place",
+            "s_break": "minecraft:block.grass.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:hay_block'}}"
+          }
+        },
+        "Invisible": true,
+        "Fixed": true,
+        "Silent": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:training_dummy"]
+      },
+      "minecraft:item_name": {
+        "text": "Muñeco de entrenamiento",
+        "italic": false
+      }
+    }
+  }
+}

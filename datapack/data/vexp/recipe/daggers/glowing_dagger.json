@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", " W ", "S  "],
   "key": {
-    "W": "minecraft:glow_ink_sac",
+    "W": "minecraft:command_block",
     "S": "minecraft:stick"
   },
   "result": {
@@ -11,7 +11,7 @@
       "minecraft:item_name": "Daga Luminiscente",
       "minecraft:custom_data": {
         "vexp": {
-          "type": "mid_combo",
+          "type": "short_combo",
           "item": "dagger",
           "material": "glowing",
           "combo": {

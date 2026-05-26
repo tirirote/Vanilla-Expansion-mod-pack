@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" MT", "M T", " MT"],
   "key": {
-    "M": "minecraft:glow_ink_sac",
+    "M": "minecraft:command_block",
     "T": "minecraft:string"
   },
   "result": {

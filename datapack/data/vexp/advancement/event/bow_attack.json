@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "vexp:dungeons/bow/hooks/on_using_bow"
+    "function": "vexp:dungeons/weapons/bow/hooks/on_using_bow"
   }
 }

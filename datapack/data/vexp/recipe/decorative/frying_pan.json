@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": ["III", "I I", " S "],
+  "pattern": [" I ", "I I", " I "],
   "key": {
-    "I": "minecraft:iron_ingot",
-    "S": "minecraft:stick"
+    "I": "minecraft:iron_ingot"
   },
   "result": {
     "id": "minecraft:item_frame",
@@ -20,7 +19,7 @@
             "width": 0.95,
             "height": 0.35,
             "type": "frying_pan",
-            "name": "Sarten",
+            "name": "Sartén",
             "s_place": "minecraft:block.lantern.place",
             "s_break": "minecraft:block.lantern.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_chain'}}"
@@ -34,7 +33,7 @@
         "strings": ["vexp:frying_pan"]
       },
       "minecraft:item_name": {
-        "text": "Sarten",
+        "text": "Sartén",
         "italic": false
       }
     }

@@ -622,8 +622,21 @@
       {
         "when": "vexp:training_dummy",
         "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/training_dummy"
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/training_dummy"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/dungeons/training_dummy"
+          }
         }
       },
       {

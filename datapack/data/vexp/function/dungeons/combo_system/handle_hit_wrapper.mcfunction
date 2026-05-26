@@ -8,4 +8,4 @@ data modify storage vexp:dungeons.weapon combo_params.quality set from entity @s
 execute unless data storage vexp:dungeons.weapon combo_params{quality:"normal"} unless data storage vexp:dungeons.weapon combo_params{quality:"gold"} unless data storage vexp:dungeons.weapon combo_params{quality:"diamond"} unless data storage vexp:dungeons.weapon combo_params{quality:"netherite"} unless data storage vexp:dungeons.weapon combo_params{quality:"echo"} unless data storage vexp:dungeons.weapon combo_params{quality:"glowing"} run data modify storage vexp:dungeons.weapon combo_params.quality set from entity @s SelectedItem.components."minecraft:custom_data".vexp.quality
 
 # Run handle_hit with the item's info
-function vexp:dungeons/combo_system/hooks/handle_hit with storage vexp:dungeons.weapon combo_params
+function vexp:dungeons/combo_system/hooks/hit/handle_hit with storage vexp:dungeons.weapon combo_params

@@ -1,0 +1,1 @@
+# dungeons/scythe/tick.mcfunction

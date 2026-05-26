@@ -20,6 +20,6 @@ execute if predicate vexp:is_airborne if score #crit_vy vexp.math matches ..-1 r
 function vexp:dungeons/combo_system/hitbox/damage_aoe with storage vexp:dungeons.weapon combo_params
 
 # Process combos and hooks for the hitted entity
-function vexp:dungeons/combo_system/hooks/handle_hit with storage vexp:dungeons.weapon combo_params
+function vexp:dungeons/combo_system/hooks/hit/handle_hit with storage vexp:dungeons.weapon combo_params
 
 function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}

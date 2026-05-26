@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "vexp:dungeons/combo_system/hooks/apply_interact_params_wrapper"
+    "function": "vexp:dungeons/combo_system/hooks/interact/apply_interact_params_wrapper"
   }
 }

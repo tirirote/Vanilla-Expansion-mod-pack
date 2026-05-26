@@ -11,7 +11,7 @@
       "minecraft:item_name": "Daga Resonante",
       "minecraft:custom_data": {
         "vexp": {
-          "type": "mid_combo",
+          "type": "short_combo",
           "item": "dagger",
           "material": "echo",
           "combo": {

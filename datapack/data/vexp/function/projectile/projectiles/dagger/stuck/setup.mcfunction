@@ -37,5 +37,5 @@ tag @s remove vexp.temp_stuck
 # Inicializar animación
 scoreboard players set @s vexp.anim_frame 0
 
-# Intervalo de desangrado (20 ticks = 1 seg)
-scoreboard players set @s vexp.dagger_cooldown 20
+# Inicializar temporizador de sangrado para este marker clavado.
+scoreboard players set @s vexp.timer 20

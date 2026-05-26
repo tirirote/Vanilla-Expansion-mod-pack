@@ -2,7 +2,6 @@
 scoreboard objectives add vexp.id dummy
 scoreboard objectives add vexp.dagger_used minecraft.used:minecraft.iron_sword
 scoreboard objectives add vexp.bow_used minecraft.used:minecraft.bow
-scoreboard objectives add vexp.dagger_cooldown dummy
 scoreboard objectives add vexp.bow_used_prev dummy
 scoreboard objectives add vexp.bow_shot_delta dummy
 scoreboard objectives add vexp.bow_draw_ticks dummy
@@ -99,7 +98,6 @@ scoreboard objectives add vexp.parry_timer dummy
 scoreboard objectives add vexp.parry_damage_snapshot dummy
 # Dungeons System
 scoreboard objectives add vexp.dstate dummy
-scoreboard objectives add vexp.scythe_proj_life dummy
 
 # Global Projectile System
 scoreboard objectives add vexp.proj_lifetime dummy
