@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:iron_shovel",
+    "components": {
+      "minecraft:item_name": "Pala de Hierro",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "iron",
+          "tool": {
+            "desc": "Fiable y resistente.",
+            "efficiency": 6,
+            "damage": 4.5,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

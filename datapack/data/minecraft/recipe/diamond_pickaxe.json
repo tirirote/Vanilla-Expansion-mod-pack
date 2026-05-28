@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:diamond_pickaxe",
+    "components": {
+      "minecraft:item_name": "Pico de Diamante",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "pickaxe",
+          "material": "diamond",
+          "tool": {
+            "desc": "El mejor pico por excelencia.",
+            "efficiency": 8,
+            "damage": 5,
+            "attack_speed": 1.2
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

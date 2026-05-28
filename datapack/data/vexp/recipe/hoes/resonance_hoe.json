@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", " S ", " S "],
+  "key": {
+    "W": "minecraft:echo_shard",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:netherite_hoe",
+    "components": {
+      "minecraft:item_name": "Azada Resonante",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "hoe",
+          "material": "echo",
+          "tool": {
+            "desc": "Azada resonante de labranza perfecta.",
+            "efficiency": 9,
+            "damage": 1,
+            "attack_speed": 4
+          },
+          "quality": "echo"
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_hoe"]
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:echo_shard"]
+      },
+      "repair_cost": 1,
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0
+    },
+    "count": 1
+  }
+}

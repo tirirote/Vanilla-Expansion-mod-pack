@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:iron_pickaxe",
+    "components": {
+      "minecraft:item_name": "Pico de Hierro",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "pickaxe",
+          "material": "iron",
+          "tool": {
+            "desc": "Eficiente y resistente.",
+            "efficiency": 6,
+            "damage": 4,
+            "attack_speed": 1.2
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

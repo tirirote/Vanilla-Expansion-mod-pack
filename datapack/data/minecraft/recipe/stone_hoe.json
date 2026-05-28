@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", " S ", " S "],
+  "key": {
+    "W": "minecraft:cobblestone",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:stone_hoe",
+    "components": {
+      "minecraft:item_name": "Azada de Piedra",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "hoe",
+          "material": "stone",
+          "tool": {
+            "desc": "Tosca pero funcional.",
+            "efficiency": 4,
+            "damage": 1,
+            "attack_speed": 2
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

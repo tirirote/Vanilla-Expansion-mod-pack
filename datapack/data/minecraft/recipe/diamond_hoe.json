@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", " S ", " S "],
+  "key": {
+    "W": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:diamond_hoe",
+    "components": {
+      "minecraft:item_name": "Azada de Diamante",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "hoe",
+          "material": "diamond",
+          "tool": {
+            "desc": "Una gran azada para tus cultivos.",
+            "efficiency": 8,
+            "damage": 1,
+            "attack_speed": 4
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

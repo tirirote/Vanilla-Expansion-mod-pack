@@ -7,7 +7,24 @@
   },
   "result": {
     "id": "minecraft:netherite_shovel",
+    "components": {
+      "minecraft:item_name": "Pala de Netherite",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "netherite",
+          "tool": {
+            "desc": "Absurdamente eficiente.",
+            "efficiency": 9,
+            "damage": 6.5,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
     "count": 1
   }
 }
-

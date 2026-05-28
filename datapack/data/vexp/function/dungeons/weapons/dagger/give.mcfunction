@@ -18,6 +18,10 @@ execute if entity @s[tag=vexp.glowing] run data modify storage vexp:dungeons.wea
 execute if entity @s[tag=vexp.restore_dagger_damage] store result storage vexp:dungeons.weapon params.item_damage int 1 run scoreboard players get @s vexp.damage
 execute unless entity @s[tag=vexp.restore_dagger_damage] run data modify storage vexp:dungeons.weapon params.item_damage set value 0
 
+# Restaurar encantamientos cuando la daga viene de proyectil/stuck pickup
+execute if entity @s[tag=vexp.restore_dagger_enchantments] run data modify storage vexp:dungeons.weapon params.enchantments set from storage vexp:dungeons.weapon return.enchantments
+execute unless entity @s[tag=vexp.restore_dagger_enchantments] run data modify storage vexp:dungeons.weapon params.enchantments set value {}
+
 # 2. Llamar a la macro usando el objeto completo de storage
 function vexp:dungeons/weapons/dagger/give_macro with storage vexp:dungeons.weapon params
 
@@ -34,5 +38,7 @@ tag @s remove vexp.echo
 tag @s remove vexp.glowing
 tag @s remove vexp.amethyst
 tag @s remove vexp.restore_dagger_damage
+tag @s remove vexp.restore_dagger_enchantments
 scoreboard players set @s vexp.damage 0
+data remove storage vexp:dungeons.weapon return
 data remove storage vexp:dungeons.weapon params

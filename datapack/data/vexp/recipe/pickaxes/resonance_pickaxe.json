@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:echo_shard",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:netherite_pickaxe",
+    "components": {
+      "minecraft:item_name": "Pico Resonante",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "pickaxe",
+          "material": "echo",
+          "tool": {
+            "desc": "Pico resonante de maxima precision.",
+            "efficiency": 9,
+            "damage": 6,
+            "attack_speed": 1.2
+          },
+          "quality": "echo"
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_pickaxe"]
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:echo_shard"]
+      },
+      "repair_cost": 1,
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0
+    },
+    "count": 1
+  }
+}

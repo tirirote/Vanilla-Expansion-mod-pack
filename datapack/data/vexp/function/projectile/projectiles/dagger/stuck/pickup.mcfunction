@@ -24,6 +24,11 @@ execute if entity @e[tag=vexp.current_pickup,tag=vexp.glowing,limit=1] run tag @
 execute as @e[tag=vexp.current_pickup,limit=1] run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage
 tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_damage
 
+# Pasar encantamientos del marker stuck al flujo de devolución
+execute as @e[tag=vexp.current_pickup,limit=1] if data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set from entity @s data.enchantments
+execute as @e[tag=vexp.current_pickup,limit=1] unless data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set value {}
+tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_enchantments
+
 # Dar el item (usará los tags que acabamos de ponerle al picker)
 execute as @p[tag=vexp.picker,limit=1] run function vexp:dungeons/weapons/dagger/give
 

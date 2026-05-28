@@ -5,7 +5,7 @@
 execute unless entity @e[tag=vexp.hitted,distance=..8,limit=1] run return 0
 
 # Encantamientos vanilla bridge.
-function vexp:dungeons/enchantments/vanilla_post_attack_combo
+function vexp:dungeons/enchantments/vanilla/post_attack_combo
 
 # Encantamientos custom bridge.
-function vexp:dungeons/enchantments/custom_post_attack_combo
+function vexp:dungeons/enchantments/custom/post_attack_combo

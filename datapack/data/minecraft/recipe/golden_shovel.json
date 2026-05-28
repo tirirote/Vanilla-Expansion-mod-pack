@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "minecraft:gold_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:golden_shovel",
+    "components": {
+      "minecraft:item_name": "Pala de Oro",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "gold",
+          "tool": {
+            "desc": "Ligera y muy rápida.",
+            "efficiency": 12,
+            "damage": 2.5,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

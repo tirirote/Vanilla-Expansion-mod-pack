@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:cobblestone",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:stone_pickaxe",
+    "components": {
+      "minecraft:item_name": "Pico de Piedra",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "pickaxe",
+          "material": "stone",
+          "tool": {
+            "desc": "Tosco pero confiable.",
+            "efficiency": 4,
+            "damage": 3,
+            "attack_speed": 1.2
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

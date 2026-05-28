@@ -2,6 +2,6 @@
 # @s is the target entity
 
 # Push wave
-execute as @e[predicate=vexp:is_target,distance=..2] at @s positioned ~ ~1 ~ run function vexp:dungeons/weapons/sword/common_wave
+execute as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/weapons/sword/common_wave
 # Visuals
 execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit

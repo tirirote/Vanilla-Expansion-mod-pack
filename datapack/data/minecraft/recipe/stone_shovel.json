@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "minecraft:cobblestone",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:stone_shovel",
+    "components": {
+      "minecraft:item_name": "Pala de Piedra",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "stone",
+          "tool": {
+            "desc": "Tosca pero fiable.",
+            "efficiency": 4,
+            "damage": 3.5,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

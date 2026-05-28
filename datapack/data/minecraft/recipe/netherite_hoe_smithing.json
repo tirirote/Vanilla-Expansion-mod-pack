@@ -7,6 +7,24 @@
   },
   "result": {
     "id": "minecraft:netherite_hoe",
+    "components": {
+      "minecraft:item_name": "Azada de Netherite",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "hoe",
+          "material": "netherite",
+          "tool": {
+            "desc": "Eficiencia absoluta.",
+            "efficiency": 9,
+            "damage": 1,
+            "attack_speed": 4
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
     "count": 1
   }
 }

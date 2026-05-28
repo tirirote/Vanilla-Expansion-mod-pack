@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", " S ", " S "],
+  "key": {
+    "W": "#minecraft:planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:wooden_hoe",
+    "components": {
+      "minecraft:item_name": "Azada de Madera",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "hoe",
+          "material": "wood",
+          "tool": {
+            "desc": "Sencilla y básica.",
+            "efficiency": 2,
+            "damage": 1,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

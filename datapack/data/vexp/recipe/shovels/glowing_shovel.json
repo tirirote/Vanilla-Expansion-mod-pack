@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "minecraft:command_block",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:diamond_shovel",
+    "components": {
+      "minecraft:item_name": "Pala Luminiscente",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "glowing",
+          "tool": {
+            "desc": "Pala brillante para excavacion rapida.",
+            "efficiency": 8,
+            "damage": 5.5,
+            "attack_speed": 1
+          },
+          "quality": "glowing"
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:glowing_shovel"]
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:diamond"]
+      },
+      "repair_cost": 1,
+      "minecraft:max_damage": 800,
+      "minecraft:damage": 0
+    },
+    "count": 1
+  }
+}

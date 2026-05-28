@@ -35,6 +35,10 @@ data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] Rot
 # Transferir daño al marcador stuck
 scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] vexp.damage = @s vexp.damage
 
+# Transferir encantamientos al marcador stuck para pickup posterior
+execute if data entity @s data.enchantments run data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] data.enchantments set from entity @s data.enchantments
+execute unless data entity @s data.enchantments run data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] data.enchantments set value {}
+
 # Quality-specific projectile hooks
 execute if entity @s[tag=vexp.netherite] run function vexp:projectile/projectiles/dagger/netherite/on_hit_block
 execute if entity @s[tag=vexp.echo] run function vexp:projectile/projectiles/dagger/echo/on_hit_block

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WW ", " S ", " S "],
+  "key": {
+    "W": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:iron_hoe",
+    "components": {
+      "minecraft:item_name": "Azada de Hierro",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "hoe",
+          "material": "iron",
+          "tool": {
+            "desc": "Resistente y eficiente.",
+            "efficiency": 6,
+            "damage": 1,
+            "attack_speed": 3
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

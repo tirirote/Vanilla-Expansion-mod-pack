@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "#minecraft:planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:wooden_shovel",
+    "components": {
+      "minecraft:item_name": "Pala de Madera",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "wood",
+          "tool": {
+            "desc": "Sencilla y básica.",
+            "efficiency": 2,
+            "damage": 2.5,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

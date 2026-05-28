@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:diamond_shovel",
+    "components": {
+      "minecraft:item_name": "Pala de Diamante",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "diamond",
+          "tool": {
+            "desc": "Una buena pala de calidad.",
+            "efficiency": 8,
+            "damage": 5.5,
+            "attack_speed": 1
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

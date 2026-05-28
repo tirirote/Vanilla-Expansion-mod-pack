@@ -18,8 +18,8 @@
           "vexp": {
             "id": "training_dummy",
             "model": "vexp:training_dummy",
-            "width": 0.5,
-            "height": 0.5,
+            "width": 0.8,
+            "height": 0.8,
             "type": "training_dummy",
             "name": "Muñeco de entrenamiento",
             "s_place": "minecraft:block.grass.place",

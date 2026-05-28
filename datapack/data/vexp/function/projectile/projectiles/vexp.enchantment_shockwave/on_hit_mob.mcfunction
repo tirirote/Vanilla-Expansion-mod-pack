@@ -1,0 +1,1 @@
+function vexp:projectile/projectiles/enchantment_shockwave/on_hit_mob

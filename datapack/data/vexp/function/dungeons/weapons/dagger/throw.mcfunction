@@ -18,6 +18,10 @@ function vexp:projectile/utils/create_armor_stand with storage vexp:temp project
 # Capturar durabilidad actual para persistirla en el proyectil
 execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage run data get entity @s SelectedItem.components."minecraft:damage"
 
+# Capturar encantamientos para devolver la daga intacta al recuperarla
+execute if data entity @s SelectedItem.components."minecraft:enchantments" run data modify entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.enchantments set from entity @s SelectedItem.components."minecraft:enchantments"
+execute unless data entity @s SelectedItem.components."minecraft:enchantments" run data modify entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.enchantments set value {}
+
 # Identificar material en mano y etiquetar proyectil
 # Utilizando la nueva estructura NBT vexp:{item:"dagger"}
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger",material:"bone"}}] run tag @e[tag=vexp.temp_projectile,distance=..1] add vexp.bone

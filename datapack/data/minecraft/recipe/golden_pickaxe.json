@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:gold_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:golden_pickaxe",
+    "components": {
+      "minecraft:item_name": "Pico de Oro",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "pickaxe",
+          "material": "gold",
+          "tool": {
+            "desc": "Extremádamente rápido, pero frágil.",
+            "efficiency": 12,
+            "damage": 2,
+            "attack_speed": 1.2,
+            "bonus_desc": "Excava con rapidez.",
+            "status_desc": "Se desgasta con facilidad."
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      }
+    },
+    "count": 1
+  }
+}

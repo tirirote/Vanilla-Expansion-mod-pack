@@ -31,5 +31,10 @@ function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "pl
 scoreboard players operation @p[tag=vexp.dagger_owner,limit=1] vexp.damage = @s vexp.damage
 tag @p[tag=vexp.dagger_owner,limit=1] add vexp.restore_dagger_damage
 
+# Transferir encantamientos del proyectil al flujo de devolución
+execute if data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set from entity @s data.enchantments
+execute unless data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set value {}
+tag @p[tag=vexp.dagger_owner,limit=1] add vexp.restore_dagger_enchantments
+
 # Devolver la daga al jugador
 execute as @p[tag=vexp.dagger_owner,limit=1] at @s run function vexp:dungeons/weapons/dagger/give

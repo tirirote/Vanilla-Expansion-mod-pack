@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" W ", " S ", " S "],
+  "key": {
+    "W": "minecraft:echo_shard",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:netherite_shovel",
+    "components": {
+      "minecraft:item_name": "Pala Resonante",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "shovel",
+          "material": "echo",
+          "tool": {
+            "desc": "Pala resonante para limpiar terreno.",
+            "efficiency": 9,
+            "damage": 6.5,
+            "attack_speed": 1
+          },
+          "quality": "echo"
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:resonance_shovel"]
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:echo_shard"]
+      },
+      "repair_cost": 1,
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0
+    },
+    "count": 1
+  }
+}

@@ -30,6 +30,34 @@
           "type": "minecraft:model",
           "model": "vexp:block/fx/weak_sword_swoosh"
         }
+      },
+      {
+        "when": "vexp:thundering",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/thundering"
+        }
+      },
+      {
+        "when": "vexp:healing",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/healing"
+        }
+      },
+      {
+        "when": "vexp:fire",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/fire"
+        }
+      },
+      {
+        "when": "vexp:backstab",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/backstab"
+        }
       }
     ],
     "fallback": {

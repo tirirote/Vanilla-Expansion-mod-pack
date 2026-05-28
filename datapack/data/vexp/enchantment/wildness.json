@@ -1,0 +1,19 @@
+{
+  "description": {
+    "text": "Wildness"
+  },
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "primary_items": "#minecraft:enchantable/sharp_weapon",
+  "weight": 4,
+  "max_level": 2,
+  "min_cost": {
+    "base": 14,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 34,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": ["mainhand"]
+}
