@@ -16,11 +16,11 @@
           "material": "copper",
           "combo": {
             "desc": "Ligera y resistente.",
-            "rc_desc": "Golpe giratorio en área.",
+            "rc_desc": "Golpe de Vindicador.",
             "damage": 7,
             "cooldown": 24,
-            "right_click_cooldown": 12,
-            "range": 1.5,
+            "right_click_cooldown": 48,
+            "range": 1.25,
             "reach": 2.5,
             "quality": "normal"
           }
@@ -39,7 +39,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.2,
+          "amount": -3.167,
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"
@@ -59,9 +59,13 @@
           "slot": "mainhand"
         }
       ],
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
-        "animation": "spear",
+        "animation": "trident",
         "consume_seconds": 999999,
         "has_consume_particles": false
       },

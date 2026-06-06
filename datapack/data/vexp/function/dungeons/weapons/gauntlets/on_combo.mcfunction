@@ -5,4 +5,4 @@
 function vexp:utils/motion/apply_knockback {strength:-2.5, y:1}
 
 # Visuals
-execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_punch_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_punch_hit

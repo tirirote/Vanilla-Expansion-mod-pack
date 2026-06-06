@@ -16,13 +16,13 @@
           "material": "netherite",
           "combo": {
             "desc": "Poderosa y abrasadora.",
-            "rc_desc": "Gran golpe ardiente en área.",
+            "rc_desc": "Golpe abrasador de Vindicador.",
             "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
             "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 11,
             "cooldown": 36,
-            "right_click_cooldown": 12,
-            "range": 1.5,
+            "right_click_cooldown": 48,
+            "range": 1.25,
             "reach": 2.5,
             "quality": "netherite"
           }
@@ -41,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.2,
+          "amount": -3.444,
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"
@@ -62,9 +62,13 @@
         }
       ],
       "minecraft:max_damage": 2031,
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
-        "animation": "bow",
+        "animation": "trident",
         "consume_seconds": 999999,
         "has_consume_particles": false
       }

@@ -13,6 +13,7 @@
         "vexp": {
           "type": "mid_combo",
           "item": "sword",
+          "material": "stone",
           "combo": {
             "desc": "Tosca y confiable.",
             "rc_desc": "Bloquea y desvía ataques.",
@@ -38,7 +39,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": 0.2,
+          "amount": -2.75,
           "operation": "add_value",
           "id": "vexp:sword_speed",
           "slot": "mainhand"
@@ -58,7 +59,11 @@
           "slot": "mainhand"
         }
       ],
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,

@@ -7,7 +7,7 @@ execute as @p[tag=vexp.arrow.owner,limit=1] at @s if entity @e[predicate=vexp:is
 #Mark the target
 execute as @e[predicate=vexp:is_target,sort=nearest,limit=1,distance=..2] run function vexp:dungeons/states/glow_marked
 
-function vexp:utils/hits/glowing_hit
+function vexp:dungeons/fx/hits/glowing_hit
 
 function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
 function vexp:utils/sound {sound: "minecraft:entity.glow_squid.squirt", type: "player"}

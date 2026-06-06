@@ -28,3 +28,8 @@ execute if score #pursuit_bonus vexp.math matches ..0 run return 0
 
 execute store result storage vexp:temp pursuit_damage int 1 run scoreboard players get #pursuit_bonus vexp.math
 execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/enchantments/custom/hit/pursuit_deal_bonus with storage vexp:temp
+
+#Feedback
+execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/fx/enchantments/pursuit
+
+function vexp:utils/sound {sound: "minecraft:entity.vex.hurt", type: "player"}

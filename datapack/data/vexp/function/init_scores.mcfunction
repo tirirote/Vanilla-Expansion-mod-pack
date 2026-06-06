@@ -55,7 +55,8 @@ scoreboard objectives add vexp.state dummy
 scoreboard objectives add vexp.combo dummy
 scoreboard objectives add vexp.combo_cooldown dummy
 scoreboard objectives add vexp.skill_cooldown dummy
-scoreboard objectives add vexp.swoosh_ticks dummy
+scoreboard objectives add vexp.skill_hold_time dummy
+scoreboard objectives add vexp.hit_delay dummy
 scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
@@ -114,6 +115,8 @@ team add vexp.yellow
 team modify vexp.yellow color yellow
 team add vexp.red
 team modify vexp.red color red
+team add vexp.dark_red
+team modify vexp.dark_red color dark_red
 team add vexp.gold
 team modify vexp.gold color gold
 team add vexp.aqua
@@ -122,3 +125,5 @@ team add vexp.blue
 team modify vexp.blue color blue
 team add vexp.dark_aqua
 team modify vexp.dark_aqua color dark_aqua
+team add vexp.dark_purple
+team modify vexp.dark_purple color dark_purple

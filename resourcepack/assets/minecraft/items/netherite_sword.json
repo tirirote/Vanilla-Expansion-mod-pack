@@ -11,17 +11,30 @@
         }
       },
       {
+        "when": "vexp:netherite_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/netherite_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/netherite_spear_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:resonance_dagger",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/resonance_dagger"
-        }
-      },
-      {
-        "when": "vexp:amethyst_dagger",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/amethyst_dagger"
         }
       },
       {
@@ -79,17 +92,30 @@
         }
       },
       {
+        "when": "vexp:resonance_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed", "on_shelf"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/resonance_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/resonance_spear_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:resonance_rapier",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/resonance_rapier"
-        }
-      },
-      {
-        "when": "vexp:amethyst_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/amethyst_rapier"
         }
       },
       {

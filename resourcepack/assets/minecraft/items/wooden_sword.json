@@ -11,6 +11,26 @@
         }
       },
       {
+        "when": "vexp:wooden_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/dungeons/wooden_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/dungeons/wooden_spear_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:wooden_scythe",
         "model": {
           "type": "minecraft:select",

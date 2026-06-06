@@ -4,6 +4,9 @@
 # Mark attacker so shared wave helpers attribute damage correctly
 tag @s add vexp.attacker
 
+# Quality Buff
+function vexp:dungeons/states/echo_buffed
+
 execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/states/echo_marked
 
 #TP Player behind mob

@@ -8,5 +8,5 @@ execute as @p[tag=vexp.arrow.owner,limit=1] run function vexp:dungeons/states/ne
 execute as @e[predicate=vexp:is_target,sort=nearest,limit=1,distance=..2] run function vexp:dungeons/states/nether_marked
 
 #Netherite weapons hit particles
-function vexp:utils/hits/netherite_hit
+function vexp:dungeons/fx/hits/netherite_hit
 function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

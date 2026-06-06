@@ -41,7 +41,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.1,
+          "amount": -3.524,
           "operation": "add_value",
           "id": "vexp:sword_speed",
           "slot": "mainhand"
@@ -62,7 +62,11 @@
         }
       ],
       "minecraft:max_damage": 2031,
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,

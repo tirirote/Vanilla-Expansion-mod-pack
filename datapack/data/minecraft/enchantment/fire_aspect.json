@@ -1,0 +1,20 @@
+{
+  "description": {
+    "translate": "enchantment.minecraft.fire_aspect"
+  },
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "primary_items": "#minecraft:enchantable/sharp_weapon",
+  "weight": 2,
+  "max_level": 2,
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 4,
+  "slots": ["mainhand"],
+  "exclusive_set": ["vexp:freeze"]
+}

@@ -45,7 +45,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.6,
+          "amount": -3.63,
           "operation": "add_value",
           "id": "vexp:scythe_speed",
           "slot": "mainhand"
@@ -69,7 +69,11 @@
         "items": ["minecraft:diamond"]
       },
       "repair_cost": 1,
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,

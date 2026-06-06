@@ -4,17 +4,10 @@
     "property": "minecraft:custom_model_data",
     "cases": [
       {
-        "when": "vexp:resonance-axe",
+        "when": "vexp:resonance_axe",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/dungeons/resonance-axe"
-        }
-      },
-      {
-        "when": "vexp:amethyst-axe",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/amethyst-axe"
+          "model": "vexp:item/dungeons/resonance_axe"
         }
       }
     ],

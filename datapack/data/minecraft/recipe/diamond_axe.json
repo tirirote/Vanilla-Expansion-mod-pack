@@ -16,12 +16,12 @@
           "material": "diamond",
           "combo": {
             "desc": "Clásica y resistente.",
-            "rc_desc": "Gran golpe giratorio en área.",
-            "bonus_desc": "Dureza de Diamante por 2s.",
+            "rc_desc": "Golpe poderoso de Vindicador.",
+            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
             "damage": 9,
             "cooldown": 32,
-            "right_click_cooldown": 12,
-            "range": 1.5,
+            "right_click_cooldown": 48,
+            "range": 1.25,
             "reach": 2.5,
             "quality": "diamond"
           }
@@ -40,7 +40,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.6,
+          "amount": -3.375,
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"
@@ -60,9 +60,13 @@
           "slot": "mainhand"
         }
       ],
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
-        "animation": "spear",
+        "animation": "trident",
         "consume_seconds": 999999,
         "has_consume_particles": false
       }

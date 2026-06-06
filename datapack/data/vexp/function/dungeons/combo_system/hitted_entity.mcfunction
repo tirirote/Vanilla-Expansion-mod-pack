@@ -1,7 +1,8 @@
 # dungeons/combo_system/hitted_entity.mcfunction
 # @s is the mob being hitted
 
-effect give @s minecraft:glowing 1 1 true
+effect give @s[tag=!vexp.custom_block.dummy_mob] minecraft:glowing 1 1 true
+data modify entity @s[type=item_display,tag=vexp.custom_block.dummy] Glowing set value true
 
 # Color Priority: Combo End (Red) > Hit (Yellow)
 execute if entity @s[tag=vexp.hitted.combo_end] run team join vexp.red @s

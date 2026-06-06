@@ -31,6 +31,46 @@
         }
       },
       {
+        "when": "vexp:iron_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/iron_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/iron_spear_in_hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:iron_bow",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/iron_bow"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/iron_bow_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:bone_dagger",
         "model": {
           "type": "minecraft:model",
@@ -38,17 +78,30 @@
         }
       },
       {
+        "when": "vexp:bone_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/bone_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/bone_spear_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:bone_sword",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/bone_sword"
-        }
-      },
-      {
-        "when": "vexp:bone_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/bone_rapier"
         }
       },
       {

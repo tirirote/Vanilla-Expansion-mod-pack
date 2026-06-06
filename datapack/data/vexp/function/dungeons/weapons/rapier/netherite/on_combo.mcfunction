@@ -18,6 +18,6 @@ execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ as @e[type=mi
 execute as @p[tag=vexp.attacker,limit=1] at @s run function vexp:dungeons/weapons/rapier/player_pushback
 
 # Visuals
-execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
-execute positioned ~ ~1 ~ run function vexp:utils/hits/netherite_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/netherite_hit
 function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

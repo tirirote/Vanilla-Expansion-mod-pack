@@ -3,6 +3,7 @@
 
 # 1. PERSISTENCE CLEANUP (Start of tick)
 execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run effect clear @s minecraft:glowing
+execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run data modify entity @s[type=item_display,tag=vexp.custom_block.dummy] Glowing set value false
 execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run team leave @s
 execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run tag @s remove vexp.feedback_glowing
 
@@ -14,8 +15,10 @@ function vexp:dungeons/armor/tick
 function vexp:dungeons/weapons/bow/tick
 function vexp:dungeons/weapons/bow/arrows/tick
 function vexp:dungeons/weapons/dagger/tick
-function vexp:dungeons/weapons/scythe/tick
-function vexp:dungeons/weapons/sword/tick
+#function vexp:dungeons/weapons/axe/tick
+#function vexp:dungeons/weapons/spear/tick
+#function vexp:dungeons/weapons/scythe/tick
+#function vexp:dungeons/weapons/sword/tick
 
 # 2.1. PROJECTILE SYSTEM (Global)
 execute as @e[type=marker,tag=vexp.projectile] at @s run function vexp:projectile/tick
@@ -30,4 +33,6 @@ tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
 tag @a[tag=vexp.attacker] remove vexp.attacker
 tag @e[tag=vexp.hitted] remove vexp.hitted
 tag @e[tag=vexp.parried] remove vexp.parried
-# Note: vexp.hitted.combo_end is removed in mob_health/update.mcfunction for sync reasons
+
+# 1. PERSISTENCE CLEANUP (Start of tick)
+tag @e[type=item_display,tag=vexp.custom_block.dummy,tag=vexp.hitted.combo_end] remove vexp.hitted.combo_end

@@ -15,5 +15,6 @@
     "per_level_above_first": 10
   },
   "anvil_cost": 2,
-  "slots": ["mainhand"]
+  "slots": ["mainhand"],
+  "exclusive_set": ["vexp:execute"]
 }

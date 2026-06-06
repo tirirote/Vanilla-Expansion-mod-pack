@@ -1,6 +1,0 @@
-{
-  "parent": "vexp:block/fx/swoosh_template",
-  "textures": {
-    "swoosh": "vexp:block/fx/weak_sword_swoosh"
-  }
-}

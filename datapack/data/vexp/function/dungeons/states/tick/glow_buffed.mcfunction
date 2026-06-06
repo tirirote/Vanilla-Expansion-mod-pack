@@ -1,5 +1,4 @@
 effect give @s speed 2 2 true
-effect give @s glowing 1 0 true
 effect give @s jump_boost 2 0 true
 effect give @s invisibility 2 0 true
 effect give @s dolphins_grace 2 0 true

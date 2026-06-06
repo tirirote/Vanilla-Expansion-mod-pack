@@ -12,6 +12,7 @@ execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_ty
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"bow"} run function vexp:dungeons/reforge/choose_bow
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"dagger"} run function vexp:dungeons/reforge/choose_dagger
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"scythe"} run function vexp:dungeons/reforge/choose_scythe
+execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"spear"} run function vexp:dungeons/reforge/choose_spear
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"gauntlets"} run function vexp:dungeons/reforge/choose_gauntlets
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"rapier"} run function vexp:dungeons/reforge/choose_rapier
 

@@ -1,9 +1,88 @@
 {
-  "type": "minecraft:smithing_transform",
-  "addition": "#minecraft:netherite_tool_materials",
-  "base": "minecraft:diamond_spear",
-  "result": {
-    "id": "minecraft:netherite_spear"
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  P", " S ", "S  "],
+  "key": {
+    "P": "minecraft:netherite_ingot",
+    "S": "minecraft:stick"
   },
-  "template": "minecraft:netherite_upgrade_smithing_template"
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "components": {
+      "minecraft:item_name": "Lanza de Netherite",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:netherite_spear"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "mid_combo",
+          "item": "spear",
+          "material": "netherite",
+          "combo": {
+            "desc": "Brutal y de enorme alcance.",
+            "rc_desc": "Embestida abrasadora.",
+            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
+            "status_desc": "Aplica [Quemadura Profunda].",
+            "damage": 11,
+            "cooldown": 42,
+            "right_click_cooldown": 28,
+            "range": 4.0,
+            "reach": 5.0,
+            "quality": "netherite"
+          }
+        }
+      },
+      "swing_animation": {
+        "type": "stab"
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:max_damage": 2031,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:spear_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -3.524,
+          "operation": "add_value",
+          "id": "vexp:spear_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": 0.8,
+          "operation": "add_value",
+          "id": "vexp:spear_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": 0.8,
+          "operation": "add_value",
+          "id": "vexp:spear_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:netherite_ingot"]
+      },
+      "repair_cost": 1
+    },
+    "count": 1
+  }
 }

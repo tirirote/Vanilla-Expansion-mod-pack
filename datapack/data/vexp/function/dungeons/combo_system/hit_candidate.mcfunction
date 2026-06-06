@@ -6,7 +6,9 @@ execute if entity @s[tag=vexp.hitted] run return 0
 execute if entity @s[tag=vexp.hitted.combo_end] run return 0
 
 # Apply glowing with Dark Gray color (via team)
-effect give @s minecraft:glowing 1 1 true
+data modify entity @s[type=item_display,tag=vexp.custom_block.dummy] Glowing set value true
+effect give @s[tag=!vexp.custom_block.dummy_mob] minecraft:glowing 1 1 true
+
 team join vexp.white @s
 
 # Mark for cleanup

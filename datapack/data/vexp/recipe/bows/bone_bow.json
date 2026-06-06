@@ -15,7 +15,7 @@
           "item": "bow",
           "material": "bone",
           "combo": {
-            "desc": "Versátil y macabro.",
+            "desc": "Fiable y macabro.",
             "rc_desc": "Combo a distancia.",
             "damage": 4,
             "cooldown": 12,
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.3,
+          "amount": -2.333,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

@@ -21,12 +21,22 @@ execute as @a[tag=vexp.glow_buffed] at @s run function vexp:dungeons/states/tick
 execute as @a[tag=vexp.gold_buffed] at @s run function vexp:dungeons/states/tick/gold_buffed
 execute as @a[tag=vexp.diamond_buffed] at @s run function vexp:dungeons/states/tick/diamond_buffed
 
+#Enchantments States
 execute as @e[tag=vexp.thunder_stunned] at @s run function vexp:dungeons/states/tick/thunder_stunned
+execute as @e[tag=vexp.freezed] at @s run function vexp:dungeons/states/tick/freezed
 
 #Catched
 execute as @e[tag=vexp.state.catched] at @s run function vexp:dungeons/states/tick/catched
 # Release caught mob if player switches away from gauntlets or timer expired
 execute as @e[tag=vexp.state.catched,scores={vexp.dstate=..0}] at @s run function vexp:dungeons/states/catch_release
+
+#Axe Rage
+execute as @a[tag=vexp.axe_rage] at @s run function vexp:dungeons/states/tick/axe_rage
+execute as @a[tag=vexp.axe_rage,scores={vexp.dstate=..0}] at @s run function vexp:dungeons/states/axe_rage_debuff
+
+#Bleeding
+execute as @e[tag=vexp.bleeding] at @s run function vexp:dungeons/states/tick/bleeding
+execute as @e[tag=vexp.bleeding,scores={vexp.dstate=..0}] run tag @s remove vexp.bleeding
 
 # Countdown
 execute as @e[scores={vexp.dstate=1..}] run scoreboard players remove @s vexp.dstate 1
@@ -47,4 +57,6 @@ execute as @e[tag=vexp.echo_scared,scores={vexp.dstate=..0}] run tag @s remove v
 execute as @e[tag=vexp.glow_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_marked
 execute as @e[tag=vexp.glow_confused,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_confused
 
+#Enchantment tags
 execute as @e[tag=vexp.thunder_stunned,scores={vexp.dstate=..0}] run tag @s remove vexp.thunder_stunned
+execute as @e[tag=vexp.freezed,scores={vexp.dstate=..0}] run tag @s remove vexp.freezed

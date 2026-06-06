@@ -7,7 +7,7 @@ execute if score #ench_backstab vexp.math matches 3.. run scoreboard players set
 
 # Mark valid backstab targets: attacker is behind the victim.
 tag @e[tag=vexp.hitted,distance=..8] remove vexp.backstab_target
-execute as @e[tag=vexp.hitted,distance=..8] at @s anchored eyes positioned ^ ^ ^-1 if entity @p[tag=vexp.attacker,limit=1,distance=..2.25] run tag @s add vexp.backstab_target
+execute as @e[tag=vexp.hitted,distance=..8] at @s anchored eyes positioned ^ ^ ^-2 if entity @p[tag=vexp.attacker,limit=1,distance=..3] run tag @s add vexp.backstab_target
 
 scoreboard players set #backstab_bonus vexp.math 0
 execute store result score #backstab_bonus vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10

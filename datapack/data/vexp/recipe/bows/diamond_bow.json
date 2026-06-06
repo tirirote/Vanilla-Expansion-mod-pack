@@ -43,7 +43,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -3.1,
+          "amount": -3.091,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

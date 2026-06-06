@@ -23,7 +23,7 @@ execute if entity @s[tag=vexp.glowing] run function vexp:projectile/projectiles/
 execute if entity @s[tag=vexp.diamond] run function vexp:projectile/projectiles/dagger/diamond/on_hit_mob
 execute if entity @s[tag=vexp.gold] run function vexp:projectile/projectiles/dagger/gold/on_hit_mob
 # Efectos visuales
-execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.glowing] unless entity @s[tag=vexp.gold] unless entity @s[tag=vexp.diamond] positioned ~ ~1 ~ run function vexp:projectile/projectiles/dagger/common_dagger_hit
+execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.glowing] unless entity @s[tag=vexp.gold] unless entity @s[tag=vexp.diamond] run function vexp:projectile/projectiles/dagger/common_dagger_hit
 
 function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}
 

@@ -10,7 +10,7 @@ execute if score @s vexp.bow_draw_ticks matches 18.. positioned ~ ~1.6 ~ positio
 
 
 #End Loop
-execute if score @s vexp.bow_draw_ticks matches 25 positioned ~ ~1.6 ~ run particle flash{color:-28360} ^ ^ ^2 0.0 0.0 0 0 0
+execute if score @s vexp.bow_draw_ticks matches 25 positioned ~ ~1.6 ~ run particle flash{color:-8637360} ^ ^ ^2 0.0 0.0 0 0 0
 execute if score @s vexp.bow_draw_ticks matches 25 positioned ~ ~1.6 ~ run particle lava ^ ^ ^2 0.1 0.1 0.1 .1 1
 
 execute if score @s vexp.bow_draw_ticks matches 42.. run scoreboard players set @s vexp.bow_draw_ticks 24

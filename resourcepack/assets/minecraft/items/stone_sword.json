@@ -11,6 +11,26 @@
         }
       },
       {
+        "when": "vexp:stone_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/stone_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/stone_spear_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:stone_scythe",
         "model": {
           "type": "minecraft:select",

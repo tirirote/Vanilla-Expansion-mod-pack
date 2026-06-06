@@ -1,0 +1,1 @@
+# dungeons/spear/tick.mcfunction

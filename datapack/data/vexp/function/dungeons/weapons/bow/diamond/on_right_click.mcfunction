@@ -3,7 +3,7 @@
 
 #Subtle Charging Particle Animation
 execute if score @s vexp.bow_draw_ticks matches ..8 positioned ~ ~1.6 ~ run particle entity_effect{color:-2127926122} ^ ^ ^2 0.0 0.0 0 0 0
-execute if score @s vexp.bow_draw_ticks matches 8..18 positioned ~ ~1.6 ~ run particle entity_effect{color:-1271138049} ^ ^ ^2 0.0 0.0 0 0 0
+execute if score @s vexp.bow_draw_ticks matches 8..18 positioned ~ ~1.6 ~ run particle entity_effect{color:-2127926122} ^ ^ ^2 0.0 0.0 0 0 0
 execute if score @s vexp.bow_draw_ticks matches 18.. positioned ~ ~1.6 ~ run particle instant_effect{color:9437155} ^ ^ ^2 0 0 0 0 0
 
 #End Loop

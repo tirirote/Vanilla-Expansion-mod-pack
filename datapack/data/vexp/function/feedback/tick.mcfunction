@@ -13,4 +13,4 @@ execute as @a[gamemode=!spectator] if score @s vexp.player_hp < @s vexp.player_h
 execute as @a[gamemode=!spectator] run scoreboard players operation @s vexp.player_hp_prev = @s vexp.player_hp
 
 # Enemy attack-ready feedback check (timer-based per enemy family)
-execute as @e[predicate=vexp:is_target] unless entity @s[tag=vexp.custom_block.dummy] at @s run function vexp:feedback/enemy_attack_ready_timer
+execute as @e[predicate=vexp:is_target] unless entity @s[tag=vexp.custom_block.dummy_mob] at @s run function vexp:feedback/enemy_attack_ready_timer

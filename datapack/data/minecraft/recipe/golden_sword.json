@@ -17,7 +17,7 @@
           "combo": {
             "desc": "Rápida y elegante.",
             "rc_desc": "Bloqueo elegante.",
-            "bonus_desc": "Brillo Dorado por 2s.",
+            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
             "damage": 4,
             "cooldown": 12,
             "right_click_cooldown": 24,
@@ -40,7 +40,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.6,
+          "amount": -2.333,
           "operation": "add_value",
           "id": "vexp:sword_speed",
           "slot": "mainhand"
@@ -60,7 +60,11 @@
           "slot": "mainhand"
         }
       ],
-      "food": { "nutrition": 0, "saturation": 0, "can_always_eat": true },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,

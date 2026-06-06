@@ -3,6 +3,5 @@
 scoreboard players set @s vexp.parry_timer 40
 scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_taken
 
-function vexp:dungeons/states/diamond_buffed
 function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
 function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}

@@ -4,31 +4,45 @@
     "property": "minecraft:custom_model_data",
     "cases": [
       {
-        "when": "vexp:weak_punch_swoosh",
+        "when": "vexp:combo_swoosh_1",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/fx/weak_punch_swoosh"
+          "model": "vexp:block/fx/combo_swoosh_1"
         }
       },
       {
-        "when": "vexp:punch_swoosh",
+        "when": "vexp:combo_swoosh_2",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/fx/punch_swoosh"
+          "model": "vexp:block/fx/combo_swoosh_2"
         }
       },
       {
-        "when": "vexp:sword_swoosh",
+        "when": "vexp:combo_swoosh_3",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/fx/sword_swoosh"
+          "model": "vexp:block/fx/combo_swoosh_3"
         }
       },
       {
-        "when": "vexp:weak_sword_swoosh",
+        "when": "vexp:weak_combo_hit",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/fx/weak_sword_swoosh"
+          "model": "vexp:block/fx/weak_combo_hit"
+        }
+      },
+      {
+        "when": "vexp:strong_combo_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/strong_combo_hit"
+        }
+      },
+      {
+        "when": "vexp:crit_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/crit_hit"
         }
       },
       {
@@ -57,6 +71,76 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/fx/backstab"
+        }
+      },
+      {
+        "when": "vexp:freeze",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/freeze"
+        }
+      },
+      {
+        "when": "vexp:sharpness",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/sharpness"
+        }
+      },
+      {
+        "when": "vexp:execute",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/execute"
+        }
+      },
+      {
+        "when": "vexp:life_steal",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/life_steal"
+        }
+      },
+      {
+        "when": "vexp:sweeping_edge",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/sweeping_edge"
+        }
+      },
+      {
+        "when": "vexp:committed",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/committed"
+        }
+      },
+      {
+        "when": "vexp:bane",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/bane"
+        }
+      },
+      {
+        "when": "vexp:first_strike",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/first_strike"
+        }
+      },
+      {
+        "when": "vexp:wildness",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/wildness"
+        }
+      },
+      {
+        "when": "vexp:pursuit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/pursuit"
         }
       }
     ],

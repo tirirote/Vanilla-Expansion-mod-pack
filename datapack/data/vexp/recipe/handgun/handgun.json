@@ -11,6 +11,7 @@
     "id": "minecraft:iron_sword",
     "count": 1,
     "components": {
+      "minecraft:item_name": "Cañón de mano",
       "minecraft:custom_data": {
         "vexp": {
           "item": "handgun",
@@ -18,7 +19,7 @@
           "material": "iron",
           "combo": {
             "desc": "Fiable y fácil de usar.",
-            "rc_desc": "Dispara un proyectil a corta distancia.",
+            "rc_desc": "Disparo a corta distancia.",
             "damage": 3,
             "cooldown": 24,
             "right_click_cooldown": 12,
@@ -36,11 +37,6 @@
       },
       "minecraft:max_damage": 250,
       "minecraft:damage": 0,
-      "minecraft:item_name": {
-        "text": "Cañón de mano",
-        "color": "white",
-        "italic": false
-      },
       "minecraft:repairable": {
         "items": ["minecraft:iron_ingot"]
       },
@@ -54,10 +50,10 @@
           "slot": "mainhand"
         },
         {
-          "type": "attack_speed",
+          "type": "minecraft:attack_speed",
           "amount": -3.0,
           "operation": "add_value",
-          "id": "minecraft:attack_speed",
+          "id": "vexp:handgun_speed",
           "slot": "mainhand"
         }
       ],

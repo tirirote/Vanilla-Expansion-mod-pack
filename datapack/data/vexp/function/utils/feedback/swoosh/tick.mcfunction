@@ -22,7 +22,11 @@ execute if score #swoosh_fade vexp.math <= #swoosh_stretch vexp.math run scorebo
 
 # Frame 1: appear at owner
 tag @s add vexp.swoosh.current
-execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,nbt={data:{swoosh:{face_player:1}}},limit=1,sort=nearest,distance=..12] vexp.id run data modify entity @e[tag=vexp.swoosh.current,nbt={data:{swoosh:{face_player:1}}},limit=1,sort=nearest,distance=..12] Rotation set from entity @s Rotation
+
+execute if score @s vexp.anim_frame matches 1 as @a[tag=vexp.combo_user,distance=..32] if score @s vexp.id = @e[tag=vexp.swoosh.current,nbt={data:{swoosh:{face_player:1}}},limit=1,sort=nearest,distance=..16] vexp.id run data modify entity @e[tag=vexp.swoosh.current,nbt={data:{swoosh:{face_player:1}}},limit=1,sort=nearest,distance=..16] Rotation set from entity @s Rotation
+
+execute if data entity @s data.swoosh{follow_owner:1} run function vexp:utils/feedback/swoosh/follow_owner_tp with entity @s data.swoosh.follow_offset
+
 tag @s remove vexp.swoosh.current
 
 #Smart Rotation based on dyaw and dpitch

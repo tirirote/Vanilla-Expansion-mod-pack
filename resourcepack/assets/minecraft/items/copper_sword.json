@@ -31,6 +31,26 @@
         }
       },
       {
+        "when": "vexp:copper_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/copper_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/copper_spear_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:copper_rapier",
         "model": {
           "type": "minecraft:model",

@@ -17,8 +17,8 @@ execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ as @e[type=mi
 #Player pushback
 execute as @p[tag=vexp.attacker,limit=1] at @s run function vexp:dungeons/weapons/rapier/player_pushback
 
-execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
-execute positioned ~ ~1 ~ run function vexp:utils/hits/echo_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/echo_hit
 
 function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
 function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

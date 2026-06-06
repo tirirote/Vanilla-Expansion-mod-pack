@@ -11,6 +11,26 @@
         }
       },
       {
+        "when": "vexp:diamond_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/diamond_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/diamond_spear_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:diamond_scythe",
         "model": {
           "type": "minecraft:select",
@@ -28,13 +48,6 @@
             "type": "minecraft:model",
             "model": "vexp:item/dungeons/diamond_scythe_hand"
           }
-        }
-      },
-      {
-        "when": "vexp:diamond_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/diamond_rapier"
         }
       },
       {
@@ -65,17 +78,30 @@
         }
       },
       {
+        "when": "vexp:glowing_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed", "on_shelf"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/glowing_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/glowing_spear_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:glowing_dagger",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:item/dungeons/glowing_dagger"
-        }
-      },
-      {
-        "when": "vexp:glowing_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/glowing_rapier"
         }
       },
       {

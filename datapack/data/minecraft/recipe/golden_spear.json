@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  P", " S ", "S  "],
+  "key": {
+    "P": "minecraft:gold_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:golden_sword",
+    "components": {
+      "minecraft:item_name": "Lanza Dorada",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:golden_spear"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "short_combo",
+          "item": "spear",
+          "material": "gold",
+          "combo": {
+            "desc": "Elegante y con gran alcance.",
+            "rc_desc": "Embestida brillante.",
+            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
+            "damage": 4,
+            "cooldown": 14,
+            "right_click_cooldown": 28,
+            "range": 1.75,
+            "reach": 6.0,
+            "quality": "gold"
+          }
+        }
+      },
+      "swing_animation": {
+        "type": "stab"
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:spear_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -2.571,
+          "operation": "add_value",
+          "id": "vexp:spear_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": 0.3,
+          "operation": "add_value",
+          "id": "vexp:spear_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": 0.3,
+          "operation": "add_value",
+          "id": "vexp:spear_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:gold_ingot"]
+      },
+      "repair_cost": 1
+    },
+    "count": 1
+  }
+}

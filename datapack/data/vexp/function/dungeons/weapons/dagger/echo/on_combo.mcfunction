@@ -9,8 +9,8 @@ execute if data entity @s HurtTime positioned ~ ~.05 ~ if block ^ ^ ^-1 #replace
 #Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
 
-execute positioned ~ ~1 ~ run function vexp:utils/hits/strong_sword_hit
-execute positioned ~ ~1 ~ run function vexp:utils/hits/echo_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/echo_hit
 
 function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
 function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

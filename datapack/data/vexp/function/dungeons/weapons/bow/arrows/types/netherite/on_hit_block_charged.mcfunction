@@ -2,5 +2,5 @@
 # @s is a netherite-quality bow arrow, tier 3 (charged), hitting a block
 # Extra block impact effects for tier 3
 
-function vexp:utils/hits/netherite_hit
+function vexp:dungeons/fx/hits/netherite_hit
 function vexp:utils/sound {sound: "minecraft:block.fire.extinguish", type: "player"}

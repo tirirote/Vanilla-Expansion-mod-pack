@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  P", " S ", "S  "],
+  "key": {
+    "P": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:iron_sword",
+    "components": {
+      "minecraft:item_name": "Lanza de Hierro",
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:iron_spear"]
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "short_combo",
+          "item": "spear",
+          "material": "iron",
+          "combo": {
+            "desc": "Equilibrada y con gran alcance.",
+            "rc_desc": "Embestida.",
+            "damage": 5,
+            "cooldown": 32,
+            "right_click_cooldown": 28,
+            "range": 1.75,
+            "reach": 6.0,
+            "quality": "normal"
+          }
+        }
+      },
+      "swing_animation": {
+        "type": "stab"
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:spear_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -3.375,
+          "operation": "add_value",
+          "id": "vexp:spear_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": 0.5,
+          "operation": "add_value",
+          "id": "vexp:spear_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": 0.5,
+          "operation": "add_value",
+          "id": "vexp:spear_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": ["minecraft:iron_ingot"]
+      },
+      "repair_cost": 1
+    },
+    "count": 1
+  }
+}

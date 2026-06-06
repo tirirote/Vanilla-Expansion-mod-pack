@@ -18,7 +18,7 @@
             "desc": "Brillante y ligero.",
             "rc_desc": "Combo luminoso a distancia.",
             "bonus_desc": "Otorga [Sigilo Luminoso] por 2s.",
-            "status_desc": "Aplica [Confusión Luminosa].",
+            "status_desc": "Aplica [Ceguera Luminosa].",
             "damage": 6,
             "cooldown": 12,
             "right_click_cooldown": 20,
@@ -44,7 +44,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.7,
+          "amount": -2.333,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"

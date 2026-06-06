@@ -8,4 +8,4 @@ effect give @p[tag=vexp.attacker,limit=1] resistance 2 0 true
 effect give @p[tag=vexp.attacker,limit=1] slowness 2 0 true
 
 # Visuals
-execute positioned ~ ~1 ~ run function vexp:utils/hits/weak_punch_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/weak_punch_hit

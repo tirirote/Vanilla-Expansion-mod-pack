@@ -11,6 +11,26 @@
         }
       },
       {
+        "when": "vexp:golden_spear",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/golden_spear"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "item/golden_spear_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:golden_scythe",
         "model": {
           "type": "minecraft:select",

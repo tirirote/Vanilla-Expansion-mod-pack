@@ -16,7 +16,7 @@
           "material": "netherite",
           "combo": {
             "desc": "Poderoso y abrasador.",
-            "rc_desc": "Combo ígneo a distancia.",
+            "rc_desc": "Combo abrasador a distancia.",
             "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
             "status_desc": "Aplica [Quemadura Profunda].",
             "damage": 7,
@@ -44,7 +44,7 @@
         },
         {
           "type": "minecraft:attack_speed",
-          "amount": -2.7,
+          "amount": -2.667,
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"
