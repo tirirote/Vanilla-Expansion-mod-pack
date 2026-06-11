@@ -23,3 +23,19 @@ function vexp:feedback/tick
 #function vexp:movement/tick
 
 function vexp:utils/feedback/tick
+
+#Custom mobs
+function vexp:custom_mobs/tick
+
+
+# Custom projectile system
+execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
+
+# Custom combat states
+function vexp:dungeons/states/tick
+
+# TAG CLEANUP (End of tick)
+tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
+tag @a[tag=vexp.attacker] remove vexp.attacker
+tag @e[tag=vexp.hitted] remove vexp.hitted
+tag @e[tag=vexp.parried] remove vexp.parried

@@ -19,6 +19,10 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"short_comb
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"mid_combo"}}] run function vexp:dungeons/combo_system/combos/process_mid
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"long_combo"}}] run function vexp:dungeons/combo_system/combos/process_long
 
+# Swap the owner's hitmark to the regular hit state unless this attack became a finisher.
+#scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
+#execute unless entity @s[tag=vexp.combo_end] as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..25] if score @s vexp.id = #combo_owner_id vexp.id run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:hit_indicator_hit"]
+
 # Trigger end combo immediately if tagged (Combo finisher)
 execute if entity @s[tag=vexp.combo_end] run function vexp:dungeons/combo_system/hooks/combo/end_combo with storage vexp:dungeons.weapon combo_params
 

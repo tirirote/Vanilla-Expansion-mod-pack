@@ -142,6 +142,34 @@
           "type": "minecraft:model",
           "model": "vexp:block/fx/pursuit"
         }
+      },
+      {
+        "when": "vexp:hit_indicator_candidate",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/hit_indicator_candidate"
+        }
+      },
+      {
+        "when": "vexp:hit_indicator_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/hit_indicator_hit"
+        }
+      },
+      {
+        "when": "vexp:hit_indicator_combo",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/hit_indicator_combo"
+        }
+      },
+      {
+        "when": "vexp:hit_indicator_cooldown",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/hit_indicator_cooldown"
+        }
       }
     ],
     "fallback": {

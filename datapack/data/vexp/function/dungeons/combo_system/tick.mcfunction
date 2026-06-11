@@ -8,10 +8,12 @@ execute as @a run function vexp:dungeons/combo_system/look/update
 # 0. Hitbox Management
 # Mark all hitboxes for potential removal
 tag @e[type=interaction,tag=vexp.combo_hitbox] add vexp.hitbox.to_remove
+tag @e[type=item_display,tag=vexp.combo_hitbox_indicator] add vexp.hitbox.to_remove
 # Update/Summon hitboxes for players
 execute as @a at @s run function vexp:dungeons/combo_system/hitbox/manage
 # Remove hitboxes that were not updated (no active owner)
 kill @e[type=interaction,tag=vexp.hitbox.to_remove]
+kill @e[type=item_display,tag=vexp.hitbox.to_remove]
 
 # 1. Cooldown logic
 execute as @a[scores={vexp.combo_cooldown=1..}] run scoreboard players remove @s vexp.combo_cooldown 1

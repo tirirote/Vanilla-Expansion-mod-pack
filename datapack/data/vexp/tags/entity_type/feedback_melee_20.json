@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:stray",
     "minecraft:husk",
     "minecraft:drowned",
     "minecraft:zombie_villager",

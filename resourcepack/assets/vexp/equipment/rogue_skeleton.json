@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "vexp:rogue_skeleton"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "vexp:rogue_skeleton_leggings"
+      }
+    ]
+  }
+}

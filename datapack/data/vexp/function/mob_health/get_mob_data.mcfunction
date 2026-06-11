@@ -2,8 +2,7 @@
 # Since we are @s, these operations are extremely fast
 
 # Name
-execute if data entity @s CustomName run data modify storage vexp:temp Bar.name set from entity @s CustomName
-execute unless data entity @s CustomName run data modify storage vexp:temp Bar.name set value {selector:"@s"}
+function vexp:mob_health/set_name with storage vexp:temp Bar
 
 # Health values
 execute store result storage vexp:temp Bar.hp int 1 run data get entity @s Health

@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:webbing_spider_overlay",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_overlay/webbing_spider_overlay"
+        }
+      },
+      {
+        "when": "vexp:hollow_overlay",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_overlay/hollow_overlay"
+        }
+      },
+      {
+        "when": "vexp:windburster_overlay",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_overlay/windburster_overlay"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/stone"
+    }
+  }
+}

@@ -6,8 +6,8 @@ execute if entity @p[tag=vexp.player_hurt] run scoreboard players set @s vexp.en
 execute if entity @p[tag=vexp.player_hurt] run tag @s add vexp.feedback_atk_armed
 
 #Animation
-execute if score @s vexp.enemy_atk_time matches 30 positioned ~ ~1.5 ~ run particle flash{color:-2375021} ^ ^ ^1 1 1 1 1 0
-execute if score @s vexp.enemy_atk_time matches 30 positioned ~ ~1.5 ~ run particle crit ^ ^ ^1 0.1 0.1 0.1 0.35 15
+execute if score @s vexp.enemy_atk_time matches 30 positioned ~ ~1.5 ~ run particle flash{color:-5398911} ^ ^ ^1 1 1 1 1 0
+execute if score @s vexp.enemy_atk_time matches 30 positioned ~ ~1.5 ~ run particle crit ^ ^ ^1 0.1 0.1 0.1 0.35 5
 
 execute if score @s vexp.enemy_atk_time matches ..15 positioned ~ ~1.5 ~ run particle crit ^ ^ ^1 0.1 0.1 0.1 0 1
 

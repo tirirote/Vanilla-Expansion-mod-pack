@@ -1,0 +1,18 @@
+{
+    "values": [
+        "minecraft:beacon",
+        "minecraft:sea_lantern",
+        "minecraft:shroomlight",
+        "minecraft:glowstone",
+        "minecraft:end_rod",
+        "minecraft:lantern",
+        "minecraft:candle",
+        "minecraft:candle_cake",
+        "minecraft:campfire",
+        "minecraft:torch",
+        "minecraft:copper_torch",
+        "minecraft:glow_lichen",
+        "minecraft:twisting_vines",
+        "minecraft:weeping_vines"
+    ]
+}

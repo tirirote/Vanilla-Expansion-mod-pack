@@ -6,7 +6,7 @@ execute as @e[tag=vexp.health_init] at @s if entity @p[distance=..12] run functi
 
 # 3. Slow path: Check for NEW entities (Excluding common non-mob types)
 # We only run 'if data entity @s Health' on entities that haven't been initialized yet.
-execute as @e[tag=!vexp.health_init,predicate=vexp:is_target] at @s if entity @p[distance=..12] if data entity @s Health run function vexp:mob_health/update
+execute as @e[tag=!vexp.health_init,predicate=vexp:is_target,tag=!vexp.custom_block.dummy_mob] at @s if entity @p[distance=..12] if data entity @s Health run function vexp:mob_health/update
 
 # 4. Cleanup orphan bars
 kill @e[tag=vexp.health_bar,tag=!vexp.active]

@@ -25,9 +25,8 @@ execute if score #percent vexp.math matches 50..74 run data modify storage vexp:
 execute if score #percent vexp.math matches 75.. run data modify storage vexp:temp Bar.color set value "green"
 
 # 5. Capture Name
-data modify storage vexp:temp Bar.name set value {text:""}
-execute if data entity @s CustomName run data modify storage vexp:temp Bar.name set from entity @s CustomName
-execute unless data entity @s CustomName run function vexp:mob_health/set_name with storage vexp:temp Bar
+# Always use selector-based name resolution to avoid malformed CustomName payloads breaking bar updates.
+function vexp:mob_health/set_name with storage vexp:temp Bar
 
 # 6. Jump to the bar and apply it
 execute on passengers if entity @s[tag=vexp.health_bar] run function vexp:mob_health/update_bar

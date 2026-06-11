@@ -4,11 +4,16 @@
 # 1. Trigger combo hook for all hitted entities
 execute as @e[tag=vexp.hitted,distance=..8] at @s run tag @s add vexp.hitted.combo_end
 
+# Upgrade the owner's hitmark to the combo finisher state.
+#scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
+#execute as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..25] if score @s vexp.id = #combo_owner_id vexp.id run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:hit_indicator_combo"]
+
+#Alternative hit feedback to glowing vvv
 # Re-apply combo-end visual feedback after combo_end is tagged.
-execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run team join vexp.red @s
-execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run tag @s add vexp.feedback_glowing
-execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run effect give @s[tag=!vexp.custom_block.dummy_mob] minecraft:glowing 1 1 true
-execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run data modify entity @s[type=item_display,tag=vexp.custom_block.dummy] Glowing set value true
+#execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run team join vexp.red @s
+#execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run tag @s add vexp.feedback_glowing
+#execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run effect give @s[tag=!vexp.custom_block.dummy_mob] minecraft:glowing 1 1 true
+#execute as @e[tag=vexp.hitted.combo_end,distance=..8] at @s run data modify entity @s[type=item_display,tag=vexp.custom_block.dummy] Glowing set value true
 
 function vexp:dungeons/combo_system/hooks/combo/route_on_combo with storage vexp:dungeons.weapon combo_params
 function vexp:dungeons/enchantments/post_end_combo

@@ -2,8 +2,8 @@
 # @s is a target entity.
 # Arms attack timer for crossbow users from nearby spawned projectiles.
 
-execute if entity @e[type=minecraft:arrow,distance=..1.8,limit=1,sort=nearest] run scoreboard players set @s vexp.enemy_atk_time 90
-execute if entity @e[type=minecraft:arrow,distance=..1.8,limit=1,sort=nearest] run tag @s add vexp.feedback_atk_armed
+execute if entity @e[type=minecraft:arrow,distance=..1.8,limit=1,sort=nearest,nbt={inGround:0b}] run scoreboard players set @s vexp.enemy_atk_time 90
+execute if entity @e[type=minecraft:arrow,distance=..1.8,limit=1,sort=nearest,nbt={inGround:0b}] run tag @s add vexp.feedback_atk_armed
 execute if entity @e[type=minecraft:firework_rocket,distance=..1.8,limit=1,sort=nearest] run scoreboard players set @s vexp.enemy_atk_time 90
 execute if entity @e[type=minecraft:firework_rocket,distance=..1.8,limit=1,sort=nearest] run tag @s add vexp.feedback_atk_armed
 

@@ -1,16 +1,12 @@
 # dungeons/tick.mcfunction
 # Main Tick Loop
 
-# 1. PERSISTENCE CLEANUP (Start of tick)
-execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run effect clear @s minecraft:glowing
-execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run data modify entity @s[type=item_display,tag=vexp.custom_block.dummy] Glowing set value false
-execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run team leave @s
-execute as @e[tag=vexp.feedback_glowing] unless entity @s[tag=vexp.hit_candidate] unless entity @s[tag=vexp.hitted] unless entity @s[tag=vexp.hitted.combo_end] run tag @s remove vexp.feedback_glowing
-
-# 2. CORE SYSTEMS
+# 1. Main Dungeons expansion systems
 function vexp:dungeons/reforge/tick
 function vexp:dungeons/lore/tick
 function vexp:dungeons/combo_system/tick
+
+#2. Custom Dungeons Items and weapons tick functions
 function vexp:dungeons/armor/tick
 function vexp:dungeons/weapons/bow/tick
 function vexp:dungeons/weapons/bow/arrows/tick
@@ -19,20 +15,3 @@ function vexp:dungeons/weapons/dagger/tick
 #function vexp:dungeons/weapons/spear/tick
 #function vexp:dungeons/weapons/scythe/tick
 #function vexp:dungeons/weapons/sword/tick
-
-# 2.1. PROJECTILE SYSTEM (Global)
-execute as @e[type=marker,tag=vexp.projectile] at @s run function vexp:projectile/tick
-execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
-
-# 2.2. Custom Combat States (needs transient tags from this tick, e.g. vexp.attacker)
-function vexp:dungeons/states/tick
-
-# 3. TAG CLEANUP (End of tick)
-# These tags are marked during the tick and cleared here to allow feedback logic to see them
-tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
-tag @a[tag=vexp.attacker] remove vexp.attacker
-tag @e[tag=vexp.hitted] remove vexp.hitted
-tag @e[tag=vexp.parried] remove vexp.parried
-
-# 1. PERSISTENCE CLEANUP (Start of tick)
-tag @e[type=item_display,tag=vexp.custom_block.dummy,tag=vexp.hitted.combo_end] remove vexp.hitted.combo_end

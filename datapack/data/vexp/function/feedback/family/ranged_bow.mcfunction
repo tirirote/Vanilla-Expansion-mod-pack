@@ -8,8 +8,8 @@ execute if entity @e[type=minecraft:spectral_arrow,distance=..1.8,limit=1,sort=n
 execute if entity @e[type=minecraft:spectral_arrow,distance=..1.8,limit=1,sort=nearest,nbt={inGround:0b}] run tag @s add vexp.feedback_atk_armed
 
 #Animation
-execute if score @s vexp.enemy_atk_time matches 60 run particle flash{color:-2375021} ^ ^ ^1 1 1 1 1 0
-execute if score @s vexp.enemy_atk_time matches 60 run particle crit ^ ^ ^1 0.1 0.1 0.1 0.35 15
+execute if score @s vexp.enemy_atk_time matches 60 run particle flash{color:-5398911} ^ ^ ^1 1 1 1 1 0
+execute if score @s vexp.enemy_atk_time matches 60 run particle crit ^ ^ ^1 0.1 0.1 0.1 0.35 5
 
 execute if score @s vexp.enemy_atk_time matches 60 run playsound item.crossbow.shoot hostile @p[distance=..32]
 

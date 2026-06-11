@@ -61,6 +61,10 @@ scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_de
 scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
 scoreboard objectives add vexp.hitbox_hide_timer dummy
+
+#Custom Mobs
+scoreboard objectives add vexp.mob_cooldown dummy
+
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm

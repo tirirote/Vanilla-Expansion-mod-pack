@@ -23,5 +23,5 @@ execute if score #random_swoosh vexp.math matches 5 run function vexp:dungeons/f
 function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
 
 #3. Queue delayed hit resolution so swoosh feedback can play first.
-scoreboard players set @s[tag=!vexp.hit_delay.pending] vexp.hit_delay 5
+scoreboard players set @s[tag=!vexp.hit_delay.pending] vexp.hit_delay 6
 tag @s add vexp.hit_delay.pending

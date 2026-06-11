@@ -14,4 +14,4 @@ tp @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp
 # Using the SAME filters and $(range) as damage_aoe.mcfunction to avoid discrepancies
 $execute positioned ^ ^ ^$(reach) if entity @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,tag=!vexp.hitbox.cooldown,limit=1,sort=nearest] as @e[predicate=vexp:is_target,distance=..$(range)] at @s run function vexp:dungeons/combo_system/hit_candidate
 
-$execute positioned ^ ^ ^$(reach) if entity @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,tag=!vexp.hitbox.cooldown,limit=1,sort=nearest] as @e[type=item_display,tag=vexp.custom_block.dummy,distance=..$(range)] at @s run function vexp:dungeons/combo_system/hit_candidate
+#$execute positioned ^ ^ ^$(reach) if entity @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,tag=!vexp.hitbox.cooldown,limit=1,sort=nearest] as @e[type=item_display,tag=vexp.custom_block.dummy,distance=..$(range)] at @s run function vexp:dungeons/combo_system/hit_candidate
