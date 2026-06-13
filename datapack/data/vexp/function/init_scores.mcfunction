@@ -9,6 +9,7 @@ scoreboard objectives add vexp.arrow_draw_ticks dummy
 scoreboard objectives add vexp.arrow_draw_tier dummy
 scoreboard objectives add vexp.anim_frame dummy
 scoreboard objectives add vexp.anim_delay dummy
+scoreboard objectives add vexp.block_anim dummy
 scoreboard objectives add vexp.fuse dummy
 scoreboard objectives add vexp.damage dummy
 scoreboard objectives add vexp.tnt_stick_used minecraft.used:minecraft.experience_bottle

@@ -12,7 +12,6 @@ data modify entity @s Anger set value 1
 data modify entity @s Silent set value true
 
 effect give @s invisibility infinite 0 true
-effect give @s slow_falling infinite 0 true
 #Setup custom mob data.
 function vexp:custom_mobs/setup
 

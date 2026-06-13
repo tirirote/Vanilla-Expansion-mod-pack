@@ -23,7 +23,9 @@
             "name": "Marcador",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
-            "p_break": "minecraft:block{block_state:{Name:'minecraft:oak_planks'}}"
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:oak_planks'}}",
+            "scale": 1,
+            "y": 0.435
           }
         },
         "Invisible": true,

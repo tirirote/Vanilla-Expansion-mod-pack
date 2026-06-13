@@ -1,4 +1,5 @@
-#On special attack feedback
+# On special attack feedback hook
+# @s is the custom mob
 particle item_cobweb ^ ^ ^1 0.1 0.1 0.1 0.25 5
 particle item_cobweb ^ ^ ^1.5 0.1 0.1 0.1 0.1 3
 particle item_cobweb ^ ^ ^2 0.1 0.1 0.1 0.1 3

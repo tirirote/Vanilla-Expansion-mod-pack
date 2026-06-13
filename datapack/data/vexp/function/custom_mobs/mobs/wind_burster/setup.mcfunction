@@ -1,7 +1,8 @@
 #Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"wind_burster",custom_name:"Galebreaker", hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:6, cooldown:8, special_cooldown:96, special_chance:80}}}
+data modify entity @s data set value {vexp:{mob:{type:"wind_burster",custom_name:"Galebreaker", hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80}}}
 
 #Custom armor
+data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{"custom_model_data":{strings:["vexp:windburster_head"]}}}}
 data modify entity @s equipment merge value {chest:{id:"stone",count:1,components:{equippable:{slot:"chest",asset_id:"vexp:windburster"}}}}
 data modify entity @s equipment merge value {mainhand:{}}
 data modify entity @s ItemDropChance set value 0
@@ -16,4 +17,5 @@ effect give @s slow_falling infinite 0 true
 function vexp:custom_mobs/setup
 
 #Summon custom Model
-function vexp:custom_mobs/custom_item_display_macro {model:"windburster_overlay", x:0f, y:-1.25f, z:0f, scale:2f, spin_rotation:24}
+function vexp:custom_mobs/custom_item_display_macro {model:"windburster_overlay", x:0f, y:-0.75f, z:0f, rx:0f, ry:0f, rz:-0.1f, scale:2.1f, spin_rotation:12}
+function vexp:custom_mobs/custom_item_display_macro {model:"windburster_overlay", x:0f, y:-1.25f, z:0f, rx:0.1f, ry:0.303f, rz:0f, scale:1.7f, spin_rotation:12}

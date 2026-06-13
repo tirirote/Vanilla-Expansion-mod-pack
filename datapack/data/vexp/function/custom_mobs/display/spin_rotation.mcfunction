@@ -4,5 +4,4 @@ execute unless data storage vexp:custom_mob_display Rotation run data merge stor
 
 execute store result storage vexp:custom_mob_display Rotation[0] float 1 run scoreboard players get #display_spin_rotation vexp.math
 
-
 data modify entity @s Rotation set from storage vexp:custom_mob_display Rotation

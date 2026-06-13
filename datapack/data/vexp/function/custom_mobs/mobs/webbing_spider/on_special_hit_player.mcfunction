@@ -1,4 +1,5 @@
-#Player Debuff
+#When player hitted by special
+# @s is the player
 effect give @s slowness 5 1 true
 
 #Feedback

@@ -1971,6 +1971,26 @@
           "type": "minecraft:model",
           "model": "vexp:block/decorative/jar/jars_by_content/bone_meal_full"
         }
+      },
+      {
+        "when": "vexp:vanguarder_statue",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/block/vanguarder_statue"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/vanguarder_statue"
+          }
+        }
       }
     ],
     "fallback": {

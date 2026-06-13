@@ -1,4 +1,5 @@
-#On special attack
+# On special attack feedback hook
+# @s is the custom mob
 execute as @e[type=#illager,distance=..4.5] at @s unless block ~ ~-0.25 ~ #replaceable run function vexp:custom_mobs/mobs/wind_burster/illager_fly_buff
 
 #Windburster Special Attack Feedback

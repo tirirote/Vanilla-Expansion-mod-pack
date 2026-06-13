@@ -1,1 +1,2 @@
-#Custom on Ambient hook
+# Custom on ambient hook
+# @s is the custom mob

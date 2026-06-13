@@ -23,6 +23,13 @@
           "type": "minecraft:model",
           "model": "vexp:block/mob_overlay/windburster_overlay"
         }
+      },
+      {
+        "when": "vexp:windburster_head",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/windburster_head"
+        }
       }
     ],
     "fallback": {

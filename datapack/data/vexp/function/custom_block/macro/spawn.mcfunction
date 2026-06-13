@@ -4,7 +4,7 @@
 
 # 1. Spawn Visual (item_display)
 # Lo colocamos alineado en el centro del bloque
-$execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display","vexp.temp"],item:{id:"minecraft:item_frame",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.435f,0f],scale:[1f,1f,1f]},teleport_duration:1,interpolation_duration:1}
+$execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display","vexp.temp"],item:{id:"minecraft:item_frame",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[0f,$(y),0f],scale:[$(scale),$(scale),$(scale)]},teleport_duration:1,interpolation_duration:1}
 
 # 2. Rotación: Alinear a 4 direcciones cardinales según el yaw del jugador (mirada)
 # Base cerrada de modelos: se aplica offset de 180 para mantener frente consistente
@@ -13,10 +13,13 @@ execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[dist
 execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-135..-45] run data merge entity @s {Rotation:[-90f,0f]}
 execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=136..180] run data merge entity @s {Rotation:[180f,0f]}
 execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] if entity @p[distance=..6,sort=nearest,limit=1,y_rotation=-180..-136] run data merge entity @s {Rotation:[180f,0f]}
+
 # 3. Vincular ID global
 execute unless score #global vexp.id matches 1.. run scoreboard players set #global vexp.id 1
 scoreboard players add #global vexp.id 1
+
 execute as @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] run scoreboard players operation @s vexp.id = #global vexp.id
+execute store result entity @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] data.vexp.vexp_id int 1 run scoreboard players get @s vexp.id
 
 # 4. Spawn Interaction (Hitbox)
 # Alineado igual que el display
@@ -24,18 +27,20 @@ $execute at @s run summon interaction ~ ~ ~ {Tags:["vexp.custom_block.interact",
 
 # 5. Configurar Interaction
 execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run scoreboard players operation @s vexp.id = #global vexp.id
+
 # Copiar rotación del display a la interacción
 execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run data modify entity @s Rotation set from entity @e[tag=vexp.custom_block.display,tag=vexp.temp,sort=nearest,distance=..1,limit=1] Rotation
 
 # 6. Guardar metadatos en la interacción (para Break e Interacción)
 execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run data modify entity @s data.vexp set from storage vexp:custom_block placement
-
-# 7. Limpieza y Sonido
-tag @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] remove vexp.temp
-tag @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] remove vexp.temp_interact
+execute store result entity @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] data.vexp.vexp_id int 1 run scoreboard players get @s vexp.id
 
 # Hook para lógica específica de spawn (opcional)
-$function vexp:custom_block/blocks/$(type)/on_spawn
+$execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run function vexp:custom_block/blocks/$(type)/on_spawn
 
 # Sonido de colocación genérico
-$function vexp:custom_block/macro/sound {sound:"$(s_place)"}
+$execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run function vexp:custom_block/macro/sound {sound:"$(s_place)"}
+
+# 7. Limpieza
+tag @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] remove vexp.temp
+tag @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] remove vexp.temp_interact

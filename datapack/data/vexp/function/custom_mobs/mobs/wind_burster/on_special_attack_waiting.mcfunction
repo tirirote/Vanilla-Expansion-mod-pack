@@ -1,3 +1,4 @@
-#Waiting for attack
-execute if entity @e[type=#illager,sort=nearest,limit=1,distance=..16] unless block ^ ^-2 ^-0.2 #replaceable run tp @s ^ ^0.1 ^-0.35
-particle small_gust ~ ~.5 ~ 0.5 0.2 0.5 0 1
+# Waiting for special attack
+# @s is the custom mob
+execute if score #windbreaker_random_movement vexp.math matches ..49 if entity @e[type=#illager,sort=nearest,limit=1,distance=..16] unless block ^ ^-2 ^-0.35 #replaceable run tp @s ^ ^0.05 ^-0.35 ~-8 ~
+execute if score #windbreaker_random_movement vexp.math matches 50.. if entity @e[type=#illager,sort=nearest,limit=1,distance=..16] unless block ^ ^-2 ^-0.35 #replaceable run tp @s ^ ^0.05 ^0.35 ~8 ~

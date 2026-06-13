@@ -1,2 +1,5 @@
-#On tick for windburster
-execute positioned ~ ~0.5 ~ run function vexp:utils/feedback/dust_particle {initialColor:[0.5,0.6,0.7],finalColor:[0.6,0.85,0.9],scale:0.8,dX:0.5,dY:0.2,dZ:0.5,speed:1,count:1}
+# On tick hook
+# @s is the custom mob
+execute store result score #windbreaker_random_movement vexp.math run random value 0..100
+execute if score #windbreaker_random_movement vexp.math matches ..49 unless block ^ ^-2.5 ^-0.1 #replaceable run tp @s ^ ^0.05 ^-0.1
+particle small_gust ~ ~ ~ 0.35 0.35 0.35 0 1

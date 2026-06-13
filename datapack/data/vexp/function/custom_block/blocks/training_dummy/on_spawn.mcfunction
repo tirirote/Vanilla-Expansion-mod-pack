@@ -1,5 +1,6 @@
-# on_spawn.mcfunction
-# Se ejecuta AS el bloque colocado
+# On spawn
+# @s is the cutom block interaction
+
 # Input: $(name) y demas attrs
 execute as @e[type=item_display,tag=vexp.custom_block.display,distance=..1] run tag @s add vexp.custom_block.dummy
 

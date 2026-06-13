@@ -1,4 +1,5 @@
-#On special attack
+# On special attack feedback hook
+# @s is the custom mob
 execute positioned ~ ~0.5 ~ run particle flash{color:-9740975} ^ ^ ^1 1 1 1 1 0
 
 execute positioned ~ ~0.5 ~ run particle block{block_state:sand} ^ ^ ^1 0.2 0.2 0.2 0.2 5

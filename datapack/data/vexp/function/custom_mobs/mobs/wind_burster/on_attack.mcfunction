@@ -1,4 +1,6 @@
-#On attack custom feedback
+# On attack custom feedback
+# @s is the custom mob
+execute if block ^ ^0.1 ^-0.5 #replaceable run tp @s ^ ^0.1 ^-0.5 ~ ~-12
 
 #Windburster attack feedback
 execute positioned ~ ~1 ~ run particle gust ^ ^ ^1 1 1 1 1 0

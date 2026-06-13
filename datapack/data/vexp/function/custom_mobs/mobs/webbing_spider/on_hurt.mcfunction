@@ -1,1 +1,2 @@
-#Custom on Hurt hook
+# Custom on Hurt hook
+# @s is the custom mob

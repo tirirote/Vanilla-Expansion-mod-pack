@@ -1,4 +1,5 @@
-#Waiting for attack
+# Waiting for attack custom hook
+# @s is the custom mob
 execute unless block ~ ~-0.5 ~ #air if block ^ ^ ^-0.25 #replaceable run tp @s ^ ^ ^-0.25 facing entity @p eyes
 
 #Feedback

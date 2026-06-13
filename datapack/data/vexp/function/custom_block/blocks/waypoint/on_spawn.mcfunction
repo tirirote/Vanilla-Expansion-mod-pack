@@ -1,8 +1,10 @@
-# on_spawn.mcfunction
+# On spawn
+# @s is the cutom block interaction
+
 # Crea el text_display del waypoint y lo vincula por vexp.id.
 # Si el item fue renombrado en yunque, usa ese nombre (CustomName).
+summon text_display ~ ~1 ~ {Tags:["vexp.waypoint.name","vexp.waypoint.temp"],text:"Marcador",billboard:"center",alignment:"center",see_through:1b,background:0,shadow:1b,line_width:200}
 
-execute as @e[type=interaction,tag=vexp.custom_block.interact,distance=..2] if score @s vexp.id = #global vexp.id at @s run summon text_display ~ ~1 ~ {Tags:["vexp.waypoint.name","vexp.waypoint.temp"],text:"Marcador",billboard:"center",alignment:"center",see_through:1b,background:0,shadow:1b,line_width:200}
 execute as @e[type=text_display,tag=vexp.waypoint.temp,distance=..2,limit=1,sort=nearest] run scoreboard players operation @s vexp.id = #global vexp.id
 
 #Reset previous storage
