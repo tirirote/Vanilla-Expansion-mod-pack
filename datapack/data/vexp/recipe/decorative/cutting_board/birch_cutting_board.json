@@ -3,7 +3,7 @@
   "category": "misc",
   "pattern": ["   ", "I I", "WWW"],
   "key": {
-    "W": "minecraft:stripped_birch_log",
+    "W": "minecraft:birch_planks",
     "I": "minecraft:iron_ingot"
   },
   "result": {
@@ -26,7 +26,7 @@
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:stripped_birch_log'}}",
             "scale": 1,
-            "y": 0.435
+            "y": 0.475
           }
         },
         "Invisible": true,

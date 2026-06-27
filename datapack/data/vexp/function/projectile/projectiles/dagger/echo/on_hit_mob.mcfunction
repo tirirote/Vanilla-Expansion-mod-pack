@@ -6,8 +6,4 @@ execute as @e[predicate=vexp:is_target,tag=vexp.echo_marked,distance=..24,sort=n
 execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] run function vexp:dungeons/states/echo_marked
 execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] run function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
 
-function vexp:utils/hits/echo_hit
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}
-
-
+function vexp:dungeons/fx/hits/echo_hit

@@ -1,14 +1,11 @@
 # dungeons/scythe/netherite/on_hit.mcfunction
 # @s is the target entity
 
-#Tag Mob
+# Custom knockback
+function vexp:utils/motion/apply_knockback {strength:1.5, y:0.1}
+
+# Mark Mob
 function vexp:dungeons/states/nether_marked
 
-# Knockback {strength:1.0, y:0.2}
-function vexp:utils/motion/apply_knockback {strength:1.5, y:0.2}
-
-#Fedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/weak_sword_hit
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/netherite_hit
-function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
-
+# Feedback
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/weak_netherite_hit

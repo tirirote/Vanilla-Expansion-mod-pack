@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_axe",
     "components": {
-      "minecraft:item_name": "Hacha de Diamante",
+      "minecraft:item_name": "Hacha de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,13 +16,13 @@
           "material": "diamond",
           "combo": {
             "desc": "Clásica y resistente.",
-            "rc_desc": "Golpe poderoso de Vindicador.",
-            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
+            "rc_desc": "Golpe de vindicador.",
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
             "damage": 9,
             "cooldown": 32,
-            "right_click_cooldown": 48,
+            "right_click_cooldown": 100,
             "range": 1.25,
-            "reach": 2.5,
+            "reach": 3.5,
             "quality": "diamond"
           }
         }
@@ -60,11 +60,6 @@
           "slot": "mainhand"
         }
       ],
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "trident",
         "consume_seconds": 999999,

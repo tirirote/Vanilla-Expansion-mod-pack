@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Daga Resonante",
+      "minecraft:item_name": "Daga resonante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,13 +17,13 @@
           "combo": {
             "desc": "Rápida y aterradora.",
             "rc_desc": "Arrojadiza.",
-            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
-            "status_desc": "Aplica [Pánico].",
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "status_desc": "Aplica [Ceguera].",
             "damage": 5,
             "cooldown": 5,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "echo"
           }
         }

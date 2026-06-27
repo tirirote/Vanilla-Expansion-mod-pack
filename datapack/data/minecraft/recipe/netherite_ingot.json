@@ -13,7 +13,7 @@
   "result": {
     "id": "minecraft:netherite_ingot",
     "components": {
-      "minecraft:item_name": "Lingote de Netherita",
+      "minecraft:item_name": "Lingote de netherita",
       "minecraft:lore": [
         {
           "text": "Material infernal para forjas especiales",

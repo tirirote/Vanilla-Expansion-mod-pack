@@ -3,7 +3,7 @@
 
 # Custom hook for the hitted entity (On Hit Effect)
 # Tag is already assigned in damage_aoe.mcfunction
-execute as @e[tag=vexp.hitted] at @s anchored eyes run function vexp:dungeons/combo_system/hitted_entity
+execute as @e[tag=vexp.hitted] at @s run function vexp:dungeons/combo_system/hitted_entity
 
 # On hit function hook
 function vexp:dungeons/combo_system/hooks/hit/route_on_hit with storage vexp:dungeons.weapon combo_params
@@ -28,3 +28,9 @@ execute if entity @s[tag=vexp.combo_end] run function vexp:dungeons/combo_system
 
 # Spawn damage indicators after combo state has been finalized for this hit
 execute as @e[tag=vexp.hitted] at @s run function vexp:mob_health/spawn_damage_on_hit
+
+# Special hit window for player
+scoreboard players set #extra_window_ticks vexp.math 18
+execute store result score #special_hit_window_ticks vexp.math run data get storage vexp:dungeons.weapon combo_params.cooldown 1
+scoreboard players operation #special_hit_window_ticks vexp.math += #extra_window_ticks vexp.math
+execute if entity @s[tag=vexp.hitted.special] store result score @s vexp.special_hit_window run scoreboard players get #special_hit_window_ticks vexp.math

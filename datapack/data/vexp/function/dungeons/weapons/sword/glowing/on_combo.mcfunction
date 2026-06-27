@@ -1,14 +1,11 @@
 # dungeons/sword/glowing/on_combo.mcfunction
 # @s is the target entity (one of them)
 
-# Push wave
-execute as @e[predicate=vexp:is_target,distance=..3.5] at @s positioned ~ ~1 ~ run function vexp:dungeons/weapons/sword/glowing/wave
+# Combo finisher
+function vexp:dungeons/weapons/sword/combo_finisher
 
-# Strong knockback for the primary target
-function vexp:utils/motion/apply_knockback {strength:-0.4, y:1}
+# Mark mob
+function vexp:dungeons/states/glow_marked
 
-# Visual feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/glowing_hit
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.glow_squid.squirt", type: "player"}

@@ -3,7 +3,7 @@
 
 # Toggle de estado (sin doble ejecucion)
 tag @s remove vexp.tmp_door_open
-execute if data entity @s data.vexp{door_open:1b} run tag @s add vexp.tmp_door_open
+execute if entity @s[tag=vexp.door_opened] run tag @s add vexp.tmp_door_open
 
 # Buscar puerta gemela cercana (doble puerta)
 tag @s remove vexp.neighbour.left

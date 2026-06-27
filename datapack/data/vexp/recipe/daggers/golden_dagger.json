@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:golden_sword",
     "components": {
-      "minecraft:item_name": "Daga de Oro",
+      "minecraft:item_name": "Daga de oro",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,12 +17,12 @@
           "combo": {
             "desc": "Elegante y rápida.",
             "rc_desc": "Arrojadiza.",
-            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
+            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 4,
             "cooldown": 2,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "gold"
           }
         }

@@ -29,9 +29,6 @@ execute if data entity @s data.swoosh{follow_owner:1} run function vexp:utils/fe
 
 tag @s remove vexp.swoosh.current
 
-#Smart Rotation based on dyaw and dpitch
-#function vexp:utils/feedback/swoosh/smart_rotation
-
 # Keyframes
 # Frame 2: Stretch
 execute if score @s vexp.anim_frame = #swoosh_stretch vexp.math run data merge entity @s {start_interpolation:0}

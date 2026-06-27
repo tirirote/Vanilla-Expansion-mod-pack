@@ -2,6 +2,7 @@
 # Se ejecuta AS la interaction de la pila de libros.
 
 execute store result score #temp vexp.math run data get entity @s data.vexp.book_count
+execute if score #temp vexp.math matches ..0 run function vexp:custom_block/macro/sound {sound:"minecraft:item.book.put"}
 execute if score #temp vexp.math matches ..0 run return fail
 execute unless data entity @s data.vexp.books[-1] run return fail
 
@@ -20,4 +21,5 @@ execute store result entity @s data.vexp.book_count int 1 run scoreboard players
 function vexp:custom_block/blocks/pile_of_books/update_display_model
 
 # Feedback de retiro.
-function vexp:custom_block/macro/sound {sound:"minecraft:item.book.page_turn"}
+function vexp:custom_block/macro/sound {sound:"minecraft:block.chiseled_bookshelf.pickup"}
+

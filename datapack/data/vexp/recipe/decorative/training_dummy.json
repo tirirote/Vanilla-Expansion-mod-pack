@@ -26,7 +26,7 @@
             "s_break": "minecraft:block.grass.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:hay_block'}}",
             "scale": 1,
-            "y": 0.435
+            "y": 0.475
           }
         },
         "Invisible": true,

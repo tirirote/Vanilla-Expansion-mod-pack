@@ -36,7 +36,7 @@
         "strings": ["vexp:door_spruce"]
       },
       "minecraft:item_name": {
-        "text": "Puerta de Abeto",
+        "text": "Puerta de abeto",
         "italic": false
       }
     }

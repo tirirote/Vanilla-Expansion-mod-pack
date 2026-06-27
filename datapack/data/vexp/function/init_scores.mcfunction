@@ -62,6 +62,7 @@ scoreboard objectives add vexp.hit_detected minecraft.custom:minecraft.damage_de
 scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
 scoreboard objectives add vexp.hitbox_hide_timer dummy
+scoreboard objectives add vexp.special_hit_window dummy
 
 #Custom Mobs
 scoreboard objectives add vexp.mob_cooldown dummy
@@ -102,7 +103,6 @@ scoreboard objectives add vexp.move_climb_ready dummy
 # Weapon skills
 scoreboard objectives add vexp.parry_timer dummy
 scoreboard objectives add vexp.parry_damage_snapshot dummy
-# Dungeons System
 scoreboard objectives add vexp.dstate dummy
 
 # Global Projectile System
@@ -115,7 +115,9 @@ scoreboard objectives add vexp.proj_damage dummy
 
 # Teams for Feedback Glowing
 team add vexp.white
-team modify vexp.white color gray
+team modify vexp.white color white
+team add vexp.gray
+team modify vexp.gray color gray
 team add vexp.yellow
 team modify vexp.yellow color yellow
 team add vexp.red

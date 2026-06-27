@@ -8,18 +8,23 @@
   "result": {
     "id": "minecraft:diamond_hoe",
     "components": {
-      "minecraft:item_name": "Azada Luminiscente",
+      "minecraft:item_name": "Azada luminiscente",
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
           "material": "glowing",
           "tool": {
             "desc": "Azada brillante de labranza precisa.",
-            "efficiency": 8,
-            "damage": 1,
-            "attack_speed": 4
+            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "efficiency": 9.0,
+            "damage": 1.0,
+            "attack_speed": 4.0
           },
-          "quality": "glowing"
+          "combo": {
+            "right_click_cooldown": 30,
+            "rc_desc": "Cultivo instantáneo.",
+            "quality": "glowing"
+          }
         }
       },
       "tooltip_display": {
@@ -32,8 +37,11 @@
         "items": ["minecraft:diamond"]
       },
       "repair_cost": 1,
-      "minecraft:max_damage": 800,
-      "minecraft:damage": 0
+      "consumable": {
+        "animation": "bow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

@@ -4,7 +4,7 @@
 
 # 1. Spawn Visual (item_display)
 # Lo colocamos alineado en el centro del bloque
-$execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display","vexp.temp"],item:{id:"minecraft:item_frame",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[0f,$(y),0f],scale:[$(scale),$(scale),$(scale)]},teleport_duration:1,interpolation_duration:1}
+$execute at @s run summon item_display ~ ~ ~ {Tags:["vexp.custom_block.display","vexp.temp"],item:{id:"minecraft:item_frame",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,$(y),0f],scale:[$(scale),$(scale),$(scale)]},teleport_duration:1,interpolation_duration:2}
 
 # 2. Rotación: Alinear a 4 direcciones cardinales según el yaw del jugador (mirada)
 # Base cerrada de modelos: se aplica offset de 180 para mantener frente consistente
@@ -23,7 +23,7 @@ execute store result entity @e[tag=vexp.temp,sort=nearest,distance=..1,limit=1] 
 
 # 4. Spawn Interaction (Hitbox)
 # Alineado igual que el display
-$execute at @s run summon interaction ~ ~ ~ {Tags:["vexp.custom_block.interact","vexp.temp_interact"],width:$(width),height:$(height)}
+$execute at @s run summon interaction ~ ~ ~ {Tags:["vexp.custom_block.interact","vexp.temp_interact"],width:$(width),height:$(height),response:true}
 
 # 5. Configurar Interaction
 execute as @e[tag=vexp.temp_interact,sort=nearest,distance=..1,limit=1] run scoreboard players operation @s vexp.id = #global vexp.id

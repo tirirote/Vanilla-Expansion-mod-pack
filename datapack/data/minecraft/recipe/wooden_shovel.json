@@ -14,15 +14,25 @@
           "item": "shovel",
           "material": "wood",
           "tool": {
-            "desc": "Sencilla y básica.",
-            "efficiency": 2,
-            "damage": 2.5,
-            "attack_speed": 1
+            "desc": "Sencilla y fiable.",
+            "efficiency": 2.0,
+            "damage": 2.0,
+            "attack_speed": 1.0
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Excavación instantánea.",
+            "quality": "normal"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

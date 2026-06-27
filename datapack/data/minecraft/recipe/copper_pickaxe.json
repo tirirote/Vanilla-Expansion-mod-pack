@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", " S ", " S "],
+  "key": {
+    "W": "minecraft:copper_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:copper_pickaxe",
+    "components": {
+      "minecraft:item_name": "Pico de cobre",
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "pickaxe",
+          "material": "copper",
+          "tool": {
+            "desc": "Fiable y resistente.",
+            "efficiency": 5.0,
+            "damage": 3.5,
+            "attack_speed": 1.2
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Minería instantánea.",
+            "quality": "normal"
+          }
+        }
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    },
+    "count": 1
+  }
+}

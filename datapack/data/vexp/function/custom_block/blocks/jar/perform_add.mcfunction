@@ -19,5 +19,5 @@ item modify entity @p[tag=vexp.jar_user,limit=1] weapon.mainhand { "function": "
 
 # 5. Feedback
 function vexp:custom_block/macro/sound {sound:"minecraft:block.sand.place"}
-function vexp:custom_block/macro/sound {sound:"minecraft:entity.armadillo.scute_drop"}
+function vexp:custom_block/macro/sound {sound:"minecraft:block.note_block.xylophone"}
 particle composter ~ ~0.5 ~ 0.2 0.2 0.2 .1 1

@@ -8,18 +8,23 @@
   "result": {
     "id": "minecraft:netherite_hoe",
     "components": {
-      "minecraft:item_name": "Azada Resonante",
+      "minecraft:item_name": "Azada resonante",
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
           "material": "echo",
           "tool": {
             "desc": "Azada resonante de labranza perfecta.",
-            "efficiency": 9,
-            "damage": 1,
-            "attack_speed": 4
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "efficiency": 10.0,
+            "damage": 1.0,
+            "attack_speed": 4.0
           },
-          "quality": "echo"
+          "combo": {
+            "right_click_cooldown": 30,
+            "rc_desc": "Cultivo instantáneo.",
+            "quality": "echo"
+          }
         }
       },
       "tooltip_display": {
@@ -32,8 +37,11 @@
         "items": ["minecraft:echo_shard"]
       },
       "repair_cost": 1,
-      "minecraft:max_damage": 1891,
-      "minecraft:damage": 0
+      "consumable": {
+        "animation": "bow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

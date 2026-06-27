@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:golden_sword",
     "components": {
-      "minecraft:item_name": "Lanza Dorada",
+      "minecraft:item_name": "Lanza de oro",
       "minecraft:custom_model_data": {
         "strings": ["vexp:golden_spear"]
       },
@@ -19,9 +19,9 @@
           "material": "gold",
           "combo": {
             "desc": "Elegante y con gran alcance.",
-            "rc_desc": "Embestida brillante.",
-            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
-            "damage": 4,
+            "rc_desc": "Embestida.",
+            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
+            "damage": 3,
             "cooldown": 14,
             "right_click_cooldown": 28,
             "range": 1.75,
@@ -66,11 +66,6 @@
           "slot": "mainhand"
         }
       ],
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,

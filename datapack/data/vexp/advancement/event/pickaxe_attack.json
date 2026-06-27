@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "used_pickaxe": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{vexp:{item:\"pickaxe\"}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vexp:dungeons/combo_system/hooks/interact/apply_interact_params_wrapper"
+  }
+}

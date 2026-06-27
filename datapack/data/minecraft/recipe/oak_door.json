@@ -36,7 +36,7 @@
         "strings": ["vexp:door_oak"]
       },
       "minecraft:item_name": {
-        "text": "Puerta de Roble",
+        "text": "Puerta de roble",
         "italic": false
       }
     }

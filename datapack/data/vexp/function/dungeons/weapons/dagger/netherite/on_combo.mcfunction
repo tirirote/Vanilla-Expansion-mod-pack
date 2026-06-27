@@ -1,11 +1,10 @@
 # @s is the player, @e[tag=vexp.hitted] is the mob
 
-function vexp:utils/motion/apply_knockback {strength:-1.0, y:0.1}
+# Custom combo finisher
+function vexp:dungeons/weapons/dagger/combo_finisher
 
-#Buff
-execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/nether_buffed
+# Mark mob
+function vexp:dungeons/states/echo_marked
 
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/weak_sword_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/netherite_hit
-
-function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}

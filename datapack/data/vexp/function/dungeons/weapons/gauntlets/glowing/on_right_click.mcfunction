@@ -1,7 +1,7 @@
 # dungeons/gauntlets/glowing/on_right_click.mcfunction
 # @s is the player
 
-execute positioned ^ ^ ^5 as @e[predicate=vexp:is_target,distance=..3.5,limit=1,sort=nearest] at @s run function vexp:dungeons/states/catched
+execute positioned ^ ^ ^2.5 as @e[predicate=vexp:is_target,distance=..3.5,limit=1,sort=nearest] at @s run function vexp:dungeons/states/catched
 execute as @e[predicate=vexp:is_target,distance=..6,limit=1,sort=nearest,tag=vexp.state.catched] run function vexp:dungeons/states/glow_marked
 
 #Buff

@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": ["P  ", "PPP", "S S"],
+  "pattern": ["P  ", "PPP", "P P"],
   "key": {
-    "P": "minecraft:acacia_planks",
-    "S": "minecraft:stick"
+    "P": "minecraft:acacia_planks"
   },
   "result": {
     "id": "minecraft:item_frame",
@@ -26,7 +25,7 @@
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:acacia_planks'}}",
             "scale": 1,
-            "y": 0.435
+            "y": 0.475
           }
         },
         "Invisible": true,
@@ -43,4 +42,3 @@
     }
   }
 }
-

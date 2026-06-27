@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Daga de Netherite",
+      "minecraft:item_name": "Daga de netherite",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -17,13 +17,13 @@
           "combo": {
             "desc": "Rápida y abrasadora.",
             "rc_desc": "Arrojadiza.",
-            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
-            "status_desc": "Aplica [Quemadura Profunda].",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
             "damage": 6,
             "cooldown": 8,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "netherite"
           }
         }

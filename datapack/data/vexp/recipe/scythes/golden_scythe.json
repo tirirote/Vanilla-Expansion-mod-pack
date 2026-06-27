@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:golden_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de Oro",
+      "minecraft:item_name": "Guadaña de oro",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,8 +16,8 @@
           "material": "gold",
           "combo": {
             "desc": "Imponente y elegante.",
-            "rc_desc": "Ataque elegante a distancia.",
-            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
+            "rc_desc": "Ataque ligero a distancia.",
+            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 4,
             "cooldown": 18,
             "right_click_cooldown": 36,

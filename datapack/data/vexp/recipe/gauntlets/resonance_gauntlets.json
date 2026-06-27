@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Guantes Resonantes",
+      "minecraft:item_name": "Guantes resonantes",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -16,14 +16,14 @@
           "material": "echo",
           "combo": {
             "desc": "Rápidos y aterradores.",
-            "rc_desc": "Atrapa y aterroriza al enemigo.",
-            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
-            "status_desc": "Aplica [Pánico].",
+            "rc_desc": "Atrapa al enemigo.",
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "status_desc": "Aplica [Ceguera].",
             "damage": 5,
             "cooldown": 10,
             "right_click_cooldown": 30,
-            "range": 2.5,
-            "reach": 1.5,
+            "range": 1.5,
+            "reach": 2.0,
             "quality": "echo"
           }
         }
@@ -32,6 +32,13 @@
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:gauntlet_damage",
+          "slot": "mainhand"
+        },
         {
           "type": "minecraft:attack_damage",
           "amount": -1.0,
@@ -50,14 +57,14 @@
           "type": "minecraft:entity_interaction_range",
           "amount": -0.3,
           "operation": "add_value",
-          "id": "vexp:gloves_reach",
+          "id": "vexp:gauntlet_reach",
           "slot": "mainhand"
         },
         {
           "type": "minecraft:block_interaction_range",
           "amount": -0.3,
           "operation": "add_value",
-          "id": "vexp:gloves_block_reach",
+          "id": "vexp:gauntlet_block_reach",
           "slot": "mainhand"
         }
       ],

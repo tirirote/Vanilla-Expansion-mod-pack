@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de Netherite",
+      "minecraft:item_name": "Guadaña de netherite",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,9 +16,9 @@
           "material": "netherite",
           "combo": {
             "desc": "Abismalmente poderosa.",
-            "rc_desc": "Ataque abrasador a distancia.",
-            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
-            "status_desc": "Aplica [Quemadura Profunda].",
+            "rc_desc": "Ataque ligero a distancia.",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
             "damage": 12,
             "cooldown": 58,
             "right_click_cooldown": 36,

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Espada Resonante",
+      "minecraft:item_name": "Espada resonante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -16,8 +16,8 @@
           "material": "echo",
           "combo": {
             "desc": "Poderosa y aterradora.",
-            "rc_desc": "Bloqueo oscuro.",
-            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "rc_desc": "Bloquea y desvía ataques.",
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
             "status_desc": "Aplica [Ceguera].",
             "damage": 9,
             "cooldown": 36,

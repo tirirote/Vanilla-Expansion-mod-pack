@@ -10,10 +10,14 @@ execute unless data entity @s data.vexp.book_count run data modify entity @s dat
 execute unless data entity @s data.vexp.books run data modify entity @s data.vexp.books set value []
 
 # Mano vacia: retirar un libro si hay contenido.
-execute if data entity @a[tag=vexp.pile_books_user,limit=1] {} unless data entity @a[tag=vexp.pile_books_user,limit=1] SelectedItem if data entity @s data.vexp.book_count run function vexp:custom_block/blocks/pile_of_books/remove_book
+execute unless data entity @a[tag=vexp.pile_books_user,limit=1] SelectedItem if data entity @s data.vexp.book_count run function vexp:custom_block/blocks/pile_of_books/remove_book
 
 # Mano con libro (book o written_book): insertar uno si hay espacio.
 execute if items entity @a[tag=vexp.pile_books_user,limit=1] weapon.mainhand #vexp:pile_of_books_insertable if data entity @a[tag=vexp.pile_books_user,limit=1] SelectedItem run function vexp:custom_block/blocks/pile_of_books/add_book
+
+# 4. Añadir animación de jitter
+tag @s add vexp.block.jitter
+scoreboard players set @s vexp.block_anim 10
 
 # Limpieza.
 tag @a[tag=vexp.pile_books_user] remove vexp.pile_books_user

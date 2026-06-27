@@ -20,17 +20,14 @@ data modify entity @s data.vexp.Items append from storage vexp:custom_block crat
 execute store result storage vexp:custom_block crate.id int 1 run scoreboard players get @s vexp.id
 
 # Posiciones de rejilla 3x3
-execute if score #slot vexp.id matches 0 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.05f,z:0.0f}
-execute if score #slot vexp.id matches 1 run data modify storage vexp:custom_block crate merge value {x:0.1f,y:0.1f,z:0.1f}
-execute if score #slot vexp.id matches 2 run data modify storage vexp:custom_block crate merge value {x:-0.1f,y:0.15f,z:0.0f}
-execute if score #slot vexp.id matches 3 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.2f,z:-0.1f}
-execute if score #slot vexp.id matches 4 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.25f,z:0.0f}
-execute if score #slot vexp.id matches 5 run data modify storage vexp:custom_block crate merge value {x:-0.1f,y:0.3f,z:0.1f}
-execute if score #slot vexp.id matches 6 run data modify storage vexp:custom_block crate merge value {x:-0.1f,y:0.35f,z:-0.1f}
-execute if score #slot vexp.id matches 7 run data modify storage vexp:custom_block crate merge value {x:0.1f,y:0.4f,z:0f}
-execute if score #slot vexp.id matches 8 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.45f,z:0.1f}
+execute if score #slot vexp.id matches 0 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.125f,z:0.0f}
+execute if score #slot vexp.id matches 1 run data modify storage vexp:custom_block crate merge value {x:0.1f,y:0.175f,z:0.1f}
+execute if score #slot vexp.id matches 2 run data modify storage vexp:custom_block crate merge value {x:-0.1f,y:0.225f,z:0.0f}
+execute if score #slot vexp.id matches 3 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.275f,z:-0.1f}
+execute if score #slot vexp.id matches 4 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.325f,z:0.0f}
+execute if score #slot vexp.id matches 5 run data modify storage vexp:custom_block crate merge value {x:-0.1f,y:0.375f,z:0.1f}
+execute if score #slot vexp.id matches 6 run data modify storage vexp:custom_block crate merge value {x:-0.1f,y:0.425f,z:-0.1f}
+execute if score #slot vexp.id matches 7 run data modify storage vexp:custom_block crate merge value {x:0.1f,y:0.475f,z:0f}
+execute if score #slot vexp.id matches 8 run data modify storage vexp:custom_block crate merge value {x:0.0f,y:0.525f,z:0.1f}
 
 function vexp:custom_block/blocks/crate/spawn_visual with storage vexp:custom_block crate
-
-# Sonido
-function vexp:custom_block/macro/sound {sound:"minecraft:entity.item.pickup"}

@@ -8,23 +8,32 @@
   "result": {
     "id": "minecraft:golden_hoe",
     "components": {
-      "minecraft:item_name": "Azada de Oro",
+      "minecraft:item_name": "Azada de oro",
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
           "material": "gold",
           "tool": {
             "desc": "Muy rápida, pero frágil.",
-            "efficiency": 12,
-            "damage": 1,
-            "attack_speed": 1,
-            "bonus_desc": "Labranza ultrarapida.",
-            "status_desc": "Durabilidad reducida."
+            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
+            "efficiency": 12.0,
+            "damage": 1.0,
+            "attack_speed": 4.0
+          },
+          "combo": {
+            "right_click_cooldown": 30,
+            "rc_desc": "Cultivo instantáneo.",
+            "quality": "gold"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

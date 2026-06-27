@@ -25,7 +25,7 @@
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:bookshelf'}}",
             "scale": 1,
-            "y": 0.435,
+            "y": 0.475,
             "book_count": 0,
             "books": []
           }

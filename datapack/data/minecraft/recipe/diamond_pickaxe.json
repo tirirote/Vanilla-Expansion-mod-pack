@@ -8,21 +8,32 @@
   "result": {
     "id": "minecraft:diamond_pickaxe",
     "components": {
-      "minecraft:item_name": "Pico de Diamante",
+      "minecraft:item_name": "Pico de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "item": "pickaxe",
           "material": "diamond",
           "tool": {
             "desc": "El mejor pico por excelencia.",
-            "efficiency": 8,
-            "damage": 5,
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "efficiency": 8.0,
+            "damage": 5.0,
             "attack_speed": 1.2
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Minería instantánea.",
+            "quality": "diamond"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

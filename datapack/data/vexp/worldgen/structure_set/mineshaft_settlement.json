@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "vexp:mineshaft_settlement",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 12,
+    "salt": 87410293,
+    "frequency_reduction_method": "default"
+  }
+}

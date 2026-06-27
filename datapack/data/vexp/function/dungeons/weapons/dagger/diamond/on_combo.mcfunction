@@ -1,13 +1,8 @@
 # dungeons/dagger/on_combo.mcfunction
 # @s is the target entity
 
-# Strong pushback to target
-function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
+# Custom combo finisher
+function vexp:dungeons/weapons/dagger/combo_finisher
 
-# Subtle buff
-execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/diamond_buffed
-
-# Visual/Sound
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/diamond_hit
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}

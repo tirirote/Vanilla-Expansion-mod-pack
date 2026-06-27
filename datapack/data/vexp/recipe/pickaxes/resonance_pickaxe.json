@@ -8,18 +8,23 @@
   "result": {
     "id": "minecraft:netherite_pickaxe",
     "components": {
-      "minecraft:item_name": "Pico Resonante",
+      "minecraft:item_name": "Pico resonante",
       "minecraft:custom_data": {
         "vexp": {
           "item": "pickaxe",
           "material": "echo",
           "tool": {
-            "desc": "Pico resonante de maxima precision.",
-            "efficiency": 9,
-            "damage": 6,
+            "desc": "Poderoso y preciso.",
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "efficiency": 11.0,
+            "damage": 6.0,
             "attack_speed": 1.2
           },
-          "quality": "echo"
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Minería instantánea.",
+            "quality": "echo"
+          }
         }
       },
       "tooltip_display": {
@@ -32,8 +37,11 @@
         "items": ["minecraft:echo_shard"]
       },
       "repair_cost": 1,
-      "minecraft:max_damage": 1891,
-      "minecraft:damage": 0
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

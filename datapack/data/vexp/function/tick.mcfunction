@@ -4,6 +4,9 @@ function vexp:custom_block/tick
 #Dungeons
 function vexp:dungeons/tick
 
+# Custom projectile system
+execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
+
 #Pirotecnics
 function vexp:tnt_stick/tick
 
@@ -26,10 +29,6 @@ function vexp:utils/feedback/tick
 
 #Custom mobs
 function vexp:custom_mobs/tick
-
-
-# Custom projectile system
-execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
 
 # Custom combat states
 function vexp:dungeons/states/tick

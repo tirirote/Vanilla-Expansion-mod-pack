@@ -1,14 +1,22 @@
-# dungeons/spear/on_right_click.mcfunction
-#Player Dash
-function vexp:dungeons/weapons/spear/dash
+# Spear RC
+# @s is the player
 
-#Subtle Buff
-effect give @s speed 3 0 true
-effect give @s blindness 1 0 true
+# Tag player
+tag @s add vexp.attacker
 
-execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/weapons/spear/common_wave
+# Aeo Wave Feedback
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^5 run function vexp:dungeons/fx/aeo_waves/common
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^6 run function vexp:dungeons/fx/aeo_waves/common
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^7 run function vexp:dungeons/fx/aeo_waves/common
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^8 run function vexp:dungeons/fx/aeo_waves/common
+function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
 
 # Feedback
-execute positioned ~ ~ ~ run function vexp:utils/feedback/dust_particle {initialColor: [0.8,0.8,0.8], finalColor: [0.9, 1.0, 1.0], scale: 1.7, dX: 0.2, dY: 0.5, dZ: 0.2, speed: 0.05, count: 5}
-particle flash{color:-9145228} ~ ~ ~ 0.0 0.0 0.0 0 0
-function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
+execute positioned ^ ^ ^3.5 if entity @e[predicate=vexp:is_target,distance=..3.5] run function vexp:dungeons/fx/hits/strong_sword_hit
+
+# Dash damage and knockback
+execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/weapons/spear/dash_damage {damage: 2}
+execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:utils/motion/apply_knockback {strength:-4.5, y:0.1}
+
+#Player Dash
+function vexp:dungeons/weapons/spear/dash

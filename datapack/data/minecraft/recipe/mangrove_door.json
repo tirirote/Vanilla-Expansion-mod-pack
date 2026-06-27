@@ -36,7 +36,7 @@
         "strings": ["vexp:door_mangrove"]
       },
       "minecraft:item_name": {
-        "text": "Puerta de Mangle",
+        "text": "Puerta de mangle",
         "italic": false
       }
     }

@@ -17,7 +17,7 @@
           "combo": {
             "desc": "Clásica y resistente.",
             "rc_desc": "Bloquea y desvía ataques.",
-            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
             "damage": 8,
             "cooldown": 36,
             "right_click_cooldown": 24,

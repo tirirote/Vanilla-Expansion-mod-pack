@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco Luminiscente",
+      "minecraft:item_name": "Arco luminiscente",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,9 +17,9 @@
           "combo": {
             "desc": "Brillante y ligero.",
             "rc_desc": "Combo luminoso a distancia.",
-            "bonus_desc": "Otorga [Sigilo Luminoso] por 2s.",
-            "status_desc": "Aplica [Ceguera Luminosa].",
-            "damage": 6,
+            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "status_desc": "Aplica [Confusión].",
+            "damage": 5,
             "cooldown": 12,
             "right_click_cooldown": 20,
             "range": 1.5,

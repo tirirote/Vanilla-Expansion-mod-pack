@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Daga Luminiscente",
+      "minecraft:item_name": "Daga luminiscente",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,13 +17,13 @@
           "combo": {
             "desc": "Rápida y sigilosa.",
             "rc_desc": "Arrojadiza.",
-            "bonus_desc": "Otorga [Sigilo Luminoso] por 2s.",
-            "status_desc": "Aplica [Ceguera Luminosa].",
+            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "status_desc": "Aplica [Confusión].",
             "damage": 4,
             "cooldown": 4,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "glowing"
           }
         }

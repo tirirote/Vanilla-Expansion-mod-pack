@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de Piedra",
+      "minecraft:item_name": "Arco de piedra",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,7 +17,7 @@
           "combo": {
             "desc": "Tosco y confiable.",
             "rc_desc": "Combo a distancia.",
-            "damage": 3,
+            "damage": 2,
             "cooldown": 10,
             "right_click_cooldown": 20,
             "range": 1.5,

@@ -8,21 +8,32 @@
   "result": {
     "id": "minecraft:diamond_hoe",
     "components": {
-      "minecraft:item_name": "Azada de Diamante",
+      "minecraft:item_name": "Azada de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
           "material": "diamond",
           "tool": {
             "desc": "Una gran azada para tus cultivos.",
-            "efficiency": 8,
-            "damage": 1,
-            "attack_speed": 4
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "efficiency": 8.0,
+            "damage": 1.0,
+            "attack_speed": 4.0
+          },
+          "combo": {
+            "right_click_cooldown": 30,
+            "rc_desc": "Cultivo instantáneo.",
+            "quality": "diamond"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

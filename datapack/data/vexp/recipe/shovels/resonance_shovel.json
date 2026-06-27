@@ -8,18 +8,23 @@
   "result": {
     "id": "minecraft:netherite_shovel",
     "components": {
-      "minecraft:item_name": "Pala Resonante",
+      "minecraft:item_name": "Pala resonante",
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
           "material": "echo",
           "tool": {
             "desc": "Pala resonante para limpiar terreno.",
-            "efficiency": 9,
-            "damage": 6.5,
-            "attack_speed": 1
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "efficiency": 11.0,
+            "damage": 6.0,
+            "attack_speed": 1.0
           },
-          "quality": "echo"
+          "combo": {
+            "right_click_cooldown": 60,
+            "rc_desc": "Excavación instantánea.",
+            "quality": "echo"
+          }
         }
       },
       "tooltip_display": {
@@ -32,8 +37,11 @@
         "items": ["minecraft:echo_shard"]
       },
       "repair_cost": 1,
-      "minecraft:max_damage": 1891,
-      "minecraft:damage": 0
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
     },
     "count": 1
   }

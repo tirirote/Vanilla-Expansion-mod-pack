@@ -18,6 +18,5 @@ scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_take
 
 # Feedback
 particle flash{color:-26073} ~ ~1 ~ 0 0 0 0 0
-particle large_smoke ~ ~1 ~ .1 .1 .1 0.1 3
-particle lava ~ ~1 ~ .2 .2 .2 0 1
+particle flame ~ ~1 ~ .5 .5 .5 0.1 3
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}

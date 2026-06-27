@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:golden_axe",
     "components": {
-      "minecraft:item_name": "Hacha de Oro",
+      "minecraft:item_name": "Hacha de oro",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,13 +16,13 @@
           "material": "gold",
           "combo": {
             "desc": "Rápida y elegante.",
-            "rc_desc": "Golpe elegante de Vindicador.",
-            "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
+            "rc_desc": "Golpe de vindicador.",
+            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 4,
             "cooldown": 10,
-            "right_click_cooldown": 48,
+            "right_click_cooldown": 100,
             "range": 1.25,
-            "reach": 2.5,
+            "reach": 3.5,
             "quality": "gold"
           }
         }
@@ -60,11 +60,6 @@
           "slot": "mainhand"
         }
       ],
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "trident",
         "consume_seconds": 999999,

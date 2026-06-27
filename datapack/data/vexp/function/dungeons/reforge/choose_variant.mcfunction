@@ -1,5 +1,5 @@
 # Reset mods and default variant payload.
-data modify storage vexp:temp reforge_apply.mods set value {damage:0,cooldown:0,reach:0.0f,range:0.0f}
+data modify storage vexp:temp reforge_apply.mods set value {damage:0,cooldown:0,reach:0.0f,range:0.0f,efficiency:0.0f,break_speed:0.0f}
 data modify storage vexp:temp reforge_apply.variant_name set value "Equilibrada"
 data modify storage vexp:temp reforge_apply.variant_key set value "balanced"
 
@@ -16,6 +16,10 @@ execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_ty
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"gauntlets"} run function vexp:dungeons/reforge/choose_gauntlets
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"rapier"} run function vexp:dungeons/reforge/choose_rapier
 
+# Tools
+execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"pickaxe"} run function vexp:dungeons/reforge/choose_tool
+execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"hoe"} run function vexp:dungeons/reforge/choose_tool
+execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"shovel"} run function vexp:dungeons/reforge/choose_tool
 
 # Persist variant info in custom_data.
 data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.variant_name set from storage vexp:temp reforge_apply.variant_name

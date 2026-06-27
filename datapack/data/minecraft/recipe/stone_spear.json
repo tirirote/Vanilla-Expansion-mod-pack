@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:stone_sword",
     "components": {
-      "minecraft:item_name": "Lanza de Piedra",
+      "minecraft:item_name": "Lanza de piedra",
       "minecraft:custom_model_data": {
         "strings": ["vexp:stone_spear"]
       },
@@ -20,7 +20,7 @@
           "combo": {
             "desc": "Tosca y con gran alcance.",
             "rc_desc": "Embestida.",
-            "damage": 3,
+            "damage": 2,
             "cooldown": 22,
             "right_click_cooldown": 28,
             "range": 1.75,
@@ -65,24 +65,11 @@
           "slot": "mainhand"
         }
       ],
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,
         "has_consume_particles": false
-      },
-      "minecraft:repairable": {
-        "items": [
-          "minecraft:cobblestone",
-          "minecraft:blackstone",
-          "minecraft:cobbled_deepslate"
-        ]
-      },
-      "repair_cost": 1
+      }
     },
     "count": 1
   }

@@ -4,13 +4,8 @@
 #Mark target
 function vexp:dungeons/states/nether_marked
 
-# Strong push away
-function vexp:utils/motion/apply_knockback {strength:-3.5, y:1.5}
+# Custom combo finisher
+function vexp:dungeons/weapons/gauntlets/combo_finisher
 
-#Buff
-execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/nether_buffed
-
-# Visuals
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_punch_hit
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/gold_hit
-function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
+# Feedback
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/netherite_hit

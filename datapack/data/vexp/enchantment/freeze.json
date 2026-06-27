@@ -1,6 +1,6 @@
 {
   "description": {
-    "text": "Freezing"
+    "text": "Congelar"
   },
   "supported_items": "#minecraft:enchantable/sharp_weapon",
   "primary_items": "#minecraft:enchantable/sharp_weapon",

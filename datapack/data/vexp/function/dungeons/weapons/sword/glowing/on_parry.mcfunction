@@ -16,8 +16,7 @@ scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_take
 
 # Feedback
 particle flash{color:-6488120} ~ ~1 ~ 0 0 0 0 0
-particle glow ~ ~1 ~ 0.25 0.25 0.25 0.1 3
-particle glow_squid_ink ~ ~1 ~ 0.25 0.25 0.25 0.1 5
+particle glow ~ ~1 ~ 0.5 0.5 0.5 0.1 3
 execute positioned ~ ~1 ~ run function vexp:utils/feedback/dust_particle {initialColor: [0.0, 0.1, 0.1], finalColor: [0.4, 0.8, 0.65], scale: 1.7, dX: .25, dY: .25, dZ: .25, speed: 1, count: 3}
 
 function vexp:utils/sound {sound: "minecraft:entity.glow_squid.squirt", type: "player"}

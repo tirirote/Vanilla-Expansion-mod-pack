@@ -20,13 +20,13 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "item/dungeons/wooden_spear"
+                "model": "item/wooden_spear"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "item/dungeons/wooden_spear_hand"
+            "model": "item/wooden_spear_in_hand"
           }
         }
       },

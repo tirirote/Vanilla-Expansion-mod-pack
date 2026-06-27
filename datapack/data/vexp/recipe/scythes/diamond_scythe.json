@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de Diamante",
+      "minecraft:item_name": "Guadaña de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,7 +16,7 @@
           "material": "diamond",
           "combo": {
             "desc": "Imponente y precisa.",
-            "rc_desc": "Ataque preciso a distancia.",
+            "rc_desc": "Ataque ligero a distancia.",
             "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
             "damage": 9,
             "cooldown": 54,

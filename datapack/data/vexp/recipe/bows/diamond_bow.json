@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de Diamante",
+      "minecraft:item_name": "Arco de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -18,7 +18,7 @@
             "desc": "Equilibrado y poderoso.",
             "rc_desc": "Combo brillante a distancia.",
             "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
-            "damage": 6,
+            "damage": 5,
             "cooldown": 22,
             "right_click_cooldown": 20,
             "range": 1.5,

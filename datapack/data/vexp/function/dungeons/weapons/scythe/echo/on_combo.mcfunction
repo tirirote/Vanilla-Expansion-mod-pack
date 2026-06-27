@@ -1,17 +1,14 @@
-# dungeons/scythe/echo/on_combo.mcfunction
-# @s is the player, @e[tag=vexp.hitted] is the mob
+# On combo hook
+# @s is the hitted mob
+
+# Custom knockback
+function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.2}
 
 # Mark mob
 function vexp:dungeons/states/echo_marked
 
-# Player effects
+# Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
 
-# Knockback
-function vexp:utils/motion/apply_knockback with storage vexp:temp {strength:-3.5, y:0.25}
-
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/echo_hit
-
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

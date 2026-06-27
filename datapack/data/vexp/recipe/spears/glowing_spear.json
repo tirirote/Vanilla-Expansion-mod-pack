@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Lanza Luminiscente",
+      "minecraft:item_name": "Lanza luminiscente",
       "minecraft:custom_model_data": {
         "strings": ["vexp:glowing_spear"]
       },
@@ -20,9 +20,9 @@
           "combo": {
             "desc": "Radiante y precisa.",
             "rc_desc": "Guardia luminosa con embestida.",
-            "bonus_desc": "Otorga [Sigilo Luminoso] por 2s.",
-            "status_desc": "Aplica [Confusión Luminosa].",
-            "damage": 9,
+            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "status_desc": "Aplica [Confusión].",
+            "damage": 5,
             "cooldown": 32,
             "right_click_cooldown": 28,
             "range": 1.75,
@@ -30,6 +30,9 @@
             "quality": "glowing"
           }
         }
+      },
+      "swing_animation": {
+        "type": "stab"
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]

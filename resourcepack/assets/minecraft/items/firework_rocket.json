@@ -46,6 +46,76 @@
         }
       },
       {
+        "when": "vexp:gold_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/gold_hit"
+        }
+      },
+      {
+        "when": "vexp:weak_gold_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_gold_hit"
+        }
+      },
+      {
+        "when": "vexp:weak_diamond_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_diamond_hit"
+        }
+      },
+      {
+        "when": "vexp:diamond_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/diamond_hit"
+        }
+      },
+      {
+        "when": "vexp:weak_netherite_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_netherite_hit"
+        }
+      },
+      {
+        "when": "vexp:netherite_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/netherite_hit"
+        }
+      },
+      {
+        "when": "vexp:weak_echo_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_echo_hit"
+        }
+      },
+      {
+        "when": "vexp:echo_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/echo_hit"
+        }
+      },
+      {
+        "when": "vexp:weak_glowing_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/weak_glowing_hit"
+        }
+      },
+      {
+        "when": "vexp:glowing_hit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/glowing_hit"
+        }
+      },
+      {
         "when": "vexp:thundering",
         "model": {
           "type": "minecraft:model",

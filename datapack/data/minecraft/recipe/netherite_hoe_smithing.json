@@ -8,21 +8,32 @@
   "result": {
     "id": "minecraft:netherite_hoe",
     "components": {
-      "minecraft:item_name": "Azada de Netherite",
+      "minecraft:item_name": "Azada de netherite",
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
           "material": "netherite",
           "tool": {
             "desc": "Eficiencia absoluta.",
-            "efficiency": 9,
-            "damage": 1,
-            "attack_speed": 4
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "efficiency": 9.0,
+            "damage": 1.0,
+            "attack_speed": 4.0
+          },
+          "combo": {
+            "right_click_cooldown": 30,
+            "rc_desc": "Cultivo instantáneo.",
+            "quality": "netherite"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

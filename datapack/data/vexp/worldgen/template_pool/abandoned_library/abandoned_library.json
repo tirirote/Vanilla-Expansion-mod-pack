@@ -1,0 +1,15 @@
+{
+  "name": "vexp:abandoned_library/abandoned_library",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:abandoned_library/abandoned_library",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

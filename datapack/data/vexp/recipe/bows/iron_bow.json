@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de Hierro",
+      "minecraft:item_name": "Arco de hierro",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,7 +17,7 @@
           "combo": {
             "desc": "Resistente y equilibrado.",
             "rc_desc": "Combo a distancia.",
-            "damage": 5,
+            "damage": 4,
             "cooldown": 18,
             "right_click_cooldown": 20,
             "range": 1.5,

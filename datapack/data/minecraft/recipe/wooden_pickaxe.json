@@ -8,21 +8,31 @@
   "result": {
     "id": "minecraft:wooden_pickaxe",
     "components": {
-      "minecraft:item_name": "Pico de Madera",
+      "minecraft:item_name": "Pico de madera",
       "minecraft:custom_data": {
         "vexp": {
           "item": "pickaxe",
           "material": "wood",
           "tool": {
-            "desc": "Sencillo y básico.",
-            "efficiency": 2,
-            "damage": 2,
+            "desc": "Sencillo y fiable.",
+            "efficiency": 2.0,
+            "damage": 2.0,
             "attack_speed": 1.2
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Minería instantánea.",
+            "quality": "normal"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

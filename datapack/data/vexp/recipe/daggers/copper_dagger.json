@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:copper_sword",
     "components": {
-      "minecraft:item_name": "Daga de Cobre",
+      "minecraft:item_name": "Daga de cobre",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -20,8 +20,8 @@
             "damage": 3,
             "cooldown": 4,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "normal"
           }
         }

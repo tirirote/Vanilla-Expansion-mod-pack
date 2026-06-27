@@ -2,7 +2,7 @@
 data modify storage vexp:macro feedback set value {sound:"minecraft:block.stone.hit", particle_id:"minecraft:stone"}
 
 # 2. GENERAR EL ÍTEM TEMPORAL
-# Spawneamos el botín del bloque exactamente donde impactó. 
+# Spawneamos el botín del bloque exactamente donde impactó.
 # Usamos un tag único para poder identificarlo al instante.
 loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:diamond_pickaxe[enchantments={"minecraft:silk_touch":1b}]
 

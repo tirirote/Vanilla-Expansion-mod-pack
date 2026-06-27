@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": ["P  ", "PPP", "S S"],
+  "pattern": ["P  ", "PPP", "P P"],
   "key": {
-    "P": "minecraft:jungle_planks",
-    "S": "minecraft:stick"
+    "P": "minecraft:jungle_planks"
   },
   "result": {
     "id": "minecraft:item_frame",
-    "count": 1,
+    "count": 2,
     "components": {
       "minecraft:entity_data": {
         "id": "minecraft:item_frame",
@@ -26,7 +25,7 @@
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:jungle_planks'}}",
             "scale": 1,
-            "y": 0.435
+            "y": 0.475
           }
         },
         "Invisible": true,
@@ -43,4 +42,3 @@
     }
   }
 }
-

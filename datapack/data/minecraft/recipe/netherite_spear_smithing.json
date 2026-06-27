@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Lanza de Netherite",
+      "minecraft:item_name": "Lanza de netherite",
       "minecraft:custom_model_data": {
         "strings": ["vexp:netherite_spear"]
       },
@@ -19,10 +19,10 @@
           "material": "netherite",
           "combo": {
             "desc": "Brutal y de enorme alcance.",
-            "rc_desc": "Embestida abrasadora.",
-            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
-            "status_desc": "Aplica [Quemadura Profunda].",
-            "damage": 11,
+            "rc_desc": "Embestida.",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
+            "damage": 7,
             "cooldown": 42,
             "right_click_cooldown": 28,
             "range": 4.0,
@@ -37,7 +37,6 @@
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
-      "minecraft:max_damage": 2031,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -68,20 +67,11 @@
           "slot": "mainhand"
         }
       ],
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,
         "has_consume_particles": false
-      },
-      "minecraft:repairable": {
-        "items": ["minecraft:netherite_ingot"]
-      },
-      "repair_cost": 1
+      }
     },
     "count": 1
   }

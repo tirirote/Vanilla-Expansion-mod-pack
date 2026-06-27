@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:diamond_hoe",
+  "addition": "minecraft:amethyst_shard",
+  "result": {
+    "id": "minecraft:diamond_hoe",
+    "components": {
+      "minecraft:lore": [
+        { "text": "Reforja pendiente", "italic": false, "color": "dark_aqua" }
+      ]
+    }
+  }
+}

@@ -8,21 +8,32 @@
   "result": {
     "id": "minecraft:diamond_shovel",
     "components": {
-      "minecraft:item_name": "Pala de Diamante",
+      "minecraft:item_name": "Pala de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
           "material": "diamond",
           "tool": {
             "desc": "Una buena pala de calidad.",
-            "efficiency": 8,
-            "damage": 5.5,
-            "attack_speed": 1
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "efficiency": 8.0,
+            "damage": 5.0,
+            "attack_speed": 1.0
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Excavación instantánea.",
+            "quality": "diamond"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

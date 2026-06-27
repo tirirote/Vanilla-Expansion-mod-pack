@@ -1,13 +1,11 @@
 # dungeons/bow/on_combo.mcfunction
 # @s is the target entity
 
-# Default combo impact feedback for bows
-function vexp:utils/motion/apply_knockback {strength:-2.5, y:0.2}
+# Custom knockback
+function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
+
+# Player pushback
 execute as @p[tag=vexp.attacker,limit=1] at @s run function vexp:dungeons/weapons/bow/player_pushback
 
-# Brief buff
-effect give @s speed 2 1 true
-
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_punch_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/diamond_hit
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}

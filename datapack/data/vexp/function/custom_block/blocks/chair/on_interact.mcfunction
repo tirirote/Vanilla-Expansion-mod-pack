@@ -1,5 +1,5 @@
 # Ejecutado como la INTERACTION (Silla)
-execute if entity @s[tag=vexp.occupied] run return 0
+execute if entity @s[tag=vexp.occupied] run return fail
 
 # Guardar ID de la silla activa para vincular montura y asiento.
 scoreboard players operation #chair_mount_id vexp.id = @s vexp.id
@@ -16,9 +16,13 @@ execute as @e[tag=vexp.sit_candidate,sort=nearest,distance=..5,limit=1] run func
 # Rama B: sentar jugador solo si no hubo mob candidato.
 execute on target unless entity @e[tag=vexp.sit_candidate,sort=nearest,distance=..5,limit=1] run function vexp:custom_block/blocks/chair/sit_logic
 
+# 4. Añadir animación de jitter
+tag @s add vexp.block.jitter
+scoreboard players set @s vexp.block_anim 10
+
+# Sonido
+function vexp:custom_block/macro/sound {sound:"minecraft:block.fence_gate.close"}
+
 # Limpieza de tags temporales.
 execute on target run tag @s remove vexp.chair_actor
 tag @e[tag=vexp.sit_candidate,sort=nearest,distance=..5,limit=1] remove vexp.sit_candidate
-
-# Limpieza de datos de interaccion.
-data remove entity @s interaction

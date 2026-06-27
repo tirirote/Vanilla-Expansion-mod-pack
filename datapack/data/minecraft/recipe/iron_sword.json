@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_sword",
     "components": {
-      "minecraft:item_name": "Espada de Hierro",
+      "minecraft:item_name": "Espada de hierro",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -59,11 +59,6 @@
           "slot": "mainhand"
         }
       ],
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,

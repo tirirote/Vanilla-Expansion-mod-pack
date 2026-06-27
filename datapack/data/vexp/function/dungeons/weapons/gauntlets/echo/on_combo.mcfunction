@@ -4,14 +4,11 @@
 #Mark target
 function vexp:dungeons/states/echo_marked
 
-# Strong push away
-function vexp:utils/motion/apply_knockback {strength:-3.5, y:1.5}
+# Custom combo finisher
+function vexp:dungeons/weapons/gauntlets/combo_finisher
 
-#Buff
-execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
+#TP Player behind mob
+execute as @e[tag=vexp.echo_marked,tag=vexp.hitted,predicate=vexp:is_target,distance=..12,limit=1] facing entity @p[tag=vexp.attacker,limit=1] feet positioned ~ ~.5 ~ if block ^ ^ ^-3.5 #replaceable run tp @p[tag=vexp.attacker,limit=1] ^ ^ ^-3.5 facing entity @s
 
-# Visuals
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_punch_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/echo_hit
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

@@ -1,2 +1,1 @@
-particle crit ~ ~ ~ 0.25 0.25 0.25 0.5 5
-particle minecraft:flash{color:-2829100} ~ ~ ~ 0 0 0 1 1
+function vexp:dungeons/fx/hits/strong_sword_hit

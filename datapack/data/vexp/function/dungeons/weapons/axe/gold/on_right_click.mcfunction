@@ -12,14 +12,17 @@ execute rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/creat
 tag @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
 execute as @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
-#Axe Buff
-execute unless entity @s[tag=vexp.axe_rage] run function vexp:dungeons/states/axe_rage
+#Debuff
+function vexp:dungeons/states/mining_debuff
 
-#Quality buff
-#function vexp:dungeons/states/gold_buffed
+# Anchored Block breaking
+execute positioned ^ ^ ^6 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^5 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^4 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^3 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^2 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^1 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
 
 #Feedback
 particle sweep_attack ^ ^ ^1 1 1 1 1 0
-particle flash{color:-655515} ^ ^ ^1 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.ender_eye.death", type: "player"}
+function vexp:dungeons/fx/hits/gold_hit

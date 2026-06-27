@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Espada Luminiscente",
+      "minecraft:item_name": "Espada luminiscente",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -16,9 +16,9 @@
           "material": "glowing",
           "combo": {
             "desc": "Sigilosa y rápida.",
-            "rc_desc": "Bloqueo y aturdimiento.",
-            "bonus_desc": "Otorga [Sigilo Luminoso] por 2s.",
-            "status_desc": "Aplica [Confusión Luminosa].",
+            "rc_desc": "Bloquea y desvía ataques.",
+            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "status_desc": "Aplica [Confusión].",
             "damage": 8,
             "cooldown": 30,
             "right_click_cooldown": 24,

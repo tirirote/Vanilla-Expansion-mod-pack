@@ -1,18 +1,26 @@
-# dungeons/spear/diamond/on_right_click.mcfunction
+# Spear RC
 # @s is the player
+
+# Tag player
+tag @s add vexp.attacker
+
+#Buff Player
+function vexp:dungeons/states/diamond_buffed
+
+# Aeo Wave Feedback
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^5 run function vexp:dungeons/fx/aeo_waves/diamond
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^6 run function vexp:dungeons/fx/aeo_waves/diamond
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^7 run function vexp:dungeons/fx/aeo_waves/diamond
+execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^8 run function vexp:dungeons/fx/aeo_waves/diamond
+function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
+
+# Feedback
+execute positioned ^ ^ ^3.5 if entity @e[predicate=vexp:is_target,distance=..3.5] run function vexp:dungeons/fx/hits/diamond_hit
+
+# Dash damage and knockback
+execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/weapons/spear/dash_damage {damage: 4}
+execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:utils/motion/apply_knockback {strength:-4.5, y:0.1}
 
 #Player Dash
 function vexp:dungeons/weapons/spear/dash
-
-#Subtle Buff
-function vexp:dungeons/states/diamond_buffed
-effect give @s blindness 1 0 true
-
-execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/weapons/spear/diamond/wave
-
-# Feedback
-execute positioned ~ ~ ~ run function vexp:utils/feedback/dust_particle {initialColor: [0.5, 0.7, 0.65], finalColor: [0.6, 0.9, 0.85], scale: 1.7, dX: 0.2, dY: 0.5, dZ: 0.2, speed: 0.05, count: 5}
-particle instant_effect{color:9437155} ~ ~ ~ 0.5 0.5 0.5 0 1
-particle flash{color:-7340061} ~ ~ ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}

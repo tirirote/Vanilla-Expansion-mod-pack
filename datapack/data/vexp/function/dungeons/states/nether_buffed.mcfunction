@@ -4,5 +4,5 @@ tag @s add vexp.nether_buffed
 scoreboard players set @s vexp.dstate 20
 
 #Glowing
-effect give @s glowing 1 0 true
+effect give @s glowing 2 0 true
 team join vexp.dark_purple @s

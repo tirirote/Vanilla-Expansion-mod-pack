@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Guadaña Resonante",
+      "minecraft:item_name": "Guadaña resonante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,9 +16,9 @@
           "material": "echo",
           "combo": {
             "desc": "Abrumadora y aterradora.",
-            "rc_desc": "Ataque oscuro a distancia.",
-            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
-            "status_desc": "Aplica [Pánico].",
+            "rc_desc": "Ataque ligero a distancia.",
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "status_desc": "Aplica [Ceguera].",
             "damage": 10,
             "cooldown": 54,
             "right_click_cooldown": 36,

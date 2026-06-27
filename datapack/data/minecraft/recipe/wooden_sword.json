@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:wooden_sword",
     "components": {
-      "minecraft:item_name": "Espada de Madera",
+      "minecraft:item_name": "Espada de madera",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",

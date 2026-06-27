@@ -30,3 +30,4 @@ execute if score @s vexp.old_hp matches ..0 run scoreboard players set @s vexp.o
 
 # Per-hit temporary flag cleanup
 tag @s remove vexp.hitted.critical
+tag @s remove vexp.hitted.combo_end

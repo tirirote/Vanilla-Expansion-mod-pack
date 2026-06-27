@@ -11,4 +11,4 @@ execute if data storage vexp:custom_block item_held run data modify entity @s da
 execute if data storage vexp:custom_block item_held run item modify entity @a[tag=vexp.cutting_board_user,limit=1] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
 
 execute if data storage vexp:custom_block item_held run function vexp:custom_block/blocks/cutting_board/spawn_item_visual
-execute if data storage vexp:custom_block item_held run function vexp:custom_block/macro/sound {sound:"minecraft:entity.item.pickup"}
+execute if data storage vexp:custom_block item_held run function vexp:custom_block/macro/sound {sound:"minecraft:entity.item_frame.add_item"}

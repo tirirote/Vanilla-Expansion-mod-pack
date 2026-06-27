@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco Resonante",
+      "minecraft:item_name": "Arco resonante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,9 +17,9 @@
           "combo": {
             "desc": "Poderoso y aterrador.",
             "rc_desc": "Combo oscuro a distancia.",
-            "bonus_desc": "Otorga [Movilidad Oscura] por 2s.",
+            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
             "status_desc": "Aplica [Ceguera].",
-            "damage": 9,
+            "damage": 6,
             "cooldown": 15,
             "right_click_cooldown": 20,
             "range": 1.5,

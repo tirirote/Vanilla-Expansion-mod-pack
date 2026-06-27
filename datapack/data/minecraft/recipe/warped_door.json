@@ -36,7 +36,7 @@
         "strings": ["vexp:door_warped"]
       },
       "minecraft:item_name": {
-        "text": "Puerta Distorsionada",
+        "text": "Puerta distorsionada",
         "italic": false
       }
     }

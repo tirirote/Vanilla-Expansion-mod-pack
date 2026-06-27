@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de Hueso",
+      "minecraft:item_name": "Guadaña de hueso",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

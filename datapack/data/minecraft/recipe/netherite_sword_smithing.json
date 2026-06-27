@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Espada de Netherite",
+      "minecraft:item_name": "Espada de netherite",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -16,9 +16,9 @@
           "material": "netherite",
           "combo": {
             "desc": "Abismalmente poderosa.",
-            "rc_desc": "Bloquea y quema a los enemigos cercanos.",
-            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
-            "status_desc": "Aplica [Quemadura Profunda].",
+            "rc_desc": "Bloquea y desvía ataques.",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
             "damage": 10,
             "cooldown": 42,
             "right_click_cooldown": 24,
@@ -61,12 +61,6 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:max_damage": 2031,
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,

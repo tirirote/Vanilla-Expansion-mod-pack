@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "used_hoe": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{vexp:{item:\"hoe\"}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vexp:dungeons/combo_system/hooks/interact/apply_interact_params_wrapper"
+  }
+}

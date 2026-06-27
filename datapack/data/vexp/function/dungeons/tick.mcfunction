@@ -15,3 +15,6 @@ function vexp:dungeons/weapons/dagger/tick
 #function vexp:dungeons/weapons/spear/tick
 #function vexp:dungeons/weapons/scythe/tick
 #function vexp:dungeons/weapons/sword/tick
+
+#3. Custom Enchantments tick functions
+function vexp:dungeons/enchantments/tick

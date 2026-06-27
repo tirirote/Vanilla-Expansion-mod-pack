@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_sword",
     "components": {
-      "minecraft:item_name": "Daga de Hierro",
+      "minecraft:item_name": "Daga de hierro",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -20,8 +20,8 @@
             "damage": 4,
             "cooldown": 4,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "normal"
           }
         }

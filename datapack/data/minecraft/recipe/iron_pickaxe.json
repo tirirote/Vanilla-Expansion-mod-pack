@@ -8,21 +8,31 @@
   "result": {
     "id": "minecraft:iron_pickaxe",
     "components": {
-      "minecraft:item_name": "Pico de Hierro",
+      "minecraft:item_name": "Pico de hierro",
       "minecraft:custom_data": {
         "vexp": {
           "item": "pickaxe",
           "material": "iron",
           "tool": {
             "desc": "Eficiente y resistente.",
-            "efficiency": 6,
-            "damage": 4,
+            "efficiency": 6.0,
+            "damage": 4.0,
             "attack_speed": 1.2
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Minería instantánea.",
+            "quality": "normal"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

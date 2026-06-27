@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/fx/swoosh_template",
+  "textures": {
+    "swoosh": "vexp:block/fx/weak_diamond_hit"
+  }
+}

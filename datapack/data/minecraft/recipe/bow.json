@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de Madera",
+      "minecraft:item_name": "Arco de madera",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,7 +16,7 @@
           "combo": {
             "desc": "Sencillo y hecho a mano.",
             "rc_desc": "Combo a distancia.",
-            "damage": 2,
+            "damage": 1,
             "cooldown": 8,
             "right_click_cooldown": 20,
             "range": 1.5,

@@ -1,15 +1,5 @@
 # dungeons/bow/on_right_click.mcfunction
 # @s is the player
 
-#Subtle Charging Particle Animation
-execute if score @s vexp.bow_draw_ticks matches ..8 positioned ~ ~1.6 ~ run particle entity_effect{color:2130688031} ^ ^ ^2 0.0 0.0 0 0 0
-execute if score @s vexp.bow_draw_ticks matches 8..18 positioned ~ ~1.6 ~ run particle entity_effect{color:-1342188264} ^ ^ ^2 0.0 0.0 0 0 0
-execute if score @s vexp.bow_draw_ticks matches 18.. positioned ~ ~1.6 ~ run particle instant_effect{color:16776562} ^ ^ ^2 0 0 0 0 0
-
-#End Loop
-execute if score @s vexp.bow_draw_ticks matches 25 positioned ~ ~1.6 ~ run particle flash{color:-655515} ^ ^ ^2 0.0 0.0 0 0 0
-execute if score @s vexp.bow_draw_ticks matches 42.. run scoreboard players set @s vexp.bow_draw_ticks 24
-
-# Default right click behavior placeholder
-execute if score @s vexp.bow_draw_ticks matches 1 run function vexp:utils/sound {sound: "minecraft:item.crossbow.loading_start", type: "player"}
+function vexp:dungeons/fx/hold/gold {score:vexp.bow_draw_ticks, start:8, end:24, loop:48}
 execute if score @s vexp.bow_draw_ticks matches 25 run function vexp:utils/sound {sound: "minecraft:entity.ender_eye.death", type: "player"}

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_axe",
     "components": {
-      "minecraft:item_name": "Hacha de Netherite",
+      "minecraft:item_name": "Hacha de netherite",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,14 +16,14 @@
           "material": "netherite",
           "combo": {
             "desc": "Poderosa y abrasadora.",
-            "rc_desc": "Golpe abrasador de Vindicador.",
-            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
-            "status_desc": "Aplica [Quemadura Profunda].",
+            "rc_desc": "Golpe de vindicador.",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
             "damage": 11,
             "cooldown": 36,
-            "right_click_cooldown": 48,
+            "right_click_cooldown": 100,
             "range": 1.25,
-            "reach": 2.5,
+            "reach": 3.5,
             "quality": "netherite"
           }
         }
@@ -61,12 +61,6 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:max_damage": 2031,
-      "food": {
-        "nutrition": 0,
-        "saturation": 0,
-        "can_always_eat": true
-      },
       "consumable": {
         "animation": "trident",
         "consume_seconds": 999999,

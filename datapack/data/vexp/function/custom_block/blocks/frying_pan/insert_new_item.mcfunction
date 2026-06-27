@@ -16,4 +16,4 @@ execute if data storage vexp:custom_block item_held run scoreboard players set @
 execute if data storage vexp:custom_block item_held run function vexp:custom_block/blocks/frying_pan/spawn_item_visual
 
 #Sound Feedback
-execute if data storage vexp:custom_block item_held run function vexp:custom_block/macro/sound {sound:"minecraft:entity.item.pickup"}
+execute if data storage vexp:custom_block item_held run function vexp:custom_block/macro/sound {sound:"minecraft:entity.item_frame.add_item"}

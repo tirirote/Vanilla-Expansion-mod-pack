@@ -8,23 +8,32 @@
   "result": {
     "id": "minecraft:golden_pickaxe",
     "components": {
-      "minecraft:item_name": "Pico de Oro",
+      "minecraft:item_name": "Pico de oro",
       "minecraft:custom_data": {
         "vexp": {
           "item": "pickaxe",
           "material": "gold",
           "tool": {
             "desc": "Extremádamente rápido, pero frágil.",
-            "efficiency": 12,
-            "damage": 2,
-            "attack_speed": 1.2,
-            "bonus_desc": "Excava con rapidez.",
-            "status_desc": "Se desgasta con facilidad."
+            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
+            "efficiency": 12.0,
+            "damage": 2.0,
+            "attack_speed": 1.2
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Minería instantánea.",
+            "quality": "gold"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de Netherita",
+      "minecraft:item_name": "Arco de netherite",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -17,8 +17,8 @@
           "combo": {
             "desc": "Poderoso y abrasador.",
             "rc_desc": "Combo abrasador a distancia.",
-            "bonus_desc": "Otorga [Fuerza Abrasadora] por 2s.",
-            "status_desc": "Aplica [Quemadura Profunda].",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
             "damage": 7,
             "cooldown": 15,
             "right_click_cooldown": 20,

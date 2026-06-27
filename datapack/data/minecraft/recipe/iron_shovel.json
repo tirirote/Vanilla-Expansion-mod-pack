@@ -8,21 +8,31 @@
   "result": {
     "id": "minecraft:iron_shovel",
     "components": {
-      "minecraft:item_name": "Pala de Hierro",
+      "minecraft:item_name": "Pala de hierro",
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
           "material": "iron",
           "tool": {
-            "desc": "Fiable y resistente.",
-            "efficiency": 6,
-            "damage": 4.5,
-            "attack_speed": 1
+            "desc": "Eficiente y resistente.",
+            "efficiency": 6.0,
+            "damage": 4.0,
+            "attack_speed": 1.0
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Excavación instantánea.",
+            "quality": "normal"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

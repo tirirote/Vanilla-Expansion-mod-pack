@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:copper_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de Cobre",
+      "minecraft:item_name": "Guadaña de cobre",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

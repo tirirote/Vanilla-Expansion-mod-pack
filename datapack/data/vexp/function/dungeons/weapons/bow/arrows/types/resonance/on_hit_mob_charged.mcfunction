@@ -10,7 +10,5 @@ execute as @p[tag=vexp.arrow.owner,limit=1] run function vexp:dungeons/states/ec
 #Mark the target
 execute as @e[predicate=vexp:is_target,sort=nearest,limit=1,distance=..2] run function vexp:dungeons/states/echo_marked
 
+# Feedback
 function vexp:dungeons/fx/hits/echo_hit
-
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}

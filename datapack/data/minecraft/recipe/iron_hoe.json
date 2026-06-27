@@ -8,21 +8,31 @@
   "result": {
     "id": "minecraft:iron_hoe",
     "components": {
-      "minecraft:item_name": "Azada de Hierro",
+      "minecraft:item_name": "Azada de hierro",
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
           "material": "iron",
           "tool": {
             "desc": "Resistente y eficiente.",
-            "efficiency": 6,
-            "damage": 1,
-            "attack_speed": 3
+            "efficiency": 6.0,
+            "damage": 1.0,
+            "attack_speed": 3.0
+          },
+          "combo": {
+            "right_click_cooldown": 30,
+            "rc_desc": "Cultivo instantáneo.",
+            "quality": "normal"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "spear",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

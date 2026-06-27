@@ -1,3 +1,3 @@
-# dungeons/nether/projectile/on_spawn.mcfunction
-# @s is the nether proj
-data modify entity @s data.proj set value {speed:0.4, lifetime:15, damage:1, face_player:1, radius:3.5, height:1.5}
+# Inicialización del projectil
+# @s es el projectil
+data modify entity @s data.proj set value {speed:0.6, lifetime:7, damage:1, face_player:1, radius:4.5, height:1.5}

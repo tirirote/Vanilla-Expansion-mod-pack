@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de Hueso",
+      "minecraft:item_name": "Arco de hueso",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",

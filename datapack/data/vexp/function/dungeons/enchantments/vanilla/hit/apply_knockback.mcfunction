@@ -5,5 +5,3 @@ execute if score #ench_kb vexp.math matches 2.. as @e[tag=vexp.hitted] at @s run
 
 #Feedback
 execute as @e[tag=vexp.hitted] at @s run function vexp:dungeons/fx/enchantments/knockback
-
-

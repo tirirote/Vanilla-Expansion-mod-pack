@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:stone_sword",
     "components": {
-      "minecraft:item_name": "Espada de Piedra",
+      "minecraft:item_name": "Espada de piedra",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",

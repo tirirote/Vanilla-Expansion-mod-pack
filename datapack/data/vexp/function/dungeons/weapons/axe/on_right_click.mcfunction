@@ -15,8 +15,16 @@ execute rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/creat
 tag @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
 execute as @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
-#Axe Buff
-execute unless entity @s[tag=vexp.axe_rage] run function vexp:dungeons/states/axe_rage
+# Anchored Block breaking
+execute positioned ^ ^ ^6 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^5 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^4 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^3 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^2 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+execute positioned ^ ^ ^1 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
+
+#Debuff
+function vexp:dungeons/states/mining_debuff
 
 #Feedback
 particle sweep_attack ^ ^ ^1 1 1 1 1 0

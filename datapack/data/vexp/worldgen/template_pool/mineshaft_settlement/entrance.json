@@ -1,0 +1,15 @@
+{
+  "name": "vexp:mineshaft_settlement/entrance",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:mineshaft_settlement/entrance",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

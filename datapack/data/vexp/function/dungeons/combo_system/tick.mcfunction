@@ -16,10 +16,11 @@ kill @e[type=interaction,tag=vexp.hitbox.to_remove]
 kill @e[type=item_display,tag=vexp.hitbox.to_remove]
 
 # 1. Cooldown logic
+execute as @a[scores={vexp.skill_cooldown=1..}] run function vexp:dungeons/combo_system/display_skill_cooldown
+execute as @a[scores={vexp.combo_cooldown=1..}] run function vexp:dungeons/combo_system/display_combo_cooldown
 execute as @a[scores={vexp.combo_cooldown=1..}] run scoreboard players remove @s vexp.combo_cooldown 1
 execute as @a[scores={vexp.skill_cooldown=1..}] run scoreboard players remove @s vexp.skill_cooldown 1
 execute as @a[scores={vexp.hitbox_hide_timer=1..}] run scoreboard players remove @s vexp.hitbox_hide_timer 1
-
 # 2. Process Hitbox Clicks (only if cooldown is 0)
 execute as @e[type=interaction,tag=vexp.combo_hitbox] at @s run function vexp:dungeons/combo_system/hitbox/process
 
@@ -27,11 +28,16 @@ execute as @e[type=interaction,tag=vexp.combo_hitbox] at @s run function vexp:du
 function vexp:dungeons/combo_system/hooks/hit/process_delayed_tick
 
 # 2.2 Resolve hold-release skills (ready + no longer holding).
-execute as @a[tag=vexp.skill_hold_ready,tag=!vexp.skill_hold_active] at @s run function vexp:dungeons/combo_system/hooks/interact/resolve_right_click_hold
-
+execute as @a[tag=vexp.skill_hold_ready,tag=!vexp.skill_hold_active] at @s if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"axe"} run function vexp:dungeons/combo_system/hooks/interact/resolve_right_click_hold
+execute as @a[tag=vexp.skill_hold_ready,tag=!vexp.skill_hold_active] at @s if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"pickaxe"} run function vexp:dungeons/combo_system/hooks/interact/resolve_right_click_hold
+execute as @a[tag=vexp.skill_hold_ready,tag=!vexp.skill_hold_active] at @s if data entity @s SelectedItem.components."minecraft:custom_data".vexp{item:"shovel"} run function vexp:dungeons/combo_system/hooks/interact/resolve_right_click_hold
 # 2.3 Axe hold cleanup: clear the charge if the player was not using an axe this tick.
 execute as @a[tag=!vexp.skill_hold_active,scores={vexp.skill_hold_time=1..}] run scoreboard players set @s vexp.skill_hold_time 0
 tag @a remove vexp.skill_hold_active
 
-#3. Parry Logic
+# 3. Parry Logic
 execute as @a[scores={vexp.parry_timer=1..}] at @s run function vexp:dungeons/combo_system/parry
+
+# 4. Special hit window for player
+execute as @a[tag=vexp.hitted.special,scores={vexp.special_hit_window=1..}] run scoreboard players remove @s vexp.special_hit_window 1
+execute as @a[tag=vexp.hitted.special] if score @s vexp.special_hit_window matches 0 run tag @s remove vexp.hitted.special

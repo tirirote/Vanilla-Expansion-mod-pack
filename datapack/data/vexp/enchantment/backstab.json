@@ -1,11 +1,11 @@
 {
   "description": {
-    "text": "Backstab"
+    "text": "Puñalada"
   },
   "supported_items": "#minecraft:enchantable/sharp_weapon",
   "primary_items": "#minecraft:enchantable/sharp_weapon",
   "weight": 6,
-  "max_level": 3,
+  "max_level": 2,
   "min_cost": {
     "base": 10,
     "per_level_above_first": 9

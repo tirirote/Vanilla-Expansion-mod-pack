@@ -8,21 +8,31 @@
   "result": {
     "id": "minecraft:stone_shovel",
     "components": {
-      "minecraft:item_name": "Pala de Piedra",
+      "minecraft:item_name": "Pala de piedra",
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
           "material": "stone",
           "tool": {
             "desc": "Tosca pero fiable.",
-            "efficiency": 4,
-            "damage": 3.5,
-            "attack_speed": 1
+            "efficiency": 4.0,
+            "damage": 3.0,
+            "attack_speed": 1.0
+          },
+          "combo": {
+            "right_click_cooldown": 100,
+            "rc_desc": "Excavación instantánea.",
+            "quality": "normal"
           }
         }
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "consumable": {
+        "animation": "trident",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
       }
     },
     "count": 1

@@ -23,4 +23,4 @@ execute store result entity @s data.vexp.book_count int 1 run scoreboard players
 function vexp:custom_block/blocks/pile_of_books/update_display_model
 
 # Feedback de insercion.
-function vexp:custom_block/macro/sound {sound:"minecraft:entity.item.pickup"}
+function vexp:custom_block/macro/sound {sound:"minecraft:block.chiseled_bookshelf.insert"}

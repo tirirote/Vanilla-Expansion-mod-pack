@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Daga de Diamante",
+      "minecraft:item_name": "Daga de diamante",
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -17,12 +17,12 @@
           "combo": {
             "desc": "Rápida y equilibrada.",
             "rc_desc": "Arrojadiza y precisa.",
-            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
             "damage": 5,
             "cooldown": 6,
             "right_click_cooldown": 12,
-            "range": 1.5,
-            "reach": 1.25,
+            "range": 1.25,
+            "reach": 2.0,
             "quality": "diamond"
           }
         }

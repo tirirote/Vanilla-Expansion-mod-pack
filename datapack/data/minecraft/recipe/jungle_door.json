@@ -36,7 +36,7 @@
         "strings": ["vexp:door_jungle"]
       },
       "minecraft:item_name": {
-        "text": "Puerta de Jungla",
+        "text": "Puerta de jungla",
         "italic": false
       }
     }

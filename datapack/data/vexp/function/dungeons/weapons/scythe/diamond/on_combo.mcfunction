@@ -1,13 +1,11 @@
 # dungeons/scythe/on_combo.mcfunction
 # @s is the target entity
 
-# Strong push away
-function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.1}
+# Custom knockback
+function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.2}
 
-# Subtle buff
+# Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/diamond_buffed
 
-# Visuals
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit
+# Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/diamond_hit
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}

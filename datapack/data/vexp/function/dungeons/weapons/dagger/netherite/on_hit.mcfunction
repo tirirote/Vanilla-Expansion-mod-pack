@@ -1,10 +1,7 @@
-# Netherite Dagger On Hit Effects
-function vexp:dungeons/states/nether_marked
+# @s is the target entity
 
-# Apply knockback to mob
+# Custom knockback
 function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}
 
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/weak_sword_hit
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/netherite_hit
-
-function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
+# Feedback
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/weak_netherite_hit

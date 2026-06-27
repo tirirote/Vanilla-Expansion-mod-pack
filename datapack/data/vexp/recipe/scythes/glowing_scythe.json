@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Guadaña Luminiscente",
+      "minecraft:item_name": "Guadaña luminiscente",
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,9 +16,9 @@
           "material": "glowing",
           "combo": {
             "desc": "Sigilosa y poderosa.",
-            "rc_desc": "Ataque cegador a distancia.",
-            "bonus_desc": "Otorga [Sigilo Luminoso] por 2s.",
-            "status_desc": "Aplica [ConfusiÃ³n Luminosa].",
+            "rc_desc": "Ataque ligero a distancia.",
+            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "status_desc": "Aplica [Confusión].",
             "damage": 7,
             "cooldown": 36,
             "right_click_cooldown": 36,
