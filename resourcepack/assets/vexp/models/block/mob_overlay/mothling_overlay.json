@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/mob_overlay/half_cube_overlay",
+  "textures": {
+    "overlay": "vexp:block/mob_overlay/mothling_overlay"
+  }
+}

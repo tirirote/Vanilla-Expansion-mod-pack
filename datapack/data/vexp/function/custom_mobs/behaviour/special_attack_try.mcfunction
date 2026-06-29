@@ -7,3 +7,6 @@ $execute unless entity @s[tag=vexp.mob_special_ready] positioned ^ ^ ^$(special_
 
 # 2. Try to do special when player found
 execute if entity @s[tag=vexp.mob_special_ready] run function vexp:custom_mobs/behaviour/special_attack_ready_wrapper with entity @s data.vexp.mob
+
+# 3. Remove tag so the mob can retry the search
+tag @s remove vexp.mob_special_ready

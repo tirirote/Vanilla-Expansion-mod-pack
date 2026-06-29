@@ -39,10 +39,23 @@ out vec4 lightMapColor;
 out vec4 overlayColor;
 #endif
 
+uniform sampler2D Sampler0;
+
 out vec2 texCoord0;
 
 void main() {
-    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
+    vec3 pos = Position;
+
+    // Detect bury marker (Magenta: R=1.0, B=1.0 at pixel 0,0)
+    vec4 marker = texelFetch(Sampler0, ivec2(0, 0), 0);
+    if (marker.r > 0.95 && marker.b > 0.95 && marker.g < 0.95) {
+        // Linear decode of Green channel to get exact offset factor
+        float factor = pow(marker.g, 1.0 / 2.2);
+        float offset = factor * 1.0; // Max bury depth of 3 blocks
+        pos.y -= offset;
+    }
+
+    gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
 
     sphericalVertexDistance = fog_spherical_distance(Position);
     cylindricalVertexDistance = fog_cylindrical_distance(Position);

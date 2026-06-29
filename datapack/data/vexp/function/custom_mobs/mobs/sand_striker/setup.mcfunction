@@ -1,17 +1,16 @@
-#Custom mob data
+# Custom mob data
 data modify entity @s data set value {vexp:{mob:{type:"sand_striker",custom_name:"Arenoso", hp:8, speed:0.2, damage:2, special_damage:1, range:1.25, special_range:2.5, cooldown:8, special_cooldown:32, special_chance:10}}}
 
-#Custom armor
-data modify entity @s equipment merge value {body:{id:"iron_chestplate",count:1,components:{equippable:{slot:"body",asset_id:"vexp:sand_striker"}}}}
+# Custom data
+data modify entity @s variant set value "vexp:sand_striker"
 
-data modify entity @s ItemDropChance set value 0
 data modify entity @s drop_chances set value {body:0}
 data modify entity @s IsBaby set value false
 data modify entity @s Tame set value false
 data modify entity @s Anger set value 1
 data modify entity @s Silent set value true
+data modify entity @s DeathLootTable set value "vexp:empty"
 
-effect give @s invisibility infinite 0 true
 #Setup custom mob data.
 function vexp:custom_mobs/setup
 
