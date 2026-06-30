@@ -1,5 +1,5 @@
 #Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"rogue_skeleton",custom_name:"Esqueleto Pícaro", hp:20, speed:0.5, damage:3, special_damage:0, range:1.5, special_range:6.5, cooldown:0, special_cooldown:32, special_chance:10}}}
+data modify entity @s data set value {vexp:{mob:{type:"rogue_skeleton",custom_name:"Esqueleto Pícaro", scale:1.0f, hp:20, speed:0.5, damage:3, special_damage:0, range:1.5, special_range:6.5, cooldown:0, special_cooldown:32, special_chance:10}}}
 
 #Custom armor
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{equippable:{slot:"head",asset_id:"vexp:rogue_skeleton"}}}}

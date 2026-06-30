@@ -1,5 +1,5 @@
 #Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"lapis_zombie",custom_name:"Zombie Lapislázuli", hp:30, speed:0.3, damage:4, special_damage:6, range:1, special_range:3.5, cooldown:0, special_cooldown:36, special_chance:30}}}
+data modify entity @s data set value {vexp:{mob:{type:"lapis_zombie",custom_name:"Zombie Lapislázuli", scale:1.0f, hp:30, speed:0.3, damage:4, special_damage:6, range:1, special_range:3.5, cooldown:0, special_cooldown:36, special_chance:30}}}
 
 #Custom armor
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{equippable:{slot:"head",asset_id:"vexp:lapis_zombie"}}}}

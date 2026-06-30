@@ -1,5 +1,6 @@
 # Inicialización de Scoreboards
 scoreboard objectives add vexp.id dummy
+scoreboard objectives add vexp.host_id dummy
 scoreboard objectives add vexp.dagger_used minecraft.used:minecraft.iron_sword
 scoreboard objectives add vexp.bow_used minecraft.used:minecraft.bow
 scoreboard objectives add vexp.bow_used_prev dummy
@@ -36,6 +37,7 @@ scoreboard objectives add vexp.wpid dummy
 
 #Math
 scoreboard objectives add vexp.math dummy
+scoreboard objectives add vexp.rand dummy
 scoreboard objectives add vexp.cook_time dummy
 scoreboard players set #force_scale vexp.math 100
 scoreboard players set #neg_one vexp.math -1
@@ -66,7 +68,8 @@ scoreboard objectives add vexp.special_hit_window dummy
 
 #Custom Mobs
 scoreboard objectives add vexp.mob_cooldown dummy
-
+scoreboard objectives add vexp.mob_idle_time dummy
+scoreboard objectives add vexp.mob_can_pickup dummy
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm

@@ -37,6 +37,13 @@
           "type": "minecraft:model",
           "model": "vexp:block/mob_overlay/mothling_overlay"
         }
+      },
+      {
+        "when": "vexp:wingler_overlay",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_overlay/wingler_overlay"
+        }
       }
     ],
     "fallback": {

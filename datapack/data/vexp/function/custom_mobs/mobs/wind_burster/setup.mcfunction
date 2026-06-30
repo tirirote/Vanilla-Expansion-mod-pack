@@ -1,5 +1,5 @@
 #Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"wind_burster",custom_name:"Galebreaker", hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80}}}
+data modify entity @s data set value {vexp:{mob:{type:"wind_burster", custom_name:"Galebreaker", scale:1.0f, hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80}}}
 
 #Custom armor
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{"custom_model_data":{strings:["vexp:windburster_head"]}}}}

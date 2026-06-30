@@ -1,5 +1,5 @@
 #Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"vanguarder",custom_name:"Glifo", hp:30, speed:0.3, damage:1, special_damage:4, range:0.5, special_range:0.5, cooldown:32, special_cooldown:96, special_chance:5}}}
+data modify entity @s data set value {vexp:{mob:{type:"vanguarder",custom_name:"Glifo", scale:1.0f, hp:30, speed:0.3, damage:1, special_damage:4, range:0.5, special_range:0.5, cooldown:32, special_cooldown:96, special_chance:5}}}
 
 #Custom armor
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{equippable:{slot:"head",asset_id:"vexp:vanguarder"}}}}

@@ -1,5 +1,5 @@
 # Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"sand_striker",custom_name:"Arenoso", hp:8, speed:0.2, damage:2, special_damage:1, range:1.25, special_range:2.5, cooldown:8, special_cooldown:32, special_chance:10}}}
+data modify entity @s data set value {vexp:{mob:{type:"sand_striker",custom_name:"Arenoso", scale:1.0f, hp:8, speed:0.2, damage:2, special_damage:1, range:1.25, special_range:2.5, cooldown:8, special_cooldown:32, special_chance:10}}}
 
 # Custom data
 data modify entity @s variant set value "vexp:sand_striker"

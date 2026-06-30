@@ -1,0 +1,26 @@
+{
+  "values": [
+    "#gold_tool_materials",
+    "#iron_tool_materials",
+    "#diamond_tool_materials",
+    "#netherite_tool_materials",
+    "#leg_armor",
+    "#chest_armor",
+    "#head_armor",
+    "#foot_armor",
+    "iron_ingot",
+    "gold_ingot",
+    "diamond",
+    "netherite_ingot",
+    "netherite_scrap",
+    "golden_apple",
+    "enchanted_golden_apple",
+    "golden_carrot",
+    "glistering_melon_slice",
+    "copper_ingot",
+    "raw_copper",
+    "raw_iron",
+    "raw_gold",
+    "elytra"
+  ]
+}
