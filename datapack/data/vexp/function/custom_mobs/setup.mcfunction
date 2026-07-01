@@ -6,6 +6,19 @@ tag @s add vexp.custom_mob
 
 #Other Smart attributes
 
+# Mob is hostile
+execute store result score #mob_is_hostile vexp.math run data get entity @s data.vexp.mob.is_hostile
+execute if score #mob_is_hostile vexp.math matches 1.. run tag @s add vexp.mob_is_hostile
+
+# Mob can pickup item
+execute store result score #mob_can_pickup vexp.math run data get entity @s data.vexp.mob.can_pickup_item
+execute if score #mob_can_pickup vexp.math matches 1.. run tag @s add vexp.mob_can_pickup
+
+# Mob can eat item
+execute store result score #mob_can_eat vexp.math run data get entity @s data.vexp.mob.can_eat_item
+execute if score #mob_can_eat vexp.math matches 1.. run tag @s add vexp.mob_can_eat
+
+# Mob Attack Range Setup
 execute store result score #mob_special_range vexp.math run data get entity @s data.vexp.mob.special_range
 execute store result score #mob_range vexp.math run data get entity @s data.vexp.mob.range
 

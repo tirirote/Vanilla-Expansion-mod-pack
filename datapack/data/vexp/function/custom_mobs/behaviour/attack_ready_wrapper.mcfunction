@@ -11,11 +11,12 @@ $execute positioned ^ ^ ^$(range_step3) as @p[distance=..1.25] at @s run functio
 $execute positioned ^ ^ ^$(range_step4) as @p[distance=..1.25] at @s run function vexp:custom_mobs/mobs/$(type)/on_attack_hit_player
 
 #2. Deal damage to player
-$execute positioned ^ ^ ^$(range) run damage @p[distance=..1.25] $(damage) generic by @s
-$execute positioned ^ ^ ^$(range_step1) run damage @p[distance=..1.25] $(damage) generic by @s
-$execute positioned ^ ^ ^$(range_step2) run damage @p[distance=..1.25] $(damage) generic by @s
-$execute positioned ^ ^ ^$(range_step3) run damage @p[distance=..1.25] $(damage) generic by @s
-$execute positioned ^ ^ ^$(range_step4) run damage @p[distance=..1.25] $(damage) generic by @s
+$scoreboard players set #mob_attack_damage vexp.math $(damage)
+$execute if score #mob_attack_damage vexp.math matches 1.. positioned ^ ^ ^$(range) run damage @p[distance=..1.25] $(damage) generic by @s
+$execute if score #mob_attack_damage vexp.math matches 1.. positioned ^ ^ ^$(range_step1) run damage @p[distance=..1.25] $(damage) generic by @s
+$execute if score #mob_attack_damage vexp.math matches 1.. positioned ^ ^ ^$(range_step2) run damage @p[distance=..1.25] $(damage) generic by @s
+$execute if score #mob_attack_damage vexp.math matches 1.. positioned ^ ^ ^$(range_step3) run damage @p[distance=..1.25] $(damage) generic by @s
+$execute if score #mob_attack_damage vexp.math matches 1.. positioned ^ ^ ^$(range_step4) run damage @p[distance=..1.25] $(damage) generic by @s
 
 #3. Add tag when tried to attack
 tag @s add vexp.mob_attack_done

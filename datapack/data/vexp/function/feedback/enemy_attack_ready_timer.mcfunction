@@ -18,6 +18,7 @@ execute if entity @s if predicate vexp:enemy_holding_bow positioned ~ ~1.5 ~ unl
 
 execute if entity @s if predicate vexp:enemy_holding_crossbow positioned ~ ~1.5 ~ if block ^ ^ ^0.2 #air if entity @p[distance=..16] run function vexp:feedback/family/ranged_crossbow
 execute if entity @s if predicate vexp:enemy_holding_crossbow positioned ~ ~1.5 ~ unless block ^ ^ ^0.2 #air unless entity @p[distance=..16] run scoreboard players set @s vexp.enemy_atk_time 0
+
 #Meelee - standard reach (~2.5 blocks)
 execute if entity @s unless predicate vexp:enemy_holding_extended_reach if entity @p[gamemode=!spectator,distance=..1.5] run function vexp:feedback/family/melee_20
 execute if entity @s unless predicate vexp:enemy_holding_extended_reach if entity @p[gamemode=!spectator,distance=..1.5] run function vexp:feedback/family/melee_30

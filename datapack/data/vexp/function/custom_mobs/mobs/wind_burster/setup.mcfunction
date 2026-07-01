@@ -1,7 +1,10 @@
-#Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"wind_burster", custom_name:"Galebreaker", scale:1.0f, hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80}}}
+# Setup custom mob data
+# @s is the custom mob
 
-#Custom armor
+# Main custom data (type -> folder name)
+data modify entity @s data set value {vexp:{mob:{type:"wind_burster", custom_name:"Galebreaker", is_hostile:0, scale:1.0f, hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80, can_pickup_item:0, can_eat_item:0, favorite_items:"#custom_item_tag", item_pos_x:0.0f, item_pos_y:0.0f, item_pos_z:0.0f,item_rx:0.0f}}}
+
+# Additional custom data
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{"custom_model_data":{strings:["vexp:windburster_head"]}}}}
 data modify entity @s equipment merge value {chest:{id:"stone",count:1,components:{equippable:{slot:"chest",asset_id:"vexp:windburster"}}}}
 data modify entity @s equipment merge value {mainhand:{}}
@@ -14,6 +17,7 @@ data modify entity @s DrownedConversionTime set value -1
 data modify entity @s DeathLootTable set value "vexp:empty"
 effect give @s invisibility infinite 0 true
 effect give @s slow_falling infinite 0 true
+
 #Setup custom mob data.
 function vexp:custom_mobs/setup
 

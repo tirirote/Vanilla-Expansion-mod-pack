@@ -69,7 +69,8 @@ scoreboard objectives add vexp.special_hit_window dummy
 #Custom Mobs
 scoreboard objectives add vexp.mob_cooldown dummy
 scoreboard objectives add vexp.mob_idle_time dummy
-scoreboard objectives add vexp.mob_can_pickup dummy
+scoreboard objectives add vexp.mob_eating_time dummy
+
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm

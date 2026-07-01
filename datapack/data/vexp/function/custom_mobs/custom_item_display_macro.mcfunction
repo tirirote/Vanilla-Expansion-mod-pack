@@ -15,3 +15,5 @@ execute as @e[type=item_display,tag=vexp.custom_mob_display,sort=nearest,distanc
 $execute as @e[type=item_display,tag=vexp.custom_mob_display,sort=nearest,distance=..2.5] unless data entity @s data.vexp.mob_display run data modify entity @s data.vexp.mob_display.spin_rotation set value $(spin_rotation)
 
 execute as @e[type=item_display,tag=vexp.custom_mob_display,sort=nearest,distance=..2.5] run ride @s mount @e[tag=vexp.custom_mob_host,sort=nearest,limit=1,distance=..1]
+
+tag @s remove vexp.custom_mob_host

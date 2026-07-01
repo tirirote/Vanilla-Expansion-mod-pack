@@ -1,11 +1,11 @@
-# 🍦 Vanilla Expansion Pack
+# Vanilla Expansion Pack
 
 Pack Vanilla+ para Minecraft basado en datapack + resourcepack.
 
 El objetivo del proyecto es ampliar combate, proyectiles, bloques funcionales y utilidades visuales manteniendo estética vanilla.
 
 
-## ℹ️ ¿Qué incluye el proyecto?
+## ¿Qué incluye el proyecto?
 
 El repositorio se divide en dos partes principales:
 
@@ -17,9 +17,11 @@ Estructura base:
 - datapack/data/vexp/function: sistemas principales del proyecto.
 - datapack/data/vexp/recipe: recetas custom de armas y objetos.
 - datapack/data/vexp/predicate: condiciones reutilizables para lógica de combate.
+- datapack/data/vexp/structure: estructuras personalizadas.
+- datapack/data/vexp/tags: diferentes tags utilizadas para clasificar items, bloques y entidades
 - resourcepack/assets/vexp: assets visuales propios del pack.
 
-## 🧩 Sistemas principales
+## Sistemas principales
 
 ### Custom Block System
 

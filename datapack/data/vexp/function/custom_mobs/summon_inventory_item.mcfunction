@@ -7,4 +7,4 @@ $summon item_display ~ ~1 ~ {Tags:["vexp.custom_mob_display","vexp.custom_mob_in
 
 execute as @e[type=item_display,tag=vexp.custom_mob_display,sort=nearest,distance=..2.5] run scoreboard players operation @s vexp.id = #cm_host_id vexp.math
 
-execute as @e[type=item_display,tag=vexp.custom_mob_display,sort=nearest,distance=..2.5] run ride @s mount @e[tag=vexp.custom_mob_host,sort=nearest,limit=1,distance=..1]
+execute as @e[type=item_display,tag=vexp.custom_mob_display,sort=nearest,distance=..2.5] run ride @s mount @e[tag=vexp.custom_mob,sort=nearest,limit=1,distance=..1]

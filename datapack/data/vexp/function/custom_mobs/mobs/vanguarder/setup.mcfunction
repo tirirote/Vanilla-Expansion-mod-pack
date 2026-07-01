@@ -1,7 +1,10 @@
-#Custom mob data
-data modify entity @s data set value {vexp:{mob:{type:"vanguarder",custom_name:"Glifo", scale:1.0f, hp:30, speed:0.3, damage:1, special_damage:4, range:0.5, special_range:0.5, cooldown:32, special_cooldown:96, special_chance:5}}}
+# Setup custom mob data
+# @s is the custom mob
 
-#Custom armor
+# Main custom data (type -> folder name)
+data modify entity @s data set value {vexp:{mob:{type:"vanguarder",custom_name:"Glifo", is_hostile:0, scale:1.0f, hp:30, speed:0.3, damage:4, special_damage:8, range:1.0, special_range:3.5, cooldown:16, special_cooldown:64, special_chance:50, can_pickup_item:0, can_eat_item:0, favorite_items:"#custom_item_tag", item_pos_x:0.0f, item_pos_y:0.0f, item_pos_z:0.0f,item_rx:0.0f}}}
+
+# Additional custom data
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{equippable:{slot:"head",asset_id:"vexp:vanguarder"}}}}
 data modify entity @s equipment merge value {chest:{id:"stone",count:1,components:{equippable:{slot:"chest",asset_id:"vexp:vanguarder"}}}}
 data modify entity @s equipment merge value {legs:{id:"stone",count:1,components:{equippable:{slot:"legs",asset_id:"vexp:vanguarder"}}}}
@@ -15,6 +18,7 @@ data modify entity @s CanBreakDoors set value false
 data modify entity @s DrownedConversionTime set value -1
 data modify entity @s DeathLootTable set value "vexp:empty"
 effect give @s invisibility infinite 0 true
+
 #Setup custom mob data.
 function vexp:custom_mobs/setup
 

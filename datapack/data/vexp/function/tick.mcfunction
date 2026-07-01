@@ -15,12 +15,9 @@ function vexp:tnt_stick/tick
 function vexp:mob_health/tick
 function vexp:utils/feedback/dust_wave_tick
 
-#States
-function vexp:utils/states/tick
-
-#Player
+# Extra Feedback
 function vexp:player/feedback
-function vexp:feedback/tick
+#function vexp:feedback/tick
 
 #Movement
 #function vexp:movement/tick
@@ -29,9 +26,6 @@ function vexp:utils/feedback/tick
 
 #Custom mobs
 function vexp:custom_mobs/tick
-
-# Custom combat states
-function vexp:dungeons/states/tick
 
 # TAG CLEANUP (End of tick)
 tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
