@@ -264,6 +264,264 @@
         }
       },
       {
+        "when": "vexp:candle_holder",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/decorative/candle_holder"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/decorative/candle_holder/candle_holder_empty"
+          }
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_plain_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_plain_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_plain_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_plain_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_white_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_white_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_white_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_white_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_orange_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_orange_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_orange_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_orange_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_magenta_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_magenta_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_magenta_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_magenta_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_light_blue_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_light_blue_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_light_blue_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_light_blue_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_yellow_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_yellow_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_yellow_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_yellow_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_lime_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_lime_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_lime_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_lime_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_pink_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_pink_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_pink_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_pink_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_gray_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_gray_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_gray_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_gray_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_light_gray_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_light_gray_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_light_gray_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_light_gray_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_cyan_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_cyan_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_cyan_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_cyan_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_purple_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_purple_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_purple_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_purple_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_blue_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_blue_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_blue_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_blue_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_brown_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_brown_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_brown_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_brown_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_green_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_green_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_green_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_green_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_red_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_red_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_red_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_red_candle_lit"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_black_candle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_black_candle"
+        }
+      },
+      {
+        "when": "vexp:candle_holder_with_black_candle_lit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/decorative/candle_holder/candle_holder_with_black_candle_lit"
+        }
+      },
+      {
         "when": "vexp:pile_of_books",
         "model": {
           "type": "minecraft:select",

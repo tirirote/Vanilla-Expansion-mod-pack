@@ -18,7 +18,7 @@ execute unless entity @s[tag=vexp.mob_special_done] unless entity @s[tag=vexp.mo
 execute unless entity @s[tag=vexp.mob_attack_done] unless entity @s[tag=vexp.mob_got_item] run function vexp:custom_mobs/behaviour/attack_try with entity @s data.vexp.mob
 
 # 4. Link UUID for angry mobs
-execute unless entity @s[tag=vexp.mob_attack_done] unless entity @s[tag=vexp.mob_got_item] if data entity @s angry_at run data modify entity @s angry_at set from entity @p[distance=..7,limit=1,sort=arbitrary] UUID
+execute unless entity @s[tag=vexp.mob_attack_done] unless entity @s[tag=vexp.mob_got_item] unless data entity @s angry_at run data modify entity @s angry_at set from entity @p[distance=..7,limit=1,sort=nearest] UUID
 
 # 5. Manual aggro via tags and hook (distance based)
 execute if entity @s[tag=vexp.mob_is_hostile] unless entity @s[tag=vexp.mob_aggro] unless entity @s[tag=vexp.mob_got_item] unless entity @s[tag=vexp.mob_special_ready] unless entity @s[tag=vexp.mob_attack_ready] if entity @p[distance=1.5..6,limit=1] run tag @s add vexp.mob_aggro

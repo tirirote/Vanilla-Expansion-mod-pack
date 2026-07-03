@@ -1,0 +1,5 @@
+$execute as @e[type=item_display,tag=vexp.custom_block.display,sort=nearest,distance=..1.5] if score @s vexp.id = #candle_holder_id vexp.id if data storage vexp:custom_block candle_holder_model{lit:0} run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:candle_holder_with_$(variant)_candle"]
+$execute as @e[type=item_display,tag=vexp.custom_block.display,sort=nearest,distance=..1.5] if score @s vexp.id = #candle_holder_id vexp.id if data storage vexp:custom_block candle_holder_model{lit:1} run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:candle_holder_with_$(variant)_candle_lit"]
+
+$execute if data storage vexp:custom_block candle_holder_model{lit:0} run data modify entity @s data.vexp.model set value "vexp:candle_holder_with_$(variant)_candle"
+$execute if data storage vexp:custom_block candle_holder_model{lit:1} run data modify entity @s data.vexp.model set value "vexp:candle_holder_with_$(variant)_candle_lit"

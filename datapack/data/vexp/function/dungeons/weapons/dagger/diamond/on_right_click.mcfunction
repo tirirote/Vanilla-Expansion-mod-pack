@@ -1,5 +1,8 @@
 # dungeons/dagger/on_right_click.mcfunction
 # @s is the player
 
-#Default right_click
-function vexp:dungeons/weapons/dagger/on_right_click
+# Lanzar la daga
+function vexp:dungeons/weapons/dagger/throw
+
+# Feedback
+function vexp:dungeons/fx/right_click/diamond

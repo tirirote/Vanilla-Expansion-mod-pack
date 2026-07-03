@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["I I", " I ", " I "],
+  "key": {
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 3,
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "candle_holder",
+            "model": "vexp:candle_holder",
+            "item_model": "vexp:candle_holder",
+            "width": 0.6,
+            "height": 0.75,
+            "type": "candle_holder",
+            "name": "Candelabro",
+            "s_place": "minecraft:block.lantern.place",
+            "s_break": "minecraft:block.lantern.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_bars'}}",
+            "scale": 1,
+            "y": 0.435,
+            "candle_variant": "none",
+            "candle_item": "",
+            "candle_lit": 0
+          }
+        },
+        "Invisible": true,
+        "Fixed": true,
+        "Silent": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:candle_holder"]
+      },
+      "minecraft:item_name": {
+        "text": "Candelabro",
+        "italic": false
+      }
+    }
+  }
+}

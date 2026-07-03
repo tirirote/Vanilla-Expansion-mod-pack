@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/decorative/candle_holder/candle_holder_with_candle",
+  "textures": {
+    "candle": "minecraft:block/blue_candle_lit"
+  }
+}

@@ -39,5 +39,10 @@ execute if items entity @s weapon.mainhand netherite_sword[custom_data~{vexp:{it
 # Ejecutar spawn del nuevo sistema sobre el proyectil
 execute as @e[tag=vexp.temp_projectile,limit=1,distance=..1] at @s run function vexp:projectile/spawn
 
+# Limpiar slot (La daga se consume al lanzarse)
+# Limpiamos tanto mainhand como offhand si tienen una daga (para soportar ambas manos)
+execute if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"dagger"}}] run item replace entity @s weapon.mainhand with air
+execute if items entity @s weapon.offhand *[custom_data~{vexp:{item:"dagger"}}] run item replace entity @s weapon.offhand with air
+
 # Quitar tag temporal al lanzador
 tag @s remove vexp.throwing

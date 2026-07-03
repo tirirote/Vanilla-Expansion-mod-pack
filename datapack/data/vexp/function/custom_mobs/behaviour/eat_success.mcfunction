@@ -5,7 +5,7 @@
 $function vexp:custom_mobs/mobs/$(type)/on_eat_success
 
 # 2. Cleanup
-data modify entity @s equipment set value {}
+data remove entity @s equipment.mainhand
 execute if entity @s[tag=vexp.mob_got_item] run tag @s remove vexp.mob_got_item
 
 #3. Sound
