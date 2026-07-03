@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" I ", "I I", " I "],
+  "key": {
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 2,
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "lock",
+            "model": "vexp:lock",
+            "item_model": "vexp:lock",
+            "width": 0.45,
+            "height": 0.45,
+            "type": "lock",
+            "name": "Candado",
+            "s_place": "minecraft:block.chain.place",
+            "s_break": "minecraft:block.chain.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_chain'}}",
+            "scale": 1,
+            "y": 0.15,
+            "placeable_anywhere": 1,
+            "key_name": "",
+            "target_type": "none",
+            "target_offset": "self",
+            "door_id": 0
+          }
+        },
+        "Invisible": true,
+        "Fixed": true,
+        "Silent": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:lock"]
+      },
+      "minecraft:item_name": {
+        "text": "Candado",
+        "italic": false
+      }
+    }
+  }
+}

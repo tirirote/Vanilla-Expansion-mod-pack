@@ -1,5 +1,8 @@
 # 1. Preparar datos para soltar el ítem
-data modify storage vexp:custom_block item_drop set from entity @s data.vexp
+data remove storage vexp:custom_block item_drop
+data modify storage vexp:custom_block item_drop set value {id:0, model:"", width:0.0d, height:0.0d, type:"", name:"", s_place:"", s_break:"", p_break:"", scale:1.0f, y:0.0f,placeable_anywhere: 0b}
+
+data modify storage vexp:custom_block item_drop merge from entity @s data.vexp
 execute unless data storage vexp:custom_block item_drop.wp_id run data modify storage vexp:custom_block item_drop.wp_id set value 0
 
 # Puertas y otros bloques con modelo dual: al soltar, usar el item_model si existe.

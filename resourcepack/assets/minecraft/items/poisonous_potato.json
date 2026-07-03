@@ -163,6 +163,13 @@
           "type": "minecraft:model",
           "model": "vexp:item/pirotecnics/ammo"
         }
+      },
+      {
+        "when": "vexp:door_key",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/key"
+        }
       }
     ],
     "fallback": {

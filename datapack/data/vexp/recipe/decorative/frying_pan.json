@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [" I ", "I I", " I "],
+  "pattern": ["III", "I I", "III"],
   "key": {
     "I": "minecraft:iron_ingot"
   },
   "result": {
     "id": "minecraft:item_frame",
-    "count": 1,
+    "count": 2,
     "components": {
       "minecraft:entity_data": {
         "id": "minecraft:item_frame",

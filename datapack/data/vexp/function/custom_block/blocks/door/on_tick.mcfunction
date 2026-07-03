@@ -1,7 +1,7 @@
 # Ejecutar AS la interaction de la puerta
 execute if entity @s[tag=vexp.open_door_anim] if score @s vexp.block_anim matches 1.. run function vexp:custom_block/blocks/door/open_anim
 execute if entity @s[tag=vexp.close_door_anim] if score @s vexp.block_anim matches 1.. run function vexp:custom_block/blocks/door/close_anim
-
+execute if entity @s[tag=vexp.locked_door_anim] if score @s vexp.block_anim matches 1.. run function vexp:custom_block/blocks/door/locked_anim
 # Soporte redstone via estado open de la iron_door hitbox
 execute unless block ~ ~ ~ #replaceable run function vexp:custom_block/blocks/door/redstone_tick
 

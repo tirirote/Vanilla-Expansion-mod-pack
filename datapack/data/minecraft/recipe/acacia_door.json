@@ -15,11 +15,11 @@
           "vexp": {
             "id": "door",
             "type": "door",
-            "model": "vexp:door_block_acacia",
+            "model": "vexp:door_acacia",
             "item_model": "vexp:door_acacia",
             "width": 1.5,
             "height": 2.25,
-            "name": "Puerta de Acacia",
+            "name": "Puerta de acacia",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:acacia_planks'}}",
@@ -35,7 +35,7 @@
         "strings": ["vexp:door_acacia"]
       },
       "minecraft:item_name": {
-        "text": "Puerta de Acacia",
+        "text": "Puerta de acacia",
         "italic": false
       }
     }

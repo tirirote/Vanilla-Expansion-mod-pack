@@ -1,0 +1,1 @@
+$execute if items entity @a[tag=vexp.door_user,limit=1] weapon.mainhand minecraft:poisonous_potato[item_name~{text:"$(key_name)"}] run tag @e[type=interaction,tag=vexp.door_checking,sort=nearest,limit=1,distance=..2] add vexp.door_has_key

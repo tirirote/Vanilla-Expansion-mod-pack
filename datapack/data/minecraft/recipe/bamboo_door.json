@@ -16,7 +16,7 @@
           "vexp": {
             "id": "door",
             "type": "door",
-            "model": "vexp:door_block_bamboo",
+            "model": "vexp:door_bamboo",
             "item_model": "vexp:door_bamboo",
             "width": 1.5,
             "height": 2.25,

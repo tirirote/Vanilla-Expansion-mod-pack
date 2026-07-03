@@ -16,11 +16,11 @@
           "vexp": {
             "id": "door",
             "type": "door",
-            "model": "vexp:door_block_warped",
+            "model": "vexp:door_warped",
             "item_model": "vexp:door_warped",
             "width": 1.5,
             "height": 2.25,
-            "name": "Puerta Distorsionada",
+            "name": "Puerta distorsionada",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:warped_planks'}}",

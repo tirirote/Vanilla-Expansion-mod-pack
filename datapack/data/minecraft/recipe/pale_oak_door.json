@@ -16,11 +16,11 @@
           "vexp": {
             "id": "door",
             "type": "door",
-            "model": "vexp:door_block_pale_oak",
+            "model": "vexp:door_pale_oak",
             "item_model": "vexp:door_pale_oak",
             "width": 1.5,
             "height": 2.25,
-            "name": "Puerta de Roble Pálido",
+            "name": "Puerta de roble pálido",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:pale_oak_planks'}}",

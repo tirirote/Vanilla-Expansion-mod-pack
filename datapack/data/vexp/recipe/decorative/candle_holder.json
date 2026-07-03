@@ -23,7 +23,7 @@
             "name": "Candelabro",
             "s_place": "minecraft:block.lantern.place",
             "s_break": "minecraft:block.lantern.break",
-            "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_bars'}}",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_chain'}}",
             "scale": 1,
             "y": 0.435,
             "candle_variant": "none",

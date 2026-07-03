@@ -15,11 +15,11 @@
           "vexp": {
             "id": "door",
             "type": "door",
-            "model": "vexp:door_block_iron",
+            "model": "vexp:door_iron",
             "item_model": "vexp:door_iron",
             "width": 1.5,
             "height": 2.25,
-            "name": "Puerta de Hierro",
+            "name": "Puerta de hierro",
             "s_place": "minecraft:block.metal.place",
             "s_break": "minecraft:block.metal.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:iron_block'}}",
@@ -35,7 +35,7 @@
         "strings": ["vexp:door_iron"]
       },
       "minecraft:item_name": {
-        "text": "Puerta de Hierro",
+        "text": "Puerta de hierro",
         "italic": false
       }
     }

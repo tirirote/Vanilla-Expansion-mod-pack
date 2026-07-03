@@ -264,13 +264,49 @@
         }
       },
       {
+        "when": "vexp:lock",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": [
+                "gui",
+                "ground",
+                "fixed",
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_lefthand",
+                "thirdperson_righthand"
+              ],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/lock"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/lock"
+          }
+        }
+      },
+      {
         "when": "vexp:candle_holder",
         "model": {
           "type": "minecraft:select",
           "property": "minecraft:display_context",
           "cases": [
             {
-              "when": ["gui", "ground", "fixed"],
+              "when": [
+                "gui",
+                "ground",
+                "fixed",
+                "firstperson_righthand",
+                "firstperson_lefthand",
+                "thirdperson_lefthand",
+                "thirdperson_righthand"
+              ],
               "model": {
                 "type": "minecraft:model",
                 "model": "vexp:item/decorative/candle_holder"
@@ -912,6 +948,13 @@
         }
       },
       {
+        "when": "vexp:door_block_oak_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/oak_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_oak",
         "model": {
           "type": "minecraft:select",
@@ -936,6 +979,13 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/door/birch_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_birch_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/birch_door_with_lock"
         }
       },
       {
@@ -966,6 +1016,13 @@
         }
       },
       {
+        "when": "vexp:door_block_spruce_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/spruce_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_spruce",
         "model": {
           "type": "minecraft:select",
@@ -990,6 +1047,13 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/door/dark_oak_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_dark_oak_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/dark_oak_door_with_lock"
         }
       },
       {
@@ -1020,6 +1084,13 @@
         }
       },
       {
+        "when": "vexp:door_block_acacia_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/acacia_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_acacia",
         "model": {
           "type": "minecraft:select",
@@ -1044,6 +1115,13 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/door/jungle_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_jungle_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/jungle_door_with_lock"
         }
       },
       {
@@ -1074,6 +1152,13 @@
         }
       },
       {
+        "when": "vexp:door_block_mangrove_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/mangrove_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_mangrove",
         "model": {
           "type": "minecraft:select",
@@ -1098,6 +1183,13 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/door/cherry_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_cherry_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/cherry_door_with_lock"
         }
       },
       {
@@ -1128,6 +1220,13 @@
         }
       },
       {
+        "when": "vexp:door_block_pale_oak_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/pale_oak_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_pale_oak",
         "model": {
           "type": "minecraft:select",
@@ -1152,6 +1251,13 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/door/warped_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_warped_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/warped_door_with_lock"
         }
       },
       {
@@ -1182,6 +1288,13 @@
         }
       },
       {
+        "when": "vexp:door_block_crimson_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/crimson_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_crimson",
         "model": {
           "type": "minecraft:select",
@@ -1206,6 +1319,13 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/door/bamboo_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_bamboo_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/bamboo_door_with_lock"
         }
       },
       {
@@ -1236,6 +1356,13 @@
         }
       },
       {
+        "when": "vexp:door_block_iron_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/iron_door_with_lock"
+        }
+      },
+      {
         "when": "vexp:door_iron",
         "model": {
           "type": "minecraft:select",
@@ -1252,6 +1379,40 @@
           "fallback": {
             "type": "minecraft:model",
             "model": "vexp:block/door/iron_door"
+          }
+        }
+      },
+      {
+        "when": "vexp:door_block_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/copper_door"
+        }
+      },
+      {
+        "when": "vexp:door_block_copper_with_lock",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/door/copper_door_with_lock"
+        }
+      },
+      {
+        "when": "vexp:door_copper",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/copper_door"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/door/copper_door"
           }
         }
       },

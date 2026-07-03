@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["##", "##", "##"],
+  "key": {
+    "#": "minecraft:copper_ingot"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:item_frame",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Tags": ["vexp.custom_block.place"],
+        "data": {
+          "vexp": {
+            "id": "door",
+            "type": "door",
+            "model": "vexp:door_copper",
+            "item_model": "vexp:door_copper",
+            "width": 1.5,
+            "height": 2.25,
+            "name": "Puerta de cobre",
+            "s_place": "minecraft:block.copper.place",
+            "s_break": "minecraft:block.copper.break",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:copper_block'}}",
+            "scale": 1,
+            "y": 0.435
+          }
+        },
+        "Invisible": true,
+        "Silent": true,
+        "Fixed": true
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:door_copper"]
+      },
+      "minecraft:item_name": {
+        "text": "Puerta de cobre",
+        "italic": false
+      }
+    }
+  }
+}

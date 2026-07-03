@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["   ", "III", "I  "],
+  "key": {
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 2,
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:door_key"]
+      },
+      "minecraft:item_name": {
+        "text": "Llave",
+        "italic": false
+      }
+    }
+  }
+}
