@@ -1,9 +1,55 @@
-# Vanilla Expansion Pack
 
-Pack Vanilla+ para Minecraft basado en datapack + resourcepack.
+<img title= "Logo" atl= "Logo" src="/docs/images/vexp_logo.png" width="100%"/>
 
-El objetivo del proyecto es ampliar combate, proyectiles, bloques funcionales y utilidades visuales manteniendo estética vanilla.
 
+# Introducción
+
+Este proyecto es un paquete de expansión estilo Vanilla para Minecraft 1.21+. Es un proyecto inspirado en una serie de ideas que llegué a implementar en minecraft por los años 2020-2021, en esos años minecraft estaba experimentando un nuevo "boom" con la 1.16.
+
+Lamentablemente ese proyecto antiguo se perdió con el tiempo (cambios de pc y otras posibles causas)
+
+Afortunadamente ahora con los años he mejorado mucho tanto en arte como en programación y con Git y Github estoy desarrollando un proyecto de expansión para minecraft vanilla, sencillamente llamado "Vanilla Expansion Pack" o "VEPX".
+
+# Estructura del proyecto
+
+Este proyecto incluye `datapack` y `resource pack`:
+
+- datapack/data : Carpeta con toda la lógica del paquete de expansión.
+- resourcepack/assets : Carpeta con los recursos visuales usados por el paquete de expansión.
+
+Nota: No recomiendo utilizar otros resourcepacks con este paquete de expansión, ya que si utilizas un paquete de texturas personalizado, es probable que experimentes cambios de estética u otros bugs visuales.
+
+
+# Requisitos
+
+- Versión de juego actualizada, versión superior a 1.21
+
+# Sistemas implementados
+
+Dentro de `datapack` he desarrollado una serie de sistemas escalables y optimizados (expresamente diseñados para multijugador), incluye:
+
+- custom_blocks : Sistema de bloques personalizados.
+- custom_mobs: Sistemas de mobs personalizados.
+- dungeons: Sistema de combate nuevo.
+- mob_health: Indicadores de vida para mobs.
+- projectile: Sistema de projectiles personalizados.
+
+- utils: Funciones auxiliares
+
+# Estructuras personalizadas
+
+Recientemente se ha implementado una forma 100% nativa dentro del juego de diseñar y programar estructuras para spawneen de forma natural en el mundo, en `vexp/structure` se incluirán estructuras personalizadas, y en `minecraft/structure` se mejorarán y se hará "rework" de estructuras vanilla.
+
+
+# Encantamientos personalizados
+
+Desde que el juego permite de forma nativa definir encantamientos nuevos, añadir encantamientos nuevos nunca ha sido más fácil, en `vexp/enchantment` se incluirán encantamientos nuevos, y en `minecraft/enchantment` encantamientos vanilla podrán verse alterados levemente (para que encajen con el sistema de combate nuevo).
+
+# Échale un vistazo en profundidad a cada apartado
+
+1. [Bloques personalizados](/docs/custom_blocks.md)
+2. [Mobs personalizados](/docs/custom_mobs.md)
+3. [Sistema de combate estilo "Dungeons"](/docs/dungeons.md)
 
 ## ¿Qué incluye el proyecto?
 
