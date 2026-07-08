@@ -1,6 +1,7 @@
 
-<img title= "Logo" atl= "Logo" src="/docs/images/vexp_logo.png" width="100%"/>
-
+<div align=center>
+<img alt="recipe" src="/docs/images/vexp_logo.png" width=100%/>
+</div>
 
 # Introducción
 
@@ -8,23 +9,41 @@ Este proyecto es un paquete de expansión estilo Vanilla para Minecraft 1.21+. E
 
 Lamentablemente ese proyecto antiguo se perdió con el tiempo (cambios de pc y otras posibles causas)
 
-Afortunadamente ahora con los años he mejorado mucho tanto en arte como en programación y con Git y Github estoy desarrollando un proyecto de expansión para minecraft vanilla, sencillamente llamado "Vanilla Expansion Pack" o "VEPX".
+Afortunadamente ahora con los años he mejorado mucho tanto en arte como en programación y con Git y Github estoy desarrollando un proyecto de expansión para minecraft vanilla, sencillamente llamado **Vanilla Expansion Pack**.
 
 # Estructura del proyecto
 
 Este proyecto incluye `datapack` y `resource pack`:
 
-- datapack/data : Carpeta con toda la lógica del paquete de expansión.
-- resourcepack/assets : Carpeta con los recursos visuales usados por el paquete de expansión.
+## Datapack
 
-Nota: No recomiendo utilizar otros resourcepacks con este paquete de expansión, ya que si utilizas un paquete de texturas personalizado, es probable que experimentes cambios de estética u otros bugs visuales.
+Definido en `/datapack`
 
+Carpeta con toda la lógica del paquete de expansión. Utilizando únicamente funciones `.mcfunction`.
 
-# Requisitos
+## Resourcepack
 
-- Versión de juego actualizada, versión superior a 1.21
+Definido en `/resourcepack`
 
-# Sistemas implementados
+Carpeta con los recursos visuales usados por el paquete de expansión.
+
+> [!WARNING] Importante
+>Este paquete de expansión utiliza en **gran parte** modelos y texturas personalizadas, así como cambios sutiles en modelos y texturas vanilla, **recominendo encarecidamente** no utilizar paquetes de recursos que rompan mucho la estética vanilla.
+
+# Requisitos de instalación
+
+- Únicamente una versión de juego actualizada, versión superior a 1.21.
+
+# Contenido del proyecto
+
+A continuación veeremos una breve introducción de cada apartado del proyecto.
+
+## Expansiones
+
+- [Dungeons](/docs/dungeons.md)
+- [Cocina](/docs/cooking.md)
+
+## Sistemas implementados
 
 Dentro de `datapack` he desarrollado una serie de sistemas escalables y optimizados (expresamente diseñados para multijugador), incluye:
 
@@ -36,12 +55,15 @@ Dentro de `datapack` he desarrollado una serie de sistemas escalables y optimiza
 
 - utils: Funciones auxiliares
 
-# Estructuras personalizadas
+---
+
+## Estructuras personalizadas
 
 Recientemente se ha implementado una forma 100% nativa dentro del juego de diseñar y programar estructuras para spawneen de forma natural en el mundo, en `vexp/structure` se incluirán estructuras personalizadas, y en `minecraft/structure` se mejorarán y se hará "rework" de estructuras vanilla.
 
+---
 
-# Encantamientos personalizados
+## Encantamientos personalizados
 
 Desde que el juego permite de forma nativa definir encantamientos nuevos, añadir encantamientos nuevos nunca ha sido más fácil, en `vexp/enchantment` se incluirán encantamientos nuevos, y en `minecraft/enchantment` encantamientos vanilla podrán verse alterados levemente (para que encajen con el sistema de combate nuevo).
 

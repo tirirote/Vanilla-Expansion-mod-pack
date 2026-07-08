@@ -32,6 +32,20 @@
         }
       },
       {
+        "when": "vexp:nightcrower_head",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/nightcrower_head"
+        }
+      },
+      {
+        "when": "vexp:nightcrower_head_hurted",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/nightcrower_head_hurted"
+        }
+      },
+      {
         "when": "vexp:ashling_overlay",
         "model": {
           "type": "minecraft:model",
@@ -39,10 +53,24 @@
         }
       },
       {
+        "when": "vexp:ashling_overlay_hurted",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_overlay/ashling_overlay_hurted"
+        }
+      },
+      {
         "when": "vexp:wingler_overlay",
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/mob_overlay/wingler_overlay"
+        }
+      },
+      {
+        "when": "vexp:wingler_overlay_hurted",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_overlay/wingler_overlay_hurted"
         }
       }
     ],

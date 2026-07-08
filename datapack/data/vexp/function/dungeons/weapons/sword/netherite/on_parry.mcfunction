@@ -8,8 +8,7 @@ tag @s add vexp.attacker
 function vexp:dungeons/states/nether_buffed
 
 execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/states/nether_marked
-# AoE wave against nearby valid targets
-execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/weapons/sword/netherite/wave
+execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
 
 # Cleanup and close parry window
 tag @s remove vexp.attacker
@@ -17,6 +16,5 @@ scoreboard players set @s vexp.parry_timer 0
 scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_taken
 
 # Feedback
-particle flash{color:-26073} ~ ~1 ~ 0 0 0 0 0
-particle flame ~ ~1 ~ .5 .5 .5 0.1 3
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/aeo_waves/netherite
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}

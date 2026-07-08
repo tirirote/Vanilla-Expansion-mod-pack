@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "ingredient": "minecraft:melon_slice",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "dried_melon_slice" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:dried_melon_slice"]
+      },
+      "minecraft:item_name": {
+        "text": "Rodaja de sandía deshidratada",
+        "italic": false
+      },
+      "food": { "nutrition": 3, "saturation": 0.4 }
+    }
+  }
+}
+

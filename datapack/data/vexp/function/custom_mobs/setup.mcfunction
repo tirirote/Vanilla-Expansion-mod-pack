@@ -6,6 +6,10 @@ tag @s add vexp.custom_mob
 
 #Other Smart attributes
 
+# Mob can hunt
+execute store result score #mob_can_hunt vexp.math run data get entity @s data.vexp.mob.can_hunt
+execute if score #mob_can_hunt vexp.math matches 1.. run tag @s add vexp.mob_can_hunt
+
 # Mob is hostile
 execute store result score #mob_is_hostile vexp.math run data get entity @s data.vexp.mob.is_hostile
 execute if score #mob_is_hostile vexp.math matches 1.. run tag @s add vexp.mob_is_hostile

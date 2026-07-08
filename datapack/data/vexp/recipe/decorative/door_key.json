@@ -9,12 +9,25 @@
     "id": "minecraft:poisonous_potato",
     "count": 2,
     "components": {
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "key"
+        }
+      },
       "minecraft:custom_model_data": {
         "strings": ["vexp:door_key"]
       },
       "minecraft:item_name": {
         "text": "Llave",
         "italic": false
+      },
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": false
+      },
+      "swing_animation": {
+        "type": "stab"
       }
     }
   }

@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "vexp:item/blocks/vanguarder_statue"
-  }
-}

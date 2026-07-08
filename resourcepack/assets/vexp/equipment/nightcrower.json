@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "vexp:nightcrower"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "vexp:nightcrower_leggings"
+      }
+    ]
+  }
+}

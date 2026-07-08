@@ -1417,6 +1417,13 @@
         }
       },
       {
+        "when": "vexp:oak_trapdoor",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/trapdoor/oak_trapdoor"
+        }
+      },
+      {
         "when": "vexp:spruce_crate",
         "model": {
           "type": "minecraft:select",
@@ -2401,13 +2408,33 @@
               "when": ["gui", "ground", "fixed"],
               "model": {
                 "type": "minecraft:model",
-                "model": "vexp:item/block/vanguarder_statue"
+                "model": "vexp:item/mob_statue/vanguarder_statue"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "vexp:block/vanguarder_statue"
+            "model": "vexp:block/mob_statues/vanguarder_statue"
+          }
+        }
+      },
+      {
+        "when": "vexp:nightcrower_statue",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/mob_statue/nightcrower_statue"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:block/mob_statues/nightcrower_statue"
           }
         }
       }

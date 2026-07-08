@@ -5,9 +5,10 @@
 # {id, model, width, height, type, name, s_place, s_break, p_break}
 # Limpiamos storage previo para evitar conflictos
 data remove storage vexp:custom_block placement
-data merge storage vexp:custom_block {placement:{id:0, model:"", width:0.0d, height:0.0d, type:"", name:"", s_place:"", s_break:"", p_break:"", scale:1.0f, y:0.0f,placeable_anywhere: 0b}}
+data merge storage vexp:custom_block {placement:{id:0, model:"", width:0.0d, height:0.0d, type:"", name:"", s_place:"", s_break:"", p_break:"", scale:1.0f, y:0.0f,placeable_anywhere: 0b, face:1b}}
 data modify storage vexp:custom_block placement set from entity @s data.vexp
 execute unless data storage vexp:custom_block placement.wp_id run data modify storage vexp:custom_block placement.wp_id set value 0
+data modify storage vexp:custom_block placement.face set from entity @s Facing
 
 # Restringir placement: solo item_frame en el suelo (encima de bloque)
 execute unless data entity @s {Facing:1b} unless data storage vexp:custom_block placement{placeable_anywhere: 1b} if data storage vexp:custom_block placement.id run function vexp:custom_block/macro/drop with storage vexp:custom_block placement

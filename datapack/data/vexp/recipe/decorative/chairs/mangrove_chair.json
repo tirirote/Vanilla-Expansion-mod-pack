@@ -20,7 +20,7 @@
             "height": 1.6,
             "type": "chair",
             "variant": "mangrove",
-            "name": "Silla de Manglar",
+            "name": "Silla de mangle",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:mangrove_planks'}}",
@@ -36,7 +36,7 @@
         "strings": ["vexp:mangrove_chair"]
       },
       "minecraft:item_name": {
-        "text": "Silla de Manglar",
+        "text": "Silla de mangle",
         "italic": false
       }
     }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": "minecraft:brown_egg",
+  "cookingtime": 600,
+  "experience": 0.05,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "cooked_egg" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:cooked_egg"]
+      },
+      "minecraft:item_name": {
+        "text": "Huevo cocinado",
+        "italic": false
+      },
+      "food": { "nutrition": 4, "saturation": 0.5 }
+    }
+  }
+}

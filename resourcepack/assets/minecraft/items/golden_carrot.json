@@ -116,10 +116,17 @@
         }
       },
       {
-        "when": "vexp:brownie",
+        "when": "vexp:dried_melon_slice",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:item/cooking/brownie"
+          "model": "vexp:item/cooking/dried_melon_slice"
+        }
+      },
+      {
+        "when": "vexp:cooked_egg",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_egg"
         }
       },
       {

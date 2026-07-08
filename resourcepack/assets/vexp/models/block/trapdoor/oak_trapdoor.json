@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/trapdoor/trapdoor_template",
+  "textures": {
+    "trapdoor": "minecraft:block/oak_trapdoor"
+  }
+}

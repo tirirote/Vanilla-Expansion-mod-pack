@@ -20,7 +20,7 @@
             "height": 1.6,
             "type": "chair",
             "variant": "warped",
-            "name": "Silla Distorsionada",
+            "name": "Silla distorsionada",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:warped_planks'}}",
@@ -36,7 +36,7 @@
         "strings": ["vexp:warped_chair"]
       },
       "minecraft:item_name": {
-        "text": "Silla Distorsionada",
+        "text": "Silla distorsionada",
         "italic": false
       }
     }

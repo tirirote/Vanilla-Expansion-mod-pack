@@ -5,7 +5,7 @@ execute if score @s vexp.block_anim matches 4 run function vexp:custom_block/mac
 execute if entity @s[tag=!vexp.neighbour.left] if score @s vexp.block_anim matches 9 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.translation set value [-0.4375f,0.47f,-0.4375f]
 execute if entity @s[tag=!vexp.neighbour.left] if score @s vexp.block_anim matches 9 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s interpolation_duration set value 2
 
-#Rotation Animation
+# Rotation Animation
 execute if entity @s[tag=!vexp.neighbour.left] if score @s vexp.block_anim matches 9 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.left_rotation set value [0f,0.707f,0f,1f]
 execute if entity @s[tag=!vexp.neighbour.left] if score @s vexp.block_anim matches 6..7 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.left_rotation set value [0f,1.707f,0f,0.303f]
 execute if entity @s[tag=!vexp.neighbour.left] if score @s vexp.block_anim matches 3..5 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.left_rotation set value [0f,0.707f,0f,-0.303f]
@@ -15,7 +15,7 @@ execute if entity @s[tag=!vexp.neighbour.left] if score @s vexp.block_anim match
 execute if entity @s[tag=vexp.neighbour.left] if score @s vexp.block_anim matches 9 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.translation set value [0.4375f,0.47f,-0.375f]
 execute if entity @s[tag=vexp.neighbour.left] if score @s vexp.block_anim matches 9 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s interpolation_duration set value 2
 
-#Rotation Animation
+# Rotation Animation
 execute if entity @s[tag=vexp.neighbour.left] if score @s vexp.block_anim matches 9 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.left_rotation set value [0f,0.707f,0f,-1f]
 execute if entity @s[tag=vexp.neighbour.left] if score @s vexp.block_anim matches 6..7 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.left_rotation set value [0f,1.707f,0f,-0.303f]
 execute if entity @s[tag=vexp.neighbour.left] if score @s vexp.block_anim matches 3..5 as @e[type=item_display,tag=vexp.custom_block.display,distance=..1,sort=nearest,limit=1] run data modify entity @s transformation.left_rotation set value [0f,0.707f,0f,0.303f]

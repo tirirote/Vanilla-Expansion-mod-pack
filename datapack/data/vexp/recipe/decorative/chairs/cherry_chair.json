@@ -20,7 +20,7 @@
             "height": 1.6,
             "type": "chair",
             "variant": "cherry",
-            "name": "Silla de Cerezo",
+            "name": "Silla de cerezo",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:cherry_planks'}}",
@@ -36,7 +36,7 @@
         "strings": ["vexp:cherry_chair"]
       },
       "minecraft:item_name": {
-        "text": "Silla de Cerezo",
+        "text": "Silla de cerezo",
         "italic": false
       }
     }

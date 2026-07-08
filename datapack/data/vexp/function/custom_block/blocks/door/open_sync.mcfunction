@@ -13,11 +13,15 @@ scoreboard players set @e[type=interaction,tag=vexp.neighbour.left,tag=vexp.door
 
 execute if entity @s[y_rotation=-45..45] run setblock ~ ~ ~ iron_door[facing=south,half=lower,open=true,hinge=left]
 execute if entity @s[y_rotation=-45..45] run setblock ~ ~1 ~ iron_door[facing=south,half=upper,open=true,hinge=left]
+
 execute if entity @s[y_rotation=45..135] run setblock ~ ~ ~ iron_door[facing=west,half=lower,open=true,hinge=left]
 execute if entity @s[y_rotation=45..135] run setblock ~ ~1 ~ iron_door[facing=west,half=upper,open=true,hinge=left]
+
 execute if entity @s[y_rotation=-135..-45] run setblock ~ ~ ~ iron_door[facing=east,half=lower,open=true,hinge=left]
 execute if entity @s[y_rotation=-135..-45] run setblock ~ ~1 ~ iron_door[facing=east,half=upper,open=true,hinge=left]
+
 execute if entity @s[y_rotation=136..180] run setblock ~ ~ ~ iron_door[facing=north,half=lower,open=true,hinge=left]
 execute if entity @s[y_rotation=136..180] run setblock ~ ~1 ~ iron_door[facing=north,half=upper,open=true,hinge=left]
+
 execute if entity @s[y_rotation=-180..-136] run setblock ~ ~ ~ iron_door[facing=north,half=lower,open=true,hinge=left]
 execute if entity @s[y_rotation=-180..-136] run setblock ~ ~1 ~ iron_door[facing=north,half=upper,open=true,hinge=left]

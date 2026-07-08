@@ -66,9 +66,6 @@
           "slot": "mainhand"
         }
       ],
-      "minecraft:repairable": {
-        "items": ["minecraft:netherite_ingot"]
-      },
       "repair_cost": 1,
       "food": {
         "nutrition": 0,

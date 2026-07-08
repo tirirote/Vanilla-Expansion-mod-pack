@@ -2,6 +2,6 @@
   "parent": "vexp:block/crate/crate_template",
   "textures": {
     "wood": "vexp:block/crate/birch_crate",
-    "log": "minecraft:block/stripped_birch_log_top"
+    "log": "minecraft:block/birch_planks"
   }
 }

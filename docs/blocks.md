@@ -1,65 +1,197 @@
 # Bloques Implementados
 
-Dentro de `custom_block/blocks/` están todos los bloques definidos, muchos bloques que tengan variantes de colores de madera o similares, comparten el mismo tipo y lógica base, únicamente cambia el modelo.
+Dentro de `custom_block/blocks/` están todos los bloques definidos según su `<type>`.
 
 Actualmente tengo implementado los siguientes bloques personalizados:
 
-## Candelabro `candle_holder/`
+## Candelabro
 
-Candelabro decorativo.
+Definido en `custom_block/blocks/candle_holder/`
 
-### Receta
-
-### Funcionamiento
-
-- Al hacer [click derecho]: Puedes colocar sólo 1 vela (`minecraft:candle`) de cualquier color dentro del candelabro, y puedes encender la vela con un mechero (`minecraft:flint_and_steel`). Una vela encendida en un candelabro proporciona un nivel de luz ligeramente superrior de luz (`4` en vez de `3`).
-
-## Silla `chair/`
-
-Silla funcional (disponible en todas las variantes de madera).
+Soporte para velas decorativo.
 
 ### Receta
 
+<div align=center>
+<img alt="recipe" src="/docs/images/candle_holder_recipe.png"/>
+</div>
+
 ### Funcionamiento
 
-- Al hacer [click derecho]: Te puedes sentar tu mismo o sentar a un mob si este tiene una rienda (`minecraft:lead`).
+- Al hacer [click derecho] con 1 vela: colocas la vela en el candelabro.
+- Al hacer [click derecho] con un mechero si hay una vela: enciendes la vela.
+Ofreciendo un nivel de luz ligeramente superrior de luz (`4` en vez de `3`).
 
-## Caja `crate/`
+---
 
-Una caja de madera (disponible en todas las variantes de madera) que puede almacenar hasta `9` items distintos.
+## Silla
+
+Definido en `custom_block/blocks/chair/`
+
+Permite sentar al jugador o a un mob (disponible en todas las variantes de madera).
 
 ### Receta
 
+<div align=center>
+<img alt="recipe" src="/docs/images/chair_recipe.png"/>
+</div>
+
 ### Funcionamiento
 
-- Al hacer [click derecho] con un item en la mano: Añades ese item a la caja, hasta llegar al límite de 9.
+- Al hacer [click derecho]: Te puedes sentarte tu mismo.
+- Al hacer [click derecho] soteniendo un mob con una rienda: sientas al mob.
+
+---
+
+## Caja
+
+Definido en `custom_block/blocks/crate/`
+
+Permite almacenar hasta hasta `9` items distintos.
+
+### Receta
+
+<div align=center>
+<img alt="recipe" src="/docs/images/crate_recipe.png"/>
+</div>
+
+### Funcionamiento
+
+- Al hacer [click derecho] con un item en la mano: Añades el item a la caja.
 - Al hacer [click derecho] con la mano vacía: Retiras todos los items de la caja.
 
-## Tabla de cortar `cutting_board/`
+---
 
-*Este bloque es parte de la expansión de [Cocina](/docs/cooking.md)*
+## Tabla de cortar
 
-Una tabla para cortar en la que puedes cortar una serie de items de la categoría de "comida".
+Definido en `custom_block/blocks/cutting_board/`
+
+*Este bloque es parte de la temática de [Cocina](/docs/cooking.md)*
+
+Permite cortar items de la categoría de "comestible" o "ingredientes".
 
 ### Receta
 
+<div align=center>
+<img alt="recipe" src="/docs/images/cutting_table_recipe.png"/>
+</div>
+
 ### Funcionamiento
 
-- Al hacer [click derecho] con un item en la mano: Añades el item a la tabla de cortar.
-- Al hacer [click derecho] con cualquier espada (`#minecraft:swords`), cortas el item, obteniendo uno o varios items.
+- Al hacer [click derecho] con un item en la mano: Añades el item
+a la tabla de cortar.
+- Al hacer [click derecho] con cualquier espada, cortas el item,
+  obteniendo un nuevo item comestible.
 
-## Puertas `door/`
+---
 
-Rework a la puertas originales, ahora al interactuar con las puertas, estas se abrirán con una animación suave.
+## Puertas
 
-- Al hacer [click derecho]
+Definido en `custom_block/blocks/door/`
 
-Sartén `frying_pan`
+Rework a la puertas originales, ahora estas se abrirán con una animación suave.
 
-Jarra `jar/`
+---
 
-Pila del libros `pile_of_books`
+## Sartén
 
-Muñeco de Entrenamiento `training_dummy`
+Definido en `custom_block/blocks/frying_pan/`
 
-Estatua de Glifo `vanguarder_statue`
+*Este bloque es parte de la temática de [Cocina](/docs/cooking.md)*
+
+Una sartén rudimentaria para cocinar items de la categoría de "comestible" o "ingredientes".
+
+### Receta
+
+<div align=center>
+<img alt="recipe" src="/docs/images/frying_pan_recipe.png"/>
+</div>
+
+### Funcionamiento
+
+- Al hacer [click derecho] con un item en la mano: Añades el item a la sartén.
+- Si la sartén está colocada encima de un bloque que emita calor,
+  podrá cocinar el item colocado.
+
+---
+
+## Jarra
+
+Definido en `custom_block/blocks/jar/`
+
+Almacena tintes y otros polvos, pudiendo contener hasta `64` del mismo tipo.
+
+## Receta
+
+<div align=center>
+<img alt="recipe" src="/docs/images/jar_recipe.png"/>
+</div>
+
+## Funcionamiento
+
+- Al hacer [click derecho] con un item en la mano: Añades un item a la jarra.
+- Al hacer [click derecho] con la mano vacía: Retiras todos los items almacenados.
+
+---
+
+## Pila del libros
+
+Definido en `custom_block/blocks/pile_of_books/`
+
+Una pila de libros, puedes apilar un extra de hasta `7` libros.
+
+### Receta
+
+<div align=center>
+<img alt="recipe" src="/docs/images/pile_of_books.png"/>
+</div>
+
+### Funcionamiento
+
+- Al hacer [click derecho] con un libro en la mano: Añades el libro a la pila.
+- Al hacer [click derecho] con la mano vacía: Quitas el último libro de la pila
+
+---
+
+## Muñeco de Entrenamiento
+
+Definido en `custom_block/blocks/training_dummy/`
+
+*Este bloque es parte de la temática de [Dungeons](/docs/dungeons.md)*
+
+Permite practicar combate de una forma sencilla.
+
+### Receta
+
+<div align=center>
+<img alt="recipe" src="/docs/images/training_dummy_recipe.png"/>
+</div>
+
+### Funcionamiento
+
+- Al golpear con un arma: Puedes practicar fácilmente con tu arma.
+
+---
+
+## Candados y Llaves
+
+Definido en `custom_block/blocks/lock/`
+
+Permite cerrar cofres, barriles, shulkers y puertas.
+
+### Receta
+
+<div align=center>
+<img alt="recipe" src="/docs/images/lock_recipe.png"/>
+</div>
+
+<div align=center>
+<img alt="recipe" src="/docs/images/key_recipe.png"/>
+</div>
+
+### Funcionamiento
+
+- Debe de ser colocado sobre el cofre o la puerta.
+- Debes de renombrar una llave antes de usarla.
+- Al hacer [click derecho] con una "llave" con un nombre personalizado: Bloqueas el bloque, siendo solo desbloqueable con esa misma llave.
+- Al bloquear un bloque con una llave, sólo podrás abrirlo con esa llave

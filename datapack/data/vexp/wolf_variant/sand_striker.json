@@ -5,9 +5,9 @@
     "wild": "vexp:entity/wolf/sand_striker"
   },
   "baby_assets": {
-    "angry": "vexp:entity/wolf/sand_striker_baby",
-    "tame": "vexp:entity/wolf/sand_striker_baby",
-    "wild": "vexp:entity/wolf/sand_striker_baby"
+    "angry": "vexp:entity/wolf/sand_striker",
+    "tame": "vexp:entity/wolf/sand_striker",
+    "wild": "vexp:entity/wolf/sand_striker"
   },
   "spawn_conditions": []
 }

@@ -20,7 +20,7 @@
             "width": 0.95,
             "height": 0.95,
             "type": "pile_of_books",
-            "name": "Pila de Libros",
+            "name": "Pila de libros",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:bookshelf'}}",
@@ -38,7 +38,7 @@
         "strings": ["vexp:pile_of_books"]
       },
       "minecraft:item_name": {
-        "text": "Pila de Libros",
+        "text": "Pila de libros",
         "italic": false
       }
     }

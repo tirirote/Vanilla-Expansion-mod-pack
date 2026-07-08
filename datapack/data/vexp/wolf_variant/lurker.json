@@ -1,0 +1,13 @@
+{
+  "assets": {
+    "angry": "vexp:entity/wolf/lurker",
+    "tame": "vexp:entity/wolf/lurker",
+    "wild": "vexp:entity/wolf/lurker"
+  },
+  "baby_assets": {
+    "angry": "vexp:entity/wolf/lurker",
+    "tame": "vexp:entity/wolf/lurker",
+    "wild": "vexp:entity/wolf/lurker"
+  },
+  "spawn_conditions": []
+}

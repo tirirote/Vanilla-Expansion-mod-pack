@@ -4,8 +4,13 @@
 
 tag @s remove vexp.target_found
 
+# Cache owner ID for self-filter in target queries.
+scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
+scoreboard players set #combo_target_found vexp.math 0
+
 # Evaluamos si hay un objetivo válido para marcar 'target_found'
-$execute positioned ^ ^ ^$(reach) if entity @e[predicate=vexp:is_target,distance=..$(range)] run tag @s add vexp.target_found
+$execute positioned ^ ^ ^$(reach) as @e[predicate=vexp:is_target,distance=..$(range)] unless score @s vexp.id = #combo_owner_id vexp.id run scoreboard players set #combo_target_found vexp.math 1
+execute if score #combo_target_found vexp.math matches 1.. run tag @s add vexp.target_found
 
 # Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
 # Esto libera la interacción con bloques (cofres, botones) y con el aire.
@@ -19,7 +24,6 @@ tag @s remove vexp.hitbox.found
 # Cache owner ID before switching context inside execute as @e.
 # Using @p inside that block would resolve to the nearest player to the hitbox,
 # which is wrong in multiplayer (another player's hitbox could match).
-scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
 execute as @e[type=interaction,tag=vexp.combo_hitbox,distance=..25] if score @s vexp.id = #combo_owner_id vexp.id run tag @s add vexp.hitbox.mine_temp
 execute as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..25] if score @s vexp.id = #combo_owner_id vexp.id run tag @s add vexp.hitbox.mine_temp
 

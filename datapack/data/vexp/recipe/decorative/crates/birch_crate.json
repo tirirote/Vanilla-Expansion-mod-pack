@@ -19,7 +19,7 @@
             "model": "vexp:birch_crate",
             "width": 1.25,
             "height": 0.75,
-            "name": "Caja de Abedul",
+            "name": "Caja de abedul",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:birch_planks'}}",
@@ -35,7 +35,7 @@
         "strings": ["vexp:birch_crate"]
       },
       "minecraft:item_name": {
-        "text": "Caja de Abedul",
+        "text": "Caja de abedul",
         "italic": false
       }
     }

@@ -20,7 +20,7 @@
             "height": 1.6,
             "type": "chair",
             "variant": "spruce",
-            "name": "Silla de Abeto",
+            "name": "Silla de abeto",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:spruce_planks'}}",
@@ -36,7 +36,7 @@
         "strings": ["vexp:spruce_chair"]
       },
       "minecraft:item_name": {
-        "text": "Silla de Abeto",
+        "text": "Silla de abeto",
         "italic": false
       }
     }

@@ -19,11 +19,11 @@
         "italic": false,
         "color": "white"
       },
-      "minecraft:use_cooldown": {
-        "seconds": 1.0,
-        "cooldown_group": "vexp:handgun_ammo"
-      },
-      "enchantment_glint_override": false
+      "food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": false
+      }
     }
   }
 }

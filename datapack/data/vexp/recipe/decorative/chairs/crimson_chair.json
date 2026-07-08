@@ -20,7 +20,7 @@
             "height": 1.6,
             "type": "chair",
             "variant": "crimson",
-            "name": "Silla Carmesí",
+            "name": "Silla carmesí",
             "s_place": "minecraft:block.wood.place",
             "s_break": "minecraft:block.wood.break",
             "p_break": "minecraft:block{block_state:{Name:'minecraft:crimson_planks'}}",
@@ -36,7 +36,7 @@
         "strings": ["vexp:crimson_chair"]
       },
       "minecraft:item_name": {
-        "text": "Silla Carmesí",
+        "text": "Silla carmesí",
         "italic": false
       }
     }

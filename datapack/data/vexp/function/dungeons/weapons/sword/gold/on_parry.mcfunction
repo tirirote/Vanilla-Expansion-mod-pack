@@ -7,8 +7,8 @@ tag @s add vexp.attacker
 # Quality Buff
 function vexp:dungeons/states/gold_buffed
 
-# AoE wave against nearby valid targets
-execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:dungeons/weapons/sword/gold/wave
+# Custom knockback
+execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
 
 # Cleanup and close parry window
 tag @s remove vexp.attacker
@@ -16,7 +16,6 @@ scoreboard players set @s vexp.parry_timer 0
 scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_taken
 
 # Feedback
-particle instant_effect{color:16763707} ~ ~1 ~ 0.5 0.5 0.5 0 3
-particle flash{color:-655515} ~ ~1 ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.wind_charge.wind_burst", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.nodamage", type: "player"}
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/aeo_waves/gold
+function vexp:utils/sound {sound: "minecraft:entity.ender_eye.death", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}

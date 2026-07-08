@@ -1,6 +1,7 @@
 # dungeons/sword/on_hit.mcfunction
 # @s is the target entity
 
+# Custom knockback
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
 # Feedback

@@ -23,13 +23,6 @@ execute unless block ~ ~-0.5 ~ #soul_fire_base_blocks positioned ~ ~0.35 ~ run p
 execute unless block ~ ~-0.5 ~ #soul_fire_base_blocks positioned ~ ~0.35 ~ run particle flame ^ ^ ^3 0 0 0 0 0
 execute unless block ~ ~-0.5 ~ #soul_fire_base_blocks positioned ~ ~0.35 ~ run particle flame ^ ^ ^3.5 0 0 0 0 0
 
-
-execute positioned ~ ~0.35 ~ run particle crit ^ ^ ^1.5 0.1 0.1 0.1 0.2 1
-execute positioned ~ ~0.35 ~ run particle crit ^ ^ ^2 0.1 0.1 0.1 0.2 1
-execute positioned ~ ~0.35 ~ run particle crit ^ ^ ^2.5 0.1 0.1 0.1 0.2 1
-execute positioned ~ ~0.35 ~ run particle crit ^ ^ ^3 0.1 0.1 0.1 0.2 1
-execute positioned ~ ~0.35 ~ run particle crit ^ ^ ^3.5 0.1 0.1 0.1 0.2 5
-
 # Fire
 execute positioned ^ ^ ^2.5 if block ~ ~ ~ #replaceable run setblock ~ ~ ~ fire
 execute positioned ^ ^ ^4.5 if block ~ ~ ~ #replaceable run setblock ~ ~ ~ fire

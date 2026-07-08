@@ -2,7 +2,7 @@
 # @s is the custom mob
 
 # Main custom data (type -> folder name)
-data modify entity @s data set value {vexp:{mob:{type:"wind_burster", custom_name:"Galebreaker", is_hostile:0, scale:1.0f, hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80, can_pickup_item:0, can_eat_item:0, favorite_items:"#custom_item_tag", item_pos_x:0.0f, item_pos_y:0.0f, item_pos_z:0.0f,item_rx:0.0f}}}
+data modify entity @s data set value {vexp:{mob:{type:"wind_burster", custom_name:"Galebreaker", is_hostile:0, can_hunt:0, hunt_targets:"#vexp:targets", scale:1.0f, hp:40, speed:0.6, damage:1, special_damage:6, range:3.5, special_range:3.5, cooldown:8, special_cooldown:96, special_chance:80, can_pickup_item:0, can_eat_item:0, favorite_items:"#custom_item_tag", item_pos_x:0.0f, item_pos_y:0.0f, item_pos_z:0.0f,item_rx:0.0f}}}
 
 # Additional custom data
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{"custom_model_data":{strings:["vexp:windburster_head"]}}}}
