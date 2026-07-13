@@ -1,0 +1,13 @@
+{
+  "parent": "vexp:block/mob_head/illager_head",
+  "textures": {
+    "head": "vexp:block/mob_head/windburster_head_hurted"
+  },
+  "display": {
+    "head": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [2.01, 2.01, 2.01]
+    }
+  }
+}

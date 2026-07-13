@@ -15,6 +15,5 @@ execute positioned ^ ^ ^3 run particle instant_effect{color:9437155} ~ ~ ~ 0.1 0
 #Buff
 function vexp:dungeons/states/diamond_buffed
 
-particle flash{color:-7340061} ~ ~ ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
+function vexp:dungeons/fx/right_click/diamond
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}

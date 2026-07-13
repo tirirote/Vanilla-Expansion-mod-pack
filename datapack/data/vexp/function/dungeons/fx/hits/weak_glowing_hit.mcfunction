@@ -4,5 +4,5 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:weak_glowing_hit",
 particle glow ~ ~ ~ 0.25 0.25 0.25 0 1
 particle instant_effect{color:1334358} ~ ~ ~ 0.35 0.35 0.35 0 3
 
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.glow_ink_sac.use", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.glow_ink_sac.use", type: "player", pitch:1}

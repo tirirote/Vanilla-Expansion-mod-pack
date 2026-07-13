@@ -17,4 +17,4 @@ execute store result storage vexp:temp thundering_damage float 0.1 run scoreboar
 execute as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/enchantments/custom/combo_end/thundering_deal_bonus with storage vexp:temp
 
 function vexp:dungeons/enchantments/custom/combo_end/thundering_spawn_projectile
-function vexp:utils/sound {sound: "minecraft:entity.zombie_villager.cure", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.zombie_villager.cure", type: "player", pitch:1}

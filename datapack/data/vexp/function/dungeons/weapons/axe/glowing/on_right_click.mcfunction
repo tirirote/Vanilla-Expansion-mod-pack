@@ -12,6 +12,9 @@ execute rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/creat
 tag @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
 execute as @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
+# Buff
+function vexp:dungeons/states/glow_buffed
+
 #Debuff
 function vexp:dungeons/states/mining_debuff
 
@@ -26,5 +29,5 @@ execute positioned ^ ^ ^1 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #rep
 #Feedback
 particle sweep_attack ^ ^ ^1 1 1 1 1 0
 particle flash{color:-6488120} ~ ~ ~ 0 0 0 0 0
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.glow_squid.hurt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.glow_squid.hurt", type: "player", pitch:1}

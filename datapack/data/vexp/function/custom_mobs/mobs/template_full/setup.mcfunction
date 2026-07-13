@@ -10,4 +10,4 @@ data modify entity @s data set value {vexp:{mob:{type:"template", custom_name:"T
 function vexp:custom_mobs/setup
 
 # Summon custom Model
-#function vexp:custom_mobs/custom_item_display_macro {model:"custom_overlay", x:0f, y:0.0f, z:0.0f, rx:0.0f, ry:0.0f, rz:0.0f, scale:1.0f, spin_rotation:0}
+#function vexp:custom_mobs/custom_item_display_macro {item:"minecraft:stone", model:"custom_overlay", x:0f, y:0.0f, z:0.0f, rx:0.0f, ry:0.0f, rz:0.0f, scale:1.0f, spin_rotation:0}

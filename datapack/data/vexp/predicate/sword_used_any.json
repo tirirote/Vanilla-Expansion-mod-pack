@@ -1,8 +1,0 @@
-{
-  "condition": "minecraft:score_match",
-  "score": {
-    "name": "@s",
-    "objective": "minecraft.used:minecraft.wooden_sword",
-    "min": 1
-  }
-}

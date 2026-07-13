@@ -15,6 +15,3 @@ data modify entity @s DeathLootTable set value "vexp:empty"
 
 #Setup custom mob data.
 function vexp:custom_mobs/setup
-
-#Summon custom Model
-#function vexp:custom_mobs/custom_item_display_macro {model:"vexp:webbing_spider_overlay", x:0f, y:0.95f, z:-0.95f}

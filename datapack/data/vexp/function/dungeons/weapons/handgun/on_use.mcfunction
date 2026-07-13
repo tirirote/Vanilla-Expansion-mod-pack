@@ -18,8 +18,8 @@ particle minecraft:crit ^ ^ ^1.5 .25 .25 .25 0.25 5
 particle large_smoke ^ ^ ^1.5 .2 .2 .2 0.01 1
 particle minecraft:flame ^ ^ ^1.5 0.0 0.0 0.0 0.05 1
 
-function vexp:utils/sound {sound: "entity.firework_rocket.launch", type: "player"}
-function vexp:utils/sound {sound: "entity.firework_rocket.twinkle_far", type: "player"}
+function vexp:utils/sound {sound: "entity.firework_rocket.launch", type: "player", pitch:1}
+function vexp:utils/sound {sound: "entity.firework_rocket.twinkle_far", type: "player", pitch:1}
 
 # 7. Remover tag
 tag @s remove vexp.handgun.owner

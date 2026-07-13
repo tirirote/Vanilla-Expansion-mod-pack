@@ -28,4 +28,4 @@ function vexp:dungeons/states/mining_debuff
 
 #Feedback
 particle sweep_attack ^ ^ ^1 1 1 1 1 0
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}

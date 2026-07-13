@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/mob_hats/illager_hats",
+  "textures": {
+    "hat": "vexp:block/mob_hats/vindicator_chef_hat"
+  }
+}

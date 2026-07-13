@@ -20,7 +20,7 @@ execute if score #random_swoosh vexp.math matches 2 run function vexp:dungeons/f
 execute if score #random_swoosh vexp.math matches 3 run function vexp:dungeons/fx/swooshes/combo_swoosh_3
 execute if score #random_swoosh vexp.math matches 4 run function vexp:dungeons/fx/swooshes/combo_swoosh_4
 execute if score #random_swoosh vexp.math matches 5 run function vexp:dungeons/fx/swooshes/combo_swoosh_5
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}
 
 #3. Queue delayed hit resolution so swoosh feedback can play first.
 scoreboard players set @s[tag=!vexp.hit_delay.pending] vexp.hit_delay 5

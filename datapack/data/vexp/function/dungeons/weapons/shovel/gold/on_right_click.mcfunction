@@ -20,6 +20,5 @@ execute positioned ^ ^ ^3 run particle instant_effect{color:16776562} ~ ~ ~ 0.1 
 function vexp:dungeons/states/gold_buffed
 
 
-particle flash{color:-655515} ~ ~ ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.ender_eye.death", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
+function vexp:dungeons/fx/right_click/gold
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}

@@ -5,4 +5,4 @@ particle flash{color:-10867404} ~ ~1 ~ 1 1 1 1 0
 particle block_crumble{block_state:"ancient_debris"} ~ ~1 ~ 0.5 0.2 0.5 0.5 5
 particle entity_effect{color:-2091902940} ~ ~1 ~ 0.2 0.2 0.2 0 5
 particle instant_effect{color:4332323,power:-1} ~ ~1 ~ 0.5 0.2 0.5 0 1
-function vexp:utils/sound {sound: "minecraft:block.sculk_shrieker.break", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.sculk_shrieker.break", type: "player", pitch:1}

@@ -9,5 +9,5 @@ execute positioned ~ ~0.5 ~ run summon experience_orb ^ ^ ^0.5 {Value:7}
 
 execute as @e[type=experience_orb,sort=nearest,limit=1] run function vexp:utils/motion/apply_random_motion {range:10, scale:0.01}
 
-function vexp:utils/sound {sound: "minecraft:entity.parrot.imitate.ghast", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.parrot.imitate.ghast", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player", pitch:1}

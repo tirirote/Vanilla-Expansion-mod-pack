@@ -1,7 +1,7 @@
 # dungeons/axe/on_right_click.mcfunction
 # @s is the player
 
-#Tag player
+# Tag player
 tag @s add vexp.projectile_owner
 
 # Spawn projectile marker in front of player, preserving look direction.
@@ -12,7 +12,10 @@ execute rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/creat
 tag @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
 execute as @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
-#Debuff
+# Buff
+function vexp:dungeons/states/nether_buffed
+
+# Debuff
 function vexp:dungeons/states/mining_debuff
 
 # Anchored Block breaking
@@ -23,6 +26,6 @@ execute positioned ^ ^ ^3 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #rep
 execute positioned ^ ^ ^2 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
 execute positioned ^ ^ ^1 if block ~ ~ ~ #vexp:axe_targets if block ^ ^ ^-1 #replaceable run function vexp:dungeons/weapons/axe/handle_block_break
 
-#Feedback
+# Feedback
 particle sweep_attack ^ ^ ^1 1 1 1 1 0
 function vexp:dungeons/fx/hits/netherite_hit

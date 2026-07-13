@@ -17,6 +17,6 @@ scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_take
 
 # Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/aeo_waves/diamond
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player", pitch:1}
 

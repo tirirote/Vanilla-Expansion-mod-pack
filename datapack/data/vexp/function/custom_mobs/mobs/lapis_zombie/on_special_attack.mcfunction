@@ -16,5 +16,5 @@ execute positioned ~ ~1 ~ run particle instant_effect{color:1668607} ^ ^ ^2.5 0.
 execute positioned ~ ~1 ~ run particle instant_effect{color:1668607} ^ ^ ^3 0.2 0.1 0.2 1 1
 execute positioned ~ ~1 ~ run particle instant_effect{color:1668607} ^ ^ ^3.5 0.2 0.1 0.2 1 1
 
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.zombie.hurt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.zombie.hurt", type: "player", pitch:1}

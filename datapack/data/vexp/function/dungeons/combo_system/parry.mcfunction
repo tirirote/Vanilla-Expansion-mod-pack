@@ -1,6 +1,6 @@
 # General parry window: trigger if player took damage during active parry timer
 # Proactive damage reduction
-effect give @s minecraft:resistance 2 2 true
+effect give @s minecraft:resistance 2 1 true
 
 # Attempt projectile deflect while parry window is active
 execute as @e[type=#vexp:deflectable_projectiles,distance=..2.5,tag=!vexp.parry_deflected] at @s run function vexp:projectile/deflect_reverse_motion

@@ -1,6 +1,9 @@
 # on_interact_unlocked.mcfunction
 # Ejecutar AS la interaction de la puerta (flujo original sin candado).
 
+tag @a[tag=vexp.door_user] remove vexp.door_user
+execute on target run tag @s add vexp.door_user
+
 # Toggle de estado (sin doble ejecucion)
 tag @s remove vexp.tmp_door_open
 execute if entity @s[tag=vexp.door_opened] run tag @s add vexp.tmp_door_open
@@ -28,9 +31,11 @@ tag @e[type=interaction,tag=vexp.tmp_door_pair,sort=nearest,limit=1] remove vexp
 execute if entity @s[tag=vexp.neighbour.left] run tag @e[type=interaction,tag=vexp.tmp_door_pair,sort=nearest,limit=1] add vexp.neighbour.right
 execute if entity @s[tag=vexp.neighbour.right] run tag @e[type=interaction,tag=vexp.tmp_door_pair,sort=nearest,limit=1] add vexp.neighbour.left
 
-execute if entity @s[tag=vexp.tmp_door_open] run function vexp:custom_block/blocks/door/close_routed
-execute unless entity @s[tag=vexp.tmp_door_open] run function vexp:custom_block/blocks/door/open_routed
+execute if entity @s[tag=vexp.tmp_door_open] unless items entity @a[tag=vexp.door_user,limit=1,predicate=!vexp:is_sneaking] weapon.mainhand #axes run function vexp:custom_block/blocks/door/close_routed
+execute unless entity @s[tag=vexp.tmp_door_open] unless items entity @a[tag=vexp.door_user,limit=1,predicate=!vexp:is_sneaking] weapon.mainhand #axes run function vexp:custom_block/blocks/door/open_routed
 
 tag @e[type=interaction,tag=vexp.tmp_door_pair] remove vexp.tmp_door_pair
+
+tag @a[tag=vexp.door_user] remove vexp.door_user
 
 tag @s remove vexp.tmp_door_open

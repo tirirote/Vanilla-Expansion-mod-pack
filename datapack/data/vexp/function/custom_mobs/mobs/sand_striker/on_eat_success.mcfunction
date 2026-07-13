@@ -9,5 +9,5 @@ execute positioned ~ ~0.5 ~ run summon item ^ ^ ^-0.5 {Item:{id:"gunpowder",coun
 
 execute as @e[type=item,sort=nearest,limit=1] run function vexp:utils/motion/apply_random_motion {range:10, scale:0.01}
 
-function vexp:utils/sound {sound: "minecraft:entity.silverfish.ambient", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.composter.ready", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.silverfish.ambient", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:block.composter.ready", type: "player", pitch:1}

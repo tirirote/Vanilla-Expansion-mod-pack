@@ -7,5 +7,5 @@ execute positioned ~ ~1.5 ~ rotated as @s positioned ^ ^ ^2 run function vexp:pr
 tag @e[type=minecraft:armor_stand,tag=enchantment_shockwave,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
 execute as @e[type=minecraft:armor_stand,tag=enchantment_shockwave,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
-function vexp:utils/sound {sound: "minecraft:item.spear.lunge_1", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.shulker.shoot", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.spear.lunge_1", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.shulker.shoot", type: "player", pitch:1}

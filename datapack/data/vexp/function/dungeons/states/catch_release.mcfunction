@@ -7,6 +7,6 @@ tag @p[tag=vexp.catch.owner,limit=1] remove vexp.catch.owner
 
 #Feedback
 particle cloud ~ ~ ~ 0.2 0.0 0.2 0.1 3
-function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player", pitch:1}
 
 team leave @s

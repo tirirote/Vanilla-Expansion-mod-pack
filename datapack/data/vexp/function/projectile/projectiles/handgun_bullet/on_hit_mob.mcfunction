@@ -5,5 +5,5 @@ execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s 
 # Sonido de disparo y partículas iniciales
 function vexp:dungeons/fx/hits/fire_hit
 
-function vexp:utils/sound {sound: "minecraft:entity.firework_rocket.large_blast", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.firework_rocket.twinkle_far", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.firework_rocket.large_blast", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.firework_rocket.twinkle_far", type: "player", pitch:1}

@@ -6,4 +6,4 @@ particle minecraft:cloud ~ ~1 ~ 0.08 0.12 0.08 0.01 3
 
 # Short cooldown to avoid excessive spam
 scoreboard players set @s vexp.move_climb_ready 0
-function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player", pitch:1}

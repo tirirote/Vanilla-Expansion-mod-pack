@@ -7,5 +7,5 @@ particle instant_effect{color:1522759} ~ ~ ~ 0.35 0.35 0.35 0 1
 particle item{item:sculk} ~ ~ ~ 0.25 0.25 0.25 0.1 3
 function vexp:utils/feedback/dust_particle {initialColor: [0.0, 0.0, 0.0], finalColor: [0.4, 0.7, 0.7], scale: 1.7, dX: 0.35, dY: 0.35, dZ: 0.35, speed: 1, count: 5}
 
-function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.warden.attack_impact", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player", pitch:1}

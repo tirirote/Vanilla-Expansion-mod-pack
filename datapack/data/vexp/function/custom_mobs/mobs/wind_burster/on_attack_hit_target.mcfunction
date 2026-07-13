@@ -8,4 +8,4 @@ execute positioned ~ ~1 ~ if block ^ ^ ^-3 #replaceable positioned ~ ~-1 ~ run t
 particle gust ~ ~1 ~ 0.35 0.35 0.35 1 1
 execute positioned ~ ~1 ~ run function vexp:utils/feedback/dust_particle {initialColor:[0.5,0.6,0.7],finalColor:[0.6,0.85,0.9],scale:2.1,dX:0.35,dY:0.35,dZ:0.35,speed:1,count:5}
 
-function vexp:utils/sound {sound: "minecraft:entity.breeze.wind_burst", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.breeze.wind_burst", type: "player", pitch:1}

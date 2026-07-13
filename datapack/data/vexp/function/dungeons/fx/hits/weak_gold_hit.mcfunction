@@ -4,5 +4,5 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:weak_gold_hit",pos
 particle instant_effect{color:16580442} ~ ~ ~ 0.25 0.25 0.25 0 1
 particle instant_effect{color:16765502} ~ ~ ~ 0.25 0.25 0.25 0 2
 
-function vexp:utils/sound {sound: "minecraft:entity.ender_eye.death", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.trident.hit", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.ender_eye.death", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.trident.hit", type: "player", pitch:1}

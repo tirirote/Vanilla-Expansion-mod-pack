@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:item/mob_items/enchanter_book_template",
+  "textures": {
+    "book": "vexp:item/mob_items/enchanter_book"
+  }
+}

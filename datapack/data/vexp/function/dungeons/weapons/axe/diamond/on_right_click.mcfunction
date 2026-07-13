@@ -12,6 +12,9 @@ execute rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/creat
 tag @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
 execute as @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
+#Buff
+function vexp:dungeons/states/diamond_buffed
+
 #Debuff
 function vexp:dungeons/states/mining_debuff
 

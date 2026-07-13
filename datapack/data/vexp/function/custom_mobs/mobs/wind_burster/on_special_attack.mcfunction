@@ -7,5 +7,5 @@ particle flash{color:-6635297} ~ ~1 ~ 1 1 1 1 0
 particle gust ~ ~1 ~ 1 0.2 1 1 5
 execute positioned ~ ~1 ~ run function vexp:utils/feedback/dust_particle {initialColor:[0.5,0.6,0.7],finalColor:[0.6,0.85,0.9],scale:2.1,dX:1,dY:0.2,dZ:1,speed:1,count:10}
 
-function vexp:utils/sound {sound: "minecraft:entity.breeze.wind_burst", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.evoker.celebrate", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.breeze.wind_burst", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.evoker.celebrate", type: "player", pitch:1}

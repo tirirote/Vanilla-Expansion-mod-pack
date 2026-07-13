@@ -6,5 +6,5 @@ particle snowflake ~ ~1 ~ 1 0.2 1 0.1 3
 particle entity_effect{color:-1850085377} ~ ~1 ~ 0.5 0.2 0.5 1 3
 particle instant_effect{color:10416383} ~ ~1 ~ 0.5 0.2 0.5 1 1
 
-function vexp:utils/sound {sound: "minecraft:block.trial_spawner.spawn_item", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.vault.eject_item", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.trial_spawner.spawn_item", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:block.vault.eject_item", type: "player", pitch:1}

@@ -5,7 +5,7 @@ tag @s add vexp.projectile_owner
 tag @s add vexp.dagger_owner
 
 # Sonido de lanzamiento
-function vexp:utils/sound {sound: "minecraft:item.trident.throw", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.trident.throw", type: "player", pitch:1}
 particle minecraft:sweep_attack ^ ^ ^.85 1 1 1 1 0
 
 # Guardar datos del item para el display (opcional, pero mejor pasarlo al proyectil)

@@ -5,7 +5,7 @@ execute store result score @s vexp.old_hp run data get entity @s Health 100
 # 2. Summon Text Display linked to the mob and make it a passenger
 tag @s add vexp.current_mob
 # We use 'translation:[0f, 0.5f, 0f]' to lift the bar above the mob's head
-summon text_display ~ ~ ~ {Tags:["vexp.health_bar","vexp.new_bar"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.25f,0f],scale:[1f,1f,1f]},billboard:"center",alignment:"center"}
+summon text_display ~ ~ ~ {Tags:["vexp.health_bar","vexp.new_bar"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]},billboard:"center",alignment:"center"}
 ride @e[tag=vexp.new_bar,sort=nearest,limit=1] mount @s
 
 # 3. Link ID and setup

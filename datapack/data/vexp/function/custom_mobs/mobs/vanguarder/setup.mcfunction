@@ -2,7 +2,7 @@
 # @s is the custom mob
 
 # Main custom data (type -> folder name)
-data modify entity @s data set value {vexp:{mob:{type:"vanguarder",custom_name:"Glifo", is_hostile:0, can_hunt:0, hunt_targets:"#vexp:targets", scale:1.0f, hp:30, speed:0.3, damage:4, special_damage:8, range:1.0, special_range:3.5, cooldown:16, special_cooldown:64, special_chance:50, can_pickup_item:0, can_eat_item:0, favorite_items:"#custom_item_tag", item_pos_x:0.0f, item_pos_y:0.0f, item_pos_z:0.0f,item_rx:0.0f}}}
+data modify entity @s data set value {vexp:{mob:{type:"vanguarder",custom_name:"Glifo", is_hostile:0, can_hunt:0, hunt_targets:"#vexp:targets", scale:1.0f, hp:30, speed:0.3, damage:6, special_damage:10, range:1.0, special_range:4.5, cooldown:0, special_cooldown:64, special_chance:50, can_pickup_item:0, can_eat_item:0, favorite_items:"#custom_item_tag", item_pos_x:0.0f, item_pos_y:0.0f, item_pos_z:0.0f,item_rx:0.0f}}}
 
 # Additional custom data
 data modify entity @s equipment merge value {head:{id:"stone",count:1,components:{equippable:{slot:"head",asset_id:"vexp:vanguarder"}}}}

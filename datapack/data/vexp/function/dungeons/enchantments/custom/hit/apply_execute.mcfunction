@@ -4,4 +4,4 @@ execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/enc
 
 # Feedback
 execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/fx/enchantments/execute
-function vexp:utils/sound {sound: "minecraft:entity.ravager.step", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.ravager.step", type: "player", pitch:1}

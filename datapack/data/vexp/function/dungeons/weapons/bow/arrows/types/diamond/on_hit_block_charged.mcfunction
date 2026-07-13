@@ -2,4 +2,3 @@
 # @s is a diamond-quality bow arrow, tier 3 (charged), hitting a block
 
 function vexp:dungeons/fx/hits/diamond_hit
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}

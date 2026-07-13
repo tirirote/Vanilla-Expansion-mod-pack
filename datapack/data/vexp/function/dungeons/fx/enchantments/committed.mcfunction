@@ -4,4 +4,4 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:committed",positio
 particle flash{color:-21168} ~ ~1 ~ 1 1 1 1 0
 particle smoke ~ ~1 ~ 0.35 0.35 0.35 0.02 1
 particle crit ~ ~1 ~ 0.35 0.35 0.35 0.5 5
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.knockback", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.knockback", type: "player", pitch:1}

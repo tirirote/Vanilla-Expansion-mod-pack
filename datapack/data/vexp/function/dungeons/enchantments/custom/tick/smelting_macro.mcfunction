@@ -1,7 +1,7 @@
 # Feedback
 $execute if entity @s[nbt={Item:{id:"minecraft:$(item)"}}] run particle large_smoke ~ ~ ~ 0.1 0.1 0.1 0.02 1
 $execute if entity @s[nbt={Item:{id:"minecraft:$(item)"}}] run particle flame ~ ~ ~ 0 0 0 0.02 1
-$execute if entity @s[nbt={Item:{id:"minecraft:$(item)"}}] run function vexp:utils/sound {sound: "minecraft:block.fire.extinguish", type: "player"}
+$execute if entity @s[nbt={Item:{id:"minecraft:$(item)"}}] run function vexp:utils/sound {sound: "minecraft:block.fire.extinguish", type: "player", pitch:1}
 
 # Smelt
 $execute if entity @s[nbt={Item:{id:"minecraft:$(item)"}}] run data modify entity @s Item.id set value "minecraft:$(smelted_item)"

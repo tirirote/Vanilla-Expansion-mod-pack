@@ -4,5 +4,5 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:backstab",position
 particle instant_effect{color:16744703} ~ ~1 ~ 0.5 0.2 0.5 0.5 3
 particle squid_ink ~ ~1 ~ 0.5 0.2 0.5 0.05 3
 particle flash{color:-3797761} ~ ~1 ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:item.spear.hit", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.squid.squirt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.spear.hit", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.squid.squirt", type: "player", pitch:1}

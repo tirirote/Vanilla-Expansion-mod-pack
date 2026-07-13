@@ -11,6 +11,3 @@ data modify entity @s ItemDropChance set value 0
 data modify entity @s drop_chances set value {head:0,chest:0,legs:0,mainhand:0}
 #Setup custom mob data.
 function vexp:custom_mobs/setup
-
-#Summon custom Model
-#function vexp:custom_mobs/custom_item_display_macro {model:"vexp:webbing_spider_overlay", x:0f, y:0.95f, z:-0.95f}

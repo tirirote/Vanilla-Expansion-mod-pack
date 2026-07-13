@@ -17,4 +17,4 @@ scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_take
 
 # Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/aeo_waves/netherite
-function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}

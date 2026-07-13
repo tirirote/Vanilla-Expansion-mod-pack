@@ -1,0 +1,4 @@
+#Change state of oxidation
+execute if data entity @s data.vexp{model: "vexp:door_weathered_copper"} run function vexp:custom_block/blocks/door/update_copper_door {model: "vexp:door_oxidized_copper", name: "Puerta de cobre oxidado", p_break: "minecraft:block{block_state:{Name:'minecraft:oxidized_copper_door'}}"}
+execute if data entity @s data.vexp{model: "vexp:door_exposed_copper"} run function vexp:custom_block/blocks/door/update_copper_door {model: "vexp:door_weathered_copper", name: "Puerta de cobre degradado", p_break: "minecraft:block{block_state:{Name:'minecraft:weathered_copper_door'}}"}
+execute if data entity @s data.vexp{model: "vexp:door_copper"} run function vexp:custom_block/blocks/door/update_copper_door {model: "vexp:door_exposed_copper", name: "Puerta de cobre expuesto", p_break: "minecraft:block{block_state:{Name:'minecraft:exposed_copper_door'}}"}

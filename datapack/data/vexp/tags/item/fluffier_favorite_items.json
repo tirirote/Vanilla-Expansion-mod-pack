@@ -1,8 +1,10 @@
 {
   "values": [
-    "#villager_plantable_seeds",
-    "melon_seeds",
-    "pumpkin_seeds",
-    "beetroot_seeds"
+    "red_mushroom",
+    "brown_mushroom",
+    "carrot",
+    "wheat",
+    "beetroot",
+    "potato"
   ]
 }

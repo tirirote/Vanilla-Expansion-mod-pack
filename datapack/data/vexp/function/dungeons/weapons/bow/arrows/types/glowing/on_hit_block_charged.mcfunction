@@ -3,5 +3,3 @@
 # Extra block impact effects for tier 3
 
 function vexp:dungeons/fx/hits/glowing_hit
-function vexp:utils/sound {sound: "minecraft:item.armor.equip_netherite", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.glow_squid.squirt", type: "player"}

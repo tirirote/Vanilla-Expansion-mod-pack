@@ -11,7 +11,7 @@ execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ positioned ^ 
 execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^5 run function vexp:dungeons/fx/aeo_waves/common
 execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^6 run function vexp:dungeons/fx/aeo_waves/common
 
-function vexp:utils/sound {sound: "minecraft:entity.wind_charge.wind_burst", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.wind_charge.wind_burst", type: "player", pitch:1}
 
 # Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/strong_sword_hit

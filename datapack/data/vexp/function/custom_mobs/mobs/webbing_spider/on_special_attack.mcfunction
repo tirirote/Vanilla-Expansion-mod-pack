@@ -13,4 +13,4 @@ execute positioned ^ ^ ^3 if block ~ ~ ~ #replaceable if entity @p[distance=..1.
 execute positioned ^ ^ ^4 if block ~ ~ ~ #replaceable if entity @p[distance=..1.25] run setblock ~ ~ ~ cobweb
 execute positioned ^ ^ ^5 if block ~ ~ ~ #replaceable if entity @p[distance=..1.25] run setblock ~ ~ ~ cobweb
 
-function vexp:utils/sound {sound: "minecraft:entity.shulker.shoot", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.shulker.shoot", type: "player", pitch:1}

@@ -3,7 +3,7 @@
 # @s es el proyectil
 
 # Sonido y partículas de impacto
-function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player", pitch:1}
 execute positioned ^ ^ ^1 run function vexp:utils/feedback/block_hit
 
 # Remove only the display linked to this projectile

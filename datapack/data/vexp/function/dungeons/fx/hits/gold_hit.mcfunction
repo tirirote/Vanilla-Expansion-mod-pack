@@ -7,5 +7,5 @@ particle instant_effect{color:16765502} ~ ~ ~ 0.35 0.35 0.35 0 2
 function vexp:utils/feedback/dust_particle {initialColor: [0.75, 0.8, 0.2], finalColor: [0.85, 0.75, 0.3], scale: 0.8, dX: 0.35, dY: 0.35, dZ: 0.35, speed: 0.05, count: 5}
 particle end_rod ~ ~ ~ 0.35 0.35 0.35 0.05 1
 
-function vexp:utils/sound {sound: "minecraft:item.spear.hit", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.spear.hit", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.trident.return", type: "player", pitch:1}

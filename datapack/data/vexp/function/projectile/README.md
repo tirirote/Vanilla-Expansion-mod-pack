@@ -80,7 +80,7 @@ particle minecraft:explosion ~ ~ ~ 0.2 0.2 0.2 0.05 1
 **on_hit_block.mcfunction** - Efecto al chocar:
 ```mcfunction
 particle minecraft:cloud ^ ^ ^0.35 0.2 0.2 0.2 0.02 5
-function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player", pitch:1}
 ```
 
 **on_despawn.mcfunction** - Limpieza (opcional):
@@ -107,10 +107,10 @@ dungeons/scythe/projectile/
 
 ## Ventajas del Sistema de Macros
 
-✅ **Sin código repetitivo** - Un solo hook ejecuta todas las variantes  
-✅ **Fácil extensión** - Agregar nuevo proyectil = crear 5 archivos  
-✅ **Sin modificar código base** - Nunca editas los hooks globales  
-✅ **Nomenclatura clara** - `proj_type` debe coincidir con nombre de carpeta  
+✅ **Sin código repetitivo** - Un solo hook ejecuta todas las variantes
+✅ **Fácil extensión** - Agregar nuevo proyectil = crear 5 archivos
+✅ **Sin modificar código base** - Nunca editas los hooks globales
+✅ **Nomenclatura clara** - `proj_type` debe coincidir con nombre de carpeta
 ✅ **Mantenimiento simple** - Lógica aislada por tipo de proyectil
 
 ## Migración desde Sistema de Tags

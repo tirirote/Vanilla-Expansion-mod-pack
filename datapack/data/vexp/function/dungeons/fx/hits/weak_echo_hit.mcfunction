@@ -4,5 +4,5 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:weak_echo_hit",pos
 particle sculk_charge_pop ~ ~ ~ 0.25 0.25 0.25 0.05 5
 particle item{item:sculk} ~ ~ ~ 0.25 0.25 0.25 0.1 3
 
-function vexp:utils/sound {sound: "minecraft:entity.warden.tendril_clicks", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.shield.break", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.warden.tendril_clicks", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.shield.break", type: "player", pitch:1}

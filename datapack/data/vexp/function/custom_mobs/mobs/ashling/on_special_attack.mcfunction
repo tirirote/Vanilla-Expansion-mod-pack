@@ -27,4 +27,4 @@ execute unless block ~ ~-0.5 ~ #soul_fire_base_blocks positioned ~ ~0.35 ~ run p
 execute positioned ^ ^ ^2.5 if block ~ ~ ~ #replaceable run setblock ~ ~ ~ fire
 execute positioned ^ ^ ^4.5 if block ~ ~ ~ #replaceable run setblock ~ ~ ~ fire
 
-function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
+function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}

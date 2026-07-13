@@ -4,5 +4,5 @@ particle flash{color:-14287} ~ ~1 ~ 1 1 1 1 0
 particle instant_effect{color:16770649,power:-1} ~ ~1 ~ 0.5 0.2 0.5 0 5
 particle entity_effect{color:-1560298752} ~ ~1 ~ 0.5 0.2 0.5 1 5
 
-function vexp:utils/sound {sound: "minecraft:block.beacon.activate", type: "player"}
-function vexp:utils/sound {sound: "minecraft:block.respawn_anchor.charge", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.beacon.activate", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:block.respawn_anchor.charge", type: "player", pitch:1}

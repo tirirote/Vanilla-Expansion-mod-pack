@@ -4,28 +4,26 @@ function vexp:custom_block/tick
 #Dungeons
 function vexp:dungeons/tick
 
+#Custom mobs
+function vexp:custom_mobs/tick
+
 # Custom projectile system
 execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
 
 #Pirotecnics
 function vexp:tnt_stick/tick
 
-# Main loop is now dungeon-routed; legacy handgun tick call was removed.
-#Misc
-function vexp:mob_health/tick
-function vexp:utils/feedback/dust_wave_tick
-
 # Extra Feedback
 function vexp:player/feedback
-#function vexp:feedback/tick
+function vexp:feedback/tick
 
 #Movement
 #function vexp:movement/tick
 
 function vexp:utils/feedback/tick
 
-#Custom mobs
-function vexp:custom_mobs/tick
+#Custom mob HP display
+function vexp:mob_health/tick
 
 # TAG CLEANUP (End of tick)
 tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate

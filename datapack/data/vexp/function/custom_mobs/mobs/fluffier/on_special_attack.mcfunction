@@ -7,5 +7,5 @@ particle end_rod ~ ~ ~ 0.5 0.2 0.5 0.05 3
 #Friendly player buff
 effect give @p[distance=..3.5] speed 20 1 true
 
-function vexp:utils/sound {sound: "minecraft:block.amethyst_cluster.hit", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.happy_ghast.ambient", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_cluster.hit", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.happy_ghast.ambient", type: "player", pitch:1}

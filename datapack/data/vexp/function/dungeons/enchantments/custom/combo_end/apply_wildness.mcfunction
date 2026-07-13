@@ -18,5 +18,5 @@ execute if score @s vexp.combo_cooldown matches ..-1 run scoreboard players set 
 
 #Feedback
 function vexp:dungeons/fx/enchantments/wildness
-function vexp:utils/sound {sound: "minecraft:entity.vex.death", type: "player"}
-function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.vex.death", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}

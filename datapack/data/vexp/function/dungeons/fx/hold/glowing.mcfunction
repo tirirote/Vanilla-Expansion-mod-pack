@@ -12,5 +12,5 @@ $execute if score @s $(score) matches $(end).. positioned ~ ~1.6 ~ run particle 
 $execute if score @s $(score) matches $(end) positioned ~ ~1.6 ~ run particle flash{color:-6488120} ^ ^ ^2 1 1 1 1 0
 $execute if score @s $(score) matches $(end) positioned ~ ~1.6 ~ run particle glow ^ ^ ^2 0 0 0 0 0
 
-$execute if score @s $(score) matches 1 run function vexp:utils/sound {sound: "minecraft:item.crossbow.loading_start", type: "player"}
+$execute if score @s $(score) matches 1 run function vexp:utils/sound {sound: "minecraft:item.crossbow.loading_start", type: "player", pitch:1}
 

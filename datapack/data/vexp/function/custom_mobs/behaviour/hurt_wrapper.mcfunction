@@ -25,5 +25,11 @@ execute if entity @s[nbt={HurtTime:10s}] unless entity @s[tag=vexp.mob_hurt_visu
 
 $execute if entity @s[nbt={HurtTime:10s}] run function vexp:custom_mobs/mobs/$(type)/on_hurt
 
+# Tag cleanup when hurted
+execute if entity @s[nbt={HurtTime:10s}] run tag @s remove vexp.mob_special_ready
+execute if entity @s[nbt={HurtTime:10s}] run tag @s remove vexp.mob_attack_ready
+execute if entity @s[nbt={HurtTime:10s}] run tag @s remove vexp.mob_aggro
+execute if entity @s[nbt={HurtTime:10s}] run tag @s remove vexp.mob_trying_to_pickup
+
 # Drop item when mob has custom pickup behaviour
 execute if entity @s[tag=vexp.mob_got_item] if entity @s[nbt={HurtTime:10s}] run function vexp:custom_mobs/behaviour/drop_item

@@ -1,10 +1,11 @@
 # Assign custom id.
 execute unless score @s vexp.id = @s vexp.id run function vexp:utils/assign_id
 
+scoreboard players set @s vexp.mob_cooldown 100
+scoreboard players set @s vexp.mob_special_cooldown 100
+
 #Assign custom tag.
 tag @s add vexp.custom_mob
-
-#Other Smart attributes
 
 # Mob can hunt
 execute store result score #mob_can_hunt vexp.math run data get entity @s data.vexp.mob.can_hunt

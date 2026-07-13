@@ -15,6 +15,5 @@ execute positioned ^ ^ ^3 run particle flame ~ ~ ~ 0.1 0.1 0.1 0.3 1
 #Buff
 function vexp:dungeons/states/nether_buffed
 
-particle flash{color:-8637360} ~ ~ ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player"}
+function vexp:dungeons/fx/right_click/netherite
+function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}

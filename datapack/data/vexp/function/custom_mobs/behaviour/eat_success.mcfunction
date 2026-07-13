@@ -9,4 +9,4 @@ data remove entity @s equipment.mainhand
 execute if entity @s[tag=vexp.mob_got_item] run tag @s remove vexp.mob_got_item
 
 #3. Sound
-function vexp:utils/sound {sound: "minecraft:entity.generic.eat", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.generic.eat", type: "player", pitch:1}

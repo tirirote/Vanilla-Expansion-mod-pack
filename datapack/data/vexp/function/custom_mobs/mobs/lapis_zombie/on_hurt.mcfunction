@@ -6,4 +6,4 @@ execute as @e[type=#vexp:targets,tag=!vexp.custom_mob,distance=..2.5] run damage
 # Feedback
 particle enchanted_hit ~ ~1 ~ 0.5 0.2 0.5 0.3 15
 particle instant_effect{color:1668607} ~ ~1 ~ 0.5 0.2 0.5 1 10
-function vexp:utils/sound {sound: "minecraft:block.amethyst_block.break", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.amethyst_block.break", type: "player", pitch:1}

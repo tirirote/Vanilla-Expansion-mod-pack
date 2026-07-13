@@ -3,4 +3,4 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:sharpness",positio
 
 particle enchanted_hit ~ ~1 ~ 0.35 0.35 0.35 0.5 15
 particle flash{color:-11420755} ~ ~1 ~ 1 1 1 1 0
-function vexp:utils/sound {sound: "minecraft:block.chain.break", type: "player"}
+function vexp:utils/sound {sound: "minecraft:block.chain.break", type: "player", pitch:1}

@@ -67,7 +67,9 @@ scoreboard objectives add vexp.hitbox_hide_timer dummy
 scoreboard objectives add vexp.special_hit_window dummy
 
 #Custom Mobs
+scoreboard objectives add vexp.pathfind_rand dummy
 scoreboard objectives add vexp.mob_cooldown dummy
+scoreboard objectives add vexp.mob_special_cooldown dummy
 scoreboard objectives add vexp.mob_idle_time dummy
 scoreboard objectives add vexp.mob_eating_time dummy
 
@@ -136,5 +138,7 @@ team add vexp.blue
 team modify vexp.blue color blue
 team add vexp.dark_aqua
 team modify vexp.dark_aqua color dark_aqua
+team add vexp.light_purple
+team modify vexp.light_purple color light_purple
 team add vexp.dark_purple
 team modify vexp.dark_purple color dark_purple

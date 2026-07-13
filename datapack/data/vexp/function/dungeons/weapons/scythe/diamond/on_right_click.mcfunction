@@ -9,6 +9,5 @@ execute positioned ^ ^ ^1 run function vexp:projectile/utils/create_armor_stand 
 execute as @e[type=minecraft:armor_stand,tag=vexp.scythe_projectile,tag=vexp.temp_projectile,sort=nearest,limit=1,distance=..4] at @s run function vexp:projectile/spawn
 
 # Feedback
+function vexp:dungeons/fx/right_click/diamond
 particle sweep_attack ^ ^ ^2.5 0 0 0 0 0
-function vexp:utils/sound {sound: "minecraft:entity.evoker.cast_spell", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.breeze.shoot", type: "player"}

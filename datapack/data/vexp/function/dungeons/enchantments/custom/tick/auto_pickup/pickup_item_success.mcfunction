@@ -13,7 +13,7 @@ execute positioned ~ ~1.25 ~ run particle instant_effect{color:15952062} ^ ^ ^1 
 execute positioned ~ ~1.25 ~ run tp @e[type=item,sort=nearest,distance=..12,nbt={Age:1s}] ^ ^ ^1
 execute as @e[type=item,sort=nearest,nbt={Age:1s},distance=..2] run data modify entity @s PickupDelay set value 0
 
-execute run function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player"}
+execute run function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player", pitch:1}
 
 #4. Clean tag
 tag @s remove vexp.enchantment_pickup_owner

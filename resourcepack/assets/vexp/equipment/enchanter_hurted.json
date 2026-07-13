@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "vexp:enchanter_hurted"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "vexp:enchanter_leggings_hurted"
+      }
+    ]
+  }
+}

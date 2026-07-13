@@ -2,4 +2,12 @@
 $function vexp:custom_mobs/mobs/$(type)/on_aggro
 
 # Move towards target
-$execute unless block ~ ~-0.1 ~ #air if block ^ ^ ^1 #replaceable run tp @s ^ ^ ^$(speed) facing entity @e[tag=vexp.mob_target,sort=nearest,limit=1,distance=1..]
+$execute if entity @e[tag=vexp.mob_target,distance=2..16] run function vexp:custom_mobs/helpers/try_pathfinding {speed: $(speed), target_tag:"vexp.mob_target"}
+
+# Clean aggro tags
+execute if entity @s[tag=vexp.mob_attack_ready] run tag @s remove vexp.mob_aggro
+execute if entity @s[tag=vexp.mob_special_ready] run tag @s remove vexp.mob_aggro
+execute if entity @s[tag=vexp.mob_trying_to_pickup] run tag @s remove vexp.mob_aggro
+execute if entity @s[tag=vexp.mob_got_item] run tag @s remove vexp.mob_aggro
+
+execute unless entity @e[tag=vexp.mob_target,distance=..12,limit=1] run tag @s remove vexp.mob_aggro

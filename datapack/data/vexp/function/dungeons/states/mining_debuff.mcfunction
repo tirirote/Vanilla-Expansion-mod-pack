@@ -7,4 +7,4 @@ effect give @s mining_fatigue 5 3 true
 effect give @s slowness 5 2 true
 effect give @s glowing 1 0 true
 team join vexp.gray
-function vexp:utils/sound {sound: "minecraft:entity.player.hurt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.hurt", type: "player", pitch:1}

@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:vindicator_chef_spoon",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/mob_items/vindicator_chef_spoon"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/wooden_axe"
+    }
+  }
+}

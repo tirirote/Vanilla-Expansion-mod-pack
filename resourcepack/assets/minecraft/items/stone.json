@@ -18,6 +18,20 @@
         }
       },
       {
+        "when": "vexp:windburster_head",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/windburster_head"
+        }
+      },
+      {
+        "when": "vexp:windburster_head_hurted",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/windburster_head_hurted"
+        }
+      },
+      {
         "when": "vexp:windburster_overlay",
         "model": {
           "type": "minecraft:model",
@@ -25,10 +39,10 @@
         }
       },
       {
-        "when": "vexp:windburster_head",
+        "when": "vexp:windburster_overlay_hurted",
         "model": {
           "type": "minecraft:model",
-          "model": "vexp:block/mob_head/windburster_head"
+          "model": "vexp:block/mob_overlay/windburster_overlay_hurted"
         }
       },
       {
@@ -43,6 +57,34 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/mob_head/nightcrower_head_hurted"
+        }
+      },
+      {
+        "when": "vexp:snitcher_head",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/snitcher_head"
+        }
+      },
+      {
+        "when": "vexp:snitcher_head_hurted",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/snitcher_head_hurted"
+        }
+      },
+      {
+        "when": "vexp:enchanter_head",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/enchanter_head"
+        }
+      },
+      {
+        "when": "vexp:enchanter_head_hurted",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/mob_head/enchanter_head_hurted"
         }
       },
       {

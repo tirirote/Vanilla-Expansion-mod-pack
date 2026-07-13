@@ -23,7 +23,7 @@
             "name": "Puerta de cobre",
             "s_place": "minecraft:block.copper.place",
             "s_break": "minecraft:block.copper.break",
-            "p_break": "minecraft:block{block_state:{Name:'minecraft:copper_block'}}",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:copper_door'}}",
             "scale": 1,
             "y": 0.435
           }

@@ -1,4 +1,4 @@
 # When target hitted
 # @s is the target
-function vexp:utils/sound {sound: "minecraft:entity.blaze.hurt", type: "player"}
-particle instant_effect{color:4471349} ~ ~1 ~ 0.35 0.35 0.35 0 5
+function vexp:utils/sound {sound: "minecraft:entity.hoglin.attack", type: "player", pitch:2}
+particle crit ~ ~1 ~ 0.2 0.2 0.2 0.3 5

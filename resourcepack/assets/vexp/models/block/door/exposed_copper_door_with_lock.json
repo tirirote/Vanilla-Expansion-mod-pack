@@ -1,0 +1,7 @@
+{
+  "parent": "vexp:block/door/door_with_lock_template",
+  "textures": {
+    "door_up": "minecraft:block/exposed_copper_door_top",
+    "door_bottom": "minecraft:block/exposed_copper_door_bottom"
+  }
+}

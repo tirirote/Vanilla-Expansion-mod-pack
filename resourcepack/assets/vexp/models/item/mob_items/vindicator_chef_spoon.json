@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vexp:item/mob_items/vindicator_chef_spoon"
+  }
+}

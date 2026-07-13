@@ -4,5 +4,5 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:first_strike",posi
 particle flash{color:-19934} ~ ~1 ~ 1 1 1 1 0
 particle crit ~ ~1 ~ 0.35 0.35 0.35 0.5 15
 particle instant_effect{color:16753691} ~ ~1 ~ 0.5 0.2 0.5 1 3
-function vexp:utils/sound {sound: "minecraft:entity.player.hurt", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.firework_rocket.blast", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.hurt", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.firework_rocket.blast", type: "player", pitch:1}

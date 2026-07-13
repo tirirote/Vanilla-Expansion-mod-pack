@@ -32,4 +32,4 @@ execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/enc
 #Feedback
 execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/fx/enchantments/pursuit
 
-function vexp:utils/sound {sound: "minecraft:entity.vex.hurt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.vex.hurt", type: "player", pitch:1}

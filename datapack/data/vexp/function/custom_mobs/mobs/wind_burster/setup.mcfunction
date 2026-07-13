@@ -22,5 +22,5 @@ effect give @s slow_falling infinite 0 true
 function vexp:custom_mobs/setup
 
 #Summon custom Model
-function vexp:custom_mobs/custom_item_display_macro {model:"windburster_overlay", x:0f, y:-0.75f, z:0f, rx:0f, ry:0f, rz:-0.1f, scale:2.1f, spin_rotation:12}
-function vexp:custom_mobs/custom_item_display_macro {model:"windburster_overlay", x:0f, y:-1.25f, z:0f, rx:0.1f, ry:0.303f, rz:0f, scale:1.7f, spin_rotation:12}
+function vexp:custom_mobs/custom_item_display_macro {item:"minecraft:stone", model:"windburster_overlay", x:0f, y:-0.75f, z:0f, rx:0f, ry:0f, rz:-0.1f, scale:2.1f, spin_rotation:12}
+function vexp:custom_mobs/custom_item_display_macro {item:"minecraft:stone", model:"windburster_overlay", x:0f, y:-1.25f, z:0f, rx:0.1f, ry:0.303f, rz:0f, scale:1.7f, spin_rotation:12}

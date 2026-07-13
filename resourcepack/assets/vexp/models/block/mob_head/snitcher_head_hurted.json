@@ -1,0 +1,13 @@
+{
+  "parent": "vexp:block/mob_head/illager_head_baby",
+  "textures": {
+    "head": "vexp:block/mob_head/snitcher_head_hurted"
+  },
+  "display": {
+    "head": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 7, 0],
+      "scale": [1.7, 1.7, 1.7]
+    }
+  }
+}

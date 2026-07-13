@@ -4,4 +4,4 @@ function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:fire",position:"~ 
 particle flame ~ ~1 ~ 0.5 0.2 0.5 0.05 3
 particle large_smoke ~ ~1 ~ 0.5 0.2 0.5 0.02 1
 particle flash{color:-20680} ~ ~1 ~ 0.0 0.0 0.0 1 0
-function vexp:utils/sound {sound: "minecraft:entity.player.hurt_on_fire", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.player.hurt_on_fire", type: "player", pitch:1}

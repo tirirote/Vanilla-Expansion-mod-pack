@@ -14,4 +14,4 @@ scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_take
 
 # Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/aeo_waves/common
-function vexp:utils/sound {sound: "minecraft:entity.wind_charge.wind_burst", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.wind_charge.wind_burst", type: "player", pitch:1}

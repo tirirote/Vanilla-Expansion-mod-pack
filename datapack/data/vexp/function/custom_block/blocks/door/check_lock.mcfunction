@@ -22,7 +22,7 @@ execute if data entity @s data.vexp{has_lock:1} unless data entity @s data.vexp{
 execute if entity @s[tag=vexp.door_has_key] run function vexp:custom_block/macro/sound {sound:"minecraft:block.iron_trapdoor.open"}
 
 execute if data entity @s data.vexp{has_lock:1,key_name:""} run tag @s add vexp.lock_blocked
-execute if data entity @s data.vexp{has_lock:1} unless data entity @s data.vexp{key_name:""} if entity @s[tag=!vexp.door_has_key] run tag @s add vexp.lock_blocked
+execute if data entity @s data.vexp{has_lock:1} unless data entity @s data.vexp{key_name:""} unless entity @s[tag=vexp.door_has_key] run tag @s add vexp.lock_blocked
 
 # Mensaje al intentar abrir la puerta bloqueada
 execute if entity @s[tag=vexp.lock_blocked] run title @a[tag=vexp.door_user] actionbar [{"text":"¡Está bloqueada!","color":"white"}]

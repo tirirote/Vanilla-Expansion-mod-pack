@@ -4,6 +4,9 @@
 # Tag player
 tag @s add vexp.attacker
 
+# Cache owner ID for self-filter in target queries.
+scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
+
 #Buff Player
 function vexp:dungeons/states/glow_buffed
 
@@ -12,15 +15,15 @@ execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ 
 execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^6 run function vexp:dungeons/fx/aeo_waves/glowing
 execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^7 run function vexp:dungeons/fx/aeo_waves/glowing
 execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^8 run function vexp:dungeons/fx/aeo_waves/glowing
-function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player"}
-function vexp:utils/sound {sound: "minecraft:entity.glow_squid.hurt", type: "player"}
+function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player", pitch:1}
+function vexp:utils/sound {sound: "minecraft:entity.glow_squid.hurt", type: "player", pitch:1}
 
 # Feedback
-execute positioned ^ ^ ^3.5 if entity @e[predicate=vexp:is_target,distance=..3.5] run function vexp:dungeons/fx/hits/glowing_hit
+execute positioned ^ ^ ^3.5 if entity @e[predicate=vexp:is_target,distance=..3.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/fx/hits/glowing_hit
 
 # Dash damage and knockback
-execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:dungeons/weapons/spear/dash_damage {damage: 3}
-execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] at @s run function vexp:utils/motion/apply_knockback {strength:-4.5, y:0.1}
+execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/weapons/spear/dash_damage {damage: 3}
+execute positioned ^ ^ ^3.5 as @e[predicate=vexp:is_target,distance=..3.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:utils/motion/apply_knockback {strength:-4.5, y:0.1}
 
 #Player Dash
 function vexp:dungeons/weapons/spear/dash
