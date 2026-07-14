@@ -16,7 +16,6 @@
           "vexp": {
             "id": "pile_of_books",
             "model": "vexp:pile_of_books",
-            "item_model": "vexp:pile_of_books",
             "width": 0.95,
             "height": 0.95,
             "type": "pile_of_books",

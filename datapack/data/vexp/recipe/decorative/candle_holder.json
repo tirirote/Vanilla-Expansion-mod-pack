@@ -16,7 +16,6 @@
           "vexp": {
             "id": "candle_holder",
             "model": "vexp:candle_holder",
-            "item_model": "vexp:candle_holder",
             "width": 0.6,
             "height": 0.75,
             "type": "candle_holder",

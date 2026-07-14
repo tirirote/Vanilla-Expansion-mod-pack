@@ -3,8 +3,8 @@
 scoreboard players operation #bag_id vexp.id = @s vexp.id
 
 # Abierta vacia -> modelo abierto base
-execute if entity @s[tag=vexp.bag_opened] unless data entity @s data.vexp.bag_fill_state run data modify entity @s data.vexp.model set value "vexp:bag_opened"
-execute if entity @s[tag=vexp.bag_opened] unless data entity @s data.vexp.bag_fill_state as @e[type=item_display,tag=vexp.custom_block.display,sort=nearest,distance=..1.5] if score @s vexp.id = #bag_id vexp.id run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:bag_opened"]
+execute if entity @s[tag=vexp.bag_opened] if data entity @s data.vexp{bag_fill_state:"empty"} run data modify entity @s data.vexp.model set value "vexp:bag_opened"
+execute if entity @s[tag=vexp.bag_opened] if data entity @s data.vexp{bag_fill_state:"empty"} as @e[type=item_display,tag=vexp.custom_block.display,sort=nearest,distance=..1.5] if score @s vexp.id = #bag_id vexp.id run data modify entity @s item.components."minecraft:custom_model_data".strings set value ["vexp:bag_opened"]
 
 # Cerrada o vacia cerrada -> modelo base
 execute unless entity @s[tag=vexp.bag_opened] run data modify entity @s data.vexp.model set value "vexp:bag"

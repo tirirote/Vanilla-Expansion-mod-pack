@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "pattern": [" S ", " L ", " L "],
+  "pattern": [" S ", "L L", " L "],
   "key": {
     "L": "minecraft:leather",
     "S": "minecraft:string"
@@ -17,19 +17,19 @@
           "vexp": {
             "id": "bag",
             "model": "vexp:bag",
-            "item_model": "vexp:bag",
             "width": 0.85,
             "height": 0.85,
             "type": "bag",
             "name": "Bolsa",
             "s_place": "minecraft:block.wool.place",
             "s_break": "minecraft:block.wool.break",
-            "p_break": "minecraft:block{block_state:{Name:'minecraft:composter'}}",
+            "p_break": "minecraft:block{block_state:{Name:'minecraft:loom'}}",
             "scale": 1,
             "y": 0.475,
-            "bag_open": 0,
-            "bag_count": 0,
-            "bag_item_id": ""
+            "bag_item_id": "none",
+            "item_count": 0,
+            "bag_content": "generic",
+            "bag_fill_state": "empty"
           }
         },
         "Invisible": true,
@@ -42,7 +42,14 @@
       "minecraft:item_name": {
         "text": "Bolsa",
         "italic": false
-      }
+      },
+      "minecraft:lore": [
+        {
+          "text": "Vacía",
+          "color": "gray",
+          "italic": false
+        }
+      ]
     }
   }
 }

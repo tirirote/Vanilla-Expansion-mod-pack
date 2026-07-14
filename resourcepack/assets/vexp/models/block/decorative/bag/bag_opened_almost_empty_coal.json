@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/decorative/bag/bag_opened_almost_empty",
+  "textures": {
+    "content": "vexp:block/decorative/bag/bag_content_coal"
+  }
+}

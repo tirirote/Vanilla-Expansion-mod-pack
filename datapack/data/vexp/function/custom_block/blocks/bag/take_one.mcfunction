@@ -14,9 +14,9 @@ execute store result entity @s data.vexp.item_count int 1 run scoreboard players
 
 # Si queda vacia, limpiar datos y usar modelo abierto base
 execute if score #bag_count vexp.math matches ..0 run data modify entity @s data.vexp.item_count set value 0
-execute if score #bag_count vexp.math matches ..0 run data remove entity @s data.vexp.bag_item_id
-execute if score #bag_count vexp.math matches ..0 run data remove entity @s data.vexp.bag_content
-execute if score #bag_count vexp.math matches ..0 run data remove entity @s data.vexp.bag_fill_state
+execute if score #bag_count vexp.math matches ..0 run data modify entity @s data.vexp.bag_item_id set value "none"
+execute if score #bag_count vexp.math matches ..0 run data modify entity @s data.vexp.bag_content set value "generic"
+execute if score #bag_count vexp.math matches ..0 run data modify entity @s data.vexp.bag_fill_state set value "empty"
 
 execute if score #bag_count vexp.math matches 1.. run function vexp:custom_block/blocks/bag/bag_apply_fill_state
 function vexp:custom_block/blocks/bag/bag_apply_display_model

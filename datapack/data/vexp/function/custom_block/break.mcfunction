@@ -9,11 +9,8 @@ $function vexp:custom_block/blocks/$(type)/on_break
 data modify storage vexp:custom_block item_drop merge from entity @s data.vexp
 execute unless data storage vexp:custom_block item_drop.wp_id run data modify storage vexp:custom_block item_drop.wp_id set value 0
 
-# 3. Puertas y otros bloques con modelo dual: al soltar, usar el item_model si existe.
-execute if data storage vexp:custom_block item_drop.item_model run data modify storage vexp:custom_block item_drop.model set from storage vexp:custom_block item_drop.item_model
-
 # 4. Soltar el ítem usando la macro genérica
-execute unless entity @s[tag=vexp.prevent_drop] unless data entity @s data.vexp{type:"pile_of_books"} run function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop
+execute unless entity @s[tag=vexp.prevent_drop] unless data entity @s data.vexp{type:"pile_of_books"} unless data entity @s data.vexp{type:"bag"} run function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop
 
 # 5. Matar el modelo visual vinculado por ID
 execute store result score #temp_id vexp.id run data get storage vexp:custom_block item_drop.vexp_id
