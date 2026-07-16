@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" I ", " I ", " S "],
   "key": {
-    "I": "minecraft:cobblestone",
+    "I": ["minecraft:cobbled_deepslate", "minecraft:cobblestone"],
     "S": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:stone_sword",
     "components": {
-      "minecraft:item_name": "Espada de piedra",
+      "minecraft:item_name": { "text": "Espada de piedra", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

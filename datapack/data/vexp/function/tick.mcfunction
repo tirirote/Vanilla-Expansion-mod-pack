@@ -15,7 +15,7 @@ function vexp:tnt_stick/tick
 
 # Extra Feedback
 function vexp:player/feedback
-function vexp:feedback/tick
+#function vexp:feedback/tick
 
 #Movement
 #function vexp:movement/tick

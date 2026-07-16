@@ -20,6 +20,10 @@ execute if entity @e[tag=vexp.current_pickup,tag=vexp.netherite,limit=1] run tag
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.echo,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.echo
 execute if entity @e[tag=vexp.current_pickup,tag=vexp.glowing,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.glowing
 
+# Transferir data de la dagger
+execute as @e[tag=vexp.current_pickup,limit=1] if data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set from entity @s data.dagger_data
+execute as @e[tag=vexp.current_pickup,limit=1] unless data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set value {}
+
 # Pasar el daño acumulado al picker
 execute as @e[tag=vexp.current_pickup,limit=1] run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage
 tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_damage
@@ -36,9 +40,9 @@ execute as @p[tag=vexp.picker,limit=1] run function vexp:dungeons/weapons/dagger
 playsound minecraft:entity.item.pickup player @a ~ ~ ~ 1 1
 
 # 4. Limpiar entidades exactas de este ID
-execute as @e[tag=vexp.dagger_stuck] if score @s vexp.id = #temp vexp.id run kill @s
-execute as @e[tag=vexp.dagger_stuck_visual] if score @s vexp.id = #temp vexp.id run kill @s
-execute as @e[tag=vexp.dagger_stuck_interact] if score @s vexp.id = #temp vexp.id run kill @s
+execute as @e[tag=vexp.dagger_stuck,sort=nearest,limit=1] if score @s vexp.id = #temp vexp.id run kill @s
+execute as @e[tag=vexp.dagger_stuck_visual,sort=nearest,limit=1] if score @s vexp.id = #temp vexp.id run kill @s
+execute as @e[tag=vexp.dagger_stuck_interact,sort=nearest,limit=1] if score @s vexp.id = #temp vexp.id run kill @s
 
 # Limpiar tags temporales
 tag @e[tag=vexp.current_pickup] remove vexp.current_pickup

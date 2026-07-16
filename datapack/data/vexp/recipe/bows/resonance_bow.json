@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco resonante",
+      "minecraft:item_name": { "text": "Arco resonante", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -28,6 +28,8 @@
           }
         }
       },
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -65,9 +67,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:echo_shard"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_echo"
+      }
     },
     "count": 1
   }

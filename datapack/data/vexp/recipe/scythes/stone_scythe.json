@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["WWW", "  S", "  S"],
   "key": {
-    "W": "minecraft:cobblestone",
+    "W": ["minecraft:cobbled_deepslate", "minecraft:cobblestone"],
     "S": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:stone_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de piedra",
+      "minecraft:item_name": { "text": "Guadaña de piedra", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -26,14 +26,14 @@
           }
         }
       },
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:stone_scythe"]
       },
-      "minecraft:max_damage": 131,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -65,9 +65,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:cobblestone"]
+        "items": "#vexp:repairs_stone"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,

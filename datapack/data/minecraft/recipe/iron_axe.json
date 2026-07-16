@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_axe",
     "components": {
-      "minecraft:item_name": "Hacha de hierro",
+      "minecraft:item_name": { "text": "Hacha de hierro", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 250,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

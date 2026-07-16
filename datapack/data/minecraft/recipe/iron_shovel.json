@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_shovel",
     "components": {
-      "minecraft:item_name": "Pala de hierro",
+      "minecraft:item_name": { "text": "Pala de hierro", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 250,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

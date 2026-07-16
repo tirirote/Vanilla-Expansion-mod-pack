@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_hoe",
     "components": {
-      "minecraft:item_name": "Azada de diamante",
+      "minecraft:item_name": { "text": "Azada de diamante", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
@@ -27,6 +27,8 @@
           }
         }
       },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

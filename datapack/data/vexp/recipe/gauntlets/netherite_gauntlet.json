@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Guantes de netherite",
+      "minecraft:item_name": { "text": "Guantes de netherite", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -28,6 +28,8 @@
           }
         }
       },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -65,9 +67,8 @@
         "strings": ["vexp:netherite_gauntlet"]
       },
       "minecraft:repairable": {
-        "items": ["minecraft:netherite_ingot"]
+        "items": "#vexp:repairs_netherite"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "bow",
         "consume_seconds": 999999,

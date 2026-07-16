@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "WW ", "LL "],
   "key": {
-    "W": "minecraft:cobblestone",
+    "W": ["minecraft:cobbled_deepslate", "minecraft:cobblestone"],
     "L": "minecraft:leather"
   },
   "result": {
     "id": "minecraft:stone_sword",
     "components": {
-      "minecraft:item_name": "Guantes de piedra",
+      "minecraft:item_name": { "text": "Guantes de piedra", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "long_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -63,9 +65,8 @@
         "strings": ["vexp:stone_gauntlet"]
       },
       "minecraft:repairable": {
-        "items": ["minecraft:cobblestone"]
+        "items": "#vexp:repairs_stone"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "bow",
         "consume_seconds": 999999,

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:wooden_sword",
     "components": {
-      "minecraft:item_name": "Lanza de madera",
+      "minecraft:item_name": { "text": "Lanza de madera", "italic": false },
       "minecraft:custom_model_data": {
         "strings": ["vexp:wooden_spear"]
       },
@@ -29,6 +29,8 @@
           }
         }
       },
+      "minecraft:max_damage": 59,
+      "minecraft:damage": 0,
       "swing_animation": {
         "type": "stab"
       },

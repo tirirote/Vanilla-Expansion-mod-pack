@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de hueso",
+      "minecraft:item_name": { "text": "Arco de hueso", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 96,
+      "minecraft:damage": 0,
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone_bow"]
       },
@@ -63,9 +65,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:bone"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_bone"
+      }
     },
     "count": 1
   }

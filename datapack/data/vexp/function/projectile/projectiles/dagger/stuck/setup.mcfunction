@@ -29,7 +29,6 @@ scoreboard players operation @e[type=interaction,tag=vexp.temp_stuck_interact,di
 tag @e[tag=vexp.temp_stuck_visual,distance=..1.5] remove vexp.temp_stuck_visual
 tag @e[tag=vexp.temp_stuck_interact,distance=..1.5] remove vexp.temp_stuck_interact
 
-
 # Limpiar tags temporales
 tag @e[tag=vexp.dagger_target,sort=nearest,limit=1] remove vexp.dagger_target
 tag @s remove vexp.temp_stuck

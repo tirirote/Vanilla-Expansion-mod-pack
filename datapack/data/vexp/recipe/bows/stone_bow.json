@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" MT", "M T", " MT"],
   "key": {
-    "M": "minecraft:cobblestone",
+    "M": ["minecraft:cobbled_deepslate", "minecraft:cobblestone"],
     "T": "minecraft:string"
   },
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de piedra",
+      "minecraft:item_name": { "text": "Arco de piedra", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -63,9 +65,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:cobblestone"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_stone"
+      }
     },
     "count": 1
   }

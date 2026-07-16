@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_sword",
     "components": {
-      "minecraft:item_name": "Lanza de hueso",
+      "minecraft:item_name": { "text": "Lanza de hueso", "italic": false },
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone_spear"]
       },
@@ -29,6 +29,8 @@
           }
         }
       },
+      "minecraft:max_damage": 96,
+      "minecraft:damage": 0,
       "swing_animation": {
         "type": "stab"
       },
@@ -66,9 +68,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:bone"]
+        "items": "#vexp:repairs_bone"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de diamante",
+      "minecraft:item_name": { "text": "Arco de diamante", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -27,6 +27,8 @@
           }
         }
       },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -64,9 +66,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:diamond"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_diamond"
+      }
     },
     "count": 1
   }

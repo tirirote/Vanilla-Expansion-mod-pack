@@ -1,8 +1,7 @@
 # dungeons/states/gold_buffed.mcfunction
 # @s is the player to be buffed
 tag @s add vexp.diamond_buffed
-scoreboard players set @s vexp.dstate 20
+scoreboard players set @s vexp.dstate 60
 
-#Glowing
-effect give @s glowing 1 0 true
+# Glowing color
 team join vexp.aqua @s

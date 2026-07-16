@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Lanza de netherite",
+      "minecraft:item_name": { "text": "Lanza de netherite", "italic": false },
       "minecraft:custom_model_data": {
         "strings": ["vexp:netherite_spear"]
       },
@@ -31,6 +31,8 @@
           }
         }
       },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
       "swing_animation": {
         "type": "stab"
       },

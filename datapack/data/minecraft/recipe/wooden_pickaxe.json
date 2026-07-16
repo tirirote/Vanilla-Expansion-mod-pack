@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:wooden_pickaxe",
     "components": {
-      "minecraft:item_name": "Pico de madera",
+      "minecraft:item_name": { "text": "Pico de madera", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "pickaxe",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 59,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:wooden_axe",
     "components": {
-      "minecraft:item_name": "Hacha de madera",
+      "minecraft:item_name": { "text": "Hacha de madera", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 59,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:copper_sword",
     "components": {
-      "minecraft:item_name": "Guantes de cobre",
+      "minecraft:item_name": { "text": "Guantes de cobre", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "long_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 190,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -63,9 +65,8 @@
         "strings": ["vexp:copper_gauntlet"]
       },
       "minecraft:repairable": {
-        "items": ["minecraft:copper_ingot"]
+        "items": "#vexp:repairs_copper"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "bow",
         "consume_seconds": 999999,

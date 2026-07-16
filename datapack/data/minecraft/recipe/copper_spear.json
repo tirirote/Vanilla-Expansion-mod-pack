@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:copper_sword",
     "components": {
-      "minecraft:item_name": "Lanza de cobre",
+      "minecraft:item_name": { "text": "Lanza de cobre", "italic": false },
       "minecraft:custom_model_data": {
         "strings": ["vexp:copper_spear"]
       },
@@ -29,6 +29,8 @@
           }
         }
       },
+      "minecraft:max_damage": 190,
+      "minecraft:damage": 0,
       "swing_animation": {
         "type": "stab"
       },

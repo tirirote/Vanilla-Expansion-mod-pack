@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_shovel",
     "components": {
-      "minecraft:item_name": "Pala luminiscente",
+      "minecraft:item_name": { "text": "Pala luminiscente", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
@@ -27,6 +27,8 @@
           }
         }
       },
+      "minecraft:max_damage": 981,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -34,9 +36,8 @@
         "strings": ["vexp:glowing_shovel"]
       },
       "minecraft:repairable": {
-        "items": ["minecraft:diamond"]
+        "items": "#vexp:repairs_glowing"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "trident",
         "consume_seconds": 999999,

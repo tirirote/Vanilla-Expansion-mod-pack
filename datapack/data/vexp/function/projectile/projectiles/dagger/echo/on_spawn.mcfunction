@@ -1,1 +1,0 @@
-# Echo projectile spawn hook

@@ -1,4 +1,4 @@
-$damage @s $(backstab_damage) vexp:combo_hit by @p[tag=vexp.attacker,limit=1]
+$data modify storage vexp:dungeons.weapon combo_params.eff_damage set value $(backstab_damage)
 
 #Feedback
 function vexp:dungeons/fx/enchantments/backstab

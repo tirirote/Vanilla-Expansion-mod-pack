@@ -13,7 +13,10 @@ execute if score #sweep_bonus vexp.math matches ..0 run return 0
 
 execute store result storage vexp:temp sweep_damage float 0.1 run scoreboard players get #sweep_bonus vexp.math
 
-execute as @e[predicate=vexp:is_target,distance=..4.5] at @s run function vexp:dungeons/enchantments/vanilla/hit/sweeping_edge_deal_bonus with storage vexp:temp
+# Cache owner ID for self-filter in target queries.
+scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
+
+execute as @e[predicate=vexp:is_target,distance=..4.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/enchantments/vanilla/hit/sweeping_edge_deal_bonus with storage vexp:temp
 
 #Feedback
 function vexp:dungeons/fx/enchantments/sweeping_edge

@@ -29,13 +29,15 @@ execute if entity @s[tag=vexp.copper] run tag @e[tag=vexp.temp_stuck,sort=neares
 execute if entity @s[tag=vexp.netherite] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.netherite
 execute if entity @s[tag=vexp.echo] run tag @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] add vexp.echo
 
-
 data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] Rotation set from entity @s Rotation
 
 # Transferir daño al marcador stuck
 scoreboard players operation @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] vexp.damage = @s vexp.damage
 
-# Transferir encantamientos al marcador stuck para pickup posterior
+# Transferir data de la daga
+execute if data entity @s data.dagger_data run data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] data.dagger_data set from entity @s data.dagger_data
+execute unless data entity @s data.dagger_data run data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] data.dagger_data set value {}
+
 execute if data entity @s data.enchantments run data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] data.enchantments set from entity @s data.enchantments
 execute unless data entity @s data.enchantments run data modify entity @e[tag=vexp.temp_stuck,sort=nearest,distance=..1,limit=1] data.enchantments set value {}
 

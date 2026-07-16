@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:copper_sword",
     "components": {
-      "minecraft:item_name": "Espada de cobre",
+      "minecraft:item_name": { "text": "Espada de cobre", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 190,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["WW ", " S ", " S "],
   "key": {
-    "W": "minecraft:cobblestone",
+    "W": ["minecraft:cobbled_deepslate", "minecraft:cobblestone"],
     "S": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:stone_hoe",
     "components": {
-      "minecraft:item_name": "Azada de piedra",
+      "minecraft:item_name": { "text": "Azada de piedra", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

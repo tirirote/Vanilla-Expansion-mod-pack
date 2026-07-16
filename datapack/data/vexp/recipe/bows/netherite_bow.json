@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de netherite",
+      "minecraft:item_name": { "text": "Arco de netherite", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -28,6 +28,8 @@
           }
         }
       },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -65,9 +67,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:netherite_ingot"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_netherite"
+      }
     },
     "count": 1
   }

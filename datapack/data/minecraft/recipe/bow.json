@@ -8,11 +8,12 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco de madera",
+      "minecraft:item_name": { "text": "Arco de madera", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "bow",
+          "material": "wood",
           "combo": {
             "desc": "Sencillo y hecho a mano.",
             "rc_desc": "Combo a distancia.",
@@ -25,14 +26,14 @@
           }
         }
       },
+      "minecraft:max_damage": 59,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:wooden_bow"]
       },
-      "minecraft:max_damage": 384,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",

@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["  P", " S ", "S  "],
   "key": {
-    "P": "minecraft:cobblestone",
+    "P": ["minecraft:cobbled_deepslate", "minecraft:cobblestone"],
     "S": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:stone_sword",
     "components": {
-      "minecraft:item_name": "Lanza de piedra",
+      "minecraft:item_name": { "text": "Lanza de piedra", "italic": false },
       "minecraft:custom_model_data": {
         "strings": ["vexp:stone_spear"]
       },
@@ -29,6 +29,8 @@
           }
         }
       },
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 0,
       "swing_animation": {
         "type": "stab"
       },

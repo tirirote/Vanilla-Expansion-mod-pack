@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Guantes de diamante",
+      "minecraft:item_name": { "text": "Guantes de diamante", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "long_combo",
@@ -27,6 +27,8 @@
           }
         }
       },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -64,9 +66,8 @@
         "strings": ["vexp:diamond_gauntlet"]
       },
       "minecraft:repairable": {
-        "items": ["minecraft:diamond"]
+        "items": "#vexp:repairs_diamond"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "bow",
         "consume_seconds": 999999,

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:bow",
     "components": {
-      "minecraft:item_name": "Arco luminiscente",
+      "minecraft:item_name": { "text": "Arco luminiscente", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -28,6 +28,8 @@
           }
         }
       },
+      "minecraft:max_damage": 981,
+      "minecraft:damage": 0,
       "minecraft:custom_model_data": {
         "strings": ["vexp:glowing_bow"]
       },
@@ -65,9 +67,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:glow_ink_sac"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_glowing"
+      }
     },
     "count": 1
   }

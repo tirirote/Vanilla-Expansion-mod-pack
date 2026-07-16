@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_axe",
     "components": {
-      "minecraft:item_name": "Hacha de hueso",
+      "minecraft:item_name": { "text": "Hacha de hueso", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 96,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -63,9 +65,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:bone"]
+        "items": "#vexp:repairs_bone"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "trident",
         "consume_seconds": 999999,

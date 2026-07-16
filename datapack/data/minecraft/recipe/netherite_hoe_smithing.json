@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_hoe",
     "components": {
-      "minecraft:item_name": "Azada de netherite",
+      "minecraft:item_name": { "text": "Azada de netherite", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
@@ -27,6 +27,8 @@
           }
         }
       },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

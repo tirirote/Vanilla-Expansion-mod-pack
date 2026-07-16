@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:iron_sword",
     "components": {
-      "minecraft:item_name": "Daga de hierro",
+      "minecraft:item_name": { "text": "Daga de hierro", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 250,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -49,23 +51,22 @@
         },
         {
           "type": "minecraft:entity_interaction_range",
-          "amount": -1.0,
+          "amount": -1,
           "operation": "add_value",
           "id": "vexp:dagger_reach",
           "slot": "mainhand"
         },
         {
           "type": "minecraft:block_interaction_range",
-          "amount": -1.0,
+          "amount": -1,
           "operation": "add_value",
           "id": "vexp:dagger_block_reach",
           "slot": "mainhand"
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:iron_ingot"]
+        "items": "#vexp:repairs_iron"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "bow",
         "consume_seconds": 999999,

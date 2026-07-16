@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Guadaña de diamante",
+      "minecraft:item_name": { "text": "Guadaña de diamante", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -27,14 +27,14 @@
           }
         }
       },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:diamond_scythe"]
       },
-      "minecraft:max_damage": 1561,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_damage",
@@ -66,9 +66,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:diamond"]
+        "items": "#vexp:repairs_diamond"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "spear",
         "consume_seconds": 999999,

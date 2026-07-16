@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": "Guantes resonantes",
+      "minecraft:item_name": { "text": "Guantes resonantes", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -28,6 +28,8 @@
           }
         }
       },
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
@@ -72,9 +74,8 @@
         "strings": ["vexp:resonance_gauntlet"]
       },
       "minecraft:repairable": {
-        "items": ["minecraft:echo_shard"]
+        "items": "#vexp:repairs_echo"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "bow",
         "consume_seconds": 999999,

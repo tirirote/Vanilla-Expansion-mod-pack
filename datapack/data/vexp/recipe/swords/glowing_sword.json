@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": "Espada luminiscente",
+      "minecraft:item_name": { "text": "Espada luminiscente", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -28,14 +28,14 @@
           }
         }
       },
+      "minecraft:max_damage": 981,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },
       "minecraft:custom_model_data": {
         "strings": ["vexp:glowing_sword"]
       },
-      "minecraft:max_damage": 800,
-      "minecraft:damage": 0,
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:attack_speed",
@@ -60,9 +60,8 @@
         }
       ],
       "minecraft:repairable": {
-        "items": ["minecraft:diamond"]
+        "items": "#vexp:repairs_glowing"
       },
-      "repair_cost": 1,
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,

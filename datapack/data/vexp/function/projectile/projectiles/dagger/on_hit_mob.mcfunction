@@ -23,10 +23,14 @@ execute if entity @s[tag=vexp.glowing] run function vexp:projectile/projectiles/
 execute if entity @s[tag=vexp.diamond] run function vexp:projectile/projectiles/dagger/diamond/on_hit_mob
 execute if entity @s[tag=vexp.gold] run function vexp:projectile/projectiles/dagger/gold/on_hit_mob
 
-# Common hook
-execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.glowing] unless entity @s[tag=vexp.gold] unless entity @s[tag=vexp.diamond] run function vexp:projectile/projectiles/dagger/common_dagger_hit
+# Common dagger hit
+execute unless entity @s[tag=vexp.netherite] unless entity @s[tag=vexp.echo] unless entity @s[tag=vexp.glowing] unless entity @s[tag=vexp.gold] unless entity @s[tag=vexp.diamond] run function vexp:dungeons/fx/hits/strong_sword_hit
 
 function vexp:utils/sound {sound: "minecraft:item.trident.hit_ground", type: "player", pitch:1}
+
+# Transferir data de la dagger
+execute if data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set from entity @s data.dagger_data
+execute unless data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set value {}
 
 # Transferir daño al dueño para la devolución con durabilidad correcta
 scoreboard players operation @p[tag=vexp.dagger_owner,limit=1] vexp.damage = @s vexp.damage

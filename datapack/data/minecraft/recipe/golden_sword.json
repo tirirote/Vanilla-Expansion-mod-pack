@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:golden_sword",
     "components": {
-      "minecraft:item_name": "Espada de oro",
+      "minecraft:item_name": { "text": "Espada de oro", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
@@ -27,6 +27,8 @@
           }
         }
       },
+      "minecraft:max_damage": 32,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

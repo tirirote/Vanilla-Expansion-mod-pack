@@ -15,6 +15,14 @@ tag @s add vexp.throwing
 data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.dagger_projectile",proj_type:"dagger",proj_data:{}}
 function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 
+# Guardar data de la daga
+execute if data entity @s SelectedItem.components."minecraft:custom_data" run data modify entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.dagger_data set from entity @s SelectedItem.components."minecraft:custom_data".vexp
+execute unless data entity @s SelectedItem.components."minecraft:custom_data" run data modify entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.dagger_data set value {}
+
+execute if data entity @s SelectedItem.components."minecraft:custom_name" run data modify entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.dagger_data.custom_name set from entity @s SelectedItem.components."minecraft:custom_name"
+
+execute if data entity @s SelectedItem.components."minecraft:item_name" run data modify entity @e[tag=vexp.temp_projectile,distance=..1,limit=1] data.dagger_data.name set from entity @s SelectedItem.components."minecraft:item_name"
+
 # Capturar durabilidad actual para persistirla en el proyectil
 execute store result score @e[tag=vexp.temp_projectile,distance=..1,limit=1] vexp.damage run data get entity @s SelectedItem.components."minecraft:damage"
 

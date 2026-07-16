@@ -1,3 +1,8 @@
-# Echo projectile hook on block hit
-function vexp:projectile/projectiles/dagger/echo/aoe_wave
-execute as @e[predicate=vexp:is_target,distance=..5] at @s run function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
+# On hit block custom hook
+# @s is the dagger
+
+#Buff
+execute as @p[tag=vexp.dagger_owner,limit=1] run function vexp:dungeons/states/echo_buffed
+
+#Feedback
+function vexp:dungeons/fx/aeo_waves/echo
