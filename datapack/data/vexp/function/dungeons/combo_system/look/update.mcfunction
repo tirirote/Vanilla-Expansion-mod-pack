@@ -2,7 +2,7 @@
 # @s is the player
 
 # Track combo users only
-execute unless entity @s[tag=vexp.combo_user] run return 0
+execute unless entity @s[tag=vexp.combo_user] run return fail
 
 # Read current camera yaw (x1 precision)
 execute store result score @s vexp.look_yaw run data get entity @s Rotation[0] 10

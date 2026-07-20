@@ -5,7 +5,7 @@ data remove storage vexp:temp reforge_check
 execute if data entity @s SelectedItem.components."minecraft:lore"[0] run data modify storage vexp:temp reforge_check.line0 set from entity @s SelectedItem.components."minecraft:lore"[0]
 execute unless data storage vexp:temp reforge_check{line0:{text:"Reforja pendiente"}} run return fail
 execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.item run return fail
-execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.damage unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.efficiency run return 0
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.damage unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.efficiency unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.armor.stats run return 0
 
 # Snapshot current custom_data.
 data remove storage vexp:temp reforge_apply
@@ -16,8 +16,16 @@ execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge run
 data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.item_type set from storage vexp:temp reforge_apply.custom_data.vexp.item
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.uses run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.uses set value 0
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.max_uses run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.max_uses set value 3
+
+# Select Weapon
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_combo if data storage vexp:temp reforge_apply.custom_data.vexp.combo run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_combo set from storage vexp:temp reforge_apply.custom_data.vexp.combo
+
+# Select Tool
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_tool if data storage vexp:temp reforge_apply.custom_data.vexp.tool run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_tool set from storage vexp:temp reforge_apply.custom_data.vexp.tool
+
+# Select Armor
+execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_armor if data storage vexp:temp reforge_apply.custom_data.vexp.armor run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_armor set from storage vexp:temp reforge_apply.custom_data.vexp.armor
+
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name set from entity @s SelectedItem.components."minecraft:item_name".text
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name if data entity @s SelectedItem.components."minecraft:item_name" run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name set from entity @s SelectedItem.components."minecraft:item_name"
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name run data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name set value "Objeto"
@@ -37,11 +45,11 @@ execute store result storage vexp:temp reforge_apply.custom_data.vexp.reforge.us
 # Recompute stats from immutable base stats + variant mods.
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.combo run function vexp:dungeons/reforge/stats/apply_weapon_stats
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.tool run function vexp:dungeons/reforge/stats/apply_tool_stats
+execute if data storage vexp:temp reforge_apply.custom_data.vexp.armor run function vexp:dungeons/reforge/stats/apply_armor_stats
 
 # Force lore rebuild with updated stats and rename item as: "Variante NombreBase".
 data remove storage vexp:temp reforge_apply.custom_data.vexp.lore_applied
 data modify storage vexp:temp reforge_apply.base_name set from storage vexp:temp reforge_apply.custom_data.vexp.reforge.base_name
-execute unless data storage vexp:temp reforge_apply.base_name run data modify storage vexp:temp reforge_apply.base_name set value "Arma"
 
 # Name color by reforge result quality.
 data modify storage vexp:temp reforge_apply.color set value "gray"

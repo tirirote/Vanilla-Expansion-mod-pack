@@ -25,8 +25,8 @@ execute as @a if predicate vexp:input_right if score @s vexp.move_prev_d matches
 execute as @a if predicate vexp:input_right if score @s vexp.move_prev_d matches 0 run scoreboard players set @s vexp.move_tap_d 7
 
 # Dash slide (0.2 blocks/tick for 5 ticks)
-execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=1}] at @s if block ^ ^ ^0.2 #minecraft:replaceable run tp @s ^ ^ ^0.2
-execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=2}] at @s if block ^ ^ ^-0.2 #minecraft:replaceable run tp @s ^ ^ ^-0.2
-execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=3}] at @s if block ^0.2 ^ ^ #minecraft:replaceable run tp @s ^0.2 ^ ^
-execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=4}] at @s if block ^-0.2 ^ ^ #minecraft:replaceable run tp @s ^-0.2 ^ ^
+execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=1}] at @s if block ^ ^ ^0.2 #minecraft:replaceable run tp @s ^ ^ ^0.5
+execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=2}] at @s if block ^ ^ ^-0.2 #minecraft:replaceable run tp @s ^ ^ ^-0.5
+execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=3}] at @s if block ^0.2 ^ ^ #minecraft:replaceable run tp @s ^0.5 ^ ^
+execute as @a[scores={vexp.move_slide_ticks=1..,vexp.move_slide_dir=4}] at @s if block ^-0.2 ^ ^ #minecraft:replaceable run tp @s ^-0.5 ^ ^
 execute as @a[scores={vexp.move_slide_ticks=1..}] run scoreboard players remove @s vexp.move_slide_ticks 1

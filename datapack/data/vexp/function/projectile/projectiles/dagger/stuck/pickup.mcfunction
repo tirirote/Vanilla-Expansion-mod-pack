@@ -9,28 +9,28 @@ scoreboard players operation #temp vexp.id = @s vexp.id
 execute as @e[tag=vexp.dagger_stuck] if score @s vexp.id = #temp vexp.id run tag @s add vexp.current_pickup
 
 # Pasar material del marker seleccionado al picker para el give
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.iron,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.iron
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.wood,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.wood
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.stone,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.stone
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.bone,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.bone
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.gold,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.gold
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.diamond,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.diamond
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.copper,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.copper
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.netherite,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.netherite
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.echo,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.echo
-execute if entity @e[tag=vexp.current_pickup,tag=vexp.glowing,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.glowing
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.iron,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.iron
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.wood,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.wood
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.stone,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.stone
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.bone,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.bone
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.gold,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.gold
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.diamond,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.diamond
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.copper,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.copper
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.netherite,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.netherite
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.echo,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.echo
+execute if entity @e[tag=vexp.current_pickup,tag=vexp.glowing,sort=nearest,limit=1] run tag @p[tag=vexp.picker,limit=1] add vexp.glowing
 
 # Transferir data de la dagger
-execute as @e[tag=vexp.current_pickup,limit=1] if data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set from entity @s data.dagger_data
-execute as @e[tag=vexp.current_pickup,limit=1] unless data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set value {}
+execute as @e[tag=vexp.current_pickup,sort=nearest,limit=1] if data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set from entity @s data.dagger_data
+execute as @e[tag=vexp.current_pickup,sort=nearest,limit=1] unless data entity @s data.dagger_data run data modify storage vexp:dungeons.weapon dagger_data set value {}
 
 # Pasar el daño acumulado al picker
-execute as @e[tag=vexp.current_pickup,limit=1] run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage
-tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_damage
+execute as @e[tag=vexp.current_pickup,sort=nearest,limit=1] run scoreboard players operation @p[tag=vexp.picker,limit=1] vexp.damage = @s vexp.damage
+tag @p[tag=vexp.picker,sort=nearest,limit=1] add vexp.restore_dagger_damage
 
 # Pasar encantamientos del marker stuck al flujo de devolución
-execute as @e[tag=vexp.current_pickup,limit=1] if data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set from entity @s data.enchantments
-execute as @e[tag=vexp.current_pickup,limit=1] unless data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set value {}
+execute as @e[tag=vexp.current_pickup,sort=nearest,limit=1] if data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set from entity @s data.enchantments
+execute as @e[tag=vexp.current_pickup,sort=nearest,limit=1] unless data entity @s data.enchantments run data modify storage vexp:dungeons.weapon return.enchantments set value {}
 tag @p[tag=vexp.picker,limit=1] add vexp.restore_dagger_enchantments
 
 # Dar el item (usará los tags que acabamos de ponerle al picker)

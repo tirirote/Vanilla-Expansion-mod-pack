@@ -8,7 +8,27 @@
     "id": "minecraft:netherite_boots",
     "count": 1,
     "components": {
-      "minecraft:item_name": "Botas Resonantes",
+      "minecraft:item_name": { "text": "Botas resonantes", "italic": false },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "echo",
+          "armor": {
+            "desc": "Poderosas y ligeras.",
+            "type": "resonance",
+            "slot": "boots",
+            "stats": {
+              "defense": 3,
+              "damage": 0,
+              "speed": 0.1,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
+          }
+        }
+      },
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0,
       "minecraft:custom_model_data": {
         "strings": ["vexp:resonance_boots"]
       },
@@ -22,22 +42,6 @@
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
-      },
-      "minecraft:custom_data": {
-        "vexp": {
-          "item": "armor",
-          "quality": "echo",
-          "armor": {
-            "desc": "Poderosas y ligeras.",
-            "type": "resonance",
-            "slot": "boots",
-            "stats": {
-              "defense": 3,
-              "toughness": 3,
-              "knockback_resistance": 0.1
-            }
-          }
-        }
       }
     }
   }

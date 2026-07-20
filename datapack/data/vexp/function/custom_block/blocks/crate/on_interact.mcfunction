@@ -5,7 +5,7 @@ execute on target run tag @s add vexp.crate_user
 
 # Mano vacía: vaciar todo el contenido de la crate
 execute unless data entity @a[tag=vexp.crate_user,limit=1] SelectedItem run function vexp:custom_block/blocks/crate/empty_crate
-execute unless data entity @a[tag=vexp.crate_user,limit=1] SelectedItem run function vexp:custom_block/macro/sound {sound:"minecraft:entity.armor_stand.break"}
+execute unless data entity @a[tag=vexp.crate_user,limit=1] SelectedItem run function vexp:custom_block/macro/sound {sound:"minecraft:block.bamboo_wood.hit"}
 
 # Mano con item: intentar insertar en la crate
 execute if data entity @a[tag=vexp.crate_user,limit=1] SelectedItem run function vexp:custom_block/blocks/crate/add_item

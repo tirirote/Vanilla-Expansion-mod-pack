@@ -1,7 +1,6 @@
 # Player Sprint Feedback
 # Trail particles while sprinting based on floor block
-execute as @a[scores={vexp.sprint=1..}] at @s run function vexp:player/sprint_particle
-scoreboard players set @a[scores={vexp.sprint=1..}] vexp.sprint 0
+execute as @a[predicate=vexp:is_sprinting] at @s unless block ~ ~-0.2 ~ #replaceable run particle dust_color_transition{from_color:12892061,to_color:14538947,scale:1.7} ~ ~0.2 ~ 0.2 0 0.2 1 1
 
 # Player Damage Feedback
 # Blood particles when taking damage

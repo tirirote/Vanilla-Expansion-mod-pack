@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:copper_helmet",
+  "addition": "minecraft:amethyst_shard",
+  "result": {
+    "id": "minecraft:copper_helmet",
+    "components": {
+      "minecraft:lore": [
+        {
+          "text": "Reforja pendiente",
+          "italic": false,
+          "color": "dark_aqua"
+        }
+      ]
+    }
+  }
+}

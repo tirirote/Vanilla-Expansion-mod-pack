@@ -14,12 +14,9 @@ execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function
 function vexp:tnt_stick/tick
 
 # Extra Feedback
-function vexp:player/feedback
-#function vexp:feedback/tick
+function vexp:feedback/tick
 
-#Movement
-#function vexp:movement/tick
-
+# Utils
 function vexp:utils/feedback/tick
 
 #Custom mob HP display

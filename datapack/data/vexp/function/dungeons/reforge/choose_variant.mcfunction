@@ -21,6 +21,9 @@ execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_ty
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"hoe"} run function vexp:dungeons/reforge/choose_tool
 execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"shovel"} run function vexp:dungeons/reforge/choose_tool
 
+# Armor
+execute if data storage vexp:temp reforge_apply.custom_data.vexp.reforge{item_type:"armor"} run function vexp:dungeons/reforge/choose_armor
+
 # Persist variant info in custom_data.
 data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.variant_name set from storage vexp:temp reforge_apply.variant_name
 data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.variant_key set from storage vexp:temp reforge_apply.variant_key

@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:copper_hoe",
     "components": {
-      "minecraft:item_name": "Azada de cobre",
+      "minecraft:item_name": {"text": "Azada de cobre", "italic": false},
       "minecraft:custom_data": {
         "vexp": {
           "item": "hoe",
@@ -26,6 +26,8 @@
           }
         }
       },
+      "minecraft:max_damage": 190,
+      "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
       },

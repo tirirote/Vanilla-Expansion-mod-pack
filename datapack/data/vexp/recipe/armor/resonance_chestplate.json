@@ -8,7 +8,27 @@
     "id": "minecraft:netherite_chestplate",
     "count": 1,
     "components": {
-      "minecraft:item_name": "Pechera Resonante",
+      "minecraft:item_name": { "text": "Pechera resonante", "italic": false },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "echo",
+          "armor": {
+            "desc": "Poderosa y ligera.",
+            "type": "resonance",
+            "slot": "chestplate",
+            "stats": {
+              "defense": 8,
+              "damage": 0,
+              "speed": 0.1,
+              "toughness": 3,
+              "knockback_resistance": 0.1
+            }
+          }
+        }
+      },
+      "minecraft:max_damage": 1891,
+      "minecraft:damage": 0,
       "minecraft:custom_model_data": {
         "strings": ["vexp:resonance_chestplate"]
       },
@@ -22,22 +42,6 @@
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
-      },
-      "minecraft:custom_data": {
-        "vexp": {
-          "item": "armor",
-          "quality": "echo",
-          "armor": {
-            "desc": "Poderosa y ligera.",
-            "type": "resonance",
-            "slot": "chestplate",
-            "stats": {
-              "defense": 8,
-              "toughness": 3,
-              "knockback_resistance": 0.1
-            }
-          }
-        }
       }
     }
   }

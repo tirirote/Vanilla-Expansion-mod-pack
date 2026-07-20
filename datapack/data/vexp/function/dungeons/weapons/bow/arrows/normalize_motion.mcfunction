@@ -76,7 +76,7 @@ scoreboard players operation #norm_len2 vexp.math += #nz2 vexp.math
 execute store result entity @s data.vexp.motion_norm_len2 int 1 run scoreboard players get #norm_len2 vexp.math
 
 # Base speed multiplier (scaled by 1000). 1550 => speed 1.55 blocks/tick.
-scoreboard players set #bow_base_speed vexp.math 1050
+scoreboard players set #bow_base_speed vexp.math 1500
 scoreboard players operation #n_x vexp.math *= #bow_base_speed vexp.math
 scoreboard players operation #n_y vexp.math *= #bow_base_speed vexp.math
 scoreboard players operation #n_z vexp.math *= #bow_base_speed vexp.math

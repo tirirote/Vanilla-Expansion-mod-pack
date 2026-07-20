@@ -29,4 +29,5 @@ execute if score #percent vexp.math matches 75.. run data modify storage vexp:te
 function vexp:mob_health/set_name with storage vexp:temp Bar
 
 # 6. Jump to the bar and apply it
-execute on passengers if entity @s[tag=vexp.health_bar] run function vexp:mob_health/update_bar
+execute if entity @s[type=#vexp:mounts] unless entity @p[distance=..2] on passengers if entity @s[tag=vexp.health_bar] run function vexp:mob_health/update_bar
+execute unless entity @s[type=#vexp:mounts] on passengers if entity @s[tag=vexp.health_bar] run function vexp:mob_health/update_bar

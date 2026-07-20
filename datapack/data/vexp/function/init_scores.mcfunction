@@ -14,6 +14,7 @@ scoreboard objectives add vexp.block_anim dummy
 scoreboard objectives add vexp.fuse dummy
 scoreboard objectives add vexp.damage dummy
 scoreboard objectives add vexp.tnt_stick_used minecraft.used:minecraft.experience_bottle
+
 #Health bars
 scoreboard objectives add vexp.hp dummy
 scoreboard objectives add vexp.max_hp dummy
@@ -38,14 +39,23 @@ scoreboard objectives add vexp.wpid dummy
 #Math
 scoreboard objectives add vexp.math dummy
 scoreboard objectives add vexp.rand dummy
+
+scoreboard players set #const_ten vexp.math 10
+scoreboard players set #const_twenty vexp.math 20
+scoreboard players set #const_15 vexp.math 15
+scoreboard players set #const_100 vexp.math 100
+
 scoreboard objectives add vexp.cook_time dummy
-scoreboard players set #force_scale vexp.math 100
+#scoreboard players set #force_scale vexp.math 100
+scoreboard players set #one vexp.math 1
 scoreboard players set #neg_one vexp.math -1
 scoreboard players set #smooth_keep vexp.math 4
 scoreboard players set #smooth_div vexp.math 5
-scoreboard players set #scale1000 vexp.math 1000
+
+# Custom Arrows
 scoreboard players set #bow_gravity_unit vexp.math 50
 scoreboard players set #bow_gravity_mult vexp.math 500
+scoreboard players set #scale1000 vexp.math 1000
 
 scoreboard objectives add vexp.bullet_life dummy
 scoreboard objectives add vexp.handgun_cooldown dummy
@@ -54,6 +64,7 @@ scoreboard objectives add vexp.dummy dummy
 
 #States
 scoreboard objectives add vexp.state dummy
+
 # Combo System
 scoreboard objectives add vexp.combo dummy
 scoreboard objectives add vexp.combo_cooldown dummy
@@ -66,6 +77,11 @@ scoreboard objectives add vexp.right_click dummy
 scoreboard objectives add vexp.hitbox_hide_timer dummy
 scoreboard objectives add vexp.special_hit_window dummy
 
+scoreboard objectives add vexp.cooldown_tenths dummy
+scoreboard objectives add vexp.cooldown_sec_int dummy
+scoreboard objectives add vexp.cooldown_sec_dec dummy
+
+
 #Custom Mobs
 scoreboard objectives add vexp.pathfind_rand dummy
 scoreboard objectives add vexp.mob_cooldown dummy
@@ -75,7 +91,6 @@ scoreboard objectives add vexp.mob_eating_time dummy
 
 # Feedback
 scoreboard objectives add vexp.damage_taken minecraft.custom:minecraft.damage_taken
-scoreboard objectives add vexp.sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add vexp.warn_cd dummy
 scoreboard objectives add vexp.enemy_atk_time dummy
 scoreboard objectives add vexp.debug_tick dummy
