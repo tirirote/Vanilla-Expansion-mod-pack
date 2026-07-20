@@ -1,6 +1,6 @@
 {
   "parent": "vexp:block/fx/swoosh_template",
   "textures": {
-    "swoosh": "vexp:block/fx/sweeping_edge"
+    "swoosh": "vexp:block/fx/sweeping_edge_l"
   }
 }
