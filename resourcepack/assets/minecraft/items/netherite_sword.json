@@ -58,6 +58,26 @@
         }
       },
       {
+        "when": "vexp:netherite_spellbook",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/netherite_spellbook"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/netherite_spellbook_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:resonance_scythe",
         "model": {
           "type": "minecraft:select",
@@ -75,13 +95,6 @@
             "type": "minecraft:model",
             "model": "vexp:item/dungeons/resonance_scythe_hand"
           }
-        }
-      },
-      {
-        "when": "vexp:netherite_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/netherite_rapier"
         }
       },
       {
@@ -109,13 +122,6 @@
             "type": "minecraft:model",
             "model": "vexp:item/dungeons/resonance_spear_hand"
           }
-        }
-      },
-      {
-        "when": "vexp:resonance_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/resonance_rapier"
         }
       },
       {
@@ -155,6 +161,26 @@
           "fallback": {
             "type": "minecraft:model",
             "model": "vexp:item/dungeons/resonance_gauntlet_hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:resonance_spellbook",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/resonance_spellbook"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/resonance_spellbook_in_hand"
           }
         }
       }

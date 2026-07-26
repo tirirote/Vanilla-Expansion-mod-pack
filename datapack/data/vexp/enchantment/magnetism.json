@@ -1,0 +1,19 @@
+{
+  "description": {
+    "text": "Magnetismo"
+  },
+  "supported_items": "#minecraft:head_armor",
+  "primary_items": "#minecraft:head_armor",
+  "weight": 4,
+  "max_level": 1,
+  "min_cost": {
+    "base": 14,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 34,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": ["head"]
+}

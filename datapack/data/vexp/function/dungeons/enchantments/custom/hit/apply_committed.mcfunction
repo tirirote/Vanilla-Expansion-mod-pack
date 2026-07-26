@@ -2,7 +2,7 @@
 # Bonus: I = 7%, II = 15% of current combo eff_damage.
 
 scoreboard players set #committed_pct vexp.math 7
-execute if score #ench_committed vexp.math matches 2.. run scoreboard players set #committed_pct vexp.math 15
+execute if score @s vexp.enchant.committed matches 2.. run scoreboard players set #committed_pct vexp.math 15
 
 scoreboard players set #committed_bonus vexp.math 0
 execute store result score #committed_bonus vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10

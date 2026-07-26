@@ -1,0 +1,19 @@
+{
+  "description": {
+    "text": "Destello místico"
+  },
+  "supported_items": "#minecraft:chest_armor",
+  "primary_items": "#minecraft:chest_armor",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 14,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 34,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": ["chest"]
+}

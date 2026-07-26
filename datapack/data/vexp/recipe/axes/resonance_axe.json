@@ -50,20 +50,6 @@
           "operation": "add_value",
           "id": "vexp:axe_speed",
           "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:entity_interaction_range",
-          "amount": -1.0,
-          "operation": "add_value",
-          "id": "vexp:axe_reach",
-          "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:block_interaction_range",
-          "amount": -1.0,
-          "operation": "add_value",
-          "id": "vexp:axe_block_reach",
-          "slot": "mainhand"
         }
       ],
       "minecraft:repairable": {

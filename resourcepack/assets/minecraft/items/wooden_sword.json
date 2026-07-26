@@ -76,6 +76,26 @@
             "model": "vexp:item/dungeons/wooden_gauntlet_hand"
           }
         }
+      },
+      {
+        "when": "vexp:wooden_spellbook",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/wooden_spellbook"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/wooden_spellbook_in_hand"
+          }
+        }
       }
     ],
     "fallback": {

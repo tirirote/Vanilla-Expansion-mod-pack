@@ -4,7 +4,7 @@
   },
   "supported_items": "#minecraft:enchantable/sharp_weapon",
   "primary_items": "#minecraft:enchantable/sharp_weapon",
-  "weight": 6,
+  "weight": 7,
   "max_level": 2,
   "min_cost": {
     "base": 8,

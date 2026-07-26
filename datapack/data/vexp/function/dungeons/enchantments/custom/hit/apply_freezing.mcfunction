@@ -1,5 +1,4 @@
-# Freezing I/II/III: apply slowness and mining fatigue to the hit target.
-
+# Freezing: apply slowness and mining fatigue to the hit target.
 execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/states/freezed
 
 #Feedback

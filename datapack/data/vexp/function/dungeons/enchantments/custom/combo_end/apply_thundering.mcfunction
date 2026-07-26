@@ -2,8 +2,8 @@
 # Bonus damage: 10% / 20% / 30% of current combo eff_damage in radius 3.5.
 
 scoreboard players set #thunder_pct vexp.math 10
-execute if score #ench_thundering vexp.math matches 2 run scoreboard players set #thunder_pct vexp.math 20
-execute if score #ench_thundering vexp.math matches 3.. run scoreboard players set #thunder_pct vexp.math 30
+execute if score @s vexp.enchant.thundering matches 2 run scoreboard players set #thunder_pct vexp.math 20
+execute if score @s vexp.enchant.thundering matches 3.. run scoreboard players set #thunder_pct vexp.math 30
 
 scoreboard players set #thunder_bonus vexp.math 0
 execute store result score #thunder_bonus vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10

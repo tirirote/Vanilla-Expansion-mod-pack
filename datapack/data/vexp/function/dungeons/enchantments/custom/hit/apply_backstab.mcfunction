@@ -2,8 +2,8 @@
 # Bonus: 15% / 30% / 45% of current combo eff_damage.
 
 scoreboard players set #backstab_pct vexp.math 15
-execute if score #ench_backstab vexp.math matches 2 run scoreboard players set #backstab_pct vexp.math 30
-execute if score #ench_backstab vexp.math matches 3.. run scoreboard players set #backstab_pct vexp.math 45
+execute if score @s vexp.enchant.backstab matches 2 run scoreboard players set #backstab_pct vexp.math 30
+execute if score @s vexp.enchant.backstab matches 3.. run scoreboard players set #backstab_pct vexp.math 45
 
 # Mark valid backstab targets: attacker is behind the victim.
 tag @e[tag=vexp.hitted,distance=..8] remove vexp.backstab_target
@@ -17,6 +17,10 @@ scoreboard players operation #backstab_bonus vexp.math /= #const_100 vexp.math
 execute if score #backstab_bonus vexp.math matches ..0 run scoreboard players set #backstab_bonus vexp.math 1
 
 execute store result storage vexp:temp backstab_damage int 1 run scoreboard players get #backstab_bonus vexp.math
-execute as @e[tag=vexp.backstab_target,distance=..8] at @s run function vexp:dungeons/enchantments/custom/hit/backstab_deal_bonus with storage vexp:temp
+
+execute as @e[tag=vexp.backstab_target,distance=..8] run function vexp:dungeons/enchantments/custom/hit/backstab_deal_bonus with storage vexp:temp
+
+#Feedback
+execute as @e[tag=vexp.backstab_target,distance=..8] at @s run function vexp:dungeons/fx/enchantments/backstab
 
 tag @e[tag=vexp.backstab_target,distance=..8] remove vexp.backstab_target

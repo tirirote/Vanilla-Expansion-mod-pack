@@ -4,9 +4,9 @@
 $execute if score @s $(score) matches $(loop).. run scoreboard players set @s $(score) $(end)
 
 # Charging
-$execute if score @s $(score) matches ..$(start) positioned ~ ~1.6 ~ run particle entity_effect{color:1695170869} ^ ^ ^2 0 0 0 1 0
-$execute if score @s $(score) matches $(start)..$(end) positioned ~ ~1.6 ~ run particle entity_effect{color:-1912435338} ^ ^ ^2 0 0 0 1 0
-$execute if score @s $(score) matches $(end).. positioned ~ ~1.6 ~ run particle entity_effect{color:-8847413} ^ ^ ^2 0 0 0 1 0
+$execute if score @s $(score) matches ..$(start) positioned ~ ~1.6 ~ positioned ^ ^ ^2 run function vexp:utils/feedback/trail_particle {col:-12203336, duration:17, dX:1, dY:1, dZ:1, count:1, speed:1}
+$execute if score @s $(score) matches $(start)..$(end) positioned ~ ~1.6 ~ positioned ^ ^ ^2 run function vexp:utils/feedback/trail_particle {col:-10363971, duration:11, dX:1, dY:1, dZ:1, count:3, speed:1}
+$execute if score @s $(score) matches $(end).. positioned ~ ~1.6 ~ positioned ^ ^ ^2 run function vexp:utils/feedback/trail_particle {col:-6488120, duration:7, dX:1, dY:1, dZ:1, count:5, speed:1}
 
 # End
 $execute if score @s $(score) matches $(end) positioned ~ ~1.6 ~ run particle flash{color:-6488120} ^ ^ ^2 1 1 1 1 0

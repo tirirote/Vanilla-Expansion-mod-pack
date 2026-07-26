@@ -62,5 +62,7 @@ data modify storage vexp:temp reforge_apply.custom_data.vexp.reforge.variant_col
 
 function vexp:dungeons/reforge/update_name_and_data_macro with storage vexp:temp reforge_apply
 
+execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge{uses:3} run summon experience_orb ^ ^ ^1 {Value:5}
+execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge{uses:3} run summon experience_orb ^ ^ ^1 {Value:2}
 execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge{uses:3} run function vexp:utils/sound {sound:"minecraft:block.amethyst_block.chime", type:"player", pitch:1}
-execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge{uses:3} positioned ^ ^ ^1.5 run particle instant_effect{color:16744174} ~ ~1.4 ~ 0.1 0.1 0.1 0 3
+execute unless data storage vexp:temp reforge_apply.custom_data.vexp.reforge{uses:3} positioned ~ ~1.25 ~ run particle instant_effect{color:7629567} ^ ^ ^1.5 0.1 0.1 0.1 1 3

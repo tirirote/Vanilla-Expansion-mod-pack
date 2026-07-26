@@ -4,7 +4,7 @@
   },
   "supported_items": "#minecraft:tools",
   "primary_items": "#minecraft:tools",
-  "weight": 4,
+  "weight": 6,
   "max_level": 1,
   "min_cost": {
     "base": 14,

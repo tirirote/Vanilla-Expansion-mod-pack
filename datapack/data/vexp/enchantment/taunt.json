@@ -1,0 +1,19 @@
+{
+  "description": {
+    "text": "Provocar"
+  },
+  "supported_items": "#minecraft:chest_armor",
+  "primary_items": "#minecraft:chest_armor",
+  "weight": 5,
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 3,
+  "slots": ["chest"]
+}

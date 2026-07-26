@@ -48,6 +48,7 @@ execute as @e[tag=vexp.illager_enchanted,scores={vexp.dstate=..0}] run tag @s re
 #Enchantment tags
 execute as @e[tag=vexp.thunder_stunned,scores={vexp.dstate=..0}] run tag @s remove vexp.thunder_stunned
 execute as @e[tag=vexp.freezed,scores={vexp.dstate=..0}] run tag @s remove vexp.freezed
+execute as @e[tag=vexp.enchantment_resonance_buff,scores={vexp.dstate=..0}] run tag @s remove vexp.enchantment_resonance_buff
 
 # Teams clean up
 execute as @a[scores={vexp.dstate=..0}] run effect clear @s glowing

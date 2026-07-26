@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:item/dungeons/spellbook_in_hand_template",
+  "textures": {
+    "spellbook": "vexp:item/dungeons/bone_spellbook_in_hand"
+  }
+}

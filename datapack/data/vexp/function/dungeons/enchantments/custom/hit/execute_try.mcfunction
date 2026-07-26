@@ -16,7 +16,6 @@ scoreboard players operation #exec_doubled vexp.math *= #exec_2 vexp.math
 # If target is NOT below 50% HP, stop
 execute unless score #exec_doubled vexp.math <= #exec_max vexp.math run return 0
 
-# Apply bonus damage: +2.0 per Execute level
-damage @s 2.0 vexp:combo_hit by @p[tag=vexp.attacker,limit=1]
-execute if score #ench_execute vexp.math matches 2.. run damage @s 2.0 vexp:combo_hit by @p[tag=vexp.attacker,limit=1]
+# If target IS below 50% HP, apply the execute damage to storage
+function vexp:dungeons/enchantments/custom/hit/execute_deal_bonus with storage vexp:temp
 

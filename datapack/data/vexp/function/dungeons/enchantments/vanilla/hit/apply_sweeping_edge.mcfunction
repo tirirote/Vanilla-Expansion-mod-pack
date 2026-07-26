@@ -1,8 +1,8 @@
 # Sweeping Edge I/II/III: extra area damage around the main hitted target.
 
 scoreboard players set #sweep_pct vexp.math 50
-execute if score #ench_sweep vexp.math matches 2 run scoreboard players set #sweep_pct vexp.math 67
-execute if score #ench_sweep vexp.math matches 3.. run scoreboard players set #sweep_pct vexp.math 75
+execute if score @s vexp.enchant.sweeping_edge matches 2 run scoreboard players set #sweep_pct vexp.math 67
+execute if score @s vexp.enchant.sweeping_edge matches 3.. run scoreboard players set #sweep_pct vexp.math 75
 
 scoreboard players set #sweep_bonus vexp.math 0
 execute store result score #sweep_bonus vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10

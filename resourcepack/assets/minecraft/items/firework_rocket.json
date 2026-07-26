@@ -221,6 +221,13 @@
         }
       },
       {
+        "when": "vexp:resonance",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/resonance"
+        }
+      },
+      {
         "when": "vexp:hit_indicator_candidate",
         "model": {
           "type": "minecraft:model",

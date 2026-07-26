@@ -145,6 +145,26 @@
         }
       },
       {
+        "when": "vexp:bone_spellbook",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/bone_spellbook"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/bone_spellbook_in_hand"
+          }
+        }
+      },
+      {
         "when": "vexp:iron_scythe",
         "model": {
           "type": "minecraft:select",
@@ -165,13 +185,6 @@
         }
       },
       {
-        "when": "vexp:iron_rapier",
-        "model": {
-          "type": "minecraft:model",
-          "model": "vexp:item/dungeons/iron_rapier"
-        }
-      },
-      {
         "when": "vexp:iron_gauntlet",
         "model": {
           "type": "minecraft:select",
@@ -188,6 +201,26 @@
           "fallback": {
             "type": "minecraft:model",
             "model": "vexp:item/dungeons/iron_gauntlet_hand"
+          }
+        }
+      },
+      {
+        "when": "vexp:iron_spellbook",
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": ["gui", "ground", "fixed"],
+              "model": {
+                "type": "minecraft:model",
+                "model": "vexp:item/dungeons/iron_spellbook"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "vexp:item/dungeons/iron_spellbook_in_hand"
           }
         }
       }

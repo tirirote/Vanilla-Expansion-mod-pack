@@ -1,0 +1,19 @@
+{
+  "description": {
+    "text": "Levitación"
+  },
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "primary_items": "#minecraft:enchantable/leg_armor",
+  "weight": 6,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 11
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 11
+  },
+  "anvil_cost": 3,
+  "slots": ["legs"]
+}
