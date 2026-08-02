@@ -1,4 +1,4 @@
-# dungeons/bow/on_combo.mcfunction
+# Bow on combo hook
 # @s is the target entity
 
 # Custom knockback

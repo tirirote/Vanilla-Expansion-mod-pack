@@ -18,6 +18,7 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.gold_arrow
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.diamond_arrow
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.glowing_arrow
+execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"bone"}}}] as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.bone_arrow
 
 # Tag fully charged arrows based on draw_ticks threshold per quality
 # Common: 16+, Netherite: 12+, Resonance: 10+
@@ -27,6 +28,7 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] if score @s vexp.bow_draw_ticks matches 14.. as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.gold_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.combo_arrow_charged
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] if score @s vexp.bow_draw_ticks matches 11.. as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.diamond_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.combo_arrow_charged
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] if score @s vexp.bow_draw_ticks matches 11.. as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.glowing_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.combo_arrow_charged
+execute if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"bone"}}}] if score @s vexp.bow_draw_ticks matches 11.. as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.bone_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.combo_arrow_charged
 
 # Charged arrows inherit damage from the currently used bow combo params.
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.damage store result entity @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.combo_arrow_charged,tag=!vexp.arrow.damage_applied,distance=..6,sort=nearest,limit=1] damage float 1 run data get entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.damage 1
@@ -42,3 +44,4 @@ execute as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.resonance_arrow,t
 execute as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.gold_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.arrow.type_assigned
 execute as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.diamond_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.arrow.type_assigned
 execute as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.glowing_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.arrow.type_assigned
+execute as @e[type=minecraft:arrow,tag=vexp.bow_arrow,tag=vexp.bone_arrow,tag=!vexp.arrow.type_assigned,distance=..6,sort=nearest,limit=1] run tag @s add vexp.arrow.type_assigned

@@ -1,2 +1,2 @@
 # Custom Cooldown display macro
-$title @s actionbar [{"text":"$(cooldown_sec_int).$(cooldown_sec_dec)s ","color":"gray"}]
+title @s actionbar [{score:{name:"@s","objective":"vexp.cooldown_sec_int"},color:"gray"},{text:".",color:"gray"},{score:{name:"@s","objective":"vexp.cooldown_sec_dec"},color:"gray"},{text:"s",color:"gray"}]

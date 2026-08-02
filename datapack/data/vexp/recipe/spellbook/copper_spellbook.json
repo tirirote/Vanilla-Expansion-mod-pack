@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MBM", "   ", "   "],
+  "key": {
+    "B": "minecraft:book",
+    "M": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "minecraft:copper_sword",
+    "components": {
+      "minecraft:item_name": { "text": "Grimorio de cobre", "italic": false },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "long_combo",
+          "item": "spellbook",
+          "material": "copper",
+          "combo": {
+            "desc": "Mágico y tosco.",
+            "rc_desc": "#TODO",
+            "damage": 3,
+            "cooldown": 4,
+            "right_click_cooldown": 24,
+            "range": 2.5,
+            "reach": 8.5,
+            "quality": "normal"
+          }
+        }
+      },
+      "minecraft:max_damage": 190,
+      "minecraft:damage": 0,
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:copper_spellbook"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:spellbook_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": 1,
+          "operation": "add_value",
+          "id": "vexp:spellbook_speed",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "amount": -1,
+          "operation": "add_value",
+          "id": "vexp:spellbook_reach",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:block_interaction_range",
+          "amount": -1,
+          "operation": "add_value",
+          "id": "vexp:spellbook_block_reach",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_copper"
+      },
+      "consumable": {
+        "animation": "crossbow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    },
+    "count": 1
+  }
+}

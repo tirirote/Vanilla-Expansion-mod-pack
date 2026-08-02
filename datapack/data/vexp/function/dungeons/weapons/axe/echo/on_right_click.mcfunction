@@ -1,4 +1,4 @@
-# dungeons/axe/on_right_click.mcfunction
+# Axe on right click hook
 # @s is the player
 
 #Tag player
@@ -9,8 +9,7 @@ data modify storage vexp:temp projectile_spawn set value {projectile_tag:"vexp.a
 execute rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 
 # Inicializar proyectil
-tag @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] add vexp.keep_rotation
-execute as @e[type=minecraft:armor_stand,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
+execute as @e[type=minecraft:item_display,tag=vexp.axe_projectile,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
 # Buff
 function vexp:dungeons/states/echo_buffed

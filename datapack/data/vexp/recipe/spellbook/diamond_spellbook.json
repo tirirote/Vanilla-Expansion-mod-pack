@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MBM", "   ", "   "],
+  "key": {
+    "B": "minecraft:book",
+    "M": "minecraft:diamond"
+  },
+  "result": {
+    "id": "minecraft:diamond_sword",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Grimorio de diamante",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "long_combo",
+          "item": "spellbook",
+          "material": "diamond",
+          "combo": {
+            "desc": "Mágico y equilibrado.",
+            "rc_desc": "#TODO",
+            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "damage": 5,
+            "cooldown": 6,
+            "right_click_cooldown": 24,
+            "range": 2.5,
+            "reach": 8.5,
+            "quality": "diamond"
+          }
+        }
+      },
+      "minecraft:max_damage": 1561,
+      "minecraft:damage": 0,
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:diamond_spellbook"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:spellbook_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -0.667,
+          "operation": "add_value",
+          "id": "vexp:spellbook_speed",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_diamond"
+      },
+      "consumable": {
+        "animation": "crossbow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    },
+    "count": 1
+  }
+}

@@ -28,3 +28,7 @@ execute if entity @s[tag=vexp.diamond_arrow,tag=vexp.combo_arrow_charged] run fu
 # Glowing arrow
 execute if entity @s[tag=vexp.glowing_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/glowing/on_tick
 execute if entity @s[tag=vexp.glowing_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/glowing/on_tick_charged
+
+# Bone arrow
+execute if entity @s[tag=vexp.bone_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/bone/on_tick
+execute if entity @s[tag=vexp.bone_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/bone/on_tick_charged

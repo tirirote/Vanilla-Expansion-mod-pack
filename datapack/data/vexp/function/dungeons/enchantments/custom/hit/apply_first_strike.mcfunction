@@ -14,7 +14,7 @@ execute if score #first_strike_bonus vexp.math matches ..0 run scoreboard player
 
 execute store result storage vexp:temp first_strike_damage float 0.1 run scoreboard players get #first_strike_bonus vexp.math
 
-execute as @e[tag=vexp.hitted,distance=..8,limit=1] run function vexp:dungeons/enchantments/custom/hit/first_strike_deal_bonus with storage vexp:temp
+execute as @e[tag=vexp.hitted,distance=..16,limit=1] run function vexp:dungeons/enchantments/custom/hit/first_strike_deal_bonus with storage vexp:temp
 
 #Feedback
-execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/fx/enchantments/first_strike
+execute as @e[tag=vexp.hitted,distance=..16] at @s run function vexp:dungeons/fx/enchantments/first_strike

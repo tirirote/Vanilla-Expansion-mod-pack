@@ -3,8 +3,6 @@
     "0": "#swoosh",
     "particle": "#swoosh"
   },
-  "gui_light": "side",
-  "ambientocclusion": false,
   "elements": [
     {
       "from": [0, 8, 0],
@@ -12,9 +10,7 @@
       "faces": {
         "up": { "uv": [0, 0, 16, 16], "texture": "#0" },
         "down": { "uv": [0, 0, 16, 16], "texture": "#0" }
-      },
-      "shade": false,
-      "light_emission": 15
+      }
     }
   ]
 }

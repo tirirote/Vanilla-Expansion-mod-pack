@@ -1,4 +1,5 @@
-# @s is the player, @e[tag=vexp.hitted] is the mob
+# Dagger on combo hook
+# @s is the target entity
 
 # Custom combo finisher
 function vexp:dungeons/weapons/dagger/combo_finisher

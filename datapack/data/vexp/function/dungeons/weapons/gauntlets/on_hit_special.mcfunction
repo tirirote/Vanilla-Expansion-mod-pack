@@ -1,4 +1,4 @@
-# dungeons/gauntlets/on_hit.mcfunction
+# Gauntlets special hit hook
 # @s is the target entity with vexp.hitted.special
 
 # Custom knockback

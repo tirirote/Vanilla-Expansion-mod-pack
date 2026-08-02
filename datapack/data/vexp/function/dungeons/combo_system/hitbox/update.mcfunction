@@ -1,13 +1,13 @@
 # dungeons/combo_system/hitbox/update.mcfunction
+# @s is the player (owner)
 
-# Update local storage with current item combo data
-data modify storage vexp:dungeons.weapon combo_params set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo
+# Evaluate hitbox with mainhand / offhand data
 
-# Also copy the 'item' identifier for our hooks
-data modify storage vexp:dungeons.weapon combo_params.item set from entity @s SelectedItem.components."minecraft:custom_data".vexp.item
+#1. If holding spellbook in offhand, use spellbook data
+execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} unless data entity @s SelectedItem run function vexp:dungeons/combo_system/hitbox/evaluate_summon with entity @s equipment.offhand.components."minecraft:custom_data".vexp.combo
 
-# Copy quality routing key (normal|gold|diamond|netherite|echo)
-data modify storage vexp:dungeons.weapon combo_params.quality set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.quality
+#2. If holding spellbook in offhand, and other thing in mainhand, use mainhand data
+execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} if data entity @s SelectedItem run function vexp:dungeons/combo_system/hitbox/evaluate_summon with entity @s SelectedItem.components."minecraft:custom_data".vexp.combo
 
-# Offload logic to conditional evaluator Macro
-function vexp:dungeons/combo_system/hitbox/evaluate_summon with storage vexp:dungeons.weapon combo_params
+# 3. If not spellbook in offhand, use mainhand data
+execute unless data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} run function vexp:dungeons/combo_system/hitbox/evaluate_summon with entity @s SelectedItem.components."minecraft:custom_data".vexp.combo

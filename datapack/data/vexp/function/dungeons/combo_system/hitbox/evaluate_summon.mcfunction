@@ -14,7 +14,7 @@ execute if score #combo_target_found vexp.math matches 1.. run tag @s add vexp.t
 
 # Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
 # Esto libera la interacción con bloques (cofres, botones) y con el aire.
-execute unless entity @s[tag=vexp.target_found] run return 0
+execute unless entity @s[tag=vexp.target_found] run return fail
 
 # -------------- CORE LOGIC (Solo si estamos mirando a un Mob candidato (cumple el predicado "vexp:is_target")) -------------- #
 
@@ -39,8 +39,15 @@ execute at @s as @e[type=item_display,tag=vexp.combo_hitbox_indicator,limit=1,so
 $execute unless entity @s[tag=vexp.hitbox.found] positioned ^ ^ ^$(reach) run function vexp:dungeons/combo_system/hitbox/summon
 
 # Reposition the one we picked (must be the one without to_remove or newest)
-function vexp:dungeons/combo_system/hitbox/update_pos with storage vexp:dungeons.weapon combo_params
-function vexp:dungeons/combo_system/hitbox/update_hitmark with storage vexp:dungeons.weapon combo_params
+
+#1. If holding spellbook in offhand, use spellbook data
+execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} unless data entity @s SelectedItem run function vexp:dungeons/combo_system/hitbox/update_pos with entity @s equipment.offhand.components."minecraft:custom_data".vexp.combo
+#2. If holding spellbook in offhand, and other thing in mainhand, use mainhand data
+execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} if data entity @s SelectedItem run function vexp:dungeons/combo_system/hitbox/update_pos with entity @s SelectedItem.components."minecraft:custom_data".vexp.combo
+# 3. If not spellbook in offhand, use mainhand data
+execute unless data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} run function vexp:dungeons/combo_system/hitbox/update_pos with entity @s SelectedItem.components."minecraft:custom_data".vexp.combo
+
+function vexp:dungeons/combo_system/hitbox/update_hitmark
 
 # Cleanup temp tags for this player (next player starts clean)
 tag @e[tag=vexp.hitbox.mine_temp] remove vexp.hitbox.mine_temp

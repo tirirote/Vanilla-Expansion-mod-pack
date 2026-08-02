@@ -1,4 +1,4 @@
-# dungeons/axe/on_combo.mcfunction
+# Axe on combo common hook
 # @s is the target entity (one of them)
 
 # Custom knockback

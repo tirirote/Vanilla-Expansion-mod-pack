@@ -1,4 +1,4 @@
-# dungeons/gauntlets/glowing/on_right_click.mcfunction
+# Gauntlets on right click hook
 # @s is the player
 
 # Cache owner ID for self-filter in target queries.

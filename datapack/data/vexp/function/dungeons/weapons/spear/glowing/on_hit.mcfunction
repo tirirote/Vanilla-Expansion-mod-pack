@@ -1,4 +1,4 @@
-# dungeons/spear/glowing/on_hit.mcfunction
+# Spear on hit hook
 # @s is the target entity
 
 # Mark mob

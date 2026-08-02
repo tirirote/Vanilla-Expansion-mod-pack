@@ -1,4 +1,4 @@
-# dungeons/gauntlets/on_hit.mcfunction
+# Gauntlets on hit hook
 # @s is the target entity
 
 # Custom knockback

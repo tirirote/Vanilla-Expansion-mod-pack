@@ -1,4 +1,4 @@
-# dungeons/gauntlets/netherite/on_combo.mcfunction
+# Gauntlets on combo hook
 # @s is the target entity
 
 #Mark target

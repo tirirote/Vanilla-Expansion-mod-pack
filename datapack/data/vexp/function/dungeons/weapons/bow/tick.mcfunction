@@ -1,4 +1,4 @@
-# dungeons/bow/tick.mcfunction
+# Bow on tick hook
 # Native bow integration: tag fired arrows per bow type and process custom arrow hooks.
 
 # 1) Detect players that fired a bow this tick.

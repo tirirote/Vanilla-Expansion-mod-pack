@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "used_spellbook": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{vexp:{item:\"spellbook\"}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vexp:dungeons/combo_system/hooks/interact/apply_interact_params_wrapper"
+  }
+}

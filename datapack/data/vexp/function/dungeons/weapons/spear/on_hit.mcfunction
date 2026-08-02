@@ -1,4 +1,4 @@
-# dungeons/spear/on_hit.mcfunction
+# Spear on hit hook
 # @s is the target entity
 
 # Custom knockback

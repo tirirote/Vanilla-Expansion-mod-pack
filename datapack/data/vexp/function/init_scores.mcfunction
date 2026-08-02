@@ -81,6 +81,37 @@ scoreboard objectives add vexp.cooldown_tenths dummy
 scoreboard objectives add vexp.cooldown_sec_int dummy
 scoreboard objectives add vexp.cooldown_sec_dec dummy
 
+# Enchantments
+
+# vanilla enchants
+scoreboard objectives add vexp.enchant.bane_of_arthropods dummy
+scoreboard objectives add vexp.enchant.fire_aspect dummy
+scoreboard objectives add vexp.enchant.knockback dummy
+scoreboard objectives add vexp.enchant.sharpness dummy
+scoreboard objectives add vexp.enchant.smite dummy
+scoreboard objectives add vexp.enchant.sweeping_edge dummy
+
+# vexp enchants
+scoreboard objectives add vexp.enchant.auto_pickup dummy
+scoreboard objectives add vexp.enchant.backstab dummy
+scoreboard objectives add vexp.enchant.committed dummy
+scoreboard objectives add vexp.enchant.cubism dummy
+scoreboard objectives add vexp.enchant.ender_slayer dummy
+scoreboard objectives add vexp.enchant.execute dummy
+scoreboard objectives add vexp.enchant.first_strike dummy
+scoreboard objectives add vexp.enchant.freeze dummy
+scoreboard objectives add vexp.enchant.healing dummy
+scoreboard objectives add vexp.enchant.lifesteal dummy
+scoreboard objectives add vexp.enchant.light_step dummy
+scoreboard objectives add vexp.enchant.magnetism dummy
+scoreboard objectives add vexp.enchant.pursuit dummy
+scoreboard objectives add vexp.enchant.shockwave dummy
+scoreboard objectives add vexp.enchant.smelting dummy
+scoreboard objectives add vexp.enchant.thundering dummy
+scoreboard objectives add vexp.enchant.wildness dummy
+scoreboard objectives add vexp.enchant.resonance dummy
+scoreboard objectives add vexp.enchant.taunt dummy
+scoreboard objectives add vexp.enchant.levitation dummy
 
 #Custom Mobs
 scoreboard objectives add vexp.pathfind_rand dummy

@@ -23,8 +23,8 @@ execute if score #ender_slayer_bonus vexp.math matches ..0 run scoreboard player
 
 execute store result storage vexp:temp ender_slayer_damage float 0.1 run scoreboard players get #ender_slayer_bonus vexp.math
 
-execute as @e[tag=vexp.hitted,type=#vexp:enchantment_ender_slayer_targets,distance=..8,limit=1] run function vexp:dungeons/enchantments/custom/hit/ender_slayer_deal_bonus with storage vexp:temp
+execute as @e[tag=vexp.hitted,type=#vexp:enchantment_ender_slayer_targets,distance=..16,limit=1] run function vexp:dungeons/enchantments/custom/hit/ender_slayer_deal_bonus with storage vexp:temp
 
 # Status and Feedback effects
-effect give @e[tag=vexp.hitted,type=#vexp:enchantment_ender_slayer_targets,distance=..8] slowness 5 1 true
-execute as @e[tag=vexp.hitted,type=#vexp:enchantment_ender_slayer_targets,distance=..8] at @s run function vexp:dungeons/fx/enchantments/bane
+effect give @e[tag=vexp.hitted,type=#vexp:enchantment_ender_slayer_targets,distance=..16] slowness 5 1 true
+execute as @e[tag=vexp.hitted,type=#vexp:enchantment_ender_slayer_targets,distance=..16] at @s run function vexp:dungeons/fx/enchantments/bane

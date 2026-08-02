@@ -40,6 +40,11 @@ execute if entity @s[tag=vexp.diamond_arrow,tag=vexp.combo_arrow_charged] run fu
 execute if entity @s[tag=vexp.glowing_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/glowing/on_hit_mob
 execute if entity @s[tag=vexp.glowing_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/glowing/on_hit_mob_charged
 
+# Bone arrow
+execute if entity @s[tag=vexp.bone_arrow,tag=!vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/bone/on_hit_mob
+execute if entity @s[tag=vexp.bone_arrow,tag=vexp.combo_arrow_charged] run function vexp:dungeons/weapons/bow/arrows/types/bone/on_hit_mob_charged
+
+
 # Mark impacted mob (vexp.hitted) and spawn damage indicator near arrow collision point.
 execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] at @s run function vexp:dungeons/weapons/bow/arrows/hooks/spawn_damage_indicator
 scoreboard players set #bow_indicator_charged vexp.math 0

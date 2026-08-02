@@ -1,4 +1,4 @@
-# Spear RC
+# Spear on right click hook
 # @s is the player
 
 # Tag player

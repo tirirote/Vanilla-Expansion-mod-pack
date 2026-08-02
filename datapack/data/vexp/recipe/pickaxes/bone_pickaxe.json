@@ -22,7 +22,7 @@
           "combo": {
             "right_click_cooldown": 100,
             "rc_desc": "Minería instantánea.",
-            "quality": "normal"
+            "quality": "bone"
           }
         }
       },

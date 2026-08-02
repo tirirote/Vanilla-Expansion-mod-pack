@@ -1,4 +1,4 @@
-# dungeons/dagger/glowing/on_right_click.mcfunction
+# Dagger on right click hook
 # @s is the player
 
 # Lanzar la daga

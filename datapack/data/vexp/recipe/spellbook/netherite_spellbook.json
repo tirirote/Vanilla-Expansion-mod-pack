@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MBM", "   ", "   "],
+  "key": {
+    "B": "minecraft:book",
+    "M": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "minecraft:netherite_sword",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Grimorio de netherite",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "type": "long_combo",
+          "item": "spellbook",
+          "material": "netherite",
+          "combo": {
+            "desc": "Mágico y brillante.",
+            "rc_desc": "#TODO",
+            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "status_desc": "Aplica [Quemadura profunda].",
+            "damage": 6,
+            "cooldown": 8,
+            "right_click_cooldown": 24,
+            "range": 2.5,
+            "reach": 8.5,
+            "quality": "netherite"
+          }
+        }
+      },
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 0,
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:netherite_spellbook"]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "amount": -1.0,
+          "operation": "add_value",
+          "id": "vexp:spellbook_damage",
+          "slot": "mainhand"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "amount": -1.5,
+          "operation": "add_value",
+          "id": "vexp:spellbook_speed",
+          "slot": "mainhand"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_netherite"
+      },
+      "consumable": {
+        "animation": "crossbow",
+        "consume_seconds": 999999,
+        "has_consume_particles": false
+      }
+    },
+    "count": 1
+  }
+}

@@ -254,6 +254,55 @@
           "type": "minecraft:model",
           "model": "vexp:block/fx/hit_indicator_cooldown"
         }
+      },
+      {
+        "when": "vexp:common_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/common"
+        }
+      },
+      {
+        "when": "vexp:diamond_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/diamond"
+        }
+      },
+      {
+        "when": "vexp:gold_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/gold"
+        }
+      },
+      {
+        "when": "vexp:netherite_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/netherite"
+        }
+      },
+      {
+        "when": "vexp:echo_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/echo"
+        }
+      },
+      {
+        "when": "vexp:glowing_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/glowing"
+        }
+      },
+      {
+        "when": "vexp:bone_spell",
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/bone"
+        }
       }
     ],
     "fallback": {

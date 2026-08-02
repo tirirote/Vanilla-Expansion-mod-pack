@@ -2,7 +2,7 @@
 # @s es el jugador atacante del combo.
 
 # Solo aplicar hooks si hubo al menos una entidad impactada en este golpe.
-execute unless entity @e[tag=vexp.hitted,distance=..8,limit=1] run return 0
+execute unless entity @e[tag=vexp.hitted,distance=..16,limit=1] run return 0
 
 # Encantamientos vanilla bridge.
 function vexp:dungeons/enchantments/vanilla/post_attack_combo

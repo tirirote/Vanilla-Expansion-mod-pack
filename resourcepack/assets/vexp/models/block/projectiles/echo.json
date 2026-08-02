@@ -1,0 +1,6 @@
+{
+  "parent": "vexp:block/projectiles/projectile_template",
+  "textures": {
+    "proj": "vexp:block/projectiles/echo"
+  }
+}

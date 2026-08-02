@@ -1,4 +1,5 @@
-# Custom combo finisher
+# Gauntlets combo finisher
+# @s is the target entity
 
 # Custom knockback
 function vexp:utils/motion/apply_knockback {strength:-1.5, y:1.5}

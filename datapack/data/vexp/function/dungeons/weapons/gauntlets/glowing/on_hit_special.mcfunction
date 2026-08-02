@@ -1,5 +1,5 @@
-# dungeons/gauntlets/on_hit.mcfunction
-# @s is the target entity with vexp.hitted.special
+# Gauntlets special hit hook
+# @s is the target entity
 
 # Mark mob
 function vexp:dungeons/states/glow_marked

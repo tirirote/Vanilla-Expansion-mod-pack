@@ -1,5 +1,5 @@
-# dungeons/gauntlets/on_hit.mcfunction
-# @s is the target entity with vexp.hitted.special
+# Dagger on hit special hook
+# @s is the target entity
 
 # Custom knockback
 function vexp:utils/motion/apply_knockback {strength:1.5, y:0.1}

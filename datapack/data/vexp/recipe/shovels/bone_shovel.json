@@ -22,7 +22,7 @@
           "combo": {
             "right_click_cooldown": 60,
             "rc_desc": "Excavación instantánea.",
-            "quality": "normal"
+            "quality": "bone"
           }
         }
       },

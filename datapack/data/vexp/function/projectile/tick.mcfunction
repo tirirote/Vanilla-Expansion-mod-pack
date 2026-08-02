@@ -9,11 +9,13 @@ execute if score #proj_face vexp.math matches 1.. run tag @s add vexp.needs_owne
 execute if score #proj_radius vexp.math matches 1.. run tag @s add vexp.needs_owner
 execute if score #proj_radius vexp.math matches ..-1 run tag @s add vexp.needs_owner
 
+tag @s add vexp.proj_self_temp
+tag @s remove vexp.proj_has_owner
 execute if entity @s[tag=vexp.needs_owner] run scoreboard players operation #temp vexp.id = @s vexp.id
-execute if entity @s[tag=vexp.needs_owner] as @a if score @s vexp.id = #temp vexp.id run tag @s add vexp.projectile_owner
+execute if entity @s[tag=vexp.needs_owner] as @a if score @s vexp.id = #temp vexp.id run tag @e[tag=vexp.proj_self_temp,limit=1] add vexp.proj_has_owner
 
 # 2. Si necesita dueño y no lo hay, despawn
-execute if entity @s[tag=vexp.needs_owner] unless entity @a[tag=vexp.projectile_owner,limit=1] run function vexp:projectile/despawn
+execute if entity @s[tag=vexp.needs_owner] unless entity @s[tag=vexp.proj_has_owner] run function vexp:projectile/despawn
 
 # 3. Copiar lifetime desde NBT al scoreboard
 execute store result score @s vexp.proj_lifetime run data get entity @s data.proj.lifetime
@@ -31,7 +33,8 @@ execute if entity @s[tag=vexp.projectile] run function vexp:projectile/hooks/on_
 execute if score @s vexp.proj_lifetime matches 1.. run function vexp:projectile/move with entity @s data.proj
 
 # Cleanup de tags
-tag @a[tag=vexp.projectile_owner] remove vexp.projectile_owner
+tag @s remove vexp.proj_has_owner
+tag @s remove vexp.proj_self_temp
 tag @s remove vexp.needs_owner
 
 # 6. Detección de colisiones

@@ -1,4 +1,4 @@
-# dungeons/dagger/on_right_click.mcfunction
+# Dagger on right click
 # @s is the player
 
 # Lanzar la daga

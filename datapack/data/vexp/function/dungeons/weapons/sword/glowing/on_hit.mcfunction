@@ -1,7 +1,7 @@
-# dungeons/sword/glowing/on_hit.mcfunction
+# Sword on hit hook
 # @s is the target entity
 
-#Mark mob
+# Mark mob
 function vexp:dungeons/states/glow_marked
 
 # Custom knockback

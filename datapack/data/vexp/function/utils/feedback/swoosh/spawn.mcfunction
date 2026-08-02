@@ -10,7 +10,7 @@ $scoreboard players set #swoosh_face vexp.math $(face_player)
 
 # Spawn item_display (visual) and armor_stand (dynamic light).
 # face_player=1 keeps current behavior (spawn facing attacker), face_player=0 spawns fixed.
-$execute if score #swoosh_face vexp.math matches 1.. facing entity @p[tag=vexp.attacker,limit=1] eyes run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.7071f,0f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:2,view_range:2.0f}
+$execute if score #swoosh_face vexp.math matches 1.. facing entity @p[tag=vexp.attacker,limit=1] eyes run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[-0.303f,0f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.25f,0.5f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:2,view_range:2.0f}
 
 #Face player = 0
 $execute if score #swoosh_face vexp.math matches ..0 run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0f,0f,0f,0.7071f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:2,view_range:2.0f}

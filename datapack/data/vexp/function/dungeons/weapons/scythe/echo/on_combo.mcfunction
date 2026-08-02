@@ -1,5 +1,5 @@
-# On combo hook
-# @s is the hitted mob
+# Scythe on combo hook
+# @s is the hitted entity
 
 # Custom knockback
 function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.2}

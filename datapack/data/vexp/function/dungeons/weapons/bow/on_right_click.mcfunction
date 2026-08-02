@@ -1,4 +1,4 @@
-# dungeons/bow/on_right_click.mcfunction
+# Bow on right click hold hook
 # @s is the player
 
 function vexp:dungeons/fx/hold/common {score:vexp.bow_draw_ticks, start:8, end:24, loop:48}

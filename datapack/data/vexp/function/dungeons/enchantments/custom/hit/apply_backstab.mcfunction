@@ -6,8 +6,8 @@ execute if score @s vexp.enchant.backstab matches 2 run scoreboard players set #
 execute if score @s vexp.enchant.backstab matches 3.. run scoreboard players set #backstab_pct vexp.math 45
 
 # Mark valid backstab targets: attacker is behind the victim.
-tag @e[tag=vexp.hitted,distance=..8] remove vexp.backstab_target
-execute as @e[tag=vexp.hitted,distance=..8] at @s anchored eyes positioned ^ ^ ^-2 if entity @p[tag=vexp.attacker,limit=1,distance=..3] run tag @s add vexp.backstab_target
+tag @e[tag=vexp.hitted,distance=..16] remove vexp.backstab_target
+execute as @e[tag=vexp.hitted,distance=..16] at @s anchored eyes positioned ^ ^ ^-2 if entity @p[tag=vexp.attacker,limit=1,distance=..3] run tag @s add vexp.backstab_target
 
 scoreboard players set #backstab_bonus vexp.math 0
 execute store result score #backstab_bonus vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10
@@ -18,9 +18,9 @@ execute if score #backstab_bonus vexp.math matches ..0 run scoreboard players se
 
 execute store result storage vexp:temp backstab_damage int 1 run scoreboard players get #backstab_bonus vexp.math
 
-execute as @e[tag=vexp.backstab_target,distance=..8] run function vexp:dungeons/enchantments/custom/hit/backstab_deal_bonus with storage vexp:temp
+execute as @e[tag=vexp.backstab_target,distance=..16] run function vexp:dungeons/enchantments/custom/hit/backstab_deal_bonus with storage vexp:temp
 
 #Feedback
-execute as @e[tag=vexp.backstab_target,distance=..8] at @s run function vexp:dungeons/fx/enchantments/backstab
+execute as @e[tag=vexp.backstab_target,distance=..16] at @s run function vexp:dungeons/fx/enchantments/backstab
 
-tag @e[tag=vexp.backstab_target,distance=..8] remove vexp.backstab_target
+tag @e[tag=vexp.backstab_target,distance=..16] remove vexp.backstab_target

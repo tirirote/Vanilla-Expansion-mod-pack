@@ -1,5 +1,5 @@
-# dungeons/gauntlets/on_hit.mcfunction
-# @s is the target entity with vexp.hitted.special
+# Gauntlets special hit hook
+# @s is the target entity
 
 # Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/diamond_buffed

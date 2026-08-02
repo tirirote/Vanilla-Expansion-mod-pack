@@ -3,13 +3,16 @@
 # Spin se aplica en move/spin.mcfunction (paso independiente — no se incluye aquí).
 # Llamado con 'with entity @s data.proj' → $(randomness), $(speed), $(gravity) disponibles.
 
-function vexp:utils/get_random_128
+execute store result score @s vexp.rand run random value -250..250
 
-$execute if score #random vexp.id matches ..-97 run tp @s ^-$(randomness) ^ ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches -96..-65 run tp @s ^$(randomness) ^ ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches -64..-33 run tp @s ^ ^$(randomness) ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches -32..-1 run tp @s ^ ^-$(randomness) ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches 0..31 run tp @s ^-$(randomness) ^$(randomness) ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches 32..63 run tp @s ^$(randomness) ^$(randomness) ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches 64..95 run tp @s ^-$(randomness) ^-$(randomness) ^$(speed) ~ ~$(gravity)
-$execute if score #random vexp.id matches 96.. run tp @s ^$(randomness) ^-$(randomness) ^$(speed) ~ ~$(gravity)
+$execute if score @s vexp.rand matches ..-200 run tp @s ^$(randomness) ^ ^$(speed) ~-$(spin) ~$(gravity)
+$execute if score @s vexp.rand matches -199..-150 run tp @s ^-$(randomness) ^ ^$(speed) ~ ~$(gravity)
+$execute if score @s vexp.rand matches -149..-100 run tp @s ^ ^$(randomness) ^$(speed) ~$(spin) ~$(gravity)
+$execute if score @s vexp.rand matches -99..-50 run tp @s ^ ^-$(randomness) ^$(speed) ~ ~$(gravity)
+$execute if score @s vexp.rand matches -49..0 run tp @s ^ ^ ^$(speed) ~-$(spin) ~$(gravity)
+
+$execute if score @s vexp.rand matches 1..49 run tp @s ^$(randomness) ^ ^$(speed) ~$(spin) ~-$(gravity)
+$execute if score @s vexp.rand matches 50..99 run tp @s ^-$(randomness) ^ ^$(speed) ~ ~-$(gravity)
+$execute if score @s vexp.rand matches 100..149 run tp @s ^ ^$(randomness) ^$(speed) ~$(spin) ~-$(gravity)
+$execute if score @s vexp.rand matches 150..199 run tp @s ^ ^-$(randomness) ^$(speed) ~ ~-$(gravity)
+$execute if score @s vexp.rand matches 200.. run tp @s ^ ^ ^$(speed) ~$(spin) ~-$(gravity)

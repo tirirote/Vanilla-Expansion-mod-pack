@@ -1,4 +1,4 @@
-# dungeons/sword/on_combo.mcfunction
+# Sword on combo hook
 # @s is the target entity
 
 # Combo finisher

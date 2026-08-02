@@ -1,4 +1,4 @@
-# dungeons/axe/glowing/on_hit.mcfunction
+# Axe on hit hook
 # @s is the target entity
 
 #Mark mob

@@ -1,4 +1,4 @@
-# dungeons/bow/glowing/on_right_click.mcfunction
+# Bow on right click hook
 # @s is the player
 
 function vexp:dungeons/fx/hold/glowing {score:vexp.bow_draw_ticks, start:8, end:24, loop:48}

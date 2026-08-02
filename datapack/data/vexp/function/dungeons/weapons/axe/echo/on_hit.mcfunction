@@ -1,3 +1,4 @@
+# Axe on hit hook
 # @s is the target entity
 
 #Mark mob

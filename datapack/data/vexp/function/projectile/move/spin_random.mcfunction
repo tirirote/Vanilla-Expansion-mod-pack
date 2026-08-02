@@ -3,10 +3,8 @@
 # El valor de spin sigue determinando la magnitud base del giro, pero su aplicación varía.
 # Llamado con 'with entity @s data.proj' → $(spin) disponible.
 
-function vexp:utils/get_random_128
+execute store result score @s vexp.rand run random value -250..250
 
 # Algunos ticks no giran, otros giran una vez y otros giran dos veces.
-$execute if score #random vexp.id matches ..-65 run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
-$execute if score #random vexp.id matches 48..95 run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
-$execute if score #random vexp.id matches 96.. run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
-$execute if score #random vexp.id matches 96.. run tp @s ~ ~ ~ ~$(spin) ~$(gravity)
+$execute if score @s vexp.rand matches 1.. run tp @s ~ ~ ~ ~-$(spin) ~
+$execute if score @s vexp.rand matches ..0 run tp @s ~ ~ ~ ~$(spin) ~

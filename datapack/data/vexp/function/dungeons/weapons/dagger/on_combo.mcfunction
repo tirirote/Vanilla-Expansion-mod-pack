@@ -1,4 +1,4 @@
-# dungeons/dagger/on_combo.mcfunction
+# Dagger on combo hook
 # @s is the target entity
 
 # Custom combo finisher

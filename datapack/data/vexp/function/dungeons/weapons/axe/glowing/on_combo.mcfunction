@@ -1,4 +1,4 @@
-# dungeons/axe/glowing/on_combo.mcfunction
+# Axe on combo hook
 # @s is the target entity (one of them)
 
 # Mark mob

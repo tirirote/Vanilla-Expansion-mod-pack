@@ -8,7 +8,8 @@ $execute if data storage vexp:dungeons.weapon combo_params{quality:"echo"} run f
 $execute if data storage vexp:dungeons.weapon combo_params{quality:"diamond"} run function vexp:dungeons/weapons/$(item)/diamond/on_right_click
 $execute if data storage vexp:dungeons.weapon combo_params{quality:"gold"} run function vexp:dungeons/weapons/$(item)/gold/on_right_click
 $execute if data storage vexp:dungeons.weapon combo_params{quality:"glowing"} run function vexp:dungeons/weapons/$(item)/glowing/on_right_click
+$execute if data storage vexp:dungeons.weapon combo_params{quality:"bone"} run function vexp:dungeons/weapons/$(item)/bone/on_right_click
 
 # 2. Default route (Normal quality or undefined)
 # We use unless guards to ensure only one function runs and to handle missing quality tags
-$execute unless data storage vexp:dungeons.weapon combo_params{quality:"netherite"} unless data storage vexp:dungeons.weapon combo_params{quality:"echo"} unless data storage vexp:dungeons.weapon combo_params{quality:"diamond"} unless data storage vexp:dungeons.weapon combo_params{quality:"gold"} unless data storage vexp:dungeons.weapon combo_params{quality:"glowing"} run function vexp:dungeons/weapons/$(item)/on_right_click
+$execute unless data storage vexp:dungeons.weapon combo_params{quality:"netherite"} unless data storage vexp:dungeons.weapon combo_params{quality:"echo"} unless data storage vexp:dungeons.weapon combo_params{quality:"diamond"} unless data storage vexp:dungeons.weapon combo_params{quality:"gold"} unless data storage vexp:dungeons.weapon combo_params{quality:"glowing"} unless data storage vexp:dungeons.weapon combo_params{quality:"bone"} run function vexp:dungeons/weapons/$(item)/on_right_click

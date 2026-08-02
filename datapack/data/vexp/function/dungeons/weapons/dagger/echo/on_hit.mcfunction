@@ -1,4 +1,5 @@
-# @s is the player, @e[tag=vexp.hitted] is the mob
+# Dagger on hit hook
+# @s is the target entity
 
 # Custom knockback
 function vexp:utils/motion/apply_knockback {strength:0.5, y:0.1}

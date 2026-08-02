@@ -1,4 +1,4 @@
-# dungeons/scythe/netherite/on_combo.mcfunction
+# Scythe on combo hook
 # @s is the target entity
 
 # Custom knockback

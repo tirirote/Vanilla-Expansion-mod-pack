@@ -1,4 +1,4 @@
-# dungeons/bow/glowing/on_combo.mcfunction
+# Bow on combo hook
 # @s is the target entity
 
 # Mark the target

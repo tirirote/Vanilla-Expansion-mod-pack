@@ -1,1 +1,1 @@
-# dungeons/sword/tick.mcfunction
+# Sword on tick hook

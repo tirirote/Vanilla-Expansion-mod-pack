@@ -1,4 +1,4 @@
-# dungeons/spear/gold/on_combo.mcfunction
+# Spear on combo hook
 # @s is the target entity
 
 # Combo finisher

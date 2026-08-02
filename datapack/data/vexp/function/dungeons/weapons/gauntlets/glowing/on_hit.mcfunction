@@ -1,4 +1,4 @@
-# dungeons/gauntlets/glowing/on_hit.mcfunction
+# Gauntlets on hit hook
 # @s is the target entity
 
 # Mark mob

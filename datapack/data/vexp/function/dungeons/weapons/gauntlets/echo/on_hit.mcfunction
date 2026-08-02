@@ -1,5 +1,5 @@
-# dungeons/gauntlets/netherite/on_hit.mcfunction
-# @s is the player, @e[tag=vexp.hitted] is the mob
+# Gauntlets on hit hook
+# @s is the target entity
 
 # Mark mob
 function vexp:dungeons/states/echo_marked

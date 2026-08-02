@@ -25,3 +25,7 @@ execute if entity @s[tag=vexp.diamond_arrow,tag=vexp.combo_arrow_charged] run da
 # Glowing arrows
 execute if entity @s[tag=vexp.glowing_arrow,tag=!vexp.combo_arrow_charged] run data modify entity @s damage set from storage vexp:arrow_config glowing.normal
 execute if entity @s[tag=vexp.glowing_arrow,tag=vexp.combo_arrow_charged] run data modify entity @s damage set from storage vexp:arrow_config glowing.charged
+
+# Bone arrows
+execute if entity @s[tag=vexp.bone_arrow,tag=!vexp.combo_arrow_charged] run data modify entity @s damage set from storage vexp:arrow_config bone.normal
+execute if entity @s[tag=vexp.bone_arrow,tag=vexp.combo_arrow_charged] run data modify entity @s damage set from storage vexp:arrow_config bone.charged

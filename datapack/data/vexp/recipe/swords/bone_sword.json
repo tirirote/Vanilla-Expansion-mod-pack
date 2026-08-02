@@ -22,7 +22,7 @@
             "right_click_cooldown": 24,
             "range": 2.5,
             "reach": 3.5,
-            "quality": "normal"
+            "quality": "bone"
           }
         }
       },

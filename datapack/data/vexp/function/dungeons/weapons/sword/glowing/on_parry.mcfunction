@@ -1,4 +1,4 @@
-# dungeons/sword/parry_success.mcfunction
+# Sword on parry hook
 # @s is the player who parried successfully
 
 # Mark attacker so shared wave helpers attribute damage correctly

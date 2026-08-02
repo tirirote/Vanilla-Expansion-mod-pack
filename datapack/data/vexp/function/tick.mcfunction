@@ -8,7 +8,7 @@ function vexp:dungeons/tick
 function vexp:custom_mobs/tick
 
 # Custom projectile system
-execute as @e[type=minecraft:armor_stand,tag=vexp.projectile] at @s run function vexp:projectile/tick
+execute as @e[type=minecraft:item_display,tag=vexp.projectile] at @s run function vexp:projectile/tick
 
 #Pirotecnics
 function vexp:tnt_stick/tick

@@ -1,5 +1,5 @@
-# dungeons/sword/glowing/on_combo.mcfunction
-# @s is the target entity (one of them)
+# Sword on combo hook
+# @s is the target entity
 
 # Combo finisher
 function vexp:dungeons/weapons/sword/combo_finisher

@@ -13,8 +13,8 @@ execute if score #execute_bonus vexp.math matches ..0 run scoreboard players set
 execute store result storage vexp:temp execute_damage float 0.1 run scoreboard players get #execute_bonus vexp.math
 
 # Run check on all hit targets
-execute as @e[tag=vexp.hitted,distance=..8] run function vexp:dungeons/enchantments/custom/hit/execute_try
+execute as @e[tag=vexp.hitted,distance=..16] run function vexp:dungeons/enchantments/custom/hit/execute_try
 
 # Feedback
-execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/fx/enchantments/execute
+execute as @e[tag=vexp.hitted,distance=..16] at @s run function vexp:dungeons/fx/enchantments/execute
 function vexp:utils/sound {sound: "minecraft:entity.ravager.step", type: "player", pitch:1}

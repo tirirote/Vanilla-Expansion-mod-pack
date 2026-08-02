@@ -1,4 +1,4 @@
-# dungeons/sword/on_hit.mcfunction
+# Sword on hit hook
 # @s is the target entity
 
 # Mark mob

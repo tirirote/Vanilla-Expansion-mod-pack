@@ -27,9 +27,9 @@ scoreboard players operation #pursuit_bonus vexp.math /= #pursuit_max_hp vexp.ma
 execute if score #pursuit_bonus vexp.math matches ..0 run return 0
 
 execute store result storage vexp:temp pursuit_damage float 0.1 run scoreboard players get #pursuit_bonus vexp.math
-execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/enchantments/custom/hit/pursuit_deal_bonus with storage vexp:temp
+execute as @e[tag=vexp.hitted,distance=..16] at @s run function vexp:dungeons/enchantments/custom/hit/pursuit_deal_bonus with storage vexp:temp
 
 #Feedback
-execute as @e[tag=vexp.hitted,distance=..8] at @s run function vexp:dungeons/fx/enchantments/pursuit
+execute as @e[tag=vexp.hitted,distance=..16] at @s run function vexp:dungeons/fx/enchantments/pursuit
 
 function vexp:utils/sound {sound: "minecraft:entity.vex.hurt", type: "player", pitch:1}

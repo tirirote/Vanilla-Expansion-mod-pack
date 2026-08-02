@@ -1,5 +1,5 @@
-# dungeons/gauntlets/on_hit.mcfunction
-# @s is the target entity with vexp.hitted.special
+# Gauntlets on special hit hook
+# @s is the target entity
 
 # Mark mob
 function vexp:dungeons/states/nether_marked

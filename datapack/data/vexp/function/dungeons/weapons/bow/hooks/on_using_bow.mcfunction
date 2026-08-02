@@ -1,4 +1,4 @@
-# dungeons/bow/hooks/on_using_bow.mcfunction
+# Bow on using trigger
 # @s is the player that is currently using a bow.
 
 # Heartbeat while the player is actively holding right click with a custom bow.
@@ -14,7 +14,9 @@ execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.ma
 execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] run function vexp:dungeons/weapons/bow/gold/on_right_click
 execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] run function vexp:dungeons/weapons/bow/diamond/on_right_click
 execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] run function vexp:dungeons/weapons/bow/glowing/on_right_click
-execute if score @s vexp.bow_draw_ticks matches 3.. unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"netherite"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"echo"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] run function vexp:dungeons/weapons/bow/on_right_click
+execute if score @s vexp.bow_draw_ticks matches 3.. if items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"bone"}}}] run function vexp:dungeons/weapons/bow/bone/on_right_click
+
+execute if score @s vexp.bow_draw_ticks matches 3.. unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"netherite"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"echo"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"gold"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"diamond"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"glowing"}}}] unless items entity @s weapon.mainhand *[custom_data~{vexp:{combo:{quality:"bone"}}}] run function vexp:dungeons/weapons/bow/on_right_click
 
 # Allow re-trigger every tick while using item.
 advancement revoke @s only vexp:event/bow_attack

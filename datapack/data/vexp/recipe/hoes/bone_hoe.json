@@ -22,7 +22,7 @@
           "combo": {
             "right_click_cooldown": 30,
             "rc_desc": "Cultivo instantáneo.",
-            "quality": "normal"
+            "quality": "bone"
           }
         }
       },
