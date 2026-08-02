@@ -4,7 +4,7 @@
 function vexp:dungeons/combo_system/update_storage
 
 # Resolve RC
-function vexp:dungeons/combo_system/hooks/interact/apply_interact_params with storage vexp:dungeons.weapon combo_params
+execute if data storage vexp:dungeons.weapon combo_params.right_click_cooldown if data storage vexp:dungeons.weapon combo_params.item run function vexp:dungeons/combo_system/hooks/interact/apply_interact_params with storage vexp:dungeons.weapon combo_params
 
 # Cleanup
 scoreboard players set @s vexp.skill_hold_time 0

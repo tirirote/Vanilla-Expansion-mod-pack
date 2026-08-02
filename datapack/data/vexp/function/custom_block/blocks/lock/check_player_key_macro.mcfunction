@@ -1,0 +1,3 @@
+# Try to get player key macro
+$execute as @a[distance=..6] if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data={vexp:{type:"key"}},minecraft:custom_name="$(key_name)"] as @e[type=interaction,tag=vexp.lock_checking,sort=nearest,limit=1,distance=..6] run tag @s add vexp.lock_has_key
+$execute as @a[distance=..6] if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data={vexp:{type:"key"}},minecraft:item_name={text:"$(key_name)"}] as @e[type=interaction,tag=vexp.lock_checking,sort=nearest,limit=1,distance=..6] run tag @s add vexp.lock_has_key

@@ -14,7 +14,7 @@ execute if data storage vexp:dungeons.weapon combo_params{item:"shovel"} run fun
 execute if data storage vexp:dungeons.weapon combo_params{item:"spellbook"} run function vexp:dungeons/combo_system/hooks/interact/handle_interact_hold
 
 # Non-axe items keep the current immediate right-click behavior.
-execute unless data storage vexp:dungeons.weapon combo_params{item:"axe"} unless data storage vexp:dungeons.weapon combo_params{item:"pickaxe"} unless data storage vexp:dungeons.weapon combo_params{item:"shovel"} unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} if score @s vexp.skill_cooldown matches 0 run function vexp:dungeons/combo_system/hooks/interact/apply_interact_params with storage vexp:dungeons.weapon combo_params
+execute unless data storage vexp:dungeons.weapon combo_params{item:"axe"} unless data storage vexp:dungeons.weapon combo_params{item:"pickaxe"} unless data storage vexp:dungeons.weapon combo_params{item:"shovel"} unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} if score @s vexp.skill_cooldown matches 0 if data storage vexp:dungeons.weapon combo_params.right_click_cooldown if data storage vexp:dungeons.weapon combo_params.item run function vexp:dungeons/combo_system/hooks/interact/apply_interact_params with storage vexp:dungeons.weapon combo_params
 
 # Always revoke advancement (regardless of cooldown) to allow re-detection
-function vexp:dungeons/combo_system/hooks/revoke_attack_advancement with storage vexp:dungeons.weapon combo_params
+execute if data storage vexp:dungeons.weapon combo_params.item run function vexp:dungeons/combo_system/hooks/revoke_attack_advancement with storage vexp:dungeons.weapon combo_params

@@ -12,9 +12,9 @@ function vexp:dungeons/combo_system/hooks/damage_offhand_durability
 execute if entity @s[tag=vexp.hit_critical] as @e[tag=vexp.hitted] at @s run function vexp:dungeons/combo_system/hooks/hit/handle_crit_hit
 
 # Route to combo logic based on item type (adds vexp.combo_end if reached limit)
-execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"short_combo"}}] run function vexp:dungeons/combo_system/combos/process_short
-execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"mid_combo"}}] run function vexp:dungeons/combo_system/combos/process_mid
-execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"long_combo"}}] run function vexp:dungeons/combo_system/combos/process_long
+execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"short_combo"}}] unless data entity @s SelectedItem run function vexp:dungeons/combo_system/combos/process_short
+execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"mid_combo"}}] unless data entity @s SelectedItem run function vexp:dungeons/combo_system/combos/process_mid
+execute if items entity @s weapon.offhand *[custom_data~{vexp:{type:"long_combo"}}] unless data entity @s SelectedItem run function vexp:dungeons/combo_system/combos/process_long
 
 # Route to combo logic based on item type (adds vexp.combo_end if reached limit)
 execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"short_combo"}}] run function vexp:dungeons/combo_system/combos/process_short

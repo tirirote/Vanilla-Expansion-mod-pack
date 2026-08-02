@@ -27,3 +27,4 @@ tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
 tag @a[tag=vexp.attacker] remove vexp.attacker
 tag @e[tag=vexp.hitted] remove vexp.hitted
 tag @e[tag=vexp.parried] remove vexp.parried
+data remove storage vexp:dungeons.weapon combo_params

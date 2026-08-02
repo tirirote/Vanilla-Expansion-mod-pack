@@ -21,3 +21,6 @@ function vexp:dungeons/enchantments/tick
 
 # 4. Custom combat states
 function vexp:dungeons/states/tick
+
+# 5. Handle when new items found
+#execute as @a run function vexp:dungeons/handle_new_weapons/check_hand

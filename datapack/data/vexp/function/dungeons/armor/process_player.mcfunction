@@ -1,5 +1,5 @@
 # dungeons/armor/process_player.mcfunction
 # @s is the player
 function vexp:dungeons/armor/detect_type
-function vexp:dungeons/armor/hooks/tick with storage vexp:dungeons.armor armor_params
-execute if score @s vexp.sprint matches 1.. run function vexp:dungeons/armor/hooks/on_sprint with storage vexp:dungeons.armor armor_params
+execute if entity @s[tag=vexp.armor_equip] run function vexp:dungeons/armor/hooks/tick with entity @s equipment.chest.components."minecraft:custom_data".vexp
+execute if entity @s[tag=vexp.armor_equip] if predicate vexp:is_sprinting run function vexp:dungeons/armor/hooks/on_sprint with entity @s equipment.chest.components."minecraft:custom_data".vexp
