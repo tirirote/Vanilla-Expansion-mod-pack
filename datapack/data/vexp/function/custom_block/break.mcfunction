@@ -7,7 +7,6 @@ $function vexp:custom_block/blocks/$(type)/on_break
 
 # 3. Preparar storage para el drop
 data modify storage vexp:custom_block item_drop merge from entity @s data.vexp
-execute unless data storage vexp:custom_block item_drop.wp_id run data modify storage vexp:custom_block item_drop.wp_id set value 0
 
 # 4. Soltar el ítem usando la macro genérica
 execute unless entity @s[tag=vexp.prevent_drop] unless data entity @s data.vexp{type:"pile_of_books"} unless data entity @s data.vexp{type:"bag"} run function vexp:custom_block/macro/drop with storage vexp:custom_block item_drop

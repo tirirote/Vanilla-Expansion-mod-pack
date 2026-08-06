@@ -36,6 +36,5 @@ execute store result storage vexp:temp swoosh.offset.dx float 0.01 run scoreboar
 execute store result storage vexp:temp swoosh.offset.dy float 0.01 run scoreboard players get #swoosh_ry vexp.math
 execute store result storage vexp:temp swoosh.offset.dz float 0.01 run scoreboard players get #swoosh_rz vexp.math
 
-# Move visual and light together using the same offset
+# Move visual
 function vexp:utils/feedback/swoosh/apply_random_position_macro with storage vexp:temp swoosh.offset
-execute as @e[type=armor_stand,tag=vexp.swoosh_light.new,sort=nearest,limit=1,distance=..1] run function vexp:utils/feedback/swoosh/apply_random_position_macro with storage vexp:temp swoosh.offset

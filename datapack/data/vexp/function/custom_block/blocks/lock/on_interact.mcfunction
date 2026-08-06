@@ -17,7 +17,7 @@ execute unless data entity @s data.vexp{key_name:""} run function vexp:custom_bl
 execute if data entity @s data.vexp{key_name:""} run function vexp:custom_block/macro/sound {sound:"minecraft:block.iron_trapdoor.close"}
 
 # Añadir animación de jitter
-tag @s add vexp.block.jitter
-scoreboard players set @s vexp.block_anim 10
+execute unless entity @s[tag=vexp.lock_door_open] run tag @s add vexp.block.jitter
+execute unless entity @s[tag=vexp.lock_door_open] run scoreboard players set @s vexp.block_anim 10
 
 tag @a[tag=vexp.lock_user] remove vexp.lock_user

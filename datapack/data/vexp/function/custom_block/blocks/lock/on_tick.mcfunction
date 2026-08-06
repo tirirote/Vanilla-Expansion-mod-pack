@@ -45,8 +45,8 @@ execute if data entity @s data.vexp{target_type:"door"} if block ~ ~ ~-1 #minecr
 execute if data entity @s data.vexp{target_type:"door"} if block ~ ~-1 ~-1 #minecraft:doors[open=true] run tag @s add vexp.lock_door_open
 execute if data entity @s data.vexp{target_type:"door"} if block ~ ~1 ~-1 #minecraft:doors[open=true] run tag @s add vexp.lock_door_open
 
-execute if data entity @s data.vexp{target_type:"door"} as @e[type=item_display,tag=vexp.custom_block.display,distance=..2,sort=nearest,limit=1] if score @s vexp.id = #lock_owner_id vexp.id run data modify entity @s interpolation_duration set value 0
-execute if data entity @s data.vexp{target_type:"door"} as @e[type=item_display,tag=vexp.custom_block.display,distance=..2,sort=nearest,limit=1] if score @s vexp.id = #lock_owner_id vexp.id run data modify entity @s start_interpolation set value 0
+execute if data entity @s data.vexp{target_type:"door"} if entity @s[tag=vexp.lock_door_open] as @e[type=item_display,tag=vexp.custom_block.display,distance=..2,sort=nearest,limit=1] if score @s vexp.id = #lock_owner_id vexp.id run data modify entity @s interpolation_duration set value 0
+execute if data entity @s data.vexp{target_type:"door"} if entity @s[tag=vexp.lock_door_open] as @e[type=item_display,tag=vexp.custom_block.display,distance=..2,sort=nearest,limit=1] if score @s vexp.id = #lock_owner_id vexp.id run data modify entity @s start_interpolation set value 0
 
 # Cerrada (mismo offset para delante y detrás)
 # Parte de abajo

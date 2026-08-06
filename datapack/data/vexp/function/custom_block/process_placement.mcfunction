@@ -7,7 +7,6 @@
 data remove storage vexp:custom_block placement
 data merge storage vexp:custom_block {placement:{id:0, model:"", width:0.0d, height:0.0d, type:"", name:"", s_place:"", s_break:"", p_break:"", scale:1.0f, y:0.0f,placeable_anywhere: 0b, face:1b}}
 data modify storage vexp:custom_block placement set from entity @s data.vexp
-execute unless data storage vexp:custom_block placement.wp_id run data modify storage vexp:custom_block placement.wp_id set value 0
 data modify storage vexp:custom_block placement.face set from entity @s Facing
 
 # Restringir placement: solo item_frame en el suelo (encima de bloque)

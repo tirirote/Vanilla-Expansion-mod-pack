@@ -1,9 +1,6 @@
 # dungeons/combo_system/look/update.mcfunction
 # @s is the player
 
-# Track combo users only
-execute unless entity @s[tag=vexp.combo_user] run return fail
-
 # Read current camera yaw (x1 precision)
 execute store result score @s vexp.look_yaw run data get entity @s Rotation[0] 10
 # Read current camera pitch (x1 precision)

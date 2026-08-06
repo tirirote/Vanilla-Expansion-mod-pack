@@ -1,5 +1,5 @@
 $root = Split-Path -Parent $PSScriptRoot
-$patterns = @('*.mcfunction', '*.json', '*.jsonc', '*.mcmeta')
+$patterns = @('*.mcfunction', '*.mcmeta')
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 
 Get-ChildItem -Path $root -Recurse -File | Where-Object {

@@ -36,7 +36,7 @@ scoreboard players add #weapon_damage vexp.math 1
 
 # Write damage back to item unconditionally (includes the breaking value)
 execute store result storage vexp:temp durability.damage int 1 run scoreboard players get #weapon_damage vexp.math
-function vexp:dungeons/combo_system/hooks/write_damage_to_item with storage vexp:temp durability
+function vexp:dungeons/combo_system/hooks/write_damage_to_item_offhand with storage vexp:temp durability
 
 # Debug (post-apply readback)
 execute unless score #weapon_damage vexp.math >= #weapon_max_damage vexp.math store result score #weapon_after_damage vexp.math run data get entity @s equipment.offhand.components."minecraft:damage"

@@ -3,7 +3,7 @@
 # Right-click detection now handled by advancements (sword_attack, axe_attack, dagger_attack, etc)
 
 # Camera look
-execute as @a run function vexp:dungeons/combo_system/look/update
+execute as @a[tag=vexp.combo_user] run function vexp:dungeons/combo_system/look/update
 
 # 0. Hitbox Management
 # Mark all hitboxes for potential removal

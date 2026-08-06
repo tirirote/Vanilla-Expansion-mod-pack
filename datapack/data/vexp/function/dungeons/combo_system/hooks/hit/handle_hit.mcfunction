@@ -25,7 +25,7 @@ execute if items entity @s weapon.mainhand *[custom_data~{vexp:{type:"long_combo
 execute if entity @s[tag=vexp.combo_end] run function vexp:dungeons/combo_system/hooks/combo/end_combo with storage vexp:dungeons.weapon combo_params
 
 # Spawn damage indicators after combo state has been finalized for this hit
-execute as @e[tag=vexp.hitted] at @s run function vexp:mob_health/spawn_damage_on_hit
+execute as @e[tag=vexp.hitted] at @s run function vexp:mob_health/spawn_damage_on_hit {damage:0}
 
 # Special hit window for player
 scoreboard players set #extra_window_ticks vexp.math 18
