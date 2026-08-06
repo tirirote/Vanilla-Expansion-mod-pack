@@ -1,3 +1,2 @@
 # dungeons/nether/projectile/on_tick.mcfunction
-particle minecraft:entity_effect{color:1909043567} ~ ~ ~ 0.1 0.1 0.1 0 1
-particle crit ~ ~ ~ 0.1 0.1 0.1 0.2 5
+function vexp:utils/feedback/trail_particle {col:-1780047, duration:7, dX:1, dY:0.1, dZ:1, count:5, speed:1}

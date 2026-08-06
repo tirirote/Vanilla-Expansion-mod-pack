@@ -303,6 +303,48 @@
           "type": "minecraft:model",
           "model": "item/bone"
         }
+      },
+      {
+        "when": "vexp:common_scythe",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/common_scythe"
+        }
+      },
+      {
+        "when": "vexp:gold_scythe",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/gold_scythe"
+        }
+      },
+      {
+        "when": "vexp:diamond_scythe",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/diamond_scythe"
+        }
+      },
+      {
+        "when": "vexp:netherite_scythe",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/netherite_scythe"
+        }
+      },
+      {
+        "when": "vexp:echo_scythe",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/echo_scythe"
+        }
+      },
+      {
+        "when": "vexp:glowing_scythe",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/glowing_scythe"
+        }
       }
     ],
     "fallback": {
