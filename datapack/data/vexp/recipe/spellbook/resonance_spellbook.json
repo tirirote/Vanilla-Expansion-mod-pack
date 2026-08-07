@@ -18,8 +18,10 @@
           "item": "spellbook",
           "material": "echo",
           "combo": {
-            "desc": "Mágico y tosco.",
-            "rc_desc": "#TODO",
+            "desc": "Encantado y aterrador.",
+            "rc_desc": "Andanada de proyectiles.",
+            "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
+            "status_desc": "Aplica [Oscuridad].",
             "damage": 5,
             "cooldown": 5,
             "right_click_cooldown": 24,

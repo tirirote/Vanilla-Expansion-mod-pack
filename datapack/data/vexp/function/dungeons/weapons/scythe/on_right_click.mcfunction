@@ -12,4 +12,3 @@ execute as @e[type=minecraft:item_display,tag=vexp.scythe_projectile,sort=neares
 
 # Feedback
 function vexp:dungeons/fx/right_click/common
-particle sweep_attack ^ ^ ^2.5 0 0 0 0 0

@@ -16,7 +16,7 @@
           "material": "bone",
           "combo": {
             "desc": "Afilada y macabra.",
-            "rc_desc": "Bloquea y desvía ataques.",
+            "rc_desc": "En guardia.",
             "damage": 5,
             "cooldown": 24,
             "right_click_cooldown": 24,

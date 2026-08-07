@@ -14,7 +14,7 @@
           "item": "hoe",
           "material": "diamond",
           "tool": {
-            "desc": "Una gran azada para tus cultivos.",
+            "desc": "Te sobran diamantes, ¿verdad?",
             "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
             "efficiency": 8.0,
             "damage": 1.0,
@@ -22,7 +22,7 @@
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Cultivo instantáneo.",
+            "rc_desc": "Replantado extendido.",
             "quality": "diamond"
           }
         }
@@ -36,6 +36,9 @@
         "animation": "spear",
         "consume_seconds": 999999,
         "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_diamond"
       }
     },
     "count": 1

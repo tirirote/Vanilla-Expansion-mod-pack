@@ -15,6 +15,8 @@ execute as @e[predicate=vexp:is_target,distance=..2,sort=nearest,limit=1] unless
 
 #Damage Indicator
 execute if score #temp_damage vexp.math matches 1.. run scoreboard players operation #damage vexp.math = #temp_damage vexp.math
+execute if score #temp_damage vexp.math matches 1.. run scoreboard players operation #damage vexp.math *= #100 vexp.math
+
 data modify storage vexp:temp Damage.color set value "yellow"
 data modify storage vexp:temp Damage.bold set value false
 data modify storage vexp:temp Damage.prefix set value " -"

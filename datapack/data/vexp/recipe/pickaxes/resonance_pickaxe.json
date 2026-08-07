@@ -15,7 +15,7 @@
           "material": "echo",
           "tool": {
             "desc": "Poderoso y preciso.",
-            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
             "efficiency": 11.0,
             "damage": 6.0,
             "attack_speed": 1.2

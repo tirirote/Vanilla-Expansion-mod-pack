@@ -3,7 +3,7 @@
   "pattern": ["MBM", "   ", "   "],
   "key": {
     "B": "minecraft:book",
-    "M": "minecraft:command_block"
+    "M": "minecraft:knowledge_book"
   },
   "result": {
     "id": "minecraft:diamond_sword",
@@ -18,10 +18,10 @@
           "item": "spellbook",
           "material": "glowing",
           "combo": {
-            "desc": "Mágico y sigiloso.",
-            "rc_desc": "#TODO",
-            "bonus_desc": "Otorga [Forma etérea] por 2s.",
-            "status_desc": "Aplica [Confusión].",
+            "desc": "Encantado y luminoso.",
+            "rc_desc": "Andanada de proyectiles.",
+            "bonus_desc": "Otorga [Forma sinuosa] por 2s.",
+            "status_desc": "Aplica [Lentitud].",
             "damage": 4,
             "cooldown": 2,
             "right_click_cooldown": 24,

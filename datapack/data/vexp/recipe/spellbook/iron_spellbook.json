@@ -15,8 +15,8 @@
           "item": "spellbook",
           "material": "iron",
           "combo": {
-            "desc": "Mágico y tosco.",
-            "rc_desc": "#TODO",
+            "desc": "Encantado y resistente.",
+            "rc_desc": "Andanada de proyectiles.",
             "damage": 4,
             "cooldown": 4,
             "right_click_cooldown": 24,

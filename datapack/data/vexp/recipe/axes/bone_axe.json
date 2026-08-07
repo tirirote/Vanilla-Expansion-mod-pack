@@ -16,7 +16,7 @@
           "material": "bone",
           "combo": {
             "desc": "Afilada y macabra.",
-            "rc_desc": "Golpe de vindicador.",
+            "rc_desc": "Hachazo de vindicador.",
             "damage": 6,
             "cooldown": 20,
             "right_click_cooldown": 100,

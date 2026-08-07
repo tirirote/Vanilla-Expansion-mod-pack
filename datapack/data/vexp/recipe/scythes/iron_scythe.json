@@ -16,8 +16,8 @@
           "material": "iron",
           "combo": {
             "desc": "Imponente y confiable.",
-            "rc_desc": "Ataque ligero a distancia.",
-            "damage": 7,
+            "rc_desc": "Tajo a distancia.",
+            "damage": 5,
             "cooldown": 48,
             "right_click_cooldown": 36,
             "range": 3.5,

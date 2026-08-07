@@ -17,7 +17,7 @@
           "combo": {
             "desc": "Poderoso y abrasador.",
             "rc_desc": "Combo abrasador a distancia.",
-            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
             "status_desc": "Aplica [Quemadura profunda].",
             "damage": 7,
             "cooldown": 15,

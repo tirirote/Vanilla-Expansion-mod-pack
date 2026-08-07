@@ -16,8 +16,8 @@
           "material": "diamond",
           "combo": {
             "desc": "Rápida y equilibrada.",
-            "rc_desc": "Arrojadiza y precisa.",
-            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "rc_desc": "Arrojadiza.",
+            "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 5,
             "cooldown": 6,
             "right_click_cooldown": 12,

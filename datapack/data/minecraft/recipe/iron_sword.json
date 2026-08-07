@@ -16,7 +16,7 @@
           "material": "iron",
           "combo": {
             "desc": "Resistente y equilibrada.",
-            "rc_desc": "Bloquea y desvía ataques.",
+            "rc_desc": "En guardia.",
             "damage": 7,
             "cooldown": 32,
             "right_click_cooldown": 24,
@@ -45,26 +45,15 @@
           "operation": "add_value",
           "id": "vexp:sword_speed",
           "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:entity_interaction_range",
-          "amount": -0.3,
-          "operation": "add_value",
-          "id": "vexp:sword_reach",
-          "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:block_interaction_range",
-          "amount": -0.3,
-          "operation": "add_value",
-          "id": "vexp:sword_block_reach",
-          "slot": "mainhand"
         }
       ],
       "consumable": {
         "animation": "block",
         "consume_seconds": 999999,
         "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_iron"
       }
     },
     "count": 1

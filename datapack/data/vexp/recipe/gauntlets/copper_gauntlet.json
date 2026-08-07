@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "copper",
           "combo": {
-            "desc": "Rápidos y brillantes.",
-            "rc_desc": "Atrapa al enemigo.",
+            "desc": "Ligeros y brillantes.",
+            "rc_desc": "Agarre firme.",
             "damage": 3,
             "cooldown": 5,
             "right_click_cooldown": 30,

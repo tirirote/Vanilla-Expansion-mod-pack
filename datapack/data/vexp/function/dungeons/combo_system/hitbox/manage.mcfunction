@@ -4,7 +4,7 @@
 execute if score @s vexp.id matches 0 run function vexp:utils/assign_id
 
 # Check for combo item
-tag @s remove vexp.combo_user
+tag @s[tag=vexp.combo_user] remove vexp.combo_user
 
 execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} if items entity @s weapon.offhand *[custom_data~{vexp:{type:"short_combo"}}] unless data entity @s SelectedItem run tag @s add vexp.combo_user
 execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} if items entity @s weapon.offhand *[custom_data~{vexp:{type:"mid_combo"}}] unless data entity @s SelectedItem run tag @s add vexp.combo_user

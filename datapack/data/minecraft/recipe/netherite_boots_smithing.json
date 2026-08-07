@@ -15,14 +15,15 @@
           "quality": "netherite",
           "armor": {
             "desc": "Forjadas en las profundidades del Nether.",
+            "ability": "Aura abrasadora.",
             "type": "netherite",
             "slot": "boots",
             "stats": {
-              "defense": 3,
-              "damage": 0,
-              "speed": 0.1,
-              "toughness": 3,
-              "knockback_resistance": 0.1
+              "defense": 3.0,
+              "damage": 0.0,
+              "speed": "Baja",
+              "toughness": 3.0,
+              "knockback_resistance": "Alta"
             }
           }
         }
@@ -31,6 +32,39 @@
       "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_speed",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_defense",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_toughness",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_knockback_resistance",
+          "slot": "feet"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_netherite"
       }
     }
   }

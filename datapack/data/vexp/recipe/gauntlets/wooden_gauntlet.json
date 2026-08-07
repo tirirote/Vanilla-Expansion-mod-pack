@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "wood",
           "combo": {
-            "desc": "Sencillos y hechos a mano.",
-            "rc_desc": "Atrapa al enemigo.",
+            "desc": "Ligeros y sencillos.",
+            "rc_desc": "Agarre firme.",
             "damage": 1,
             "cooldown": 2,
             "right_click_cooldown": 30,

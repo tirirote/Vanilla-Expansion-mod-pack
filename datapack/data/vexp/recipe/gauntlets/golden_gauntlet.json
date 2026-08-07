@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "gold",
           "combo": {
-            "desc": "Rápidos y elegantes.",
-            "rc_desc": "Atrapa al enemigo.",
+            "desc": "Ligeros y brillantes.",
+            "rc_desc": "Agarre firme.",
             "bonus_desc": "Otorga [Brillo Dorado] por 2s.",
             "damage": 2,
             "cooldown": 2,

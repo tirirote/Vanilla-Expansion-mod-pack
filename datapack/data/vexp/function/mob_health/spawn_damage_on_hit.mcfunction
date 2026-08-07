@@ -6,8 +6,9 @@ scoreboard players operation #damage_raw vexp.math = @s vexp.old_hp
 scoreboard players operation #damage_raw vexp.math -= #hp_new vexp.math
 
 # Display custom damage via macro
-$execute if score #damage_raw vexp.math matches ..0 run scoreboard players set #damage_raw vexp.math $(damage)
-execute if score #damage_raw vexp.math matches 1.. run scoreboard players operation #damage_raw vexp.math *= #100 vexp.math
+$execute if score #damage_raw vexp.math matches ..0 run scoreboard players set #damage_custom vexp.math $(damage)
+scoreboard players operation #damage_custom vexp.math *= #100 vexp.math
+execute if score #damage_raw vexp.math matches ..0 run scoreboard players operation #damage_raw vexp.math = #damage_custom vexp.math
 
 # Fallback: get damage via weapon da
 execute if score #damage_raw vexp.math matches ..0 store result score #damage_raw vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 100

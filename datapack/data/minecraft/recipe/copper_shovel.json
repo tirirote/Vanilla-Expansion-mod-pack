@@ -21,7 +21,7 @@
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Excavación instantánea.",
+            "rc_desc": "Excavado extendido.",
             "quality": "normal"
           }
         }
@@ -30,6 +30,9 @@
       "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_copper"
       },
       "consumable": {
         "animation": "trident",

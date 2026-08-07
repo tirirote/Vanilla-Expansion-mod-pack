@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" W ", " W ", " S "],
   "key": {
-    "W": "minecraft:command_block",
+    "W": "minecraft:knowledge_book",
     "S": "minecraft:stick"
   },
   "result": {
@@ -15,9 +15,9 @@
           "item": "sword",
           "material": "glowing",
           "combo": {
-            "desc": "Sigilosa y rápida.",
-            "rc_desc": "Bloquea y desvía ataques.",
-            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "desc": "Abstracta y luminosa.",
+            "rc_desc": "En guardia.",
+            "bonus_desc": "Otorga [Invisibilidad abstracta] por 2s.",
             "status_desc": "Aplica [Confusión].",
             "damage": 8,
             "cooldown": 30,

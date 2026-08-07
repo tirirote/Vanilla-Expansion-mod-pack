@@ -3,12 +3,12 @@
 
 # 1. Main Dungeons expansion systems
 function vexp:dungeons/reforge/tick
-function vexp:dungeons/lore/tick
+execute as @a run function vexp:dungeons/lore/tick
 function vexp:dungeons/combo_system/tick
 
 # 2. Custom Dungeons Items and weapons tick functions
 function vexp:dungeons/armor/tick
-function vexp:dungeons/weapons/bow/tick
+execute as @a if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"bow"}}] run function vexp:dungeons/weapons/bow/tick
 function vexp:dungeons/weapons/bow/arrows/tick
 function vexp:dungeons/weapons/dagger/tick
 #function vexp:dungeons/weapons/axe/tick
@@ -23,4 +23,4 @@ function vexp:dungeons/enchantments/tick
 function vexp:dungeons/states/tick
 
 # 5. Handle when new items found
-#execute as @a run function vexp:dungeons/handle_new_weapons/check_hand
+execute as @a run function vexp:dungeons/handle_new_weapons/check_new

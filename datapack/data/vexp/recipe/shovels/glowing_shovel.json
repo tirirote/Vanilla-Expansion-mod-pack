@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" W ", " S ", " S "],
   "key": {
-    "W": "minecraft:command_block",
+    "W": "minecraft:knowledge_book",
     "S": "minecraft:stick"
   },
   "result": {

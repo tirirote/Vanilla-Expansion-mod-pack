@@ -1,7 +1,6 @@
 #Buff effects
 effect give @s speed 2 1 true
 effect give @s haste 2 0 true
-effect give @s luck 2 0 true
 effect give @s glowing 2 0 true
 
 #Particles

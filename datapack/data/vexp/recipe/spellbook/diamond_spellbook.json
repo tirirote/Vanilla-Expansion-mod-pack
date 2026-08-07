@@ -18,9 +18,9 @@
           "item": "spellbook",
           "material": "diamond",
           "combo": {
-            "desc": "Mágico y equilibrado.",
-            "rc_desc": "#TODO",
-            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "desc": "Encantado y equilibrado.",
+            "rc_desc": "Andanada de proyectiles.",
+            "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 5,
             "cooldown": 6,
             "right_click_cooldown": 24,

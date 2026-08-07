@@ -1,26 +1,13 @@
-# Map every type of item
+# Map vanilla weapons/tools found without vexp data in mainhand.
+# This dispatcher delegates full component application per item type.
 
-# Weapons
-# Swords
-execute if data entity @s SelectedItem{id:"minecraft:wooden_sword"} run function vexp:dungeons/handle_new_weapons/new/swords/wooden_sword
+execute if items entity @s weapon.mainhand bow unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_bow
 
-# Axes
-execute if data entity @s SelectedItem{id:"minecraft:wooden_axe"} run function vexp:dungeons/handle_new_weapons/new/axes/wooden_axe
+execute if items entity @s weapon.mainhand #swords unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_sword
+execute if items entity @s weapon.mainhand #spears unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_spear
+execute if items entity @s weapon.mainhand #axes unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_axe
+execute if items entity @s weapon.mainhand #pickaxes unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_pickaxe
+execute if items entity @s weapon.mainhand #shovels unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_shovel
+execute if items entity @s weapon.mainhand #hoes unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_hoe
 
-# Daggers
-
-# Gauntlets
-
-# Scythes
-
-# Spears
-
-# Tools
-# Pickaxes
-execute if data entity @s SelectedItem{id:"minecraft:wooden_pickaxe"} run function vexp:dungeons/handle_new_weapons/new/pickaxes/wooden_pickaxe
-
-# Shovels
-execute if data entity @s SelectedItem{id:"minecraft:wooden_shovel"} run function vexp:dungeons/handle_new_weapons/new/shovels/wooden_shovel
-
-# Hoes
-execute if data entity @s SelectedItem{id:"minecraft:wooden_hoe"} run function vexp:dungeons/handle_new_weapons/new/hoes/wooden_hoe
+execute if items entity @s weapon.mainhand #trimmable_armor unless data entity @s SelectedItem.components."minecraft:custom_data".vexp run function vexp:dungeons/handle_new_weapons/macro/apply_armor

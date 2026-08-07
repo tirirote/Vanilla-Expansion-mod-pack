@@ -17,7 +17,7 @@
           "combo": {
             "desc": "Sencillo y hecho a mano.",
             "rc_desc": "Combo a distancia.",
-            "damage": 1,
+            "damage": 2,
             "cooldown": 8,
             "right_click_cooldown": 20,
             "range": 1.5,
@@ -48,26 +48,11 @@
           "operation": "add_value",
           "id": "vexp:bow_speed",
           "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:entity_interaction_range",
-          "amount": 0.0,
-          "operation": "add_value",
-          "id": "vexp:bow_reach",
-          "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:block_interaction_range",
-          "amount": 0.0,
-          "operation": "add_value",
-          "id": "vexp:bow_block_reach",
-          "slot": "mainhand"
         }
       ],
       "minecraft:repairable": {
-        "items": "#minecraft:planks"
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_wood"
+      }
     },
     "count": 1
   }

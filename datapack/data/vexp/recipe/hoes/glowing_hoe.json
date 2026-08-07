@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["WW ", " S ", " S "],
   "key": {
-    "W": "minecraft:command_block",
+    "W": "minecraft:knowledge_book",
     "S": "minecraft:stick"
   },
   "result": {
@@ -15,7 +15,7 @@
           "material": "glowing",
           "tool": {
             "desc": "Azada brillante de labranza precisa.",
-            "bonus_desc": "Otorga [Forma etérea] por 2s.",
+            "bonus_desc": "Otorga [Forma sinuosa] por 2s.",
             "efficiency": 9.0,
             "damage": 1.0,
             "attack_speed": 4.0

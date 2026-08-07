@@ -16,8 +16,8 @@
           "material": "wood",
           "combo": {
             "desc": "Imponente y hecha a mano.",
-            "rc_desc": "Ataque ligero a distancia.",
-            "damage": 3,
+            "rc_desc": "Tajo a distancia.",
+            "damage": 2,
             "cooldown": 18,
             "right_click_cooldown": 36,
             "range": 3.5,

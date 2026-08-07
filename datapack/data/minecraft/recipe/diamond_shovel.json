@@ -14,15 +14,15 @@
           "item": "shovel",
           "material": "diamond",
           "tool": {
-            "desc": "Una buena pala de calidad.",
-            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "desc": "Una pala excelente.",
+            "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "efficiency": 8.0,
             "damage": 5.0,
             "attack_speed": 1.0
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Excavación instantánea.",
+            "rc_desc": "Excavado extendido.",
             "quality": "diamond"
           }
         }
@@ -36,6 +36,9 @@
         "animation": "trident",
         "consume_seconds": 999999,
         "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_diamond"
       }
     },
     "count": 1

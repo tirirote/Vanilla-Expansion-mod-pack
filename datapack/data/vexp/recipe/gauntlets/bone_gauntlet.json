@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "bone",
           "combo": {
-            "desc": "Rápidos y macabros.",
-            "rc_desc": "Atrapa al enemigo.",
+            "desc": "Ligeros y macabros.",
+            "rc_desc": "Agarre firme.",
             "damage": 2,
             "cooldown": 5,
             "right_click_cooldown": 30,

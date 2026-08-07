@@ -15,8 +15,8 @@
           "item": "spellbook",
           "material": "copper",
           "combo": {
-            "desc": "Mágico y tosco.",
-            "rc_desc": "#TODO",
+            "desc": "Encantado y ligero.",
+            "rc_desc": "Andanada de proyectiles.",
             "damage": 3,
             "cooldown": 4,
             "right_click_cooldown": 24,

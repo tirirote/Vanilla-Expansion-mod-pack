@@ -18,9 +18,9 @@
           "item": "spear",
           "material": "diamond",
           "combo": {
-            "desc": "Precisa y con gran alcance.",
+            "desc": "Excelente y con gran alcance.",
             "rc_desc": "Embestida.",
-            "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
+            "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 5,
             "cooldown": 38,
             "right_click_cooldown": 28,
@@ -52,20 +52,6 @@
           "operation": "add_value",
           "id": "vexp:spear_speed",
           "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:entity_interaction_range",
-          "amount": 0.5,
-          "operation": "add_value",
-          "id": "vexp:spear_reach",
-          "slot": "mainhand"
-        },
-        {
-          "type": "minecraft:block_interaction_range",
-          "amount": 0.5,
-          "operation": "add_value",
-          "id": "vexp:spear_block_reach",
-          "slot": "mainhand"
         }
       ],
       "consumable": {
@@ -74,9 +60,8 @@
         "has_consume_particles": false
       },
       "minecraft:repairable": {
-        "items": ["minecraft:diamond"]
-      },
-      "repair_cost": 1
+        "items": "#vexp:repairs_diamond"
+      }
     },
     "count": 1
   }

@@ -16,8 +16,8 @@
           "material": "bone",
           "combo": {
             "desc": "Sencillamente macabra.",
-            "rc_desc": "Ataque ligero a distancia.",
-            "damage": 5,
+            "rc_desc": "Tajo a distancia.",
+            "damage": 4,
             "cooldown": 36,
             "right_click_cooldown": 36,
             "range": 3.5,

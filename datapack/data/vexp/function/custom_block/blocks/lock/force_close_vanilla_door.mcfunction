@@ -2,7 +2,7 @@
 # Se ejecuta POSICIONADO sobre un bloque de puerta (idealmente lower).
 
 # Feedback
-execute if block ~ ~ ~ #minecraft:doors[open=true] run title @a[distance=..6] actionbar [{"text":"¡Está cerrada!","color":"white","italic":false}]
+title @a[distance=..6] actionbar [{"text":"¡Está cerrada!","color":"white","italic":false}]
 
 function vexp:custom_block/blocks/lock/force_close_vanilla_door_type {door:"minecraft:oak_door"}
 function vexp:custom_block/blocks/lock/force_close_vanilla_door_type {door:"minecraft:spruce_door"}

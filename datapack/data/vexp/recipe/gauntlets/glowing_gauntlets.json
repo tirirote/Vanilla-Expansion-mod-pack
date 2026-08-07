@@ -2,23 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["   ", "WW ", "LL "],
   "key": {
-    "W": "minecraft:command_block",
+    "W": "minecraft:knowledge_book",
     "L": "minecraft:leather"
   },
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": { "text": "Guantes luminiscentes", "italic": false },
+      "minecraft:item_name": {
+        "text": "Guantes luminiscentes",
+        "italic": false
+      },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
           "item": "gauntlets",
           "material": "glowing",
           "combo": {
-            "desc": "Sigilosos y rápidos.",
-            "rc_desc": "Atrapa al enemigo.",
-            "bonus_desc": "Otorga [Forma etérea] por 2s.",
-            "status_desc": "Aplica [Confusión].",
+            "desc": "Ligeros y luminosos.",
+            "rc_desc": "Agarre firme.",
+            "bonus_desc": "Otorga [Forma sinuosa] por 2s.",
+            "status_desc": "Aplica [Lentitud].",
             "damage": 3,
             "cooldown": 5,
             "right_click_cooldown": 30,

@@ -8,16 +8,19 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": { "text": "Guantes de netherite", "italic": false },
+      "minecraft:item_name": {
+        "text": "Guantes de netherite",
+        "italic": false
+      },
       "minecraft:custom_data": {
         "vexp": {
           "type": "mid_combo",
           "item": "gauntlets",
           "material": "netherite",
           "combo": {
-            "desc": "Abismalmente poderosos.",
-            "rc_desc": "Atrapa al enemigo.",
-            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "desc": "Ligeros y abrasadores.",
+            "rc_desc": "Agarre firme.",
+            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
             "status_desc": "Aplica [Quemadura profunda].",
             "damage": 6,
             "cooldown": 10,

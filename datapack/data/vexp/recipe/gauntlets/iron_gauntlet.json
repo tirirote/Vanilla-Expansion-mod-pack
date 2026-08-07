@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "iron",
           "combo": {
-            "desc": "Contundentes y resistentes.",
-            "rc_desc": "Atrapa al enemigo.",
+            "desc": "Ligeros y resistentes.",
+            "rc_desc": "Agarre firme.",
             "damage": 3,
             "cooldown": 6,
             "right_click_cooldown": 30,

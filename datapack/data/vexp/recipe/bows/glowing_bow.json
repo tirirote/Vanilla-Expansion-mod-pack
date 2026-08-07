@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [" MT", "M T", " MT"],
   "key": {
-    "M": "minecraft:command_block",
+    "M": "minecraft:knowledge_book",
     "T": "minecraft:string"
   },
   "result": {
@@ -17,8 +17,8 @@
           "combo": {
             "desc": "Brillante y ligero.",
             "rc_desc": "Combo luminoso a distancia.",
-            "bonus_desc": "Otorga [Forma etérea] por 2s.",
-            "status_desc": "Aplica [Confusión].",
+            "bonus_desc": "Otorga [Forma sinuosa] por 2s.",
+            "status_desc": "Aplica [Lentitud].",
             "damage": 5,
             "cooldown": 12,
             "right_click_cooldown": 20,

@@ -2,13 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["WWW", "  S", "  S"],
   "key": {
-    "W": "minecraft:command_block",
+    "W": "minecraft:knowledge_book",
     "S": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:diamond_sword",
     "components": {
-      "minecraft:item_name": { "text": "Guadaña luminiscente", "italic": false },
+      "minecraft:item_name": {
+        "text": "Guadaña luminiscente",
+        "italic": false
+      },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
@@ -16,10 +19,10 @@
           "material": "glowing",
           "combo": {
             "desc": "Sigilosa y poderosa.",
-            "rc_desc": "Ataque ligero a distancia.",
-            "bonus_desc": "Otorga [Forma etérea] por 2s.",
-            "status_desc": "Aplica [Confusión].",
-            "damage": 7,
+            "rc_desc": "Tajo a distancia.",
+            "bonus_desc": "Otorga [Forma sinuosa] por 2s.",
+            "status_desc": "Aplica [Lentitud].",
+            "damage": 6,
             "cooldown": 36,
             "right_click_cooldown": 36,
             "range": 3.5,

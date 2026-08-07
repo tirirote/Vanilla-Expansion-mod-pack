@@ -16,9 +16,9 @@
           "material": "echo",
           "combo": {
             "desc": "Poderosa y aterradora.",
-            "rc_desc": "Golpe de vindicador.",
-            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
-            "status_desc": "Aplica [Ceguera].",
+            "rc_desc": "Hachazo de vindicador.",
+            "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
+            "status_desc": "Aplica [Oscuridad].",
             "damage": 10,
             "cooldown": 32,
             "right_click_cooldown": 100,

@@ -15,9 +15,9 @@
           "item": "gauntlets",
           "material": "diamond",
           "combo": {
-            "desc": "Rápidos y equilibrados.",
-            "rc_desc": "Atrapa al enemigo.",
-            "bonus_desc": "Otorga [Dureza de Diamante] por 2s.",
+            "desc": "Ligeros y equilibrados.",
+            "rc_desc": "Agarre firme.",
+            "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 4,
             "cooldown": 8,
             "right_click_cooldown": 30,

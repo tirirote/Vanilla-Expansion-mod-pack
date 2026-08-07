@@ -18,9 +18,9 @@
           "item": "spellbook",
           "material": "netherite",
           "combo": {
-            "desc": "Mágico y brillante.",
-            "rc_desc": "#TODO",
-            "bonus_desc": "Otorga [Densidad ígnea] por 2s.",
+            "desc": "Encantado y abrasador.",
+            "rc_desc": "Andanada de proyectiles.",
+            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
             "status_desc": "Aplica [Quemadura profunda].",
             "damage": 6,
             "cooldown": 8,

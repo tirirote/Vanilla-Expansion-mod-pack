@@ -21,7 +21,7 @@
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Cultivo instantáneo.",
+            "rc_desc": "Replantado extendido.",
             "quality": "normal"
           }
         }
@@ -33,6 +33,9 @@
         "animation": "spear",
         "consume_seconds": 999999,
         "has_consume_particles": false
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_iron"
       }
     },
     "count": 1

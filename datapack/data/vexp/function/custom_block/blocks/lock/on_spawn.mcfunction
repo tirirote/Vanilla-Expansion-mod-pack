@@ -35,4 +35,10 @@ execute if data entity @s data.vexp{target_type:"door"} if entity @s[tag=vexp.lo
 # Dropear si está colocado mal
 execute if data entity @s data.vexp{target_type:"none"} if data entity @s data.vexp{target_offset:"none"} run function vexp:custom_block/break with entity @s data.vexp
 
+# Dropear si hay otro lock ya configurado
+execute unless score @e[type=interaction,tag=vexp.custom_block.interact,distance=..1,limit=1] vexp.id = #lock_owner_id vexp.id run function vexp:custom_block/break with entity @s data.vexp
+
 tag @s remove vexp.lock_new
+
+# Tag so can't be broken by a player
+tag @s add vexp.prevent_break

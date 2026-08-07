@@ -17,8 +17,8 @@
           "combo": {
             "desc": "Poderoso y aterrador.",
             "rc_desc": "Combo oscuro a distancia.",
-            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
-            "status_desc": "Aplica [Ceguera].",
+            "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
+            "status_desc": "Aplica [Oscuridad].",
             "damage": 6,
             "cooldown": 15,
             "right_click_cooldown": 20,

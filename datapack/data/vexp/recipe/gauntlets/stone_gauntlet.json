@@ -15,8 +15,8 @@
           "item": "gauntlets",
           "material": "stone",
           "combo": {
-            "desc": "Rápidos y toscos.",
-            "rc_desc": "Atrapa al enemigo.",
+            "desc": "Ligeros y toscos.",
+            "rc_desc": "Agarre firme.",
             "damage": 2,
             "cooldown": 4,
             "right_click_cooldown": 30,

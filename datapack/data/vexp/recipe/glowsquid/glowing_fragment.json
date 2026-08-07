@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "ingredients": ["minecraft:prismarine_shard", "minecraft:glow_ink_sac"],
+  "ingredients": ["minecraft:prismarine_crystals", "minecraft:glow_ink_sac"],
   "result": {
-    "id": "minecraft:command_block",
+    "id": "minecraft:knowledge_book",
     "count": 1,
     "components": {
       "minecraft:item_name": {
@@ -20,7 +20,8 @@
           "id": "glowing_fragment",
           "source": "glowsquid"
         }
-      }
+      },
+      "max_stack_size": 64
     }
   }
 }

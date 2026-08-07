@@ -12,7 +12,6 @@ execute store result score #bow_hit_damage_raw vexp.math run data get entity @s 
 execute if score #bow_hit_damage_raw vexp.math matches 0 run execute store result score #bow_hit_damage_raw vexp.math run data get entity @s damage 100
 scoreboard players operation #damage vexp.math = #bow_hit_damage_raw vexp.math
 scoreboard players add #damage vexp.math 99
-scoreboard players operation #damage vexp.math /= #force_scale vexp.math
 scoreboard players set #bow_indicator_charged vexp.math 0
 execute if entity @s[tag=vexp.combo_arrow_charged] run scoreboard players set #bow_indicator_charged vexp.math 1
 

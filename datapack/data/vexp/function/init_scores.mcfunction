@@ -81,6 +81,8 @@ scoreboard objectives add vexp.cooldown_tenths dummy
 scoreboard objectives add vexp.cooldown_sec_int dummy
 scoreboard objectives add vexp.cooldown_sec_dec dummy
 
+scoreboard objectives add vexp.armor_rand dummy
+
 # Enchantments
 
 # vanilla enchants
@@ -188,3 +190,5 @@ team add vexp.light_purple
 team modify vexp.light_purple color light_purple
 team add vexp.dark_purple
 team modify vexp.dark_purple color dark_purple
+team add vexp.green
+team modify vexp.green color green

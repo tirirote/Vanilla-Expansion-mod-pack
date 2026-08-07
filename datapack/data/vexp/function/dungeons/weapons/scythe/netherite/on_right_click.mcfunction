@@ -11,4 +11,3 @@ execute as @e[type=minecraft:item_display,tag=vexp.temp_projectile,tag=vexp.neth
 
 # Feedback
 function vexp:dungeons/fx/right_click/netherite
-particle sweep_attack ^ ^ ^2.5 0 0 0 0 0

@@ -15,8 +15,8 @@
           "item": "spellbook",
           "material": "bone",
           "combo": {
-            "desc": "Mágico y macabro.",
-            "rc_desc": "#TODO",
+            "desc": "Encantado y macabro.",
+            "rc_desc": "Andanada de proyectiles.",
             "damage": 3,
             "cooldown": 3,
             "right_click_cooldown": 24,

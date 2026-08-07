@@ -15,14 +15,15 @@
           "quality": "iron",
           "armor": {
             "desc": "Resistente y confiable.",
+            "ability": "Resistencia reforzada.",
             "type": "iron",
             "slot": "leggings",
             "stats": {
-              "defense": 5,
-              "damage": 0,
-              "speed": 0.1,
-              "toughness": 0,
-              "knockback_resistance": 0.0
+              "defense": 5.0,
+              "damage": 0.0,
+              "speed": "Muy lenta",
+              "toughness": 0.0,
+              "knockback_resistance": "Baja"
             }
           }
         }
@@ -31,6 +32,39 @@
       "minecraft:damage": 0,
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_speed",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_defense",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_toughness",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_knockback_resistance",
+          "slot": "legs"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_iron"
       }
     }
   }

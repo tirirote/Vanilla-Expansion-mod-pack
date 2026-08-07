@@ -15,8 +15,8 @@
           "item": "spellbook",
           "material": "wood",
           "combo": {
-            "desc": "Mágico y sencillo.",
-            "rc_desc": "#TODO",
+            "desc": "Encantado y sencillo.",
+            "rc_desc": "Andanada de proyectiles.",
             "damage": 1,
             "cooldown": 2,
             "right_click_cooldown": 24,

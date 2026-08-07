@@ -15,8 +15,8 @@
           "item": "spellbook",
           "material": "gold",
           "combo": {
-            "desc": "Mágico y elegante.",
-            "rc_desc": "#TODO",
+            "desc": "Encantado y brillante.",
+            "rc_desc": "Andanada de proyectiles.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 4,
             "cooldown": 2,
