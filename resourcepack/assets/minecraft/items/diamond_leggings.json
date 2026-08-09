@@ -9,6 +9,13 @@
           "type": "minecraft:model",
           "model": "vexp:item/armor/glowing_leggings"
         }
+      },
+      {
+        "when": "vexp:emerald_leggings",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/armor/emerald_leggings"
+        }
       }
     ],
     "fallback": {

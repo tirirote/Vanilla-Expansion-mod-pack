@@ -13,7 +13,7 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:block/command_block"
+      "model": "minecraft:item/knowledge_book"
     }
   }
 }

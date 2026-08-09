@@ -5,4 +5,4 @@ $execute as @e[tag=vexp.trail_marker,sort=nearest,limit=1] run data modify entit
 execute as @e[tag=vexp.trail_marker,sort=nearest,limit=1] run data modify entity @e[tag=vexp.trail_marker,sort=nearest,limit=1] data.particle.pos set from entity @s Pos
 function vexp:utils/feedback/trail_particle_macro with entity @e[tag=vexp.trail_marker,sort=nearest,limit=1] data.particle
 
-kill @e[tag=vexp.trail_marker,sort=nearest,limit=1]
+kill @e[tag=vexp.trail_marker,distance=..1,sort=nearest,limit=1]

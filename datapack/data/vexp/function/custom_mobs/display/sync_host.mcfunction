@@ -18,4 +18,4 @@ execute as @e[type=item_display,tag=vexp.custom_mob_display,tag=vexp.mob_display
 
 # Clean mob inventory item display at the start of the tick
 execute as @e[type=item_display,tag=vexp.custom_mob_display,tag=vexp.custom_mob_inventory,distance=..64] if score @s vexp.id = @e[tag=vexp.custom_mob,tag=!vexp.mob_got_item,sort=nearest,distance=..0.1,limit=1] vexp.id run ride @s dismount
-execute as @e[type=item_display,tag=vexp.custom_mob_display,tag=vexp.custom_mob_inventory,distance=..64] if score @s vexp.id = @e[tag=vexp.custom_mob,tag=!vexp.mob_got_item,sort=nearest,distance=..0.1,limit=1] vexp.id run tp @s ~ ~300 ~
+execute as @e[type=item_display,tag=vexp.custom_mob_display,tag=vexp.custom_mob_inventory,distance=..64] if score @s vexp.id = @e[tag=vexp.custom_mob,tag=!vexp.mob_got_item,sort=nearest,distance=..0.1,limit=1] vexp.id run kill @s

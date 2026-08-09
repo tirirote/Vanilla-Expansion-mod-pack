@@ -9,6 +9,13 @@
           "type": "minecraft:model",
           "model": "vexp:item/armor/glowing_helmet"
         }
+      },
+      {
+        "when": "vexp:emerald_helmet",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/armor/emerald_helmet"
+        }
       }
     ],
     "fallback": {

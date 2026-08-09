@@ -9,6 +9,13 @@
           "type": "minecraft:model",
           "model": "vexp:item/armor/glowing_chestplate"
         }
+      },
+      {
+        "when": "vexp:emerald_chestplate",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/armor/emerald_chestplate"
+        }
       }
     ],
     "fallback": {
