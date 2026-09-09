@@ -1,3 +1,8 @@
 # Common spell
-function vexp:utils/feedback/trail_particle {col:-1780047, duration:12, dX:0.2, dY:0.2, dZ:0.2, count:1, speed:1}
-function vexp:utils/feedback/dust_particle {initialColor: [0.8,0.85,0.6], finalColor: [1.0, 0.9, 0.8], scale: 0.8, dX: 0.1, dY: 0.1, dZ: 0.1, speed: 1, count: 1}
+execute if score @s vexp.hit_delay matches 5 run particle dust_color_transition{from_color:13619635,to_color:10723459,scale:0.4} ~ ~ ~ 0.02 0.02 0.02 0 8
+execute if score @s vexp.hit_delay matches 4 run particle dust_color_transition{from_color:13619635,to_color:10723459,scale:0.8} ~ ~ ~ 0.04 0.04 0.04 0 6
+execute if score @s vexp.hit_delay matches 3 run particle dust_color_transition{from_color:13619635,to_color:10723459,scale:1.2} ~ ~ ~ 0.08 0.08 0.08 0 3
+execute if score @s vexp.hit_delay matches 2 run particle dust_color_transition{from_color:13619635,to_color:10723459,scale:1.3} ~ ~ ~ 0.12 0.12 0.12 0 2
+execute if score @s vexp.hit_delay matches 1 run particle dust_color_transition{from_color:13619635,to_color:10723459,scale:1.7} ~ ~ ~ 0.15 0.15 0.15 0 1
+execute if score @s vexp.hit_delay matches 1 run particle instant_effect{color:13619635,power:1} ~ ~ ~ 0.2 0.2 0.2 0 3
+execute if score @s vexp.hit_delay matches 1 run particle item{item:bone} ~ ~ ~ 0.2 0.2 0.2 0.02 3

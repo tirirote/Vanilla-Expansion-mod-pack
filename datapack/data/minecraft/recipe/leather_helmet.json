@@ -15,7 +15,7 @@
           "quality": "leather",
           "armor": {
             "desc": "Ideal para empezar a explorar.",
-            "ability": "Buscador de experiencia.",
+            "ability": "Rastreo del terreno.",
             "type": "leather",
             "slot": "helmet",
             "stats": {

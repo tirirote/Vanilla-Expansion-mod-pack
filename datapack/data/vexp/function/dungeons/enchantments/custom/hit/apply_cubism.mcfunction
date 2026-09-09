@@ -26,4 +26,4 @@ execute store result storage vexp:temp cubism_damage float 0.1 run scoreboard pl
 execute as @e[tag=vexp.hitted,type=#vexp:enchantment_cubism_targets] run function vexp:dungeons/enchantments/custom/hit/cubism_deal_bonus with storage vexp:temp
 
 # Feedback
-execute as @e[tag=vexp.hitted,type=#vexp:enchantment_cubism_targets] at @s run function vexp:dungeons/fx/enchantments/bane
+execute as @e[tag=vexp.hitted,type=#vexp:enchantment_cubism_targets,limit=1] at @s run function vexp:dungeons/fx/enchantments/bane

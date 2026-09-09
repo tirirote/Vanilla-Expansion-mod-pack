@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#minecraft:undead",
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:ghast",
+    "minecraft:creeper",
+    "minecraft:enderman",
+    "minecraft:blaze",
+    "minecraft:magma_cube",
+    "minecraft:shulker"
+  ]
+}

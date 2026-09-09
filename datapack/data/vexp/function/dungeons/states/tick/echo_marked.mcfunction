@@ -3,4 +3,4 @@ effect give @s minecraft:blindness 2 2 true
 effect give @s weakness 2 1 true
 effect give @s mining_fatigue 2 1 true
 
-execute positioned ~ ~1 ~ run function vexp:utils/feedback/dust_particle {initialColor: [0.0, 0.0, 0.0], finalColor: [0.4, 0.7, 0.7], scale: 0.8, dX: .2, dY: .5, dZ: .2, speed: 1, count: 1}
+particle dust_color_transition{from_color:668982,to_color:6815730,scale:1.7} ~ ~1 ~ 0.2 0.5 0.2 1 1

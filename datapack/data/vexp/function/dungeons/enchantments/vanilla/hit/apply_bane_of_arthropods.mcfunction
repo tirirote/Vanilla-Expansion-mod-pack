@@ -22,7 +22,7 @@ execute if score #bane_bonus vexp.math matches ..0 run scoreboard players set #b
 
 execute store result storage vexp:temp bane_damage float 0.1 run scoreboard players get #bane_bonus vexp.math
 
-execute as @e[tag=vexp.hitted,type=#vexp:enchantment_bane_targets,limit=1] run function vexp:dungeons/enchantments/vanilla/hit/bane_deal_bonus with storage vexp:temp
+execute as @e[tag=vexp.hitted,type=#vexp:enchantment_bane_targets] run function vexp:dungeons/enchantments/vanilla/hit/bane_deal_bonus with storage vexp:temp
 
 # Feedback
-execute as @e[tag=vexp.hitted,type=#vexp:enchantment_bane_targets] at @s run function vexp:dungeons/fx/enchantments/bane
+execute as @e[tag=vexp.hitted,type=#vexp:enchantment_bane_targets,limit=1] at @s run function vexp:dungeons/fx/enchantments/bane

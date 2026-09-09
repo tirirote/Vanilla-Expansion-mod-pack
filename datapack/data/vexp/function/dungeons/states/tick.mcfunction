@@ -14,16 +14,16 @@ execute as @a[tag=vexp.echo_buffed] at @s run function vexp:dungeons/states/tick
 execute as @e[tag=vexp.glow_marked] at @s run function vexp:dungeons/states/tick/glow_marked
 execute as @a[tag=vexp.glow_buffed] at @s run function vexp:dungeons/states/tick/glow_buffed
 
-#Subtle Buffs
+# Subtle Buffs
 execute as @a[tag=vexp.gold_buffed] at @s run function vexp:dungeons/states/tick/gold_buffed
 execute as @a[tag=vexp.diamond_buffed] at @s run function vexp:dungeons/states/tick/diamond_buffed
 execute as @a[tag=vexp.emerald_luck] at @s run function vexp:dungeons/states/tick/emerald_luck
-
-#Enchantments States
+execute as @a[tag=vexp.iron_protection] at @s run function vexp:dungeons/states/tick/iron_protection
+# Enchantments States
 execute as @e[tag=vexp.thunder_stunned] at @s run function vexp:dungeons/states/tick/thunder_stunned
 execute as @e[tag=vexp.freezed] at @s run function vexp:dungeons/states/tick/freezed
 
-#Catched
+# Catched
 execute as @e[tag=vexp.state.catched] at @s run function vexp:dungeons/states/tick/catched
 # Release caught mob if player switches away from gauntlets or timer expired
 execute as @e[tag=vexp.state.catched,scores={vexp.dstate=..0}] at @s run function vexp:dungeons/states/catch_release
@@ -32,15 +32,17 @@ execute as @e[tag=vexp.state.catched,scores={vexp.dstate=..0}] at @s run functio
 execute as @e[scores={vexp.dstate=1..}] run scoreboard players remove @s vexp.dstate 1
 
 # Cleanup
-#Player tags
+# Player tags
 execute as @e[tag=vexp.nether_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_buffed
 execute as @a[tag=vexp.echo_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_buffed
 execute as @a[tag=vexp.gold_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.gold_buffed
 execute as @a[tag=vexp.diamond_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.diamond_buffed
 execute as @a[tag=vexp.glow_buffed,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_buffed
 execute as @a[tag=vexp.emerald_luck,scores={vexp.dstate=..0}] run tag @s remove vexp.emerald_luck
+execute as @a[tag=vexp.iron_protection,scores={vexp.dstate=..0}] run tag @s remove vexp.iron_protection
+execute as @a[tag=vexp.glow_light,scores={vexp.dstate=..0}] run tag @s remove vexp.glow_light
 
-#Entity tags
+# Entity tags
 execute as @e[tag=vexp.nether_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.nether_marked
 
 execute as @e[tag=vexp.echo_marked,scores={vexp.dstate=..0}] run tag @s remove vexp.echo_marked
@@ -52,11 +54,7 @@ execute as @e[tag=vexp.glow_confused,scores={vexp.dstate=..0}] run tag @s remove
 
 execute as @e[tag=vexp.illager_enchanted,scores={vexp.dstate=..0}] run tag @s remove vexp.illager_enchanted
 
-#Enchantment tags
+# Enchantment tags
 execute as @e[tag=vexp.thunder_stunned,scores={vexp.dstate=..0}] run tag @s remove vexp.thunder_stunned
 execute as @e[tag=vexp.freezed,scores={vexp.dstate=..0}] run tag @s remove vexp.freezed
 execute as @e[tag=vexp.enchantment_resonance_buff,scores={vexp.dstate=..0}] run tag @s remove vexp.enchantment_resonance_buff
-
-# Teams clean up
-#execute as @a[scores={vexp.dstate=..0}] run effect clear @s glowing
-#execute as @a[scores={vexp.dstate=..0}] run team leave @s

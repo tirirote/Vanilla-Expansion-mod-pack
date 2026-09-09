@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "iron",
           "combo": {
-            "desc": "Rápida y resistente.",
+            "desc": "Resistente y ligera.",
             "rc_desc": "Arrojadiza.",
             "damage": 4,
             "cooldown": 4,

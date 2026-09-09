@@ -1,5 +1,5 @@
 # On tick dagger hook
 # @s is the dagger
 
-particle ominous_spawning ~ ~ ~ .2 .2 .2 0.01 1
-function vexp:utils/feedback/dust_particle {initialColor: [0.0, 0.0, 0.0], finalColor: [0.4, 0.7, 0.7], scale: 0.8, dX: 0, dY: 0, dZ: 0, speed: 1, count: 1}
+particle sculk_charge_pop ~ ~ ~ 0.1 0.1 0.1 0.02 1
+particle dust_color_transition{from_color:668982,to_color:6815730,scale:0.8} ~ ~ ~ 0 0 0 1 1

@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["M M", "MMM", "MMM"],
+  "key": {
+    "M": "minecraft:emerald"
+  },
+  "result": {
+    "id": "minecraft:diamond_chestplate",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": { "text": "Peto de esmeralda", "italic": false },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "emerald",
+          "armor": {
+            "desc": "Radiante y costoso.",
+            "ability": "Dichosa fortuna.",
+            "type": "emerald",
+            "slot": "chestplate",
+            "stats": {
+              "defense": 6.0,
+              "damage": 0.0,
+              "speed": "Media",
+              "toughness": 0.0,
+              "knockback_resistance": "Baja"
+            }
+          }
+        }
+      },
+      "minecraft:max_damage": 668,
+      "minecraft:damage": 0,
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:emerald_chestplate"]
+      },
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_speed",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_defense",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_toughness",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_knockback_resistance",
+          "slot": "chest"
+        }
+      ],
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:item.armor.equip_gold",
+        "asset_id": "vexp:emerald",
+        "dispensable": true,
+        "swappable": true,
+        "damage_on_hurt": true
+      },
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:repairable": {
+        "items": "minecraft:emerald"
+      }
+    }
+  }
+}

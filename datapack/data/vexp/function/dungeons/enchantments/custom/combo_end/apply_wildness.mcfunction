@@ -17,6 +17,6 @@ effect give @s glowing 1 0 true
 team join vexp.red
 
 #Feedback
-function vexp:dungeons/fx/enchantments/wildness
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/enchantments/wildness
 function vexp:utils/sound {sound: "minecraft:entity.vex.death", type: "player", pitch:1}
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}

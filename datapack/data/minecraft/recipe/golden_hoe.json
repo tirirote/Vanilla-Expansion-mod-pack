@@ -14,7 +14,7 @@
           "item": "hoe",
           "material": "gold",
           "tool": {
-            "desc": "Muy rápida, pero frágil.",
+            "desc": "Puede que demasiado delicada.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "efficiency": 12.0,
             "damage": 1.0,

@@ -16,3 +16,4 @@ execute store result entity @s Motion[2] double 0.001 run scoreboard players get
 
 tag @s add vexp.parry_deflected
 particle sweep_attack ~ ~ ~ 0 0 0 0 1
+function vexp:utils/sound {sound: "minecraft:enchant.thorns.hit", type: "player", pitch:1}

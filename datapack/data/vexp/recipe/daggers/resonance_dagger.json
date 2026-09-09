@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "echo",
           "combo": {
-            "desc": "Rápida y aterradora.",
+            "desc": "Aterradora y ligera.",
             "rc_desc": "Arrojadiza.",
             "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
             "status_desc": "Aplica [Oscuridad].",

@@ -1,5 +1,6 @@
 # Spawn thunder projectile on the current target.
 # @s is the target entity selected by thundering AoE.
+
 tag @s add vexp.projectile_owner
 
 data modify storage vexp:temp projectile_spawn set value {projectile_tag:"enchantment_thunder",proj_type:"enchantment_thunder",proj_data:{}}

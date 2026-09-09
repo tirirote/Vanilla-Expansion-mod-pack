@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MMM", "M M", "M M"],
+  "key": {
+    "M": "minecraft:iron_chain"
+  },
+  "result": {
+    "id": "minecraft:chainmail_leggings",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Grebas de cota de malla",
+        "italic": false,
+        "color": "white"
+      },
+      "minecraft:custom_data": {
+        "vexp": {
+          "item": "armor",
+          "quality": "chainmail",
+          "armor": {
+            "desc": "Resistentes y flexibles.",
+            "ability": "Desvío de proyectiles.",
+            "type": "chainmail",
+            "slot": "legs",
+            "stats": {
+              "defense": 4.0,
+              "damage": 0.0,
+              "speed": "Media",
+              "toughness": 0.0,
+              "knockback_resistance": "Ninguna"
+            }
+          }
+        }
+      },
+      "minecraft:max_damage": 96,
+      "minecraft:damage": 0,
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_speed",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_defense",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_toughness",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_knockback_resistance",
+          "slot": "legs"
+        }
+      ],
+      "tooltip_display": {
+        "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_iron"
+      }
+    }
+  }
+}

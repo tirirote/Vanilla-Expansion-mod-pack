@@ -21,7 +21,7 @@
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Excavación instantánea.",
+            "rc_desc": "Excavado extendido.",
             "quality": "normal"
           }
         }

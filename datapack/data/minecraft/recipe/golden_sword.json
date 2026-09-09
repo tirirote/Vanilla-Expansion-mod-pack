@@ -15,7 +15,7 @@
           "item": "sword",
           "material": "gold",
           "combo": {
-            "desc": "Rápida y elegante.",
+            "desc": "Delicadamente hermosa.",
             "rc_desc": "En guardia.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 4,

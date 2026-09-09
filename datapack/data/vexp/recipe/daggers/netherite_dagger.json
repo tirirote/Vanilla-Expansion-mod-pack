@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "netherite",
           "combo": {
-            "desc": "Rápida y abrasadora.",
+            "desc": "Abrasadora y ligera.",
             "rc_desc": "Arrojadiza.",
             "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
             "status_desc": "Aplica [Quemadura profunda].",

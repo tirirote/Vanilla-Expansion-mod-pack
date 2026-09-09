@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/detailed_plant",
+  "parent": "minecraft:block/detailed_bush",
   "textures": {
     "texture": "minecraft:block/bush"
   }

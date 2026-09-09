@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["M M", "M M"],
   "key": {
-    "M": "minecraft:command_block"
+    "M": "minecraft:knowledge_book"
   },
   "result": {
     "id": "minecraft:diamond_boots",
@@ -15,14 +15,15 @@
           "quality": "glowing",
           "armor": {
             "desc": "Sigilosas y ligeras.",
+            "ability": "Movimiento sinuoso.",
             "type": "glowing",
             "slot": "boots",
             "stats": {
-              "defense": 3,
-              "damage": 0,
-              "speed": 0.1,
-              "toughness": 1,
-              "knockback_resistance": 0.0
+              "defense": 2.0,
+              "damage": 0.0,
+              "speed": "Muy alta",
+              "toughness": 0.0,
+              "knockback_resistance": "Ninguna"
             }
           }
         }
@@ -32,6 +33,36 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:glowing_boots"]
       },
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_speed",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_defense",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_toughness",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:boots_knockback_resistance",
+          "slot": "feet"
+        }
+      ],
       "minecraft:equippable": {
         "slot": "feet",
         "equip_sound": "minecraft:item.armor.equip_diamond",

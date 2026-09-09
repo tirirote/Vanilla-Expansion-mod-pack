@@ -14,7 +14,7 @@
           "item": "pickaxe",
           "material": "gold",
           "tool": {
-            "desc": "Extremádamente rápido, pero frágil.",
+            "desc": "Hermoso, pero delicado.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "efficiency": 12.0,
             "damage": 2.0,

@@ -15,7 +15,7 @@
           "item": "sword",
           "material": "diamond",
           "combo": {
-            "desc": "La espada por excelencia.",
+            "desc": "Brillante y excelente.",
             "rc_desc": "En guardia.",
             "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 8,

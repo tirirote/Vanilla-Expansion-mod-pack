@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "bone",
           "combo": {
-            "desc": "Rápida y macabra.",
+            "desc": "Macabra y ligera.",
             "rc_desc": "Arrojadiza.",
             "damage": 3,
             "cooldown": 3,

@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "diamond",
           "combo": {
-            "desc": "Rápida y equilibrada.",
+            "desc": "Brillante y ligera.",
             "rc_desc": "Arrojadiza.",
             "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 5,

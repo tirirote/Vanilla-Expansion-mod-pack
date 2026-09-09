@@ -83,6 +83,14 @@ scoreboard objectives add vexp.cooldown_sec_dec dummy
 
 scoreboard objectives add vexp.armor_rand dummy
 
+# Artifacts
+scoreboard objectives add vexp.scarab_item_count dummy
+scoreboard objectives add vexp.totem_air_time dummy
+scoreboard objectives add vexp.mirror_mob_count dummy
+scoreboard objectives add vexp.medallion_mob_count dummy
+scoreboard objectives add vexp.mask_mob_count dummy
+scoreboard objectives add vexp.ring_mob_count dummy
+
 # Enchantments
 
 # vanilla enchants
@@ -166,6 +174,11 @@ scoreboard objectives add vexp.proj_gravity dummy
 scoreboard objectives add vexp.proj_damage dummy
 
 # Inicializar contador global de IDs solo en el debug
+
+# Utility teams
+team add vexp.bone_armor_friend
+team add vexp.mask_friends
+team modify vexp.mask_friends color yellow
 
 # Teams for Feedback Glowing
 team add vexp.white

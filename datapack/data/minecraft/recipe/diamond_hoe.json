@@ -14,7 +14,7 @@
           "item": "hoe",
           "material": "diamond",
           "tool": {
-            "desc": "Te sobran diamantes, ¿verdad?",
+            "desc": "Puede que demasiado brillante.",
             "bonus_desc": "Otorga [Resistencia brillante] por 2s.",
             "efficiency": 8.0,
             "damage": 1.0,

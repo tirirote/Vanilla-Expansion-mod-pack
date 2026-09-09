@@ -1,4 +1,3 @@
 # dungeons/armor/types/gold/tick.mcfunction
-effect give @s minecraft:speed 1 0 true
-effect give @s minecraft:haste 1 0 true
-
+execute store result score @s vexp.armor_rand run random value -1000..1000
+execute if score @s vexp.armor_rand matches -50..50 run particle instant_effect{color:16580442} ~ ~1 ~ 0.35 0.5 0.35 0 1

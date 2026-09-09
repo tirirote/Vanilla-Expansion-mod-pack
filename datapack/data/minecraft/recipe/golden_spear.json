@@ -18,7 +18,7 @@
           "item": "spear",
           "material": "gold",
           "combo": {
-            "desc": "Elegante y con gran alcance.",
+            "desc": "Delicada y con gran alcance.",
             "rc_desc": "Embestida.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 3,

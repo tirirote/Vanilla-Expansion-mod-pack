@@ -1,4 +1,4 @@
-effect give @s speed 2 2 true
+effect give @s speed 2 1 true
 effect give @s invisibility 2 0 true
 effect give @s dolphins_grace 2 0 true
 effect give @s night_vision 2 0 true

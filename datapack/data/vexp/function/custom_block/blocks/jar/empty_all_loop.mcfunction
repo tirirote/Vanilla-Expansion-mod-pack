@@ -8,7 +8,7 @@ summon item ~ ~ ~ {Tags:["vexp.jar.loot"],Item:{id:"minecraft:stone",count:1}}
 execute as @e[type=item,tag=vexp.jar.loot,sort=nearest,limit=1,distance=..1] run data modify entity @s Item.id set from storage vexp:custom_block jar_drop.id
 
 # 2. Aplicar motion aleatorio y limpiar tag
-execute as @e[type=item,tag=vexp.jar.loot,sort=nearest,limit=1,distance=..1] at @s run function vexp:utils/motion/apply_random_motion {"range":100,"scale":0.001}
+execute as @e[type=item,tag=vexp.jar.loot,sort=nearest,limit=1,distance=..1] at @s run function vexp:utils/motion/apply_random_motion {"range":10,"scale":0.01}
 tag @e[type=item,tag=vexp.jar.loot,sort=nearest,limit=1,distance=..1] remove vexp.jar.loot
 
 # 3. Decrementar y continuar si quedan items

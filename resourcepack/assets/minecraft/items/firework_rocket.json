@@ -228,6 +228,13 @@
         }
       },
       {
+        "when": "vexp:artifact_activation",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/artifact_activation"
+        }
+      },
+      {
         "when": "vexp:hit_indicator_candidate",
         "model": {
           "type": "minecraft:model",

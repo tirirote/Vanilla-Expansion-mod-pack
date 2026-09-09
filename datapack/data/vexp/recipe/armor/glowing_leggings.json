@@ -2,27 +2,31 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["MMM", "M M", "M M"],
   "key": {
-    "M": "minecraft:command_block"
+    "M": "minecraft:knowledge_book"
   },
   "result": {
     "id": "minecraft:diamond_leggings",
     "count": 1,
     "components": {
-      "minecraft:item_name": { "text": "Grebas luminiscentes", "italic": false },
+      "minecraft:item_name": {
+        "text": "Grebas luminiscentes",
+        "italic": false
+      },
       "minecraft:custom_data": {
         "vexp": {
           "item": "armor",
           "quality": "glowing",
           "armor": {
             "desc": "Sigilosas y ligeras.",
+            "ability": "Movimiento sinuoso.",
             "type": "glowing",
             "slot": "leggings",
             "stats": {
-              "defense": 5,
-              "damage": 0,
-              "speed": 0.1,
-              "toughness": 1,
-              "knockback_resistance": 0.0
+              "defense": 5.0,
+              "damage": 0.0,
+              "speed": "Muy alta",
+              "toughness": 0.0,
+              "knockback_resistance": "Ninguna"
             }
           }
         }
@@ -32,6 +36,36 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:glowing_leggings"]
       },
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_speed",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_defense",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_toughness",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:legs_knockback_resistance",
+          "slot": "legs"
+        }
+      ],
       "minecraft:equippable": {
         "slot": "legs",
         "equip_sound": "minecraft:item.armor.equip_diamond",

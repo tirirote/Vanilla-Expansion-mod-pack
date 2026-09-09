@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/detailed_plant",
-    "textures": {
-        "texture": "minecraft:block/tall_dry_grass"
-    }
+  "parent": "minecraft:block/detailed_bush",
+  "textures": {
+    "texture": "minecraft:block/tall_dry_grass"
+  }
 }

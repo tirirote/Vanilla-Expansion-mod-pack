@@ -17,4 +17,4 @@ execute store result storage vexp:temp sharpness_damage float 0.1 run scoreboard
 
 function vexp:dungeons/enchantments/vanilla/hit/sharpness_deal_bonus with storage vexp:temp
 
-execute as @e[tag=vexp.hitted] at @s run function vexp:dungeons/fx/enchantments/sharpness
+execute as @e[tag=vexp.hitted,limit=1] at @s run function vexp:dungeons/fx/enchantments/sharpness

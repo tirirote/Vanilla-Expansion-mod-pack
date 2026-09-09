@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "stone",
           "combo": {
-            "desc": "Rápida y tosca.",
+            "desc": "Tosca y ligera.",
             "rc_desc": "Arrojadiza.",
             "damage": 2,
             "cooldown": 3,

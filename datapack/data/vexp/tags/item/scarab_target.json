@@ -1,0 +1,25 @@
+{
+  "values": [
+    "diamond",
+    "raw_gold",
+    "raw_copper",
+    "raw_iron",
+    "amethyst_shard",
+    "lapis_lazuli",
+    "redstone",
+    "glowstone_dust",
+    "quartz",
+    "netherite_scrap",
+    "ender_pearl",
+    "blaze_rod",
+    "ghast_tear",
+    "potion",
+    "splash_potion",
+    "lingering_potion",
+    "breeze_rod",
+    "shulker_shell",
+    "leather",
+    "prismarine_shard",
+    "prismarine_crystals"
+  ]
+}

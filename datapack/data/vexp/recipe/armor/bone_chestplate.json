@@ -15,14 +15,15 @@
           "quality": "bone",
           "armor": {
             "desc": "Resistente y macabra.",
+            "ability": "Persuasión.",
             "type": "bone",
             "slot": "chestplate",
             "stats": {
-              "defense": 5,
-              "damage": 0,
-              "speed": 0.1,
-              "toughness": 0,
-              "knockback_resistance": 0.0
+              "defense": 4.0,
+              "damage": 0.0,
+              "speed": "Alta",
+              "toughness": 0.0,
+              "knockback_resistance": "Ninguna"
             }
           }
         }
@@ -32,9 +33,39 @@
       "minecraft:custom_model_data": {
         "strings": ["vexp:bone_chestplate"]
       },
+      "attribute_modifiers": [
+        {
+          "type": "minecraft:movement_speed",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_speed",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_defense",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_toughness",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.0,
+          "operation": "add_value",
+          "id": "vexp:chest_knockback_resistance",
+          "slot": "chest"
+        }
+      ],
       "minecraft:equippable": {
         "slot": "chest",
-        "equip_sound": "minecraft:entity.skeleton.step",
+        "equip_sound": "minecraft:item.armor.equip_generic",
         "asset_id": "vexp:bone",
         "dispensable": true,
         "swappable": true,
@@ -42,6 +73,9 @@
       },
       "tooltip_display": {
         "hidden_components": ["minecraft:attribute_modifiers"]
+      },
+      "minecraft:repairable": {
+        "items": "#vexp:repairs_bone"
       }
     }
   }

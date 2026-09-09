@@ -1,4 +1,4 @@
 effect give @s minecraft:slowness 2 2 true
 effect give @s minecraft:weakness 2 2 true
 data modify entity @s Fire set value 40
-execute positioned ~ ~1 ~ run function vexp:utils/feedback/dust_particle {initialColor: [0.2, 0.2, 0.2], finalColor: [0.55, 0.4, 0.5], scale: 0.8, dX: 0.2, dY: 0.5, dZ: 0.2, speed: 1, count: 1}
+particle dust_color_transition{from_color:3679786,to_color:8737350,scale:0.8} ~ ~1 ~ 0.2 0.5 0.2 0 1

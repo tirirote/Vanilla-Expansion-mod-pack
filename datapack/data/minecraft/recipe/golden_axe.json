@@ -15,7 +15,7 @@
           "item": "axe",
           "material": "gold",
           "combo": {
-            "desc": "Rápida y elegante.",
+            "desc": "Delicadamente hermosa.",
             "rc_desc": "Hachazo de vindicador.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "damage": 4,

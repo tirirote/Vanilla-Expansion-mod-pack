@@ -14,7 +14,7 @@
           "item": "shovel",
           "material": "gold",
           "tool": {
-            "desc": "Ligera y muy rápida.",
+            "desc": "Hermosa, pero delicada.",
             "bonus_desc": "Otorga [Brillo dorado] por 2s.",
             "efficiency": 12.0,
             "damage": 3.0,

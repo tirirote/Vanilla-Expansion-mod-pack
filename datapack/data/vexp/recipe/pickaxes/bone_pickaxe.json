@@ -21,7 +21,7 @@
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Minería instantánea.",
+            "rc_desc": "Minado extendido.",
             "quality": "bone"
           }
         }

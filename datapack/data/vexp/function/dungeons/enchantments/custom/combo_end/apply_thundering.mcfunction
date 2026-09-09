@@ -17,7 +17,4 @@ execute store result storage vexp:temp thundering_damage float 0.1 run scoreboar
 # Cache owner ID for self-filter in target queries.
 scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
 
-execute as @e[predicate=vexp:is_target,distance=..3.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/enchantments/custom/combo_end/thundering_deal_bonus with storage vexp:temp
-
-function vexp:dungeons/enchantments/custom/combo_end/thundering_spawn_projectile
-function vexp:utils/sound {sound: "minecraft:entity.zombie_villager.cure", type: "player", pitch:1}
+execute as @e[predicate=vexp:is_target,tag=vexp.hitted,limit=1] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/enchantments/custom/combo_end/thundering_target

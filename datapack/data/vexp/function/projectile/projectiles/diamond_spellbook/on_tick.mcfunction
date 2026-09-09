@@ -1,2 +1,2 @@
 # dungeons/nether/projectile/on_tick.mcfunction
-function vexp:utils/feedback/trail_particle {col:-49358, duration:7, dX:0.002, dY:0.002, dZ:0.002, count:1, speed:1}
+particle dust_color_transition{from_color:3788726,to_color:36214,scale:0.6} ~ ~ ~ 0.05 0.05 0.05 0 3

@@ -9,7 +9,7 @@ execute unless data entity @s data.vexp.books[-1] run return fail
 # Spawnear item y copiar NBT completo del ultimo libro guardado.
 summon item ~ ~0.5 ~ {Tags:["vexp.pile_books_drop"],Item:{id:"minecraft:book",count:1}}
 data modify entity @e[type=item,tag=vexp.pile_books_drop,sort=nearest,limit=1,distance=..1] Item set from entity @s data.vexp.books[-1]
-execute as @e[type=item,tag=vexp.pile_books_drop,sort=nearest,limit=1,distance=..1] at @s run function vexp:utils/motion/apply_random_motion {"range":100,"scale":0.001}
+execute as @e[type=item,tag=vexp.pile_books_drop,sort=nearest,limit=1,distance=..1] at @s run function vexp:utils/motion/apply_random_motion {"range":10,"scale":0.01}
 tag @e[type=item,tag=vexp.pile_books_drop,sort=nearest,limit=1,distance=..1] remove vexp.pile_books_drop
 
 # Remover libro de la lista y decrementar contador.

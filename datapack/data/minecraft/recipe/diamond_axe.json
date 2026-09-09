@@ -15,7 +15,7 @@
           "item": "axe",
           "material": "diamond",
           "combo": {
-            "desc": "Clásica y resistente.",
+            "desc": "Excelente y brillante.",
             "rc_desc": "Hachazo de vindicador.",
             "bonus_desc": "Otorga [Dureza de diamante] por 2s.",
             "damage": 9,

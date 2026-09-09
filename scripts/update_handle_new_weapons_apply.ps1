@@ -7,10 +7,14 @@ $ErrorActionPreference = "Stop"
 
 $datapackRoot = Join-Path $RepoRoot "datapack"
 $recipesDir = Join-Path $datapackRoot "data/minecraft/recipe"
+$vexpArmorRecipesDir = Join-Path $datapackRoot "data/vexp/recipe/armor"
 $macroDir = Join-Path $datapackRoot "data/vexp/function/dungeons/handle_new_weapons/macro"
 
 if (-not (Test-Path $recipesDir)) {
     throw "Recipe folder not found: $recipesDir"
+}
+if (-not (Test-Path $vexpArmorRecipesDir)) {
+    throw "Armor recipe folder not found: $vexpArmorRecipesDir"
 }
 if (-not (Test-Path $macroDir)) {
     throw "Macro folder not found: $macroDir"
@@ -91,6 +95,27 @@ function Get-Recipe {
     return [pscustomobject]@{
         path = $path
         data = $json
+    }
+}
+
+function Get-ArmorRecipe {
+    param(
+        [Parameter(Mandatory = $true)][string]$Type,
+        [Parameter(Mandatory = $true)][string]$Material
+    )
+
+    if ($Material -ne "chainmail") {
+        return Get-Recipe -Type $Type -Material $Material
+    }
+
+    $path = Join-Path $vexpArmorRecipesDir "chainmail_${Type}.json"
+    if (-not (Test-Path $path)) {
+        throw "Missing chainmail armor recipe file: $path"
+    }
+
+    return [pscustomobject]@{
+        path = $path
+        data = Get-Content $path -Raw | ConvertFrom-Json
     }
 }
 
@@ -176,7 +201,7 @@ function Build-ApplyLine {
 }
 
 $materials = @("wooden", "stone", "copper", "iron", "golden", "diamond", "netherite")
-$armorMaterials = @("leather", "copper", "iron", "golden", "diamond", "netherite")
+$armorMaterials = @("leather", "chainmail", "copper", "iron", "golden", "diamond", "netherite")
 $armorPieces = @("helmet", "chestplate", "leggings", "boots")
 
 # bow
@@ -274,7 +299,7 @@ $armorLines.Add("")
 
 foreach ($m in $armorMaterials) {
     foreach ($piece in $armorPieces) {
-        $recipe = (Get-Recipe -Type $piece -Material $m).data
+        $recipe = (Get-ArmorRecipe -Type $piece -Material $m).data
         $pack = Build-SetComponents -RecipeData $recipe
         $id = $recipe.result.id
 

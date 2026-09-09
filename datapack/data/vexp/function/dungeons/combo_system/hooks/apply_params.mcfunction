@@ -23,6 +23,6 @@ execute unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} 
 execute unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} run function vexp:utils/sound {sound: "minecraft:entity.player.attack.sweep", type: "player", pitch:1}
 
 #3. Queue delayed hit resolution so swoosh feedback can play first.
-scoreboard players set #pending_delay vexp.math 5
+scoreboard players set #pending_delay vexp.math 6
 scoreboard players operation @s[tag=!vexp.hit_delay.pending] vexp.hit_delay = #pending_delay vexp.math
 tag @s add vexp.hit_delay.pending

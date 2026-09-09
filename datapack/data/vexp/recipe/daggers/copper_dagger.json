@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "copper",
           "combo": {
-            "desc": "Rápida y brillante.",
+            "desc": "Ligera y resistente.",
             "rc_desc": "Arrojadiza.",
             "damage": 3,
             "cooldown": 4,

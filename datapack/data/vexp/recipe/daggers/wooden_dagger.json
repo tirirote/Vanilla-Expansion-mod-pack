@@ -15,7 +15,7 @@
           "item": "dagger",
           "material": "wood",
           "combo": {
-            "desc": "Rápida y sencilla.",
+            "desc": "Sencilla y ligera.",
             "rc_desc": "Arrojadiza.",
             "damage": 2,
             "cooldown": 2,

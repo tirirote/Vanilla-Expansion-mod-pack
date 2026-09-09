@@ -2,7 +2,7 @@
 tag @e[tag=vexp.health_bar] remove vexp.active
 
 # 2. Optimized path: Entities already initialized (Direct tag selection)
-execute as @e[tag=vexp.health_init] at @s run function vexp:mob_health/update
+execute as @e[tag=vexp.health_init,type=!player] at @s run function vexp:mob_health/update
 
 # Fixed 0 HP bug
 execute as @e[tag=vexp.health_init,tag=!vexp.custom_mob] if score @s vexp.hp matches ..0 run kill @s

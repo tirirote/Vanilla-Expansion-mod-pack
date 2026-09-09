@@ -1,4 +1,8 @@
 # dungeons/armor/types/netherite/tick.mcfunction
-effect give @s minecraft:resistance 1 0 true
-effect give @s minecraft:fire_resistance 1 0 true
+execute store result score @s vexp.armor_rand run random value -1000..1000
+execute if score @s vexp.armor_rand matches -50..50 run particle instant_effect{color:5452865} ~ ~1 ~ 0.35 0.5 0.35 0 1
 
+effect give @s fire_resistance 2 0 true
+
+# Nether aura
+execute if score @s vexp.armor_rand matches 0..5 run function vexp:dungeons/armor/types/netherite/aura_wave
