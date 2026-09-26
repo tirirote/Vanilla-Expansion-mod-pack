@@ -4,13 +4,15 @@
 
 tag @s remove vexp.target_found
 
-# Cache owner ID for self-filter in target queries.
-scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
-scoreboard players set #combo_target_found vexp.math 0
+# Wide-range target scan (arbitrary distance, not a nearest-neighbor lookup): exclude
+# myself via a per-entity tag instead of a shared holder, since here there can be
+# several candidates and no single "nearest" one is guaranteed to be me.
+tag @s add vexp.combo_self
 
 # Evaluamos si hay un objetivo válido para marcar 'target_found'
-$execute positioned ^ ^ ^$(reach) as @e[predicate=vexp:is_target,distance=..$(range)] unless score @s vexp.id = #combo_owner_id vexp.id run scoreboard players set #combo_target_found vexp.math 1
-execute if score #combo_target_found vexp.math matches 1.. run tag @s add vexp.target_found
+$execute positioned ^ ^ ^$(reach) if entity @e[predicate=vexp:is_target,tag=!vexp.combo_self,distance=..$(range)] run tag @s add vexp.target_found
+
+tag @s remove vexp.combo_self
 
 # Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
 # Esto libera la interacción con bloques (cofres, botones) y con el aire.
@@ -21,22 +23,25 @@ execute unless entity @s[tag=vexp.target_found] run return fail
 # Search for EXACTLY one hitbox with my ID.
 tag @s remove vexp.hitbox.found
 
-# Cache owner ID before switching context inside execute as @e.
-# Using @p inside that block would resolve to the nearest player to the hitbox,
-# which is wrong in multiplayer (another player's hitbox could match).
-execute as @e[type=interaction,tag=vexp.combo_hitbox,distance=..25] if score @s vexp.id = #combo_owner_id vexp.id run tag @s add vexp.hitbox.mine_temp
-execute as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..25] if score @s vexp.id = #combo_owner_id vexp.id run tag @s add vexp.hitbox.mine_temp
+# My own hitbox/indicator always sit within a few blocks in front of me, so the nearest
+# match is mine — confirmed by an exact id comparison directly against that entity's
+# own score. No shared holder: both selectors resolve deterministically in the same command.
+execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] vexp.id run tag @s add vexp.hitbox.found
+execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] run tag @s remove vexp.hitbox.to_remove
+execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] run tag @s add vexp.hitbox.mine_temp
+
+# Indicator now sits right next to the hitbox (update_hitmark.mcfunction), so the same
+# tight radius as the hitbox is enough — both @e mentions must match or "as" could
+# switch to a different entity than the one just verified by id.
+execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s remove vexp.hitbox.to_remove
+execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s add vexp.hitbox.mine_temp
 
 # Relay cooldown state to the hitbox
 execute as @e[tag=vexp.hitbox.mine_temp] run tag @s remove vexp.hitbox.cooldown
 execute if score @s vexp.combo_cooldown matches 1.. as @e[tag=vexp.hitbox.mine_temp] run tag @s add vexp.hitbox.cooldown
 
-# Check surviving hitbox to unmark it from death
-execute at @s as @e[type=interaction,tag=vexp.hitbox.mine_temp,limit=1,sort=nearest] run function vexp:dungeons/combo_system/hitbox/check_reach
-execute at @s as @e[type=item_display,tag=vexp.combo_hitbox_indicator,limit=1,sort=nearest] run function vexp:dungeons/combo_system/hitbox/check_reach
-
 # If not found (destroyed or new held item), summon exactly one
-$execute unless entity @s[tag=vexp.hitbox.found] positioned ^ ^ ^$(reach) run function vexp:dungeons/combo_system/hitbox/summon
+execute unless entity @s[tag=vexp.hitbox.found] run function vexp:dungeons/combo_system/hitbox/summon
 
 # Reposition the one we picked (must be the one without to_remove or newest)
 

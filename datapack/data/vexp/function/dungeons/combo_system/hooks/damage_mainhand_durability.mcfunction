@@ -4,6 +4,9 @@
 
 execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.item run return 0
 
+function vexp:dungeons/enchantments/vanilla/durability/unbreaking {item_path:"SelectedItem"}
+execute if score @s vexp.durability_skip matches 1 run return 0
+
 # Ensure the item starts with explicit vanilla damage = 0 if the component is missing
 execute unless data entity @s SelectedItem.components."minecraft:damage" run item modify entity @s weapon.mainhand {"function":"minecraft:set_components","components":{"minecraft:damage":0}}
 
