@@ -9,13 +9,12 @@ execute unless data entity @s equipment.head.components."minecraft:enchantments"
 # Chest
 # Resonance
 execute unless score @s vexp.enchant.resonance matches 1.. if data entity @s equipment.chest.components."minecraft:enchantments"."vexp:resonance" store result score @s vexp.enchant.resonance run data get entity @s equipment.chest.components."minecraft:enchantments"."vexp:resonance" 1
-execute if score @s vexp.enchant.resonance matches 1.. run function vexp:dungeons/enchantments/custom/tick/resonance
+execute if score @s vexp.enchant.resonance matches 1.. at @s run function vexp:dungeons/enchantments/custom/tick/resonance
 
 # Taunt
 execute unless score @s vexp.enchant.taunt matches 1.. if data entity @s equipment.chest.components."minecraft:enchantments"."vexp:taunt" store result score @s vexp.enchant.taunt run data get entity @s equipment.chest.components."minecraft:enchantments"."vexp:taunt" 1
 execute if score @s vexp.enchant.taunt matches 1.. at @s run function vexp:dungeons/enchantments/custom/tick/taunt
 execute unless data entity @s equipment.chest.components."minecraft:enchantments"."vexp:taunt" if score @s vexp.enchant.taunt matches 1.. run tag @s[tag=vexp.enchantment_taunt] remove vexp.enchantment_taunt
-
 
 # Leggings
 # Levitation

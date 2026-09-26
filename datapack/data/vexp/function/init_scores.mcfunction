@@ -90,6 +90,8 @@ scoreboard objectives add vexp.mirror_mob_count dummy
 scoreboard objectives add vexp.medallion_mob_count dummy
 scoreboard objectives add vexp.mask_mob_count dummy
 scoreboard objectives add vexp.ring_mob_count dummy
+scoreboard objectives add vexp.mirror_owner_id dummy
+scoreboard objectives add vexp.mask_owner_id dummy
 
 # Enchantments
 
@@ -97,6 +99,10 @@ scoreboard objectives add vexp.ring_mob_count dummy
 scoreboard objectives add vexp.enchant.bane_of_arthropods dummy
 scoreboard objectives add vexp.enchant.fire_aspect dummy
 scoreboard objectives add vexp.enchant.knockback dummy
+scoreboard objectives add vexp.enchant.unbreaking dummy
+scoreboard objectives add vexp.enchant.lunge dummy
+scoreboard objectives add vexp.unbreaking_roll dummy
+scoreboard objectives add vexp.durability_skip dummy
 scoreboard objectives add vexp.enchant.sharpness dummy
 scoreboard objectives add vexp.enchant.smite dummy
 scoreboard objectives add vexp.enchant.sweeping_edge dummy
@@ -122,6 +128,7 @@ scoreboard objectives add vexp.enchant.wildness dummy
 scoreboard objectives add vexp.enchant.resonance dummy
 scoreboard objectives add vexp.enchant.taunt dummy
 scoreboard objectives add vexp.enchant.levitation dummy
+scoreboard objectives add vexp.enchant.levitation_time dummy
 
 #Custom Mobs
 scoreboard objectives add vexp.pathfind_rand dummy
