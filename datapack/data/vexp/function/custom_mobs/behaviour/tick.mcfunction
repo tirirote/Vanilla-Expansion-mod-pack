@@ -44,9 +44,9 @@ execute if entity @s[tag=vexp.mob_hurt_visual_swapped,nbt={HurtTime:0s}] run fun
 
 # Attack triggers
 # 1. Special attack wrapper
-execute if entity @s[nbt={HurtTime:0s}] unless entity @s[tag=vexp.mob_trying_to_pickup] unless entity @s[tag=vexp.mob_got_item] unless entity @s[tag=vexp.mob_special_done] if block ^ ^ ^1 #replaceable if block ^ ^1 ^1 #replaceable run function vexp:custom_mobs/behaviour/special_attack_try with entity @s data.vexp.mob
+execute if entity @s[nbt={HurtTime:0s}] unless entity @s[tag=vexp.mob_trying_to_pickup] unless entity @s[tag=vexp.mob_got_item] unless entity @s[tag=vexp.mob_special_done] if block ^ ^1 ^1 #replaceable run function vexp:custom_mobs/behaviour/special_attack_try with entity @s data.vexp.mob
 # 2. Normal attack wrapper
-execute if entity @s[nbt={HurtTime:0s}] unless entity @s[tag=vexp.mob_trying_to_pickup] unless entity @s[tag=vexp.mob_got_item] unless entity @s[tag=vexp.mob_attack_done] if block ^ ^ ^1 #replaceable if block ^ ^1 ^1 #replaceable run function vexp:custom_mobs/behaviour/attack_try with entity @s data.vexp.mob
+execute if entity @s[nbt={HurtTime:0s}] unless entity @s[tag=vexp.mob_trying_to_pickup] unless entity @s[tag=vexp.mob_got_item] unless entity @s[tag=vexp.mob_attack_done] if block ^ ^1 ^1 #replaceable run function vexp:custom_mobs/behaviour/attack_try with entity @s data.vexp.mob
 
 # Attack Cooldown management
 # Process Cooldown only when the mob has succesfully performed the attack

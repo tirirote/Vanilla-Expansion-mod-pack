@@ -1,7 +1,11 @@
-#Main Custom Mob behaviour
+# Mob Natural Spawning tick
+# Natural spawn conversion (vanilla mobs -> custom mob variants)
+function vexp:custom_mobs/natural_spawn/tick
+
+# Custom mob tick functions
+# Main Custom Mob behaviour
 execute as @e[tag=vexp.custom_mob] at @s run function vexp:custom_mobs/behaviour/tick
 
-#Custom visuals later vvvvv
 # Sync custom displays to their host mob (eyes anchor + host rotation)
 execute as @e[tag=vexp.custom_mob] at @s run function vexp:custom_mobs/display/sync_host
 
