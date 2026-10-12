@@ -1,5 +1,6 @@
 #version 330
 
+#moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 
 uniform sampler2D Sampler0;
@@ -14,5 +15,6 @@ void main() {
     if (color.a == 0.0) {
         discard;
     }
-    fragColor = vec4(ColorModulator.rgb * vertexColor.rgb, ColorModulator.a);
+    vec3 outlineColor = mix(ColorModulator.rgb, vec3(0.30, 0.88, 0.78), 0.28);
+    fragColor = vec4(outlineColor * vertexColor.rgb, ColorModulator.a);
 }

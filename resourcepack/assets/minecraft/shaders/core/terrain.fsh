@@ -3,6 +3,7 @@
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:chunksection.glsl>
+#moj_import <minecraft:vexp_cave_fog.glsl>
 
 uniform sampler2D Sampler0;
 
@@ -93,5 +94,11 @@ void main() {
         discard;
     }
 #endif
-    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+    float daylight = max(sin(fract(GameTime) * 6.2831853), 0.0);
+    color.rgb *= mix(vec3(0.93, 0.96, 1.04), vec3(1.04, 1.01, 0.95), daylight);
+    color = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+
+    float caveFog = vexp_cave_fog_amount(float(CameraBlockPos.y), sphericalVertexDistance, cylindricalVertexDistance);
+    color.rgb = mix(color.rgb, FogColor.rgb, caveFog);
+    fragColor = color;
 }

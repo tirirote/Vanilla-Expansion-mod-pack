@@ -1,12 +1,17 @@
 #version 330
 
 #moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:vexp_cave_fog.glsl>
+
+const bool VEXP_DEBUG_UI_PASS = false;
 
 uniform sampler2D Sampler0;
 
 in float sphericalVertexDistance;
 in float cylindricalVertexDistance;
+in float vexpIsUiPass;
 in vec4 vertexColor;
 in vec2 texCoord0;
 
@@ -21,5 +26,14 @@ void main() {
 #endif
 
     color *= vertexColor * ColorModulator;
-    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+    if (vexpIsUiPass < 0.5) {
+        color = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+        float caveFog = vexp_cave_fog_amount(float(CameraBlockPos.y), sphericalVertexDistance, cylindricalVertexDistance);
+        color.rgb = mix(color.rgb, FogColor.rgb, caveFog);
+    }
+    if (VEXP_DEBUG_UI_PASS) {
+        fragColor = vexpIsUiPass < 0.5 ? vec4(0.0, 1.0, 0.0, 1.0) : vec4(1.0, 1.0, 0.0, 1.0);
+        return;
+    }
+    fragColor = color;
 }

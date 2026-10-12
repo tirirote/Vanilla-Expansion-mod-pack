@@ -1,6 +1,10 @@
 #version 330
 
+const float VEXP_OUTLINE_BLOOM_RADIUS = 6.0;
+const float VEXP_OUTLINE_BLOOM_STRENGTH = 1.0;
+
 layout(std140) uniform SamplerInfo {
+        float radius = VEXP_OUTLINE_BLOOM_RADIUS;
     vec2 OutSize;
     vec2 InSize;
 };
@@ -26,5 +30,7 @@ void main() {
         blurred += texture(InSampler, texCoord + sampleStep * a);
     }
     blurred += texture(InSampler, texCoord + sampleStep * radius) / 2.0;
-    fragColor = vec4((blurred / (radius + 0.5)).rgb, blurred.a);
+    vec4 bloom = blurred / (radius + 0.5);
+    bloom.a = clamp(bloom.a * VEXP_OUTLINE_BLOOM_STRENGTH, 0.0, 1.0);
+    fragColor = bloom;
 }

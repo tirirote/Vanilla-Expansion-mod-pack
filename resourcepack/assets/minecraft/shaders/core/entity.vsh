@@ -2,6 +2,7 @@
 
 #moj_import <minecraft:light.glsl>
 #moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:projection.glsl>
 #moj_import <minecraft:sample_lightmap.glsl>
@@ -23,6 +24,7 @@ uniform sampler2D Sampler2;
 
 out float sphericalVertexDistance;
 out float cylindricalVertexDistance;
+out float vexpIsUiPass;
 
 #ifdef PER_FACE_LIGHTING
 out vec4 vertexPerFaceColorBack;
@@ -57,6 +59,7 @@ void main() {
 
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
 
+    vexpIsUiPass = step(0.99, abs(ProjMat[3][3]));
     sphericalVertexDistance = fog_spherical_distance(Position);
     cylindricalVertexDistance = fog_cylindrical_distance(Position);
 

@@ -17,14 +17,17 @@ uniform sampler2D Sampler2;
 
 out float sphericalVertexDistance;
 out float cylindricalVertexDistance;
+out float vexpIsUiPass;
 out vec4 vertexColor;
 out vec2 texCoord0;
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
+    vexpIsUiPass = step(0.99, abs(ProjMat[3][3]));
 
-    sphericalVertexDistance = fog_spherical_distance(Position);
-    cylindricalVertexDistance = fog_cylindrical_distance(Position);
+    vec3 viewPosition = (ModelViewMat * vec4(Position, 1.0)).xyz;
+    sphericalVertexDistance = fog_spherical_distance(viewPosition);
+    cylindricalVertexDistance = fog_cylindrical_distance(viewPosition);
 
     vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color) * sample_lightmap(Sampler2, UV2);
 

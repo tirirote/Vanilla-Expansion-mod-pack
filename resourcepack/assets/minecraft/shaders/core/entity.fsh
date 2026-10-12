@@ -1,7 +1,11 @@
 #version 330
 
 #moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:vexp_cave_fog.glsl>
+
+const bool VEXP_DEBUG_UI_PASS = false;
 
 uniform sampler2D Sampler0;
 
@@ -11,6 +15,7 @@ uniform sampler2D DissolveMaskSampler;
 
 in float sphericalVertexDistance;
 in float cylindricalVertexDistance;
+in float vexpIsUiPass;
 #ifdef PER_FACE_LIGHTING
 in vec4 vertexPerFaceColorBack;
 in vec4 vertexPerFaceColorFront;
@@ -60,5 +65,20 @@ void main() {
     color *= lightMapColor;
 #endif
 
-    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+ #ifndef EMISSIVE
+     if (vexpIsUiPass < 0.5) {
+         float daylight = max(sin(fract(GameTime) * 6.2831853), 0.0);
+         color.rgb *= mix(vec3(0.93, 0.96, 1.04), vec3(1.04, 1.01, 0.95), daylight);
+     }
+ #endif
+     if (vexpIsUiPass < 0.5) {
+         color = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+         float caveFog = vexp_cave_fog_amount(float(CameraBlockPos.y), sphericalVertexDistance, cylindricalVertexDistance);
+         color.rgb = mix(color.rgb, FogColor.rgb, caveFog);
+     }
+     if (VEXP_DEBUG_UI_PASS) {
+         fragColor = vexpIsUiPass < 0.5 ? vec4(0.0, 1.0, 1.0, 1.0) : vec4(1.0, 0.0, 1.0, 1.0);
+         return;
+     }
+     fragColor = color;
 }

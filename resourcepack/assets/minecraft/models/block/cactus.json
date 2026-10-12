@@ -7,7 +7,6 @@
   },
   "elements": [
     {
-      "name": "body",
       "from": [1, 0, 1],
       "to": [15, 16, 15],
       "faces": {
@@ -38,7 +37,6 @@
       }
     },
     {
-      "name": "spine_ne",
       "from": [15, 0, 1],
       "to": [16, 16, 1],
       "rotation": {
@@ -58,7 +56,6 @@
       }
     },
     {
-      "name": "spine_se",
       "from": [15, 0, 15],
       "to": [16, 16, 15],
       "rotation": {
@@ -78,7 +75,6 @@
       }
     },
     {
-      "name": "spine_sw",
       "from": [0, 0, 15],
       "to": [1, 16, 15],
       "rotation": {
@@ -98,7 +94,6 @@
       }
     },
     {
-      "name": "spine_nw",
       "from": [0, 0, 1],
       "to": [1, 16, 1],
       "rotation": {
@@ -118,7 +113,6 @@
       }
     },
     {
-      "name": "spine_wn",
       "from": [1, 0, 0],
       "to": [1, 16, 1],
       "rotation": {
@@ -138,7 +132,6 @@
       }
     },
     {
-      "name": "spine_en",
       "from": [15, 0, 0],
       "to": [15, 16, 1],
       "rotation": {
@@ -158,7 +151,6 @@
       }
     },
     {
-      "name": "spine_es",
       "from": [15, 0, 15],
       "to": [15, 16, 16],
       "rotation": {
@@ -178,7 +170,6 @@
       }
     },
     {
-      "name": "spine_ws",
       "from": [1, 0, 15],
       "to": [1, 16, 16],
       "rotation": {
