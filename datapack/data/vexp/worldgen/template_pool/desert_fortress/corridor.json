@@ -1,0 +1,86 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/corridor",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/small_room",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/big_room",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/furnace",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/blacksmith",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/ruins",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/ruins_1",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/library",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/scarab_room",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 2
+    }
+  ],
+  "fallback": "vexp:desert_fortress/outside"
+}

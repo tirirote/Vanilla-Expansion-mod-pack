@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "vexp:mummy"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "vexp:mummy_leggings"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "vexp:mummy"
+      }
+    ]
+  }
+}

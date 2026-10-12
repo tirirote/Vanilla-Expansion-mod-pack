@@ -1,0 +1,14 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "vexp:desert_fortress/statue_body",
+        "projection": "rigid",
+        "processors": "empty"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}
