@@ -76,6 +76,7 @@ scoreboard objectives add vexp.stun_timer dummy
 scoreboard objectives add vexp.right_click dummy
 scoreboard objectives add vexp.hitbox_hide_timer dummy
 scoreboard objectives add vexp.special_hit_window dummy
+scoreboard objectives add vexp.combo_time_window dummy
 
 scoreboard objectives add vexp.cooldown_tenths dummy
 scoreboard objectives add vexp.cooldown_sec_int dummy
@@ -129,7 +130,7 @@ scoreboard objectives add vexp.enchant.resonance dummy
 scoreboard objectives add vexp.enchant.taunt dummy
 scoreboard objectives add vexp.enchant.levitation dummy
 scoreboard objectives add vexp.enchant.levitation_time dummy
-
+scoreboard objectives add vexp.enchant.theft dummy
 #Custom Mobs
 scoreboard objectives add vexp.pathfind_rand dummy
 scoreboard objectives add vexp.mob_cooldown dummy
@@ -184,6 +185,7 @@ scoreboard objectives add vexp.proj_damage dummy
 
 # Utility teams
 team add vexp.bone_armor_friend
+team modify vexp.bone_armor_friend friendlyFire true
 team add vexp.mask_friends
 team modify vexp.mask_friends color yellow
 

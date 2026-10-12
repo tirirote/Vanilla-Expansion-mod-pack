@@ -4,6 +4,9 @@ function vexp:custom_block/tick
 # Dungeons
 function vexp:dungeons/tick
 
+# Custom artifacts
+function vexp:artifacts/tick
+
 # Custom mobs
 function vexp:custom_mobs/tick
 
