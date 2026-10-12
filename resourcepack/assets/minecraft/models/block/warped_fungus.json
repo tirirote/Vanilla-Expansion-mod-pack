@@ -4,6 +4,7 @@
     "1": "block/warped_wart_block",
     "particle": "block/warped_fungus"
   },
+  "ambientocclusion": false,
   "elements": [
     {
       "from": [8, 0, 5],
@@ -36,8 +37,7 @@
         "west": { "uv": [3, 8, 13, 10], "texture": "#0" },
         "up": { "uv": [5, 5, 15, 15], "texture": "#1" },
         "down": { "uv": [0, 0, 10, 10], "texture": "#1" }
-      },
-      "shade": false
+      }
     },
     {
       "from": [3, 5.01, 3],

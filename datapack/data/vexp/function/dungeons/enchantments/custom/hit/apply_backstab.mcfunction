@@ -23,7 +23,10 @@ scoreboard players set #const_100 vexp.math 100
 scoreboard players operation #backstab_bonus vexp.math /= #const_100 vexp.math
 execute if score #backstab_bonus vexp.math matches ..0 run scoreboard players set #backstab_bonus vexp.math 1
 
-execute store result storage vexp:temp backstab_damage int 1 run scoreboard players get #backstab_bonus vexp.math
+execute store result score #backstab_total vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10
+scoreboard players operation #backstab_total vexp.math += #backstab_bonus vexp.math
+
+execute store result storage vexp:temp backstab_damage float 0.1 run scoreboard players get #backstab_total vexp.math
 
 execute as @e[tag=vexp.backstab_target] run function vexp:dungeons/enchantments/custom/hit/backstab_deal_bonus with storage vexp:temp
 

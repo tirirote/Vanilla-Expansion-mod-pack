@@ -24,7 +24,12 @@ function vexp:dungeons/combo_system/hitbox/resolve_eff_damage with storage vexp:
 function vexp:dungeons/combo_system/hooks/hit/handle_hit with storage vexp:dungeons.weapon combo_params
 
 # Hitted common feedback (damage hearts)
-execute as @e[tag=vexp.hitted] at @s run particle minecraft:damage_indicator ~ ~1 ~ .2 .2 .2 0.3 3
+execute as @e[tag=vexp.hitted] at @s run particle minecraft:damage_indicator ~ ~1 ~ .35 .35 .35 0.1 3
+
+# Change swing animation
+execute store result score #random_whack_anim vexp.math run random value 0..1
+execute unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} if score #random_whack_anim vexp.math matches 0 run item modify entity @s weapon.mainhand {"function":"minecraft:set_components","components":{"swing_animation":{type:"stab"}}}
+execute unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} if score #random_whack_anim vexp.math matches 1 run item modify entity @s weapon.mainhand {"function":"minecraft:set_components","components":{"swing_animation":{type:"whack"}}}
 
 # Clear pending state for this queued hit.
 tag @s remove vexp.hit_delay.pending

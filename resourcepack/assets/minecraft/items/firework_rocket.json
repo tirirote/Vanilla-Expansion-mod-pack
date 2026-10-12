@@ -116,6 +116,48 @@
         }
       },
       {
+        "when": "vexp:common_special",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/common_special"
+        }
+      },
+      {
+        "when": "vexp:echo_special",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/echo_special"
+        }
+      },
+      {
+        "when": "vexp:gold_special",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/gold_special"
+        }
+      },
+      {
+        "when": "vexp:diamond_special",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/diamond_special"
+        }
+      },
+      {
+        "when": "vexp:glowing_special",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/glowing_special"
+        }
+      },
+      {
+        "when": "vexp:netherite_special",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/netherite_special"
+        }
+      },
+      {
         "when": "vexp:thundering",
         "model": {
           "type": "minecraft:model",
@@ -225,6 +267,20 @@
         "model": {
           "type": "minecraft:model",
           "model": "vexp:block/fx/resonance"
+        }
+      },
+      {
+        "when": "vexp:theft",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/fx/theft"
+        }
+      },
+      {
+        "when": "vexp:shockwave",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:block/projectiles/shockwave"
         }
       },
       {

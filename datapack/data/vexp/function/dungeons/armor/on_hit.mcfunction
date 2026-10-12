@@ -16,7 +16,7 @@ scoreboard players operation #total_armor_damage vexp.math += #leggings_damage v
 scoreboard players operation #total_armor_damage vexp.math += #boots_damage vexp.math
 
 # Apply total
-execute store result score #eff_dmg vexp.math run data get storage vexp:dungeons.weapon combo_params.damage 10
+execute store result score #eff_dmg vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 10
 scoreboard players operation #eff_dmg vexp.math += #total_armor_damage vexp.math
 execute store result storage vexp:dungeons.weapon combo_params.eff_damage float 0.1 run scoreboard players get #eff_dmg vexp.math
 

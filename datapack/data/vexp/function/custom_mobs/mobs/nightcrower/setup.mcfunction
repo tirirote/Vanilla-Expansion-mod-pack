@@ -18,7 +18,7 @@ data modify entity @s IsBaby set value false
 data modify entity @s Silent set value true
 data modify entity @s CanBreakDoors set value false
 data modify entity @s DrownedConversionTime set value -1
-data modify entity @s DeathLootTable set value "vexp:empty"
+data modify entity @s DeathLootTable set value "vexp:nightcrower"
 effect give @s invisibility infinite 0 true
 
 #Setup custom mob data.

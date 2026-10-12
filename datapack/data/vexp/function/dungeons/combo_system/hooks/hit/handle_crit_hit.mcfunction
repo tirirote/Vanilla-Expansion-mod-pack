@@ -1,4 +1,5 @@
+# Tag mob with crit hit
 tag @s add vexp.hitted.critical
 
-#Feedback
+# Feedback
 function vexp:dungeons/fx/hits/crit_hit

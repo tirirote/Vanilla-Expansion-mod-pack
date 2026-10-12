@@ -4,6 +4,7 @@
     "1": "block/brown_mushroom_block",
     "particle": "block/brown_mushroom"
   },
+  "ambientocclusion": false,
   "elements": [
     {
       "from": [8, 0, 5],
@@ -36,8 +37,7 @@
         "west": { "uv": [5, 0, 11, 2], "texture": "#1" },
         "up": { "uv": [0, 0, 6, 6], "texture": "#1" },
         "down": { "uv": [0, 0, 6, 6], "texture": "#1" }
-      },
-      "shade": false
+      }
     }
   ]
 }

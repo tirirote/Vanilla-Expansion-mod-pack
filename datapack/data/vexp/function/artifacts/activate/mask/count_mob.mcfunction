@@ -1,0 +1,14 @@
+# Counting target mobs
+# @s is the target mob
+
+execute as @p[tag=vexp.mask_owner,limit=1] run scoreboard players add @s vexp.mask_mob_count 1
+execute as @p[tag=vexp.mask_owner,limit=1] run function vexp:utils/sound {sound: "minecraft:entity.evoker.cast_spell", type: "player", pitch:1}
+
+data modify entity @s Glowing set value true
+team join vexp.mask_friends
+particle instant_effect{color:11140976,power:2} ~ ~ ~ 0 0 0 1 1
+particle instant_effect{color:16772690,power:2} ~ ~ ~ 0 0 0 1 1
+
+# Link this mob to its owner for later exact-match cleanup checks (not the shared vexp.id).
+scoreboard players operation @s vexp.mask_owner_id = @p[tag=vexp.mask_owner,limit=1] vexp.id
+tag @s add vexp.mask_friend

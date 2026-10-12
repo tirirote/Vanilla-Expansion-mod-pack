@@ -33,8 +33,8 @@ execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance
 # Indicator now sits right next to the hitbox (update_hitmark.mcfunction), so the same
 # tight radius as the hitbox is enough — both @e mentions must match or "as" could
 # switch to a different entity than the one just verified by id.
-execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s remove vexp.hitbox.to_remove
-execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s add vexp.hitbox.mine_temp
+#execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s remove vexp.hitbox.to_remove
+#execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s add vexp.hitbox.mine_temp
 
 # Relay cooldown state to the hitbox
 execute as @e[tag=vexp.hitbox.mine_temp] run tag @s remove vexp.hitbox.cooldown
@@ -43,8 +43,7 @@ execute if score @s vexp.combo_cooldown matches 1.. as @e[tag=vexp.hitbox.mine_t
 # If not found (destroyed or new held item), summon exactly one
 execute unless entity @s[tag=vexp.hitbox.found] run function vexp:dungeons/combo_system/hitbox/summon
 
-# Reposition the one we picked (must be the one without to_remove or newest)
-
+# Hitbox reposition the one we picked (must be the one without to_remove or newest)
 #1. If holding spellbook in offhand, use spellbook data
 execute if data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} unless data entity @s SelectedItem run function vexp:dungeons/combo_system/hitbox/update_pos with entity @s equipment.offhand.components."minecraft:custom_data".vexp.combo
 #2. If holding spellbook in offhand, and other thing in mainhand, use mainhand data
@@ -52,7 +51,8 @@ execute if data entity @s equipment.offhand.components."minecraft:custom_data".v
 # 3. If not spellbook in offhand, use mainhand data
 execute unless data entity @s equipment.offhand.components."minecraft:custom_data".vexp{item:"spellbook"} run function vexp:dungeons/combo_system/hitbox/update_pos with entity @s SelectedItem.components."minecraft:custom_data".vexp.combo
 
-function vexp:dungeons/combo_system/hitbox/update_hitmark
+# Update Indicator
+#function vexp:dungeons/combo_system/hitbox/update_hitmark
 
 # Cleanup temp tags for this player (next player starts clean)
 tag @e[tag=vexp.hitbox.mine_temp] remove vexp.hitbox.mine_temp

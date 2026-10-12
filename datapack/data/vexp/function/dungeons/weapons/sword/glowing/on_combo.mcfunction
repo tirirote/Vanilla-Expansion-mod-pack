@@ -8,4 +8,4 @@ function vexp:dungeons/weapons/sword/combo_finisher
 function vexp:dungeons/states/glow_marked
 
 # Feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/glowing_hit
+execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/glowing_special

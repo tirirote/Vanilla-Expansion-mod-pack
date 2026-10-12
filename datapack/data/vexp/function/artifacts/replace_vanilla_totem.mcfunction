@@ -1,0 +1,2 @@
+# Replace vanilla totem
+$item replace entity @s $(slot) with totem_of_undying[custom_data={vexp:{item:"artifact"}},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Una pequeña estatuilla, ",color:"gray"},{"text":"con un gran poder oculto.” ~",color:"gray"},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]

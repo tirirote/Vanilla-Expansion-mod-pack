@@ -4,6 +4,7 @@
     "1": "block/red_mushroom_block",
     "particle": "block/red_mushroom"
   },
+  "ambientocclusion": false,
   "elements": [
     {
       "from": [8, 0, 5],
@@ -49,8 +50,7 @@
         "south": { "uv": [0, 2, 4, 6], "texture": "#1" },
         "west": { "uv": [11, 4, 15, 8], "texture": "#1" },
         "up": { "uv": [4, 4, 8, 8], "texture": "#1" }
-      },
-      "shade": false
+      }
     }
   ]
 }

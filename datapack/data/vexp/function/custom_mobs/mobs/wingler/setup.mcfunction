@@ -10,8 +10,16 @@ data modify entity @s IsBaby set value false
 data modify entity @s Tame set value false
 data modify entity @s Anger set value 1
 data modify entity @s Silent set value true
-data modify entity @s DeathLootTable set value "vexp:empty"
+data modify entity @s DeathLootTable set value "vexp:wingler"
 data modify entity @s drop_chances.mainhand set value 1
+
+# Randomize wingler having a favourite item
+execute store result score #wingler_random_loot vexp.rand run random value 0..5
+execute if score #wingler_random_loot vexp.rand matches 1 run summon item ~ ~ ~ {Item:{id:"diamond",count:1b}}
+execute if score #wingler_random_loot vexp.rand matches 2 run summon item ~ ~ ~ {Item:{id:"iron_ingot",count:1b}}
+execute if score #wingler_random_loot vexp.rand matches 3 run summon item ~ ~ ~ {Item:{id:"gold_ingot",count:1b}}
+execute if score #wingler_random_loot vexp.rand matches 4 run summon item ~ ~ ~ {Item:{id:"emerald",count:1b}}
+execute if score #wingler_random_loot vexp.rand matches 5 run summon item ~ ~ ~ {Item:{id:"copper_ingot",count:1b}}
 
 #Setup custom mob data.
 function vexp:custom_mobs/setup

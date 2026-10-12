@@ -10,5 +10,5 @@ execute if entity @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine
 
 execute if entity @e[type=interaction,tag=vexp.combo_hitbox,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,tag=vexp.hitbox.cooldown,limit=1,sort=nearest] run data modify entity @e[type=item_display,tag=vexp.combo_hitbox_indicator,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,limit=1,sort=nearest] Glowing set value false
 
-execute positioned ~ ~0.65 ~ run tp @e[type=item_display,tag=vexp.combo_hitbox_indicator,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,limit=1,sort=nearest] ^ ^ ^0.5 facing entity @s eyes
-
+execute if entity @s[predicate=vexp:is_sneaking] positioned ~ ~0.25 ~ run tp @e[type=item_display,tag=vexp.combo_hitbox_indicator,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,limit=1,sort=nearest] ^ ^ ^0.5
+execute unless entity @s[predicate=vexp:is_sneaking] positioned ~ ~0.6 ~ run tp @e[type=item_display,tag=vexp.combo_hitbox_indicator,tag=vexp.hitbox.mine_temp,tag=!vexp.hitbox.to_remove,limit=1,sort=nearest] ^ ^ ^0.5

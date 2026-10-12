@@ -3,8 +3,10 @@
 tag @s add vexp.projectile_owner
 
 data modify storage vexp:temp projectile_spawn set value {projectile_tag:"enchantment_shockwave",proj_type:"enchantment_shockwave",proj_data:{}}
-execute positioned ~ ~1.5 ~ rotated as @s positioned ^ ^ ^2 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
+execute positioned ~ ~1.5 ~ rotated as @s positioned ^ ^ ^1.5 run function vexp:projectile/utils/create_armor_stand with storage vexp:temp projectile_spawn
 execute as @e[type=minecraft:item_display,tag=enchantment_shockwave,sort=nearest,limit=1,distance=..3] at @s run function vexp:projectile/spawn
 
+# Feedback
+execute positioned ~ ~1.5 ~ run particle flash{color:-12457473} ^ ^ ^1.5 0 0 0 0 0
 function vexp:utils/sound {sound: "minecraft:item.spear.lunge_1", type: "player", pitch:1}
 function vexp:utils/sound {sound: "minecraft:entity.shulker.shoot", type: "player", pitch:1}

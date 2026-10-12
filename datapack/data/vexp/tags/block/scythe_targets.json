@@ -1,0 +1,26 @@
+{
+  "values": [
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:fern",
+    "minecraft:large_fern",
+    "minecraft:dead_bush",
+    "minecraft:tall_dry_grass",
+    "minecraft:short_dry_grass",
+    "minecraft:cobweb",
+    "#minecraft:saplings",
+    "#minecraft:flowers",
+    "#minecraft:grass_blocks",
+    "#replaceable",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:glow_lichen",
+    "#cave_vines",
+    "weeping_vines",
+    "twisting_vines",
+    "minecraft:kelp_plant",
+    "#minecraft:leaves",
+    "small_dripleaf",
+    "big_dripleaf_stem"
+  ]
+}

@@ -4,6 +4,7 @@
     "1": "block/crimson_nylium",
     "particle": "block/crimson_fungus"
   },
+  "ambientocclusion": false,
   "elements": [
     {
       "from": [8, 0, 5],
@@ -36,8 +37,7 @@
         "west": { "uv": [5, 8, 11, 10], "texture": "#0" },
         "up": { "uv": [5, 5, 11, 11], "texture": "#0" },
         "down": { "uv": [5, 5, 11, 11], "texture": "#1" }
-      },
-      "shade": false
+      }
     },
     {
       "from": [6, 5, 6],
@@ -49,8 +49,7 @@
         "south": { "uv": [6, 4, 10, 8], "texture": "#0" },
         "west": { "uv": [10, 4, 6, 8], "texture": "#0" },
         "up": { "uv": [5, 9, 9, 5], "texture": "#0" }
-      },
-      "shade": false
+      }
     }
   ]
 }

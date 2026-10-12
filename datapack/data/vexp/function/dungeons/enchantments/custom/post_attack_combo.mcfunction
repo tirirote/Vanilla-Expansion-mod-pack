@@ -11,6 +11,7 @@ scoreboard players reset @s vexp.enchant.execute
 scoreboard players reset @s vexp.enchant.first_strike
 scoreboard players reset @s vexp.enchant.ender_slayer
 scoreboard players reset @s vexp.enchant.cubism
+scoreboard players reset @s vexp.enchant.theft
 
 # Get offhand enchantments
 execute if data entity @s equipment.offhand.components."minecraft:enchantments"."vexp:committed" store result score @s vexp.enchant.committed run data get entity @s equipment.offhand.components."minecraft:enchantments"."vexp:committed" 1
@@ -22,6 +23,7 @@ execute if data entity @s equipment.offhand.components."minecraft:enchantments".
 execute if data entity @s equipment.offhand.components."minecraft:enchantments"."vexp:first_strike" store result score @s vexp.enchant.first_strike run data get entity @s equipment.offhand.components."minecraft:enchantments"."vexp:first_strike" 1
 execute if data entity @s equipment.offhand.components."minecraft:enchantments"."vexp:ender_slayer" store result score @s vexp.enchant.ender_slayer run data get entity @s equipment.offhand.components."minecraft:enchantments"."vexp:ender_slayer" 1
 execute if data entity @s equipment.offhand.components."minecraft:enchantments"."vexp:cubism" store result score @s vexp.enchant.cubism run data get entity @s equipment.offhand.components."minecraft:enchantments"."vexp:cubism" 1
+execute if data entity @s equipment.offhand.components."minecraft:enchantments"."vexp:theft" store result score @s vexp.enchant.theft run data get entity @s equipment.offhand.components."minecraft:enchantments"."vexp:theft" 1
 
 # Get mainhand enchantments
 execute if data entity @s SelectedItem.components."minecraft:enchantments"."vexp:committed" store result score @s vexp.enchant.committed run data get entity @s SelectedItem.components."minecraft:enchantments"."vexp:committed" 1
@@ -33,6 +35,7 @@ execute if data entity @s SelectedItem.components."minecraft:enchantments"."vexp
 execute if data entity @s SelectedItem.components."minecraft:enchantments"."vexp:first_strike" store result score @s vexp.enchant.first_strike run data get entity @s SelectedItem.components."minecraft:enchantments"."vexp:first_strike" 1
 execute if data entity @s SelectedItem.components."minecraft:enchantments"."vexp:ender_slayer" store result score @s vexp.enchant.ender_slayer run data get entity @s SelectedItem.components."minecraft:enchantments"."vexp:ender_slayer" 1
 execute if data entity @s SelectedItem.components."minecraft:enchantments"."vexp:cubism" store result score @s vexp.enchant.cubism run data get entity @s SelectedItem.components."minecraft:enchantments"."vexp:cubism" 1
+execute if data entity @s SelectedItem.components."minecraft:enchantments"."vexp:theft" store result score @s vexp.enchant.theft run data get entity @s SelectedItem.components."minecraft:enchantments"."vexp:theft" 1
 
 # Execute enchantments
 execute if score @s vexp.enchant.committed matches 1.. run function vexp:dungeons/enchantments/custom/hit/apply_committed
@@ -44,3 +47,4 @@ execute if score @s vexp.enchant.execute matches 1.. run function vexp:dungeons/
 execute if score @s vexp.enchant.first_strike matches 1.. run function vexp:dungeons/enchantments/custom/hit/apply_first_strike
 execute if score @s vexp.enchant.ender_slayer matches 1.. run function vexp:dungeons/enchantments/custom/hit/apply_ender_slayer
 execute if score @s vexp.enchant.cubism matches 1.. run function vexp:dungeons/enchantments/custom/hit/apply_cubism
+execute if score @s vexp.enchant.theft matches 1.. run function vexp:dungeons/enchantments/custom/hit/apply_theft

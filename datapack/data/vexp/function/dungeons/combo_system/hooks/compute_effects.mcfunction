@@ -18,7 +18,7 @@ execute if entity @s[nbt={active_effects:[{id:"minecraft:weakness"}]}] run funct
 
 # Jump critical: +15% damage based on current pre-critical damage.
 scoreboard players set #crit_bonus vexp.math 0
-scoreboard players set #const_15 vexp.math 15
+scoreboard players set #const_15 vexp.math 25
 scoreboard players set #const_100 vexp.math 100
 execute if entity @s[tag=vexp.hit_critical] run scoreboard players operation #crit_bonus vexp.math = #eff_dmg vexp.math
 execute if entity @s[tag=vexp.hit_critical] run scoreboard players operation #crit_bonus vexp.math *= #const_15 vexp.math

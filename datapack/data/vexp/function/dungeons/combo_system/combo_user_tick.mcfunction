@@ -12,7 +12,3 @@ execute if score @s vexp.hit_delay matches 1.. positioned ~ ~1.4 ~ run function 
 
 # 3. Parry Logic
 execute if score @s vexp.parry_timer matches 1.. run function vexp:dungeons/combo_system/parry
-
-# 4. Special hit window for player
-execute if entity @s[tag=vexp.hitted.special] if score @s vexp.special_hit_window matches 1.. run scoreboard players remove @s vexp.special_hit_window 1
-execute if entity @s[tag=vexp.hitted.special] if score @s vexp.special_hit_window matches 0 run tag @s remove vexp.hitted.special

@@ -1,0 +1,22 @@
+# Give all artifacts
+
+# Totem of undying
+give @s totem_of_undying[custom_data={vexp:{item:"artifact"}},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Una pequeña estatuilla, ",color:"gray",italic:false},{"text":"con un gran poder oculto.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]
+
+# Chalice
+give @s totem_of_undying[item_name={text:"Cáliz sagrado",color:"yellow",italic:false},custom_data={vexp:{item:"artifact"}},custom_model_data={strings:["vexp:chalice"]},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Un ostentoso y antiguo cáliz, ",color:"gray",italic:false},{"text":"rebosante de esplendor.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]
+
+# Medallion
+give @s totem_of_undying[item_name={text:"Medallón de ansia de combate",color:"yellow",italic:false},custom_data={vexp:{item:"artifact"}},custom_model_data={strings:["vexp:medallion"]},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Un pesado medallón",color:"gray",italic:false},{"text":"con una amatista tallada.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]
+
+# Mask
+give @s totem_of_undying[item_name={text:"Máscara del engaño",color:"yellow",italic:false},custom_data={vexp:{item:"artifact"}},custom_model_data={strings:["vexp:mask"]},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Una enigmática máscara de teatro,",color:"gray",italic:false},{"text":"con un aura extraña.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]
+
+# Mirror
+give @s totem_of_undying[item_name={text:"Espejo de la intriga",color:"yellow",italic:false},custom_data={vexp:{item:"artifact"}},custom_model_data={strings:["vexp:mirror"]},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Un antiguo espejo de mano,",color:"gray",italic:false},{"text":"cuyo reflejo parece borroso.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]
+
+# Ring
+give @s totem_of_undying[item_name={text:"Anillo del codicioso",color:"yellow",italic:false},custom_data={vexp:{item:"artifact"}},custom_model_data={strings:["vexp:ring"]},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Un pequeño y antiguo anillo, ",color:"gray",italic:false},{"text":"con un precioso brillo.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]
+
+# Scarab
+give @s totem_of_undying[item_name={text:"Escarabajo de la fortuna",color:"yellow",italic:false},custom_data={vexp:{item:"artifact"}},custom_model_data={strings:["vexp:scarab"]},lore=[{text:"Un artefacto mágico.",italic:false,color:"dark_gray"},{text:""},{"text":"~ “Un escarabajo dorado, ",color:"gray",italic:false},{"text":"con un rebosante esplendor.” ~",color:"gray",italic:false},{text:""},{text:"Habilidad [Pasiva]:",italic:false,color:"yellow"},{"text":"Segunda oportunidad.",italic:false,color:"white"},{text:""},{"text":"Artefacto mágico",italic:false,color:"blue"}],enchantment_glint_override=true,!death_protection,max_damage=5]

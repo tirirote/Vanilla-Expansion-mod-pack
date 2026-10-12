@@ -5,11 +5,11 @@ execute if block ^ ^0.1 ^-0.1 #replaceable run tp @s ^ ^0.5 ^-0.5 facing entity 
 
 execute positioned ~ ~0.35 ~ run particle flash{color:-4637952} ^ ^ ^1 1 1 1 1 0
 
-execute positioned ~ ~0.35 ~ positioned ^ ^ ^1.5 run function vexp:utils/feedback/dust_particle {initialColor: [0.5,0.4,0.2], finalColor: [0.15, 0.1, 0.1], scale: 1.7, dX: 0.2, dY: 0.2, dZ: 0.2, speed: 1, count: 3}
-execute positioned ~ ~0.35 ~ positioned ^ ^ ^2 run function vexp:utils/feedback/dust_particle {initialColor: [0.5,0.4,0.2], finalColor: [0.15, 0.1, 0.1], scale: 1.7, dX: 0.1, dY: 0.1, dZ: 0.1, speed: 1, count: 2}
-execute positioned ~ ~0.35 ~ positioned ^ ^ ^2.5 run function vexp:utils/feedback/dust_particle {initialColor: [0.5,0.4,0.2], finalColor: [0.15, 0.1, 0.1], scale: 1.7, dX: 0.1, dY: 0.1, dZ: 0.1, speed: 1, count: 2}
-execute positioned ~ ~0.35 ~ positioned ^ ^ ^3 run function vexp:utils/feedback/dust_particle {initialColor: [0.5,0.4,0.2], finalColor: [0.15, 0.1, 0.1], scale: 1.7, dX: 0.1, dY: 0.1, dZ: 0.1, speed: 1, count: 2}
-execute positioned ~ ~0.35 ~ positioned ^ ^ ^3.5 run function vexp:utils/feedback/dust_particle {initialColor: [0.5,0.4,0.2], finalColor: [0.15, 0.1, 0.1], scale: 1.7, dX: 0.1, dY: 0.1, dZ: 0.1, speed: 1, count: 2}
+execute positioned ~ ~0.35 ~ run particle dust_color_transition{from_color:14703116,to_color:4336166,scale:1.7} ^ ^ ^1.5 0.1 0.1 0.1 1 3
+execute positioned ~ ~0.35 ~ run particle dust_color_transition{from_color:14703116,to_color:4336166,scale:1.7} ^ ^ ^2 0.1 0.1 0.1 1 3
+execute positioned ~ ~0.35 ~ run particle dust_color_transition{from_color:14703116,to_color:4336166,scale:1.7} ^ ^ ^2.5 0.1 0.1 0.1 1 3
+execute positioned ~ ~0.35 ~ run particle dust_color_transition{from_color:14703116,to_color:4336166,scale:1.7} ^ ^ ^3 0.1 0.1 0.1 1 3
+execute positioned ~ ~0.35 ~ run particle dust_color_transition{from_color:14703116,to_color:4336166,scale:1.7} ^ ^ ^3.5 0.1 0.1 0.1 1 3
 
 execute if block ~ ~-0.5 ~ #soul_fire_base_blocks positioned ~ ~0.35 ~ run particle soul_fire_flame ^ ^ ^1.5 0.1 0.1 0.1 0.05 1
 execute if block ~ ~-0.5 ~ #soul_fire_base_blocks positioned ~ ~0.35 ~ run particle soul_fire_flame ^ ^ ^2 0 0 0 0 0
