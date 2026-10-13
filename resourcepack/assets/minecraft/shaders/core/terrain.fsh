@@ -4,12 +4,20 @@
 #moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:chunksection.glsl>
 #moj_import <minecraft:vexp_cave_fog.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
 uniform sampler2D Sampler0;
 
 in float sphericalVertexDistance;
 in float cylindricalVertexDistance;
 in vec4 vertexColor;
+in vec4 vexpTerrainDebugColor;
+in float vexpTerrainAOMask;
+in float vexpTerrainColorShadowMask;
+in vec4 vexpTerrainDebugLight;
+in vec4 vexpTerrainDebugRawLightmap;
+in float vexpTerrainDebugSkyLight;
+in float vexpTerrainDebugBlockLight;
 in vec2 texCoord0;
 
 out vec4 fragColor;
@@ -88,14 +96,42 @@ vec4 sampleRGSS(sampler2D source, vec2 uv, vec2 pixelSize) {
 
 void main() {
     vec4 color = (UseRgss == 1 ? sampleRGSS(Sampler0, texCoord0, 1.0f / TextureSize) : sampleNearest(Sampler0, texCoord0, 1.0f / TextureSize)) * vertexColor;
-    color = mix(FogColor * vec4(1, 1, 1, color.a), color, ChunkVisibility);
 #ifdef ALPHA_CUTOUT
     if (color.a < ALPHA_CUTOUT) {
         discard;
     }
 #endif
-    float daylight = max(sin(fract(GameTime) * 6.2831853), 0.0);
-    color.rgb *= mix(vec3(0.93, 0.96, 1.04), vec3(1.04, 1.01, 0.95), daylight);
+
+    if (VEXP_LIGHTMAP_DEBUG_MODE) {
+        if (VEXP_TERRAIN_DEBUG_VIEW == 1) {
+            fragColor = vec4(vexpTerrainDebugColor.rgb, color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 2) {
+            float vertexLuma = dot(vexpTerrainDebugColor.rgb, vec3(0.2126, 0.7152, 0.0722));
+            fragColor = vec4(vec3(vertexLuma), color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 3) {
+            fragColor = vec4(vec3(vexpTerrainAOMask), color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 4) {
+            fragColor = vec4(vexpTerrainColorShadowMask, 1.0 - vexpTerrainColorShadowMask, 0.0, color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 5) {
+            fragColor = vec4(vec3(vexpTerrainDebugSkyLight), color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 6) {
+            fragColor = vec4(vec3(vexpTerrainDebugBlockLight), color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 7) {
+            fragColor = vec4(vexpTerrainDebugRawLightmap.rgb, color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 8) {
+            fragColor = vec4(vec3(vexpTerrainDebugLight.r), color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 9) {
+            fragColor = vec4(vec3(vexpTerrainDebugLight.g), color.a);
+        } else if (VEXP_TERRAIN_DEBUG_VIEW == 10) {
+            fragColor = vec4(vec3(vexpTerrainDebugLight.b), color.a);
+        } else {
+            fragColor = vec4(vexpTerrainDebugLight.rgb, color.a);
+        }
+        return;
+    }
+
+    color = mix(FogColor * vec4(1, 1, 1, color.a), color, ChunkVisibility);
+    color.rgb = vexp_apply_color_profile(color.rgb, GameTime);
     color = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 
     float caveFog = vexp_cave_fog_amount(float(CameraBlockPos.y), sphericalVertexDistance, cylindricalVertexDistance);

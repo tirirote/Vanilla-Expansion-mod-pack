@@ -4,8 +4,9 @@
 #moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:vexp_cave_fog.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
-const bool VEXP_DEBUG_UI_PASS = false;
+const bool VEXP_DEBUG_UI_PASS = false; // Replaces output with UI/world pass colors for diagnosis.
 
 uniform sampler2D Sampler0;
 
@@ -27,6 +28,7 @@ void main() {
 
     color *= vertexColor * ColorModulator;
     if (vexpIsUiPass < 0.5) {
+        color.rgb = vexp_apply_color_profile(color.rgb, GameTime);
         color = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
         float caveFog = vexp_cave_fog_amount(float(CameraBlockPos.y), sphericalVertexDistance, cylindricalVertexDistance);
         color.rgb = mix(color.rgb, FogColor.rgb, caveFog);

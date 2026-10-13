@@ -2,6 +2,7 @@
 
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
 uniform sampler2D Sampler0;
 
@@ -15,5 +16,6 @@ out vec4 fragColor;
 void main() {
     vec4 color = texture(Sampler0, clamp(texCoord0, 0.0, 1.0));
     color *= vertexColor * ColorModulator;
+    color = vexp_apply_entity_shadow_profile(color);
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

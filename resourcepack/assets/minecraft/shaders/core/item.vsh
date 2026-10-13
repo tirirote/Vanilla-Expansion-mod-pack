@@ -5,6 +5,7 @@
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:projection.glsl>
 #moj_import <minecraft:sample_lightmap.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -29,7 +30,11 @@ void main() {
     sphericalVertexDistance = fog_spherical_distance(viewPosition);
     cylindricalVertexDistance = fog_cylindrical_distance(viewPosition);
 
-    vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color) * sample_lightmap(Sampler2, UV2);
+    vec4 lightmapColor = sample_lightmap(Sampler2, UV2);
+    if (vexpIsUiPass < 0.5) {
+        lightmapColor = vexp_apply_shadow_profile(lightmapColor);
+    }
+    vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color) * lightmapColor;
 
     texCoord0 = UV0;
 }

@@ -2,6 +2,8 @@
 
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:globals.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
 uniform sampler2D Sampler0;
 
@@ -19,5 +21,6 @@ void main() {
         discard;
     }
 #endif
+    color.rgb = vexp_apply_color_profile(color.rgb, GameTime);
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

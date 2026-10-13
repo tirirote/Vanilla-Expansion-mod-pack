@@ -6,6 +6,7 @@
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:projection.glsl>
 #moj_import <minecraft:sample_lightmap.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -75,6 +76,9 @@ void main() {
 
 #ifndef EMISSIVE
     lightMapColor = sample_lightmap(Sampler2, UV2);
+    if (vexpIsUiPass < 0.5) {
+        lightMapColor = vexp_apply_shadow_profile(lightMapColor);
+    }
 #endif
 
 #ifndef NO_OVERLAY

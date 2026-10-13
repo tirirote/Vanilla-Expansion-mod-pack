@@ -1,10 +1,10 @@
 #version 330
 
-const float VEXP_OUTLINE_BLOOM_RADIUS = 6.0;
-const float VEXP_OUTLINE_BLOOM_STRENGTH = 1.0;
+const float VEXP_OUTLINE_BLOOM_RADIUS = 6.0; // Blur radius in screen pixels for glowing-entity halos.
+const float VEXP_OUTLINE_BLOOM_STRENGTH = 1.0; // Halo alpha multiplier, 0 disables the halo.
 
 layout(std140) uniform SamplerInfo {
-        float radius = VEXP_OUTLINE_BLOOM_RADIUS;
+    layout(std140) uniform SamplerInfo {
     vec2 OutSize;
     vec2 InSize;
 };
@@ -25,7 +25,7 @@ void main() {
     vec2 sampleStep = oneTexel * BlurDir;
 
     vec4 blurred = vec4(0.0);
-    float radius = 2.0;
+    float radius = VEXP_OUTLINE_BLOOM_RADIUS;
     for (float a = -radius + 0.5; a <= radius; a += 2.0) {
         blurred += texture(InSampler, texCoord + sampleStep * a);
     }

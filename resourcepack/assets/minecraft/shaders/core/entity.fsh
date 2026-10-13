@@ -4,8 +4,9 @@
 #moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:vexp_cave_fog.glsl>
+#moj_import <minecraft:vexp_color_profile.glsl>
 
-const bool VEXP_DEBUG_UI_PASS = false;
+const bool VEXP_DEBUG_UI_PASS = false; // Replaces output with UI/world pass colors for diagnosis.
 
 uniform sampler2D Sampler0;
 
@@ -67,8 +68,7 @@ void main() {
 
  #ifndef EMISSIVE
      if (vexpIsUiPass < 0.5) {
-         float daylight = max(sin(fract(GameTime) * 6.2831853), 0.0);
-         color.rgb *= mix(vec3(0.93, 0.96, 1.04), vec3(1.04, 1.01, 0.95), daylight);
+         color.rgb = vexp_apply_color_profile(color.rgb, GameTime);
      }
  #endif
      if (vexpIsUiPass < 0.5) {
