@@ -15,15 +15,21 @@ uniform sampler2D Sampler2;
 
 out float sphericalVertexDistance;
 out float cylindricalVertexDistance;
+out float vexpIsUiPass;
 out vec4 vertexColor;
 out vec2 texCoord0;
 
 void main() {
     vec3 pos = Position + ModelOffset;
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
+    vexpIsUiPass = step(0.99, abs(ProjMat[3][3]));
 
     sphericalVertexDistance = fog_spherical_distance(pos);
     cylindricalVertexDistance = fog_cylindrical_distance(pos);
-    vertexColor = Color * vexp_apply_shadow_profile(sample_lightmap(Sampler2, UV2));
+    vec4 lightmapColor = sample_lightmap(Sampler2, UV2);
+    if (vexpIsUiPass < 0.5) {
+        lightmapColor = vexp_apply_shadow_profile(lightmapColor);
+    }
+    vertexColor = Color * lightmapColor;
     texCoord0 = UV0;
 }

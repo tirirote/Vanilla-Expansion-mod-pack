@@ -3,15 +3,15 @@
 const bool VEXP_BLOOM_ENABLED = true; // Master switch; false leaves the scene untouched (the blur passes still run).
 
 const int VEXP_BLOOM_SOURCE = 1; // Brightness measure: 0=luminance, 1=brightest RGB channel.
-const float VEXP_BLOOM_THRESHOLD = 0.75; // Brightness where a pixel starts feeding the bloom.
-const float VEXP_BLOOM_KNEE = 0.85; // Half-width of the threshold ramp; larger gives a softer cutoff.
+const float VEXP_BLOOM_THRESHOLD = 0.6; // Brightness where a pixel starts feeding the bloom.
+const float VEXP_BLOOM_KNEE = 0.75; // Half-width of the threshold ramp; larger gives a softer cutoff.
 
 const float VEXP_BLOOM_SIZE = 16.0; // Blur radius in screen pixels.
-const float VEXP_BLOOM_SOFTNESS = 0.15; // Blur falloff, 0..1; low keeps a tight core, high spreads evenly.
+const float VEXP_BLOOM_SOFTNESS = 0.2; // Blur falloff, 0..1; low keeps a tight core, high spreads evenly.
 
-const float VEXP_BLOOM_INTENSITY = 0.35; // Bloom strength multiplier.
-const vec3 VEXP_BLOOM_COLOR = vec3(0.9, 0.85, 0.65); // Tint multiplied into the bloom; white leaves source colors.
-const float VEXP_BLOOM_CONTRAST = 0.75; // Power curve on the bloom; above 1 shrinks it to the brightest cores.
+const float VEXP_BLOOM_INTENSITY = 0.75; // Bloom strength multiplier.
+const vec3 VEXP_BLOOM_COLOR = vec3(0.75, 0.65, 0.35); // Tint multiplied into the bloom; white leaves source colors.
+const float VEXP_BLOOM_CONTRAST = 0.85; // Power curve on the bloom; above 1 shrinks it to the brightest cores.
 const float VEXP_BLOOM_SATURATION = 1.0; // Bloom saturation; 0 is grayscale, above 1 is more vivid.
 const int VEXP_BLOOM_MODE = 0; // How bloom joins the scene: 0=add, 1=screen (never overexposes).
 const bool VEXP_BLOOM_DEBUG = false; // Shows only the bloom.

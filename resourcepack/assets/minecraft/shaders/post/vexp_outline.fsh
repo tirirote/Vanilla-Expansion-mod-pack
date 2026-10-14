@@ -3,15 +3,19 @@
 const bool VEXP_OUTLINE_ENABLED = true; // Master switch; false returns the scene untouched.
 const int VEXP_OUTLINE_MODE = 1; // 0=multiply (tints toward the line color), 1=add (adds the line color).
 
-const float VEXP_OUTLINE_THICKNESS = 1.0; // Line width in screen pixels.
+const float VEXP_OUTLINE_THICKNESS = 2.0; // Line width in screen pixels at the reference distance.
+const float VEXP_OUTLINE_DISTANCE_SCALE = 1.0; // How much width shrinks with distance: 0=constant, 1=true perspective scaling.
+const float VEXP_OUTLINE_SCALE_REFERENCE = 4.0; // Distance in blocks where the line has exactly the base thickness.
+const float VEXP_OUTLINE_MIN_THICKNESS = 1.0; // Narrowest drawable line in pixels; thinner lines fade out instead of shrinking.
+const float VEXP_OUTLINE_MAX_THICKNESS = 4.0; // Widest line in pixels, to cap growth up close.
 
-const vec3 VEXP_OUTLINE_COLOR = vec3(0.6, 0.55, 0.25); // Line color; black with multiply gives dark lines.
+const vec3 VEXP_OUTLINE_COLOR = vec3(0.65, 0.65, 0.5); // Line color; black with multiply gives dark lines.
 const float VEXP_OUTLINE_STRENGTH = 0.3; // Line opacity, 0..1.
 const float VEXP_OUTLINE_CONTRAST = 1.0; // Edge-mask contrast around 0.5; above 1 is crisper, below 1 softer.
 
 const bool VEXP_OUTLINE_ONE_SIDED = true; // Draws only on the nearer surface; false draws on both sides.
-const float VEXP_OUTLINE_THRESHOLD = 0.01; // Depth jump, as a fraction of distance, where an edge starts.
-const float VEXP_OUTLINE_SOFTNESS = 0.3; // Width of the threshold ramp; smaller is a harder edge.
+const float VEXP_OUTLINE_THRESHOLD = 0.02; // Depth jump, as a fraction of distance, where an edge starts.
+const float VEXP_OUTLINE_SOFTNESS = 0.6; // Width of the threshold ramp; smaller is a harder edge.
 const float VEXP_OUTLINE_MAX_DISTANCE = 64.0; // Distance in blocks where lines are fully faded out.
 const float VEXP_OUTLINE_FADE_RANGE = 64.0; // Blocks over which lines fade before the max distance; set equal to the max for a fade from the camera.
 const float VEXP_OUTLINE_FADE_CURVE = 1.25; // Fade shape: 1=smooth S-curve, above 1 fades faster early, below 1 holds strength longer.
@@ -20,13 +24,13 @@ const bool VEXP_OUTLINE_REVERSED_DEPTH = false; // Set true on 26.2+ where the d
 
 const bool VEXP_OUTLINE_COLOR_ENABLED = true; // Adds lines where the lit scene changes color or brightness on the same surface.
 const int VEXP_OUTLINE_COLOR_SOURCE = 0; // 0=color distance (RGB), 1=luminance only (light and shadow edges).
-const float VEXP_OUTLINE_COLOR_THRESHOLD = 0.05; // Scene difference where a color line starts; raise it to drop texture detail.
-const float VEXP_OUTLINE_COLOR_SOFTNESS = 0.3; // Width of the color threshold ramp; smaller is harder.
+const float VEXP_OUTLINE_COLOR_THRESHOLD = 0.02; // Scene difference where a color line starts; raise it to drop texture detail.
+const float VEXP_OUTLINE_COLOR_SOFTNESS = 0.6; // Width of the color threshold ramp; smaller is harder.
 const float VEXP_OUTLINE_COLOR_STRENGTH = 1.0; // Color-line weight against depth lines, 0..1.
-const float VEXP_OUTLINE_COLOR_DEPTH_GATE = 0.01; // Color lines are skipped across depth jumps above this fraction.
+const float VEXP_OUTLINE_COLOR_DEPTH_GATE = 0.5; // Color lines are skipped across depth jumps above this fraction.
 
 const bool VEXP_OUTLINE_DEBUG_MODE = false; // Shows the outline mask as white on black.
-const int VEXP_OUTLINE_DEBUG_VIEW = 2; // With debug on: 0=final, 1=depth mask, 2=color mask.
+const int VEXP_OUTLINE_DEBUG_VIEW = 0; // With debug on: 0=final, 1=depth mask, 2=color mask.
 
 uniform sampler2D SceneSampler;
 uniform sampler2D MainDepthSampler;
@@ -62,14 +66,19 @@ float vexp_edge_mask(float edge, float threshold, float softness) {
 
 void main() {
     vec3 scene = texture(SceneSampler, texCoord).rgb;
+    float coverage = texture(SceneSampler, texCoord).a;
 
     if (!VEXP_OUTLINE_ENABLED) {
-        fragColor = vec4(scene, 1.0);
+        fragColor = vec4(scene, coverage);
         return;
     }
 
-    vec2 pixelStep = max(VEXP_OUTLINE_THICKNESS, 0.0) / OutSize;
     float centerDepth = vexp_view_depth(texCoord);
+    float scaledThickness = VEXP_OUTLINE_THICKNESS * pow(max(VEXP_OUTLINE_SCALE_REFERENCE, 0.001) / max(centerDepth, 0.001), VEXP_OUTLINE_DISTANCE_SCALE);
+    float minThickness = max(VEXP_OUTLINE_MIN_THICKNESS, 0.001);
+    float lineThickness = clamp(scaledThickness, minThickness, max(VEXP_OUTLINE_MAX_THICKNESS, minThickness));
+    float thicknessCoverage = clamp(scaledThickness / minThickness, 0.0, 1.0);
+    vec2 pixelStep = lineThickness / OutSize;
 
     vec2 offsets[4] = vec2[](
         vec2(pixelStep.x, 0.0),
@@ -104,7 +113,7 @@ void main() {
     float fadeT = clamp((VEXP_OUTLINE_MAX_DISTANCE - nearestDepth) / max(VEXP_OUTLINE_FADE_RANGE, 0.001), 0.0, 1.0);
     float distanceFade = pow(fadeT * fadeT * fadeT * (fadeT * (fadeT * 6.0 - 15.0) + 10.0), max(VEXP_OUTLINE_FADE_CURVE, 0.01));
     float strength = clamp(VEXP_OUTLINE_STRENGTH, 0.0, 1.0);
-    mask *= distanceFade * strength;
+    mask *= distanceFade * strength * thicknessCoverage * (1.0 - coverage);
 
     if (VEXP_OUTLINE_DEBUG_MODE) {
         vec3 debugColor = vec3(mask);
@@ -113,7 +122,7 @@ void main() {
         } else if (VEXP_OUTLINE_DEBUG_VIEW == 2) {
             debugColor = vec3(colorMask * distanceFade);
         }
-        fragColor = vec4(debugColor, 1.0);
+        fragColor = vec4(debugColor, coverage);
         return;
     }
 
@@ -121,5 +130,5 @@ void main() {
         ? scene + VEXP_OUTLINE_COLOR * mask
         : scene * mix(vec3(1.0), VEXP_OUTLINE_COLOR, mask);
 
-    fragColor = vec4(result, 1.0);
+    fragColor = vec4(result, coverage);
 }

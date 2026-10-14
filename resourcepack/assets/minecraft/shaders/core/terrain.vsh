@@ -7,9 +7,9 @@
 #moj_import <minecraft:sample_lightmap.glsl>
 #moj_import <minecraft:vexp_color_profile.glsl>
 
-const float VEXP_WAVE_SPEED = 0.3; // Wind cycles per normalized world-time unit.
-const float VEXP_WAVE_AMP_X = 0.03; // Maximum horizontal displacement on X, in blocks.
-const float VEXP_WAVE_AMP_Z = 0.03; // Maximum horizontal displacement on Z, in blocks.
+const float VEXP_WAVE_SPEED = 0.2; // Wind cycles per normalized world-time unit.
+const float VEXP_WAVE_AMP_X = 0.06; // Maximum horizontal displacement on X, in blocks.
+const float VEXP_WAVE_AMP_Z = 0.06; // Maximum horizontal displacement on Z, in blocks.
 const float VEXP_WAVE_RANDOM_PHASE = 6.2831853; // Maximum per-block phase offset, in radians.
 
 const vec3 VEXP_WAVE_MARKER_COLOR = vec3(1.0, 0.0, 1.0); // Transparent texture-corner marker RGB.

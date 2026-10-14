@@ -53,7 +53,11 @@ void main() {
     depth_layers[0] = texture(MainDepthSampler, texCoord).r;
     active_layers = 1;
 
-    try_insert(texture(TranslucentSampler, texCoord), texture(TranslucentDepthSampler, texCoord).r);
+    // Alpha marks pixels where a translucent layer is in front of the opaque surface.
+    vec4 translucent = texture(TranslucentSampler, texCoord);
+    float translucentDepth = texture(TranslucentDepthSampler, texCoord).r;
+    float translucentInFront = (translucent.a > 0.0 && translucentDepth < depth_layers[0]) ? 1.0 : 0.0;
+    try_insert(translucent, translucentDepth);
     try_insert(texture(ItemEntitySampler, texCoord), texture(ItemEntityDepthSampler, texCoord).r);
     try_insert(texture(ParticlesSampler, texCoord), texture(ParticlesDepthSampler, texCoord).r);
     try_insert(texture(WeatherSampler, texCoord), texture(WeatherDepthSampler, texCoord).r);
@@ -64,5 +68,5 @@ void main() {
         texelAccum = blend(texelAccum, color_layers[ii]);
     }
 
-    fragColor = vec4(texelAccum.rgb, 1.0);
+    fragColor = vec4(texelAccum.rgb, translucentInFront);
 }

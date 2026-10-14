@@ -4,7 +4,13 @@
     "outlined": {},
     "bloom_a": {},
     "bloom_b": {},
-    "bloomed": {}
+    "bloomed": {},
+    "dof": {},
+    "aa": {},
+    "pixelated": {},
+    "ssao_raw": {},
+    "ssao_blur": {},
+    "reflected": {}
   },
   "passes": [
     {
@@ -86,11 +92,75 @@
     },
     {
       "vertex_shader": "minecraft:core/screenquad",
-      "fragment_shader": "minecraft:post/vexp_bloom_extract",
+      "fragment_shader": "minecraft:post/vexp_ssao",
+      "inputs": [
+        {
+          "sampler_name": "MainDepth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        }
+      ],
+      "output": "ssao_raw"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/vexp_ssao_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "ssao_raw"
+        },
+        {
+          "sampler_name": "MainDepth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        }
+      ],
+      "output": "ssao_blur"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/vexp_ssr",
       "inputs": [
         {
           "sampler_name": "Scene",
           "target": "outlined"
+        },
+        {
+          "sampler_name": "MainDepth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        },
+        {
+          "sampler_name": "Ao",
+          "target": "ssao_blur"
+        }
+      ],
+      "output": "reflected"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/vexp_dof",
+      "inputs": [
+        {
+          "sampler_name": "Scene",
+          "target": "reflected"
+        },
+        {
+          "sampler_name": "MainDepth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        }
+      ],
+      "output": "dof"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/vexp_bloom_extract",
+      "inputs": [
+        {
+          "sampler_name": "Scene",
+          "target": "dof"
         }
       ],
       "output": "bloom_a"
@@ -123,7 +193,7 @@
       "inputs": [
         {
           "sampler_name": "Scene",
-          "target": "outlined"
+          "target": "dof"
         },
         {
           "sampler_name": "Bloom",
@@ -134,11 +204,33 @@
     },
     {
       "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/vexp_fxaa",
+      "inputs": [
+        {
+          "sampler_name": "Scene",
+          "target": "bloomed"
+        }
+      ],
+      "output": "aa"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/vexp_pixelate",
+      "inputs": [
+        {
+          "sampler_name": "Scene",
+          "target": "aa"
+        }
+      ],
+      "output": "pixelated"
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
       "fragment_shader": "minecraft:post/blit",
       "inputs": [
         {
           "sampler_name": "In",
-          "target": "bloomed"
+          "target": "pixelated"
         }
       ],
       "uniforms": {

@@ -1,15 +1,15 @@
 #version 330
 
 // VEXP pass parameters should document purpose, units/range, and neutral value beside each control.
-const float VEXP_COLOR_PROFILE_STRENGTH = 0.2; // Day/night tint blend: 0 disables it, 1 applies it fully.
-const vec3 VEXP_COLOR_PROFILE_DAY_TINT = vec3(0.8, 1.1, 1.2); // RGB multiplier for daytime color grading.
-const vec3 VEXP_COLOR_PROFILE_NIGHT_TINT = vec3(1.6, 0.9, 1.1); // RGB multiplier for nighttime color grading.
+const float VEXP_COLOR_PROFILE_STRENGTH = 0.5; // Day/night tint blend: 0 disables it, 1 applies it fully.
+const vec3 VEXP_COLOR_PROFILE_DAY_TINT = vec3(0.6, 0.75, 0.85); // RGB multiplier for daytime color grading.
+const vec3 VEXP_COLOR_PROFILE_NIGHT_TINT = vec3(0.85, 0.6, 0.75); // RGB multiplier for nighttime color grading.
 
 const float VEXP_TERRAIN_SKY_LIGHT_DAY_STRENGTH = 1.0; // Sky-light multiplier at daytime; 1 preserves brightness.
 const float VEXP_TERRAIN_SKY_LIGHT_NIGHT_STRENGTH = 1.0; // Sky-light multiplier at nighttime; 1 preserves brightness.
 const float VEXP_TERRAIN_SKY_LIGHT_TINT_STRENGTH = 0.2; // Blend of sky tint into terrain light; 0 disables tint.
-const vec3 VEXP_TERRAIN_SKY_LIGHT_DAY_TINT = vec3(0.9, 1.2, 1.1); // RGB multiplier for daytime sky light.
-const vec3 VEXP_TERRAIN_SKY_LIGHT_NIGHT_TINT = vec3(1.0, 0.6, 0.8); // RGB multiplier for nighttime sky light.
+const vec3 VEXP_TERRAIN_SKY_LIGHT_DAY_TINT = vec3(0.6, 0.75, 0.85); // RGB multiplier for daytime sky light.
+const vec3 VEXP_TERRAIN_SKY_LIGHT_NIGHT_TINT = vec3(0.85, 0.6, 0.75); // RGB multiplier for nighttime sky light.
 
 const float VEXP_LIGHTMAP_CONTRAST = 1.0; // Sky-light contrast around neutral luminance 0.5; 1 is neutral.
 const float VEXP_LIGHTMAP_THRESHOLD = 0.8; // Sky-light level separating shadow mask from lit mask, 0..1.
@@ -25,25 +25,25 @@ const float VEXP_TERRAIN_BLOCK_LIGHT_STRENGTH = 0.0; // Artificial-light tint st
 const bool VEXP_LIGHTMAP_DEBUG_MODE = false; // Shows masks instead of final lighting when enabled.
 const int VEXP_TERRAIN_DEBUG_VIEW = 3; // 0=combined, 1=Color, 2=Color luma, 3=AO, 4=Color mask, 5=sky, 6=block, 7=lightmap, 8=shadow mask, 9=sky mask, 10=block mask.
 
-const float VEXP_TERRAIN_COLOR_THRESHOLD = 0.55; // Vertex-Color luminance separating shaded and lit regions.
-const float VEXP_TERRAIN_COLOR_SOFTNESS = 0.45; // Width of the vertex-Color shading transition.
-const float VEXP_TERRAIN_COLOR_HARDNESS = 0.75; // Shape of the vertex-Color mask; 1 preserves its smooth ramp.
+const float VEXP_TERRAIN_COLOR_THRESHOLD = 0.65; // Vertex-Color luminance separating shaded and lit regions.
+const float VEXP_TERRAIN_COLOR_SOFTNESS = 0.85; // Width of the vertex-Color shading transition.
+const float VEXP_TERRAIN_COLOR_HARDNESS = 1.0; // Shape of the vertex-Color mask; 1 preserves its smooth ramp.
 const float VEXP_TERRAIN_COLOR_CONTRAST = 1.5; // Contrast for vertex Color around luminance 0.5; 1 is neutral.
 const float VEXP_TERRAIN_COLOR_SHADOW_STRENGTH = 0.25; // Vertex-Color shadow tint strength; 0 preserves current shading.
 const float VEXP_TERRAIN_COLOR_LIGHT_STRENGTH = 0.25; // Vertex-Color light tint strength; 0 preserves current shading.
 const vec3 VEXP_TERRAIN_COLOR_SHADOW_TINT = vec3(0.85, 0.75, 1.0); // Tint multiplier for shaded vertex Color.
 const vec3 VEXP_TERRAIN_COLOR_LIGHT_TINT = vec3(1.0, 0.95, 0.95); // Tint multiplier for lit vertex Color.
 
-const float VEXP_TERRAIN_AO_THRESHOLD = 0.7; // Vertex-Color luminance below which the AO proxy activates.
-const float VEXP_TERRAIN_AO_SOFTNESS = 0.05; // Width of the AO-proxy transition.
-const float VEXP_TERRAIN_AO_HARDNESS = 0.85; // AO-mask curve; above 1 concentrates it in darker vertices.
-const float VEXP_TERRAIN_AO_CONTRAST = 0.9; // Contrast of the AO proxy around luminance 0.5; 1 is neutral.
+const float VEXP_TERRAIN_AO_THRESHOLD = 0.4; // Vertex-Color luminance below which the AO proxy activates.
+const float VEXP_TERRAIN_AO_SOFTNESS = 0.3; // Width of the AO-proxy transition.
+const float VEXP_TERRAIN_AO_HARDNESS = 0.15; // AO-mask curve; above 1 concentrates it in darker vertices.
+const float VEXP_TERRAIN_AO_CONTRAST = 1.0; // Contrast of the AO proxy around luminance 0.5; 1 is neutral.
 const float VEXP_TERRAIN_AO_STRENGTH = 1.0; // AO-proxy tint strength; 0 disables the approximation.
 const vec3 VEXP_TERRAIN_AO_TINT = vec3(0.6, 0.9, 0.95); // AO-proxy color multiplier.
 
-const vec3 VEXP_SHADOW_TINT = vec3(0.83, 0.74, 0.96); // Shared shadow tint for lightmap and entity shadows.
-const vec3 VEXP_LIGHT_TINT = vec3(1.08, 1.04, 0.96); // Tint multiplier for sky-lit areas.
-const vec3 VEXP_TERRAIN_BLOCK_LIGHT_TINT = vec3(1.08, 0.96, 0.68); // Tint multiplier for torch/block light.
+const vec3 VEXP_SHADOW_TINT = vec3(0.85, 0.75, 1.0); // Shared shadow tint for lightmap and entity shadows.
+const vec3 VEXP_LIGHT_TINT = vec3(1.0, 0.95, 0.95); // Tint multiplier for sky-lit areas.
+const vec3 VEXP_TERRAIN_BLOCK_LIGHT_TINT = vec3(1.0, 0.95, 0.95); // Tint multiplier for torch/block light.
 
 const float VEXP_ENTITY_SHADOW_BASE_BRIGHTNESS = 0.05; // Base RGB brightness of projected entity shadows.
 const float VEXP_ENTITY_SHADOW_OPACITY = 0.45; // Projected entity-shadow opacity; preserves its soft alpha edge.
