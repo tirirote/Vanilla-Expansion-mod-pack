@@ -1,6 +1,6 @@
 #version 330
 
-const float VEXP_DIRECTIONAL_LIGHT_STRENGTH = 0.55; // Normal-based light contribution, 0 disables it.
+const float VEXP_DIRECTIONAL_LIGHT_STRENGTH = 0.6; // Normal-based light contribution, 0 disables it.
 const float VEXP_AMBIENT_LIGHT_STRENGTH = 0.4; // Minimum fill light on faces turned away from lights.
 const float VEXP_DIRECTIONAL_LIGHT_HARDNESS = 1.0; // Curve of the normal/light response; 1 is linear.
 const float VEXP_LIGHTING_CONTRAST = 1.0; // Contrast around light value 0.5; 1 preserves the input curve.
@@ -9,13 +9,13 @@ const vec3 VEXP_AMBIENT_LIGHT_COLOR = vec3(0.96, 0.86, 0.76); // Color multiplie
 
 const float VEXP_LIGHTING_BRIGHTNESS = 1.0; // Final light multiplier; 1 is neutral.
 const float VEXP_LIGHTING_CONTRAST_PIVOT = 0.35; // Light value that contrast leaves unchanged, 0..1.
-const float VEXP_LIGHTING_THRESHOLD = 0.6; // Light luminance separating shadow mask from lit mask, 0..1.
-const float VEXP_LIGHTING_SOFTNESS = 0.3; // Width of the shadow/light transition; smaller is a harder edge.
-const float VEXP_LIGHTING_MASK_HARDNESS = 0.3; // Shape of the shadow mask; above 1 narrows it.
-const float VEXP_LIGHTING_SHADOW_STRENGTH = 1.0; // Shadow tint strength, 0..1; 0 disables it.
-const float VEXP_LIGHTING_LIGHT_STRENGTH = 1.0; // Lit-area tint strength, 0..1; 0 disables it.
-const vec3 VEXP_LIGHTING_SHADOW_TINT = vec3(0.83, 0.74, 0.96); // RGB multiplier for shadowed surfaces.
-const vec3 VEXP_LIGHTING_LIGHT_TINT = vec3(1.08, 1.04, 0.96); // RGB multiplier for lit surfaces.
+const float VEXP_LIGHTING_THRESHOLD = 0.5; // Light luminance separating shadow mask from lit mask, 0..1.
+const float VEXP_LIGHTING_SOFTNESS = 0.45; // Width of the shadow/light transition; smaller is a harder edge.
+const float VEXP_LIGHTING_MASK_HARDNESS = 0.75; // Shape of the shadow mask; above 1 narrows it.
+const float VEXP_LIGHTING_SHADOW_STRENGTH = 0.25; // Shadow tint strength, 0..1; 0 disables it.
+const float VEXP_LIGHTING_LIGHT_STRENGTH = 0.25; // Lit-area tint strength, 0..1; 0 disables it.
+const vec3 VEXP_LIGHTING_SHADOW_TINT = vec3(0.85, 0.75, 1.0); // RGB multiplier for shadowed surfaces.
+const vec3 VEXP_LIGHTING_LIGHT_TINT = vec3(1.0, 0.95, 0.95); // RGB multiplier for lit surfaces.
 const bool VEXP_LIGHTING_DEBUG_MODE = false; // Outputs shadow (red) and lit (green) masks instead of lighting.
 
 layout(std140) uniform Lighting {
