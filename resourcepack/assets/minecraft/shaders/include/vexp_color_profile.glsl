@@ -1,13 +1,13 @@
 #version 330
 
 // VEXP pass parameters should document purpose, units/range, and neutral value beside each control.
-const float VEXP_COLOR_PROFILE_STRENGTH = 0.5; // Day/night tint blend: 0 disables it, 1 applies it fully.
+const float VEXP_COLOR_PROFILE_STRENGTH = 0.2; // Day/night tint blend: 0 disables it, 1 applies it fully.
 const vec3 VEXP_COLOR_PROFILE_DAY_TINT = vec3(0.8, 1.1, 1.2); // RGB multiplier for daytime color grading.
 const vec3 VEXP_COLOR_PROFILE_NIGHT_TINT = vec3(1.6, 0.9, 1.1); // RGB multiplier for nighttime color grading.
 
 const float VEXP_TERRAIN_SKY_LIGHT_DAY_STRENGTH = 1.0; // Sky-light multiplier at daytime; 1 preserves brightness.
 const float VEXP_TERRAIN_SKY_LIGHT_NIGHT_STRENGTH = 1.0; // Sky-light multiplier at nighttime; 1 preserves brightness.
-const float VEXP_TERRAIN_SKY_LIGHT_TINT_STRENGTH = 0.5; // Blend of sky tint into terrain light; 0 disables tint.
+const float VEXP_TERRAIN_SKY_LIGHT_TINT_STRENGTH = 0.2; // Blend of sky tint into terrain light; 0 disables tint.
 const vec3 VEXP_TERRAIN_SKY_LIGHT_DAY_TINT = vec3(0.9, 1.2, 1.1); // RGB multiplier for daytime sky light.
 const vec3 VEXP_TERRAIN_SKY_LIGHT_NIGHT_TINT = vec3(1.0, 0.6, 0.8); // RGB multiplier for nighttime sky light.
 
