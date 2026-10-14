@@ -13,6 +13,8 @@ execute if data entity @s data.vexp{bag_item_id:"minecraft:coal"} run data modif
 execute if data entity @s data.vexp{bag_item_id:"minecraft:raw_copper"} run data modify storage vexp:custom_block bag_drop.name set value "Cobre en bruto"
 execute if data entity @s data.vexp{bag_item_id:"minecraft:raw_iron"} run data modify storage vexp:custom_block bag_drop.name set value "Hierro en bruto"
 execute if data entity @s data.vexp{bag_item_id:"minecraft:raw_gold"} run data modify storage vexp:custom_block bag_drop.name set value "Oro en bruto"
+execute if data entity @s data.vexp{bag_item_id:"minecraft:charcoal"} run data modify storage vexp:custom_block bag_drop.name set value "Carbón vegetal"
+execute if data entity @s data.vexp{bag_item_id:"minecraft:sugar_cane"} run data modify storage vexp:custom_block bag_drop.name set value "Caña de azúcar"
 
 data modify storage vexp:custom_block bag_drop.item_count set from entity @s data.vexp.item_count
 

@@ -16,4 +16,6 @@ execute if data storage vexp:custom_block bag_item_held{id:"minecraft:coal"} run
 execute if data storage vexp:custom_block bag_item_held{id:"minecraft:raw_copper"} run data modify entity @s data.vexp.bag_content set value "raw_copper"
 execute if data storage vexp:custom_block bag_item_held{id:"minecraft:raw_iron"} run data modify entity @s data.vexp.bag_content set value "raw_iron"
 execute if data storage vexp:custom_block bag_item_held{id:"minecraft:raw_gold"} run data modify entity @s data.vexp.bag_content set value "raw_gold"
+execute if data storage vexp:custom_block bag_item_held{id:"minecraft:charcoal"} run data modify entity @s data.vexp.bag_content set value "charcoal"
+execute if data storage vexp:custom_block bag_item_held{id:"minecraft:sugar_cane"} run data modify entity @s data.vexp.bag_content set value "sugar_cane"
 
