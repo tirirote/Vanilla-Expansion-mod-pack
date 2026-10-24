@@ -10,7 +10,6 @@
     "minecraft:cobweb",
     "#minecraft:saplings",
     "#minecraft:flowers",
-    "#minecraft:grass_blocks",
     "#replaceable",
     "minecraft:brown_mushroom",
     "minecraft:red_mushroom",
@@ -21,6 +20,8 @@
     "minecraft:kelp_plant",
     "#minecraft:leaves",
     "small_dripleaf",
-    "big_dripleaf_stem"
+    "big_dripleaf_stem",
+    "sweet_berry_bush",
+    "bush"
   ]
 }

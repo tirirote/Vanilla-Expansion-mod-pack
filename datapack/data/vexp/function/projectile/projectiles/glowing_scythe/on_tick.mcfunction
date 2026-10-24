@@ -4,8 +4,4 @@ particle glow ~ ~ ~ 0.5 0.1 0.5 0 1
 particle dust_color_transition{from_color:7798726,to_color:1261362,scale:0.8} ~ ~ ~ 0.5 0 0.5 1 3
 
 # Break target blocks
-execute positioned ~ ~ ~ if block ~ ~ ~ #vexp:scythe_targets run setblock ~ ~ ~ air destroy
-execute positioned ~ ~ ~1 if block ~ ~ ~ #vexp:scythe_targets run setblock ~ ~ ~ air destroy
-execute positioned ~ ~ ~-1 if block ~ ~ ~ #vexp:scythe_targets run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~ ~ if block ~ ~ ~ #vexp:scythe_targets run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~ ~ if block ~ ~ ~ #vexp:scythe_targets run setblock ~ ~ ~ air destroy
+function vexp:projectile/utils/scythe_block_break

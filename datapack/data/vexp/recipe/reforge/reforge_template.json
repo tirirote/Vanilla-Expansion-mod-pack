@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["III", "IAI", " I "],
+  "pattern": ["III", "IAI", "III"],
   "key": {
     "I": "minecraft:iron_ingot",
     "A": "minecraft:amethyst_shard"
