@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:brown_mushroom",
+    "minecraft:beetroot",
+    "minecraft:chicken"
+  ],
+  "result": {
+    "id": "minecraft:command_block",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "raw_skewer" }
+      },
+      "minecraft:custom_model_data": { "strings": ["vexp:raw_skewer"] },
+      "minecraft:item_name": {
+        "text": "Pinchito",
+        "italic": false,
+        "color": "white"
+      },
+      "food": { "nutrition": 7, "saturation": 0.7 },
+      "consumable": {
+        "on_consume_effects": [
+          {
+            "type": "apply_effects",
+            "effects": [{ "id": "minecraft:hunger", "duration": 30 }],
+            "probability": 0.3
+          }
+        ]
+      },
+      "use_remainder": "minecraft:stick",
+      "max_stack_size": 1
+    }
+  }
+}

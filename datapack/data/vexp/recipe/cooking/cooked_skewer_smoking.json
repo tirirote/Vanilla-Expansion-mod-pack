@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "minecraft:command_block",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "components": {
+      "minecraft:custom_data": {
+        "vexp": { "type": "food", "id": "cooked_skewer" }
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["vexp:cooked_skewer"]
+      },
+      "minecraft:item_name": {
+        "text": "Pinchito asado",
+        "italic": false
+      },
+      "food": { "nutrition": 9, "saturation": 0.9 },
+      "use_remainder": "minecraft:stick",
+      "max_stack_size": 1
+    }
+  }
+}

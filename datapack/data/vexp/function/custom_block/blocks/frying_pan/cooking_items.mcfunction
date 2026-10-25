@@ -56,6 +56,10 @@ execute if score @s vexp.cook_time matches 60.. if data entity @s data.vexp.pan_
 execute if score @s vexp.cook_time matches 60.. if data entity @s data.vexp.pan_item{id:"minecraft:blue_egg"} run scoreboard players set #did_cook vexp.math 1
 execute if score @s vexp.cook_time matches 60.. if data entity @s data.vexp.pan_item{id:"minecraft:blue_egg"} run data modify entity @s data.vexp.pan_item set value {id:"minecraft:golden_carrot",count:1,components:{"minecraft:custom_data":{vexp:{type:"food",id:"cooked_egg"}},"minecraft:custom_model_data":{strings:["vexp:cooked_egg"]},"minecraft:item_name":{text:"Huevo cocinado",italic:false},food:{nutrition:4,saturation:0.5}}}
 
+# Raw Skewer
+execute if score @s vexp.cook_time matches 60.. if data entity @s data.vexp.pan_item{id:"minecraft:command_block"} run scoreboard players set #did_cook vexp.math 1
+execute if score @s vexp.cook_time matches 60.. if data entity @s data.vexp.pan_item{id:"minecraft:command_block"} run data modify entity @s data.vexp.pan_item set value {id:"minecraft:golden_carrot",count:1,components:{"minecraft:custom_data":{"vexp":{"type":"food","id":"cooked_skewer"}},"minecraft:custom_model_data":{"strings":["vexp:cooked_skewer"]},"minecraft:item_name":{"text":"Pinchito asado","italic":false},"food":{"nutrition":9,"saturation":0.9},"use_remainder":"minecraft:stick","max_stack_size":1}}
+
 # Custom cutted food
 # Beef Strip
 execute if score @s vexp.cook_time matches 60.. if data entity @s data.vexp.pan_item{id:"minecraft:rabbit_foot",components:{"minecraft:custom_data":{vexp:{type:"food",id:"beef_strip"}}}} run scoreboard players set #did_cook vexp.math 1

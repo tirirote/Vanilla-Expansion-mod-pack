@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "vexp:raw_skewer",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/raw_skewer"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/command_block"
+    }
+  }
+}

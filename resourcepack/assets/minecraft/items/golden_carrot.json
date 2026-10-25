@@ -249,6 +249,13 @@
         }
       },
       {
+        "when": "vexp:cooked_skewer",
+        "model": {
+          "type": "minecraft:model",
+          "model": "vexp:item/cooking/cooked_skewer"
+        }
+      },
+      {
         "when": "vexp:ammo",
         "model": {
           "type": "minecraft:model",

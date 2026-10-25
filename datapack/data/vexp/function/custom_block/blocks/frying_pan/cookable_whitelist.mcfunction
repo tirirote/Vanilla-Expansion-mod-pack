@@ -18,6 +18,7 @@ execute if data entity @s data.vexp.pan_item{id:"minecraft:bread"} run scoreboar
 execute if data entity @s data.vexp.pan_item{id:"minecraft:egg"} run scoreboard players set #can_cook vexp.math 1
 execute if data entity @s data.vexp.pan_item{id:"minecraft:brown_egg"} run scoreboard players set #can_cook vexp.math 1
 execute if data entity @s data.vexp.pan_item{id:"minecraft:blue_egg"} run scoreboard players set #can_cook vexp.math 1
+execute if data entity @s data.vexp.pan_item{id:"minecraft:command_block"} run scoreboard players set #can_cook vexp.math 1
 
 execute if data entity @s data.vexp.pan_item{components:{"minecraft:custom_data":{vexp:{type:"food",id:"beef_strip"}}}} run scoreboard players set #can_cook vexp.math 1
 execute if data entity @s data.vexp.pan_item{components:{"minecraft:custom_data":{vexp:{type:"food",id:"chicken_strip"}}}} run scoreboard players set #can_cook vexp.math 1
