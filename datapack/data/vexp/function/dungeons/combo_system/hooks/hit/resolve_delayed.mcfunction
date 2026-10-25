@@ -11,8 +11,11 @@ function vexp:dungeons/combo_system/hooks/compute_effects
 tag @s add vexp.attacker
 
 # Resolve damage and post-hit hooks.
-function vexp:dungeons/combo_system/hitbox/tag_hitted with storage vexp:dungeons.weapon combo_params
+function vexp:dungeons/combo_system/hooks/hit/tag_hitted with storage vexp:dungeons.weapon combo_params
 execute as @e[tag=vexp.hitted] run scoreboard players set @s vexp.hit_success 0
+
+# Feedback when hit missed
+function vexp:dungeons/combo_system/hooks/hit/handle_missed_hit with storage vexp:dungeons.weapon combo_params
 
 # Process other hooks before applying damage
 function vexp:dungeons/armor/on_hit

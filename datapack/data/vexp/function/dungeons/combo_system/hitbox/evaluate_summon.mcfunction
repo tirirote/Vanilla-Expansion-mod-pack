@@ -10,7 +10,7 @@ tag @s remove vexp.target_found
 tag @s add vexp.combo_self
 
 # Evaluamos si hay un objetivo válido para marcar 'target_found'
-$execute positioned ^ ^ ^$(reach) if entity @e[predicate=vexp:is_target,tag=!vexp.combo_self,distance=..$(range)] run tag @s add vexp.target_found
+$execute positioned ^ ^ ^-1 positioned ^ ^ ^$(reach) if entity @e[predicate=vexp:is_target,tag=!vexp.combo_self,distance=..$(range)] run tag @s add vexp.target_found
 
 tag @s remove vexp.combo_self
 
