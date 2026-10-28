@@ -14,8 +14,7 @@
         "text": "Porción de tarta de calabaza",
         "italic": false
       },
-      "food": { "nutrition": 2, "saturation": 0.2 }
+      "food": { "nutrition": 2, "saturation": 2.0 }
     }
   }
 }
-

@@ -12,7 +12,7 @@
       "minecraft:custom_data": { "vexp": { "type": "food", "id": "cheese" } },
       "minecraft:custom_model_data": { "strings": ["vexp:cheese"] },
       "minecraft:item_name": { "text": "Queso", "italic": false },
-      "food": { "nutrition": 5, "saturation": 0.6 }
+      "food": { "nutrition": 11, "saturation": 8.5 }
     }
   }
 }

@@ -11,7 +11,7 @@
       },
       "minecraft:custom_model_data": { "strings": ["vexp:cake_slice"] },
       "minecraft:item_name": { "text": "Porción de tarta", "italic": false },
-      "food": { "nutrition": 2, "saturation": 0.2 }
+      "food": { "nutrition": 2, "saturation": 2.0 }
     }
   }
 }

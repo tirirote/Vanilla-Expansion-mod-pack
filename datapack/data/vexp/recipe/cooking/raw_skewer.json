@@ -5,7 +5,7 @@
     "minecraft:stick",
     "minecraft:brown_mushroom",
     "minecraft:beetroot",
-    "minecraft:chicken"
+    "#vexp:raw_skewer_meat"
   ],
   "result": {
     "id": "minecraft:command_block",
@@ -25,7 +25,7 @@
         "on_consume_effects": [
           {
             "type": "apply_effects",
-            "effects": [{ "id": "minecraft:hunger", "duration": 30 }],
+            "effects": [{ "id": "minecraft:hunger", "duration": 300 }],
             "probability": 0.3
           }
         ]

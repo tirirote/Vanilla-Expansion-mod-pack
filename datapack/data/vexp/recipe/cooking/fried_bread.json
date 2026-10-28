@@ -17,7 +17,7 @@
         "text": "Pan frito",
         "italic": false
       },
-      "food": { "nutrition": 6, "saturation": 0.7 }
+      "food": { "nutrition": 6, "saturation": 4.5 }
     }
   }
 }

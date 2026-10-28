@@ -14,8 +14,7 @@
         "strings": ["vexp:dried_sweet_berries"]
       },
       "minecraft:item_name": { "text": "Bayas dulces secas", "italic": false },
-      "food": { "nutrition": 3, "saturation": 0.3 }
+      "food": { "nutrition": 3, "saturation": 3.5 }
     }
   }
 }
-

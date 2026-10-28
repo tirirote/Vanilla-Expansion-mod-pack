@@ -14,7 +14,7 @@
       "minecraft:custom_data": { "vexp": { "type": "food", "id": "brownie" } },
       "minecraft:custom_model_data": { "strings": ["vexp:brownie"] },
       "minecraft:item_name": { "text": "Brownie", "italic": false },
-      "food": { "nutrition": 6, "saturation": 0.7 }
+      "food": { "nutrition": 6, "saturation": 3.5 }
     }
   }
 }

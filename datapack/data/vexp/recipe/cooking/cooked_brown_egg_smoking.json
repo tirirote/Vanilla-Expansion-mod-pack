@@ -14,10 +14,10 @@
         "strings": ["vexp:cooked_egg"]
       },
       "minecraft:item_name": {
-        "text": "Huevo cocinado",
+        "text": "Huevo marrón frito",
         "italic": false
       },
-      "food": { "nutrition": 4, "saturation": 0.5 }
+      "food": { "nutrition": 4, "saturation": 6.0 }
     }
   }
 }

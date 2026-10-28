@@ -17,8 +17,7 @@
         "text": "Semillas de melón tostadas",
         "italic": false
       },
-      "food": { "nutrition": 2, "saturation": 0.2 }
+      "food": { "nutrition": 2, "saturation": 1.0 }
     }
   }
 }
-

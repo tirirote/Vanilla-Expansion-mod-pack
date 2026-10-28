@@ -11,8 +11,7 @@
       },
       "minecraft:custom_model_data": { "strings": ["vexp:chocolate"] },
       "minecraft:item_name": { "text": "Chocolate", "italic": false },
-      "food": { "nutrition": 2, "saturation": 0.2 }
+      "food": { "nutrition": 2, "saturation": 2.5 }
     }
   }
 }
-

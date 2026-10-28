@@ -17,7 +17,7 @@
         "text": "Pinchito asado",
         "italic": false
       },
-      "food": { "nutrition": 9, "saturation": 0.9 },
+      "food": { "nutrition": 9, "saturation": 18.5 },
       "use_remainder": "minecraft:stick",
       "max_stack_size": 1
     }
