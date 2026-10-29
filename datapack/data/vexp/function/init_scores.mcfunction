@@ -13,7 +13,6 @@ scoreboard objectives add vexp.anim_delay dummy
 scoreboard objectives add vexp.block_anim dummy
 scoreboard objectives add vexp.fuse dummy
 scoreboard objectives add vexp.damage dummy
-scoreboard objectives add vexp.tnt_stick_used minecraft.used:minecraft.experience_bottle
 
 #Health bars
 scoreboard objectives add vexp.hp dummy
@@ -131,6 +130,7 @@ scoreboard objectives add vexp.enchant.taunt dummy
 scoreboard objectives add vexp.enchant.levitation dummy
 scoreboard objectives add vexp.enchant.levitation_time dummy
 scoreboard objectives add vexp.enchant.theft dummy
+
 #Custom Mobs
 scoreboard objectives add vexp.pathfind_rand dummy
 scoreboard objectives add vexp.mob_cooldown dummy
@@ -153,6 +153,8 @@ scoreboard objectives add vexp.look_pitch_prev dummy
 scoreboard objectives add vexp.look_speed dummy
 scoreboard objectives add vexp.look_dyaw dummy
 scoreboard objectives add vexp.look_dpitch dummy
+
+scoreboard players set swoosh_spawn_on_player vexp.math 0
 
 # Movement
 scoreboard objectives add vexp.move_dash_cd dummy

@@ -36,7 +36,6 @@ execute if score #damage_raw vexp.math matches ..-1 run function vexp:utils/soun
 
 execute if score #damage_raw vexp.math matches 1.. run scoreboard players operation #damage vexp.math = #damage_raw vexp.math
 execute if score #damage_raw vexp.math matches 1.. run scoreboard players add #damage vexp.math 99
-execute if score #damage_raw vexp.math matches 1.. store result storage vexp:temp Damage.val int 0.01 run scoreboard players get #damage vexp.math
 
 # Spawn Indicator
 function vexp:mob_health/spawn_damage

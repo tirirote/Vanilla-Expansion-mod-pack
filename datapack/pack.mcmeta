@@ -1,6 +1,9 @@
 {
   "pack": {
-    "pack_format": 101.1,
+    "pack_format": 88,
+    "min_format": 81,
+    "max_format": 88,
+    "supported_formats": [81, 88],
     "description": "Vanilla Expansion Datapack"
   }
 }

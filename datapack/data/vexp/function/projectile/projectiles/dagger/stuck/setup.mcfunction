@@ -17,7 +17,7 @@ execute if entity @s[tag=vexp.copper] run summon item_display ~ ~ ~ {Tags:["vexp
 execute if entity @s[tag=vexp.netherite] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_stuck_visual","vexp.temp_stuck_visual"],item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":{strings:["vexp:netherite_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[-.25f,.5f,.5f,0f],right_rotation:[0f,0f,0f,1f]},interpolation_duration:1,teleport_duration:1}
 execute if entity @s[tag=vexp.echo] run summon item_display ~ ~ ~ {Tags:["vexp.dagger_stuck_visual","vexp.temp_stuck_visual"],item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":{strings:["vexp:resonance_dagger"]}}},transformation:{translation:[0f,0f,0f],scale:[0.8f,0.8f,0.8f],left_rotation:[-.25f,.5f,.5f,0f],right_rotation:[0f,0f,0f,1f]},interpolation_duration:1,teleport_duration:1}
 
-execute run summon interaction ~ ~ ~ {Tags:["vexp.dagger_stuck_interact","vexp.temp_stuck_interact"],width:0.8f,height:1.5f}
+execute run summon interaction ~ ~ ~ {Tags:["vexp.dagger_stuck_interact","vexp.temp_stuck_interact"],width:0.8f,height:1.5f,response:true}
 
 # Rotar el visual para que apunte hacia adelante (Copiando del marcador @s)
 data modify entity @e[type=item_display,tag=vexp.temp_stuck_visual,sort=nearest,distance=..0.5,limit=1] Rotation set from entity @s Rotation

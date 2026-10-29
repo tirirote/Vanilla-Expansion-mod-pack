@@ -1,29 +1,23 @@
 # Main tick loop
+
+# Custom Blocks
 function vexp:custom_block/tick
-
-# Dungeons
-function vexp:dungeons/tick
-
-# Custom artifacts
-function vexp:artifacts/tick
-
-# Custom mobs
-function vexp:custom_mobs/tick
-
-# Custom projectile system
-execute as @e[type=minecraft:item_display,tag=vexp.projectile] at @s run function vexp:projectile/tick
-
-# Extra Feedback
-function vexp:feedback/tick
-
-# Utils
-function vexp:utils/feedback/tick
 
 # Custom mob HP display
 function vexp:mob_health/tick
 
-# TAG CLEANUP (End of tick)
-tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
-tag @a[tag=vexp.attacker] remove vexp.attacker
-tag @e[tag=vexp.hitted] remove vexp.hitted
-tag @e[tag=vexp.parried] remove vexp.parried
+# Custom Feedback
+# Custom Swoosh
+execute as @e[type=minecraft:item_display,tag=vexp.swoosh] at @s run function vexp:utils/feedback/swoosh/tick
+
+# Player feedback
+function vexp:feedback/player/feedback
+
+# Custom projectile system
+execute as @e[type=minecraft:item_display,tag=vexp.projectile] at @s run function vexp:projectile/tick
+
+# Dungeons
+function vexp:dungeons/tick
+
+# Custom mobs
+function vexp:custom_mobs/tick

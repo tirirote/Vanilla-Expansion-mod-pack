@@ -5,15 +5,15 @@
 
 # Capture attacker ID once via score — avoids a temp player tag (and the stale-tag bug
 # that would occur if tag @s remove ran on the mob instead of the player).
-scoreboard players operation #swoosh_owner_id vexp.math = @p[tag=vexp.attacker,limit=1] vexp.id
+scoreboard players operation #swoosh_owner_id vexp.math = @p[limit=1] vexp.id
 $scoreboard players set #swoosh_face vexp.math $(face_player)
 
 # Spawn item_display (visual).
 # face_player=1 keeps current behavior (spawn facing attacker), face_player=0 spawns fixed.
-$execute if score #swoosh_face vexp.math matches 1.. rotated as @p[tag=vexp.attacker,limit=1] run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.707f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:2,view_range:2.0f,billboard:"center"}
+$execute if score #swoosh_face vexp.math matches 1.. rotated as @p[limit=1] run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.707f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:2,interpolation_duration:2,view_range:2.0f,billboard:"center"}
 
 #Face player = 0
-$execute if score #swoosh_face vexp.math matches ..0 rotated as @p[tag=vexp.attacker,limit=1] run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.303f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:1,interpolation_duration:2,view_range:2.0f,billboard:"center"}
+$execute if score #swoosh_face vexp.math matches ..0 rotated as @p[limit=1] run summon item_display ~ ~ ~ {Tags:["vexp.swoosh","vexp.swoosh.new"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:custom_model_data":{strings:["$(model)"]}}},transformation:{left_rotation:[0.15f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},brightness:{block:15,sky:15},teleport_duration:2,interpolation_duration:2,view_range:2.0f,billboard:"center"}
 
 # Store payload metadata in the new swoosh entity and initialize scaled spawn transform.
 $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.face_player set value $(face_player)
@@ -30,8 +30,6 @@ execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run fu
 
 # Link both entities to the attacker and initialise animation state.
 execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run scoreboard players operation @s vexp.id = #swoosh_owner_id vexp.math
-
-#execute as @p[tag=vexp.attacker,limit=1] if score @s vexp.id = @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] vexp.id run data modify entity @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] Rotation set from entity @s Rotation
 
 scoreboard players set @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] vexp.anim_frame 0
 scoreboard players set @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] vexp.anim_delay 0

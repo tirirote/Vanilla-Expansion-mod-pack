@@ -1,7 +1,7 @@
 # 1. Identificar al jugador y guardar ID
 execute on target run tag @s add vexp.picker
 execute on attacker run tag @s add vexp.picker
-execute at @s as @p[distance=..1,limit=1] run tag @s add vexp.picker
+execute at @s as @p[distance=..2,limit=1] run tag @s add vexp.picker
 
 scoreboard players operation #temp vexp.id = @s vexp.id
 
