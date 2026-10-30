@@ -9,7 +9,9 @@ tag @s remove vexp.parry_counter_attacker
 
 function vexp:dungeons/combo_system/hooks/parry/route_on_parry with storage vexp:dungeons.weapon combo_params
 
-#Parry feedback
+# Parry feedback
 execute positioned ~ ~1.5 ~ run particle sweep_attack ^ ^ ^1.5 1 1 1 1 0
-
 function vexp:utils/sound {sound: "minecraft:enchant.thorns.hit", type: "player", pitch:1}
+
+# Cleanup
+tag @e[tag=vexp.parried] remove vexp.parried

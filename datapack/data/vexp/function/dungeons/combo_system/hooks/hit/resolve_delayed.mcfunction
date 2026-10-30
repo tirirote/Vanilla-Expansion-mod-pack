@@ -37,3 +37,6 @@ execute unless data storage vexp:dungeons.weapon combo_params{item:"spellbook"} 
 # Clear pending state for this queued hit.
 tag @s remove vexp.hit_delay.pending
 scoreboard players set @s vexp.hit_delay 0
+
+# Player tag cleanup
+tag @s remove vexp.attacker

@@ -4,11 +4,13 @@
 execute if score @s vexp.combo_cooldown matches 0 run tag @s add vexp.hitbox.ready
 
 # If HIT (Attack) and NO COOLDOWN
-execute as @s[tag=vexp.hitbox.ready] if data entity @s attack at @s run function vexp:dungeons/combo_system/hitbox/on_attack
+execute unless entity @s[tag=vexp.hitbox.ready] if data entity @s attack at @s run function vexp:utils/sound {sound: "minecraft:entity.player.attack.nodamage", type: "player", pitch:1}
+execute if entity @s[tag=vexp.hitbox.ready] if data entity @s attack at @s run function vexp:dungeons/combo_system/hitbox/on_attack
 
 # If INTERACTION (Right Click) and NO COOLDOWN.
 # Attack has priority when both flags are present in the same tick.
-execute as @s[tag=vexp.hitbox.ready] if data entity @s interaction at @s run function vexp:dungeons/combo_system/hitbox/on_interact
+execute unless entity @s[tag=vexp.hitbox.ready] if data entity @s interaction at @s run function vexp:utils/sound {sound: "minecraft:entity.player.attack.nodamage", type: "player", pitch:1}
+execute if entity @s[tag=vexp.hitbox.ready] if data entity @s interaction at @s run function vexp:dungeons/combo_system/hitbox/on_interact
 
 # Reset interaction data (always)
 data remove entity @s attack
