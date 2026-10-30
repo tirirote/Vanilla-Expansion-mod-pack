@@ -18,5 +18,8 @@ scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
 
 execute as @e[predicate=vexp:is_target,distance=..4.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/enchantments/vanilla/hit/sweeping_edge_deal_bonus with storage vexp:temp
 
-#Feedback
+# Feedback
+execute as @e[predicate=vexp:is_target,distance=..4.5] unless score @s vexp.id = #combo_owner_id vexp.id at @s run function vexp:dungeons/fx/enchantments/sweeping_edge_hit
+
+# Feedback
 function vexp:dungeons/fx/enchantments/sweeping_edge

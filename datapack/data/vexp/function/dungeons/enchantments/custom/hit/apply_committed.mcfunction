@@ -14,5 +14,8 @@ execute if score #committed_bonus vexp.math matches ..0 run scoreboard players s
 execute store result storage vexp:temp committed_damage float 0.1 run scoreboard players get #committed_bonus vexp.math
 execute as @e[tag=vexp.hitted,tag=vexp.committed_mark] at @s run function vexp:dungeons/enchantments/custom/hit/committed_deal_bonus with storage vexp:temp
 
+# Feedback
+execute as @e[tag=vexp.hitted,tag=vexp.committed_mark] at @s run function vexp:dungeons/fx/enchantments/committed
+
 # Mark current victims so next hits can trigger Committed.
 tag @e[tag=vexp.hitted] add vexp.committed_mark

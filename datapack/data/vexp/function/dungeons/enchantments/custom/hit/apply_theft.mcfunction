@@ -1,6 +1,6 @@
 # Apply Theft Enchantment
 # @s is the player
-execute unless entity @s[predicate=vexp:is_sneaking] run return 0
+#execute unless entity @s[predicate=vexp:is_sneaking] run return 0
 
 # Chance per hit target (%): I = 15, II = 30
 scoreboard players set #theft_chance vexp.math 30

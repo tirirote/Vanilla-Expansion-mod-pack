@@ -1,26 +1,32 @@
 # dungeons/tick.mcfunction
 # Main Tick Loop
 
-# 1. Main Dungeons expansion systems
+# Main Dungeons expansion systems
 function vexp:dungeons/reforge/tick
 execute as @a run function vexp:dungeons/lore/tick
 function vexp:dungeons/combo_system/tick
 
-# 2. Custom Dungeons Items and weapons tick functions
+# Dungeons Items and weapons tick functions
+# Armor
 function vexp:dungeons/armor/tick
+# Bow an arrows
 execute as @a if items entity @s weapon.mainhand *[custom_data~{vexp:{item:"bow"}}] run function vexp:dungeons/weapons/bow/tick
 function vexp:dungeons/weapons/bow/arrows/tick
+# Daggers
 function vexp:dungeons/weapons/dagger/tick
-#function vexp:dungeons/weapons/axe/tick
-#function vexp:dungeons/weapons/spear/tick
-#function vexp:dungeons/weapons/scythe/tick
-#function vexp:dungeons/weapons/sword/tick
 
-# 3. Custom Enchantments tick functions
+# Enchantments tick functions
 function vexp:dungeons/enchantments/tick
 
-# 4. Custom combat states
+# Artifacts tick functions
+function vexp:artifacts/tick
+
+# Combat states
 function vexp:dungeons/states/tick
 
-# 5. Handle when new items found
+# Handle when new items found
 execute as @a run function vexp:dungeons/handle_new_weapons/check_new
+
+# Cleanup
+tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
+tag @e[tag=vexp.hitted] remove vexp.hitted

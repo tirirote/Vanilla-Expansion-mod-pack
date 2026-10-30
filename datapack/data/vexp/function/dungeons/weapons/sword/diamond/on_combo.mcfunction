@@ -5,4 +5,4 @@
 function vexp:dungeons/weapons/sword/combo_finisher
 
 # Feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/diamond_special
+execute as @p[tag=vexp.attacker,limit=1] at @s run function vexp:dungeons/fx/hits/diamond_special

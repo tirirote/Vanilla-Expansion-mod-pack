@@ -1,6 +1,5 @@
 # Resonance wave
 tag @s add vexp.enchantment_resonance
-tag @s add vexp.attacker
 
 #Buff
 function vexp:dungeons/states/resonance_enchant_buff

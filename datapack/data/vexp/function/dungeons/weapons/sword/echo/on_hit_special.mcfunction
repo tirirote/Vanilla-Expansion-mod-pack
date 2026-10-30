@@ -10,9 +10,6 @@ function vexp:dungeons/states/echo_marked
 # Buff
 execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/echo_buffed
 
-# Sweep Feedback
-execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^1 1 1 1 1 0
-
 # Feedback
 execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/echo_hit
 
