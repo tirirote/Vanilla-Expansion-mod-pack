@@ -29,4 +29,3 @@ execute as @a run function vexp:dungeons/handle_new_weapons/check_new
 
 # Cleanup
 tag @e[tag=vexp.hit_candidate] remove vexp.hit_candidate
-tag @e[tag=vexp.hitted] remove vexp.hitted
