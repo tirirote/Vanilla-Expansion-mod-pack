@@ -4,7 +4,7 @@
 # Custom knockback
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
-tag @p[tag=vexp.attacker,limit=1] add vexp.hitted.special
+tag @p[tag=vexp.attacker] add vexp.hitted.special
 
-effect give @p[tag=vexp.attacker,limit=1] strength 1 1 true
-effect give @p[tag=vexp.attacker,limit=1] speed 1 1 true
+effect give @p[tag=vexp.attacker] strength 1 1 true
+effect give @p[tag=vexp.attacker] speed 1 1 true

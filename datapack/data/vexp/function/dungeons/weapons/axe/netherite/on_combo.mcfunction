@@ -8,7 +8,7 @@ function vexp:dungeons/states/nether_marked
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
 #Player buff
-execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/nether_buffed
+execute as @p[tag=vexp.attacker] run function vexp:dungeons/states/nether_buffed
 
 # Visual feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/netherite_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/netherite_hit

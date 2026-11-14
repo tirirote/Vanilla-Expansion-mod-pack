@@ -12,4 +12,4 @@
 # - $(follow_offset_y) local Y offset used when follow_owner=1
 # - $(follow_offset_z) local Z offset used when follow_owner=1
 
-$execute at @s positioned $(position) run function vexp:utils/feedback/swoosh/spawn {item_id:"minecraft:firework_rocket",model:"$(model)",face_player:$(face_player),scale:$(scale),random_pos:$(random_pos),lifetime:$(lifetime),follow_owner:$(follow_owner),follow_offset_x:$(follow_offset_x),follow_offset_y:$(follow_offset_y),follow_offset_z:$(follow_offset_z)}
+$execute positioned $(position) run function vexp:utils/feedback/swoosh/spawn {item_id:"minecraft:firework_rocket",model:"$(model)",face_player:$(face_player),scale:$(scale),random_pos:$(random_pos),lifetime:$(lifetime),follow_owner:$(follow_owner),follow_offset_x:$(follow_offset_x),follow_offset_y:$(follow_offset_y),follow_offset_z:$(follow_offset_z)}

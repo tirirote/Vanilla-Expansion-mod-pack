@@ -5,7 +5,7 @@
 function vexp:utils/motion/apply_knockback {strength:-1.5, y:0.1}
 
 # Player pushback
-execute as @p[tag=vexp.attacker,limit=1] at @s run function vexp:dungeons/weapons/bow/player_pushback
+execute as @p[tag=vexp.attacker] at @s run function vexp:dungeons/weapons/bow/player_pushback
 
 # Feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/gold_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/gold_hit

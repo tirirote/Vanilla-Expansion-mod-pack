@@ -8,4 +8,4 @@
 function vexp:utils/motion/apply_knockback {strength:-0.5, y:0.1}
 
 # Visuals
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/diamond_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/diamond_hit

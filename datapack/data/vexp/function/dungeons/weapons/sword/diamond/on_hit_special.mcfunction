@@ -5,10 +5,10 @@
 function vexp:utils/motion/apply_knockback {strength:-3.5, y:0.05}
 
 # Buff
-execute as @p[tag=vexp.attacker,limit=1] run function vexp:dungeons/states/diamond_buffed
+execute as @p[tag=vexp.attacker] run function vexp:dungeons/states/diamond_buffed
 
 # Feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/diamond_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/diamond_hit
 
 # Remove tag
-execute as @p[tag=vexp.attacker,limit=1] if entity @s[tag=vexp.hitted.special] run tag @s remove vexp.hitted.special
+execute as @p[tag=vexp.attacker] if entity @s[tag=vexp.hitted.special] run tag @s remove vexp.hitted.special

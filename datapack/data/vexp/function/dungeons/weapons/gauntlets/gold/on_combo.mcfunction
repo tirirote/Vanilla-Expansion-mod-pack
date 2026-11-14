@@ -5,4 +5,4 @@
 function vexp:dungeons/weapons/gauntlets/combo_finisher
 
 # Feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/gold_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/gold_hit

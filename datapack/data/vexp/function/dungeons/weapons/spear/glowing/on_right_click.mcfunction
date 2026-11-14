@@ -11,10 +11,10 @@ scoreboard players operation #combo_owner_id vexp.id = @s vexp.id
 function vexp:dungeons/states/glow_buffed
 
 # Aeo Wave Feedback
-execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^5 run function vexp:dungeons/fx/aeo_waves/glowing
-execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^6 run function vexp:dungeons/fx/aeo_waves/glowing
-execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^7 run function vexp:dungeons/fx/aeo_waves/glowing
-execute as @p[tag=vexp.attacker,limit=1] at @s positioned ~ ~1 ~ positioned ^ ^ ^8 run function vexp:dungeons/fx/aeo_waves/glowing
+execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^ ^5 run function vexp:dungeons/fx/aeo_waves/glowing
+execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^ ^6 run function vexp:dungeons/fx/aeo_waves/glowing
+execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^ ^7 run function vexp:dungeons/fx/aeo_waves/glowing
+execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^ ^8 run function vexp:dungeons/fx/aeo_waves/glowing
 function vexp:utils/sound {sound: "minecraft:entity.phantom.flap", type: "player", pitch:1}
 function vexp:utils/sound {sound: "minecraft:entity.glow_squid.hurt", type: "player", pitch:1}
 

@@ -8,4 +8,4 @@ function vexp:dungeons/weapons/dagger/combo_finisher
 function vexp:dungeons/states/echo_marked
 
 # Feedback
-execute positioned ~ ~1 ~ run function vexp:dungeons/fx/hits/echo_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/echo_hit
