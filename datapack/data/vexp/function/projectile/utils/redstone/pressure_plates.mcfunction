@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:oak_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:oak_pressure_plate"}
+execute if block ~ ~ ~ minecraft:spruce_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:spruce_pressure_plate"}
+execute if block ~ ~ ~ minecraft:birch_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:birch_pressure_plate"}
+execute if block ~ ~ ~ minecraft:jungle_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:jungle_pressure_plate"}
+execute if block ~ ~ ~ minecraft:acacia_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:acacia_pressure_plate"}
+execute if block ~ ~ ~ minecraft:dark_oak_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:dark_oak_pressure_plate"}
+execute if block ~ ~ ~ minecraft:mangrove_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:mangrove_pressure_plate"}
+execute if block ~ ~ ~ minecraft:cherry_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:cherry_pressure_plate"}
+execute if block ~ ~ ~ minecraft:bamboo_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:bamboo_pressure_plate"}
+execute if block ~ ~ ~ minecraft:crimson_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:crimson_pressure_plate"}
+execute if block ~ ~ ~ minecraft:warped_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:warped_pressure_plate"}
+execute if block ~ ~ ~ minecraft:pale_oak_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:pale_oak_pressure_plate"}
+execute if block ~ ~ ~ minecraft:stone_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:stone_pressure_plate"}
+execute if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate run function vexp:projectile/utils/redstone/pressure_plate {block:"minecraft:polished_blackstone_pressure_plate"}
+execute if block ~ ~ ~ minecraft:light_weighted_pressure_plate run function vexp:projectile/utils/redstone/weighted_plate {block:"minecraft:light_weighted_pressure_plate"}
+execute if block ~ ~ ~ minecraft:heavy_weighted_pressure_plate run function vexp:projectile/utils/redstone/weighted_plate {block:"minecraft:heavy_weighted_pressure_plate"}

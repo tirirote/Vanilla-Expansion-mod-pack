@@ -1,0 +1,14 @@
+execute if block ~ ~ ~ minecraft:oak_button run function vexp:projectile/utils/redstone/button {block:"minecraft:oak_button"}
+execute if block ~ ~ ~ minecraft:spruce_button run function vexp:projectile/utils/redstone/button {block:"minecraft:spruce_button"}
+execute if block ~ ~ ~ minecraft:birch_button run function vexp:projectile/utils/redstone/button {block:"minecraft:birch_button"}
+execute if block ~ ~ ~ minecraft:jungle_button run function vexp:projectile/utils/redstone/button {block:"minecraft:jungle_button"}
+execute if block ~ ~ ~ minecraft:acacia_button run function vexp:projectile/utils/redstone/button {block:"minecraft:acacia_button"}
+execute if block ~ ~ ~ minecraft:dark_oak_button run function vexp:projectile/utils/redstone/button {block:"minecraft:dark_oak_button"}
+execute if block ~ ~ ~ minecraft:mangrove_button run function vexp:projectile/utils/redstone/button {block:"minecraft:mangrove_button"}
+execute if block ~ ~ ~ minecraft:cherry_button run function vexp:projectile/utils/redstone/button {block:"minecraft:cherry_button"}
+execute if block ~ ~ ~ minecraft:bamboo_button run function vexp:projectile/utils/redstone/button {block:"minecraft:bamboo_button"}
+execute if block ~ ~ ~ minecraft:crimson_button run function vexp:projectile/utils/redstone/button {block:"minecraft:crimson_button"}
+execute if block ~ ~ ~ minecraft:warped_button run function vexp:projectile/utils/redstone/button {block:"minecraft:warped_button"}
+execute if block ~ ~ ~ minecraft:pale_oak_button run function vexp:projectile/utils/redstone/button {block:"minecraft:pale_oak_button"}
+execute if block ~ ~ ~ minecraft:stone_button run function vexp:projectile/utils/redstone/button {block:"minecraft:stone_button"}
+execute if block ~ ~ ~ minecraft:polished_blackstone_button run function vexp:projectile/utils/redstone/button {block:"minecraft:polished_blackstone_button"}

@@ -1,0 +1,1 @@
+$setblock ~ ~ ~ $(block)[facing=$(facing),in_wall=$(in_wall),open=$(open),powered=$(powered)]

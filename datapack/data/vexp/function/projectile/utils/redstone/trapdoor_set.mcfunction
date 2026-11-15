@@ -1,0 +1,1 @@
+$setblock ~ ~ ~ $(block)[facing=$(facing),half=$(half),open=$(open),powered=$(powered),waterlogged=$(waterlogged)]
