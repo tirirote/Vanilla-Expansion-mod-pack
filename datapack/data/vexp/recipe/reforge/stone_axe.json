@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "minecraft:stone_axe",
+  "addition": "minecraft:amethyst_shard",
+  "result": {
+    "id": "minecraft:stone_axe",
+    "components": {
+      "minecraft:lore": [
+        { "text": "Reforja pendiente", "italic": false, "color": "dark_aqua" }
+      ]
+    }
+  }
+}
