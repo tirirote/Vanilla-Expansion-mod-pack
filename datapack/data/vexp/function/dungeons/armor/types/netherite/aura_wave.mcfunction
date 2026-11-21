@@ -7,6 +7,6 @@ execute as @e[predicate=vexp:is_target,distance=..4.5] unless entity @s[tag=vexp
 # Feedback
 particle flash{color:-8637360} ~ ~1 ~ 1 1 1 1 0
 particle flame ~ ~.25 ~ 0.5 0.1 0.5 0.02 5
-particle instant_effect{color:5452865,power:-1} ~ ~.25 ~ 0.5 0.1 0.5 0.02 15
+particle instant_effect{color:5452865,power:2} ~ ~.25 ~ 0.5 0.1 0.5 0.02 15
 particle dust_color_transition{from_color:3679786,to_color:8737350,scale:2.1} ~ ~0.25 ~ 1.0 0.2 1.0 1 15
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}

@@ -5,4 +5,4 @@ execute if score @s vexp.armor_rand matches -50..50 run particle instant_effect{
 effect give @s fire_resistance 2 0 true
 
 # Nether aura
-execute if score @s vexp.armor_rand matches 0..5 run function vexp:dungeons/armor/types/netherite/aura_wave
+execute if score @s vexp.armor_rand matches -10..10 run function vexp:dungeons/armor/types/netherite/aura_wave
