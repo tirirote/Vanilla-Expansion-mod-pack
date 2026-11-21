@@ -1,7 +1,7 @@
 # dungeons/combo_system/hitbox/manage.mcfunction
 
 # Assign player ID if missing
-execute if score @s vexp.id matches 0 run function vexp:utils/assign_id
+execute unless score @s vexp.id matches 1.. run function vexp:utils/assign_id
 
 # Check for combo item
 tag @s[tag=vexp.combo_user] remove vexp.combo_user

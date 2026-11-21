@@ -1,5 +1,5 @@
 # Glowing hit
-function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:glowing_hit",position:"~ ~1 ~",face_player:1,scale:1.7,random_pos:0.5,lifetime:5,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
+function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:glowing_hit",position:"~ ~1 ~",face_player:1,scale:1.7,lifetime:5,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
 
 particle flash{color:-6488120} ~ ~1 ~ 0 0 0 0 0
 particle glow ~ ~1 ~ 0.25 0.25 0.25 0 3

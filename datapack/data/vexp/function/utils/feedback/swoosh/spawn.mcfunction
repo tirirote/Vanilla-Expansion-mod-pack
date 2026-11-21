@@ -1,7 +1,6 @@
 # utils/feedback/swoosh/spawn.mcfunction
 # @s is the hit mob (vexp.hitted), at @s = mob's position.
-# Params: $(model), $(face_player), $(scale), $(random_pos), $(lifetime), $(follow_owner), $(follow_offset_x), $(follow_offset_y), $(follow_offset_z)
-# random_pos is a jitter multiplier (same style as projectile randomness strength).
+# Params: $(model), $(face_player), $(scale), $(lifetime), $(follow_owner), $(follow_offset_x), $(follow_offset_y), $(follow_offset_z)
 
 # Capture attacker ID once via score — avoids a temp player tag (and the stale-tag bug
 # that would occur if tag @s remove ran on the mob instead of the player).
@@ -17,7 +16,6 @@ $execute if score #swoosh_face vexp.math matches ..0 rotated as @p[limit=1] run 
 
 # Store payload metadata in the new swoosh entity and initialize scaled spawn transform.
 $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.face_player set value $(face_player)
-$execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.random_pos set value $(random_pos)
 $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.scale set value $(scale)
 $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.lifetime set value $(lifetime)
 $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.follow_owner set value $(follow_owner)
@@ -26,7 +24,6 @@ $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run d
 $execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run data modify entity @s data.swoosh.follow_offset.z set value $(follow_offset_z)
 
 execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run function vexp:utils/feedback/swoosh/init_scale
-execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run function vexp:utils/feedback/swoosh/apply_random_position
 
 # Link both entities to the attacker and initialise animation state.
 execute as @e[type=item_display,tag=vexp.swoosh.new,sort=nearest,limit=1] run scoreboard players operation @s vexp.id = #swoosh_owner_id vexp.math

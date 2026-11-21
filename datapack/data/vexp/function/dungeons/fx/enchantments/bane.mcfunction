@@ -1,5 +1,5 @@
 # Bane Spider FX
-function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:bane",position:"~ ~1 ~",face_player:1,scale:1.7,random_pos:0,lifetime:7,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
+function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:bane",position:"~ ~1 ~",face_player:1,scale:1.7,lifetime:5,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
 
 particle flash{color:-10867404} ~ ~1 ~ 1 1 1 1 0
 particle block_crumble{block_state:"ancient_debris"} ~ ~1 ~ 0.5 0.2 0.5 0.5 5

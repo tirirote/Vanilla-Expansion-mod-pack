@@ -1,5 +1,5 @@
 # Weak diamond hit
-function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:weak_diamond_hit",position:"~ ~1 ~",face_player:1,scale:1.7,random_pos:0.5,lifetime:5,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
+function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:weak_diamond_hit",position:"~ ~1 ~",face_player:1,scale:1.7,lifetime:5,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
 
 particle instant_effect{color:3788726,power:2} ~ ~1 ~ .35 .35 .35 1 1
 function vexp:utils/sound {sound: "minecraft:block.amethyst_block.hit", type: "player", pitch:1}

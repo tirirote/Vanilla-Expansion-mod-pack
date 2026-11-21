@@ -1,5 +1,5 @@
 # First Strike Feedback
-function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:first_strike",position:"~ ~1 ~",face_player:1,scale:2.1,random_pos:0,lifetime:7,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
+function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:first_strike",position:"~ ~1 ~",face_player:1,scale:2.1,lifetime:5,follow_owner:0,follow_offset_x:0,follow_offset_y:0,follow_offset_z:0}
 
 particle flash{color:-1280} ~ ~1 ~ 1 1 1 1 0
 particle instant_effect{color:16770560,power:2} ~ ~1 ~ 0.3 0.3 0.3 0.3 3

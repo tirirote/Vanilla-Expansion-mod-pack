@@ -1,5 +1,5 @@
 # Sharpness FX
-function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:sharpness",position:"~ ~1 ~",face_player:1,scale:1.7,random_pos:1,lifetime:7,follow_owner:0,follow_offset_x:0,follow_offset_y:1,follow_offset_z:0}
+function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:sharpness",position:"~ ~1 ~",face_player:1,scale:1.7,lifetime:4,follow_owner:0,follow_offset_x:0,follow_offset_y:1,follow_offset_z:0}
 
 particle enchanted_hit ~ ~1 ~ 0.35 0.35 0.35 0.5 15
 particle flash{color:-11420755} ~ ~1 ~ 1 1 1 1 0

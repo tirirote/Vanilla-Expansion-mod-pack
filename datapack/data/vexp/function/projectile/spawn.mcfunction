@@ -7,7 +7,7 @@ tag @s add vexp.projectile
 
 # Vincular con id del dueño si existe
 # assign_id solo si el jugador no tiene ID todavía → todos los proyectiles del mismo volley comparten el mismo ID
-execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] unless score @p[tag=vexp.projectile_owner,distance=..5,limit=1] vexp.id matches 1.. run function vexp:utils/assign_id
+execute as @p[tag=vexp.projectile_owner,distance=..5,limit=1] unless score @s vexp.id matches 1.. run function vexp:utils/assign_id
 execute if entity @p[tag=vexp.projectile_owner,distance=..5,limit=1] run scoreboard players operation @s vexp.id = @p[tag=vexp.projectile_owner,distance=..5,limit=1] vexp.id
 
 # Remover tag temporal del dueño

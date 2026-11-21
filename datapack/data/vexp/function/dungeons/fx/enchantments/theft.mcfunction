@@ -1,5 +1,5 @@
 # Backstab Feedback
-function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:theft",position:"~ ~1 ~",face_player:1,scale:1.7,random_pos:0,lifetime:10,follow_owner:0,follow_offset_x:0,follow_offset_y:1,follow_offset_z:0}
+function vexp:utils/feedback/swoosh/spawn_swoosh {model:"vexp:theft",position:"~ ~1 ~",face_player:1,scale:1.7,lifetime:7,follow_owner:0,follow_offset_x:0,follow_offset_y:1,follow_offset_z:0}
 
 particle instant_effect{color:6245979,power:1} ~ ~1 ~ 0.5 0.2 0.5 1 1
 particle effect{color:4010298,power:1} ~ ~1 ~ 0.5 0.2 0.5 1 3
