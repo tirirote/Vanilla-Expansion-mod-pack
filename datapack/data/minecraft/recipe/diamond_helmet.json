@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "diamond",
           "armor": {
-            "desc": "Excelente y brillante.",
-            "ability": "Habilidad.",
+            "desc_line0": "Pura artesanía de calidad,",
+            "desc_line1": "excelentes y brillantes.",
+            "ability_name": "Brillo reparador",
+            "ability_line0": "Probabilidad de reparar",
+            "ability_line1": "tu arma principal.",
             "type": "diamond",
             "slot": "helmet",
             "stats": {

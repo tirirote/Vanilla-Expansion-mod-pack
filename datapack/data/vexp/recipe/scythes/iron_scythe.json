@@ -15,8 +15,11 @@
           "item": "scythe",
           "material": "iron",
           "combo": {
-            "desc": "Imponente y confiable.",
-            "rc_desc": "Tajo a distancia.",
+            "desc_line0": "Templada a mano,",
+            "desc_line1": "afilada y pesada.",
+            "rc_name": "Onda de choque",
+            "rc_desc_line0": "Projecta una gran onda",
+            "rc_desc_line1": "que aplica daño ligero.",
             "damage": 5,
             "cooldown": 48,
             "right_click_cooldown": 36,

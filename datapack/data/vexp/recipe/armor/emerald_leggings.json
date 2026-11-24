@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "emerald",
           "armor": {
-            "desc": "Radiantes y costosas.",
-            "ability": "Dichosa fortuna.",
+            "desc_line0": "Preciosa confección con gemas,",
+            "desc_line1": "sublimes, y brillantes.",
+            "ability_name": "Fortuna",
+            "ability_line0": "Probabilidad de conseguir",
+            "ability_line1": "un aumento de suerte.",
             "type": "emerald",
             "slot": "leggings",
             "stats": {

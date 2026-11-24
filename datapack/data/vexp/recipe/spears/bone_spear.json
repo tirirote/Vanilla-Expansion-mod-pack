@@ -18,8 +18,11 @@
           "item": "spear",
           "material": "bone",
           "combo": {
-            "desc": "Precisa y macabra.",
-            "rc_desc": "Embestida.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "ligera y con gran alcance.",
+            "rc_name": "Embestida",
+            "rc_desc_line0": "Avanza rápidamente,",
+            "rc_desc_line1": "con una gran golpe.",
             "damage": 3,
             "cooldown": 24,
             "right_click_cooldown": 28,

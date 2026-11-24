@@ -14,14 +14,17 @@
           "item": "pickaxe",
           "material": "iron",
           "tool": {
-            "desc": "Eficiente y resistente.",
+            "desc_line0": "Fabricado a mano,",
+            "desc_line1": "equilibrado y eficiente.",
             "efficiency": 6.0,
             "damage": 4.0,
             "attack_speed": 1.2
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Minado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "normal"
           }
         }

@@ -15,8 +15,11 @@
           "item": "dagger",
           "material": "copper",
           "combo": {
-            "desc": "Ligera y resistente.",
-            "rc_desc": "Arrojadiza.",
+            "desc_line0": "Forjada con cobre,",
+            "desc_line1": "rudimentaria y ligera.",
+            "rc_name": "Arrojadiza",
+            "rc_desc_line0": "Lanza la daga",
+            "rc_desc_line1": "con precisión.",
             "damage": 3,
             "cooldown": 4,
             "right_click_cooldown": 12,

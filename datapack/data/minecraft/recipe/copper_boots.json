@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "copper",
           "armor": {
-            "desc": "Ligeramente resistentes.",
-            "ability": "Habilidad.",
+            "desc_line0": "Forjadas con cobre,",
+            "desc_line1": "un poco rudimentarias.",
+            "ability_name": "Descarga eléctrica",
+            "ability_line0": "Al ser golpeado, puedes llegar",
+            "ability_line1": "a aplicar una descarga en área.",
             "type": "copper",
             "slot": "boots",
             "stats": {

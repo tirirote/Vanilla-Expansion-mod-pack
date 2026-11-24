@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "gold",
           "armor": {
-            "desc": "Delicadamente hermoso.",
-            "ability": "Aura brillante.",
+            "desc_line0": "Forjado en una sola pieza,",
+            "desc_line1": "delicado y hermoso.",
+            "ability_name": "Coleccionista de XP",
+            "ability_line0": "Probabilidad de coseguir",
+            "ability_line1": "puntos de XP adicionales.",
             "type": "gold",
             "slot": "helmet",
             "stats": {

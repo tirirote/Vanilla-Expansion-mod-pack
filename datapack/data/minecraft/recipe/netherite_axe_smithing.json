@@ -8,16 +8,19 @@
   "result": {
     "id": "minecraft:netherite_axe",
     "components": {
-      "minecraft:item_name": { "text": "Hacha de netherite", "italic": false },
+      "minecraft:item_name": { "text": "Hacha de netherita", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "type": "short_combo",
           "item": "axe",
           "material": "netherite",
           "combo": {
-            "desc": "Poderosa y abrasadora.",
-            "rc_desc": "Hachazo de vindicador.",
-            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
+            "desc_line0": "Forjada entre ascuas,",
+            "desc_line1": "poderosa y pesada.",
+            "rc_name": "Hachazo",
+            "rc_desc_line0": "Ataca con un gran",
+            "rc_desc_line1": "hachazo de Vindicador.",
+            "bonus_desc": "Otorga [Densidad ardiente]",
             "status_desc": "Aplica [Quemadura profunda].",
             "damage": 11,
             "cooldown": 36,

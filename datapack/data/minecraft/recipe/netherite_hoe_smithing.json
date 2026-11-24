@@ -14,15 +14,18 @@
           "item": "hoe",
           "material": "netherite",
           "tool": {
-            "desc": "Esto es definitivamente demasiado.",
-            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
+            "desc_line0": "Forjada entre ascuas,",
+            "desc_line1": "definitivamente demasiado.",
+            "bonus_desc": "Otorga [Densidad ardiente]",
             "efficiency": 9.0,
             "damage": 1.0,
             "attack_speed": 4.0
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Replantado extendido.",
+            "rc_name": "Cosecha",
+            "rc_desc_line0": "Segado de cultivos,",
+            "rc_desc_line1": "cosecha y replanta.",
             "quality": "netherite"
           }
         }

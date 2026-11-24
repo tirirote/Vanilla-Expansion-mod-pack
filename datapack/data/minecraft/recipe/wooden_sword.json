@@ -15,8 +15,11 @@
           "item": "sword",
           "material": "wood",
           "combo": {
-            "desc": "Sencilla y hecha a mano.",
-            "rc_desc": "En guardia.",
+            "desc_line0": "Hecha a mano,",
+            "desc_line1": "sencilla y básica.",
+            "rc_name": "En guardia",
+            "rc_desc_line0": "Reduce el daño recibido",
+            "rc_desc_line1": "y desvía projectiles.",
             "damage": 3,
             "cooldown": 12,
             "right_click_cooldown": 24,

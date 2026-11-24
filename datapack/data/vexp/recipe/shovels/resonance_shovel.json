@@ -14,15 +14,18 @@
           "item": "shovel",
           "material": "echo",
           "tool": {
-            "desc": "Pala resonante para limpiar terreno.",
-            "bonus_desc": "Otorga [Frenesí oscuro] por 2s.",
+            "desc_line0": "Emerge de las profundidades,",
+            "desc_line1": "oscura y eficiente.",
+            "bonus_desc": "Otorga [Frenesí oscuro].",
             "efficiency": 11.0,
             "damage": 6.0,
             "attack_speed": 1.0
           },
           "combo": {
-            "right_click_cooldown": 60,
-            "rc_desc": "Excavado extendido.",
+            "right_click_cooldown": 100,
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "echo"
           }
         }

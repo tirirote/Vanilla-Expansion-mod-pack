@@ -14,14 +14,17 @@
           "item": "pickaxe",
           "material": "copper",
           "tool": {
-            "desc": "Fiable y resistente.",
+            "desc_line0": "Fabricado con cobre,",
+            "desc_line1": "rudimentario, pero útil.",
             "efficiency": 5.0,
             "damage": 3.5,
             "attack_speed": 1.2
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Minado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "normal"
           }
         }

@@ -15,8 +15,11 @@
           "item": "spellbook",
           "material": "copper",
           "combo": {
-            "desc": "Encantado y ligero.",
-            "rc_desc": "Andanada de proyectiles.",
+            "desc_line0": "Artesanía rudimentaria,",
+            "desc_line1": "ligeramente pesado.",
+            "rc_name": "Ráfaga",
+            "rc_desc_line0": "Dispara una andanada de",
+            "rc_desc_line1": "3 proyectiles.",
             "damage": 3,
             "cooldown": 4,
             "right_click_cooldown": 24,

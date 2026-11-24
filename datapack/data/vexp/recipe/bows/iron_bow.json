@@ -15,8 +15,11 @@
           "item": "bow",
           "material": "iron",
           "combo": {
-            "desc": "Resistente y equilibrado.",
-            "rc_desc": "Combo a distancia.",
+            "desc_line0": "Templado a mano,",
+            "desc_line1": "equilibrado y pesado.",
+            "rc_name": "Disparo",
+            "rc_desc_line0": "Combo de disparos,",
+            "rc_desc_line1": "rápidos y certeros.",
             "damage": 4,
             "cooldown": 18,
             "right_click_cooldown": 20,

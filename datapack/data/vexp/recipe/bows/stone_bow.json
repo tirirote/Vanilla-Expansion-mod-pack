@@ -15,8 +15,11 @@
           "item": "bow",
           "material": "stone",
           "combo": {
-            "desc": "Tosco y confiable.",
-            "rc_desc": "Combo a distancia.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "y un poco tosco.",
+            "rc_name": "Disparo",
+            "rc_desc_line0": "Combo de disparos,",
+            "rc_desc_line1": "rápidos y certeros.",
             "damage": 2,
             "cooldown": 10,
             "right_click_cooldown": 20,

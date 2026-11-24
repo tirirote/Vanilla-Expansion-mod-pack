@@ -15,8 +15,11 @@
           "item": "bow",
           "material": "bone",
           "combo": {
-            "desc": "Fiable y macabro.",
-            "rc_desc": "Combo a distancia.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligero.",
+            "rc_name": "Disparo",
+            "rc_desc_line0": "Combo de disparos,",
+            "rc_desc_line1": "rápidos y certeros.",
             "damage": 4,
             "cooldown": 12,
             "right_click_cooldown": 20,

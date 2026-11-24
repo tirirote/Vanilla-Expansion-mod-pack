@@ -8,14 +8,17 @@
     "id": "minecraft:leather_leggings",
     "count": 1,
     "components": {
-      "item_name": { "text": "Grebas de cuero", "italic": false },
+      "item_name": { "text": "Pantalones de cuero", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "armor",
           "quality": "leather",
           "armor": {
-            "desc": "Ideales para empezar a explorar.",
-            "ability": "Buscador de experiencia.",
+            "desc_line0": "Confección artesana,",
+            "desc_line1": "calentitos y cómodos.",
+            "ability_name": "Exploración",
+            "ability_line0": "Probabilidad de encontrar",
+            "ability_line1": "algo al romper bloques.",
             "type": "leather",
             "slot": "leggings",
             "stats": {

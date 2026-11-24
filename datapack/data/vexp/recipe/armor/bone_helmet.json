@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "bone",
           "armor": {
-            "desc": "Ligero y macabro.",
-            "ability": "Persuasión.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligero.",
+            "ability_name": "Infiltración",
+            "ability_line0": "Infiltrate entre los enemigos",
+            "ability_line1": "sin levantar sospecha.",
             "type": "bone",
             "slot": "helmet",
             "stats": {

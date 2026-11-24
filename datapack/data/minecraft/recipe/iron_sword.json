@@ -15,8 +15,11 @@
           "item": "sword",
           "material": "iron",
           "combo": {
-            "desc": "Resistente y equilibrada.",
-            "rc_desc": "En guardia.",
+            "desc_line0": "Templada a mano,",
+            "desc_line1": "equilibrada y con un buen filo.",
+            "rc_name": "En guardia",
+            "rc_desc_line0": "Reduce el daño recibido",
+            "rc_desc_line1": "y desvía projectiles.",
             "damage": 7,
             "cooldown": 32,
             "right_click_cooldown": 24,

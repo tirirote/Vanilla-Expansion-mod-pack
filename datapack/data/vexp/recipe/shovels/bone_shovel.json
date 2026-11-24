@@ -14,14 +14,17 @@
           "item": "shovel",
           "material": "bone",
           "tool": {
-            "desc": "Confiable y macabra.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligero.",
             "efficiency": 5.0,
             "damage": 4.0,
             "attack_speed": 1.0
           },
           "combo": {
-            "right_click_cooldown": 60,
-            "rc_desc": "Excavado extendido.",
+            "right_click_cooldown": 100,
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "bone"
           }
         }

@@ -17,8 +17,11 @@
           "item": "armor",
           "quality": "glowing",
           "armor": {
-            "desc": "Sigilosas y ligeras.",
-            "ability": "Movimiento sinuoso.",
+            "desc_line0": "Fabricación antigua,",
+            "desc_line1": "etéreas y brillantes.",
+            "ability_name": "Forma etérea",
+            "ability_line0": "Inflige daño al obtener",
+            "ability_line1": "[Invisibilidad etérea].",
             "type": "glowing",
             "slot": "leggings",
             "stats": {

@@ -15,8 +15,11 @@
           "item": "scythe",
           "material": "stone",
           "combo": {
-            "desc": "Tosca y resistente.",
-            "rc_desc": "Tajo a distancia.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "y un poco tosca.",
+            "rc_name": "Onda de choque",
+            "rc_desc_line0": "Projecta una gran onda",
+            "rc_desc_line1": "que aplica daño ligero.",
             "damage": 3,
             "cooldown": 24,
             "right_click_cooldown": 36,

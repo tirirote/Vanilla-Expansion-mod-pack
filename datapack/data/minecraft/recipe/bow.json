@@ -15,8 +15,11 @@
           "item": "bow",
           "material": "wood",
           "combo": {
-            "desc": "Sencillo y hecho a mano.",
-            "rc_desc": "Combo a distancia.",
+            "desc_line0": "Hecho a mano,",
+            "desc_line1": "sencilla y básica.",
+            "rc_name": "Disparo",
+            "rc_desc_line0": "Combo de disparos,",
+            "rc_desc_line1": "rápidos y certeros.",
             "damage": 2,
             "cooldown": 8,
             "right_click_cooldown": 20,

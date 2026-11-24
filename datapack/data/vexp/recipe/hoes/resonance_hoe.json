@@ -14,15 +14,18 @@
           "item": "hoe",
           "material": "echo",
           "tool": {
-            "desc": "Azada resonante de labranza perfecta.",
-            "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
+            "desc_line0": "Emerge de las profundidades,",
+            "desc_line1": "oscura y eficiente.",
+            "bonus_desc": "Otorga [Frenesí oscuro].",
             "efficiency": 10.0,
             "damage": 1.0,
             "attack_speed": 4.0
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Replantado extendido.",
+            "rc_name": "Cosecha",
+            "rc_desc_line0": "Segado de cultivos,",
+            "rc_desc_line1": "cosecha y replanta.",
             "quality": "echo"
           }
         }

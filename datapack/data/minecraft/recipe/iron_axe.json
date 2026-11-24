@@ -15,8 +15,11 @@
           "item": "axe",
           "material": "iron",
           "combo": {
-            "desc": "Resistente y equilibrada.",
-            "rc_desc": "Hachazo de vindicador.",
+            "desc_line0": "Templada a mano,",
+            "desc_line1": "equilibrada y afilada.",
+            "rc_name": "Hachazo",
+            "rc_desc_line0": "Ataca con un gran",
+            "rc_desc_line1": "hachazo de Vindicador.",
             "damage": 8,
             "cooldown": 28,
             "right_click_cooldown": 100,

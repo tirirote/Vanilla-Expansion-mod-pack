@@ -14,14 +14,17 @@
           "item": "pickaxe",
           "material": "stone",
           "tool": {
-            "desc": "Tosco pero confiable.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "y un poco tosca.",
             "efficiency": 4.0,
             "damage": 3.0,
             "attack_speed": 1.2
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Minado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "normal"
           }
         }

@@ -15,8 +15,11 @@
           "item": "axe",
           "material": "wood",
           "combo": {
-            "desc": "Sencilla y hecha a mano.",
-            "rc_desc": "Hachazo de vindicador.",
+            "desc_line0": "Hecha a mano,",
+            "desc_line1": "sencilla y básica.",
+            "rc_name": "Hachazo",
+            "rc_desc_line0": "Ataca con un gran",
+            "rc_desc_line1": "hachazo de Vindicador.",
             "damage": 4,
             "cooldown": 10,
             "right_click_cooldown": 100,

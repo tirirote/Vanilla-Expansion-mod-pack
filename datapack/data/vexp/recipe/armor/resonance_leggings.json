@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "echo",
           "armor": {
-            "desc": "Poderosas y ligeras.",
-            "ability": "Golpe resonante.",
+            "desc_line0": "Emerge de las profundidades,",
+            "desc_line1": "oscuras y poderosas.",
+            "ability_name": "Golpe resonante",
+            "ability_line0": "Inflige daño retardado",
+            "ability_line1": "con cada golpe.",
             "type": "resonance",
             "slot": "leggings",
             "stats": {

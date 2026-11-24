@@ -18,8 +18,11 @@
           "item": "spear",
           "material": "iron",
           "combo": {
-            "desc": "Equilibrada y con gran alcance.",
-            "rc_desc": "Embestida.",
+            "desc_line0": "Templada a mano,",
+            "desc_line1": "equilibrada y con gran alcance.",
+            "rc_name": "Embestida",
+            "rc_desc_line0": "Avanza rápidamente,",
+            "rc_desc_line1": "con una gran golpe.",
             "damage": 4,
             "cooldown": 32,
             "right_click_cooldown": 28,

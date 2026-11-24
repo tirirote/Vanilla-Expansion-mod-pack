@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "glowing",
           "armor": {
-            "desc": "Sigiloso y ligero.",
-            "ability": "Movimiento sinuoso.",
+            "desc_line0": "Fabricación antigua,",
+            "desc_line1": "etéreo y brillante.",
+            "ability_name": "Forma etérea",
+            "ability_line0": "Inflige daño al obtener",
+            "ability_line1": "[Invisibilidad etérea].",
             "type": "glowing",
             "slot": "helmet",
             "stats": {

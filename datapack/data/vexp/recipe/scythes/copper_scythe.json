@@ -15,8 +15,11 @@
           "item": "scythe",
           "material": "copper",
           "combo": {
-            "desc": "Imponente y ligera.",
-            "rc_desc": "Tajo a distancia.",
+            "desc_line0": "Forjada con cobre,",
+            "desc_line1": "rudimentaria y afilada.",
+            "rc_name": "Onda de choque",
+            "rc_desc_line0": "Projecta una gran onda",
+            "rc_desc_line1": "que aplica daño ligero.",
             "damage": 4,
             "cooldown": 40,
             "right_click_cooldown": 36,

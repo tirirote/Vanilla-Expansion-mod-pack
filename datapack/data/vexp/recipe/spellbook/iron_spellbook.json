@@ -15,8 +15,11 @@
           "item": "spellbook",
           "material": "iron",
           "combo": {
-            "desc": "Encantado y resistente.",
-            "rc_desc": "Andanada de proyectiles.",
+            "desc_line0": "Fabricación artesanal,",
+            "desc_line1": "bonito y equilibrado.",
+            "rc_name": "Ráfaga",
+            "rc_desc_line0": "Dispara una andanada de",
+            "rc_desc_line1": "3 proyectiles.",
             "damage": 4,
             "cooldown": 4,
             "right_click_cooldown": 24,

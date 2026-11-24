@@ -14,14 +14,17 @@
           "item": "hoe",
           "material": "wood",
           "tool": {
-            "desc": "Sencilla y fiable.",
+            "desc_line0": "Hecha a mano,",
+            "desc_line1": "sencilla y básica.",
             "efficiency": 2.0,
             "damage": 1.0,
             "attack_speed": 1.0
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Replantado extendido.",
+            "rc_name": "Cosecha",
+            "rc_desc_line0": "Segado de cultivos,",
+            "rc_desc_line1": "cosecha y replanta.",
             "quality": "normal"
           }
         }

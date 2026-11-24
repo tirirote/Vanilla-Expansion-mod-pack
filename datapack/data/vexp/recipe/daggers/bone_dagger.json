@@ -15,8 +15,11 @@
           "item": "dagger",
           "material": "bone",
           "combo": {
-            "desc": "Macabra y ligera.",
-            "rc_desc": "Arrojadiza.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligera.",
+            "rc_name": "Arrojadiza",
+            "rc_desc_line0": "Lanza la daga",
+            "rc_desc_line1": "con precisión.",
             "damage": 3,
             "cooldown": 3,
             "right_click_cooldown": 12,

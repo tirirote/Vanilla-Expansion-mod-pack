@@ -18,8 +18,11 @@
           "item": "spear",
           "material": "wood",
           "combo": {
-            "desc": "Sencilla y con gran alcance.",
-            "rc_desc": "Embestida.",
+            "desc_line0": "Hecha a mano,",
+            "desc_line1": "sencilla y básica.",
+            "rc_name": "Embestida",
+            "rc_desc_line0": "Avanza rápidamente,",
+            "rc_desc_line1": "con una gran golpe.",
             "damage": 1,
             "cooldown": 18,
             "right_click_cooldown": 28,

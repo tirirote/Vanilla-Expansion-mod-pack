@@ -18,8 +18,11 @@
           "item": "armor",
           "quality": "chainmail",
           "armor": {
-            "desc": "Resistente y flexible.",
-            "ability": "Desvío de proyectiles.",
+            "desc_line0": "Confeccionada a mano,",
+            "desc_line1": "estética y ligera.",
+            "ability_name": "Desvío de proyectiles",
+            "ability_line0": "Probabilidad de desviar",
+            "ability_line1": "proyectiles cercanos.",
             "type": "chainmail",
             "slot": "chest",
             "stats": {

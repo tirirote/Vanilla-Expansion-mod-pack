@@ -14,15 +14,18 @@
           "item": "shovel",
           "material": "gold",
           "tool": {
-            "desc": "Hermosa, pero delicada.",
-            "bonus_desc": "Otorga [Brillo dorado] por 2s.",
+            "desc_line0": "Forjada en una sola pieza,",
+            "desc_line1": "delicada y brillante.",
+            "bonus_desc": "Otorga [Resplandor dorado].",
             "efficiency": 12.0,
             "damage": 3.0,
             "attack_speed": 1.0
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Excavado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "gold"
           }
         }

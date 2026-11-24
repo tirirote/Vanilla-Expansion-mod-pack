@@ -15,8 +15,11 @@
           "item": "sword",
           "material": "stone",
           "combo": {
-            "desc": "Tosca y confiable.",
-            "rc_desc": "En guardia.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "tosca pero afilada.",
+            "rc_name": "En guardia",
+            "rc_desc_line0": "Reduce el daño recibido",
+            "rc_desc_line1": "y desvía projectiles.",
             "damage": 4,
             "cooldown": 16,
             "right_click_cooldown": 24,

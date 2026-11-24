@@ -15,8 +15,11 @@
           "item": "gauntlets",
           "material": "wood",
           "combo": {
-            "desc": "Ligeros y sencillos.",
-            "rc_desc": "Agarre firme.",
+            "desc_line0": "Hechos a mano,",
+            "desc_line1": "sencillos y ligeros.",
+            "rc_name": "Agarre",
+            "rc_desc_line0": "Mueve al objetivo por",
+            "rc_desc_line1": "un breve instante.",
             "damage": 1,
             "cooldown": 2,
             "right_click_cooldown": 30,

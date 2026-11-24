@@ -8,7 +8,7 @@
   "result": {
     "id": "minecraft:netherite_sword",
     "components": {
-      "minecraft:item_name": { "text": "Lanza de netherite", "italic": false },
+      "minecraft:item_name": { "text": "Lanza de netherita", "italic": false },
       "minecraft:custom_model_data": {
         "strings": ["vexp:netherite_spear"]
       },
@@ -18,9 +18,12 @@
           "item": "spear",
           "material": "netherite",
           "combo": {
-            "desc": "Abrasadora y con gran alcance.",
-            "rc_desc": "Embestida.",
-            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
+            "desc_line0": "Forjada entre ascuas,",
+            "desc_line1": "pesada y con gran alcance.",
+            "rc_name": "Embestida",
+            "rc_desc_line0": "Avanza rápidamente,",
+            "rc_desc_line1": "con una gran golpe.",
+            "bonus_desc": "Otorga [Densidad ardiente].",
             "status_desc": "Aplica [Quemadura profunda].",
             "damage": 7,
             "cooldown": 42,

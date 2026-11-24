@@ -15,8 +15,11 @@
           "item": "gauntlets",
           "material": "stone",
           "combo": {
-            "desc": "Ligeros y toscos.",
-            "rc_desc": "Agarre firme.",
+            "desc_line0": "Rudimentarios,",
+            "desc_line1": "y un poco toscos.",
+            "rc_name": "Agarre",
+            "rc_desc_line0": "Mueve al objetivo por",
+            "rc_desc_line1": "un breve instante.",
             "damage": 2,
             "cooldown": 4,
             "right_click_cooldown": 30,

@@ -15,8 +15,11 @@
           "item": "spellbook",
           "material": "bone",
           "combo": {
-            "desc": "Encantado y macabro.",
-            "rc_desc": "Andanada de proyectiles.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligero.",
+            "rc_name": "Ráfaga",
+            "rc_desc_line0": "Dispara una andanada de",
+            "rc_desc_line1": "3 proyectiles.",
             "damage": 3,
             "cooldown": 3,
             "right_click_cooldown": 24,

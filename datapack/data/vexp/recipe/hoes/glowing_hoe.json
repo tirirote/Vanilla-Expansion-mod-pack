@@ -14,15 +14,18 @@
           "item": "hoe",
           "material": "glowing",
           "tool": {
-            "desc": "Azada brillante de labranza precisa.",
-            "bonus_desc": "Otorga [Forma sinuosa] por 2s.",
+            "desc_line0": "Fabricación antigua,",
+            "desc_line1": "etérea y eficiente.",
+            "bonus_desc": "Otorga [Invisibilidad etérea].",
             "efficiency": 9.0,
             "damage": 1.0,
             "attack_speed": 4.0
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Replantado extendido.",
+            "rc_name": "Cosecha",
+            "rc_desc_line0": "Segado de cultivos,",
+            "rc_desc_line1": "cosecha y replanta.",
             "quality": "glowing"
           }
         }

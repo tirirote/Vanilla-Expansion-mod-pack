@@ -19,8 +19,10 @@
           "material": "netherite",
           "combo": {
             "desc": "Abismalmente poderosa.",
-            "rc_desc": "Tajo a distancia.",
-            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
+            "rc_name": "Onda de choque",
+            "rc_desc_line0": "Projecta una gran onda",
+            "rc_desc_line1": "que aplica daño ligero.",
+            "bonus_desc": "Otorga [Densidad ardiente].",
             "status_desc": "Aplica [Quemadura profunda].",
             "damage": 7,
             "cooldown": 58,

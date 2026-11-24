@@ -15,8 +15,11 @@
           "item": "dagger",
           "material": "stone",
           "combo": {
-            "desc": "Tosca y ligera.",
-            "rc_desc": "Arrojadiza.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "y un poco tosca.",
+            "rc_name": "Arrojadiza",
+            "rc_desc_line0": "Lanza la daga",
+            "rc_desc_line1": "con precisión.",
             "damage": 2,
             "cooldown": 3,
             "right_click_cooldown": 12,

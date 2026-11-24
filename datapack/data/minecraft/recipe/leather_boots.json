@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "leather",
           "armor": {
-            "desc": "Ideales para empezar a explorar.",
-            "ability": "Rastreo del terreno.",
+            "desc_line0": "Confección artesana,",
+            "desc_line1": "calentitas y cómodas.",
+            "ability_name": "Exploración",
+            "ability_line0": "Probabilidad de encontrar",
+            "ability_line1": "algo al romper bloques.",
             "type": "leather",
             "slot": "boots",
             "stats": {

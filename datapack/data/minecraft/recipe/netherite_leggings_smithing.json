@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "netherite",
           "armor": {
-            "desc": "Forjadas en las profundidades del Nether.",
-            "ability": "Aura abrasadora.",
+            "desc_line0": "Forjadas entre ascuas,",
+            "desc_line1": "poderosas y pesadas.",
+            "ability_name": "Aura Abrasadora",
+            "ability_line0": "Probabilidad de aplicar una",
+            "ability_line1": "onda de fuego en área.",
             "type": "netherite",
             "slot": "leggings",
             "stats": {

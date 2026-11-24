@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "netherite",
           "armor": {
-            "desc": "Forjado en las profundidades del Nether.",
-            "ability": "Aura abrasadora.",
+            "desc_line0": "Forjado entre ascuas,",
+            "desc_line1": "poderoso y pesado.",
+            "ability_name": "Aura Abrasadora",
+            "ability_line0": "Probabilidad de aplicar una",
+            "ability_line1": "onda de fuego en área.",
             "type": "netherite",
             "slot": "helmet",
             "stats": {

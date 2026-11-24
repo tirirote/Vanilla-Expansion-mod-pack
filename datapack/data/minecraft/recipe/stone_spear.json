@@ -18,8 +18,11 @@
           "item": "spear",
           "material": "stone",
           "combo": {
-            "desc": "Tosca y con gran alcance.",
-            "rc_desc": "Embestida.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "tosca y con gran alcance.",
+            "rc_name": "Embestida",
+            "rc_desc_line0": "Avanza rápidamente,",
+            "rc_desc_line1": "con una gran golpe.",
             "damage": 2,
             "cooldown": 22,
             "right_click_cooldown": 28,

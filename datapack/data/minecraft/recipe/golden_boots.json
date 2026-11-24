@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "gold",
           "armor": {
-            "desc": "Delicadamente hermosas.",
-            "ability": "Aura brillante.",
+            "desc_line0": "Forjadas en una sola pieza,",
+            "desc_line1": "delicadas y hermosas.",
+            "ability_name": "Coleccionista de XP",
+            "ability_line0": "Probabilidad de coseguir",
+            "ability_line1": "puntos de XP adicionales.",
             "type": "gold",
             "slot": "boots",
             "stats": {

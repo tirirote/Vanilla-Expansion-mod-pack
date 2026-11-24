@@ -8,21 +8,24 @@
   "result": {
     "id": "minecraft:netherite_shovel",
     "components": {
-      "minecraft:item_name": { "text": "Pala de netherite", "italic": false },
+      "minecraft:item_name": { "text": "Pala de netherita", "italic": false },
       "minecraft:custom_data": {
         "vexp": {
           "item": "shovel",
           "material": "netherite",
           "tool": {
-            "desc": "Absurdamente eficiente.",
-            "bonus_desc": "Otorga [Densidad ardiente] por 2s.",
+            "desc_line0": "Forjada entre ascuas,",
+            "desc_line1": "pesada y muy eficiente.",
+            "bonus_desc": "Otorga [Densidad ardiente]",
             "efficiency": 9.0,
             "damage": 7.0,
             "attack_speed": 1.0
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Excavado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "netherite"
           }
         }

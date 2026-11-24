@@ -14,14 +14,17 @@
           "item": "shovel",
           "material": "copper",
           "tool": {
-            "desc": "Fiable y resistente.",
+            "desc_line0": "Fabricada con cobre,",
+            "desc_line1": "rudimentaria y resistente.",
             "efficiency": 5.0,
             "damage": 4.0,
             "attack_speed": 1.0
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Excavado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Excavación instantánea",
+            "rc_desc_line1": "en área.",
             "quality": "normal"
           }
         }

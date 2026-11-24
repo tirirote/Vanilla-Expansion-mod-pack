@@ -15,8 +15,11 @@
           "item": "spellbook",
           "material": "wood",
           "combo": {
-            "desc": "Encantado y sencillo.",
-            "rc_desc": "Andanada de proyectiles.",
+            "desc_line0": "Hecho a mano,",
+            "desc_line1": "sencillo y básico.",
+            "rc_name": "Ráfaga",
+            "rc_desc_line0": "Dispara una andanada de",
+            "rc_desc_line1": "3 proyectiles.",
             "damage": 1,
             "cooldown": 2,
             "right_click_cooldown": 24,

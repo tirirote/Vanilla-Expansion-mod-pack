@@ -15,8 +15,11 @@
           "item": "scythe",
           "material": "bone",
           "combo": {
-            "desc": "Sencillamente macabra.",
-            "rc_desc": "Tajo a distancia.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligero.",
+            "rc_name": "Onda de choque",
+            "rc_desc_line0": "Projecta una gran onda",
+            "rc_desc_line1": "que aplica daño ligero.",
             "damage": 4,
             "cooldown": 36,
             "right_click_cooldown": 36,

@@ -14,15 +14,18 @@
           "item": "pickaxe",
           "material": "echo",
           "tool": {
-            "desc": "Poderoso y preciso.",
-            "bonus_desc": "Otorga [Movilidad oscura] por 2s.",
+            "desc_line0": "Emerge de las profundidades,",
+            "desc_line1": "oscuro y abrumador.",
+            "bonus_desc": "Otorga [Frenesí oscuro].",
             "efficiency": 11.0,
             "damage": 6.0,
             "attack_speed": 1.2
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Minado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "echo"
           }
         }

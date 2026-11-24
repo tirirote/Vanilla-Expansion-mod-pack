@@ -14,8 +14,11 @@
           "item": "armor",
           "quality": "iron",
           "armor": {
-            "desc": "Resistente y confiable.",
-            "ability": "Resistencia reforzada.",
+            "desc_line0": "Templado a mano,",
+            "desc_line1": "equilibrado y resistente.",
+            "ability_name": "Protección",
+            "ability_line0": "Reduce el daño recibido",
+            "ability_line1": "al agacharse.",
             "type": "iron",
             "slot": "helmet",
             "stats": {

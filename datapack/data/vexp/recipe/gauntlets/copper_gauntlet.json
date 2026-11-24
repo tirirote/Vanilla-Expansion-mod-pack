@@ -15,8 +15,11 @@
           "item": "gauntlets",
           "material": "copper",
           "combo": {
-            "desc": "Ligeros y brillantes.",
-            "rc_desc": "Agarre firme.",
+            "desc_line0": "Confeccionados con cobre,",
+            "desc_line1": "un poco pesados.",
+            "rc_name": "Agarre",
+            "rc_desc_line0": "Mueve al objetivo por",
+            "rc_desc_line1": "un breve instante.",
             "damage": 3,
             "cooldown": 5,
             "right_click_cooldown": 30,

@@ -15,8 +15,11 @@
           "item": "scythe",
           "material": "wood",
           "combo": {
-            "desc": "Imponente y hecha a mano.",
-            "rc_desc": "Tajo a distancia.",
+            "desc_line0": "Hecha a mano,",
+            "desc_line1": "sencilla y básica.",
+            "rc_name": "Onda de choque",
+            "rc_desc_line0": "Projecta una gran onda",
+            "rc_desc_line1": "que aplica daño ligero.",
             "damage": 2,
             "cooldown": 18,
             "right_click_cooldown": 36,

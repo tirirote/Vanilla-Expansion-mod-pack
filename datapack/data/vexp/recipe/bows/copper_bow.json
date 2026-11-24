@@ -15,8 +15,11 @@
           "item": "bow",
           "material": "copper",
           "combo": {
-            "desc": "Resistente y brillante.",
-            "rc_desc": "Combo a distancia.",
+            "desc_line0": "Fabricado con cobre,",
+            "desc_line1": "rudimentario pero útil.",
+            "rc_name": "Disparo",
+            "rc_desc_line0": "Combo de disparos,",
+            "rc_desc_line1": "rápidos y certeros.",
             "damage": 4,
             "cooldown": 14,
             "right_click_cooldown": 20,

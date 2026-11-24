@@ -15,8 +15,11 @@
           "item": "axe",
           "material": "bone",
           "combo": {
-            "desc": "Afilada y macabra.",
-            "rc_desc": "Hachazo de vindicador.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y afilada.",
+            "rc_name": "Hachazo",
+            "rc_desc_line0": "Ataca con un gran",
+            "rc_desc_line1": "hachazo de Vindicador.",
             "damage": 6,
             "cooldown": 20,
             "right_click_cooldown": 100,

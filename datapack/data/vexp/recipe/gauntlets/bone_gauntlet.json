@@ -15,8 +15,11 @@
           "item": "gauntlets",
           "material": "bone",
           "combo": {
-            "desc": "Ligeros y macabros.",
-            "rc_desc": "Agarre firme.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y ligero.",
+            "rc_name": "Agarre",
+            "rc_desc_line0": "Mueve al objetivo por",
+            "rc_desc_line1": "un breve instante.",
             "damage": 2,
             "cooldown": 5,
             "right_click_cooldown": 30,

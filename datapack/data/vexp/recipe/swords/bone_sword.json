@@ -15,8 +15,11 @@
           "item": "sword",
           "material": "bone",
           "combo": {
-            "desc": "Afilada y macabra.",
-            "rc_desc": "En guardia.",
+            "desc_line0": "Artesanía macabra,",
+            "desc_line1": "frágil y afilada.",
+            "rc_name": "En guardia",
+            "rc_desc_line0": "Reduce el daño recibido",
+            "rc_desc_line1": "y desvía projectiles.",
             "damage": 5,
             "cooldown": 24,
             "right_click_cooldown": 24,

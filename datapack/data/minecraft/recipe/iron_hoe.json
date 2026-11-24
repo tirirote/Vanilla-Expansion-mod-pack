@@ -14,14 +14,17 @@
           "item": "hoe",
           "material": "iron",
           "tool": {
-            "desc": "Resistente y eficiente.",
+            "desc_line0": "Fabricada a mano,",
+            "desc_line1": "equilibrada y eficiente.",
             "efficiency": 6.0,
             "damage": 1.0,
             "attack_speed": 3.0
           },
           "combo": {
             "right_click_cooldown": 30,
-            "rc_desc": "Replantado extendido.",
+            "rc_name": "Cosecha",
+            "rc_desc_line0": "Segado de cultivos,",
+            "rc_desc_line1": "cosecha y replanta.",
             "quality": "normal"
           }
         }

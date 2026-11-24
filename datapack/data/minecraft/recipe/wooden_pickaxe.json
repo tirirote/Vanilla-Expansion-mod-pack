@@ -14,14 +14,17 @@
           "item": "pickaxe",
           "material": "wood",
           "tool": {
-            "desc": "Sencillo y fiable.",
+            "desc_line0": "Hecha a mano,",
+            "desc_line1": "sencilla y básica.",
             "efficiency": 2.0,
             "damage": 2.0,
             "attack_speed": 1.2
           },
           "combo": {
             "right_click_cooldown": 100,
-            "rc_desc": "Minado extendido.",
+            "rc_name": "Excavación",
+            "rc_desc_line0": "Cava al instante",
+            "rc_desc_line1": "en un área amplia.",
             "quality": "normal"
           }
         }

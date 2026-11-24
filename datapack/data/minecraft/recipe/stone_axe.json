@@ -15,8 +15,11 @@
           "item": "axe",
           "material": "stone",
           "combo": {
-            "desc": "Tosca y confiable.",
-            "rc_desc": "Hachazo de vindicador.",
+            "desc_line0": "Rudimentaria,",
+            "desc_line1": "y un poco tosca.",
+            "rc_name": "Hachazo",
+            "rc_desc_line0": "Ataca con un gran",
+            "rc_desc_line1": "hachazo de Vindicador.",
             "damage": 5,
             "cooldown": 16,
             "right_click_cooldown": 100,

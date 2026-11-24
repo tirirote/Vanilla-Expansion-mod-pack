@@ -15,8 +15,11 @@
           "item": "sword",
           "material": "copper",
           "combo": {
-            "desc": "Ligera y resistente.",
-            "rc_desc": "En guardia.",
+            "desc_line0": "Forjada con cobre,",
+            "desc_line1": "un poco rudimentaria.",
+            "rc_name": "En guardia",
+            "rc_desc_line0": "Reduce el daño recibido",
+            "rc_desc_line1": "y desvía projectiles.",
             "damage": 6,
             "cooldown": 28,
             "right_click_cooldown": 24,
