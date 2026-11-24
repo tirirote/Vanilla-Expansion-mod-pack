@@ -1,7 +1,20 @@
 # dungeons/lore/apply_armor_feet.mcfunction
 # @s is the player with custom armor boots equipped.
 
-data modify storage vexp:temp lore_apply_armor set value {desc:"Armadura personalizada"}
+# Default data
+data modify storage vexp:temp lore_apply_armor set value {desc_line0:"Armadura,",desc_line1:"con descripción larga.",ability_name:"Habilidad personalizada", ability_line0:"Habilidad de armadura",ability_line1:"con descripción larga",attributes:[]}
+
+# Get armor description
+execute if data entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.desc_line0 run data modify storage vexp:temp lore_apply_armor.desc_line0 set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.desc_line0
+execute if data entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.desc_line1 run data modify storage vexp:temp lore_apply_armor.desc_line1 set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.desc_line1
+
+# Get armor ability name
+execute if data entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.ability_name run data modify storage vexp:temp lore_apply_armor.ability_name set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.ability_name
+# Get armor ability description
+execute if data entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.ability_line0 run data modify storage vexp:temp lore_apply_armor.ability_line0 set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.ability_line0
+execute if data entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.ability_line1 run data modify storage vexp:temp lore_apply_armor.ability_line1 set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.ability_line1
+
+# Armor Stats
 data modify storage vexp:temp lore_apply_armor.defense set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.stats.defense
 data modify storage vexp:temp lore_apply_armor.damage set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.stats.damage
 data modify storage vexp:temp lore_apply_armor.speed set from entity @s equipment.feet.components."minecraft:custom_data".vexp.armor.stats.speed

@@ -2,13 +2,18 @@
 # @s is the player holding the tool in main hand.
 
 # Default descriptor lines.
-data modify storage vexp:temp lore_apply_tool set value {desc:"Herramienta personalizada", rc_desc:"Habilidad personalizada", bonus_desc:"Bonus de herramienta", status_desc:"Estado personalizado", efficiency:0.0, break_speed:0.0, damage:0.0, attack_speed:1.0}
+data modify storage vexp:temp lore_apply_tool set value {desc_line0:"Herramienta personalizada",desc_line1:"con descripción larga.", rc_name: "Nombre de Habilidad", rc_desc_line0:"Habilidad personalizada", rc_desc_line0:"con descripción larga", bonus_desc:"Bonus de herramienta", status_desc:"Estado personalizado", efficiency:0.0, break_speed:0.0, damage:0.0, attack_speed:1.0}
 
 # Optional custom descriptors for tools.
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.desc run data modify storage vexp:temp lore_apply_tool.desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.desc
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.desc_line0 run data modify storage vexp:temp lore_apply_tool.desc_line0 set from entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.desc_line0
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.desc_line1 run data modify storage vexp:temp lore_apply_tool.desc_line1 set from entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.desc_line1
 
-# Apply Ability desc.
-execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc run data modify storage vexp:temp lore_apply_tool.rc_desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc
+# Apply Hability name
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_name run data modify storage vexp:temp lore_apply_tool.rc_name set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_name
+
+# Apply Ability description.
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc_line0 run data modify storage vexp:temp lore_apply_tool.rc_desc_line0 set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc_line0
+execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc_line1 run data modify storage vexp:temp lore_apply_tool.rc_desc_line1 set from entity @s SelectedItem.components."minecraft:custom_data".vexp.combo.rc_desc_line1
 
 # Apply Bonus desc.
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.bonus_desc run data modify storage vexp:temp lore_apply_tool.bonus_desc set from entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.bonus_desc
@@ -57,5 +62,7 @@ data modify storage vexp:temp lore_apply_tool.custom_data.vexp.lore_applied set 
 
 # Choose macro by fields availability
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.bonus_desc if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.status_desc run function vexp:dungeons/lore/apply_tool_macro_bonus_status with storage vexp:temp lore_apply_tool
+
 execute if data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.bonus_desc unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.status_desc run function vexp:dungeons/lore/apply_tool_macro_bonus with storage vexp:temp lore_apply_tool
-execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.bonus_desc run function vexp:dungeons/lore/apply_tool_macro with storage vexp:temp lore_apply_tool
+
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.bonus_desc unless data entity @s SelectedItem.components."minecraft:custom_data".vexp.tool.status_desc run function vexp:dungeons/lore/apply_tool_macro with storage vexp:temp lore_apply_tool

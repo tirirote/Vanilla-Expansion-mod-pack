@@ -15,7 +15,4 @@ execute as @e[tag=!vexp.health_init,predicate=vexp:is_target,type=!minecraft:pla
 kill @e[tag=vexp.health_bar,tag=!vexp.active]
 
 # 5. Damage Indicators Logic
-# Move them up and decrease timer
-execute as @e[tag=vexp.damage_indicator] at @s run tp @s ^ ^.05 ^.02 ~ ~5
-scoreboard players remove @e[tag=vexp.damage_indicator] vexp.timer 1
-kill @e[tag=vexp.damage_indicator,scores={vexp.timer=..0}]
+execute as @e[tag=vexp.damage_indicator] at @s run function vexp:mob_health/damage_indicator_tick

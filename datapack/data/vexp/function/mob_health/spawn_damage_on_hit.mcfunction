@@ -13,7 +13,7 @@ execute if score #damage_raw vexp.math matches ..0 run scoreboard players operat
 # Fallback: get damage via final effective damage
 execute if score #damage_raw vexp.math matches 0 store result score #damage_raw vexp.math run data get storage vexp:dungeons.weapon combo_params.eff_damage 100
 
-data modify storage vexp:temp Damage.color set value "yellow"
+data modify storage vexp:temp Damage.color set value "white"
 data modify storage vexp:temp Damage.bold set value false
 data modify storage vexp:temp Damage.prefix set value " -"
 data modify storage vexp:temp Damage.suffix set value " "
@@ -21,9 +21,9 @@ data modify storage vexp:temp Damage.critical set value 0b
 execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.color set value "red"
 execute if entity @s[tag=vexp.hitted.combo_end] run data modify storage vexp:temp Damage.bold set value false
 execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.color set value "gold"
-execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.bold set value true
-execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.prefix set value "※ -"
-execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.suffix set value " ※"
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.bold set value false
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.prefix set value "☆ -"
+execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.suffix set value " ☆"
 execute if entity @s[tag=vexp.hitted.critical] run data modify storage vexp:temp Damage.critical set value 1b
 
 # Custom indicator feedback when hit missed

@@ -19,6 +19,7 @@ tag @s remove vexp.combo_self
 
 # Si no hay objetivo, salimos. La hitbox existente morirá naturalmente en este tick.
 # Esto libera la interacción con bloques (cofres, botones) y con el aire.
+execute unless entity @s[tag=vexp.target_found] run title @s actionbar [{"text":""}]
 execute unless entity @s[tag=vexp.target_found] run return fail
 
 # -------------- CORE LOGIC (Solo si estamos mirando a un Mob candidato (cumple el predicado "vexp:is_target")) -------------- #
@@ -33,11 +34,8 @@ execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance
 execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] run tag @s remove vexp.hitbox.to_remove
 execute if score @s vexp.id = @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=interaction,tag=vexp.combo_hitbox,distance=..2,sort=nearest,limit=1] run tag @s add vexp.hitbox.mine_temp
 
-# Indicator now sits right next to the hitbox (update_hitmark.mcfunction), so the same
-# tight radius as the hitbox is enough — both @e mentions must match or "as" could
-# switch to a different entity than the one just verified by id.
-#execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s remove vexp.hitbox.to_remove
-#execute if score @s vexp.id = @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] vexp.id as @e[type=item_display,tag=vexp.combo_hitbox_indicator,distance=..2,sort=nearest,limit=1] run tag @s add vexp.hitbox.mine_temp
+# Indicator now sits on the actionbar as a simple sprite
+title @s actionbar [{atlas:"minecraft:items",sprite:"vexp:item/gui/attack_ready"}]
 
 # Relay cooldown state to the hitbox
 execute as @e[tag=vexp.hitbox.mine_temp] run tag @s remove vexp.hitbox.cooldown
