@@ -10,6 +10,9 @@ execute store result storage vexp:temp damage int 1 run scoreboard players get #
 scoreboard players operation #owner_id vexp.math = @s vexp.id
 execute as @a if score @s vexp.id = #owner_id vexp.math run tag @s add vexp.projectile_owner
 
+# Clean hitted tag for nearby mobs
+execute as @e[predicate=vexp:is_target,distance=..2.5,sort=nearest,limit=1] unless score @s vexp.id = #owner_id vexp.math if entity @s[tag=vexp.hitted] run tag @s remove vexp.hitted
+
 # Damage
 $execute as @e[predicate=vexp:is_target,distance=..2.5,sort=nearest,limit=1] unless score @s vexp.id = #owner_id vexp.math unless entity @s[tag=vexp.hitted] run function vexp:utils/deal_damage {damage:$(damage),type:"vexp:combo_hit",by:"@p[tag=vexp.projectile_owner,limit=1]"}
 

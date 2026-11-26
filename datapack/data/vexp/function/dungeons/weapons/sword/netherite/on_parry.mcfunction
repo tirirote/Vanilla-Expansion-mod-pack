@@ -16,5 +16,5 @@ scoreboard players set @s vexp.parry_timer 0
 scoreboard players operation @s vexp.parry_damage_snapshot = @s vexp.damage_taken
 
 # Feedback
-$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/aeo_waves/netherite
+$execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/aeo_waves/netherite
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}

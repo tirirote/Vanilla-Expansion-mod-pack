@@ -8,6 +8,6 @@ execute as @e[predicate=vexp:is_target,distance=..2.5] at @s run function vexp:d
 
 execute as @p[tag=vexp.attacker] at @s run function vexp:dungeons/weapons/handgun/player_pushback
 
-$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/strong_punch_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/strong_punch_hit
 function vexp:utils/sound {sound: "minecraft:item.firecharge.use", type: "player", pitch:1}
 function vexp:utils/sound {sound: "minecraft:entity.player.attack.crit", type: "player", pitch:1}

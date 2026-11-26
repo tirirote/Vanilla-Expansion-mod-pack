@@ -8,4 +8,4 @@ function vexp:dungeons/states/nether_marked
 function vexp:dungeons/weapons/gauntlets/combo_finisher
 
 # Feedback
-$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/netherite_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/netherite_hit

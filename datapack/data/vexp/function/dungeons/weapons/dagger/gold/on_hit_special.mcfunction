@@ -3,7 +3,7 @@
 
 
 # Custom knockback
-function vexp:utils/motion/apply_knockback {strength:1.5, y:0.1}
+function vexp:utils/motion/apply_knockback {strength:1.5, y:0.2}
 
 # Buff
 execute as @p[tag=vexp.attacker] run function vexp:dungeons/states/gold_buffed
@@ -13,7 +13,7 @@ execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ if block ^ ^ ^1 #replac
 execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ if block ^ ^ ^2 #replaceable run tp @s ^ ^ ^2
 
 # Feedback
-$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/gold_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/gold_hit
 
 # Remove tag
 execute as @p[tag=vexp.attacker] if entity @s[tag=vexp.hitted.special] run tag @s remove vexp.hitted.special

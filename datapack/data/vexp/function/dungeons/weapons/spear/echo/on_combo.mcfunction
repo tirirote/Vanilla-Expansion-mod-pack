@@ -14,4 +14,4 @@ execute as @p[tag=vexp.attacker] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^8 run
 execute as @e[tag=vexp.echo_marked,tag=vexp.hitted,predicate=vexp:is_target,distance=..12,limit=1] facing entity @p[tag=vexp.attacker] feet positioned ~ ~.5 ~ if block ^ ^ ^-3.5 #replaceable run tp @p[tag=vexp.attacker] ^ ^ ^-3.5 facing entity @s
 
 # Feedback
-$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/echo_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/echo_hit

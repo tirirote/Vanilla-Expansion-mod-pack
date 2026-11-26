@@ -11,4 +11,4 @@ execute as @p[tag=vexp.attacker] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^7 run
 execute as @p[tag=vexp.attacker] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^8 run function vexp:dungeons/fx/aeo_waves/common
 
 # Feedback
-$execute as @p[tag=vexp.attacker] at @s positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/strong_sword_hit
+$execute as @p[tag=vexp.attacker] at @s positioned ~ ~1 ~ positioned ^ ^0.75 ^$(reach) run function vexp:dungeons/fx/hits/strong_sword_hit
