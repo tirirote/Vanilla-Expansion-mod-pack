@@ -3,12 +3,15 @@
 # Ejecutar AS la interaction del candado.
 
 # 1) Validar que el objetivo siga existiendo. Si no, dropear candado.
-execute unless block ^ ^ ^1 #minecraft:doors unless block ^1 ^ ^1 #minecraft:doors unless block ^-1 ^ ^1 #minecraft:doors run function vexp:custom_block/break with entity @s data.vexp
+execute unless block ^ ^ ^0.25 #minecraft:doors unless block ^1 ^ ^0.25 #minecraft:doors unless block ^-1 ^ ^0.25 #minecraft:doors run function vexp:custom_block/break with entity @s data.vexp
 
 # 2) Si es puerta vanilla, validar llave en mano de jugadores cercanos.
 tag @s remove vexp.lock_has_key
 tag @s add vexp.lock_checking
+
+# Check key for hitbox dynamic size
 execute unless data entity @s data.vexp{key_name:""} run function vexp:custom_block/blocks/lock/check_player_key_macro with entity @s data.vexp
+function vexp:custom_block/blocks/lock/update_hitbox
 
 # 3) Si la puerta está abierta y no hay llave correcta cerca, forzar cierre respetando facing y hinge.
 execute unless entity @s[tag=vexp.lock_has_key] unless entity @s[tag=vexp.lock_door_open] run function vexp:custom_block/blocks/lock/force_locked_door
